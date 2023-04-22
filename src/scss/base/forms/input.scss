@@ -7,21 +7,74 @@ textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+
 	&:focus {
 		outline: none;
 	}
 }
+
 .input {
-	border-radius: 0 !important;
+	display: flex;
 	width: 100%;
-	display: block;
+	height: 56px;
 	padding: 0px 20px;
+	color: #8F8E8E;
+	border-radius: 15px;
+	border: 1px solid #E3E3E3;
+
 	&._focus {
+		// background: grey;
+		border: 1px solid #000;
 	}
+
 	&._error {
+		border: 1px solid red;
 	}
 }
+
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
+	padding: 5px 10px;
+}
+
+input[type=range] {
+	cursor: pointer;
+}
+
+// Описываем focus label, подписи поля или блок
+// .form__line._focus .form__label {
+// 	background: red;
+// }
+
+// // Описываем ошибку label, подписи поля или блок
+// .form__line._error .form__label {
+// 	color: red;
+// }
+
+// Стилизация placeholder 
+::-webkit-input-placeholder {
+	color: #8F8E8E;
+}
+
+::-moz-placeholder {
+	color: #8F8E8E;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+	color: #8F8E8E;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+	color: #8F8E8E;
+}
+
+// Убираем стрелки у цифрового инпута
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0;
+	/* <-- Apparently some margin are still there even though it's hidden */
 }

@@ -208,6 +208,19 @@ body {
 }
 
 //========================================================================================================================================================
+.slider-brends .slider-brends__inner {
+	padding: 20px 30px;
+	border-radius: 30px;
+	border: 1px solid #e3e3e3;
+	overflow: hidden;
+}
+
+.slider-brends__slide {
+	height: 77px;
+	overflow: hidden;
+}
+
+//========================================================================================================================================================
 
 .categoriesImgBlock {
 	margin: 0 -20px;
@@ -589,3 +602,8 @@ body {
 		background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfNzA3IiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDcwNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzAuMTExIiBoZWlnaHQ9IjEyLjIyMiIgdmlld0JveD0iMCAwIDMwLjExMSAxMi4yMjIiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTUuMjM3LDEuNTczYTEsMSwwLDAsMSwxLjc0OCwwTDExLjQsOS41MTRBMSwxLDAsMCwxLDEwLjUyMywxMUgxLjdBMSwxLDAsMCwxLC44MjUsOS41MTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMC4xMTEpIHJvdGF0ZSg5MCkiIGZpbGw9IiNmZmYiLz4NCiAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xNzExIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxNzExIiBkPSJNMTY3OC41LDQwODkuNzIyaC0yMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NTguNSAtNDA4My4yMjMpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=');
 	}
 }
+
+//========================================================================================================================================================
+
+// АДАПТИВ ==========================================
+@import "media";
