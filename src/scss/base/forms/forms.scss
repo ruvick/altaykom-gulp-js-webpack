@@ -1,24 +1,32 @@
 //<FORM>
 // Снипет (HTML):
 .form {
-	&__row {
-	}
-	&__column {
-	}
-	&__line {
-	}
-	&__input {
-	}
-	&__button {
-	}
+	&__row {}
+
+	&__column {}
+
+	&__line {}
+
+	&__input {}
+
+	&__button {}
+
 	&__error {
+		color: red;
+		margin-top: 3px;
+		margin-bottom: 10px;
 	}
 }
+
 //</FORM>
 
 // <BUTTONS>
 // Снипет (HTML): btn
-// @import "button";
+@import "button";
+
+// <SEARCH>
+// Снипет (HTML):
+@import "search";
 
 // <INPUTS>
 // Снипет (HTML): inp

@@ -1,5 +1,77 @@
-<header class="header">
-	<div class="header__container">
+<header id="header" class="header">
+	<div class="header__container _container">
+		<div class="header__info d-flex">
+			<div class="header__info-column">
+				<div class="header__info-address address-item">
+					г. Барнаул, ул. Гридасова, 16
+				</div>
+				<a href="tel:+73852462031" class="header__info-phone phone-item">+7 (3852) 46 20 31</a>
+			</div>
+			<div class="header__info-column header__info-column-logo">
+				<a href="index.html" class="header__logo logo-icon"></a>
+			</div>
+			<div class="header__info-column">
+				<div class="header__info-select">О нас</div>
+				<a href="#" class="header__info-link">Мастер-классы</a>
+				<a href="#" class="header__info-link">Оплата и доставка</a>
+				<a href="#" class="header__info-link">Гарантии</a>
+			</div>
+		</div>
 
+		<div class="header__navigation">
+			<button class="header__navigation-carBtn" aria-label="Кнопка каталог">
+				<div class="header__navigation-carBtn-text">каталог</div>
+				<div class="header__icon-menu icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<form action="#" method="get" class="header__navigation-search-form search">
+				<input type="text" placeholder="Поиск по каталогу" class="search__input" value="" name="search" />
+				<button type="submit" tabindex="2" value="" id="searchsubmit" class="search__btn"></button>
+			</form>
+			<div class="header__navigation-interface interface">
+				<a href="#" class="interface__link interface__link_enter">Войти</a>
+				<a href="#" class="interface__link interface__link_favourites">Избранное</a>
+				<a href="#" class="interface__link interface__link_bascet">Корзина</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__lineBlock lineBlock">
+		<div class="_container">
+			<div class="header__lineBlock-inner lineBlock__inner">
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_stocks">Акции</a>
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_newprd">Новинки</a>
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_ingredients">Ингредиенты</a>
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_inventory">Инвентарь</a>
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_equipment">Оборудование</a>
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_products">Наша продукция</a>
+				<a href="#" class="lineBlock__navButton navButton navButton_icon navButton_icon_services">Услуги</a>
+				<a href="#"
+					class="lineBlock__navButton navButton navButton_icon lineBlock__navButton_right navButton_icon_wholesalers">Оптовикам</a>
+			</div>
+		</div>
 	</div>
 </header>
+
+<!-- Мобильное меню -->
+<!-- <div class="mob-menu header__mob-menu">
+		<ul class="mob-menu__list">
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 1</a></li> 
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 2</a></li>
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 3</a></li>
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 4</a></li>
+			<li class="mob-menu__list-item"><a href="#" class="mob-menu__list-item-link">Пункт 5</a></li>
+		</ul>
+		<a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
+	</div> -->
+
+<!-- Строка мобильного поиска -->
+<!-- <div class="search header__search-mob">
+		<form role="search" method="get" action="<?php echo home_url( '/' ) ?>" id="searchform" class="search__form">
+			<input type="text" class="search__input input" placeholder="Поиск" value="<?php echo get_search_query() ?>" name="s"
+			id="s">
+			<button type="submit" id="searchsubmit" class="search__btn" tabindex="2" value=""></button>
+		</form>
+	</div> -->
