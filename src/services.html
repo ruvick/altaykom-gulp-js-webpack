@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Услуги"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
+              <span>
+                <a href="home.html"> главная </a> /
+                <span class="breadcrumb_last" aria-current="page"> Услуги </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="titleBlock">
+        <div class="_container">
+          <h2 class="titleBlock__title">
+            Услуги
+          </h2>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="_container">
+
+          <div class="popular-categories__servicesBlock servicesBlock-bg d-flex">
+            <div class="servicesBlock-bg__card servicesBlock-bg__card_01">
+              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+              <div class="servicesBlock-bg__card-text">
+                Изготовление сахарной пудры
+              </div>
+            </div>
+
+            <div class="servicesBlock-bg__card servicesBlock-bg__card_02">
+              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+              <div class="servicesBlock-bg__card-text">
+                Производство инвентаря
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      @@include('html/components/_sending.htm',{})
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
