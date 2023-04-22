@@ -46,10 +46,10 @@ function initSliders() {
 
 	// Перечень слайдеров
 	if (document.querySelector('.swiper')) {
-		new Swiper('.swiper', {
+		new Swiper('.sliderInfo', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			//modules: [Navigation, Pagination],
+			modules: [Navigation],
 			/*
 			effect: 'fade',
 			autoplay: {
@@ -59,8 +59,8 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
+			slidesPerView: 3,
+			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
@@ -75,8 +75,8 @@ function initSliders() {
 			//},
 			// Arrows
 			navigation: {
-				nextEl: '.about__more .more__item_next',
-				prevEl: '.about__more .more__item_prev',
+				nextEl: '.slider-info__button-next',
+				prevEl: '.slider-info__button-prev',
 			},
 			/*
 			breakpoints: {
