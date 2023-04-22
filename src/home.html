@@ -28,7 +28,6 @@
 				</div>
 			</section>
 
-
 			<section id="popular-categories" class="popular-categories section">
 				<div class="_container">
 					<h2 class="popular-categories__title title">
@@ -36,11 +35,11 @@
 					</h2>
 
 					<div class="popular-categories__imgBlock">
-
+						@@include('html/components/_categoriesImgBlock.htm',{})
 					</div>
 
 					<div class="popular-categories__filterBlock">
-
+						@@include('html/components/_filterBlock.htm',{})
 					</div>
 
 					<div class="popular-categories__servicesBlock servicesBlock-bg d-flex">
@@ -216,6 +215,7 @@
 				</div>
 			</section>
 
+			@@include('html/components/_sending.htm',{})
 
 		</main>
 		@@include('html/_footer.htm',{})
