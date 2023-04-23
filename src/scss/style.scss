@@ -638,5 +638,60 @@ body {
 
 //========================================================================================================================================================
 
+.main-content {}
+
+.main-content__inner {
+	justify-content: space-between;
+	align-items: start;
+}
+
+.main-content__column {
+	// border: 1px solid #000;
+}
+
+.main-content__column_left {
+	flex: 0 1 940px;
+}
+
+.main-content__text {
+	line-height: 26px;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.main-content__column_right {
+	flex: 0 0 340px;
+	overflow: hidden;
+}
+
+//========================================================================================================================================================
+
+.sliderSec {}
+
+.slider-certificates {}
+
+.sliderSec__container {}
+
+.slider-certificates__title {
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 36px;
+}
+
+.sliderCert__slide {
+	height: 311px;
+	overflow: hidden;
+}
+
+.sliderCert__slide img {
+	height: 100%;
+	object-fit: cover;
+}
+
+//========================================================================================================================================================
+
 // АДАПТИВ ==========================================
 @import "media";

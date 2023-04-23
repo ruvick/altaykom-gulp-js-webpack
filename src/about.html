@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"О компании"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
+              <span>
+                <a href="home.html"> главная </a> /
+                <span class="breadcrumb_last" aria-current="page"> о компании </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-title">
+        <div class="_container">
+          <div class="section-title__title title-main">
+            о компании
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content section">
+        <div class="_container">
+          <div class="main-content__inner d-flex">
+            <div class="main-content__column main-content__column_left">
+              <div class="main-content__text">
+                Компания «Алтайком», входящая в состав «COMPANY GROUP», – для предприятий кондитерской и хлебопекарной
+                промышленности на рынке Алтайского края
+              </div>
+              <div class="main-content__text">
+                Мы работаем с крупнейшими российскими и зарубежными поставщиками. Долгосрочные отношения с нашими
+                производителями позволили минимизировать затраты и издержки. Благодаря этому мы сохраняем оптимальные
+                цены
+                на все категории товаров. Весь наш товар . Поэтому его использование в производстве обеспечивает
+                получение
+                продукции высокого качества.
+              </div>
+              <div class="main-content__text">
+                Наша компания работает как с крупными, так и небольшими кондитерскими и хлебопекарными предприятиями.
+                Большинство сотрудников «Алтайком» имеет специальное . Прекрасно понимая особенности пищевого
+                производства, мы работаем для Вас и Вашего успеха.
+              </div>
+              <div class="main-content__text">
+                Частью нашего сервиса является предоставление информационных и технологических . Это регулярное
+                проведение
+                семинаров и мастер-классов, а также выезд технолога на предприятия. По желанию клиента изготавливаем
+                разнообразный инвентарь.
+              </div>
+              <div class="main-content__text">
+                Склад и офис у нас находятся в одном месте, что удобно для получения товара. Всегда в наличии на складе
+                имеются основные виды сырья и оборудования в достаточном объеме. Имея , осуществляем доставку товара
+                покупателям по всему Сибирскому региону.
+              </div>
+            </div>
+            <div class="main-content__column main-content__column_right">
+              @@include('html/components/_sending.htm',{})
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="slider-certificates" class="sliderSec slider-certificates">
+        <div class="sliderSec__container _container">
+          <div class="slider-certificates__title">Сертификаты</div>
+          <div class="sliderCert swiper">
+            <div class="sliderSec__swiper">
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/01.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/02.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/03.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/04.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/05.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/06.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/01.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/02.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/03.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/04.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/05.jpg" alt="">
+              </div>
+              <div class="sliderCert__slide">
+                <img src="@img/certificates/06.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button__inner">
+              <div class="slider-info__button-next swiper-button swiper-button-next"></div>
+              <div class="slider-info__button-prev swiper-button swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- @@include('html/components/_sending.htm',{}) -->
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

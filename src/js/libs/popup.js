@@ -1,6 +1,5 @@
-// (c) Фрилансер по жизни, Хмурый Кот
 // Документация: 
-// Подключение функционала "Чертогов Фрилансера"
+// Подключение функционала 
 import { isMobile, bodyLockStatus, bodyLockToggle } from "../files/functions.js";
 
 export class Popup {
@@ -10,7 +9,7 @@ export class Popup {
 			init: true,
 			attributeOpenButton: 'data-popup', // Атрибут для кнопки, которая вызывает попап
 			attributeCloseButton: 'data-close', // Атрибут для кнопки, которая закрывает попап
-			fixElementSelector: '[data-lp]', // Атрибут для элементов с левым паддингом (которые fixed)
+			fixElementSelector: '[data-lp]', // Атрибут для элементов с левым паддингом (которые fixed) 
 
 			youtubeAttribute: 'data-youtube', //Атрибут для кода youtube
 			setAutoplayYoutube: true,
