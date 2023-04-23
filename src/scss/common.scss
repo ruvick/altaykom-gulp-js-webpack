@@ -3,45 +3,24 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ЗАГОЛОВКИ> ====================================================================================================
-h1 {
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 52.8 / 35 *100%;
-}
-
-h2 {
-  font-size: 60px;
-  line-height: 50 / 60 *100%;
-}
-
-h3 {
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 38px;
-}
-
-h4 {
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 38px;
+.title-main {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 80 / 80 *100%;
 }
 
 .title {
-  margin-bottom: 40px;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 50 / 60 *100%;
 }
 
 .titleBlock {
-  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  padding-top: 35px;
 }
 
 //<БЛОКИ> ====================================================================================================

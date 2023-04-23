@@ -354,6 +354,18 @@ body {
 	background-image: url('../img/services/02.png');
 }
 
+.servicesBlock-bg__card_03 {
+	background-image: url('../img/services/03.png');
+}
+
+.servicesBlock-bg__card_04 {
+	background-image: url('../img/services/04.png');
+}
+
+.servicesBlock-bg__card_05 {
+	background-image: url('../img/services/05.png');
+}
+
 //========================================================================================================================================================
 
 .about__advantagesBlock {
@@ -601,6 +613,27 @@ body {
 		background-repeat: no-repeat;
 		background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfNzA3IiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDcwNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzAuMTExIiBoZWlnaHQ9IjEyLjIyMiIgdmlld0JveD0iMCAwIDMwLjExMSAxMi4yMjIiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTUuMjM3LDEuNTczYTEsMSwwLDAsMSwxLjc0OCwwTDExLjQsOS41MTRBMSwxLDAsMCwxLDEwLjUyMywxMUgxLjdBMSwxLDAsMCwxLC44MjUsOS41MTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMC4xMTEpIHJvdGF0ZSg5MCkiIGZpbGw9IiNmZmYiLz4NCiAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xNzExIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxNzExIiBkPSJNMTY3OC41LDQwODkuNzIyaC0yMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NTguNSAtNDA4My4yMjMpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=');
 	}
+}
+
+//========================================================================================================================================================
+
+.services-section {}
+
+.services-section__row {
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.servicesBlock-bg__card_small {
+	flex: 0 1 32.4%;
+}
+
+.services-section__row .servicesBlock-bg__card-text {
+	font-size: 20px;
+	line-height: 30px;
 }
 
 //========================================================================================================================================================
