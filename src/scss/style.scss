@@ -555,9 +555,9 @@ body {
 
 //========================================================================================================================================================
 
-.sending {}
+.sending-section {}
 
-.sending__banner {
+.sending-banner {
 	position: relative;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -568,40 +568,42 @@ body {
 	background: #C5934F;
 }
 
-.sending__banner-img {
+.sending-banner__img {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.sending__banner-column {
+.sending-banner__column {
 	z-index: 50;
 }
 
-.sending__banner-descp {
+.sending-banner__descp {
 	margin-bottom: 15px;
 }
 
-.sending__banner-title {
+.sending-banner__title {
 	font-size: 44px;
 	line-height: 38px;
 }
 
-.sending__banner-form {
+.sending-banner__form {
+	position: relative;
 	display: flex;
 	align-items: center;
 	width: 396px;
 }
 
-.sending__banner-form-input {}
+.sending-banner__input {}
 
-.sending__banner-form-btn {
+.sending-banner__btn {
+	position: absolute;
+	right: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 70px;
 	height: 46px;
-	margin-left: -19%;
 
 	&::before {
 		content: '';
@@ -667,9 +669,47 @@ body {
 	overflow: hidden;
 }
 
-//========================================================================================================================================================
+.main-content__column_right .sending-banner {
+	flex-wrap: wrap;
+	padding: 36px 30px;
+}
 
-.sliderSec {}
+.main-content__column_right .sending-banner__img {
+	top: 0%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(40deg);
+
+	img {
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.main-content__column_right .sending-banner__title {
+	font-size: 44px;
+	line-height: 44px;
+}
+
+.main-content__column_right .sending-banner__descp {
+	line-height: 22px;
+	margin-bottom: 25px;
+}
+
+.main-content__column_right .sending-banner__column {
+	margin-bottom: 25px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.main-content__column_right .sending-banner__form {
+	width: 100%;
+}
+
+//========================================================================================================================================================
 
 .slider-certificates {}
 
@@ -689,6 +729,27 @@ body {
 .sliderCert__slide img {
 	height: 100%;
 	object-fit: cover;
+}
+
+//========================================================================================================================================================
+
+.suppliers {}
+
+.suppliers__inner {
+	flex-wrap: wrap;
+	margin: 0 -30px;
+}
+
+.suppliers__column {
+	display: flex;
+	flex: 0 1 16.5%;
+	padding: 0 15px 20px 15px;
+}
+
+.suppliers__img {
+	flex: 0 1 100%;
+	height: 123px;
+	overflow: hidden;
 }
 
 //========================================================================================================================================================
