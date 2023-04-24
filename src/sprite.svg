@@ -90,10 +90,10 @@
   </g>
   </symbol>
 
-    <!-- Иконка мобильника, золотая -->
+    <!-- Иконка конверт, золотая -->
   <symbol id="messege-gold" viewBox="0 0 30 30">
     <g id="Icon_material-email" data-name="Icon material-email" transform="translate(-20 -8)" clip-path="url(#clip-path)">
-      <path id="Icon_awesome-mobile" data-name="Icon awesome-mobile" d="M15.937-1,2.813,0A2.813,2.813,0,0,0,0,2.813V27.188A2.813,2.813,0,0,0,2.813,30H15.937a2.813,2.813,0,0,0,2.813-2.813V2.813C18.75,1.26,17.49-1,15.937-1ZM9.375,27.125A1.875,1.875,0,1,1,11.25,25.25,1.873,1.873,0,0,1,9.375,27.125Z" transform="translate(25.625 8)" fill="#c5934f"/>
+      <path id="Icon_material-email-2" data-name="Icon material-email" d="M28.65,6H5.85A2.846,2.846,0,0,0,3.014,8.85L3,25.95A2.858,2.858,0,0,0,5.85,28.8h22.8a2.858,2.858,0,0,0,2.85-2.85V8.85A2.858,2.858,0,0,0,28.65,6Zm0,5.7-11.4,7.125L5.85,11.7V8.85l11.4,7.125L28.65,8.85Z" transform="translate(17.75 5.6)" fill="#c5934f"/>
     </g>
   </symbol>
 
