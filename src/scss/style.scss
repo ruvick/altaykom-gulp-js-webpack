@@ -50,6 +50,7 @@ $mobileSmall: em(479.98); // Телефоны S
 @import "base/null";
 
 body {
+	line-height: 26px;
 
 	// Скролл заблокирован 
 	.lock & {
@@ -761,6 +762,38 @@ body {
 	flex: 0 0 700px;
 	height: 400px;
 	margin-top: -14%;
+}
+
+//========================================================================================================================================================
+
+.privacy-policy-block {
+
+	&__row {
+		margin-bottom: 60px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__title {
+		font-size: 26px;
+		line-height: 36px;
+		margin-bottom: 22px;
+	}
+
+	&__text {
+		// margin-bottom: 19px;
+	}
+}
+
+.privacy-policy-block .typical-list {
+	margin-top: 19px;
+}
+
+.privacy-policy-block .typical-list__item {
+	font-size: 16px;
+	margin-bottom: 20px;
 }
 
 //========================================================================================================================================================
