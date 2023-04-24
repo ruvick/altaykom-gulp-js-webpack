@@ -236,6 +236,70 @@
   flex-wrap: wrap;
 }
 
+// Блок обертка с серой линией
+.border-wrap-block {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.border-wrap-block__inner {
+  padding: 40px;
+  overflow: hidden;
+}
+
+
+.icon-border__svg {
+  width: 30px;
+  flex: 0 0 30px;
+  height: 30px;
+}
+
+.icon-info-card__link {
+  font-weight: 500;
+  color: #C5934F;
+}
+
+.icon-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 60px;
+  flex: 0 0 60px;
+  height: 60px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  overflow: hidden;
+}
+
+.icon-info-card {
+  align-items: center;
+}
+
+.icon-info-card__icon {
+  margin-right: 20px;
+}
+
+.icon-info-card__descp {}
+
+.icon-info-card__title {
+  font-size: 24px;
+  // line-height: 42px;
+  margin-bottom: 8px;
+}
+
+.icon-info-card__item {
+  display: flex;
+  line-height: 22px;
+
+  span {
+    margin: 0 7px;
+  }
+}
+
 //</БЛОКИ> ====================================================================================================
 
 

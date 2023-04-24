@@ -798,5 +798,35 @@ body {
 
 //========================================================================================================================================================
 
+.contacts-section__inner .border-wrap-block {
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contacts-section__map {
+	height: 400px;
+	background: grey;
+}
+
+.contacts-section__inner .border-wrap-block__row {
+	max-width: 1150px;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 40px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contacts-section__inner .icon-info-card {
+	flex: 0 1 43%;
+}
+
+//========================================================================================================================================================
+
 // АДАПТИВ ==========================================
 @import "media";
