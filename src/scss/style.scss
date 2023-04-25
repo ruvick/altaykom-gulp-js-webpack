@@ -891,5 +891,79 @@ body {
 
 //========================================================================================================================================================
 
+.service-banner {
+	padding-bottom: 30px;
+	margin-top: -40px;
+
+	&__inner {
+		display: flex;
+		// position: relative;
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		padding: 60px 0;
+		// margin-right: 20px;
+	}
+
+	&__img {
+		// position: absolute;
+		// top: 0;
+		// right: 0;
+		flex: 0 0 530px;
+		height: 100%;
+		overflow: hidden;
+	}
+}
+
+.service-banner__text .title {
+	font-size: 40px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.banner-bg {
+	max-height: 300px;
+}
+
+.service-banner__bg {
+	background: #221F20;
+}
+
+.service-banner__text .breadcrumbs {
+	margin-bottom: 20px;
+}
+
+.service-banner__text .breadcrumbs span {
+	color: #fff;
+}
+
+.service-description {
+	padding: 30px 0 40px 0;
+
+	&__inner {
+		max-width: 1180px;
+		width: 100%;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__btn {
+		margin-top: 37px;
+	}
+}
+
+//========================================================================================================================================================
+
 // АДАПТИВ ==========================================
 @import "media";

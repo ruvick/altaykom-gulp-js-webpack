@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Услуга"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/components/_lineBlock.htm',{})
+    <main class="page">
+
+      <section class="service-banner">
+        <div class="service-banner__bg banner-bg">
+          <div class="_container">
+            <div class="service-banner__inner">
+              <div class="service-banner__text">
+                <div class="breadcrumbs">
+                  <div class="breadcrumbs__inner">
+                    <span>
+                      <span>
+                        <a href="home.html"> главная </a> / <a href="services.html"> услуги </a> /
+                        <span class="breadcrumb_last" aria-current="page"> производство инвентаря для хлебопечения и
+                          кондитерской промышленности </span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="section-title__title title">
+                  Производство инвентаря для хлебопечения и кондитерской промышленности
+                </div>
+              </div>
+              <div class="service-banner__img">
+                <img src="@img/service-banner.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-description">
+        <div class="_container">
+          <div class="service-description__inner">
+            <div class="service-description__text">
+              По желанию клиента изготавливаем разнообразный инвентарь для пекарен и кондитерских цехов. Вы можете
+              заказать у нас противни, вырубки, высечки, формы для тортов, печенья и т.д.
+            </div>
+            <div class="service-description__text">
+              Склад и офис у нас находятся в одном месте, что удобно для получения товара. Также осуществляем доставку
+              товара покупателям по всему Сибирскому региону собственным автотранспортом.
+            </div>
+            <a href="#" class="service-description__btn btn btn_black">заказать услугу</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="documents-section" class="documents-section section">
+        <div class="_container">
+
+          <div class="documents-block">
+            <div class="documents-block__row d-flex">
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      @@include('html/components/_sending.htm',{})
+
+    </main>
+    @@include('html/_footer.htm',{})
+    @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
