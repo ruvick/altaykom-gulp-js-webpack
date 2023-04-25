@@ -300,6 +300,65 @@
   }
 }
 
+// Инфо блок (реквизиты)
+.table-info {
+  padding-top: 20px;
+}
+
+.table-info__title {
+  font-size: 26px;
+  // line-height: 36px;
+  margin-bottom: 22px;
+}
+
+.table-info__subtitle {
+  margin-bottom: 24px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.table-info__inner {
+  display: flex;
+}
+
+.table-info__table {
+  flex: 0 1 940px;
+}
+
+.table-info__table-row {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.table-info__table-name {
+  color: #8F8E8E;
+}
+
+.table-info__table-line {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  border-bottom: 1px dotted #8F8E8E;
+  height: 21px;
+  margin-left: 3px;
+}
+
+.table-info__table-value {}
+
+.table-info__table-col {
+  display: flex;
+  flex: 0 1 48%;
+  margin-right: 45px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 //</БЛОКИ> ====================================================================================================
 
 
