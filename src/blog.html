@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Блог"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/components/_lineBlock.htm',{})
+    <main class="page">
+
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
+              <span>
+                <a href="home.html"> главная </a> /
+                <span class="breadcrumb_last" aria-current="page"> блог </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-title">
+        <div class="_container">
+          <div class="section-title__title title-main">
+            блог
+          </div>
+        </div>
+      </section>
+
+      <section id="blog-section" class="blog-section section">
+        <div class="_container">
+
+          <div class="blog-block">
+
+            <div class="blog-block__inner d-flex">
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#рецепты</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">7 сентября 2022</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">2 100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Торт с фруктами и желейными шариками
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#мастер-классы</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#рецепты</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">7 сентября 2022</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">2 100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Торт с фруктами и желейными шариками
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#мастер-классы</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#рецепты</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">7 сентября 2022</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">2 100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Торт с фруктами и желейными шариками
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#мастер-классы</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#рецепты</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">7 сентября 2022</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">2 100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Торт с фруктами и желейными шариками
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#мастер-классы</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#рецепты</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">7 сентября 2022</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">2 100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Торт с фруктами и желейными шариками
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#мастер-классы</a>
+                      <img src="@img/blog/01.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+              <div class="blog-block__column">
+                <article class="blog-block__article article-card">
+                  <div class="article-card__body">
+                    <div class="article-card__body-img">
+                      <a href="#" class="article-card__body-sticker">#новости</a>
+                      <img src="@img/blog/02.jpg" alt="">
+                    </div>
+                    <div class="article-card__body-interface d-flex">
+                      <div class="article-card__body-date">20 января 2023</div>
+                      <div class="article-card__body-views d-flex">
+                        <div class="article-card__body-views-icon">
+                          <svg class="article-card__body-views-icon-svg">
+                            <use xlink:href="#views-icon"></use>
+                          </svg>
+                        </div>
+                        <div class="article-card__body-views-value">100</div>
+                      </div>
+                    </div>
+                    <a href="#" class="article-card__body-descp">
+                      Молочный чай с тапиокой -желейными шариками «мармелатье»
+                    </a>
+                  </div>
+                </article>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      @@include('html/components/_sending.htm',{})
+
+    </main>
+    @@include('html/_footer.htm',{})
+    @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

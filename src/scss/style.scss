@@ -1161,5 +1161,93 @@ body {
 
 //========================================================================================================================================================
 
+.blog-section {}
+
+.blog-block {
+
+	&__inner {
+		flex-wrap: wrap;
+		margin: 0 -20px;
+	}
+
+	&__column {
+		display: flex;
+		flex: 0 1 25%;
+		padding: 0 10px 40px 10px;
+	}
+
+	&__article {}
+}
+
+.article-card {
+
+	&__body {
+		flex: 0 1 100%;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	&__body-img {
+		position: relative;
+		flex: 0 1 100%;
+		min-height: 200px;
+		max-height: 200px;
+		margin-bottom: 19px;
+		overflow: hidden;
+	}
+
+	&__body-sticker {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		font-size: 14px;
+		text-align: center;
+		padding: 1.5px 10px;
+		border-radius: 11px;
+		background: #fff;
+	}
+
+	&__body-interface {
+		align-items: center;
+		margin-bottom: 14px;
+	}
+
+	&__body-date {
+		font-size: 14px;
+		color: #8F8E8E;
+		margin-right: 30px;
+	}
+
+	&__body-views {
+		align-items: center;
+	}
+
+	&__body-views-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 18px;
+		flex: 0 0 18px;
+		height: 12px;
+		margin-right: 8px;
+		overflow: hidden;
+	}
+
+	&__body-views-value {
+		font-size: 17px;
+		color: #8F8E8E;
+	}
+}
+
+.article-card__body-descp {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+//========================================================================================================================================================
+
 // АДАПТИВ ==========================================
 @import "media";
