@@ -10,28 +10,33 @@ body::after {
 	transition: opacity 0.8s ease 0s;
 	pointer-events: none;
 }
+
 body.popup-show::after {
 	opacity: 1;
 }
+
 .popup {
 	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 50000;
 	padding: 30px 10px;
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 }
+
 .popup_show {
 	visibility: visible;
 	overflow: auto;
 }
+
 .popup_show .popup__content {
 	visibility: visible;
 	transform: scale(1);
 }
+
 .popup__wrapper {
 	display: flex;
 	flex-direction: column;
@@ -43,16 +48,120 @@ body.popup-show::after {
 	justify-content: center;
 	align-items: center;
 }
+
 .popup__content {
+	position: relative;
+	max-width: 456px;
+	width: 100%;
+	padding: 30px;
+	border-radius: 30px;
+	background: #fff;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
-	width: 100%;
-	max-width: 900px;
-	border-radius: 20px;
+	overflow: hidden;
+
 	.lock & {
 		visibility: visible;
 	}
+}
+
+.popup {
+
+	&__close {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 15px;
+		background: #fff;
+		border: 1px solid #e3e3e3;
+		outline: none;
+
+		svg {
+			width: 14px;
+			flex: 0 0 14px;
+			height: 14px;
+		}
+	}
+
+	&__content-title {
+		font-size: 26px;
+		line-height: 42px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__content-subtitle {
+		font-size: 16px;
+		line-height: 26px;
+		color: #161615;
+		margin-bottom: 29px;
+	}
+
+	&__form {}
+
+	&__form-input {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__form-btn {
+		width: 100%;
+	}
+
+	&__form-confirmation {
+		font-size: 14px;
+		line-height: 20px;
+		color: #8F8E8E;
+		margin-bottom: 28px;
+	}
+
+	&__form-confirmation-link {
+		font-size: 14px;
+		line-height: 20px;
+		color: #8F8E8E;
+		text-decoration: underline !important;
+	}
+}
+
+.popup__form-textarea {
+	height: 120px;
+	padding: 17px 20px !important;
+	margin-bottom: 30px;
+}
+
+.popup-suppliers .popup__content {
+	max-width: 700px;
+}
+
+.popup-suppliers__inner {
+	align-items: center;
+}
+
+.popup-suppliers__descp {
+	flex: 1 1 auto;
+	// margin-right: 20px;
+}
+
+.popup__content-title {}
+
+.popup-suppliers .popup__content-subtitle {
+	line-height: 26px;
+	color: #161615;
+	margin-bottom: 0;
+}
+
+.popup-suppliers__img {
+	flex: 0 0 180px;
+	height: 102px;
+	overflow: hidden;
 }

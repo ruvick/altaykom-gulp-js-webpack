@@ -63,17 +63,20 @@ flsFunctions.isWebp();
 Документация по работе в шаблоне:
 Сниппет (HTML): pl
 */
+import "./libs/popup.js";
+// import { flsModules } from "./modules.js";
+// flsModules.popup.open('#popup');
 // Для включения ??? (подсказок в консоли) передать true * /
-// flsFunctions.initPopups(false);
+flsFunctions.initPopups(true);
 
 // Работа с формами ========================================================================================================================================================================================================================================================
 import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы: добавление классов, работа с placeholder. */
-// flsForms.formFieldsInit();
+flsForms.formFieldsInit();
 
 /* Oтправка формы со встроенной валидацией полей. false - отключит валидацию */
-// flsForms.formSubmit(true);
+flsForms.formSubmit(true);
 
 /* (В работе) Работа с масками. Для включения ??? (подсказок в консоли) передать true */
 // flsForms.formMasks(true);

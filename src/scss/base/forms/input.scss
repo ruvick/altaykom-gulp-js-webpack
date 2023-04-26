@@ -32,6 +32,10 @@ textarea {
 	}
 }
 
+.input._form-error {
+	border: 1px solid red;
+}
+
 textarea.input {
 	resize: none;
 	padding: 5px 10px;

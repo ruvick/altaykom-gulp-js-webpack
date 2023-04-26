@@ -1,9 +1,71 @@
+<!-- Пример  -->
 <div id="popup" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
 			<button data-close type="button" class="popup__close">Закрыть</button>
 			<div class="popup__text">
 				Заказать
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Заказать услугу -->
+<div id="order-service" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-svg">
+					<use xlink:href="#popup-close"></use>
+				</svg>
+			</button>
+			<div class="popup__content-title">
+				Заказать услугу
+			</div>
+			<div class="popup__content-subtitle">
+				Оставьте заявку, и наш менеджер свяжется
+				с Вами в ближайшее время
+			</div>
+			<form action="#" class="popup__form form">
+				<div class="form__line">
+					<input type="text" name="name" placeholder="Имя" class="popup__form-input input">
+					<input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
+						class="popup__form-input input">
+					<textarea name="" id="" placeholder="Комментарий" class="popup__form-textarea input"></textarea>
+					<div class="popup__form-confirmation">
+						Нажимая на кнопку «Отправить», Вы соглашаетесь
+						на обработку <a href="#" class="popup__form-confirmation-link">персональных данных</a>
+					</div>
+					<button type="submit" class="popup__form-btn btn btn_black">отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Поставщики -->
+<div id="suppliers" aria-hidden="true" class="popup popup-suppliers">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-svg">
+					<use xlink:href="#popup-close"></use>
+				</svg>
+			</button>
+			<div class="popup-suppliers__inner d-flex">
+				<div class="popup-suppliers__descp">
+					<div class="popup__content-title">
+						Компания «Ангел Ист Рус»
+					</div>
+					<div class="popup__content-subtitle">
+						Компания «Ангел Ист Рус» – дочернее подразделение китайской компании «Angel Yeast Co., Ltd» – одного из
+						крупнейших в мире производителей дрожжей. Продукцию компании знают в более чем 20 странах и регионах мира.
+						Продукция «Angel Yeast» пользуется огромным успехом среди простых людей и специалистов.
+					</div>
+				</div>
+				<div class="popup-suppliers__img">
+					<img src="@img/brends/01.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	</div>

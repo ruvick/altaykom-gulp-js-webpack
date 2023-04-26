@@ -1,4 +1,4 @@
-// Подключение функционала "Чертогов Фрилансера"
+// Подключение функционала 
 // Вспомогательные функции
 import { isMobile, _slideUp, initPopups, _slideDown, _slideToggle } from "../functions.js";
 // Модуль прокрутки к блоку
