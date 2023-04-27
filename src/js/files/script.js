@@ -6,43 +6,34 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
 
+const search = document.querySelector(".search");
 const searchInput = document.querySelector(".search__input");
 const searchBtnClosed = document.querySelector(".search__btn-closed");
-const interFacelinkText = document.querySelector(".interface__link_enter");
+const interFacelinkText = document.querySelectorAll(".interface__link-text");
 // const iconMenu = document.querySelector(".icon-menu");
 // const body = document.querySelector("body");
-// const menuBody = document.querySelector(".mob-menu");
-// const menuListItemElems = document.querySelector(".mob-menu__list");
-// const mobsearch = document.querySelector(".header__mob-search-btn");
-// const headsearch = document.querySelector(".header__search-mob");
 
-
-if (searchInput) {
-  searchInput.addEventListener("click", function () {
+// Срабатывание поиска
+interFacelinkText.forEach(btn => {
+  searchInput.addEventListener('click', function () {
+    search.classList.add("active");
     searchBtnClosed.classList.add("active");
-    interFacelinkText.classList.add("none");
-    // menuBody.classList.toggle("active");
-  });
-}
-
-if (searchBtnClosed) {
-  searchBtnClosed.addEventListener("click", function () {
+    btn.classList.add("none");
+  })
+  searchBtnClosed.addEventListener('click', function () {
+    search.classList.remove("active");
     searchBtnClosed.classList.remove("active");
-    interFacelinkText.classList.remove("none");
-    // menuBody.classList.toggle("active");
-  });
-}
-
-
-// searchInput.addEventListener('click', function () {
-//   // let interFacelinkText = document.querySelectorAll(".interface__link-text");
-
-//   if (interFacelinkText.classList.contains("none")) {
-//     interFacelinkText.classList.remove("none");
-//   } else {
-//     interFacelinkText.classList.add("none");
-//   }
-// })
+    btn.classList.remove("none");
+  })
+  window.addEventListener('click', e => { // при клике в любом месте окна браузера
+    const target = e.target // находим элемент, на котором был клик
+    if (!target.closest('.search__btn') && !target.closest('.search__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      search.classList.remove("active");
+      searchBtnClosed.classList.remove('active')
+      btn.classList.remove("none");
+    }
+  })
+})
 
 //BURGER
 // if (catBtn) {
@@ -70,15 +61,14 @@ if (searchBtnClosed) {
 // }
 
 // Закрытие моб меню при клике вне области меню
-window.addEventListener('click', e => { // при клике в любом месте окна браузера
-  const target = e.target // находим элемент, на котором был клик
-  if (!target.closest('.search__btn') && !target.closest('.search__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-    // iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
-    // menuBody.classList.remove('active')
-    searchBtnClosed.classList.remove('active')
-    // headsearch.classList.remove('_active')
-  }
-})
+// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+//   const target = e.target // находим элемент, на котором был клик
+//   if (!target.closest('.search__btn') && !target.closest('.search__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+//     // iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+//     // menuBody.classList.remove('active')
+//     // headsearch.classList.remove('_active')
+//   }
+// })
 
 // Плавная прокрутка
 // const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
