@@ -12,7 +12,8 @@
 .search__input {
   font-size: 16px;
   font-weight: 400;
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 100px 0 20px;
   height: 100%;
 }
 
@@ -51,4 +52,23 @@
     background-size: 100%;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4NCiAgPHBhdGggaWQ9InNlYXJjaCIgZD0iTTI0LDIyLjc0NSwxNy45NTIsMTYuN0ExMC4xNzQsMTAuMTc0LDAsMSwwLDE2LjcsMTcuOTUyTDIyLjc0NSwyNFpNMS43NzUsMTAuMTY4YTguMzkzLDguMzkzLDAsMSwxLDguMzk0LDguMzkzLDguNCw4LjQsMCwwLDEtOC4zOTQtOC4zOTMiIGZpbGw9IiMyMjFmMjAiLz4NCjwvc3ZnPg0K');
   }
+}
+
+.search__btn-closed {
+  position: absolute;
+  top: 17px;
+  right: 65px;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.search__btn-closed.active {
+  opacity: 1;
 }

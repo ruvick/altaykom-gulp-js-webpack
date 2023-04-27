@@ -1,3 +1,188 @@
 // Импорт функционала ==============================================================================================================================================================================================================================================================================================================================
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
+
+// 'use strict';
+// document.addEventListener('DOMContentLoaded', () => {
+// });
+
+const searchInput = document.querySelector(".search__input");
+const searchBtnClosed = document.querySelector(".search__btn-closed");
+const interFacelinkText = document.querySelector(".interface__link_enter");
+// const iconMenu = document.querySelector(".icon-menu");
+// const body = document.querySelector("body");
+// const menuBody = document.querySelector(".mob-menu");
+// const menuListItemElems = document.querySelector(".mob-menu__list");
+// const mobsearch = document.querySelector(".header__mob-search-btn");
+// const headsearch = document.querySelector(".header__search-mob");
+
+
+if (searchInput) {
+  searchInput.addEventListener("click", function () {
+    searchBtnClosed.classList.add("active");
+    interFacelinkText.classList.add("none");
+    // menuBody.classList.toggle("active");
+  });
+}
+
+if (searchBtnClosed) {
+  searchBtnClosed.addEventListener("click", function () {
+    searchBtnClosed.classList.remove("active");
+    interFacelinkText.classList.remove("none");
+    // menuBody.classList.toggle("active");
+  });
+}
+
+
+// searchInput.addEventListener('click', function () {
+//   // let interFacelinkText = document.querySelectorAll(".interface__link-text");
+
+//   if (interFacelinkText.classList.contains("none")) {
+//     interFacelinkText.classList.remove("none");
+//   } else {
+//     interFacelinkText.classList.add("none");
+//   }
+// })
+
+//BURGER
+// if (catBtn) {
+//   catBtn.addEventListener("click", function () {
+//     iconMenu.classList.toggle("active");
+//     body.classList.toggle("_lock");
+//     // menuBody.classList.toggle("active");
+//   });
+// }
+
+// Закрытие моб меню при клике на якорную ссылку
+// if (menuListItemElems) {
+//   menuListItemElems.addEventListener("click", function () {
+//     iconMenu.classList.toggle("active");
+//     body.classList.toggle("_lock");
+//     // menuBody.classList.toggle("active");
+//   });
+// }
+
+// Строка поиска на мобилках
+// if (mobsearch) {
+//   mobsearch.addEventListener("click", function () {
+//     headsearch.classList.toggle("_active");
+//   });
+// }
+
+// Закрытие моб меню при клике вне области меню
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+  const target = e.target // находим элемент, на котором был клик
+  if (!target.closest('.search__btn') && !target.closest('.search__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    // iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+    // menuBody.classList.remove('active')
+    searchBtnClosed.classList.remove('active')
+    // headsearch.classList.remove('_active')
+  }
+})
+
+// Плавная прокрутка
+// const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+
+// smotScrollElems.forEach(link => {
+//   link.addEventListener('click', (event) => {
+//     event.preventDefault()
+//     console.log(event);
+
+//     const id = link.getAttribute('href').substring(1)
+//     console.log('id : ', id);
+
+//     document.getElementById(id).scrollIntoView({
+//       behavior: 'smooth'
+//     });
+//   })
+// });
+
+
+// Кнопка вверх
+// const btnUp = {
+//   el: document.querySelector('.btn-up'),
+//   show() {
+//     // удалим у кнопки класс btn-up_hide
+//     this.el.classList.remove('btn-up_hide');
+//   },
+//   hide() {
+//     // добавим к кнопке класс btn-up_hide
+//     this.el.classList.add('btn-up_hide');
+//   },
+//   addEventListener() {
+//     // при прокрутке содержимого страницы
+//     window.addEventListener('scroll', () => {
+//       // определяем величину прокрутки
+//       const scrollY = window.scrollY || document.documentElement.scrollTop;
+//       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+//       scrollY > 400 ? this.show() : this.hide();
+//     });
+//     // при нажатии на кнопку .btn-up
+//     document.querySelector('.btn-up').onclick = () => {
+//       // переместим в начало страницы
+//       window.scrollTo({
+//         top: 0,
+//         left: 0,
+//         behavior: 'smooth'
+//       });
+//     }
+//   }
+// }
+
+
+// Полоса прокрутки в шапке
+// const scrollProgress = document.getElementById('scroll-progress');
+// const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+// window.addEventListener('scroll', () => {
+//   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+//   scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+// });
+
+
+// Ползунок выбора цены
+// const priceEl = document.querySelector(".price");
+
+// function changePrice(price) {
+//   priceEl.innerText = price;
+//   console.log(price);
+// };
+
+
+// Подсказки
+// tippy('._tippy', {
+//   content: "Подсказка",
+// });
+
+
+// Поочередное открытие нескольких блоков меню, табы, либо что то еще
+// const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
+// const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
+// const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
+
+// BarIconElems.forEach((btn, index) => {
+//   btn.addEventListener('click', () => {
+
+//     if (!btn.classList.contains('sidebar__menu-icon_active')) {
+
+//       BarSubMenuElems.forEach((BarSubMenuElem) => {
+//         BarSubMenuElem.classList.remove('active')
+//       });
+//       BarIconElems.forEach((BarIconElem) => {
+//         BarIconElem.classList.remove('sidebar__menu-icon_active')
+//       });
+//       BarLinkIconElems.forEach((BarLinkIconElem) => {
+//         BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
+//       });
+
+//       BarSubMenuElems[index].classList.add('active')
+//       BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+//       btn.classList.add('sidebar__menu-icon_active')
+//     } else {
+//       BarSubMenuElems[index].classList.remove('active')
+//       BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+//       btn.classList.remove('sidebar__menu-icon_active')
+//     }
+//   })
+// })
+
