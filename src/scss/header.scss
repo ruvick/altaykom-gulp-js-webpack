@@ -22,72 +22,27 @@
 	// z-index: 50000;
 }
 
-.header__info {
+.header__main {
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 8px;
 }
 
-.header__info-column {
+.header__info {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
-.header__info-address {
-	display: flex;
-	white-space: nowrap;
+.header__address-item {
 	margin-right: 57px;
 }
 
-// .address-item {
-// 	width: 18px;
-// 	flex: 0 0 18px;
-// 	height: 18px;
-// 	margin-top: -3px;
-// 	margin-right: 7px;
-// }
-.address-item__icon {
-	width: 18px;
-	flex: 0 0 18px;
-	height: 18px;
-	margin-top: -3px;
-	margin-right: 7px;
-}
+.header__phone-item {}
 
-.header__info-phone {
-	display: flex;
-	white-space: nowrap;
-}
-
-.phone-item {
-	&::before {
-		content: '';
-		float: left;
-		flex: 0 0 18px;
-		height: 18px;
-		margin-top: -3px;
-		margin-right: 7px;
-		background-size: 100%;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTguMDAyIiBoZWlnaHQ9IjE3Ljk5OSIgdmlld0JveD0iMCAwIDE4LjAwMiAxNy45OTkiPg0KICA8ZGVmcz4NCiAgICA8Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCI+DQogICAgICA8cmVjdCBpZD0i0J/RgNGP0LzQvtGD0LPQvtC70YzQvdC40LpfMTAzMyIgZGF0YS1uYW1lPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQuiAxMDMzIiB3aWR0aD0iMTguMDAyIiBoZWlnaHQ9IjE3Ljk5OSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIgZmlsbD0iIzIyMWYyMCIvPg0KICAgIDwvY2xpcFBhdGg+DQogIDwvZGVmcz4NCiAgPGcgaWQ9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMXzcxMCIgZGF0YS1uYW1lPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjCA3MTAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiPg0KICAgIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF83MDkiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgNzA5IiBjbGlwLXBhdGg9InVybCgjY2xpcC1wYXRoKSI+DQogICAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzE3MTIiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDE3MTIiIGQ9Ik0zLjkzOCwxOEg1LjA2M2EuNTY1LjU2NSwwLDAsMCwuNTYzLS41NjJ2LTYuNzVhLjU2NS41NjUsMCwwLDAtLjU2My0uNTYySDMuOTM4bC0uNTYyLjA0YTMuOSwzLjksMCwwLDAtMS41NDMuNTY5LDcuMzEyLDcuMzEyLDAsMSwxLDE0LjMzNiwwLDMuOTIyLDMuOTIyLDAsMCwwLTEuNTQzLS41N2wtLjU2My0uMDM5SDEyLjkzOGEuNTY0LjU2NCwwLDAsMC0uNTYyLjU2MnY2Ljc1YS41NjUuNTY1LDAsMCwwLC41NjIuNTYzaDEuMTI1bC41NjMtLjA0MWEzLjkzOCwzLjkzOCwwLDAsMCwyLjgzNi01Ljg4N0E4Ljk3Niw4Ljk3NiwwLDAsMCwxOCw5VjlBOSw5LDAsMSwwLC41NCwxMi4wNzFhMy45MzgsMy45MzgsMCwwLDAsMi44MzYsNS44ODZaIiBmaWxsPSIjMjIxZjIwIi8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4NCg==');
-	}
-}
-
-.header__info-column-logo {
+.header__logo {
 	margin: 0 25px;
-}
-
-.header__info-select {
-	margin-right: 42px;
-}
-
-.header__info-link {
-	margin-right: 42px;
-
-	&:last-child {
-		margin-right: 0;
-	}
 }
 
 .logo-icon {
@@ -96,6 +51,98 @@
 	width: 220px;
 	flex: 0 0 220px;
 	height: 57px;
+}
+
+.header__menu {}
+
+.menu {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	flex: 0 1 555px;
+}
+
+.menu__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	transition: all 0.5s;
+
+	&:hover {
+		color: #C5934F;
+	}
+}
+
+.menu__link {
+	padding-left: 30px;
+}
+
+.menu__button-arrow {
+	display: flex;
+	width: 7.78px;
+	height: 7px;
+	margin-left: 8px;
+}
+
+.menu__arrow-icon {
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s;
+}
+
+.menu__item:hover .menu__link {
+	color: #C5934F;
+}
+
+.menu__item:hover .menu__arrow-icon {
+	fill: #C5934F;
+	transform: rotate(180deg);
+}
+
+.menu__sub-list {
+	// display: none;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	left: 30px;
+	z-index: 5;
+	min-width: 220px;
+	padding: 18px 20px 22px 20px;
+	border-radius: 15px;
+	background: #fff;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+	transition: all 0.6s;
+}
+
+.menu__item:hover .menu__sub-list {
+	// display: block;
+	overflow: visible;
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.6s;
+}
+
+.menu__sub-item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12.4px;
+	transition: all 0.3s;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.menu__sub-item:hover .menu__sub-link {
+	color: #C5934F;
+}
+
+.menu__sub-link {
+	width: 100%;
+	line-height: 22px;
 }
 
 .header__navigation {

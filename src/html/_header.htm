@@ -1,28 +1,44 @@
 <header id="header" class="header">
 	<div class="header__container _container">
-		<div class="header__info d-flex">
-			<div class="header__info-column">
-				<div class="header__info-address address-item">
+
+		<div class="header__main">
+			<div class="header__info">
+				<div class="header__address-item address-item">
 					<svg class="address-item__icon">
 						<use xlink:href="#map-address"></use>
 					</svg>
 					г. Барнаул, ул. Гридасова, 16
 				</div>
-				<a href="tel:+73852462031" class="header__info-phone phone-item">+7 (3852) 46 20 31</a>
-			</div>
-			<div class="header__info-column header__info-column-logo">
-				<a href="index.html" class="header__logo logo-icon">
-					<svg class="logo-icon__svg">
-						<use xlink:href="#logo"></use>
+				<a href="tel:+73852462031" class="header__phone-item phone-item">
+					<svg class="phone-item__icon">
+						<use xlink:href="#phone-icon"></use>
 					</svg>
+					+7 (3852) 46 20 31
 				</a>
 			</div>
-			<div class="header__info-column">
-				<div class="header__info-select">О нас</div>
-				<a href="#" class="header__info-link">Мастер-классы</a>
-				<a href="#" class="header__info-link">Оплата и доставка</a>
-				<a href="#" class="header__info-link">Гарантии</a>
-			</div>
+			<a href="index.html" class="header__logo logo-icon">
+				<svg class="logo-icon__svg">
+					<use xlink:href="#logo"></use>
+				</svg>
+			</a>
+			<ul class="header__menu menu">
+				<li class="menu__item"><a href="#" class="menu__link">О нас</a>
+					<button type="button" data-spoller class="menu__button-arrow">
+						<svg class="menu__arrow-icon">
+							<use xlink:href="#arrow-bottom"></use>
+						</svg>
+					</button>
+					<ul class="menu__sub-list">
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link">О компании</a></li>
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link">Контакты</a></li>
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link">Поставщики</a></li>
+						<li class="menu__sub-item"><a href="#" class="menu__sub-link">Новости и статьи</a></li>
+					</ul>
+				</li>
+				<li class="menu__item"><a href="#" class="menu__link">Мастер-классы</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
+			</ul>
 		</div>
 
 		<div class="header__navigation">
@@ -50,6 +66,7 @@
 				<a href="#" class="interface__link interface__link_bascet"><span class="interface__link-text">Корзина</span></a>
 			</div>
 		</div>
+
 	</div>
 </header>
 

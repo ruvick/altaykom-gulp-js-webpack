@@ -2,6 +2,41 @@
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
+// Адрес пункт, в шапке
+.address-item {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.address-item__icon {
+  width: 18px;
+  flex: 0 0 18px;
+  height: 18px;
+  margin-top: -1.5px;
+  margin-right: 7px;
+}
+
+.phone-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #C5934F;
+    fill: #C5934F;
+  }
+}
+
+.phone-item__icon {
+  width: 18px;
+  flex: 0 0 18px;
+  height: 18px;
+  margin-top: -3px;
+  margin-right: 7px;
+}
+
 // ИНТЕРАКТИВНЫЕ КНОПКИ===========================================================================
 // Кнопки интерфейса
 .interface {
