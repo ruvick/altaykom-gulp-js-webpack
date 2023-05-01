@@ -6,12 +6,22 @@
 // document.addEventListener('DOMContentLoaded', () => {
 // });
 
-const search = document.querySelector(".search");
-const searchInput = document.querySelector(".search__input");
-const searchBtnClosed = document.querySelector(".search__btn-closed");
+const body = document.querySelector("body");
+const catBtn = document.querySelector('.button-catalog');
+const iconMenu = document.querySelector('.icon-menu');
+const search = document.querySelector(".search-form");
+const searchInput = document.querySelector(".search-form__input");
+const searchBtnClosed = document.querySelector(".search-form__btn-closed");
 const interFacelinkText = document.querySelectorAll(".interface__link-text");
-// const iconMenu = document.querySelector(".icon-menu");
-// const body = document.querySelector("body");
+const menuCatalog = document.querySelector('.menu-catalog');
+
+if (catBtn) {
+  catBtn.addEventListener('click', function () {
+    iconMenu.classList.toggle('active');
+    menuCatalog.classList.toggle('active');
+    // body.classList.toggle('popup-show');
+  });
+}
 
 // Срабатывание поиска
 interFacelinkText.forEach(btn => {
@@ -27,7 +37,7 @@ interFacelinkText.forEach(btn => {
   })
   window.addEventListener('click', e => { // при клике в любом месте окна браузера
     const target = e.target // находим элемент, на котором был клик
-    if (!target.closest('.search__btn') && !target.closest('.search__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    if (!target.closest('.search-form__btn') && !target.closest('.search-form__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
       search.classList.remove("active");
       searchBtnClosed.classList.remove('active')
       btn.classList.remove("none");

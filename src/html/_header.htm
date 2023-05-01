@@ -42,22 +42,22 @@
 		</div>
 
 		<div class="header__navigation">
-			<button class="header__navigation-carBtn" aria-label="Кнопка каталог">
-				<div class="header__navigation-carBtn-text">каталог</div>
-				<div class="header__icon-menu icon-menu">
+			<div class="header__button-catalog button-catalog">
+				<div class="button-catalog__text">каталог</div>
+				<button type="button" class="button-catalog__icon-menu icon-menu" aria-label="Бургер иконка">
 					<span></span>
 					<span></span>
 					<span></span>
-				</div>
-			</button>
-			<form action="#" method="get" class="header__navigation-search-form search">
-				<input type="text" placeholder="Поиск по каталогу" class="search__input" value="" name="search" />
-				<span tabindex="1" class="search__btn-closed">
-					<svg class="search__btn-closed-icon">
+				</button>
+			</div>
+			<form action="#" method="get" class="header__search search-form">
+				<input type="text" placeholder="Поиск по каталогу" class="search-form__input" value="" name="search" />
+				<span tabindex="1" class="search-form__btn-closed">
+					<svg class="search-form__btn-closed-icon">
 						<use xlink:href="#popup-close"></use>
 					</svg>
 				</span>
-				<button type="submit" tabindex="2" value="" id="searchsubmit" class="search__btn"></button>
+				<button type="submit" tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
 			</form>
 			<div class="header__navigation-interface interface">
 				<a href="#" class="interface__link interface__link_enter"><span class="interface__link-text">Войти</span></a>
@@ -68,8 +68,8 @@
 		</div>
 
 	</div>
+	<div class="menu-catalog">
+		<div class="menu-catalog__transparent"></div>
+		<div class="menu-catalog__body">Текст</div>
+	</div>
 </header>
-
-<!-- <a href="#" class="interface__link interface__link_enter">Войти</a>
-<a href="#" class="interface__link interface__link_favourites">Избранное</a>
-<a href="#" class="interface__link interface__link_bascet">Корзина</a> -->
