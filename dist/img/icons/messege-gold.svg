@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_1011" data-name="Прямоугольник 1011" width="30" height="30" transform="translate(20 8)" fill="#c5934f" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_material-email" data-name="Icon material-email" transform="translate(-20 -8)" clip-path="url(#clip-path)">
+    <path id="Icon_material-email-2" data-name="Icon material-email" d="M28.65,6H5.85A2.846,2.846,0,0,0,3.014,8.85L3,25.95A2.858,2.858,0,0,0,5.85,28.8h22.8a2.858,2.858,0,0,0,2.85-2.85V8.85A2.858,2.858,0,0,0,28.65,6Zm0,5.7-11.4,7.125L5.85,11.7V8.85l11.4,7.125L28.65,8.85Z" transform="translate(17.75 5.6)" fill="#c5934f"/>
+  </g>
+</svg>
