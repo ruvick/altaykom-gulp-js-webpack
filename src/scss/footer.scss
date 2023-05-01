@@ -2,8 +2,8 @@
 .footer {
   padding: 60px 0 28px 0;
   color: #fff;
-  background: #221F20;
-  border-radius: 65px 65px 0 0;
+  border-radius: 100px 100px 0px 0px;
+  background: #221f20;
 
   a {
     color: #fff;
@@ -24,7 +24,7 @@
   margin: 0 -15px;
 }
 
-.footer__menu-column {
+.footer__column {
   flex: 0 1 33.333%;
   padding: 0 15px;
 }
@@ -34,18 +34,23 @@
   margin-bottom: 30px;
 }
 
-.footer__menu-list {}
+.footer__list {}
 
-.footer__menu-list-item {
-  opacity: 0.8;
-  margin-bottom: 15px;
+.footer__list-item {
+  opacity: 0.7;
+  margin-bottom: 10px;
+  transition: $mainTransition;
 
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
-.footer__menu-list-item-link {}
+.footer__list-item-link {}
 
 .footer__contacts {
   display: flex;
@@ -53,27 +58,37 @@
   align-items: start;
 }
 
-.footer__contacts-phone {
+.footer__phone {
   display: block;
   font-size: 30px;
-  margin-bottom: 9px;
+  margin-bottom: 15px;
+  transition: $mainTransition;
+
+  &:hover {
+    color: #C5934F;
+  }
 }
 
-.footer__contacts-time-work {
+.footer__time-work {
   font-size: 16px;
   opacity: 0.8;
   margin-top: 20px;
   margin-bottom: 29px;
 }
 
-.footer__contacts-email {
+.footer__email {
   font-size: 22px;
   display: inline-block;
   color: #C5934F !important;
-  border-bottom: 1px solid #C5934F
+  text-decoration: underline !important;
+  transition: $mainTransition;
+
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
-.footer__contacts-btn {
+.footer__btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -83,6 +98,11 @@
   margin-top: 40px;
   border: 1px solid #fff;
   border-radius: 15px;
+
+  &:hover {
+    color: #221F20;
+    background: #fff;
+  }
 }
 
 .footer__bottom {
@@ -98,6 +118,13 @@
 
 .footer__policy {
   font-size: 14px;
+  opacity: 0.8;
+  color: #fff;
+  transition: $mainTransition;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .footer__copyright {
