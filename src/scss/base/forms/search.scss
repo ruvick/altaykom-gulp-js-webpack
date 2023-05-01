@@ -12,13 +12,13 @@
   cursor: pointer;
 
   &:hover {
-    border: 2px solid #221F20;
+    border: 1px solid #221F20;
   }
 }
 
 .search-form.active {
   flex: 0 1 100%;
-  border: 2px solid #221F20;
+  border: 1px solid #221F20;
   transition: all 0.8s;
 }
 

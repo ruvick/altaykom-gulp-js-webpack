@@ -71,14 +71,14 @@ interFacelinkText.forEach(btn => {
 // }
 
 // Закрытие моб меню при клике вне области меню
-// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-//   const target = e.target // находим элемент, на котором был клик
-//   if (!target.closest('.menu-catalog') && !target.closest('.menu-lineBlock')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-//     iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
-//     menuCatalog.classList.remove('active');
-//     // headsearch.classList.remove('_active')
-//   }
-// })
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+  const target = e.target // находим элемент, на котором был клик
+  if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
+    menuCatalog.classList.remove('active');
+    // headsearch.classList.remove('_active')
+  }
+})
 
 // Плавная прокрутка
 // const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
