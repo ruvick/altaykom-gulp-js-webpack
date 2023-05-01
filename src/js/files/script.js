@@ -39,7 +39,7 @@ interFacelinkText.forEach(btn => {
     const target = e.target // находим элемент, на котором был клик
     if (!target.closest('.search-form__btn') && !target.closest('.search-form__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
       search.classList.remove("active");
-      searchBtnClosed.classList.remove('active')
+      searchBtnClosed.classList.remove('active');
       btn.classList.remove("none");
     }
   })
@@ -73,9 +73,9 @@ interFacelinkText.forEach(btn => {
 // Закрытие моб меню при клике вне области меню
 // window.addEventListener('click', e => { // при клике в любом месте окна браузера
 //   const target = e.target // находим элемент, на котором был клик
-//   if (!target.closest('.search__btn') && !target.closest('.search__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-//     // iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
-//     // menuBody.classList.remove('active')
+//   if (!target.closest('.menu-catalog') && !target.closest('.menu-lineBlock')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+//     iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
+//     menuCatalog.classList.remove('active');
 //     // headsearch.classList.remove('_active')
 //   }
 // })
