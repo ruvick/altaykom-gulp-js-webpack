@@ -59,7 +59,7 @@
 		"vanilla-lazyload": "latest",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
-		"webpack": "latest",
+		"webpack": "^5.81.0",
 		"webpack-cli": "latest",
 		"webpack-dev-server": "latest",
 		"webpack-stream": "latest"

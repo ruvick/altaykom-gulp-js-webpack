@@ -14,11 +14,21 @@ const searchInput = document.querySelector(".search-form__input");
 const searchBtnClosed = document.querySelector(".search-form__btn-closed");
 const interFacelinkText = document.querySelectorAll(".interface__link-text");
 const menuCatalog = document.querySelector('.menu-catalog');
+const interAddingBascetBtn = document.querySelector('.interactive-adding-bascet__button');
+const interAddingBascet = document.querySelector('.interactive-adding-bascet');
+const interAddingQuantity = document.querySelector('.interactive-adding-quantity');
+
+if (interAddingBascetBtn) {
+  interAddingBascetBtn.addEventListener('click', function () {
+    interAddingBascet.classList.add('none');
+    interAddingQuantity.classList.toggle('active');
+  });
+}
 
 if (catBtn) {
   catBtn.addEventListener('click', function () {
-    iconMenu.classList.toggle('active');
-    menuCatalog.classList.toggle('active');
+    iconMenu.classList.add('active');
+    menuCatalog.classList.add('active');
     // body.classList.toggle('popup-show');
   });
 }
@@ -43,6 +53,24 @@ interFacelinkText.forEach(btn => {
       btn.classList.remove("none");
     }
   })
+})
+
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+  const target = e.target // находим элемент, на котором был клик
+  if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
+    menuCatalog.classList.remove('active');
+    // headsearch.classList.remove('_active')
+  }
+})
+
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+  const target = e.target // находим элемент, на котором был клик
+  if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    interAddingBascet.classList.remove('none');
+    interAddingQuantity.classList.remove('active');
+    // headsearch.classList.remove('_active')
+  }
 })
 
 //BURGER
@@ -70,15 +98,6 @@ interFacelinkText.forEach(btn => {
 //   });
 // }
 
-// Закрытие моб меню при клике вне области меню
-window.addEventListener('click', e => { // при клике в любом месте окна браузера
-  const target = e.target // находим элемент, на котором был клик
-  if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-    iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
-    menuCatalog.classList.remove('active');
-    // headsearch.classList.remove('_active')
-  }
-})
 
 // Плавная прокрутка
 // const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
