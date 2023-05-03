@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Статья"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      @@include('html/components/_lineBlock.htm',{})
+
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
+              <span>
+                <a href="home.html"> главная </a> / <a href="blog.html"> блог </a> /
+                <span class="breadcrumb_last" aria-current="page"> молочный чай с тапиокой - желейными шариками
+                  «мармелатье» </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-title article-section-title">
+        <div class="_container">
+          <div class="section-title__title title">
+            Молочный чай с тапиокой - желейными шариками «мармелатье»
+          </div>
+        </div>
+      </section>
+
+      <section class="article-section">
+        <div class="_container">
+
+          <div class="inerface-info article-section__inerface-info">
+            <a href="#" class="inerface-info__item sticker-info">#рецепты</a>
+            <div class="inerface-info__item date-info">20 января 2023</div>
+
+            <div class="inerface-info__item article-card__body-views d-flex">
+              <div class="article-card__body-views-icon">
+                <svg class="article-card__body-views-icon-svg">
+                  <use xlink:href="#views-icon"></use>
+                </svg>
+              </div>
+              <div class="article-card__body-views-value views-value">100</div>
+            </div>
+
+            <button class="inerface-info__item will-share"></button>
+          </div>
+
+          <div class="content-article main-content">
+            <div class="main-content__inner d-flex">
+
+              <div class="main-content__column main-content__column_left">
+
+                <div class="content-article__text">
+                  <p>Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в
+                    контекст
+                    сайта, на котором используется, и нужен только для заполнения пространства. Зачастую такой текст
+                    даже не
+                    имеет четкого смысла и представляет собой набор слов и фраз, которые вроде бы формируют
+                    грамматически верные конструкции, но какой-либо мысли в них не прослеживается.
+                  </p>
+                  <p>Рыбу используют вебмастера, веб-дизайнеры и разработчики, у которых нет под рукой готового текста,
+                    но нужно как-то оценить внешний вид контента на готовой странице. Оценить, насколько хорошо он
+                    вписывается в дизайн и не «плывет» ли верстка.
+                  </p>
+                </div>
+
+                <div class="content-article__img-width">
+                  <div class="content-article__img-width-image">
+                    <img src="@img/article/01.jpg" alt="Картинка блога">
+                  </div>
+                  <div class="content-article__signature-img">
+                    Подпись к фото или видео будет располагаться здесь
+                  </div>
+                </div>
+
+                <div class="content-article__text">
+                  <p>Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в
+                    контекст сайта, на котором используется, и нужен только для заполнения пространства. Зачастую такой
+                    текст даже не имеет четкого смысла и представляет собой набор слов и фраз, которые вроде бы
+                    формируют грамматически верные конструкции, но какой-либо мысли в них не прослеживается.</p>
+                </div>
+
+                <div class="content-article__float-block">
+                  <div class="content-article__float-block-img">
+                    <img src="@img/article/02.jpg" alt="">
+                  </div>
+                  <div class="content-article__float-block-text">
+                    <p>
+                      Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в
+                      контекст сайта, на котором используется, и нужен только для заполнения пространства. Зачастую
+                      такой текст даже не имеет четкого смысла и представляет собой набор слов и фраз, которые вроде бы
+                      формируют грамматически верные конструкции, но какой-либо мысли в них не прослеживается.
+                    </p>
+                    <p>
+                      Рыбу используют вебмастера, веб-дизайнеры и разработчики, у которых нет под рукой готового текста,
+                      но нужно как-то оценить внешний вид контента на готовой странице. Оценить, насколько хорошо он
+                      вписывается в дизайн и не «плывет» ли верстка. Рыбный текст – это текст, выполняющий исключительно
+                      утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только
+                      для заполнения пространства. Зачастую такой текст даже не имеет четкого смысла и представляет
+                      собой набор слов и фраз, которые вроде бы формируют грамматически верные конструкции, но
+                      какой-либо мысли в них не прослеживается.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="main-content__column main-content__column_right">
+                <div class="sending-banner d-flex">
+                  <div class="sending-banner__img">
+                    <img src="img/sending.png" alt="" />
+                  </div>
+                  <div class="sending-banner__column">
+                    <div class="sending-banner__descp">
+                      Рецептуры, мастер-классы, семинары, новинки и многое другое
+                    </div>
+                    <div class="sending-banner__title">будь в курсе новых событий</div>
+                  </div>
+                  <div class="sending-banner__column">
+                    <form action="#" class="sending-banner__form">
+                      <div class="form__line">
+                        <input id="email" autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                          data-value="Email*" class="sending-banner__input input _email _req" />
+                      </div>
+                      <button type="submit" class="sending-banner__btn form__btn"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    </main>
+    @@include('html/_footer.htm',{})
+    @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
