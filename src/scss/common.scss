@@ -299,6 +299,15 @@
   background: #fff;
   box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.09);
   transition: $mainTransition;
+  // pointer-events: none;
+}
+
+.menu-lineBlock__item:hover .sub-list {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  // pointer-events: auto;
 }
 
 .sub-list-block {
@@ -320,13 +329,6 @@
   &:hover {
     color: #C5934F;
   }
-}
-
-.menu-lineBlock__item:hover .sub-list {
-  height: auto;
-  opacity: 1;
-  visibility: visible;
-  overflow: visible;
 }
 
 .lineBlock-blk {

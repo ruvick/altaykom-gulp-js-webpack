@@ -78,6 +78,7 @@
 
 .menu__link {
 	padding-left: 30px;
+	padding-bottom: 1.5px;
 }
 
 .menu__button-arrow {
@@ -93,13 +94,16 @@
 	transition: all 0.3s;
 }
 
-.menu__item:hover .menu__link {
-	color: #C5934F;
-}
+@media (any-hover: hover) {
+	.menu__item:hover .menu__link {
+		color: #C5934F;
+	}
 
-.menu__item:hover .menu__arrow-icon {
-	fill: #C5934F;
-	transform: rotate(180deg);
+
+	.menu__item:hover .menu__arrow-icon {
+		fill: #C5934F;
+		transform: rotate(180deg);
+	}
 }
 
 .menu__sub-list {
@@ -108,7 +112,7 @@
 	overflow: hidden;
 	opacity: 0;
 	position: absolute;
-	top: 35px;
+	top: 28px;
 	left: 30px;
 	z-index: 5;
 	min-width: 220px;
@@ -116,15 +120,20 @@
 	border-radius: 15px;
 	background: #fff;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
-	transition: all 0.6s;
+	transition: all 0.3s ease 0s;
+	pointer-events: none;
+	transform: translate(0, -10px);
 }
 
-.menu__item:hover .menu__sub-list {
-	// display: block;
-	overflow: visible;
-	visibility: visible;
-	opacity: 1;
-	transition: all 0.6s;
+@media (any-hover: hover) {
+	.menu__item:hover .menu__sub-list {
+		// display: block;
+		overflow: visible;
+		visibility: visible;
+		opacity: 1;
+		pointer-events: auto;
+		transform: translate(0, 0);
+	}
 }
 
 .menu__sub-item {
