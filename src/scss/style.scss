@@ -1375,5 +1375,224 @@ body {
 
 //========================================================================================================================================================
 
+.sales-leaders-slider__slide {
+	display: flex;
+}
+
+.card-product {
+	flex: 0 1 220px;
+
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	border-radius: 20px;
+	background: #fff;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.card-product__img {
+	position: relative;
+	flex: 0 0 100%;
+	min-height: 200px;
+	max-height: 200px;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 10px;
+
+	img {
+		transition: 1s;
+	}
+}
+
+.card-product:hover .card-product__img img {
+	transform: scale(1.2);
+}
+
+.card-product__sticker-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 8px;
+	overflow: hidden;
+}
+
+.sticker-product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 32px;
+	height: 21px;
+	font-size: 12px;
+	line-height: 1.3;
+	text-align: center;
+	color: #fff;
+	padding: 3px 6.2px;
+	border-radius: 7px;
+	background: #22221f;
+	overflow: hidden;
+}
+
+.sticker-product_red {
+	background: #EA2838;
+}
+
+.card-product__sticker-block .sticker-product {
+	margin-right: 3px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.sticker-product-favorite {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 31px;
+	flex: 0 0 31px;
+	height: 31px;
+	border-radius: 10px;
+	background: #fff;
+	overflow: hidden;
+	margin-left: auto;
+}
+
+.sticker-product-favorite__icon {
+	width: 17.5px;
+	flex: 0 0 17.5px;
+	height: 17px;
+}
+
+.sticker-product-rating {
+	position: absolute;
+	left: 0;
+	z-index: 5;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1px 10px 1px 3px;
+	border-radius: 0px 10px 0px 0px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.sticker-product-rating__rating {
+	flex: 0 0 14px;
+	width: 14px;
+	height: 14px;
+	margin-right: 4.4px;
+}
+
+.sticker-product-rating__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 14.6px;
+	width: 14.6px;
+	height: 13px;
+}
+
+.sticker-product-rating__value {
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.card-product__descp {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+	margin-bottom: 28px;
+}
+
+.card-product__descp-group {
+	font-size: 12px;
+	line-height: 22/12 *100%;
+	font-weight: 700;
+	margin-bottom: 4px;
+}
+
+.card-product__descp-title {
+	font-size: 16px;
+	line-height: 22/16 *100%;
+}
+
+.sticker-product-value {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	color: #161615;
+	padding: 1px 10px;
+	border-radius: 5px;
+	background: #f3f3f4;
+	overflow: hidden;
+}
+
+.card-product__descp-sticker {
+	margin-top: 8px;
+}
+
+.card-product__interactive {}
+
+.card-product__interactive-how {
+	font-size: 14px;
+	line-height: 22/14 * 100%;
+	margin-bottom: 3px;
+}
+
+.interactive-how_green {
+	color: #34B866;
+}
+
+.card-product__interactive-price {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.card-product__interactive-price-new {
+	font-size: 20px;
+	line-height: 22/20 *100%;
+}
+
+.interactive-price-new_red {
+	color: #EA2838;
+}
+
+.card-product .rub:after {
+	margin-left: 6px;
+}
+
+.card-product__interactive-price-old {
+	font-size: 16px;
+	line-height: 22/16 *100%;
+	text-decoration: line-through;
+	margin-left: 20px;
+}
+
+.card-product__interactive-adding {
+	height: 50px;
+	border-radius: 15px;
+	background: #f3f3f4;
+	border: 1.5px solid #f3f3f4;
+	transition: all 1s;
+
+	&:hover {
+		border: 1.5px solid #221F20;
+	}
+}
+
+//========================================================================================================================================================
+
 // АДАПТИВ ==========================================
 @import "media";
