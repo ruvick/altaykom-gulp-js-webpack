@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Каталог физлицо" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        @@include('html/components/_lineBlock.htm',{})
+
+        <div class="breadcrumbs">
+          <div class="_container">
+            <div class="breadcrumbs__inner">
+              <span>
+                <span>
+                  <a href="home.html"> главная </a> /
+                  <span class="breadcrumb_last" aria-current="page">
+                    ингредиенты
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <section class="section-title">
+          <div class="_container">
+            <div class="section-title__title title-main">ингредиенты</div>
+          </div>
+        </section>
+
+        @@include('html/components/_recently-watched.htm',{})
+        @@include('html/components/_sending.htm',{})
+      </main>
+      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

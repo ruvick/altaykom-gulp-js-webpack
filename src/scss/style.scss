@@ -1374,10 +1374,6 @@ body {
 }
 
 //========================================================================================================================================================
-.sales-leaders-slider .swiper-wrapper {
-	padding: 10px;
-}
-
 
 .sales-leaders-slider__slide {
 	display: flex;
@@ -1398,9 +1394,9 @@ body {
 
 .card-product__img {
 	position: relative;
-	flex: 0 0 100%;
-	min-height: 200px;
-	max-height: 200px;
+	// flex: 0 0 100%;
+	height: 200px;
+	height: 200px;
 	border-radius: 15px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1571,6 +1567,7 @@ body {
 
 .card-product__interactive-price {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	margin-bottom: 10px;
 }
@@ -1770,7 +1767,22 @@ body {
 	color: #EA2838;
 	transform: rotate(-20deg);
 }
+//========================================================================================================================================================
 
+.recently-watched {
+
+}
+.recently-watched-slider__slide .card-product {
+
+}
+.recently-watched-slider__slide .card-product__img {
+	flex: 0 0 100%;
+	height: 175px;
+}
+.recently-watched-slider__slide .card-product__descp-title {
+	font-size: 14px;
+	line-height: 18/14 *100%;
+}
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
