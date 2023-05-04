@@ -1381,11 +1381,12 @@ body {
 
 .sales-leaders-slider__slide {
 	display: flex;
+	height: 100%;
 }
 
 .card-product {
-	flex: 0 1 220px;
-
+	// flex: 0 1 220px;
+	flex: 0 1 100%;
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
@@ -1401,6 +1402,10 @@ body {
 	min-height: 200px;
 	max-height: 200px;
 	border-radius: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../img/nophoto.jpg');
 	overflow: hidden;
 	margin-bottom: 10px;
 
@@ -1443,6 +1448,9 @@ body {
 
 .sticker-product_red {
 	background: #EA2838;
+}
+.sticker-product_blue {
+	background: #46A5FC;
 }
 
 .card-product__sticker-block .sticker-product {
@@ -1513,7 +1521,7 @@ body {
 	display: flex;
 	align-items: start;
 	flex-direction: column;
-	margin-bottom: 28px;
+	margin-bottom: 8px;
 }
 
 .card-product__descp-group {
@@ -1557,6 +1565,9 @@ body {
 .interactive-how_green {
 	color: #34B866;
 }
+.interactive-how_grey {
+	color: #8F8E8E;
+}
 
 .card-product__interactive-price {
 	display: flex;
@@ -1572,7 +1583,9 @@ body {
 .interactive-price-new_red {
 	color: #EA2838;
 }
-
+.interactive-price-new_grey {
+	color: #8F8E8E;
+}
 // .card-product .rub:after {
 // 	margin-left: 6px;
 // }
@@ -1684,6 +1697,80 @@ body {
 	line-height: 24px;
 	color: #8F8E8E;
 }
+.sales-leaders-banner-slide {
+	// display: flex;
+	// height: 100%;
+	width: 450px !important;
+}
+.sales-leaders-banner {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 34px 40px;
+	background: #221F20;
+	align-items: start;
+	border-radius: 30px;
+	overflow: hidden;
+	background-position: 0 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url('../img/card-product/05.png');
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+.sales-leaders-banner__sticker {
+	display: flex;
+	align-items: center;
+	padding: 2.5px 20px 2.5px 5px;
+	border-radius: 10px;
+	background: #EA2838;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.sales-leaders-banner__sticker-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 24px;
+	width: 24px;
+	height: 24px;
+	margin-right: 5px;
+	overflow: hidden;
+}
+.sales-leaders-banner__sticker-text {
+	color: #fff;
+}
+.sales-leaders-banner__sticker-title {
+	font-size: 26px;
+	line-height: 36px;
+	color: #fff;
+}
+.sales-leaders-banner__sticker-price {
+	position: absolute;
+	left: 9%;
+	bottom: 21.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 127px;
+	height: 104px;
+	padding: 10px 0 0 0;
+	overflow: hidden;
+	background-position: 0 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('../img/card-product/sticker-price.png');
+}
+.sales-leaders-banner__sticker-price-text {
+	font-size: 24px;
+	line-height: 27px;
+	font-weight: 700;
+	color: #EA2838;
+	transform: rotate(-20deg);
+}
+
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================

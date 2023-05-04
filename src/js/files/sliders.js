@@ -173,7 +173,7 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 5,
+			slidesPerView: 6,
 			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,

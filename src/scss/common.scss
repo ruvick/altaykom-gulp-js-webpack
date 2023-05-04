@@ -589,13 +589,13 @@
 
 // Arrows
 .swiper-button__inner {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 40%;
-  // left: 0;
-  z-index: 50;
-  width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 50%;
+	z-index: 50;
+	width: 100%;
+	transform: translate(0, -50%);
 }
 
 .swiper-button {
