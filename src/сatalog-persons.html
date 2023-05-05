@@ -60,9 +60,20 @@
           <div class="_container">
             <div class="catalog__directory-management directory-management">
               <div class="directory-management__filters-item">
-                <button type="bitton" class="directory-management__filters-btn">
-                  Фильтры
-                </button>
+                <div class="directory-management__filters-btnBlock">
+                  <span
+                    class="directory-management__filters-icon filters-icon-closed"
+                  ></span>
+                  <button
+                    type="bitton"
+                    class="directory-management__filters-btn"
+                  >
+                    Фильтры
+                  </button>
+                  <span
+                    class="directory-management__filters-icon filters-icon-open"
+                  ></span>
+                </div>
               </div>
               <div class="directory-management-sorting">
                 <div class="directory-management-sorting-number">
@@ -266,7 +277,50 @@
                           Еденица заказа
                         </button>
                         <div class="spollers__body">
-                          <div class="form__line"></div>
+                          <div class="form__line">
+                            <label data-index="7" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="1 кг"
+                              />
+                              <span class="checkbox__text"
+                                ><span>1 кг</span></span
+                              >
+                            </label>
+                            <label data-index="8" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="3 кг"
+                              />
+                              <span class="checkbox__text"
+                                ><span>3 кг</span></span
+                              >
+                            </label>
+                            <label data-index="9" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="5 кг"
+                              />
+                              <span class="checkbox__text"
+                                ><span>5 кг</span></span
+                              >
+                            </label>
+                          </div>
                         </div>
                       </div>
                       <div class="page__sidebar-navigation-col spollers__item">
@@ -278,7 +332,36 @@
                           Наличие
                         </button>
                         <div class="spollers__body">
-                          <div class="form__line"></div>
+                          <div class="form__line">
+                            <label data-index="7" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="В наличии"
+                              />
+                              <span class="checkbox__text"
+                                ><span>В наличии</span></span
+                              >
+                            </label>
+                            <label data-index="8" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Под заказ"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Под заказ</span></span
+                              >
+                            </label>
+                          </div>
                         </div>
                       </div>
                       <div
