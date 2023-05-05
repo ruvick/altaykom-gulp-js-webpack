@@ -9,7 +9,7 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-	const html = document.querySelector("html");
+	// const html = document.querySelector("html");
   const body = document.querySelector("body");
   const catBtn = document.querySelector('.button-catalog');
   const iconMenu = document.querySelector('.icon-menu');
