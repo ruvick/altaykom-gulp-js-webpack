@@ -1797,15 +1797,27 @@ body {
 // Страница Каталог
 
 .catalog {
+	padding-bottom: 40px;
+}
+.catalog-filterBlock__item {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #E3E3E3;
 }
 .page__body {
 	justify-content: space-between;
 }
 .sidebar {
 	flex: 0 0 201/1420 * 100%;
-	margin-right: 15px;
 	max-width: 300px;
-	border: 1px solid #000;
+	margin-right: 15px;
+	// border: 1px solid #000;
+}
+.page__sidebar.hide {
+	flex: 0;
+	margin-right: 0;
+}
+.page__sidebar.hide .page__sidebar-navigation {
+	display: none;
 }
 .page__main {
 	flex: 0 0 1180/1420 * 100%;
@@ -1826,6 +1838,12 @@ body {
 	display: flex;
 	flex: 0 1 20%;
 	padding: 0 10px 20px 10px;
+}
+.page__main.width {
+	flex: 0 1 100%;
+}
+.page__main.width .main-prod-card__column {
+	flex: 0 1 16.65%;
 }
 .page__show-more {
 	margin-bottom: 40px;
@@ -1867,6 +1885,82 @@ body {
 }
 
 .main-pagging__select {
+}
+.page__sidebar-navigation .checkbox {
+	display: block;
+	margin-bottom: 15px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.page__sidebar-navigation-open {
+	margin-top: -15px;
+}
+.page__sidebar-navigation-open .spollers__title {
+	display: none;
+}
+.filter-controll__btn {
+	width: 100%;
+	font-size: 14px;
+	padding: 10px 12px;
+	&:hover{
+		color: #fff;
+		border: 1px solid #221F20;
+		background: #221F20;
+	}
+}
+.filter-controll__btn-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 9.5px;
+	width: 9.4px;
+	height: 14px;
+	margin-left: 16px;
+	fill: #8f8e8e;
+}
+.filter-controll__btn:hover .filter-controll__btn-icon {
+	fill: #fff;
+}
+.page__sidebar-navigation-filter-controll .btn {
+	margin-bottom: 10px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.btn_reset {
+	color: #E3E3E3;
+	border: 1px solid #E3E3E3;
+}
+.directory-management {
+	display: flex;
+	align-items: center;
+}
+.directory-management__filters-item {
+	flex: 0 0 245px;
+}
+.directory-management__filters-btn {
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	// line-height: 22/20*100%;
+	color: #161615;
+}
+.directory-management-sorting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 1 100%;
+}
+.directory-management-sorting-number {
+	font-size: 30px;
+	// line-height: 55/30*100%;
+	color: #161615;
+}
+.directory-management-sorting-select {
+}
+.catalog__directory-management {
+	margin-bottom: 30px;
 }
 //========================================================================================================================================================
 

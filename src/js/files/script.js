@@ -9,6 +9,7 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
+	const html = document.querySelector("html");
   const body = document.querySelector("body");
   const catBtn = document.querySelector('.button-catalog');
   const iconMenu = document.querySelector('.icon-menu');
@@ -20,6 +21,18 @@ window.onload = function () {
   const interAddingBascetBtn = document.querySelector('.interactive-adding-bascet__button');
   const interAddingBascet = document.querySelector('.interactive-adding-bascet');
   const interAddingQuantity = document.querySelector('.interactive-adding-quantity');
+	const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
+	const pageSidebar = document.querySelector('.page__sidebar');
+	const pageMain = document.querySelector('.page__main');
+	
+	
+  if (catBtn) {
+    catBtn.addEventListener('click', function () {
+      iconMenu.classList.toggle('active');
+      menuCatalog.classList.toggle('active');
+      html.classList.toggle('lock');
+    });
+  }
 
   if (interAddingBascetBtn) {
     interAddingBascetBtn.addEventListener('click', function () {
@@ -28,11 +41,11 @@ window.onload = function () {
     });
   }
 
-  if (catBtn) {
-    catBtn.addEventListener('click', function () {
-      iconMenu.classList.toggle('active');
-      menuCatalog.classList.toggle('active');
-      // body.classList.toggle('popup-show');
+	if (ManagementFiltersBtn) {
+    ManagementFiltersBtn.addEventListener('click', function () {
+      // ManagementFiltersBtn.classList.togle('active');
+      pageSidebar.classList.toggle('hide');
+			pageMain.classList.toggle('width');
     });
   }
 
@@ -63,6 +76,7 @@ window.onload = function () {
     if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
       iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
       menuCatalog.classList.remove('active');
+			html.classList.remove('lock');
       // headsearch.classList.remove('_active')
     }
   })

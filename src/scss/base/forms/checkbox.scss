@@ -1,38 +1,112 @@
 .checkbox {
 	position: relative;
-	&:not(:last-child) {
-		margin-bottom: em(5);
-	}
+
 	// .checkbox__input
 	&__input {
 		position: absolute;
 		width: 0;
 		height: 0;
 		opacity: 0;
-		&:focus + .checkbox__label:before {
-			box-shadow: 0 0 5px #000;
-		}
-		&:checked + .checkbox__label:before {
-			background: #000;
+		visibility: hidden;
+
+		&:checked+.checkbox__text:before {
+			background: #000 url("../img/icons/check.svg") center no-repeat;
 		}
 	}
-	// .checkbox__label
-	&__label {
-		cursor: pointer;
-		display: inline-flex;
+
+	// .checkbox__text
+	&__text {
+		display: flex;
 		align-items: center;
 		position: relative;
-		gap: 10px;
+		font-size: 14px;
+		// color: #ffffff;
+		// letter-spacing: -0.3px;
+		// line-height: calc(20 / 14);
+		line-height: 1;
+		color: #161615;
+		cursor: pointer;
+
 		&:before {
 			content: "";
 			align-self: flex-start;
-			flex: 0 0 20px;
-			width: 20px;
-			height: 20px;
-			border: 1px solid #a7a9ac;
+			margin: 0px 10px 0px 0px;
+			flex: 0 0 18px;
+			left: 0;
+			top: 0;
+			width: 18px;
+			height: 18px;
+			background: #fff;
+			border: 1px solid #8F8E8E;
+			border-radius: 3px;
+			// transition: all 0.3s;
 		}
 	}
-	// .checkbox__text
-	&__text {
+
+	a {
+		color: #fff;
+		text-decoration: underline;
+
+		@media (min-width: 992px) {
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	&._error {
+		.checkbox__text {
+			&:before {
+				border: 1px solid #ee1212;
+			}
+		}
 	}
 }
+.checkbox:hover .checkbox__text:before {
+	border: 2px solid #221F20;
+	// transition: all 0.3s;
+}
+	
+
+
+// .checkbox {
+// 	position: relative;
+// 	&:not(:last-child) {
+// 		margin-bottom: em(5); 
+// 	}
+// 	// .checkbox__input
+// 	&__input {
+// 		position: absolute;
+// 		width: 0;
+// 		height: 0;
+// 		opacity: 0;
+// 		&:focus + .checkbox__label:before {
+// 			box-shadow: 0 0 5px #000;
+// 		}
+// 		&:checked + .checkbox__label:before {
+// 			background: #000;
+// 		}
+// 	}
+// 	// .checkbox__label
+// 	&__label {
+// 		cursor: pointer;
+// 		display: inline-flex;
+// 		align-items: center;
+// 		position: relative;
+// 		gap: 10px;
+// 		&:before {
+// 			content: "";
+// 			align-self: flex-start;
+// 			flex: 0 0 18px;
+// 			width: 18px;
+// 			height: 18px;
+// 			border: 1px solid #a7a9ac;
+// 		}
+// 	}
+// 	// .checkbox__text
+// 	&__text {
+// 		font-size: 14px;
+// 	}
+// }
+
+

@@ -31,7 +31,7 @@
 
         <section id="catalog-filterBlock" class="catalog-filterBlock section">
           <div class="_container">
-            <div class="filterBlock d-flex">
+            <div class="catalog-filterBlock__item filterBlock d-flex">
               <div class="filterBlock__column">
                 <a href="#" class="filterBtn"
                   >Ароматизаторы пищевые и ванилин</a
@@ -56,10 +56,26 @@
           </div>
         </section>
 
-        <section class="catalog section">
+        <section class="catalog">
           <div class="_container">
+            <div class="catalog__directory-management directory-management">
+              <div class="directory-management__filters-item">
+                <button type="bitton" class="directory-management__filters-btn">
+                  Фильтры
+                </button>
+              </div>
+              <div class="directory-management-sorting">
+                <div class="directory-management-sorting-number">
+                  <span class="directory-management-sorting-value">703</span>
+                  товара
+                </div>
+                <div class="directory-management-sorting-select">
+                  По популярности
+                </div>
+              </div>
+            </div>
             <div class="page__body d-flex">
-              <div class="page__sidebar sidebar">
+              <div class="page__sidebar sidebar active">
                 <div class="page__sidebar-navigation">
                   <div data-spollers class="spollers">
                     <form method="GET" class="page__sidebar-form">
@@ -67,11 +83,112 @@
                         <button
                           type="button"
                           data-spoller
-                          class="spollers__title"
+                          class="spollers__title _spoller-active"
                         >
-                          Производитель 1
+                          Производитель
                         </button>
-                        <div class="spollers__body">Контент спойлера №1</div>
+                        <div class="spollers__body">
+                          <div class="form__line">
+                            <label data-index="0" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Фабрика сладкого вкуса"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Фабрика сладкого вкуса</span></span
+                              >
+                            </label>
+                            <label data-index="1" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Топ Декор"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Топ Декор</span></span
+                              >
+                            </label>
+                            <label data-index="2" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Фабрика сладкого вкуса"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Фабрика сладкого вкуса</span></span
+                              >
+                            </label>
+                            <label data-index="3" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Топ Декор"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Топ Декор</span></span
+                              >
+                            </label>
+                            <label data-index="4" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Фабрика сладкого вкуса"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Фабрика сладкого вкуса</span></span
+                              >
+                            </label>
+                            <label data-index="5" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Топ Декор"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Топ Декор</span></span
+                              >
+                            </label>
+                            <label data-index="6" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Фабрика сладкого вкуса"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Фабрика сладкого вкуса</span></span
+                              >
+                            </label>
+                          </div>
+                        </div>
                       </div>
                       <div class="page__sidebar-navigation-col spollers__item">
                         <button
@@ -81,19 +198,143 @@
                         >
                           Страна
                         </button>
-                        <div class="spollers__body">Контент спойлера №2</div>
+                        <div class="spollers__body">
+                          <div class="form__line">
+                            <label data-index="7" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Россия"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Россия</span></span
+                              >
+                            </label>
+                            <label data-index="8" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Китай"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Китай</span></span
+                              >
+                            </label>
+                            <label data-index="9" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Казахстан"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Казахстан</span></span
+                              >
+                            </label>
+                          </div>
+                        </div>
                       </div>
-                      <div class="filter-controll">
-                        <button class="btn full_width" type="submit">
-                          применить
-                          <!-- <span class="mobileCounter" style="">&nbsp;(106)</span
-                          >
-													<span
-                            class="mobileLoader"
-                            style="display: none"
-                          ></span> --></button
-                        ><button class="btn empty_btn full_width">
+                      <div class="page__sidebar-navigation-col spollers__item">
+                        <button
+                          type="button"
+                          data-spoller
+                          class="spollers__title"
+                        >
+                          Цена
+                        </button>
+                        <div class="spollers__body">
+                          <div class="form__line"></div>
+                        </div>
+                      </div>
+                      <div class="page__sidebar-navigation-col spollers__item">
+                        <button
+                          type="button"
+                          data-spoller
+                          class="spollers__title"
+                        >
+                          Еденица заказа
+                        </button>
+                        <div class="spollers__body">
+                          <div class="form__line"></div>
+                        </div>
+                      </div>
+                      <div class="page__sidebar-navigation-col spollers__item">
+                        <button
+                          type="button"
+                          data-spoller
+                          class="spollers__title"
+                        >
+                          Наличие
+                        </button>
+                        <div class="spollers__body">
+                          <div class="form__line"></div>
+                        </div>
+                      </div>
+                      <div
+                        class="page__sidebar-navigation-col page__sidebar-navigation-open spollers__item"
+                      >
+                        <button
+                          type="button"
+                          data-spoller
+                          class="spollers__title _spoller-active"
+                        ></button>
+                        <div class="spollers__body">
+                          <div class="form__line">
+                            <label data-index="10" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Новинки"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Новинки</span></span
+                              >
+                            </label>
+                            <label data-index="11" class="checkbox">
+                              <input
+                                data-razdel="form"
+                                data-error="Ошибка"
+                                class="checkbox__input"
+                                type="checkbox"
+                                value="1"
+                                name="form[]"
+                                value="Акции"
+                              />
+                              <span class="checkbox__text"
+                                ><span>Акции</span></span
+                              >
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="page__sidebar-navigation-filter-controll filter-controll"
+                      >
+                        <button type="submit" class="filter-controll__btn btn">
+                          применить</button
+                        ><button
+                          type="rest"
+                          class="filter-controll__btn btn btn_reset"
+                        >
                           сбросить
+                          <svg class="filter-controll__btn-icon">
+                            <use xlink:href="#urn-icon"></use>
+                          </svg>
                         </button>
                       </div>
                     </form>

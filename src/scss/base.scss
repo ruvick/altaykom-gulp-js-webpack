@@ -2,6 +2,9 @@
 // Для подключения/отключения стилей конкретного єлемента формы смотри base/forms/forms.scss
 @import "base/forms/forms";
 
+// Стили checkbox
+@import "base/forms/checkbox";
+
 // Стили попапов
 @import "base/popup";
 
@@ -15,7 +18,7 @@
 @import "base/forms/quantity";
 
 // Стили спойлеров
-// @import "base/spollers";
+@import "base/spollers";
 
 // Стили табов
 // @import "base/tabs";
