@@ -79,13 +79,13 @@ flsForms.formFieldsInit();
 flsForms.formSubmit(true);
 
 /* (В работе) Работа с масками. Для включения ??? (подсказок в консоли) передать true */
-// flsForms.formMasks(true);
+flsForms.formMasks(true);
 
 /* Модуль формы "колличество" */
 flsForms.formQuantity();
 
 /* Модуль формы "показать пароль" */
-// flsForms.formViewpass();
+flsForms.formViewpass();
 
 /* Модуль звездного рейтинга */
 // flsForms.formRating();

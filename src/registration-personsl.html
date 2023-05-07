@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Поиск" })
+
+<body>
+  <div class="wrapper registration-wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page page-registration">
+      @@include('html/components/_lineBlock.htm',{})
+
+      <section class="registration-section section">
+        <div class="_container">
+
+          <div class="registration-section__body">
+
+            <button type="button" class="registration-section__btn">
+              <svg class="registration-section__btn-icon">
+                <use xlink:href="#reg-back-btn"></use>
+              </svg>
+              вернуться
+            </button>
+
+            <div class="registration-section__form submission-form">
+              <form action="#" class="submission-form__form">
+                <div class="form__line">
+                  <div class="submission-form__item">
+                    <div class="submission-form__title">Регистрация</div>
+                    <input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
+                      class="submission-form__input input">
+                    <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
+                      class="submission-form__input input">
+                  </div>
+                  <div class="submission-form__item">
+                    <div class="submission-form__title">Пароль</div>
+                    <input type="tel" name="password" data-required="password" data-validate placeholder="Пароль*"
+                      class="submission-form__input input">
+                    <button class="form__viewpass" type="button" style="display: none;">Показать пароль</button>
+                    <input type="tel" name="password" data-required="password" data-validate
+                      placeholder="Пароль повторно*" class="submission-form__input input">
+                    <button class="form__viewpass" type="button" style="display: none;">Показать пароль</button>
+                    <div class="submission-form__clue">Пароль должен содержать не менее 8 символов латинского алфавита,
+                      в
+                      том числе цифры, заглавные и строчные буквы</div>
+                  </div>
+                  <label data-index="0" class="submission-form__checkbox checkbox">
+                    <input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+                      name="form[]" value="Подписаться на рассылку новостей, мастерклассов" />
+                    <span class="checkbox__text"><span>Подписаться на рассылку новостей, мастерклассов</span></span>
+                  </label>
+                  <div class="submission-form__policy">
+                    Нажимая на кнопку «Зарегистрироваться»,
+                    Вы соглашаетесь на обработку <a href="#privacy-policy.html"
+                      class="submission-form__policy-link">персональных данных</a>
+                  </div>
+                  <button type="submit" class="submission-form__button btn">зарегистрироваться</button>
+                </div>
+              </form>
+              <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>

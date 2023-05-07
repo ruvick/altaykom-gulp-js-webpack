@@ -22,6 +22,10 @@ textarea {
 	border-radius: 15px;
 	border: 1px solid #E3E3E3;
 
+	&:hover {
+		border: 1px solid #221F20;
+	}
+
 	&._focus {
 		// background: grey;
 		border: 1px solid #000;
