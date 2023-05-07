@@ -9,23 +9,13 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-	// const html = document.querySelector("html");
   const body = document.querySelector("body");
+
+  // Открыть/закрыть catalog в header 
   const catBtn = document.querySelector('.button-catalog');
   const iconMenu = document.querySelector('.icon-menu');
-  const search = document.querySelector(".search-form");
-  const searchInput = document.querySelector(".search-form__input");
-  const searchBtnClosed = document.querySelector(".search-form__btn-closed");
-  const interFacelinkText = document.querySelectorAll(".interface__link-text");
   const menuCatalog = document.querySelector('.menu-catalog');
-  const interAddingBascetBtn = document.querySelector('.interactive-adding-bascet__button');
-  const interAddingBascet = document.querySelector('.interactive-adding-bascet');
-  const interAddingQuantity = document.querySelector('.interactive-adding-quantity');
-	const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
-	const pageSidebar = document.querySelector('.page__sidebar');
-	const pageMain = document.querySelector('.page__main');
-	
-	
+
   if (catBtn) {
     catBtn.addEventListener('click', function () {
       iconMenu.classList.toggle('active');
@@ -34,22 +24,23 @@ window.onload = function () {
     });
   }
 
-  if (interAddingBascetBtn) {
-    interAddingBascetBtn.addEventListener('click', function () {
-      interAddingBascet.classList.add('none');
-      interAddingQuantity.classList.toggle('active');
-    });
-  }
+  window.addEventListener('click', e => { // при клике в любом месте окна браузера
+    const target = e.target // находим элемент, на котором был клик
+    if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
+      menuCatalog.classList.remove('active');
+      html.classList.remove('lock');
+      // headsearch.classList.remove('_active')
+    }
+  })
 
-	if (ManagementFiltersBtn) {
-    ManagementFiltersBtn.addEventListener('click', function () {
-      // ManagementFiltersBtn.classList.togle('active');
-      pageSidebar.classList.toggle('hide');
-			pageMain.classList.toggle('width');
-    });
-  }
 
   // Срабатывание поиска
+  const search = document.querySelector(".search-form");
+  const searchInput = document.querySelector(".search-form__input");
+  const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+  const interFacelinkText = document.querySelectorAll(".interface__link-text");
+
   interFacelinkText.forEach(btn => {
     searchInput.addEventListener('click', function () {
       search.classList.add("active");
@@ -71,15 +62,18 @@ window.onload = function () {
     })
   })
 
-  window.addEventListener('click', e => { // при клике в любом месте окна браузера
-    const target = e.target // находим элемент, на котором был клик
-    if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-      iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
-      menuCatalog.classList.remove('active');
-			html.classList.remove('lock');
-      // headsearch.classList.remove('_active')
-    }
-  })
+
+  // Переключение корзины в карточке товаров
+  const interAddingBascetBtn = document.querySelector('.interactive-adding-bascet__button');
+  const interAddingBascet = document.querySelector('.interactive-adding-bascet');
+  const interAddingQuantity = document.querySelector('.interactive-adding-quantity');
+
+  if (interAddingBascetBtn) {
+    interAddingBascetBtn.addEventListener('click', function () {
+      interAddingBascet.classList.add('none');
+      interAddingQuantity.classList.toggle('active');
+    });
+  }
 
   window.addEventListener('click', e => { // при клике в любом месте окна браузера
     const target = e.target // находим элемент, на котором был клик
@@ -89,6 +83,21 @@ window.onload = function () {
       // headsearch.classList.remove('_active')
     }
   })
+
+
+  // Открытие/закрытие сайдбара
+  const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
+  const pageSidebar = document.querySelector('.page__sidebar');
+  const pageMain = document.querySelector('.page__main');
+
+  if (ManagementFiltersBtn) {
+    ManagementFiltersBtn.addEventListener('click', function () {
+      // ManagementFiltersBtn.classList.togle('active');
+      pageSidebar.classList.toggle('hide');
+      pageMain.classList.toggle('width');
+    });
+  }
+
 
   //BURGER
   // if (catBtn) {
