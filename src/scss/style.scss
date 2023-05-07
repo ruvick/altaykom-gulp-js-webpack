@@ -2307,6 +2307,20 @@ body {
 	flex: 0 0 20px;
 }
 
+.submission-form__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.submission-form__checkbox {}
+
+.submission-form__inner .submission-form__link {
+	font-size: 14px;
+	margin: 0;
+}
+
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
