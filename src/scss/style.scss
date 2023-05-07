@@ -2121,6 +2121,10 @@ body {
 
 .registration-section__body {
 	position: relative;
+
+	*:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .registration-section__btn {
@@ -2155,6 +2159,7 @@ body {
 
 .registration-section__form {
 	margin: 0 auto;
+	margin-bottom: 60px;
 }
 
 .submission-form {
@@ -2200,10 +2205,6 @@ body {
 	margin-bottom: 30px;
 }
 
-.checkbox__input {}
-
-.checkbox__text {}
-
 .submission-form__policy {
 	font-size: 14px;
 	line-height: 20/14*100%;
@@ -2238,6 +2239,72 @@ body {
 	&:hover {
 		color: #221F20;
 	}
+}
+
+.registration-section__soc-entrance {
+	margin: 0px auto;
+}
+
+.soc-entrance {
+	display: flex;
+	flex-direction: column;
+	min-width: 212px;
+	width: 100%;
+}
+
+.soc-entrance__text {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.soc-entrance__row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.soc-entrance__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	flex: 0 0 50px;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.soc-entrance__icon_vk {
+	background: #07f;
+
+	&:hover {
+		background: #221F20;
+	}
+}
+
+.soc-entrance__icon_vk .soc-entrance__icon-svg {
+	width: 33.3px;
+	height: 20.8px;
+	flex: 0 0 33.3px;
+}
+
+.soc-entrance__icon_ya {
+	background: #FC3F1D;
+
+	&:hover {
+		background: #221F20;
+	}
+}
+
+.soc-entrance__icon_ya .soc-entrance__icon-svg {
+	width: 20px;
+	height: 30px;
+	flex: 0 0 20px;
 }
 
 //========================================================================================================================================================
