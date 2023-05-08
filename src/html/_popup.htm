@@ -43,6 +43,44 @@
 	</div>
 </div>
 
+<!-- Оставить отзыв -->
+<div id="leave-feedback" aria-hidden="true" class="leave-feedback-popup popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-svg">
+					<use xlink:href="#popup-close"></use>
+				</svg>
+			</button>
+			<div class="popup__content-title">
+				Оставить отзыв
+			</div>
+
+			<div class="popup__rating rating rating_set">
+				<div class="rating__body">
+					<div class="rating__active"></div>
+					<div class="rating__items">
+						<input type="radio" class="rating__item" value="1" name="rating">
+						<input type="radio" class="rating__item" value="2" name="rating">
+						<input type="radio" class="rating__item" value="3" name="rating">
+						<input type="radio" class="rating__item" value="4" name="rating">
+						<input type="radio" class="rating__item" value="5" name="rating">
+					</div>
+				</div>
+				<div class="rating__value">3.5</div>
+			</div>
+
+			<form action="#" class="popup__form form">
+				<div class="form__line">
+					<textarea name="" id="" placeholder="Отзыв*" class="popup__form-textarea input"></textarea>
+					<button type="submit" class="popup__form-btn btn btn_black">отправить</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+</div>
+
 <!-- Поставщики -->
 <div id="suppliers" aria-hidden="true" class="popup popup-suppliers">
 	<div class="popup__wrapper">

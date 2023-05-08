@@ -7,9 +7,11 @@
 	line-height: 0.75;
 	transition: opacity 0.3s ease 0s;
 }
+
 .rating.rating_sending {
 	opacity: 0.2;
 }
+
 .rating.rating_set .rating__active,
 .rating.rating_set .rating__item {
 	cursor: pointer;
@@ -18,10 +20,13 @@
 .rating__body {
 	position: relative;
 }
+
 .rating__body::before {
 	content: "★★★★★";
 	display: block;
+	color: grey;
 }
+
 .rating__active {
 	position: absolute;
 	width: 0%;
@@ -30,6 +35,7 @@
 	left: 0;
 	overflow: hidden;
 }
+
 .rating__active::before {
 	content: "★★★★★";
 	position: absolute;
@@ -37,7 +43,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	color: #ffd300;
+	color: #C5934F;
 }
 
 .rating__items {
@@ -48,13 +54,16 @@
 	top: 0;
 	left: 0;
 }
+
 .rating__item {
 	flex: 0 0 20%;
 	height: 100%;
 	opacity: 0;
 }
+
 .rating__value {
-	font-size: 50%;
+	// font-size: 50%;
+	font-size: 0;
 	line-height: 1;
-	padding: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 0px;
 }

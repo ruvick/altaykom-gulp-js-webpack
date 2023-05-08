@@ -166,6 +166,18 @@ body.popup-show::after {
 	overflow: hidden;
 }
 
+// Оставить отзыв
+.leave-feedback-popup .popup__content {
+	max-width: 700px;
+}
+
+.leave-feedback-popup .popup__form-textarea {
+	height: 240px;
+}
+
+.popup__rating {
+	margin-bottom: 30px;
+}
 
 // Popup Cookie
 .popup-cookie {

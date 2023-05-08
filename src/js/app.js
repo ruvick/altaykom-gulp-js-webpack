@@ -88,7 +88,7 @@ flsForms.formQuantity();
 flsForms.formViewpass();
 
 /* Модуль звездного рейтинга */
-// flsForms.formRating();
+flsForms.formRating();
 
 /* Модуль работы с select. Для включения ??? (подсказок в консоли) передать true */
 // flsForms.formSelect(false);

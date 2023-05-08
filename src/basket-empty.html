@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/_head.htm',{
-"title":"Избранное пусто"
+"title":"Корзина пусто"
 })
 
 <body>
@@ -16,7 +16,7 @@
             <span>
               <span>
                 <a href="home.html"> главная </a> /
-                <span class="breadcrumb_last" aria-current="page"> избранное </span>
+                <span class="breadcrumb_last" aria-current="page"> корзина </span>
               </span>
             </span>
           </div>
@@ -27,7 +27,7 @@
         <div class="_container">
           <div class="section-title__inner">
             <div class="section-title__title title-main">
-              избранное
+              Корзина
             </div>
             <!-- <button type="reset" class="section-title__button filter-controll__btn btn btn_reset">
               очистить
@@ -46,18 +46,20 @@
 
             <div class="result-empty__img">
               <svg class="result-empty__img-icon">
-                <use xlink:href="#result-empty"></use>
+                <use xlink:href="#basket-result-empty"></use>
               </svg>
             </div>
 
-            <div class="result-empty__title">В избранном ничего нет</div>
-            <div class="result-empty__subtitle">Вы можете добавить товар в избранное, кликнув на ♥</div>
+            <div class="result-empty__title">В Вашей корзине пусто</div>
+            <div class="result-empty__subtitle">Перейдите в каталог и добавьте товар в корзину</div>
             <a href="сatalog-persons.html" class="result-empty__link btn">в каталог</a>
 
           </div>
 
         </div>
       </section>
+
+      @@include('html/components/_sales-leaders-sec.htm',{})
 
     </main>
     @@include('html/_footer.htm',{})
