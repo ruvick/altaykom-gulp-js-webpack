@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Избранное"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      @@include('html/components/_lineBlock.htm',{})
+
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
+              <span>
+                <a href="home.html"> главная </a> /
+                <span class="breadcrumb_last" aria-current="page"> Избранное </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-title">
+        <div class="_container">
+          <div class="section-title__inner">
+            <div class="section-title__title title-main">
+              избранное
+            </div>
+            <!-- <button type="reset" class="section-title__button filter-controll__btn btn btn_reset">
+              очистить
+              <svg class="filter-controll__btn-icon">
+                <use xlink:href="#urn-icon"></use>
+              </svg>
+            </button> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="favorites-sec" class="favorites-sec section">
+        <div class="_container">
+
+          <div class="result-empty">
+
+            <div class="result-empty__img">
+              <svg class="result-empty__img-icon">
+                <use xlink:href="#result-empty"></use>
+              </svg>
+            </div>
+
+            <div class="result-empty__title">В избранном ничего нет</div>
+            <div class="result-empty__subtitle">Вы можете добавить товар в избранное, кликнув на ♥</div>
+            <a href="сatalog-persons.html" class="result-empty__link btn">в каталог</a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    @@include('html/_footer.htm',{})
+    @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
