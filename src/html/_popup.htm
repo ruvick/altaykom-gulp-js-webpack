@@ -100,6 +100,59 @@
 	</div>
 </div>
 
+<!-- Редактировать профиль. Физлицо -->
+<div id="edit-profile-person" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content submission-form submission-form_big">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-svg">
+					<use xlink:href="#popup-close"></use>
+				</svg>
+			</button>
+			<form action="#" class="submission-form__form">
+				<div class="form__line">
+
+					<div class="submission-form__item">
+						<div class="submission-form__title">Редактировать профиль</div>
+					</div>
+
+					<div class="submission-form__item">
+						<div class="submission-form__title-low">Личные данные</div>
+						<input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
+							class="submission-form__input input">
+						<input type="text" name="email" data-required="email" data-validate placeholder="Email*"
+							class="submission-form__input input">
+						<input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
+							class="submission-form__input input">
+					</div>
+
+					<div class="submission-form__item">
+						<div class="submission-form__title-low">Данные для доставки</div>
+						<div class="search-form">
+							<input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input"
+								value="" name="search" />
+							<span tabindex="1" class="search-form__btn-closed">
+								<svg class="search-form__btn-closed-icon">
+									<use xlink:href="#popup-close"></use>
+								</svg>
+							</span>
+							<button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+						</div>
+						<input type="text" name="address" data-required="address" data-validate placeholder="Адрес доставки*"
+							class="submission-form__input input">
+						<input type="text" name="index" placeholder="Индекс" class="submission-form__input input">
+					</div>
+
+					<button type="submit" class="submission-form__button btn">сохранить</button>
+				</div>
+			</form>
+			<!-- <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a> -->
+		</div>
+
+		<!-- </div> -->
+	</div>
+</div>
+
 <!-- Оставить отзыв -->
 <div id="leave-feedback" aria-hidden="true" class="leave-feedback-popup popup">
 	<div class="popup__wrapper">
