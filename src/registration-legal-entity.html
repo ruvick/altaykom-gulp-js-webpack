@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{ "title":"Регистрация физлица" })
+@@include('html/_head.htm',{ "title":"Регистрация юрлица" })
 
 <body>
   <div class="wrapper registration-wrapper">
@@ -20,24 +20,54 @@
               вернуться
             </button>
 
-            <div class="registration-section__form submission-form">
+            <div class="registration-section__form submission-form submission-form_big">
               <form action="#" class="submission-form__form">
                 <div class="form__line">
+
                   <div class="submission-form__item">
-                    <div class="submission-form__title">Регистрация</div>
-                    <input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
-                      class="submission-form__input input">
-                    <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-                      class="submission-form__input input">
+                    <div class="submission-form__title">Заказывайте товары как юридическое лицо</div>
+                    <div class="submission-form__subtitle">Если вы хотите заказывать как юридическое лицо или ИП, мы
+                      дадим Вам персональную скидку после регистрации</div>
                   </div>
+
+                  <div class="submission-form__item">
+                    <div class="submission-form__title-low">Компания</div>
+                    <div class="search-form">
+                      <input type="text" placeholder="Название компании в свободной форме, адрес, ИНН или ОГРН*"
+                        class="search-form__input" value="" name="search" />
+                      <span tabindex="1" class="search-form__btn-closed">
+                        <svg class="search-form__btn-closed-icon">
+                          <use xlink:href="#popup-close"></use>
+                        </svg>
+                      </span>
+                      <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+                    </div>
+                  </div>
+
+                  <div class="submission-form__item">
+                    <div class="submission-form__title-low">Контактное лицо</div>
+                    <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
+                      class="submission-form__input input">
+                    <input type="text" name="job-title" data-required="job-title" data-validate placeholder="Должность*"
+                      class="submission-form__input input">
+                    <div class="submission-form__column">
+                      <input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
+                        class="submission-form__input input">
+                      <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
+                        class="submission-form__input input">
+                    </div>
+                  </div>
+
                   <div class="submission-form__item">
                     <div class="submission-form__title">Пароль</div>
-                    <input type="tel" name="password" data-required="password" data-validate placeholder="Пароль*"
-                      class="submission-form__input input __viewpass">
-                    <button class="form__viewpass" type="button" style="display: none;">Показать пароль</button>
-                    <input type="tel" name="password" data-required="password" data-validate
-                      placeholder="Пароль повторно*" class="submission-form__input input __viewpass">
-                    <button class="form__viewpass" type="button" style="display: none;">Показать пароль</button>
+                    <div class="submission-form__column">
+                      <input type="tel" name="password" data-required="password" data-validate placeholder="Пароль*"
+                        class="submission-form__input input __viewpass">
+                      <button class="form__viewpass" type="button" style="display: none;">Показать пароль</button>
+                      <input type="tel" name="password" data-required="password" data-validate
+                        placeholder="Пароль повторно*" class="submission-form__input input __viewpass">
+                      <button class="form__viewpass" type="button" style="display: none;">Показать пароль</button>
+                    </div>
                     <div class="submission-form__clue">Пароль должен содержать не менее 8 символов латинского алфавита,
                       в
                       том числе цифры, заглавные и строчные буквы</div>
@@ -55,7 +85,7 @@
                   <button type="submit" class="submission-form__button btn">зарегистрироваться</button>
                 </div>
               </form>
-              <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a>
+              <!-- <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a> -->
             </div>
 
             <div class="registration-section__soc-entrance soc-entrance">

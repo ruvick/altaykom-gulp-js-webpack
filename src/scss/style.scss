@@ -2321,6 +2321,41 @@ body {
 	margin: 0;
 }
 
+.submission-form_big {
+	max-width: 700px;
+	width: 100%;
+
+}
+
+.submission-form_big .submission-form__title {
+	margin-bottom: 18px;
+}
+
+.submission-form__title-low {
+	font-size: 18px;
+	line-height: 26/18*100%;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.submission-form .search-form__input {
+	padding: 0 20px 0 64px;
+}
+
+.submission-form .search-form__btn:before {
+	right: 0;
+	left: 20px;
+}
+
+.submission-form__column {
+	display: flex;
+	justify-content: space-between;
+}
+
+.submission-form__column .input {
+	flex: 0 1 49.3%;
+}
+
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
