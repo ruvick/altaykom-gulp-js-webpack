@@ -179,6 +179,15 @@ body.popup-show::after {
 	margin-bottom: 30px;
 }
 
+// Новый список
+.new-list-popup .popup__content-title {
+	margin-bottom: 30px;
+}
+
+.new-list-popup .input {
+	margin-bottom: 30px;
+}
+
 // Popup Cookie
 .popup-cookie {
 	display: none;
