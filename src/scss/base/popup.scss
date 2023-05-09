@@ -196,6 +196,11 @@ body.popup-show::after {
 	max-width: 1000px;
 }
 
+.similar-products-popup .popup__content {
+	max-width: 778px;
+	max-height: 589px;
+}
+
 // Popup Cookie
 .popup-cookie {
 	display: none;

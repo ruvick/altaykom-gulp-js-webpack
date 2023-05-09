@@ -2424,6 +2424,87 @@ body {
 
 //========================================================================================================================================================
 
+// Похожие товары 
+.similar-products-block {
+	height: 589px;
+	overflow: auto;
+	padding-bottom: 40px;
+}
+
+.similar-products-block::-webkit-scrollbar-thumb,
+.similar-products-block::-webkit-scrollbar {
+	display: none;
+}
+
+.similar-products-block__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.similar-products-block__item {
+	display: flex;
+	// flex: 0 1 50%;
+}
+
+.similar-products-block__img {
+	width: 60px;
+	flex: 0 0 60px;
+	height: 60px;
+	border-radius: 15px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+.similar-products-block__descp {
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.similar-products-block__title {
+	font-size: 14px;
+	line-height: 18/14*100%;
+	margin-bottom: 5px;
+}
+
+.similar-products-block__sticker {
+	font-size: 12px;
+	display: inline-block;
+	padding: 5px 10px;
+	line-height: 1;
+}
+
+.sticker-product-value {}
+
+.similar-products-block__price {
+	display: flex;
+	align-items: center;
+	width: 175px;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+
+.card-product__interactive-price {}
+
+.card-product__interactive-price-new {}
+
+.interactive-price-new_red {}
+
+.card-product__interactive-price-old {}
+
+.interactive-adding-bascet__button {}
+
+.interactive-adding-bascet__button-icon {}
+
+//========================================================================================================================================================
+
 
 // Перенести
 .page .lineBlock {
