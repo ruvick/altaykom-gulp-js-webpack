@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Карточка товара"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      @@include('html/components/_lineBlock.htm',{})
+
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
+              <span>
+                <a href="home.html"> главная </a> / <a href="сatalog-persons.html"> каталог </a> / <a href="#">
+                  ингридиенты </a> /
+                <span class="breadcrumb_last" aria-current="page"> желейные шарики «мармелатье» </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <section id="documents-section" class="documents-section section">
+        <div class="_container">
+          <div class="documents-section__title">Документы</div>
+          <div class="documents-block">
+            <div class="documents-block__row d-flex">
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#pdf-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">Сертификат соответствия.pdf</div>
+                    <div class="documents-block__item-icon-descp-value">456,7 КБ</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#xlsx-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">Сертификат соответствия.xlsx</div>
+                    <div class="documents-block__item-icon-descp-value">57,0 КБ</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#doc-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">Описание.doc</div>
+                    <div class="documents-block__item-icon-descp-value">56,5 КБ</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#pdf-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">Сертификат соответствия.pdf</div>
+                    <div class="documents-block__item-icon-descp-value">57,0 КБ</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="baking-ideas-sec" class="baking-ideas-sec section">
+        <div class="_container">
+
+          <div class="titleBlock">
+            <div class="baking-ideas-sec__title title">идеи для выпечки</div>
+          </div>
+
+          <div class="baking-ideas-sec__inner">
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#рецепты</a>
+                    <img src="@img/blog/01.jpg" alt="">
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">20 января 2023</div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">100</div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Молочный чай с тапиокой -желейными шариками «мармелатье»
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#новости</a>
+                    <img src="@img/blog/02.jpg" alt="">
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">7 сентября 2022</div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">2 100</div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Торт с фруктами и желейными шариками
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#мастер-классы</a>
+                    <img src="@img/blog/01.jpg" alt="">
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">20 января 2023</div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">100</div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Молочный чай с тапиокой -желейными шариками «мармелатье»
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#новости</a>
+                    <img src="@img/blog/02.jpg" alt="">
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">20 января 2023</div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">100</div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Молочный чай с тапиокой -желейными шариками «мармелатье»
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      @@include('html/components/_similar-products-sec.htm',{})
+
+    </main>
+    @@include('html/_footer.htm',{})
+    @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
