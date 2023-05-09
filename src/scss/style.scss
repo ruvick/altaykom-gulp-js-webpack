@@ -2528,6 +2528,22 @@ body {
 	margin-top: 15px;
 }
 
+.modal-windows-sec__inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.modal-windows-sec__btn {
+	min-width: 210px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+	&:hover {
+		color: #fff;
+		background: #221F20;
+	}
+}
+
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
