@@ -192,6 +192,10 @@ body.popup-show::after {
 	margin-bottom: 10px;
 }
 
+.edit-profile-entity__popup .submission-form {
+	max-width: 1000px;
+}
+
 // Popup Cookie
 .popup-cookie {
 	display: none;

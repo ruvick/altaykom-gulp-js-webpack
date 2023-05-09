@@ -153,6 +153,89 @@
 	</div>
 </div>
 
+<!-- Редактировать профиль. Юрлицо -->
+<div id="edit-profile-entity" aria-hidden="true" class="edit-profile-entity__popup popup">
+	<div class="popup__wrapper">
+		<div class="popup__content submission-form">
+			<button data-close type="button" class="popup__close">
+				<svg class="popup__close-svg">
+					<use xlink:href="#popup-close"></use>
+				</svg>
+			</button>
+			<form action="#" class="submission-form__form">
+				<div class="form__line">
+
+					<div class="submission-form__item">
+						<div class="submission-form__title">Редактировать профиль</div>
+					</div>
+
+					<div class="submission-form__item">
+						<div class="submission-form__title-low">Компания</div>
+						<div class="submission-form__column">
+							<input type="text" name="name" data-required="name" data-validate placeholder="Название компании*"
+								class="submission-form__input input">
+							<input type="text" name="email" placeholder="Юридический адрес" class="submission-form__input input">
+						</div>
+						<div class="submission-form__column">
+							<input type="text" name="bank" data-required="bank" data-validate placeholder="Банк"
+								class="submission-form__input input">
+							<input type="text" name="shet" data-validate placeholder="Расчетный счет"
+								class="submission-form__input input">
+						</div>
+						<div class="submission-form__column">
+							<input type="text" name="inn" data-required="inn" data-validate placeholder="ИНН*"
+								class="submission-form__input input">
+							<input type="text" name="text" placeholder="КПП" class="submission-form__input input">
+						</div>
+						<div class="submission-form__column">
+							<input type="text" name="name" data-required="name" data-validate placeholder="БИК Банка"
+								class="submission-form__input input">
+						</div>
+					</div>
+
+					<div class="submission-form__item">
+						<div class="submission-form__title-low">Контактное лицо</div>
+						<div class="submission-form__column">
+							<input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
+								class="submission-form__input input">
+							<input type="text" name="email" data-required="email" data-validate placeholder="Email*"
+								class="submission-form__input input">
+						</div>
+						<div class="submission-form__column">
+							<input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
+								class="submission-form__input input">
+						</div>
+					</div>
+
+					<div class="submission-form__item">
+						<div class="submission-form__title-low">Данные для доставки</div>
+						<div class="search-form">
+							<input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input"
+								value="" name="search" />
+							<span tabindex="1" class="search-form__btn-closed">
+								<svg class="search-form__btn-closed-icon">
+									<use xlink:href="#popup-close"></use>
+								</svg>
+							</span>
+							<button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+						</div>
+						<div class="submission-form__column">
+							<input type="text" name="address" data-required="address" data-validate placeholder="Адрес доставки*"
+								class="submission-form__input input">
+							<input type="text" name="index" placeholder="Индекс" class="submission-form__input input">
+						</div>
+					</div>
+
+					<button type="submit" class="submission-form__button btn">сохранить</button>
+				</div>
+			</form>
+			<!-- <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a> -->
+		</div>
+
+		<!-- </div> -->
+	</div>
+</div>
+
 <!-- Оставить отзыв -->
 <div id="leave-feedback" aria-hidden="true" class="leave-feedback-popup popup">
 	<div class="popup__wrapper">
