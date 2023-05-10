@@ -223,7 +223,7 @@
                   </div>
                 </div>
                 <div class="card-product-sec__conclusion conclusion">
-                  <div class="conclusion__row conclusion__row_info">
+                  <div class="conclusion__row">
                     <div class="conclusion__item">
                       <div class="conclusion__name">В наличии</div>
                       <div class="conclusion__value">Много</div>
@@ -233,12 +233,63 @@
                       <div class="conclusion__value">5 кг</div>
                     </div>
                     <div class="conclusion__item">
-                      <div class="conclusion__name">Вес упаковки</div>
-                      <div class="conclusion__value">5 кг</div>
+                      <div class="conclusion__name">Цена за 1 шт. с НДС</div>
+                      <div class="conclusion__value">
+                        <div class="card-product__interactive-price">
+                          <div
+                            class="card-product__interactive-price-new interactive-price-new_red rub"
+                          >
+                            1 800.00
+                          </div>
+                          <div class="card-product__interactive-price-old rub">
+                            1 900.00
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="conclusion__line"></div>
-                  <div class="conclusion__row"></div>
+                  <div class="conclusion__row conclusion__row_flex">
+                    <div class="conclusion__item d-flex">
+                      <button
+                        type="button"
+                        class="conclusion__button-bascet btn btn_black"
+                      >
+                        <svg class="conclusion__button-bascet-icon">
+                          <use xlink:href="#bascet-btn-product"></use>
+                        </svg>
+                        в корзину
+                      </button>
+                      <div class="conclusion__item-iconBtn">
+                        <button
+                          type="button"
+                          class="conclusion__button-favorit btn"
+                        >
+                          <svg class="conclusion__button-favorit-icon">
+                            <use xlink:href="#favorites-product"></use>
+                          </svg>
+                        </button>
+                        <button
+                          type="button"
+                          class="conclusion__button-print btn"
+                        >
+                          <svg class="conclusion__button-print-icon">
+                            <use xlink:href="#print-icon"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="conclusion__item">
+                      <div class="conclusion__name">
+                        <div class="sticker-product green-color">
+                          экономия 100 ₽
+                        </div>
+                      </div>
+                      <div class="conclusion__value">
+                        <div class="conclusion__price rub">1 800.00</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="card-product-sec__description">
                   <div class="card-product-sec__description-text">
@@ -486,6 +537,182 @@
                     </div>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews-sec" class="reviews-sec section">
+          <div class="_container">
+            <div class="reviews-sec__title">Отзывы о товаре</div>
+
+            <div class="reviews-sec__inner">
+              <div class="reviews-sec__reviews-block reviews-block">
+                <div class="reviews-block__body">
+                  <div class="reviews-block__body-main">
+                    <div class="reviews-block__body-main-icon">А</div>
+
+                    <div class="reviews-block__body-main-descp">
+                      <div class="reviews-block__body-main-descp-top">
+                        <div class="reviews-block__body-main-descp-top-name">
+                          <div class="reviews-block__body-main-descp-top-title">
+                            Анна Ивановна
+                          </div>
+                          <div
+                            class="reviews-block__body-main-descp-top-organization"
+                          >
+                            ИП Лакомка
+                          </div>
+                        </div>
+                        <div class="reviews-block__body-main-descp-information">
+                          <div
+                            class="reviews-block__body-main-descp-information-date"
+                          >
+                            20 января 2023
+                          </div>
+                          <div
+                            class="reviews-block__body-main-descp-information-rating"
+                          >
+                            12345
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviews-block__body-main-descp-bottom">
+                        <div class="reviews-block__body-main-descp-text">
+                          Рыбный текст – это текст, выполняющий исключительно
+                          утилитарную функцию. Он не вписывается в контекст
+                          сайта, на котором используется, и нужен только для
+                          заполнения пространства.
+                        </div>
+                      </div>
+                      <div class="reviews-block__body-answer">
+                        <div class="reviews-block__body-main">
+                          <div class="reviews-block__body-main-icon">
+                            <svg class="reviews-block__body-main-icon-svg">
+                              <use xlink:href="#altaykom-icon"></use>
+                            </svg>
+                          </div>
+
+                          <div class="reviews-block__body-main-descp">
+                            <div class="reviews-block__body-main-descp-top">
+                              <div
+                                class="reviews-block__body-main-descp-top-name"
+                              >
+                                <div
+                                  class="reviews-block__body-main-descp-top-title"
+                                >
+                                  АлтайКом
+                                </div>
+                              </div>
+                              <div
+                                class="reviews-block__body-main-descp-information"
+                              >
+                                <div
+                                  class="reviews-block__body-main-descp-information-date"
+                                >
+                                  21 января 2023
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reviews-block__body-main-descp-bottom">
+                              <div class="reviews-block__body-main-descp-text">
+                                Анна, добрый день! Благодарим Вас за обратную
+                                связь по продукту желейные шарики «Мармелатье»!
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews-block__body">
+                  <div class="reviews-block__body-main">
+                    <div class="reviews-block__body-main-icon">К</div>
+
+                    <div class="reviews-block__body-main-descp">
+                      <div class="reviews-block__body-main-descp-top">
+                        <div class="reviews-block__body-main-descp-top-name">
+                          <div class="reviews-block__body-main-descp-top-title">
+                            Константин
+                          </div>
+                          <div
+                            class="reviews-block__body-main-descp-top-organization"
+                            style="display: none"
+                          >
+                            ИП Лакомка
+                          </div>
+                        </div>
+                        <div class="reviews-block__body-main-descp-information">
+                          <div
+                            class="reviews-block__body-main-descp-information-date"
+                          >
+                            15 января 2022
+                          </div>
+                          <div
+                            class="reviews-block__body-main-descp-information-rating"
+                          >
+                            12345
+                          </div>
+                        </div>
+                      </div>
+                      <div class="reviews-block__body-main-descp-bottom">
+                        <div class="reviews-block__body-main-descp-text">
+                          Рыбный текст – это текст, выполняющий исключительно
+                          утилитарную функцию. Он не вписывается в контекст
+                          сайта, на котором используется, и нужен только для
+                          заполнения пространства.
+                        </div>
+                      </div>
+                      <div
+                        class="reviews-block__body-answer"
+                        style="display: none"
+                      >
+                        <div class="reviews-block__body-main">
+                          <div class="reviews-block__body-main-icon">А</div>
+
+                          <div class="reviews-block__body-main-descp">
+                            <div class="reviews-block__body-main-descp-top">
+                              <div
+                                class="reviews-block__body-main-descp-top-name"
+                              >
+                                <div
+                                  class="reviews-block__body-main-descp-top-title"
+                                >
+                                  АлтайКом
+                                </div>
+                              </div>
+                              <div
+                                class="reviews-block__body-main-descp-information"
+                              >
+                                <div
+                                  class="reviews-block__body-main-descp-information-date"
+                                >
+                                  21 января 2023
+                                </div>
+                              </div>
+                            </div>
+                            <div class="reviews-block__body-main-descp-bottom">
+                              <div class="reviews-block__body-main-descp-text">
+                                Рыбный текст – это текст, выполняющий
+                                исключительно утилитарную функцию. Он не
+                                вписывается в контекст сайта, на котором
+                                используется, и нужен только для заполнения
+                                пространства.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews-sec__evaluations evaluations">
+                <div class="evaluations__ttile">Всего 200 оценок</div>
+                <form action="#" class="evaluations__form"></form>
               </div>
             </div>
           </div>
