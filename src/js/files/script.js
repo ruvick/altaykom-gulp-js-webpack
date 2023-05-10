@@ -20,7 +20,7 @@ window.onload = function () {
     catBtn.addEventListener('click', function () {
       iconMenu.classList.toggle('active');
       menuCatalog.classList.toggle('active');
-      html.classList.toggle('lock');
+      // html.classList.toggle('lock');
     });
   }
 
@@ -29,7 +29,7 @@ window.onload = function () {
     if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
       iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
       menuCatalog.classList.remove('active');
-      html.classList.remove('lock');
+      // html.classList.remove('lock');
       // headsearch.classList.remove('_active')
     }
   })
