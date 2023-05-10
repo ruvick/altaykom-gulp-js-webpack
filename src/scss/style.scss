@@ -1431,7 +1431,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex: 0 0 32px;
+	// flex: 0 0 32px;
 	height: 21px;
 	font-size: 12px;
 	line-height: 1.3;
@@ -2519,6 +2519,105 @@ body {
 
 //========================================================================================================================================================
 
+.card-product-sec {
+}
+.cardProductSl {
+	position: relative;
+}
+.card-product-sec__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.card-product-sec__slider {
+	width: 460px;
+	height: 460px;
+	flex: 0 0 460px;
+	border-radius: 35px;
+	overflow: hidden;
+	margin-right: 140px;
+	// border: 1px solid #000;
+}
+.sliderSec__swiper {
+}
+.card-product-slider__slide {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.card-product__sticker-block {
+}
+.sticker-block-card {
+}
+.sticker-product {
+}
+.sticker-product_red {
+}
+.sticker-product-favorite {
+}
+.sticker-product-favorite__icon {
+}
+.card-product-slider .swiper-button__inner {
+    top: inherit;
+    bottom: -15px;
+    width: 91px;
+}
+.slider-info__button-next {
+}
+.card-product-slider .swiper-button {
+	position: sticky;
+	flex: 0 0 56px;
+	width: 56px;
+	height: 56px;
+}
+.swiper-button-next {
+}
+.slider-info__button-prev {
+}
+.swiper-button-prev {
+}
+.card-product-sec__descp {
+	flex: 1 1 auto;
+}
+.card-product-sec__title {
+	font-size: 40px;
+	line-height: 50/40*100%;
+	color: #161615;
+	margin-bottom: 15px;
+}
+.card-product-sec__button-block {
+	margin-bottom: 24px;
+	&:last-child{
+		margin-bottom: 24px;
+	}
+}
+.card-product-sec__button-block-inner {
+	display: flex;
+	flex-wrap: wrap;
+}
+.card-product-sec__button-block-title {
+font-weight: 700;
+margin-bottom: 10px;
+}
+.product-btn {
+	font-size: 16px;
+  padding: 4px 10px 4px 10px;
+  border: 1px solid #E3E3E3;
+  border-radius: 15px;
+  transition: all 0.5s;
+	&:hover{
+		color: #C5934F;
+		border: 1px solid #C5934F;
+	}
+}
+.product-btn.active {
+	color: #C5934F;
+  border: 1px solid #C5934F;
+}
+.card-product-sec__button-block-btn {
+	margin-right: 5px;
+}
+//========================================================================================================================================================
 
 // Перенести
 .page .lineBlock {
@@ -2557,7 +2656,21 @@ body {
 		background: #221F20;
 	}
 }
-
+.sticker-block-card {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 8px;
+	overflow: hidden;
+}
+.sticker-product_crem {
+	color: #C5934F;
+	background: #F9F4ED;
+}
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
