@@ -1220,6 +1220,7 @@ body {
 		flex: 0 1 100%;
 		min-height: 200px;
 		max-height: 200px;
+		border-radius: 25px;
 		margin-bottom: 19px;
 		overflow: hidden;
 	}
@@ -1228,6 +1229,7 @@ body {
 		position: absolute;
 		top: 15px;
 		left: 15px;
+		z-index: 5;
 	}
 
 	&__body-interface {
@@ -1261,7 +1263,12 @@ body {
 	font-size: 18px;
 	line-height: 26px;
 }
-
+.article-card img {
+	transition: 0.5s;
+}
+.article-card:hover img {
+	transform: scale(1.03);
+}
 //========================================================================================================================================================
 
 .inerface-info {
