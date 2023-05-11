@@ -70,9 +70,8 @@
         <input
           type="text"
           placeholder="Поиск по каталогу"
+          data-placeholder="Поиск по каталогу"
           class="search-form__input"
-          value=""
-          name="search"
         />
         <span tabindex="1" class="search-form__btn-closed">
           <svg class="search-form__btn-closed-icon">
@@ -82,7 +81,6 @@
         <button
           type="submit"
           tabindex="2"
-          value=""
           id="searchsubmit"
           class="search-form__btn"
         ></button>
@@ -426,10 +424,9 @@
       </div>
     </div>
   </div>
-</header>
-
-<div class="search-menu">
-  <div class="search-menu__inner">
-    @@include('/components/_similar-products-block.htm',{})
+  <div class="search-menu">
+    <div class="search-menu__inner">
+      @@include('/components/_similar-products-block.htm',{})
+    </div>
   </div>
-</div>
+</header>
