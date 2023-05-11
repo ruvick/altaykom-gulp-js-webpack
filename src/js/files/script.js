@@ -99,6 +99,30 @@ window.onload = function () {
   }
 
 
+// Лайки
+const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
+const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
+const disLikeButtons = Array.from(document.querySelectorAll("._dislike-icon-btn"));
+const disLikeCounts = Array.from(document.querySelectorAll("._dislike-icon-count"));
+
+likeButtons.forEach((button, index) => {
+	button.addEventListener("click", () => {
+		button.classList.toggle("is-active");
+		const current = Number(likeCounts[index].innerHTML);
+		const inc = button.classList.contains("is-active") ? 1 : -1;
+		likeCounts[index].innerHTML = current + inc;
+	});
+});
+
+disLikeButtons.forEach((button, index) => {
+	button.addEventListener("click", () => {
+		button.classList.toggle("is-active");
+		const current = Number(disLikeCounts[index].innerHTML);
+		const inc = button.classList.contains("is-active") ? -1 : 1;
+		disLikeCounts[index].innerHTML = current + inc;
+	});
+});
+
 
   //BURGER
   // if (catBtn) {
