@@ -2425,17 +2425,6 @@ body {
 //========================================================================================================================================================
 
 // Похожие товары 
-.similar-products-block {
-	height: 589px;
-	overflow: auto;
-	padding-bottom: 40px;
-}
-
-.similar-products-block::-webkit-scrollbar-thumb,
-.similar-products-block::-webkit-scrollbar {
-	display: none;
-}
-
 .similar-products-block__row {
 	display: flex;
 	align-items: center;

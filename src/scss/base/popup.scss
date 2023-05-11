@@ -171,7 +171,7 @@ body.popup-show::after {
 	max-width: 700px;
 }
 
-.leave-feedback-popup .popup__form-textarea {
+.leave-feedback-popup .popup__form-textarea { 
 	height: 240px;
 }
 
@@ -199,6 +199,16 @@ body.popup-show::after {
 .similar-products-popup .popup__content {
 	max-width: 778px;
 	max-height: 589px;
+}
+
+.similar-products-popup__inner {
+	height: 589px;
+	overflow: auto;
+	padding-bottom: 40px;
+}
+.similar-products-popup__inner::-webkit-scrollbar-thumb,
+.similar-products-popup__inner::-webkit-scrollbar {
+	display: none;
 }
 
 // Popup Cookie

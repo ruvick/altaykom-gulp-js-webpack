@@ -38,24 +38,28 @@ window.onload = function () {
   // Срабатывание поиска
   const search = document.querySelector(".search-form");
   const searchInput = document.querySelector(".search-form__input");
+	const searchMenu = document.querySelector(".search-menu");
   const searchBtnClosed = document.querySelector(".search-form__btn-closed");
   const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
   interFacelinkText.forEach(btn => {
     searchInput.addEventListener('click', function () {
       search.classList.add("active");
+			searchMenu.classList.add("active");
       searchBtnClosed.classList.add("active");
       btn.classList.add("none");
     })
     searchBtnClosed.addEventListener('click', function () {
       search.classList.remove("active");
+			searchMenu.classList.remove("active");
       searchBtnClosed.classList.remove("active");
       btn.classList.remove("none");
     })
     window.addEventListener('click', e => { // при клике в любом месте окна браузера
       const target = e.target // находим элемент, на котором был клик
-      if (!target.closest('.search-form__btn') && !target.closest('.search-form__input')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.search-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
         search.classList.remove("active");
+				searchMenu.classList.remove("active");
         searchBtnClosed.classList.remove('active');
         btn.classList.remove("none");
       }
@@ -102,8 +106,6 @@ window.onload = function () {
 // Лайки
 const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
 const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
-const disLikeButtons = Array.from(document.querySelectorAll("._dislike-icon-btn"));
-const disLikeCounts = Array.from(document.querySelectorAll("._dislike-icon-count"));
 
 likeButtons.forEach((button, index) => {
 	button.addEventListener("click", () => {
@@ -114,14 +116,6 @@ likeButtons.forEach((button, index) => {
 	});
 });
 
-disLikeButtons.forEach((button, index) => {
-	button.addEventListener("click", () => {
-		button.classList.toggle("is-active");
-		const current = Number(disLikeCounts[index].innerHTML);
-		const inc = button.classList.contains("is-active") ? -1 : 1;
-		disLikeCounts[index].innerHTML = current + inc;
-	});
-});
 
 
   //BURGER
