@@ -2541,6 +2541,12 @@ body {
 	height: 100%;
 	overflow: hidden;
 }
+.card-product-slider__slide img {
+	transition: 0.5s;
+}
+.card-product-slider__slide:hover img {
+	transform: scale(1.03);
+}
 .card-product__sticker-block {
 }
 .sticker-block-card {
