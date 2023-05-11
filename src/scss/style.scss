@@ -2430,7 +2430,14 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	overflow: hidden;
-	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 25px;
+	cursor: pointer;
+	transition: all 0.5s;
+
+	&:hover{
+		background: #F3F3F4;
+	}
 
 	&:last-child {
 		margin-bottom: 0;
