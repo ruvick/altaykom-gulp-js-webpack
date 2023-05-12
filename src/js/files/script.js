@@ -68,16 +68,41 @@ window.onload = function () {
 
 
   // Переключение корзины в карточке товаров
-  const interAddingBascetBtn = document.querySelector('.interactive-adding-bascet__button');
-  const interAddingBascet = document.querySelector('.interactive-adding-bascet');
-  const interAddingQuantity = document.querySelector('.interactive-adding-quantity');
+  const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
+  const interAddingBascet = document.querySelectorAll('.interactive-adding-bascet');
+  const interAddingQuantity = document.querySelectorAll('.interactive-adding-quantity');
 
-  if (interAddingBascetBtn) {
-    interAddingBascetBtn.addEventListener('click', function () {
-      interAddingBascet.classList.add('none');
-      interAddingQuantity.classList.toggle('active');
-    });
-  }
+  // if (interAddingBascetBtn) {
+  //   interAddingBascetBtn.addEventListener('click', function () {
+  //     interAddingBascet.classList.add('none');
+  //     interAddingQuantity.classList.toggle('active');
+	// 		console.log('клик');
+  //   });
+  // }
+
+	interAddingBascetBtn.forEach((btn, index) => {
+		btn.addEventListener('click', () => {
+	
+			if (btn) {
+	
+				interAddingBascet.forEach((interAddingBascet) => {
+					interAddingBascet.classList.add('none');
+				});
+				interAddingQuantity.forEach((interAddingQuantity) => {
+					interAddingQuantity.classList.add('active');
+				});
+	
+				// BarSubMenuElems[index].classList.add('active')
+				// BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+				// btn.classList.add('sidebar__menu-icon_active')
+			} 
+			// else {
+			// 	BarSubMenuElems[index].classList.remove('active')
+			// 	BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+			// 	btn.classList.remove('sidebar__menu-icon_active')
+			// }
+		})
+	})
 
   window.addEventListener('click', e => { // при клике в любом месте окна браузера
     const target = e.target // находим элемент, на котором был клик
