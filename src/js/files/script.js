@@ -9,7 +9,7 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-  const body = document.querySelector("body");
+  // const body = document.querySelector("body");
 
   // Открыть/закрыть catalog в header 
   const catBtn = document.querySelector('.button-catalog');
@@ -42,18 +42,18 @@ window.onload = function () {
   const searchBtnClosed = document.querySelector(".search-form__btn-closed");
   const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
-  interFacelinkText.forEach(btn => {
+  interFacelinkText.forEach(linkText => {
     searchInput.addEventListener('click', function () {
       search.classList.add("active");
 			searchMenu.classList.add("active");
       searchBtnClosed.classList.add("active");
-      btn.classList.add("none");
+      linkText.classList.add("none");
     })
     searchBtnClosed.addEventListener('click', function () {
       search.classList.remove("active");
 			searchMenu.classList.remove("active");
       searchBtnClosed.classList.remove("active");
-      btn.classList.remove("none");
+      linkText.classList.remove("none");
     })
     window.addEventListener('click', e => { // при клике в любом месте окна браузера
       const target = e.target // находим элемент, на котором был клик
@@ -61,7 +61,7 @@ window.onload = function () {
         search.classList.remove("active");
 				searchMenu.classList.remove("active");
         searchBtnClosed.classList.remove('active');
-        btn.classList.remove("none");
+        linkText.classList.remove("none");
       }
     })
   })

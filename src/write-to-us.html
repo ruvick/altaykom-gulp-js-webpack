@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{ "title":"Форма Написать нам" })
+  @@include('html/_head.htm',{ "title":"Форма Написать нам" })
 
-<body>
-  <div class="wrapper registration-wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page page-registration">
-      @@include('html/components/_lineBlock.htm',{})
+  <body>
+    <div class="wrapper registration-wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page-registration">
+        @@include('html/components/_lineBlock.htm',{})
 
-      <section class="registration-section section">
-        <div class="_container">
+        <section class="registration-section section">
+          <div class="_container">
+            <div class="registration-section__body">
+              <button type="button" class="registration-section__btn">
+                <svg class="registration-section__btn-icon">
+                  <use xlink:href="#reg-back-btn"></use>
+                </svg>
+                вернуться
+              </button>
 
-          <div class="registration-section__body">
+              <div
+                class="registration-section__form submission-form submission-form_big"
+              >
+                <form action="#" class="submission-form__form">
+                  <div class="form__line">
+                    <!-- <div class="submission-form__item"> -->
+                    <div class="submission-form__title">Написать нам</div>
+                    <!-- </div> -->
 
-            <button type="button" class="registration-section__btn">
-              <svg class="registration-section__btn-icon">
-                <use xlink:href="#reg-back-btn"></use>
-              </svg>
-              вернуться
-            </button>
-
-            <div class="registration-section__form submission-form submission-form_big">
-              <form action="#" class="submission-form__form">
-                <div class="form__line">
-
-                  <!-- <div class="submission-form__item"> -->
-                  <div class="submission-form__title">Написать нам</div>
-                  <!-- </div> -->
-
-                  <div class="submission-form__item">
-                    <div class="submission-form__title-low">Контактное лицо</div>
-                    <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
-                      class="submission-form__input input">
-                    <input type="text" name="job-title" data-required="job-title" data-validate placeholder="Должность*"
-                      class="submission-form__input input">
-                    <div class="submission-form__column">
-                      <input type="tel" name="tel" data-required="tel" data-validate placeholder="Телефон*"
-                        class="submission-form__input input">
-                      <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-                        class="submission-form__input input">
+                    <div class="submission-form__item">
+                      <div class="submission-form__title-low">
+                        Контактное лицо
+                      </div>
+                      <input
+                        type="text"
+                        name="name"
+                        data-required="name"
+                        data-validate
+                        placeholder="ФИО*"
+                        class="submission-form__input input"
+                      />
+                      <input
+                        type="text"
+                        name="job-title"
+                        data-required="job-title"
+                        data-validate
+                        placeholder="Должность*"
+                        class="submission-form__input input"
+                      />
+                      <div class="submission-form__column">
+                        <input
+                          type="tel"
+                          name="phone"
+                          data-required="tel"
+                          data-validate
+                          placeholder="Телефон*"
+                          class="submission-form__input input tel"
+                        />
+                        <input
+                          type="text"
+                          name="email"
+                          data-required="email"
+                          data-validate
+                          placeholder="Email*"
+                          class="submission-form__input input"
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div class="submission-form__item">
-                    <div class="submission-form__title-low">Комментарий</div>
-                    <textarea name="" id="" placeholder="Сообщение*" class="submission-form__textarea input"></textarea>
-                  </div>
+                    <div class="submission-form__item">
+                      <div class="submission-form__title-low">Комментарий</div>
+                      <textarea
+                        name=""
+                        id=""
+                        placeholder="Сообщение*"
+                        class="submission-form__textarea input"
+                      ></textarea>
+                    </div>
 
-                  <div class="submission-form__item">
-                    <input type="file" name="file" data-required="file" data-validate placeholder="Прикрепить файл"
-                      class="submission-form__input">
-                  </div>
+                    <div class="submission-form__item">
+                      <input
+                        type="file"
+                        name="file"
+                        data-required="file"
+                        data-validate
+                        placeholder="Прикрепить файл"
+                        class="submission-form__input"
+                      />
+                    </div>
 
-                  <div class="submission-form__policy">
-                    Нажимая на кнопку «Зарегистрироваться»,
-                    Вы соглашаетесь на обработку <a href="#privacy-policy.html"
-                      class="submission-form__policy-link">персональных данных</a>
+                    <div class="submission-form__policy">
+                      Нажимая на кнопку «Зарегистрироваться», Вы соглашаетесь на
+                      обработку
+                      <a
+                        href="#privacy-policy.html"
+                        class="submission-form__policy-link"
+                        >персональных данных</a
+                      >
+                    </div>
+                    <button type="submit" class="submission-form__button btn">
+                      отправить
+                    </button>
                   </div>
-                  <button type="submit" class="submission-form__button btn">отправить</button>
+                </form>
+              </div>
+
+              <div class="registration-section__soc-entrance soc-entrance">
+                <div class="soc-entrance__text">Быстрый вход через соцсети</div>
+                <div class="soc-entrance__row">
+                  <a href="#" class="soc-entrance__icon soc-entrance__icon_vk">
+                    <svg class="soc-entrance__icon-svg">
+                      <use xlink:href="#vk-icon"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="soc-entrance__icon soc-entrance__icon_ya">
+                    <svg class="soc-entrance__icon-svg">
+                      <use xlink:href="#ya-icon"></use>
+                    </svg>
+                  </a>
                 </div>
-              </form>
-            </div>
-
-            <div class="registration-section__soc-entrance soc-entrance">
-              <div class="soc-entrance__text">Быстрый вход через соцсети</div>
-              <div class="soc-entrance__row">
-                <a href="#" class="soc-entrance__icon soc-entrance__icon_vk">
-                  <svg class="soc-entrance__icon-svg">
-                    <use xlink:href="#vk-icon"></use>
-                  </svg>
-                </a>
-                <a href="#" class="soc-entrance__icon soc-entrance__icon_ya">
-                  <svg class="soc-entrance__icon-svg">
-                    <use xlink:href="#ya-icon"></use>
-                  </svg>
-                </a>
               </div>
             </div>
-
           </div>
-
-        </div>
-      </section>
-
-    </main>
-    @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-</body>
-
+        </section>
+      </main>
+      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>

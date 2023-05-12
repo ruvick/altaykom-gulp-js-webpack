@@ -87,7 +87,7 @@ export class InputMask {
 	}
 }
 
-/*
+
 [].forEach.call(document.querySelectorAll('.tel'), function (input) {
 	var keyCode;
 	function mask(event) {
@@ -120,4 +120,3 @@ export class InputMask {
 	input.addEventListener("blur", mask, false);
 	input.addEventListener("keydown", mask, false)
 });
-*/
