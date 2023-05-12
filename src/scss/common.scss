@@ -203,12 +203,31 @@
 // Блок линии (Блок с двумя горизонтальными линиями)
 .lineBlock {
   width: 100%;
-  padding: 19px 0;
+  // padding: 19px 0;
   min-height: 64px;
   border-bottom: 1px solid #E3E3E3;
   background: #fff;
 }
-
+.lineBlock-blk {
+	// display: none;
+	visibility: hidden;
+	opacity: 0;
+	overflow: hidden;
+  position: absolute;
+  top: 213px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: #00000065;
+	transition: all 0.3s;
+}
+.lineBlock-blk._active {
+	// display: block;
+	visibility: visible;
+	overflow: hidden;
+	opacity: 1;
+}
 .lineBlock__menu {}
 
 // Кнопки навигации (Ссылки в шапке)
@@ -250,6 +269,9 @@
     background-repeat: no-repeat;
   }
 }
+.lineBlock__menu .menu-lineBlock__link {
+	padding: 19px 0;
+}
 
 .menu-lineBlock__link_icon-stocks:hover {
   color: #EA2838;
@@ -288,7 +310,7 @@
   visibility: hidden;
   overflow: hidden;
   position: absolute;
-  top: 45px;
+  top: 64px;
   left: 0;
   z-index: 510;
   display: flex;
@@ -302,14 +324,21 @@
   transition: $mainTransition;
   // pointer-events: none;
 }
-
-.menu-lineBlock__item:hover .sub-list {
-  height: auto;
+.sub-list._active {
+	height: auto;
   opacity: 1;
   visibility: visible;
   overflow: visible;
-  // pointer-events: auto;
+	
 }
+
+// .menu-lineBlock__item:hover .sub-list {
+//   height: auto;
+//   opacity: 1;
+//   visibility: visible;
+//   overflow: visible;
+//   // pointer-events: auto;
+// }
 
 .sub-list-block {
   display: block;
@@ -330,17 +359,6 @@
   &:hover {
     color: #C5934F;
   }
-}
-
-.lineBlock-blk {
-  display: none;
-  position: absolute;
-  top: 215px;
-  left: 0;
-  z-index: 500;
-  width: 100%;
-  height: 100%;
-  background-color: #00000035;
 }
 
 .menu-lineBlock__item:hover .lineBlock-blk {

@@ -9,7 +9,8 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-  // const body = document.querySelector("body");
+  const body = document.querySelector("body");
+	const html = document.querySelector('html');
 
   // Открыть/закрыть catalog в header 
   const catBtn = document.querySelector('.button-catalog');
@@ -20,7 +21,9 @@ window.onload = function () {
     catBtn.addEventListener('click', function () {
       iconMenu.classList.toggle('active');
       menuCatalog.classList.toggle('active');
-      // html.classList.toggle('lock');
+			lineBlockBlk.classList.toggle('_active');
+			// html.classList.toggle('lock');
+			// body.style.paddingRight = '7px';
     });
   }
 
@@ -38,7 +41,7 @@ window.onload = function () {
   // Срабатывание поиска
   const search = document.querySelector(".search-form");
   const searchInput = document.querySelector(".search-form__input");
-	const searchMenu = document.querySelector(".search-menu");
+	const searchMenu = document.querySelector(".menu-search");
   const searchBtnClosed = document.querySelector(".search-form__btn-closed");
   const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
@@ -48,23 +51,54 @@ window.onload = function () {
 			searchMenu.classList.add("active");
       searchBtnClosed.classList.add("active");
       linkText.classList.add("none");
+			lineBlockBlk.classList.add('_active');
+			html.classList.add('lock');
+			body.style.paddingRight = '7px';
     })
     searchBtnClosed.addEventListener('click', function () {
       search.classList.remove("active");
 			searchMenu.classList.remove("active");
       searchBtnClosed.classList.remove("active");
       linkText.classList.remove("none");
+			lineBlockBlk.classList.remove('_active');
+			html.classList.remove('lock');
+			body.style.paddingRight = '0px';
     })
     window.addEventListener('click', e => { // при клике в любом месте окна браузера
       const target = e.target // находим элемент, на котором был клик
-      if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.search-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+      if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
         search.classList.remove("active");
 				searchMenu.classList.remove("active");
         searchBtnClosed.classList.remove('active');
         linkText.classList.remove("none");
+				lineBlockBlk.classList.remove('_active');
+				html.classList.remove('lock');
+				body.style.paddingRight = '0px';
       }
     })
   })
+
+	
+	// Всплывающие меню при наведении
+	const item = document.querySelectorAll('.menu-lineBlock__item'); 
+	const lineBlockBlk = document.querySelector('.lineBlock-blk');
+
+	for(let i = 0; i < item.length;i++){
+    item[i].addEventListener('mouseenter',(e)=>{
+        let child = item[i].getElementsByClassName('sub-list')[0];
+        child.classList.add('_active');
+				lineBlockBlk.classList.add('_active');
+				html.classList.add('lock');
+				body.style.paddingRight = '7px';
+    })
+    item[i].addEventListener('mouseleave',()=>{
+        let child = item[i].getElementsByClassName('sub-list')[0];
+        child.classList.remove('_active');
+				lineBlockBlk.classList.remove('_active');
+				html.classList.remove('lock');
+				body.style.paddingRight = '0px';
+    })
+}
 
 
   // Переключение корзины в карточке товаров
@@ -107,7 +141,7 @@ window.onload = function () {
   window.addEventListener('click', e => { // при клике в любом месте окна браузера
     const target = e.target // находим элемент, на котором был клик
     if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-      interAddingBascet.classList.remove('none');
+      // interAddingBascet.classList.remove('none');
       interAddingQuantity.classList.remove('active');
       // headsearch.classList.remove('_active')
     }
@@ -140,6 +174,7 @@ likeButtons.forEach((button, index) => {
 		likeCounts[index].innerHTML = current + inc;
 	});
 });
+
 
 
 

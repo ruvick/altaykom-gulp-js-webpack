@@ -58,7 +58,7 @@
         <div class="button-catalog__text">каталог</div>
         <button
           type="button"
-          class="button-catalog__icon-menu icon-menu"
+          class="button-catalog__icon icon-menu"
           aria-label="Бургер иконка"
         >
           <span></span>
@@ -73,11 +73,11 @@
           data-placeholder="Поиск по каталогу"
           class="search-form__input"
         />
-        <span tabindex="1" class="search-form__btn-closed">
+        <button type="reset" tabindex="1" class="search-form__btn-closed">
           <svg class="search-form__btn-closed-icon">
             <use xlink:href="#popup-close"></use>
           </svg>
-        </span>
+        </button>
         <button
           type="submit"
           tabindex="2"
@@ -85,7 +85,7 @@
           class="search-form__btn"
         ></button>
       </form>
-      <div class="header__navigation-interface interface">
+      <div class="header__interface interface">
         <a href="#" class="interface__link interface__link_enter"
           ><span class="interface__link-text">Войти</span></a
         >
@@ -424,8 +424,8 @@
       </div>
     </div>
   </div>
-  <div class="search-menu">
-    <div class="search-menu__inner">
+  <div class="menu-search">
+    <div class="menu-search__inner">
       @@include('/components/_similar-products-block.htm',{})
     </div>
   </div>
