@@ -10,7 +10,7 @@
 window.onload = function () {
 
   const body = document.querySelector("body");
-	const html = document.querySelector('html');
+  const html = document.querySelector('html');
 
   // Открыть/закрыть catalog в header 
   const catBtn = document.querySelector('.button-catalog');
@@ -21,9 +21,9 @@ window.onload = function () {
     catBtn.addEventListener('click', function () {
       iconMenu.classList.toggle('active');
       menuCatalog.classList.toggle('active');
-			lineBlockBlk.classList.toggle('_active');
-			// html.classList.toggle('lock');
-			// body.style.paddingRight = '7px';
+      lineBlockBlk.classList.toggle('_active');
+      // html.classList.toggle('lock');
+      // body.style.paddingRight = '7px';
     });
   }
 
@@ -41,64 +41,64 @@ window.onload = function () {
   // Срабатывание поиска
   const search = document.querySelector(".search-form");
   const searchInput = document.querySelector(".search-form__input");
-	const searchMenu = document.querySelector(".menu-search");
+  const searchMenu = document.querySelector(".menu-search");
   const searchBtnClosed = document.querySelector(".search-form__btn-closed");
   const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
   interFacelinkText.forEach(linkText => {
     searchInput.addEventListener('click', function () {
-      search.classList.add("active");
-			searchMenu.classList.add("active");
-      searchBtnClosed.classList.add("active");
+      search.classList.add("_active");
+      searchMenu.classList.add("_active");
+      searchBtnClosed.classList.add("_active");
       linkText.classList.add("none");
-			lineBlockBlk.classList.add('_active');
-			html.classList.add('lock');
-			body.style.paddingRight = '7px';
+      lineBlockBlk.classList.add('_active');
+      html.classList.add('lock');
+      body.style.paddingRight = '7px';
     })
     searchBtnClosed.addEventListener('click', function () {
-      search.classList.remove("active");
-			searchMenu.classList.remove("active");
-      searchBtnClosed.classList.remove("active");
+      search.classList.remove("_active");
+      searchMenu.classList.remove("_active");
+      searchBtnClosed.classList.remove("_active");
       linkText.classList.remove("none");
-			lineBlockBlk.classList.remove('_active');
-			html.classList.remove('lock');
-			body.style.paddingRight = '0px';
+      lineBlockBlk.classList.remove('_active');
+      html.classList.remove('lock');
+      body.style.paddingRight = '0px';
     })
     window.addEventListener('click', e => { // при клике в любом месте окна браузера
       const target = e.target // находим элемент, на котором был клик
       if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-        search.classList.remove("active");
-				searchMenu.classList.remove("active");
-        searchBtnClosed.classList.remove('active');
+        search.classList.remove("_active");
+        searchMenu.classList.remove("_active");
+        searchBtnClosed.classList.remove('_active');
         linkText.classList.remove("none");
-				lineBlockBlk.classList.remove('_active');
-				html.classList.remove('lock');
-				body.style.paddingRight = '0px';
+        lineBlockBlk.classList.remove('_active');
+        html.classList.remove('lock');
+        body.style.paddingRight = '0px';
       }
     })
   })
 
-	
-	// Всплывающие меню при наведении
-	const item = document.querySelectorAll('.menu-lineBlock__item'); 
-	const lineBlockBlk = document.querySelector('.lineBlock-blk');
 
-	for(let i = 0; i < item.length;i++){
-    item[i].addEventListener('mouseenter',(e)=>{
-        let child = item[i].getElementsByClassName('sub-list')[0];
-        child.classList.add('_active');
-				lineBlockBlk.classList.add('_active');
-				html.classList.add('lock');
-				body.style.paddingRight = '7px';
+  // Всплывающие меню при наведении
+  const item = document.querySelectorAll('.menu-lineBlock__item');
+  const lineBlockBlk = document.querySelector('.lineBlock-blk');
+
+  for (let i = 0; i < item.length; i++) {
+    item[i].addEventListener('mouseenter', (e) => {
+      let child = item[i].getElementsByClassName('sub-list')[0];
+      child.classList.add('_active');
+      lineBlockBlk.classList.add('_active');
+      html.classList.add('lock');
+      body.style.paddingRight = '7px';
     })
-    item[i].addEventListener('mouseleave',()=>{
-        let child = item[i].getElementsByClassName('sub-list')[0];
-        child.classList.remove('_active');
-				lineBlockBlk.classList.remove('_active');
-				html.classList.remove('lock');
-				body.style.paddingRight = '0px';
+    item[i].addEventListener('mouseleave', () => {
+      let child = item[i].getElementsByClassName('sub-list')[0];
+      child.classList.remove('_active');
+      lineBlockBlk.classList.remove('_active');
+      html.classList.remove('lock');
+      body.style.paddingRight = '0px';
     })
-}
+  }
 
 
   // Переключение корзины в карточке товаров
@@ -110,33 +110,33 @@ window.onload = function () {
   //   interAddingBascetBtn.addEventListener('click', function () {
   //     interAddingBascet.classList.add('none');
   //     interAddingQuantity.classList.toggle('active');
-	// 		console.log('клик');
+  // 		console.log('клик');
   //   });
   // }
 
-	interAddingBascetBtn.forEach((btn, index) => {
-		btn.addEventListener('click', () => {
-	
-			if (btn) {
-	
-				interAddingBascet.forEach((interAddingBascet) => {
-					interAddingBascet.classList.add('none');
-				});
-				interAddingQuantity.forEach((interAddingQuantity) => {
-					interAddingQuantity.classList.add('active');
-				});
-	
-				// BarSubMenuElems[index].classList.add('active')
-				// BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-				// btn.classList.add('sidebar__menu-icon_active')
-			} 
-			// else {
-			// 	BarSubMenuElems[index].classList.remove('active')
-			// 	BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-			// 	btn.classList.remove('sidebar__menu-icon_active')
-			// }
-		})
-	})
+  interAddingBascetBtn.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+
+      if (btn) {
+
+        interAddingBascet.forEach((interAddingBascet) => {
+          interAddingBascet.classList.add('none');
+        });
+        interAddingQuantity.forEach((interAddingQuantity) => {
+          interAddingQuantity.classList.add('active');
+        });
+
+        // BarSubMenuElems[index].classList.add('active')
+        // BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+        // btn.classList.add('sidebar__menu-icon_active')
+      }
+      // else {
+      // 	BarSubMenuElems[index].classList.remove('active')
+      // 	BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+      // 	btn.classList.remove('sidebar__menu-icon_active')
+      // }
+    })
+  })
 
   window.addEventListener('click', e => { // при клике в любом месте окна браузера
     const target = e.target // находим элемент, на котором был клик
@@ -162,18 +162,18 @@ window.onload = function () {
   }
 
 
-// Лайки
-const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
-const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
+  // Лайки
+  const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
+  const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
 
-likeButtons.forEach((button, index) => {
-	button.addEventListener("click", () => {
-		button.classList.toggle("is-active");
-		const current = Number(likeCounts[index].innerHTML);
-		const inc = button.classList.contains("is-active") ? 1 : -1;
-		likeCounts[index].innerHTML = current + inc;
-	});
-});
+  likeButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("is-active");
+      const current = Number(likeCounts[index].innerHTML);
+      const inc = button.classList.contains("is-active") ? 1 : -1;
+      likeCounts[index].innerHTML = current + inc;
+    });
+  });
 
 
 

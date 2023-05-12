@@ -8,7 +8,7 @@
   border: 1px solid #E3E3E3;
   border-radius: 15px;
   overflow: hidden;
-  transition: all 1s;
+  transition: right 0.3s ease 0;
   cursor: pointer;
 
   &:hover {
@@ -16,10 +16,10 @@
   }
 }
 
-.search-form.active {
-  flex: 0 1 100%;
+.search-form._active {
+  // flex: 0 1 100%;
   border: 1px solid #221F20;
-  transition: all 0.8s;
+  // transition: all 0.8s;
 }
 
 .search-form__input {
@@ -82,9 +82,9 @@
   visibility: hidden;
   cursor: pointer;
   transition: all 0.3s;
-}
 
-.search-form__btn-closed.active {
-  opacity: 1;
-  visibility: visible;
+  &._active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
