@@ -282,17 +282,34 @@ body {
 	width: 85%;
 	height: auto;
 	object-fit: fill;
-	transition: ease 1s;
+	transition: 1s;
 }
 
-// .categoriesImgBlock__card:hover .categoriesImgBlock__card-img img {
-// 	width: 90%;
-// 	transition: ease 1s;
-// }
+.categoriesImgBlock__card:hover .categoriesImgBlock__card-img img {
+	transform: scale(1.1);
+}
+
 .categoriesImgBlock__card-text {
 	font-size: 26px;
 	line-height: 26px;
 	text-align: center;
+	transition: 0.5s;
+}
+
+.categoriesImgBlock__card:hover .ingredients-color {
+	color: #F47FBD;
+}
+
+.categoriesImgBlock__card:hover .inventory-color {
+	color: #34B866;
+}
+
+.categoriesImgBlock__card:hover .equipment-color {
+	color: #6584EE;
+}
+
+.categoriesImgBlock__card:hover .production-color {
+	color: #C5934F;
 }
 
 .popular-categories__filterBlock {
