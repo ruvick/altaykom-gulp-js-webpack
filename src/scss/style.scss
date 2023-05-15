@@ -2596,12 +2596,24 @@ body {
 	}
 }
 
-.conclusion .card-product__interactive-price-new {
-	font-size: 16px;
-	line-height: 22/16*100%;
+.conclusion__price {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 10px;
+
+	*:last-child {
+		margin-right: 0;
+	}
 }
 
-.conclusion .card-product__interactive-price-old {
+.conclusion .price-new {
+	font-size: 16px;
+	line-height: 22/16*100%;
+	margin-right: 20px;
+}
+
+.conclusion .price-old {
 	font-size: 14px;
 	line-height: 22/14*100%;
 	font-weight: 400;
