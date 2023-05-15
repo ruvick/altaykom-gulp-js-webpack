@@ -2649,11 +2649,6 @@ body {
 	font-weight: 400;
 }
 
-.conclusion__price {
-	font-size: 26px;
-	line-height: 42/26*100%;
-}
-
 .conclusion__row_flex {
 	justify-content: space-between;
 }
@@ -2927,6 +2922,74 @@ body {
 
 .evaluations__btn {
 	width: 100%;
+}
+
+//========================================================================================================================================================
+
+// Личный кабинет ==================================
+
+.page-user-sec {}
+
+.page-user-sec__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-user-sec__main {
+	flex: 0 1 1020/1420*100%;
+	border: 1px solid #000;
+}
+
+.page-user-sec__aside {
+	flex: 0 0 340/1420*100%;
+}
+
+.formed-card {
+	padding: 30px;
+	border-radius: 30px;
+	background: #fff;
+	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.formed-card__row {
+	margin-bottom: 16px;
+}
+
+.formed-card__quantity {
+	font-size: 14px;
+	line-height: 24/14*100%;
+}
+
+.formed-card .table-info__table-row {
+	justify-content: space-between;
+}
+
+.formed-card .table-info__table-col {
+	flex: 0 1 auto;
+	margin-right: 0;
+}
+
+.formed-card .table-info__table-col {
+	display: flex;
+	flex: 0 1 auto;
+	margin-right: 0;
+}
+
+.formed-card .table-info__table-value {
+	font-weight: 700;
+}
+
+.formed-card__text-row {
+	font-size: 14px;
+	line-height: 24/14*100%;
+
+	span {
+		font-weight: 700;
+	}
 }
 
 //========================================================================================================================================================
