@@ -2937,7 +2937,6 @@ body {
 
 .page-user-sec__main {
 	flex: 0 1 1020/1420*100%;
-	border: 1px solid #000;
 }
 
 .page-user-sec__aside {
@@ -2990,6 +2989,63 @@ body {
 	span {
 		font-weight: 700;
 	}
+}
+
+.oreder-formed {
+	margin-bottom: 37px;
+}
+
+.oreder-formed__text {
+	font-size: 18px;
+	line-height: 26/18*100%;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	span {
+		font-weight: 700;
+	}
+
+	a {
+		font-weight: 500;
+		color: #C5934F;
+	}
+}
+
+.order-payment {
+	padding: 38px 20px 38px 40px;
+	border-radius: 30px;
+	background: #f3f3f4;
+	overflow: hidden;
+
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.order-payment__title {
+	font-size: 30px;
+	line-height: 40/30*100%;
+	color: #161615;
+	margin-bottom: 30px;
+}
+
+.order-payment__text {
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 32px;
+}
+
+.order-payment__button {
+	margin-bottom: 40px;
+}
+
+.order-payment__notification {
+	font-size: 14px;
+	line-height: 22/14*100%;
+	font-weight: 700;
 }
 
 //========================================================================================================================================================
