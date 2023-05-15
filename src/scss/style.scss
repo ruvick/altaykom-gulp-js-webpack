@@ -524,8 +524,16 @@ body {
 }
 
 .own-production__banner-btn {
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #fff;
 	margin-left: auto;
 	z-index: 50;
+
+	&:hover {
+		color: #161615;
+		background-color: #fff;
+	}
 }
 
 //========================================================================================================================================================
