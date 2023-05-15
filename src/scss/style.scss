@@ -2625,7 +2625,7 @@ body {
 	margin-left: 30px;
 }
 
-.conclusion__item-iconBtn .btn {
+.conclusion__btn {
 	margin-right: 10px;
 
 	&:last-child {
@@ -2646,24 +2646,6 @@ body {
 
 .conclusion__button-bascet:hover .conclusion__button-bascet-icon {
 	fill: #000;
-}
-
-.conclusion__button-print,
-.conclusion__button-favorit {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 56px;
-	flex: 0 0 56px;
-	height: 56px;
-	padding: 0;
-	border: 1px solid #E3E3E3;
-
-	svg {
-		flex: 0 0 24px;
-		width: 24px;
-		height: 24px;
-	}
 }
 
 //========================================================================================================================================================

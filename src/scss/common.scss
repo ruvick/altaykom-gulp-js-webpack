@@ -73,6 +73,26 @@
   color: #8F8E8E;
 }
 
+//========================================================================================================================================================
+
+.btn-icon-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  flex: 0 0 56px;
+  height: 56px;
+  padding: 0;
+  border: 1px solid #E3E3E3;
+  border-radius: 15px;
+}
+
+.btn-icon-big__icon {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+}
+
 // ИНТЕРАКТИВНЫЕ КНОПКИ===========================================================================
 // Кнопки интерфейса
 .interface {
