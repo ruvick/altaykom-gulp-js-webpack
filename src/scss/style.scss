@@ -452,14 +452,7 @@ body {
 }
 
 .advantagesBlock__btn {
-	// color: #161615;
-	// border: 1px solid #221F20;
 	margin-top: 40px;
-
-	// &:hover {
-	// 	color: #fff;
-	// 	background: #221F20;
-	// }
 }
 
 //========================================================================================================================================================
@@ -1498,11 +1491,14 @@ body {
 .card-product__interactive {}
 
 .card-product__interactive-how {
+	// убрать
 	font-size: 14px;
 	line-height: 22/14 * 100%;
+	// ============================
 	margin-bottom: 3px;
 }
 
+// Убрать
 .interactive-how_green {
 	color: #34B866;
 }
@@ -1510,6 +1506,8 @@ body {
 .interactive-how_grey {
 	color: #8F8E8E;
 }
+
+// ==============================
 
 .card-product__interactive-price {
 	display: flex;
@@ -1519,10 +1517,13 @@ body {
 }
 
 .card-product__interactive-price-new {
+	// Убрать
 	font-size: 20px;
 	line-height: 22/20 *100%;
+	// =======================
 }
 
+// Убрать
 .interactive-price-new_red {
 	color: #EA2838;
 }
@@ -1531,14 +1532,14 @@ body {
 	color: #8F8E8E;
 }
 
-// .card-product .rub:after {
-// 	margin-left: 6px;
-// }
+// ================================
 
 .card-product__interactive-price-old {
+	// Убрать
 	font-size: 16px;
 	line-height: 22/16 *100%;
 	text-decoration: line-through;
+	// ================================
 	margin-left: 20px;
 }
 
