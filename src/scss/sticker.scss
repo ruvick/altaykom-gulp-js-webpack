@@ -92,3 +92,24 @@
   line-height: 1.5;
   font-weight: 700;
 }
+
+.sticker-sales {
+  display: flex;
+  align-items: center;
+  padding: 2.5px 20px 2.5px 5px;
+  color: #fff;
+  border-radius: 10px;
+  background: #EA2838;
+  overflow: hidden;
+}
+
+.sticker-sales__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  margin-right: 5px;
+}
