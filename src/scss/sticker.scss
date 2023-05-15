@@ -1,0 +1,94 @@
+.sticker-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex: 0 0 32px;
+  height: 21px;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: center;
+  color: #fff;
+  padding: 3px 6.2px;
+  border-radius: 7px;
+  background: #22221f;
+  overflow: hidden;
+}
+
+.sticker-product_red {
+  background: #EA2838;
+}
+
+.sticker-product_blue {
+  background: #46A5FC;
+}
+
+.sticker-product_crem {
+  color: #C5934F;
+  background: #F9F4ED;
+}
+
+.crem-color {
+  color: #C5934F;
+}
+
+.green-color {
+  color: #34B866;
+  background: #34b8661f;
+}
+
+.sticker-product-favorite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  flex: 0 0 31px;
+  height: 31px;
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.sticker-product-favorite__icon {
+  width: 17.5px;
+  flex: 0 0 17.5px;
+  height: 17px;
+}
+
+.sticker-product-rating {
+  // Убрать
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  bottom: 0;
+  // -----------------
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 10px 1px 3px;
+  border-radius: 0px 10px 0px 0px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sticker-product-rating__rating {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  margin-right: 4.4px;
+}
+
+.sticker-product-rating__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 14.6px;
+  width: 14.6px;
+  height: 13px;
+}
+
+.sticker-product-rating__value {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+}

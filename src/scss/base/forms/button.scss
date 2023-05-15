@@ -23,10 +23,14 @@
 	font-size: 18px;
 	padding: 16px 30px;
 	color: #161615;
+	background-color: #fff;
 	border: 1px solid #221F20;
 	border-radius: 15px;
 
-	&:hover {}
+	&:hover {
+		color: #fff;
+		background-color: #221F20;
+	}
 
 	&.fw {
 		width: 100%;
@@ -41,12 +45,12 @@
 	line-height: 1;
 	padding: 12px 20px;
 	border-radius: 15px;
-	background: #f3f3f4;
+	background-color: #f3f3f4;
 	border: 1px solid #221f20;
 
 	&:hover {
 		color: #fff;
-		background: #221F20;
+		background-color: #221F20;
 	}
 }
 
@@ -65,6 +69,11 @@
 .btn_black {
 	color: #fff;
 	background: #221F20;
+
+	&:hover {
+		color: #221F20;
+		background-color: #fff;
+	}
 }
 
 // Класс кнопки в форме
@@ -78,5 +87,5 @@
 	color: #fff;
 	border: 1px solid #221F20;
 	border-radius: 15px;
-	background: #221F20;
+	background-color: #221F20;
 }

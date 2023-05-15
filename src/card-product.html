@@ -1,1147 +1,909 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Карточка товара" })
+@@include('html/_head.htm',{ "title":"Карточка товара" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-        @@include('html/components/_lineBlock.htm',{})
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      @@include('html/components/_lineBlock.htm',{})
 
-        <div class="breadcrumbs">
-          <div class="_container">
-            <div class="breadcrumbs__inner">
+      <div class="breadcrumbs">
+        <div class="_container">
+          <div class="breadcrumbs__inner">
+            <span>
               <span>
-                <span>
-                  <a href="home.html"> главная </a> /
-                  <a href="сatalog-persons.html"> каталог </a> /
-                  <a href="#"> ингридиенты </a> /
-                  <span class="breadcrumb_last" aria-current="page">
-                    желейные шарики «мармелатье»
-                  </span>
+                <a href="home.html"> главная </a> /
+                <a href="сatalog-persons.html"> каталог </a> /
+                <a href="#"> ингридиенты </a> /
+                <span class="breadcrumb_last" aria-current="page">
+                  желейные шарики «мармелатье»
                 </span>
               </span>
-            </div>
+            </span>
           </div>
         </div>
+      </div>
 
-        <section id="card-product-sec" class="card-product-sec section">
-          <div class="_container">
-            <div class="card-product-sec__inner">
-              <div class="card-product-slider card-product-sec__slider">
-                <div class="cardProductSl swiper">
-                  <div class="card-product-slider__swiper">
-                    <div class="card-product-slider__slide">
-                      <div
-                        class="card-product__sticker-block sticker-block-card"
-                      >
-                        <span class="sticker-product">хит</span>
-                        <span class="sticker-product sticker-product_red"
-                          >20%</span
-                        >
-                        <span class="sticker-product sticker-product_blue"
-                          >new</span
-                        >
-                        <span class="sticker-product sticker-product_crem"
-                          >прослеживаемый товар</span
-                        >
-                      </div>
-                      <img src="img/card-product-sl/01.jpg" alt="" />
+      <section id="card-product-sec" class="card-product-sec section">
+        <div class="_container">
+          <div class="card-product-sec__inner">
+            <div class="card-product-slider card-product-sec__slider">
+              <div class="cardProductSl swiper">
+                <div class="card-product-slider__swiper">
+                  <div class="card-product-slider__slide">
+                    <div class="card-product-slider__sticker-block">
+                      <span class="sticker-product">хит</span>
+                      <span class="sticker-product sticker-product_red">20%</span>
+                      <span class="sticker-product sticker-product_blue">new</span>
+                      <span class="sticker-product sticker-product_crem">прослеживаемый товар</span>
                     </div>
-                    <div class="card-product-slider__slide">
-                      <div
-                        class="card-product__sticker-block sticker-block-card"
-                      >
-                        <span class="sticker-product">хит</span>
-                        <span class="sticker-product sticker-product_red"
-                          >20%</span
-                        >
-                        <span class="sticker-product sticker-product_blue"
-                          >new</span
-                        >
-                        <span class="sticker-product sticker-product_crem"
-                          >прослеживаемый товар</span
-                        >
-                      </div>
-                      <img src="img/card-product-sl/02.jpg" alt="" />
-                    </div>
-                    <div class="card-product-slider__slide">
-                      <div
-                        class="card-product__sticker-block sticker-block-card"
-                      >
-                        <span class="sticker-product">хит</span>
-                        <span class="sticker-product sticker-product_red"
-                          >20%</span
-                        >
-                        <span class="sticker-product sticker-product_blue"
-                          >new</span
-                        >
-                        <span class="sticker-product sticker-product_crem"
-                          >прослеживаемый товар</span
-                        >
-                      </div>
-                      <img src="img/card-product-sl/03.jpg" alt="" />
-                    </div>
-                    <div class="card-product-slider__slide">
-                      <div
-                        class="card-product__sticker-block sticker-block-card"
-                      >
-                        <span class="sticker-product">хит</span>
-                        <span class="sticker-product sticker-product_red"
-                          >20%</span
-                        >
-                        <span class="sticker-product sticker-product_blue"
-                          >new</span
-                        >
-                        <span class="sticker-product sticker-product_crem"
-                          >прослеживаемый товар</span
-                        >
-                      </div>
-                      <img src="img/card-product-sl/04.jpg" alt="" />
-                    </div>
+                    <img src="img/card-product-sl/01.jpg" alt="" />
                   </div>
-                  <div class="swiper-button__inner">
-                    <div
-                      class="slider-info__button-next swiper-button swiper-button-next"
-                    ></div>
-                    <div
-                      class="slider-info__button-prev swiper-button swiper-button-prev"
-                    ></div>
+                  <div class="card-product-slider__slide">
+                    <div class="card-product__sticker-block sticker-block-card">
+                      <span class="sticker-product">хит</span>
+                      <span class="sticker-product sticker-product_red">20%</span>
+                      <span class="sticker-product sticker-product_blue">new</span>
+                      <span class="sticker-product sticker-product_crem">прослеживаемый товар</span>
+                    </div>
+                    <img src="img/card-product-sl/02.jpg" alt="" />
+                  </div>
+                  <div class="card-product-slider__slide">
+                    <div class="card-product__sticker-block sticker-block-card">
+                      <span class="sticker-product">хит</span>
+                      <span class="sticker-product sticker-product_red">20%</span>
+                      <span class="sticker-product sticker-product_blue">new</span>
+                      <span class="sticker-product sticker-product_crem">прослеживаемый товар</span>
+                    </div>
+                    <img src="img/card-product-sl/03.jpg" alt="" />
+                  </div>
+                  <div class="card-product-slider__slide">
+                    <div class="card-product__sticker-block sticker-block-card">
+                      <span class="sticker-product">хит</span>
+                      <span class="sticker-product sticker-product_red">20%</span>
+                      <span class="sticker-product sticker-product_blue">new</span>
+                      <span class="sticker-product sticker-product_crem">прослеживаемый товар</span>
+                    </div>
+                    <img src="img/card-product-sl/04.jpg" alt="" />
                   </div>
                 </div>
-              </div>
-
-              <div class="card-product-sec__descp-block">
-                <div class="card-product-sec__title">
-                  Желейные шарики «Мармелатье»
-                </div>
-                <div class="card-product-sec__intro">
-                  <div class="card-product-sec__intro-article"></div>
-                  <div class="card-product-sec__intro-rating"></div>
-                </div>
-                <div class="card-product-sec__button-block">
-                  <div class="card-product-sec__button-block-title">Вкус</div>
-                  <div class="card-product-sec__button-block-inner">
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn active"
-                    >
-                      Клубника
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Ваниль
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Банан
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Клубника
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Ваниль
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Банан
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Клубника
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Ваниль
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Клубника
-                    </button>
-                  </div>
-                </div>
-                <div class="card-product-sec__button-block">
-                  <div class="card-product-sec__button-block-title">
-                    Вес упаковки, кг
-                  </div>
-                  <div class="card-product-sec__button-block-inner">
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn active"
-                    >
-                      5
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      4
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      10
-                    </button>
-                  </div>
-                </div>
-                <div class="card-product-sec__button-block">
-                  <div class="card-product-sec__button-block-title">
-                    Тип упаковки
-                  </div>
-                  <div class="card-product-sec__button-block-inner">
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn active"
-                    >
-                      Бокс
-                    </button>
-                    <button
-                      type="button"
-                      class="card-product-sec__button-block-btn product-btn"
-                    >
-                      Мешок
-                    </button>
-                  </div>
-                </div>
-                <div class="card-product-sec__conclusion conclusion">
-                  <div class="conclusion__row">
-                    <div class="conclusion__item">
-                      <div class="conclusion__name">В наличии</div>
-                      <div class="conclusion__value">Много</div>
-                    </div>
-                    <div class="conclusion__item">
-                      <div class="conclusion__name">Вес упаковки</div>
-                      <div class="conclusion__value">5 кг</div>
-                    </div>
-                    <div class="conclusion__item">
-                      <div class="conclusion__name">Цена за 1 шт. с НДС</div>
-                      <div class="conclusion__value">
-                        <div class="card-product__interactive-price">
-                          <div
-                            class="card-product__interactive-price-new interactive-price-new_red rub"
-                          >
-                            1 800.00
-                          </div>
-                          <div class="card-product__interactive-price-old rub">
-                            1 900.00
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="conclusion__line"></div>
-                  <div class="conclusion__row conclusion__row_flex">
-                    <div class="conclusion__item d-flex">
-                      <button
-                        type="button"
-                        class="conclusion__button-bascet btn btn_black"
-                      >
-                        <svg class="conclusion__button-bascet-icon">
-                          <use xlink:href="#bascet-btn-product"></use>
-                        </svg>
-                        в корзину
-                      </button>
-                      <div class="conclusion__item-iconBtn">
-                        <button
-                          type="button"
-                          class="conclusion__button-favorit btn"
-                        >
-                          <svg class="conclusion__button-favorit-icon">
-                            <use xlink:href="#favorites-product"></use>
-                          </svg>
-                        </button>
-                        <button
-                          type="button"
-                          class="conclusion__button-print btn"
-                        >
-                          <svg class="conclusion__button-print-icon">
-                            <use xlink:href="#print-icon"></use>
-                          </svg>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="conclusion__item">
-                      <div class="conclusion__name">
-                        <div class="sticker-product green-color">
-                          экономия 100 ₽
-                        </div>
-                      </div>
-                      <div class="conclusion__value">
-                        <div class="conclusion__price rub">1 800.00</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-product-sec__description">
-                  <div class="card-product-sec__description-text">
-                    Желейные шарики - студнеобразные упругие изделия сферической
-                    и слегка овальной формы в небольшом количестве сиропа.
-                    Ипользуются для декорирования изделий: пирожных, тортов,
-                    десертов, мороженого, для добавления в коктейли и напитки.
-                  </div>
-                  <div class="card-product-sec__description-text">
-                    <span>Состав:</span> сахар, сироп глюкозный, стабилизаторы
-                    (Е1442, Е401), регулятор кислотности Е330, ароматизаторы
-                    идентичные натуральному (Вишня, Лимон, Клубника, Апельсин,
-                    Зелёное яблоко, Йогурт, Чёрная смородина), красители пищевые
-                    (Е129, Е122, Е102, Е171, Е142, Е151)), консервант Е202.
-                    Возможно наличие диоксида серы в количестве не более 0,01 %.
-                  </div>
-                  <div class="card-product-sec__description-text">
-                    <span
-                      >Энергетическая/пищевая ценность (100 г продукта):</span
-                    >
-                    279 ккал/1168 кДж, белки 0,2 г, углеводы 68,3 г.
-                  </div>
-                  <div class="card-product-sec__specifications">
-                    <div class="table-info">
-                      <div class="table-info__subtitle">
-                        <span>Общие характеристики</span>
-                      </div>
-
-                      <div class="table-info__inner">
-                        <div class="table-info__table">
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">
-                                Торговая марка
-                              </div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value crem-color">
-                                Фабрика сладкого вкуса
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">
-                                Сертификат
-                              </div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">ЕАС</div>
-                            </div>
-                          </div>
-
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">
-                                Страна производитель
-                              </div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">Россия</div>
-                            </div>
-                          </div>
-
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">Состав</div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">
-                                См. на упаковке
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="table-info">
-                      <div class="table-info__subtitle">
-                        <span>Упаковка и фасовка</span>
-                      </div>
-
-                      <div class="table-info__inner">
-                        <div class="table-info__table">
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">В боксе</div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">12 штук</div>
-                            </div>
-                          </div>
-
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">Фасовка</div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">
-                                по 1 шт.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">
-                                Индивидуальная упаковка
-                              </div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">
-                                Без упаковки
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">
-                                Размер упаковки (Длина × Ширина × Высота)
-                              </div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">
-                                19 см х 13 см х 6 см
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="table-info">
-                      <div class="table-info__subtitle">
-                        <span>Габариты и вес</span>
-                      </div>
-
-                      <div class="table-info__inner">
-                        <div class="table-info__table">
-                          <div class="table-info__table-row d-flex">
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-name">
-                                Вес брутто
-                              </div>
-                              <div class="table-info__table-line"></div>
-                            </div>
-                            <div class="table-info__table-col">
-                              <div class="table-info__table-value">993 г</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="swiper-button__inner">
+                  <div class="slider-info__button-next swiper-button swiper-button-next"></div>
+                  <div class="slider-info__button-prev swiper-button swiper-button-prev"></div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section id="documents-section" class="documents-section section">
-          <div class="_container">
-            <div class="documents-section__title">Документы</div>
-            <div class="documents-block">
-              <div class="documents-block__row d-flex">
-                <div class="documents-block__column">
-                  <a href="#" class="documents-block__item d-flex">
-                    <div class="documents-block__item-icon">
-                      <svg class="documents-block__item-icon-svg">
-                        <use xlink:href="#pdf-icon"></use>
-                      </svg>
-                    </div>
-                    <div class="documents-block__item-icon-descp">
-                      <div class="documents-block__item-icon-descp-name">
-                        Сертификат соответствия.pdf
-                      </div>
-                      <div class="documents-block__item-icon-descp-value">
-                        456,7 КБ
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="documents-block__column">
-                  <a href="#" class="documents-block__item d-flex">
-                    <div class="documents-block__item-icon">
-                      <svg class="documents-block__item-icon-svg">
-                        <use xlink:href="#xlsx-icon"></use>
-                      </svg>
-                    </div>
-                    <div class="documents-block__item-icon-descp">
-                      <div class="documents-block__item-icon-descp-name">
-                        Сертификат соответствия.xlsx
-                      </div>
-                      <div class="documents-block__item-icon-descp-value">
-                        57,0 КБ
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="documents-block__column">
-                  <a href="#" class="documents-block__item d-flex">
-                    <div class="documents-block__item-icon">
-                      <svg class="documents-block__item-icon-svg">
-                        <use xlink:href="#doc-icon"></use>
-                      </svg>
-                    </div>
-                    <div class="documents-block__item-icon-descp">
-                      <div class="documents-block__item-icon-descp-name">
-                        Описание.doc
-                      </div>
-                      <div class="documents-block__item-icon-descp-value">
-                        56,5 КБ
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="documents-block__column">
-                  <a href="#" class="documents-block__item d-flex">
-                    <div class="documents-block__item-icon">
-                      <svg class="documents-block__item-icon-svg">
-                        <use xlink:href="#pdf-icon"></use>
-                      </svg>
-                    </div>
-                    <div class="documents-block__item-icon-descp">
-                      <div class="documents-block__item-icon-descp-name">
-                        Сертификат соответствия.pdf
-                      </div>
-                      <div class="documents-block__item-icon-descp-value">
-                        57,0 КБ
-                      </div>
-                    </div>
-                  </a>
-                </div>
+            <div class="card-product-sec__descp-block">
+              <div class="card-product-sec__title">
+                Желейные шарики «Мармелатье»
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="reviews-sec" class="reviews-sec section">
-          <div class="_container">
-            <div class="reviews-sec__title">Отзывы о товаре</div>
-
-            <div class="reviews-sec__inner">
-              <div class="reviews-sec__reviews-block reviews-block">
-                <div class="reviews-block__body">
-                  <div class="reviews-block__body-main">
-                    <div class="reviews-block__body-main-icon">А</div>
-
-                    <div class="reviews-block__body-main-descp">
-                      <div class="reviews-block__body-main-descp-top">
-                        <div class="reviews-block__body-main-descp-top-name">
-                          <div class="reviews-block__body-main-descp-top-title">
-                            Анна Ивановна
-                          </div>
-                          <div
-                            class="reviews-block__body-main-descp-top-organization"
-                          >
-                            ИП Лакомка
-                          </div>
-                        </div>
-                        <div class="reviews-block__body-main-descp-information">
-                          <div
-                            class="reviews-block__body-main-descp-information-date"
-                          >
-                            20 января 2023
-                          </div>
-                          <div
-                            class="reviews-block__body-main-descp-information-rating rating rating_set"
-                          >
-                            <div class="rating__body">
-                              <div class="rating__active"></div>
-                              <div class="rating__items">
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="1"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="2"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="3"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="4"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="5"
-                                  name="rating"
-                                />
-                              </div>
-                            </div>
-                            <div class="rating__value">3.5</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="reviews-block__body-main-descp-bottom">
-                        <div class="reviews-block__body-main-descp-text">
-                          Рыбный текст – это текст, выполняющий исключительно
-                          утилитарную функцию. Он не вписывается в контекст
-                          сайта, на котором используется, и нужен только для
-                          заполнения пространства.
-                        </div>
-                        <div
-                          class="reviews-block__body-main-descp-estimation estimation"
-                        >
-                          <div class="estimation__item">
-                            <button class="estimation__btn _like-icon-btn">
-                              <svg class="estimation__btn-icon like-icon">
-                                <use xlink:href="#like-icon"></use>
-                              </svg>
-                            </button>
-                            <span class="estimation__value _like-icon-count"
-                              >7</span
-                            >
-                          </div>
-                          <div class="estimation__item">
-                            <button class="estimation__btn _like-icon-btn">
-                              <svg class="estimation__btn-icon diselike-icon">
-                                <use xlink:href="#diselike-icon"></use>
-                              </svg>
-                            </button>
-                            <span class="estimation__value _like-icon-count"
-                              >0</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="reviews-block__body-answer">
-                        <div class="reviews-block__body-main">
-                          <div class="reviews-block__body-main-icon">
-                            <svg class="reviews-block__body-main-icon-svg">
-                              <use xlink:href="#altaykom-icon"></use>
-                            </svg>
-                          </div>
-
-                          <div class="reviews-block__body-main-descp">
-                            <div class="reviews-block__body-main-descp-top">
-                              <div
-                                class="reviews-block__body-main-descp-top-name"
-                              >
-                                <div
-                                  class="reviews-block__body-main-descp-top-title"
-                                >
-                                  АлтайКом
-                                </div>
-                              </div>
-                              <div
-                                class="reviews-block__body-main-descp-information"
-                              >
-                                <div
-                                  class="reviews-block__body-main-descp-information-date"
-                                >
-                                  21 января 2023
-                                </div>
-                              </div>
-                            </div>
-                            <div class="reviews-block__body-main-descp-bottom">
-                              <div class="reviews-block__body-main-descp-text">
-                                Анна, добрый день! Благодарим Вас за обратную
-                                связь по продукту желейные шарики «Мармелатье»!
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="reviews-block__body">
-                  <div class="reviews-block__body-main">
-                    <div class="reviews-block__body-main-icon">К</div>
-
-                    <div class="reviews-block__body-main-descp">
-                      <div class="reviews-block__body-main-descp-top">
-                        <div class="reviews-block__body-main-descp-top-name">
-                          <div class="reviews-block__body-main-descp-top-title">
-                            Константин
-                          </div>
-                          <div
-                            class="reviews-block__body-main-descp-top-organization"
-                            style="display: none"
-                          >
-                            ИП Лакомка
-                          </div>
-                        </div>
-                        <div class="reviews-block__body-main-descp-information">
-                          <div
-                            class="reviews-block__body-main-descp-information-date"
-                          >
-                            15 января 2022
-                          </div>
-                          <div
-                            class="reviews-block__body-main-descp-information-rating rating rating_set"
-                          >
-                            <div class="rating__body">
-                              <div class="rating__active"></div>
-                              <div class="rating__items">
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="1"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="2"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="3"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="4"
-                                  name="rating"
-                                />
-                                <input
-                                  type="radio"
-                                  class="rating__item"
-                                  value="5"
-                                  name="rating"
-                                />
-                              </div>
-                            </div>
-                            <div class="rating__value">3.5</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="reviews-block__body-main-descp-bottom">
-                        <div class="reviews-block__body-main-descp-text">
-                          Рыбный текст – это текст, выполняющий исключительно
-                          утилитарную функцию. Он не вписывается в контекст
-                          сайта, на котором используется, и нужен только для
-                          заполнения пространства.
-                        </div>
-                        <div
-                          class="reviews-block__body-main-descp-estimation estimation"
-                        >
-                          <div class="estimation__item">
-                            <button class="estimation__btn _like-icon-btn">
-                              <svg class="estimation__btn-icon like-icon">
-                                <use xlink:href="#like-icon"></use>
-                              </svg>
-                            </button>
-                            <span class="estimation__value _like-icon-count"
-                              >0</span
-                            >
-                          </div>
-                          <div class="estimation__item">
-                            <button class="estimation__btn _like-icon-btn">
-                              <svg class="estimation__btn-icon diselike-icon">
-                                <use xlink:href="#diselike-icon"></use>
-                              </svg>
-                            </button>
-                            <span class="estimation__value _like-icon-count"
-                              >0</span
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="reviews-block__body-answer"
-                        style="display: none"
-                      >
-                        <div class="reviews-block__body-main">
-                          <div class="reviews-block__body-main-icon">А</div>
-
-                          <div class="reviews-block__body-main-descp">
-                            <div class="reviews-block__body-main-descp-top">
-                              <div
-                                class="reviews-block__body-main-descp-top-name"
-                              >
-                                <div
-                                  class="reviews-block__body-main-descp-top-title"
-                                >
-                                  АлтайКом
-                                </div>
-                              </div>
-                              <div
-                                class="reviews-block__body-main-descp-information"
-                              >
-                                <div
-                                  class="reviews-block__body-main-descp-information-date"
-                                >
-                                  21 января 2023
-                                </div>
-                              </div>
-                            </div>
-                            <div class="reviews-block__body-main-descp-bottom">
-                              <div class="reviews-block__body-main-descp-text">
-                                Рыбный текст – это текст, выполняющий
-                                исключительно утилитарную функцию. Он не
-                                вписывается в контекст сайта, на котором
-                                используется, и нужен только для заполнения
-                                пространства.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="show-more">
-                  <button class="show-more__btn btn">
-                    показать еще
-                    <svg class="show-more__btn-icon">
-                      <use xlink:href="#show-more"></use>
-                    </svg>
+              <div class="card-product-sec__intro">
+                <div class="card-product-sec__intro-article"></div>
+                <div class="card-product-sec__intro-rating"></div>
+              </div>
+              <div class="card-product-sec__button-block">
+                <div class="card-product-sec__button-block-title">Вкус</div>
+                <div class="card-product-sec__button-block-inner">
+                  <button type="button" class="card-product-sec__button-block-btn product-btn active">
+                    Клубника
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Ваниль
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Банан
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Клубника
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Ваниль
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Банан
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Клубника
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Ваниль
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Клубника
                   </button>
                 </div>
               </div>
+              <div class="card-product-sec__button-block">
+                <div class="card-product-sec__button-block-title">
+                  Вес упаковки, кг
+                </div>
+                <div class="card-product-sec__button-block-inner">
+                  <button type="button" class="card-product-sec__button-block-btn product-btn active">
+                    5
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    4
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    10
+                  </button>
+                </div>
+              </div>
+              <div class="card-product-sec__button-block">
+                <div class="card-product-sec__button-block-title">
+                  Тип упаковки
+                </div>
+                <div class="card-product-sec__button-block-inner">
+                  <button type="button" class="card-product-sec__button-block-btn product-btn active">
+                    Бокс
+                  </button>
+                  <button type="button" class="card-product-sec__button-block-btn product-btn">
+                    Мешок
+                  </button>
+                </div>
+              </div>
+              <div class="card-product-sec__conclusion conclusion">
+                <div class="conclusion__row">
+                  <div class="conclusion__item">
+                    <div class="conclusion__name">В наличии</div>
+                    <div class="conclusion__value">Много</div>
+                  </div>
+                  <div class="conclusion__item">
+                    <div class="conclusion__name">Вес упаковки</div>
+                    <div class="conclusion__value">5 кг</div>
+                  </div>
+                  <div class="conclusion__item">
+                    <div class="conclusion__name">Цена за 1 шт. с НДС</div>
+                    <div class="conclusion__value">
+                      <div class="card-product__interactive-price">
+                        <div class="card-product__interactive-price-new interactive-price-new_red rub">
+                          1 800.00
+                        </div>
+                        <div class="card-product__interactive-price-old rub">
+                          1 900.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="conclusion__line"></div>
+                <div class="conclusion__row conclusion__row_flex">
+                  <div class="conclusion__item d-flex">
+                    <button type="button" class="conclusion__button-bascet btn btn_black">
+                      <svg class="conclusion__button-bascet-icon">
+                        <use xlink:href="#bascet-btn-product"></use>
+                      </svg>
+                      в корзину
+                    </button>
+                    <div class="conclusion__item-iconBtn">
+                      <button type="button" class="conclusion__button-favorit btn">
+                        <svg class="conclusion__button-favorit-icon">
+                          <use xlink:href="#favorites-product"></use>
+                        </svg>
+                      </button>
+                      <button type="button" class="conclusion__button-print btn">
+                        <svg class="conclusion__button-print-icon">
+                          <use xlink:href="#print-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="conclusion__item">
+                    <div class="conclusion__name">
+                      <div class="sticker-product green-color">
+                        экономия 100 ₽
+                      </div>
+                    </div>
+                    <div class="conclusion__value">
+                      <div class="conclusion__price rub">1 800.00</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-product-sec__description">
+                <div class="card-product-sec__description-text">
+                  Желейные шарики - студнеобразные упругие изделия сферической
+                  и слегка овальной формы в небольшом количестве сиропа.
+                  Ипользуются для декорирования изделий: пирожных, тортов,
+                  десертов, мороженого, для добавления в коктейли и напитки.
+                </div>
+                <div class="card-product-sec__description-text">
+                  <span>Состав:</span> сахар, сироп глюкозный, стабилизаторы
+                  (Е1442, Е401), регулятор кислотности Е330, ароматизаторы
+                  идентичные натуральному (Вишня, Лимон, Клубника, Апельсин,
+                  Зелёное яблоко, Йогурт, Чёрная смородина), красители пищевые
+                  (Е129, Е122, Е102, Е171, Е142, Е151)), консервант Е202.
+                  Возможно наличие диоксида серы в количестве не более 0,01 %.
+                </div>
+                <div class="card-product-sec__description-text">
+                  <span>Энергетическая/пищевая ценность (100 г продукта):</span>
+                  279 ккал/1168 кДж, белки 0,2 г, углеводы 68,3 г.
+                </div>
+                <div class="card-product-sec__specifications">
+                  <div class="table-info">
+                    <div class="table-info__subtitle">
+                      <span>Общие характеристики</span>
+                    </div>
 
-              <div class="reviews-sec__evaluations evaluations">
-                <div class="evaluations__ttile">Всего 200 оценок</div>
-                <form action="#" class="evaluations__form">
-                  <label data-index="0" class="evaluations__form-item">
-                    <div class="evaluations__form-column">
-                      <div class="checkbox">
-                        <input
-                          checked
-                          data-razdel="form"
-                          data-error="Ошибка"
-                          class="checkbox__input"
-                          type="checkbox"
-                          value="0"
-                          name="form[]"
-                        />
-                        <span class="checkbox__text"><span></span></span>
+                    <div class="table-info__inner">
+                      <div class="table-info__table">
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">
+                              Торговая марка
+                            </div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value crem-color">
+                              Фабрика сладкого вкуса
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">
+                              Сертификат
+                            </div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">ЕАС</div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">
+                              Страна производитель
+                            </div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">Россия</div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Состав</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">
+                              См. на упаковке
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-rating">
-                        <svg class="evaluations__form-rating-icon">
-                          <use xlink:href="#5-rating"></use>
-                        </svg>
+                  </div>
+
+                  <div class="table-info">
+                    <div class="table-info__subtitle">
+                      <span>Упаковка и фасовка</span>
+                    </div>
+
+                    <div class="table-info__inner">
+                      <div class="table-info__table">
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">В боксе</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">12 штук</div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Фасовка</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">
+                              по 1 шт.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">
+                              Индивидуальная упаковка
+                            </div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">
+                              Без упаковки
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">
+                              Размер упаковки (Длина × Ширина × Высота)
+                            </div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">
+                              19 см х 13 см х 6 см
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-value">190</div>
+                  </div>
+
+                  <div class="table-info">
+                    <div class="table-info__subtitle">
+                      <span>Габариты и вес</span>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-text">Супер</div>
-                    </div>
-                  </label>
-                  <label data-index="1" class="evaluations__form-item">
-                    <div class="evaluations__form-column">
-                      <div data-index="0" class="checkbox">
-                        <input
-                          checked
-                          data-razdel="form"
-                          data-error="Ошибка"
-                          class="checkbox__input"
-                          type="checkbox"
-                          value="0"
-                          name="form[]"
-                        />
-                        <span class="checkbox__text"><span></span></span>
+
+                    <div class="table-info__inner">
+                      <div class="table-info__table">
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">
+                              Вес брутто
+                            </div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value">993 г</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-rating">
-                        <svg class="evaluations__form-rating-icon">
-                          <use xlink:href="#4-rating"></use>
-                        </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="documents-section" class="documents-section section">
+        <div class="_container">
+          <div class="documents-section__title">Документы</div>
+          <div class="documents-block">
+            <div class="documents-block__row d-flex">
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#pdf-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">
+                      Сертификат соответствия.pdf
+                    </div>
+                    <div class="documents-block__item-icon-descp-value">
+                      456,7 КБ
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#xlsx-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">
+                      Сертификат соответствия.xlsx
+                    </div>
+                    <div class="documents-block__item-icon-descp-value">
+                      57,0 КБ
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#doc-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">
+                      Описание.doc
+                    </div>
+                    <div class="documents-block__item-icon-descp-value">
+                      56,5 КБ
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="documents-block__column">
+                <a href="#" class="documents-block__item d-flex">
+                  <div class="documents-block__item-icon">
+                    <svg class="documents-block__item-icon-svg">
+                      <use xlink:href="#pdf-icon"></use>
+                    </svg>
+                  </div>
+                  <div class="documents-block__item-icon-descp">
+                    <div class="documents-block__item-icon-descp-name">
+                      Сертификат соответствия.pdf
+                    </div>
+                    <div class="documents-block__item-icon-descp-value">
+                      57,0 КБ
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews-sec" class="reviews-sec section">
+        <div class="_container">
+          <div class="reviews-sec__title">Отзывы о товаре</div>
+
+          <div class="reviews-sec__inner">
+            <div class="reviews-sec__reviews-block reviews-block">
+              <div class="reviews-block__body">
+                <div class="reviews-block__body-main">
+                  <div class="reviews-block__body-main-icon">А</div>
+
+                  <div class="reviews-block__body-main-descp">
+                    <div class="reviews-block__body-main-descp-top">
+                      <div class="reviews-block__body-main-descp-top-name">
+                        <div class="reviews-block__body-main-descp-top-title">
+                          Анна Ивановна
+                        </div>
+                        <div class="reviews-block__body-main-descp-top-organization">
+                          ИП Лакомка
+                        </div>
+                      </div>
+                      <div class="reviews-block__body-main-descp-information">
+                        <div class="reviews-block__body-main-descp-information-date">
+                          20 января 2023
+                        </div>
+                        <div class="reviews-block__body-main-descp-information-rating rating rating_set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating" />
+                              <input type="radio" class="rating__item" value="2" name="rating" />
+                              <input type="radio" class="rating__item" value="3" name="rating" />
+                              <input type="radio" class="rating__item" value="4" name="rating" />
+                              <input type="radio" class="rating__item" value="5" name="rating" />
+                            </div>
+                          </div>
+                          <div class="rating__value">3.5</div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-value">10</div>
-                    </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-text">Хорошо</div>
-                    </div>
-                  </label>
-                  <label data-index="2" class="evaluations__form-item">
-                    <div class="evaluations__form-column">
-                      <div data-index="0" class="checkbox">
-                        <input
-                          checked
-                          data-razdel="form"
-                          data-error="Ошибка"
-                          class="checkbox__input"
-                          type="checkbox"
-                          value="0"
-                          name="form[]"
-                        />
-                        <span class="checkbox__text"><span></span></span>
+                    <div class="reviews-block__body-main-descp-bottom">
+                      <div class="reviews-block__body-main-descp-text">
+                        Рыбный текст – это текст, выполняющий исключительно
+                        утилитарную функцию. Он не вписывается в контекст
+                        сайта, на котором используется, и нужен только для
+                        заполнения пространства.
+                      </div>
+                      <div class="reviews-block__body-main-descp-estimation estimation">
+                        <div class="estimation__item">
+                          <button class="estimation__btn _like-icon-btn">
+                            <svg class="estimation__btn-icon like-icon">
+                              <use xlink:href="#like-icon"></use>
+                            </svg>
+                          </button>
+                          <span class="estimation__value _like-icon-count">7</span>
+                        </div>
+                        <div class="estimation__item">
+                          <button class="estimation__btn _like-icon-btn">
+                            <svg class="estimation__btn-icon diselike-icon">
+                              <use xlink:href="#diselike-icon"></use>
+                            </svg>
+                          </button>
+                          <span class="estimation__value _like-icon-count">0</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-rating">
-                        <svg class="evaluations__form-rating-icon">
-                          <use xlink:href="#3-rating"></use>
-                        </svg>
+                    <div class="reviews-block__body-answer">
+                      <div class="reviews-block__body-main">
+                        <div class="reviews-block__body-main-icon">
+                          <svg class="reviews-block__body-main-icon-svg">
+                            <use xlink:href="#altaykom-icon"></use>
+                          </svg>
+                        </div>
+
+                        <div class="reviews-block__body-main-descp">
+                          <div class="reviews-block__body-main-descp-top">
+                            <div class="reviews-block__body-main-descp-top-name">
+                              <div class="reviews-block__body-main-descp-top-title">
+                                АлтайКом
+                              </div>
+                            </div>
+                            <div class="reviews-block__body-main-descp-information">
+                              <div class="reviews-block__body-main-descp-information-date">
+                                21 января 2023
+                              </div>
+                            </div>
+                          </div>
+                          <div class="reviews-block__body-main-descp-bottom">
+                            <div class="reviews-block__body-main-descp-text">
+                              Анна, добрый день! Благодарим Вас за обратную
+                              связь по продукту желейные шарики «Мармелатье»!
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-value">0</div>
-                    </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-text">Приемлемо</div>
-                    </div>
-                  </label>
-                  <label data-index="3" class="evaluations__form-item">
-                    <div class="evaluations__form-column">
-                      <div class="checkbox">
-                        <input
-                          checked
-                          data-razdel="form"
-                          data-error="Ошибка"
-                          class="checkbox__input"
-                          type="checkbox"
-                          value="0"
-                          name="form[]"
-                        />
-                        <span class="checkbox__text"><span></span></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reviews-block__body">
+                <div class="reviews-block__body-main">
+                  <div class="reviews-block__body-main-icon">К</div>
+
+                  <div class="reviews-block__body-main-descp">
+                    <div class="reviews-block__body-main-descp-top">
+                      <div class="reviews-block__body-main-descp-top-name">
+                        <div class="reviews-block__body-main-descp-top-title">
+                          Константин
+                        </div>
+                        <div class="reviews-block__body-main-descp-top-organization" style="display: none">
+                          ИП Лакомка
+                        </div>
+                      </div>
+                      <div class="reviews-block__body-main-descp-information">
+                        <div class="reviews-block__body-main-descp-information-date">
+                          15 января 2022
+                        </div>
+                        <div class="reviews-block__body-main-descp-information-rating rating rating_set">
+                          <div class="rating__body">
+                            <div class="rating__active"></div>
+                            <div class="rating__items">
+                              <input type="radio" class="rating__item" value="1" name="rating" />
+                              <input type="radio" class="rating__item" value="2" name="rating" />
+                              <input type="radio" class="rating__item" value="3" name="rating" />
+                              <input type="radio" class="rating__item" value="4" name="rating" />
+                              <input type="radio" class="rating__item" value="5" name="rating" />
+                            </div>
+                          </div>
+                          <div class="rating__value">3.5</div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-rating">
-                        <svg class="evaluations__form-rating-icon">
-                          <use xlink:href="#2-rating"></use>
-                        </svg>
+                    <div class="reviews-block__body-main-descp-bottom">
+                      <div class="reviews-block__body-main-descp-text">
+                        Рыбный текст – это текст, выполняющий исключительно
+                        утилитарную функцию. Он не вписывается в контекст
+                        сайта, на котором используется, и нужен только для
+                        заполнения пространства.
+                      </div>
+                      <div class="reviews-block__body-main-descp-estimation estimation">
+                        <div class="estimation__item">
+                          <button class="estimation__btn _like-icon-btn">
+                            <svg class="estimation__btn-icon like-icon">
+                              <use xlink:href="#like-icon"></use>
+                            </svg>
+                          </button>
+                          <span class="estimation__value _like-icon-count">0</span>
+                        </div>
+                        <div class="estimation__item">
+                          <button class="estimation__btn _like-icon-btn">
+                            <svg class="estimation__btn-icon diselike-icon">
+                              <use xlink:href="#diselike-icon"></use>
+                            </svg>
+                          </button>
+                          <span class="estimation__value _like-icon-count">0</span>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-value">0</div>
-                    </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-text">Можно лучше</div>
-                    </div>
-                  </label>
-                  <label data-index="4" class="evaluations__form-item">
-                    <div class="evaluations__form-column">
-                      <label class="checkbox">
-                        <input
-                          checked
-                          data-razdel="form"
-                          data-error="Ошибка"
-                          class="checkbox__input"
-                          type="checkbox"
-                          value="0"
-                          name="form[]"
-                        />
-                        <span class="checkbox__text"><span></span></span>
-                      </label>
-                    </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-rating">
-                        <svg class="evaluations__form-rating-icon">
-                          <use xlink:href="#1-rating"></use>
-                        </svg>
+                    <div class="reviews-block__body-answer" style="display: none">
+                      <div class="reviews-block__body-main">
+                        <div class="reviews-block__body-main-icon">А</div>
+
+                        <div class="reviews-block__body-main-descp">
+                          <div class="reviews-block__body-main-descp-top">
+                            <div class="reviews-block__body-main-descp-top-name">
+                              <div class="reviews-block__body-main-descp-top-title">
+                                АлтайКом
+                              </div>
+                            </div>
+                            <div class="reviews-block__body-main-descp-information">
+                              <div class="reviews-block__body-main-descp-information-date">
+                                21 января 2023
+                              </div>
+                            </div>
+                          </div>
+                          <div class="reviews-block__body-main-descp-bottom">
+                            <div class="reviews-block__body-main-descp-text">
+                              Рыбный текст – это текст, выполняющий
+                              исключительно утилитарную функцию. Он не
+                              вписывается в контекст сайта, на котором
+                              используется, и нужен только для заполнения
+                              пространства.
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-value">0</div>
-                    </div>
-                    <div class="evaluations__form-column">
-                      <div class="evaluations__form-text">Плохо</div>
-                    </div>
-                  </label>
-                </form>
-                <button
-                  class="evaluations__btn btn"
-                  data-popup="#leave-feedback"
-                >
-                  оставить отзыв
+                  </div>
+                </div>
+              </div>
+              <div class="show-more">
+                <button class="show-more__btn btn">
+                  показать еще
+                  <svg class="show-more__btn-icon">
+                    <use xlink:href="#show-more"></use>
+                  </svg>
                 </button>
               </div>
             </div>
-          </div>
-        </section>
 
-        <section id="baking-ideas-sec" class="baking-ideas-sec section">
-          <div class="_container">
-            <div class="titleBlock">
-              <div class="baking-ideas-sec__title title">идеи для выпечки</div>
-            </div>
-
-            <div class="baking-ideas-sec__inner">
-              <div class="baking-ideas-sec__column">
-                <article class="article-card">
-                  <div class="article-card__body">
-                    <div class="article-card__body-img">
-                      <a
-                        href="#"
-                        class="article-card__body-sticker sticker-info"
-                        >#рецепты</a
-                      >
-                      <img src="@img/blog/01.jpg" alt="" />
+            <div class="reviews-sec__evaluations evaluations">
+              <div class="evaluations__ttile">Всего 200 оценок</div>
+              <form action="#" class="evaluations__form">
+                <label data-index="0" class="evaluations__form-item">
+                  <div class="evaluations__form-column">
+                    <div class="checkbox">
+                      <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                        value="0" name="form[]" />
+                      <span class="checkbox__text"><span></span></span>
                     </div>
-                    <div class="article-card__body-interface d-flex">
-                      <div class="article-card__body-date date-info">
-                        20 января 2023
-                      </div>
-                      <div class="article-card__body-views d-flex">
-                        <div class="article-card__body-views-icon">
-                          <svg class="article-card__body-views-icon-svg">
-                            <use xlink:href="#views-icon"></use>
-                          </svg>
-                        </div>
-                        <div class="article-card__body-views-value views-value">
-                          100
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="article-card__body-descp">
-                      Молочный чай с тапиокой -желейными шариками «мармелатье»
-                    </a>
                   </div>
-                </article>
-              </div>
-
-              <div class="baking-ideas-sec__column">
-                <article class="article-card">
-                  <div class="article-card__body">
-                    <div class="article-card__body-img">
-                      <a
-                        href="#"
-                        class="article-card__body-sticker sticker-info"
-                        >#новости</a
-                      >
-                      <img src="@img/blog/02.jpg" alt="" />
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-rating">
+                      <svg class="evaluations__form-rating-icon">
+                        <use xlink:href="#5-rating"></use>
+                      </svg>
                     </div>
-                    <div class="article-card__body-interface d-flex">
-                      <div class="article-card__body-date date-info">
-                        7 сентября 2022
-                      </div>
-                      <div class="article-card__body-views d-flex">
-                        <div class="article-card__body-views-icon">
-                          <svg class="article-card__body-views-icon-svg">
-                            <use xlink:href="#views-icon"></use>
-                          </svg>
-                        </div>
-                        <div class="article-card__body-views-value views-value">
-                          2 100
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="article-card__body-descp">
-                      Торт с фруктами и желейными шариками
-                    </a>
                   </div>
-                </article>
-              </div>
-
-              <div class="baking-ideas-sec__column">
-                <article class="article-card">
-                  <div class="article-card__body">
-                    <div class="article-card__body-img">
-                      <a
-                        href="#"
-                        class="article-card__body-sticker sticker-info"
-                        >#мастер-классы</a
-                      >
-                      <img src="@img/blog/01.jpg" alt="" />
-                    </div>
-                    <div class="article-card__body-interface d-flex">
-                      <div class="article-card__body-date date-info">
-                        20 января 2023
-                      </div>
-                      <div class="article-card__body-views d-flex">
-                        <div class="article-card__body-views-icon">
-                          <svg class="article-card__body-views-icon-svg">
-                            <use xlink:href="#views-icon"></use>
-                          </svg>
-                        </div>
-                        <div class="article-card__body-views-value views-value">
-                          100
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="article-card__body-descp">
-                      Молочный чай с тапиокой -желейными шариками «мармелатье»
-                    </a>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-value">190</div>
                   </div>
-                </article>
-              </div>
-
-              <div class="baking-ideas-sec__column">
-                <article class="article-card">
-                  <div class="article-card__body">
-                    <div class="article-card__body-img">
-                      <a
-                        href="#"
-                        class="article-card__body-sticker sticker-info"
-                        >#новости</a
-                      >
-                      <img src="@img/blog/02.jpg" alt="" />
-                    </div>
-                    <div class="article-card__body-interface d-flex">
-                      <div class="article-card__body-date date-info">
-                        20 января 2023
-                      </div>
-                      <div class="article-card__body-views d-flex">
-                        <div class="article-card__body-views-icon">
-                          <svg class="article-card__body-views-icon-svg">
-                            <use xlink:href="#views-icon"></use>
-                          </svg>
-                        </div>
-                        <div class="article-card__body-views-value views-value">
-                          100
-                        </div>
-                      </div>
-                    </div>
-                    <a href="#" class="article-card__body-descp">
-                      Молочный чай с тапиокой -желейными шариками «мармелатье»
-                    </a>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-text">Супер</div>
                   </div>
-                </article>
-              </div>
+                </label>
+                <label data-index="1" class="evaluations__form-item">
+                  <div class="evaluations__form-column">
+                    <div data-index="0" class="checkbox">
+                      <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                        value="0" name="form[]" />
+                      <span class="checkbox__text"><span></span></span>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-rating">
+                      <svg class="evaluations__form-rating-icon">
+                        <use xlink:href="#4-rating"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-value">10</div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-text">Хорошо</div>
+                  </div>
+                </label>
+                <label data-index="2" class="evaluations__form-item">
+                  <div class="evaluations__form-column">
+                    <div data-index="0" class="checkbox">
+                      <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                        value="0" name="form[]" />
+                      <span class="checkbox__text"><span></span></span>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-rating">
+                      <svg class="evaluations__form-rating-icon">
+                        <use xlink:href="#3-rating"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-value">0</div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-text">Приемлемо</div>
+                  </div>
+                </label>
+                <label data-index="3" class="evaluations__form-item">
+                  <div class="evaluations__form-column">
+                    <div class="checkbox">
+                      <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                        value="0" name="form[]" />
+                      <span class="checkbox__text"><span></span></span>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-rating">
+                      <svg class="evaluations__form-rating-icon">
+                        <use xlink:href="#2-rating"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-value">0</div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-text">Можно лучше</div>
+                  </div>
+                </label>
+                <label data-index="4" class="evaluations__form-item">
+                  <div class="evaluations__form-column">
+                    <label class="checkbox">
+                      <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+                        value="0" name="form[]" />
+                      <span class="checkbox__text"><span></span></span>
+                    </label>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-rating">
+                      <svg class="evaluations__form-rating-icon">
+                        <use xlink:href="#1-rating"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-value">0</div>
+                  </div>
+                  <div class="evaluations__form-column">
+                    <div class="evaluations__form-text">Плохо</div>
+                  </div>
+                </label>
+              </form>
+              <button class="evaluations__btn btn" data-popup="#leave-feedback">
+                оставить отзыв
+              </button>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        @@include('html/components/_similar-products-sec.htm',{})
-      </main>
-      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
+      <section id="baking-ideas-sec" class="baking-ideas-sec section">
+        <div class="_container">
+          <div class="titleBlock">
+            <div class="baking-ideas-sec__title title">идеи для выпечки</div>
+          </div>
+
+          <div class="baking-ideas-sec__inner">
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#рецепты</a>
+                    <img src="@img/blog/01.jpg" alt="" />
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">
+                      20 января 2023
+                    </div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">
+                        100
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Молочный чай с тапиокой -желейными шариками «мармелатье»
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#новости</a>
+                    <img src="@img/blog/02.jpg" alt="" />
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">
+                      7 сентября 2022
+                    </div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">
+                        2 100
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Торт с фруктами и желейными шариками
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#мастер-классы</a>
+                    <img src="@img/blog/01.jpg" alt="" />
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">
+                      20 января 2023
+                    </div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">
+                        100
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Молочный чай с тапиокой -желейными шариками «мармелатье»
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="baking-ideas-sec__column">
+              <article class="article-card">
+                <div class="article-card__body">
+                  <div class="article-card__body-img">
+                    <a href="#" class="article-card__body-sticker sticker-info">#новости</a>
+                    <img src="@img/blog/02.jpg" alt="" />
+                  </div>
+                  <div class="article-card__body-interface d-flex">
+                    <div class="article-card__body-date date-info">
+                      20 января 2023
+                    </div>
+                    <div class="article-card__body-views d-flex">
+                      <div class="article-card__body-views-icon">
+                        <svg class="article-card__body-views-icon-svg">
+                          <use xlink:href="#views-icon"></use>
+                        </svg>
+                      </div>
+                      <div class="article-card__body-views-value views-value">
+                        100
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="article-card__body-descp">
+                    Молочный чай с тапиокой -желейными шариками «мармелатье»
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('html/components/_similar-products-sec.htm',{})
+    </main>
+    @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
 </html>
