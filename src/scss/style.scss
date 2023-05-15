@@ -320,9 +320,14 @@ body {
 	background: #221F20;
 	border-radius: 25px;
 	overflow: hidden;
-	background-position: right center;
-	background-size: contain;
+	background-position: right bottom;
+	background-size: 50%;
 	background-repeat: no-repeat;
+	transition: all 0.5s;
+}
+
+.servicesBlock-bg__card:hover {
+	background-size: 52%;
 }
 
 .servicesBlock-bg__card-icon-text {
