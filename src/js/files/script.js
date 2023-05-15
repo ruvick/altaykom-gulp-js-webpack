@@ -9,8 +9,8 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-  const body = document.querySelector("body");
-  const html = document.querySelector('html');
+  // const body = document.querySelector("body");
+  // const html = document.querySelector('html');
 
   // Открыть/закрыть catalog в header 
   const catBtn = document.querySelector('.button-catalog');
@@ -52,8 +52,9 @@ window.onload = function () {
       searchBtnClosed.classList.add("_active");
       linkText.classList.add("none");
       lineBlockBlk.classList.add('_active');
-      html.classList.add('lock');
-      body.style.paddingRight = '7px';
+      // html.classList.add('lock');
+      // body.style.paddingRight = '7px';
+      // document.documentElement.classList.add('lock');
     })
     searchBtnClosed.addEventListener('click', function () {
       search.classList.remove("_active");
@@ -61,8 +62,9 @@ window.onload = function () {
       searchBtnClosed.classList.remove("_active");
       linkText.classList.remove("none");
       lineBlockBlk.classList.remove('_active');
-      html.classList.remove('lock');
-      body.style.paddingRight = '0px';
+      // html.classList.remove('lock');
+      // body.style.paddingRight = '0px';
+      // document.documentElement.classList.remove('lock');
     })
     window.addEventListener('click', e => { // при клике в любом месте окна браузера
       const target = e.target // находим элемент, на котором был клик
@@ -72,8 +74,9 @@ window.onload = function () {
         searchBtnClosed.classList.remove('_active');
         linkText.classList.remove("none");
         lineBlockBlk.classList.remove('_active');
-        html.classList.remove('lock');
-        body.style.paddingRight = '0px';
+        // document.documentElement.classList.remove('lock');
+        // html.classList.remove('lock');
+        // body.style.paddingRight = '0px';
       }
     })
   })
@@ -88,15 +91,17 @@ window.onload = function () {
       let child = item[i].getElementsByClassName('sub-list')[0];
       child.classList.add('_active');
       lineBlockBlk.classList.add('_active');
-      html.classList.add('lock');
-      body.style.paddingRight = '7px';
+      // html.classList.add('lock');
+      // body.style.paddingRight = '7px';
+      // document.documentElement.classList.add('lock');
     })
     item[i].addEventListener('mouseleave', () => {
       let child = item[i].getElementsByClassName('sub-list')[0];
       child.classList.remove('_active');
       lineBlockBlk.classList.remove('_active');
-      html.classList.remove('lock');
-      body.style.paddingRight = '0px';
+      // html.classList.remove('lock');
+      // body.style.paddingRight = '0px';
+      // document.documentElement.classList.remove('lock');
     })
   }
 
@@ -138,14 +143,14 @@ window.onload = function () {
     })
   })
 
-  window.addEventListener('click', e => { // при клике в любом месте окна браузера
-    const target = e.target // находим элемент, на котором был клик
-    if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-      // interAddingBascet.classList.remove('none');
-      interAddingQuantity.classList.remove('active');
-      // headsearch.classList.remove('_active')
-    }
-  })
+  // window.addEventListener('click', e => { // при клике в любом месте окна браузера
+  //   const target = e.target // находим элемент, на котором был клик
+  //   if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+  //     // interAddingBascet.classList.remove('none');
+  //     interAddingQuantity.classList.remove('active');
+  //     // headsearch.classList.remove('_active')
+  //   }
+  // })
 
 
   // Открытие/закрытие сайдбара
