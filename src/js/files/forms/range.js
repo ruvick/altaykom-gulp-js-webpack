@@ -5,7 +5,7 @@ import * as noUiSlider from 'nouislider';
 // в файле scss/forms/forms.scss
 
 // Подключение cтилей из node_modules
-// import 'nouislider/dist/nouislider.css';
+import 'nouislider/dist/nouislider.css';
 
 export function rangeInit() {
 	const priceSlider = document.querySelector('#range');

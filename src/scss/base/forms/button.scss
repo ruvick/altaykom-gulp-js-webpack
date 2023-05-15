@@ -14,6 +14,7 @@
 	}
 }
 
+// Стандартный класс кнопки
 .btn {
 	display: inline-flex;
 	justify-content: center;
@@ -32,11 +33,41 @@
 	}
 }
 
+// Кнопка назад 
+.back-btn {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	line-height: 1;
+	padding: 12px 20px;
+	border-radius: 15px;
+	background: #f3f3f4;
+	border: 1px solid #221f20;
+
+	&:hover {
+		color: #fff;
+		background: #221F20;
+	}
+}
+
+.back-btn__icon {
+	width: 18px;
+	flex: 0 0 18px;
+	height: 7px;
+	margin-right: 5px;
+}
+
+.back-btn:hover .back-btn__icon {
+	fill: #fff;
+}
+
+// Кнопка черная 
 .btn_black {
 	color: #fff;
 	background: #221F20;
 }
 
+// Класс кнопки в форме
 .form__btn {
 	display: inline-flex;
 	justify-content: center;

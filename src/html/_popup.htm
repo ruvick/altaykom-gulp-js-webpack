@@ -23,33 +23,15 @@
       <div class="popup__content-subtitle">
         Оставьте заявку, и наш менеджер свяжется с Вами в ближайшее время
       </div>
-      <form action="#" class="popup__form form">
+      <form data-dev data-popup-message="#order-product" action="#" class="popup__form form">
         <div class="form__line">
-          <input
-            type="text"
-            name="name"
-            placeholder="Имя"
-            class="popup__form-input input"
-          />
-          <input
-            type="tel"
-            name="phone"
-            data-required="tel"
-            data-validate
-            placeholder="Телефон*"
-            class="popup__form-input input tel"
-          />
-          <textarea
-            name=""
-            id=""
-            placeholder="Комментарий"
-            class="popup__form-textarea input"
-          ></textarea>
+          <input type="text" name="name" placeholder="Имя" class="popup__form-input input" />
+          <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
+            class="popup__form-input input tel" />
+          <textarea name="" id="" placeholder="Комментарий" class="popup__form-textarea input"></textarea>
           <div class="popup__form-confirmation">
             Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку
-            <a href="#" class="popup__form-confirmation-link"
-              >персональных данных</a
-            >
+            <a href="#" class="popup__form-confirmation-link">персональных данных</a>
           </div>
           <button type="submit" class="popup__form-btn btn btn_black">
             отправить
@@ -75,31 +57,13 @@
       </div>
       <form action="#" class="popup__form form">
         <div class="form__line">
-          <input
-            type="text"
-            name="name"
-            placeholder="Имя"
-            class="popup__form-input input"
-          />
-          <input
-            type="tel"
-            name="phone"
-            data-required="tel"
-            data-validate
-            placeholder="Телефон*"
-            class="popup__form-input input tel"
-          />
-          <textarea
-            name=""
-            id=""
-            placeholder="Комментарий"
-            class="popup__form-textarea input"
-          ></textarea>
+          <input type="text" name="name" placeholder="Имя" class="popup__form-input input" />
+          <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
+            class="popup__form-input input tel" />
+          <textarea name="" id="" placeholder="Комментарий" class="popup__form-textarea input"></textarea>
           <div class="popup__form-confirmation">
             Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку
-            <a href="#" class="popup__form-confirmation-link"
-              >персональных данных</a
-            >
+            <a href="#" class="popup__form-confirmation-link">персональных данных</a>
           </div>
           <button type="submit" class="popup__form-btn btn btn_black">
             отправить
@@ -122,12 +86,7 @@
       <div class="popup__content-title">Новый список</div>
       <form action="#" class="popup__form form">
         <div class="form__line">
-          <input
-            type="text"
-            name="name"
-            placeholder="Название"
-            class="popup__form-input input"
-          />
+          <input type="text" name="name" placeholder="Название" class="popup__form-input input" />
           <button type="submit" class="popup__form-btn btn btn_black">
             создать
           </button>
@@ -154,68 +113,29 @@
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Личные данные</div>
-            <input
-              type="text"
-              name="name"
-              data-required="name"
-              data-validate
-              placeholder="ФИО*"
-              class="submission-form__input input"
-            />
-            <input
-              type="text"
-              name="email"
-              data-required="email"
-              data-validate
-              placeholder="Email*"
-              class="submission-form__input input"
-            />
-            <input
-              type="tel"
-              name="phone"
-              data-required="tel"
-              data-validate
-              placeholder="Телефон*"
-              class="submission-form__input input tel"
-            />
+            <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
+              class="submission-form__input input" />
+            <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
+              class="submission-form__input input" />
+            <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
+              class="submission-form__input input tel" />
           </div>
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Данные для доставки</div>
             <div class="search-form">
-              <input
-                type="text"
-                placeholder="Барнаул, Алтайский край, Сибирь, Россия"
-                class="search-form__input"
-                value=""
-                name="search"
-              />
+              <input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input"
+                value="" name="search" />
               <span tabindex="1" class="search-form__btn-closed">
                 <svg class="search-form__btn-closed-icon">
                   <use xlink:href="#popup-close"></use>
                 </svg>
               </span>
-              <button
-                tabindex="2"
-                value=""
-                id="searchsubmit"
-                class="search-form__btn"
-              ></button>
+              <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
             </div>
-            <input
-              type="text"
-              name="address"
-              data-required="address"
-              data-validate
-              placeholder="Адрес доставки*"
-              class="submission-form__input input"
-            />
-            <input
-              type="text"
-              name="index"
-              placeholder="Индекс"
-              class="submission-form__input input"
-            />
+            <input type="text" name="address" data-required="address" data-validate placeholder="Адрес доставки*"
+              class="submission-form__input input" />
+            <input type="text" name="index" placeholder="Индекс" class="submission-form__input input" />
           </div>
 
           <button type="submit" class="submission-form__button btn">
@@ -231,11 +151,7 @@
 </div>
 
 <!-- Редактировать профиль. Юрлицо -->
-<div
-  id="edit-profile-entity"
-  aria-hidden="true"
-  class="edit-profile-entity__popup popup"
->
+<div id="edit-profile-entity" aria-hidden="true" class="edit-profile-entity__popup popup">
   <div class="popup__wrapper">
     <div class="popup__content submission-form">
       <button data-close type="button" class="popup__close">
@@ -252,135 +168,57 @@
           <div class="submission-form__item">
             <div class="submission-form__title-low">Компания</div>
             <div class="submission-form__column">
-              <input
-                type="text"
-                name="name"
-                data-required="name"
-                data-validate
-                placeholder="Название компании*"
-                class="submission-form__input input"
-              />
-              <input
-                type="text"
-                name="email"
-                placeholder="Юридический адрес"
-                class="submission-form__input input"
-              />
+              <input type="text" name="name" data-required="name" data-validate placeholder="Название компании*"
+                class="submission-form__input input" />
+              <input type="text" name="email" placeholder="Юридический адрес" class="submission-form__input input" />
             </div>
             <div class="submission-form__column">
-              <input
-                type="text"
-                name="bank"
-                data-required="bank"
-                data-validate
-                placeholder="Банк"
-                class="submission-form__input input"
-              />
-              <input
-                type="text"
-                name="shet"
-                data-validate
-                placeholder="Расчетный счет"
-                class="submission-form__input input"
-              />
+              <input type="text" name="bank" data-required="bank" data-validate placeholder="Банк"
+                class="submission-form__input input" />
+              <input type="text" name="shet" data-validate placeholder="Расчетный счет"
+                class="submission-form__input input" />
             </div>
             <div class="submission-form__column">
-              <input
-                type="text"
-                name="inn"
-                data-required="inn"
-                data-validate
-                placeholder="ИНН*"
-                class="submission-form__input input"
-              />
-              <input
-                type="text"
-                name="text"
-                placeholder="КПП"
-                class="submission-form__input input"
-              />
+              <input type="text" name="inn" data-required="inn" data-validate placeholder="ИНН*"
+                class="submission-form__input input" />
+              <input type="text" name="text" placeholder="КПП" class="submission-form__input input" />
             </div>
             <div class="submission-form__column">
-              <input
-                type="text"
-                name="name"
-                data-required="name"
-                data-validate
-                placeholder="БИК Банка"
-                class="submission-form__input input"
-              />
+              <input type="text" name="name" data-required="name" data-validate placeholder="БИК Банка"
+                class="submission-form__input input" />
             </div>
           </div>
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Контактное лицо</div>
             <div class="submission-form__column">
-              <input
-                type="text"
-                name="name"
-                data-required="name"
-                data-validate
-                placeholder="ФИО*"
-                class="submission-form__input input"
-              />
-              <input
-                type="text"
-                name="email"
-                data-required="email"
-                data-validate
-                placeholder="Email*"
-                class="submission-form__input input"
-              />
+              <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
+                class="submission-form__input input" />
+              <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
+                class="submission-form__input input" />
             </div>
             <div class="submission-form__column">
-              <input
-                type="tel"
-                name="phone"
-                data-required="tel"
-                data-validate
-                placeholder="Телефон*"
-                class="submission-form__input input tel"
-              />
+              <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
+                class="submission-form__input input tel" />
             </div>
           </div>
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Данные для доставки</div>
             <div class="search-form">
-              <input
-                type="text"
-                placeholder="Барнаул, Алтайский край, Сибирь, Россия"
-                class="search-form__input"
-                value=""
-                name="search"
-              />
+              <input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input"
+                value="" name="search" />
               <span tabindex="1" class="search-form__btn-closed">
                 <svg class="search-form__btn-closed-icon">
                   <use xlink:href="#popup-close"></use>
                 </svg>
               </span>
-              <button
-                tabindex="2"
-                value=""
-                id="searchsubmit"
-                class="search-form__btn"
-              ></button>
+              <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
             </div>
             <div class="submission-form__column">
-              <input
-                type="text"
-                name="address"
-                data-required="address"
-                data-validate
-                placeholder="Адрес доставки*"
-                class="submission-form__input input"
-              />
-              <input
-                type="text"
-                name="index"
-                placeholder="Индекс"
-                class="submission-form__input input"
-              />
+              <input type="text" name="address" data-required="address" data-validate placeholder="Адрес доставки*"
+                class="submission-form__input input" />
+              <input type="text" name="index" placeholder="Индекс" class="submission-form__input input" />
             </div>
           </div>
 
@@ -397,11 +235,7 @@
 </div>
 
 <!-- Похожие товары -->
-<div
-  id="similar-products"
-  aria-hidden="true"
-  class="similar-products-popup popup"
->
+<div id="similar-products" aria-hidden="true" class="similar-products-popup popup">
   <div class="popup__wrapper">
     <div class="popup__content submission-form">
       <button data-close type="button" class="popup__close">
@@ -450,12 +284,7 @@
 
       <form action="#" class="popup__form form">
         <div class="form__line">
-          <textarea
-            name=""
-            id=""
-            placeholder="Отзыв*"
-            class="popup__form-textarea input"
-          ></textarea>
+          <textarea name="" id="" placeholder="Отзыв*" class="popup__form-textarea input"></textarea>
           <button type="submit" class="popup__form-btn btn btn_black">
             отправить
           </button>
@@ -504,12 +333,7 @@
     <div class="popup-cookie__text">
       Мы используем cookies, чтобы сделать наш сайт еще лучше!
     </div>
-    <a
-      href="#close"
-      type="button"
-      id="cookie_close"
-      class="popup-cookie__icon-closed cookie_btn"
-    >
+    <a href="#close" type="button" id="cookie_close" class="popup-cookie__icon-closed cookie_btn">
       <svg class="popup-cookie__icon-closed-svg">
         <use xlink:href="#popup-close"></use>
       </svg>
