@@ -16,7 +16,12 @@
           товара
         </div>
         <div class="directory-management-sorting-select">
-          По популярности
+          <select name="form[]" class="form">
+            <option value="1" selected>По популярности</option>
+            <option value="2">Пункт №2</option>
+            <option value="3">Пункт №3</option>
+            <option value="4">Пункт №4</option>
+          </select>
         </div>
       </div>
     </div>
@@ -162,10 +167,10 @@
                 </div>
               </div>
               <div class="page__sidebar-navigation-filter-controll filter-controll">
-                <button type="submit" class="filter-controll__btn btn">
-                  применить</button><button type="rest" class="filter-controll__btn btn btn_reset">
+                <button type="submit" class="filter-controll__btn control-filter-btn btn">
+                  применить</button><button type="rest" class="filter-controll__btn control-filter-btn btn btn_reset">
                   сбросить
-                  <svg class="filter-controll__btn-icon">
+                  <svg class="control-filter-btn__icon">
                     <use xlink:href="#urn-icon"></use>
                   </svg>
                 </button>
