@@ -59,3 +59,32 @@
 // <RANGE>
 // Снипет (HTML):
 @import "range";
+
+// Форма отправки, кнопка в инпуте
+.form-body {
+	position: relative;
+	width: 100%;
+	height: 56px;
+	display: flex;
+	align-items: center;
+}
+.form-body__btn {
+	position: absolute;
+	right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 46px;
+
+	&::before {
+		content: '';
+		float: left;
+		flex: 0 0 30px;
+		height: 12px;
+		background-size: 100%;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YxfNzA3IiBkYXRhLW5hbWU9ItCh0LPRgNGD0L/Qv9C40YDQvtCy0LDRgtGMIDcwNyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMzAuMTExIiBoZWlnaHQ9IjEyLjIyMiIgdmlld0JveD0iMCAwIDMwLjExMSAxMi4yMjIiPg0KICA8cGF0aCBpZD0iTmV4dCIgZD0iTTUuMjM3LDEuNTczYTEsMSwwLDAsMSwxLjc0OCwwTDExLjQsOS41MTRBMSwxLDAsMCwxLDEwLjUyMywxMUgxLjdBMSwxLDAsMCwxLC44MjUsOS41MTRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMC4xMTEpIHJvdGF0ZSg5MCkiIGZpbGw9IiNmZmYiLz4NCiAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xNzExIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxNzExIiBkPSJNMTY3OC41LDQwODkuNzIyaC0yMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE2NTguNSAtNDA4My4yMjMpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPg0KPC9zdmc+DQo=');
+	}
+}
