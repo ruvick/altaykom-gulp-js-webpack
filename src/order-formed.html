@@ -1,139 +1,140 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/_head.htm',{
-"title":"Заказ сформирован
-})
+  @@include('html/_head.htm',{ "title":"Заказ сформирован" })
 
-<body>
-  <div class="wrapper">
-    @@include('html/_header-user.htm',{})
-    <main class="page page-user">
-
-      <div class="breadcrumbs">
-        <div class="_container">
-          <div class="breadcrumbs__inner">
-            <span>
+  <body>
+    <div class="wrapper">
+      @@include('html/_header-user.htm',{})
+      <main class="page page-user">
+        <div class="breadcrumbs">
+          <div class="_container">
+            <div class="breadcrumbs__inner">
               <span>
-                <a href="home.html"> главная </a> / <a href=""> корзина </a> /
-                <span class="breadcrumb_last" aria-current="page"> оформление заказа </span>
+                <span>
+                  <a href="home.html"> главная </a> / <a href=""> корзина </a> /
+                  <span class="breadcrumb_last" aria-current="page">
+                    оформление заказа
+                  </span>
+                </span>
               </span>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-title">
-        <div class="_container">
-          <div class="section-title__inner">
-            <div class="section-title__title title-small">
-              Оформление заказа
             </div>
           </div>
         </div>
-      </div>
 
-      <section id="page-user-sec" class="page-user-sec section">
-        <div class="_container">
-
-          <div class="page-user-sec__inner">
-
-            <div class="page-user-sec__main">
-
-              <div class="oreder-formed">
-                <div class="oreder-formed__text">Ваш <span>заказ №2 от 16.11.2022</span> успешнно создан. Номер Вашей
-                  оплаты №2/1
-                </div>
-                <div class="oreder-formed__text">Вы можете следить за выполнением своего заказа в <a href=""
-                    class="text-animation">Личном
-                    кабинете</a></div>
-              </div>
-
-              <div class="order-payment">
-                <div class="order-payment__title">Оплата заказа</div>
-                <div class="order-payment__text">Предоплата, банковский счет. Сумма к оплате по счету: <span
-                    class="total-price rub">2 200.00</span></div>
-                <button type="button" class="order-payment__button btn btn_black">Оплатить заказ</button>
-                <div class="order-payment__notification">Вы будете перенаправлены на страницу оплаты</div>
+        <div class="section-title">
+          <div class="_container">
+            <div class="section-title__inner">
+              <div class="section-title__title title-small">
+                Оформление заказа
               </div>
             </div>
+          </div>
+        </div>
 
-            <aside class="page-user-sec__aside">
-
-              <div class="formed-card">
-
-                <div class="formed-card__row">
-                  <div class="formed-card__quantity">2 товара на сумму</div>
-                </div>
-
-                <div class="formed-card__row">
-                  <div class="formed-card__price-block">
-                    <div class="sticker-product green-color">
-                      экономия 100 ₽
-                    </div>
-                    <div class="total-price rub">2 200.00</div>
+        <section id="page-user-sec" class="page-user-sec section">
+          <div class="_container">
+            <div class="page-user-sec__inner">
+              <div class="page-user-sec__main">
+                <div class="oreder-formed">
+                  <div class="oreder-formed__text">
+                    Ваш <span>заказ №2 от 16.11.2022</span> успешнно создан.
+                    Номер Вашей оплаты №2/1
+                  </div>
+                  <div class="oreder-formed__text">
+                    Вы можете следить за выполнением своего заказа в
+                    <a href="" class="text-animation">Личном кабинете</a>
                   </div>
                 </div>
 
-                <div class="formed-card__row">
-                  <div class="table-info__inner">
-
-                    <div class="table-info__table">
-
-                      <div class="table-info__table-row d-flex">
-                        <div class="table-info__table-col">
-                          <div class="table-info__table-name">Товаров</div>
-                          <div class="table-info__table-line"></div>
-                        </div>
-                        <div class="table-info__table-col">
-                          <div class="table-info__table-value rub">2 200.00</div>
-                        </div>
-                      </div>
-
-                      <div class="table-info__table-row d-flex">
-                        <div class="table-info__table-col">
-                          <div class="table-info__table-name">Общий вес</div>
-                          <div class="table-info__table-line"></div>
-                        </div>
-                        <div class="table-info__table-col">
-                          <div class="table-info__table-value rub">10 кг</div>
-                        </div>
-                      </div>
-
-                      <div class="table-info__table-row d-flex">
-                        <div class="table-info__table-col">
-                          <div class="table-info__table-name">Доставка</div>
-                          <div class="table-info__table-line"></div>
-                        </div>
-                        <div class="table-info__table-col">
-                          <div class="table-info__table-value how-card_green">Бесплатно</div>
-                        </div>
-                      </div>
-
-                    </div>
-
+                <div class="order-payment">
+                  <div class="order-payment__title">Оплата заказа</div>
+                  <div class="order-payment__text">
+                    Предоплата, банковский счет. Сумма к оплате по счету:
+                    <span class="total-price rub">2 200.00</span>
+                  </div>
+                  <button
+                    type="button"
+                    class="order-payment__button btn btn_black"
+                  >
+                    Оплатить заказ
+                  </button>
+                  <div class="order-payment__notification">
+                    Вы будете перенаправлены на страницу оплаты
                   </div>
                 </div>
-
-                <div class="formed-card__row">
-                  <div class="formed-card__text-row">Доставка: <span>Транспортом Алтайком</span></div>
-                  <div class="formed-card__text-row">Оплата: <span>Предоплата, банковский счет</span></div>
-                </div>
-
               </div>
 
-            </aside>
+              <aside class="page-user-sec__aside">
+                <div class="formed-card">
+                  <div class="formed-card__row">
+                    <div class="formed-card__quantity">2 товара на сумму</div>
+                  </div>
 
+                  <div class="formed-card__row">
+                    <div class="formed-card__price-block">
+                      <div class="sticker-product green-color">
+                        экономия 100 ₽
+                      </div>
+                      <div class="total-price rub">2 200.00</div>
+                    </div>
+                  </div>
+
+                  <div class="formed-card__row">
+                    <div class="table-info__inner">
+                      <div class="table-info__table">
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Товаров</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value rub">
+                              2 200.00
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Общий вес</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value rub">10 кг</div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Доставка</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value how-card_green">
+                              Бесплатно
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="formed-card__row">
+                    <div class="formed-card__text-row">
+                      Доставка: <span>Транспортом Алтайком</span>
+                    </div>
+                    <div class="formed-card__text-row">
+                      Оплата: <span>Предоплата, банковский счет</span>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
           </div>
-
-        </div>
-      </section>
-
-    </main>
-    @@include('html/_footer-user.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
-</body>
-
+        </section>
+      </main>
+      @@include('html/_footer-user.htm',{}) @@include('sprite.svg',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
