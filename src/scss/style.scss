@@ -3420,6 +3420,22 @@ body {
 	font-size: 12px;
 	color: #C5934F;
 }
+.page-user-sec__agreement-policy {
+	margin-top: 27px;
+}
+.agreement-policy {
+	font-size: 12px;
+	line-height: 20/12*100%;
+	color: #8F8E8E;
+	a {
+		color: #8F8E8E;
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
 //========================================================================================================================================================
 
 // Перенести
