@@ -3540,6 +3540,10 @@ body {
 	height: 34px;
 	overflow: hidden;
 	margin-right: 20px;
+	svg {
+		width: 100%;
+		height: 100%;
+	}
 }
 .box-order__options-descp {
 	display: flex;
@@ -3599,6 +3603,34 @@ body {
 .box-order__options-item input[type=radio]:checked + .box-order__options-inner .box-order__options-checked:after {
 	transform: scale(1); 
 }
+.box-order__options-descp_row {
+	flex-direction: row;
+	align-items: center;
+}
+.box-order__options-descp-tippy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+	overflow: hidden;
+	margin-left: 22px;
+	border-radius: 50%;
+	border: 1px solid #E3E3E3;
+	svg {
+		width: 4px;
+		height: 10px;
+		flex: 0 0 4px;
+	}
+}
+.box-order-error {
+	color: #EA2838;
+	padding: 20px;
+	background: #ea28381c;
+	border-radius: 15px;
+	overflow: hidden;
+} 
 //========================================================================================================================================================
 
 // Перенести
