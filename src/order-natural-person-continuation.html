@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Оформление заказа физлицо" })
+  @@include('html/_head.htm',{ "title":"Оформление заказа физлицо (продолжение)" })
 
   <body>
     <div class="wrapper">
@@ -124,7 +124,7 @@
                       <div class="box-order__options">
 
                         <label class="box-order__options-item">
-                          <input class="box-order__options-input" checked type="radio" name="radio">
+                          <input class="box-order__options-input" type="radio" name="radio">
 													<div class="box-order__options-inner">
 													<span class="box-order__options-checked"></span>
 													<span class="box-order__options-icon">
@@ -145,7 +145,7 @@
 												</label>
 
 												<label class="box-order__options-item">
-                          <input class="box-order__options-input" type="radio" name="radio">
+                          <input class="box-order__options-input" checked type="radio" name="radio">
 													<div class="box-order__options-inner">
 													<span class="box-order__options-checked"></span>
 													<span class="box-order__options-icon">
@@ -169,27 +169,11 @@
 
                     <div class="box-order__inner">
                       <div class="box-order__title">
-                        Выберите адрес доставки
+                        Пункт самовывоза
                       </div>
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Адрес доставки*"
-                        class="box-order__form-input input"
-                      />
-                      <input
-                        type="text"
-                        name="email"
-                        data-required="email"
-                        data-validate
-                        placeholder="Индекс"
-                        class="box-order__form-input input"
-                      />
-                      <textarea
-                        name=""
-                        placeholder="Комментарии к заказу"
-                        class="box-order__form-input input"
-                      ></textarea>
+											<div class="box-order__map-title">Алтайский край, г. Барнаул, ул. Гридасова, 16</div>
+											<div id="map" class="box-order__map map"></div>
+											<textarea name="" placeholder="Комментарии к заказу" class="box-order__form-input input" data-placeholder="Комментарии к заказу"></textarea>
                     </div>
                   </form>
                 </div>
@@ -211,19 +195,19 @@
                   </div>
 
                   <form action="#" class="box-order__form">
-										<div class="box-order__options">
+										<div class="box-order__options box-order__options_c">
 
 											<label class="box-order__options-item box-order__options-item_text">
-												<input class="box-order__options-input" checked type="radio" name="radio">
+												<input class="box-order__options-input" type="radio" name="radio">
 												<span class="box-order__options-inner">
 												<span class="box-order__options-checked"></span>
 												<span class="box-order__options-descp box-order__options-descp_row">
 													<span class="box-order__options-icon">
 														<svg class="box-order__options-svg">
-															<use xlink:href="#doc-box-icon"></use>
+															<use xlink:href="#card-icon-box"></use>
 														</svg>
 													</span>
-													<span class="box-order__options-descp-title">Предоплата, банковский счет</span>
+													<span class="box-order__options-descp-title">Оплата по карте</span>
 													<span data-tippy-content class="box-order__options-descp-tippy">
 														<svg class="box-order__options-descp-tippy-svg">
 															<use xlink:href="#i-icon"></use>
@@ -243,7 +227,7 @@
 															<use xlink:href="#cash-box"></use>
 														</svg>
 													</span>
-													<span class="box-order__options-descp-title">Наличные при получении</span>
+													<span class="box-order__options-descp-title">Оплата в офисе</span>
 													<span data-tippy-content class="box-order__options-descp-tippy">
 														<svg class="box-order__options-descp-tippy-svg">
 															<use xlink:href="#i-icon"></use>
@@ -273,31 +257,11 @@
 												</span>
 											</label>
 
-											<label class="box-order__options-item box-order__options-item_text">
-												<input class="box-order__options-input" type="radio" name="radio">
-												<span class="box-order__options-inner">
-												<span class="box-order__options-checked"></span>
-												<span class="box-order__options-descp box-order__options-descp_row">
-													<span class="box-order__options-icon">
-														<svg class="box-order__options-svg">
-															<use xlink:href="#card-icon-box"></use>
-														</svg>
-													</span>
-													<span class="box-order__options-descp-title">Оплата по карте</span>
-													<span data-tippy-content class="box-order__options-descp-tippy">
-														<svg class="box-order__options-descp-tippy-svg">
-															<use xlink:href="#i-icon"></use>
-														</svg>
-													</span>
-												</span>
-												</span>
-											</label>
-
 										</div>
                   </form>
                 </div>
 
-								<div class="box-order-error" style="display:none;">
+								<div class="box-order-error">
 									Поля, обязательные для заполнения, отмечены звездочкой
 								</div>
 

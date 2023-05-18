@@ -3521,6 +3521,7 @@ body {
 }
 .box-order__options-inner {
 	width: 100%;
+	height: 100%;
 	position: relative;
 	display: flex;
 	padding: 24px 50px 24px 30px;
@@ -3631,6 +3632,23 @@ body {
 	border-radius: 15px;
 	overflow: hidden;
 } 
+.box-order__map {
+	height: 370px;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+.box-order__map-title {
+	font-weight: 700;
+	margin-bottom: 17px;
+}
+.box-order__options_c .box-order__options-item {
+	flex: 0 1 32.5%;
+	margin-bottom: 10px;
+}
+.box-order__options_c .box-order__options-inner {
+	padding: 14px 35px 14px 20px;
+}
 //========================================================================================================================================================
 
 // Перенести
