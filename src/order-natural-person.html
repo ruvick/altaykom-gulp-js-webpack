@@ -35,21 +35,216 @@
           <div class="_container">
             <div class="page-user-sec__inner">
               <div class="page-user-sec__main">
-                <div class="order-payment">
-                  <div class="order-payment__title">Оплата заказа</div>
-                  <div class="order-payment__text">
-                    Предоплата, банковский счет. Сумма к оплате по счету:
-                    <span class="total-price rub">2 200.00</span>
+                <div class="box-order">
+                  <div class="box-order__row">
+                    <div class="box-order__item">
+                      <span class="box-order__item-number">1</span>
+                      <div class="box-order__item-name">Покупатель</div>
+                    </div>
+                    <!-- <button
+                      type="button"
+                      class="box-order__item-another-city text-animation"
+                    >
+                      Другой город
+                    </button> -->
                   </div>
-                  <button
-                    type="button"
-                    class="order-payment__button btn btn_black"
-                  >
-                    Оплатить заказ
-                  </button>
-                  <div class="order-payment__notification">
-                    Вы будете перенаправлены на страницу оплаты
+
+                  <form action="#" class="box-order__form">
+                    <div class="box-order__row">
+                      <div class="box-order__options options">
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            checked
+                            type="radio"
+                            value="1"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Физическое лицо</span></span
+                          >
+                        </label>
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            type="radio"
+                            value="2"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Юридическое лицо</span></span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                    <div class="box-order__row">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="ФИО*"
+                        class="box-order__form-input input"
+                      />
+                      <input
+                        type="text"
+                        name="email"
+                        data-required="email"
+                        data-validate
+                        placeholder="Email*"
+                        class="box-order__form-input input"
+                      />
+                      <input
+                        type="tel"
+                        name="phone"
+                        data-required="tel"
+                        data-validate
+                        placeholder="Телефон*"
+                        class="box-order__form-input input tel"
+                      />
+                    </div>
+                  </form>
+                </div>
+
+                <div class="box-order">
+                  <div class="box-order__row">
+                    <div class="box-order__item">
+                      <span class="box-order__item-number">2</span>
+                      <div class="box-order__item-name">
+                        Доставка: <span class="text-animation">Барнаул</span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="box-order__item-another-city text-animation"
+                    >
+                      Другой город
+                    </button>
                   </div>
+
+                  <form action="#" class="box-order__form">
+                    <div class="box-order__row">
+                      <div class="box-order__options options">
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            checked
+                            type="radio"
+                            value="1"
+                            name="form[option]"
+                          />
+                          <span class="options__text">
+                            <span>Физическое лицо</span>
+                          </span>
+                        </label>
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            type="radio"
+                            value="2"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Юридическое лицо</span></span
+                          >
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="box-order__inner">
+                      <div class="box-order__title">
+                        Выберите адрес доставки
+                      </div>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Адрес доставки*"
+                        class="box-order__form-input input"
+                      />
+                      <input
+                        type="text"
+                        name="email"
+                        data-required="email"
+                        data-validate
+                        placeholder="Индекс"
+                        class="box-order__form-input input"
+                      />
+                      <textarea
+                        name=""
+                        placeholder="Комментарии к заказу"
+                        class="box-order__form-input input"
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="box-order">
+                  <div class="box-order__row">
+                    <div class="box-order__item">
+                      <span class="box-order__item-number">3</span>
+                      <div class="box-order__item-name">
+                        Оплата <span class="text-animation"></span>
+                      </div>
+                    </div>
+                    <!-- <button
+                      type="button"
+                      class="box-order__item-another-city text-animation"
+                    >
+                      Другой город
+                    </button> -->
+                  </div>
+
+                  <form action="#" class="box-order__form">
+                    <div class="box-order__row">
+                      <div class="box-order__options options">
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            checked
+                            type="radio"
+                            value="1"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Предоплата, банковский счет</span></span
+                          >
+                        </label>
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            type="radio"
+                            value="2"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Наличные при получении</span></span
+                          >
+                        </label>
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            checked
+                            type="radio"
+                            value="1"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Оплата с отсрочкой платежа</span></span
+                          >
+                        </label>
+                        <label class="options__item">
+                          <input
+                            class="options__input"
+                            checked
+                            type="radio"
+                            value="1"
+                            name="form[option]"
+                          />
+                          <span class="options__text"
+                            ><span>Оплата по карте</span></span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
 

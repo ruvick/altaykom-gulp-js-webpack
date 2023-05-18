@@ -3435,7 +3435,91 @@ body {
 		}
 	}
 }
+//========================================================================================================================================================
 
+.box-order {
+	margin-bottom: 60px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.box-order__row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.box-order__item {
+	display: flex;
+	align-items: center;
+}
+.box-order__item-number {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 34px;
+	flex: 0 0 34px;
+	height: 34px;
+	font-size: 18px;
+	color: #fff;
+	overflow: hidden;
+	background: #221F20;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.box-order__item-name {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 42/26*100%;
+	color: #161615;
+	span {
+		font-weight: 400;
+		color: #C5934F;
+	}
+}
+.box-order__item-another-city {
+	font-size: 14px;
+	line-height: 22/14*100%;
+	color: #C5934F;
+}
+.box-order__form {
+}
+.box-order__options {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.box-order__options .options__item {
+	flex: 0 1 49.5%;
+	margin-bottom: 10px;
+}
+.box-order__options .options__text {
+	padding: 24px 30px;
+	border: 1px solid #E3E3E3;
+  background-color: #fff;
+	border-radius: 15px;
+	margin-bottom: 0;
+	overflow: hidden;
+	&:hover{
+		border: 1px solid #161615;
+	}
+}
+.box-order__form-input {
+	flex: 0 1 49.5%;
+	margin-bottom: 10px;
+}
+.box-order__inner {
+}
+.box-order__title {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
 //========================================================================================================================================================
 
 // Перенести
