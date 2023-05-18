@@ -3649,6 +3649,15 @@ body {
 .box-order__options_c .box-order__options-inner {
 	padding: 14px 35px 14px 20px;
 }
+.box-order__row .search-form {
+	width: 100%;
+}
+.box-order__row .search-form__input {
+	padding: 0 20px 0 60px;
+}
+.box-order__row .search-form__btn:before {
+	left: 20px;
+}
 //========================================================================================================================================================
 
 // Перенести

@@ -55,7 +55,7 @@
                       <div class="box-order__options">
 
                         <label class="box-order__options-item box-order__options-item_text">
-                          <input class="box-order__options-input" checked type="radio" name="radio">
+                          <input class="box-order__options-input" type="radio" name="radio">
 													<span class="box-order__options-inner">
 													<span class="box-order__options-checked"></span>
 													<span class="box-order__options-descp">
@@ -65,7 +65,7 @@
 												</label>
 
                         <label class="box-order__options-item box-order__options-item_text">
-                          <input class="box-order__options-input" type="radio" name="radio">
+                          <input class="box-order__options-input" checked type="radio" name="radio">
 													<span class="box-order__options-inner">
 													<span class="box-order__options-checked"></span>
 													<span class="box-order__options-descp">
@@ -76,7 +76,27 @@
 
                       </div>
                     </div>
-                    <div class="box-order__row">
+
+										<div class="box-order__row">
+											<div class="box-order__title">
+												Компания
+											</div>
+											<div class="search-form">
+												<input type="text" placeholder="Название компании в свободной форме, адрес, ИНН или ОГРН*" class="search-form__input" value="" name="search" data-placeholder="Название компании в свободной форме, адрес, ИНН или ОГРН*">
+												<span tabindex="1" class="search-form__btn-closed">
+													<svg class="search-form__btn-closed-icon">
+														<use xlink:href="#popup-close"></use>
+													</svg>
+												</span>
+												<button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+											</div>
+										</div>
+
+                    <div class="box-order__inner">
+											<div class="box-order__title">
+												Контактное лицо
+											</div>
+											<div class="box-order__row">
                       <input
                         type="text"
                         name="name"
@@ -99,7 +119,9 @@
                         placeholder="Телефон*"
                         class="box-order__form-input input tel"
                       />
+										</div>
                     </div>
+										
                   </form>
                 </div>
 
