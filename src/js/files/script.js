@@ -9,310 +9,310 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-  // const body = document.querySelector("body");
-  // const html = document.querySelector('html');
+	// const body = document.querySelector("body");
+	// const html = document.querySelector('html');
 
-  // Открыть/закрыть catalog в header 
-  const catBtn = document.querySelector('.button-catalog');
-  const iconMenu = document.querySelector('.icon-menu');
-  const menuCatalog = document.querySelector('.menu-catalog');
+	// Открыть/закрыть catalog в header 
+	const catBtn = document.querySelector('.button-catalog');
+	const iconMenu = document.querySelector('.icon-menu');
+	const menuCatalog = document.querySelector('.menu-catalog');
 
-  if (catBtn) {
-    catBtn.addEventListener('click', function () {
-      iconMenu.classList.toggle('active');
-      menuCatalog.classList.toggle('active');
-      lineBlockBlk.classList.toggle('_active');
-      // html.classList.toggle('lock');
-      // body.style.paddingRight = '7px';
-    });
-  }
+	if (catBtn) {
+		catBtn.addEventListener('click', function () {
+			iconMenu.classList.toggle('active');
+			menuCatalog.classList.toggle('active');
+			lineBlockBlk.classList.toggle('_active');
+			// html.classList.toggle('lock');
+			// body.style.paddingRight = '7px';
+		});
+	}
 
-  window.addEventListener('click', e => { // при клике в любом месте окна браузера
-    const target = e.target // находим элемент, на котором был клик
-    if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-      iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
-      menuCatalog.classList.remove('active');
-      // html.classList.remove('lock');
-      // headsearch.classList.remove('_active')
-    }
-  })
-
-
-  // Срабатывание поиска
-  const search = document.querySelector(".search-form");
-  const searchInput = document.querySelector(".search-form__input");
-  const searchMenu = document.querySelector(".menu-search");
-  const searchBtnClosed = document.querySelector(".search-form__btn-closed");
-  const interFacelinkText = document.querySelectorAll(".interface__link-text");
-
-  interFacelinkText.forEach(linkText => {
-    searchInput.addEventListener('click', function () {
-      search.classList.add("_active");
-      searchMenu.classList.add("_active");
-      searchBtnClosed.classList.add("_active");
-      linkText.classList.add("none");
-      lineBlockBlk.classList.add('_active');
-      // html.classList.add('lock');
-      // body.style.paddingRight = '7px';
-      // document.documentElement.classList.add('lock');
-    })
-    searchBtnClosed.addEventListener('click', function () {
-      search.classList.remove("_active");
-      searchMenu.classList.remove("_active");
-      searchBtnClosed.classList.remove("_active");
-      linkText.classList.remove("none");
-      lineBlockBlk.classList.remove('_active');
-      // html.classList.remove('lock');
-      // body.style.paddingRight = '0px';
-      // document.documentElement.classList.remove('lock');
-    })
-    window.addEventListener('click', e => { // при клике в любом месте окна браузера
-      const target = e.target // находим элемент, на котором был клик
-      if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-        search.classList.remove("_active");
-        searchMenu.classList.remove("_active");
-        searchBtnClosed.classList.remove('_active');
-        linkText.classList.remove("none");
-        lineBlockBlk.classList.remove('_active');
-        // document.documentElement.classList.remove('lock');
-        // html.classList.remove('lock');
-        // body.style.paddingRight = '0px';
-      }
-    })
-  })
+	window.addEventListener('click', e => { // при клике в любом месте окна браузера
+		const target = e.target // находим элемент, на котором был клик
+		if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+			iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
+			menuCatalog.classList.remove('active');
+			// html.classList.remove('lock');
+			// headsearch.classList.remove('_active')
+		}
+	})
 
 
-  // Всплывающие меню при наведении
-  const item = document.querySelectorAll('.menu-lineBlock__item');
-  const lineBlockBlk = document.querySelector('.lineBlock-blk');
+	// Срабатывание поиска
+	const search = document.querySelector(".search-form");
+	const searchInput = document.querySelector(".search-form__input");
+	const searchMenu = document.querySelector(".menu-search");
+	const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+	const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
-  for (let i = 0; i < item.length; i++) {
-    item[i].addEventListener('mouseenter', (e) => {
-      let child = item[i].getElementsByClassName('sub-list')[0];
-      child.classList.add('_active');
-      lineBlockBlk.classList.add('_active');
-      // html.classList.add('lock');
-      // body.style.paddingRight = '7px';
-      // document.documentElement.classList.add('lock');
-    })
-    item[i].addEventListener('mouseleave', () => {
-      let child = item[i].getElementsByClassName('sub-list')[0];
-      child.classList.remove('_active');
-      lineBlockBlk.classList.remove('_active');
-      // html.classList.remove('lock');
-      // body.style.paddingRight = '0px';
-      // document.documentElement.classList.remove('lock');
-    })
-  }
-
-
-  // Переключение корзины в карточке товаров
-  const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
-  const interAddingBascet = document.querySelectorAll('.interactive-adding-bascet');
-  const interAddingQuantity = document.querySelectorAll('.interactive-adding-quantity');
-
-  // if (interAddingBascetBtn) {
-  //   interAddingBascetBtn.addEventListener('click', function () {
-  //     interAddingBascet.classList.add('none');
-  //     interAddingQuantity.classList.toggle('active');
-  // 		console.log('клик');
-  //   });
-  // }
-
-  interAddingBascetBtn.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-
-      if (btn) {
-
-        interAddingBascet.forEach((interAddingBascet) => {
-          interAddingBascet.classList.add('none');
-        });
-        interAddingQuantity.forEach((interAddingQuantity) => {
-          interAddingQuantity.classList.add('active');
-        });
-
-        // BarSubMenuElems[index].classList.add('active')
-        // BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-        // btn.classList.add('sidebar__menu-icon_active')
-      }
-      // else {
-      // 	BarSubMenuElems[index].classList.remove('active')
-      // 	BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-      // 	btn.classList.remove('sidebar__menu-icon_active')
-      // }
-    })
-  })
-
-  // window.addEventListener('click', e => { // при клике в любом месте окна браузера
-  //   const target = e.target // находим элемент, на котором был клик
-  //   if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-  //     // interAddingBascet.classList.remove('none');
-  //     interAddingQuantity.classList.remove('active');
-  //     // headsearch.classList.remove('_active')
-  //   }
-  // })
+	interFacelinkText.forEach(linkText => {
+		searchInput.addEventListener('click', function () {
+			search.classList.add("_active");
+			searchMenu.classList.add("_active");
+			searchBtnClosed.classList.add("_active");
+			linkText.classList.add("none");
+			lineBlockBlk.classList.add('_active');
+			// html.classList.add('lock');
+			// body.style.paddingRight = '7px';
+			// document.documentElement.classList.add('lock');
+		})
+		searchBtnClosed.addEventListener('click', function () {
+			search.classList.remove("_active");
+			searchMenu.classList.remove("_active");
+			searchBtnClosed.classList.remove("_active");
+			linkText.classList.remove("none");
+			lineBlockBlk.classList.remove('_active');
+			// html.classList.remove('lock');
+			// body.style.paddingRight = '0px';
+			// document.documentElement.classList.remove('lock');
+		})
+		window.addEventListener('click', e => { // при клике в любом месте окна браузера
+			const target = e.target // находим элемент, на котором был клик
+			if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+				search.classList.remove("_active");
+				searchMenu.classList.remove("_active");
+				searchBtnClosed.classList.remove('_active');
+				linkText.classList.remove("none");
+				lineBlockBlk.classList.remove('_active');
+				// document.documentElement.classList.remove('lock');
+				// html.classList.remove('lock');
+				// body.style.paddingRight = '0px';
+			}
+		})
+	})
 
 
-  // Открытие/закрытие сайдбара
-  const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
-  const pageSidebar = document.querySelector('.page__sidebar');
-  const pageMain = document.querySelector('.page__main');
+	// Всплывающие меню при наведении
+	const item = document.querySelectorAll('.menu-lineBlock__item');
+	const lineBlockBlk = document.querySelector('.lineBlock-blk');
 
-  if (ManagementFiltersBtn) {
-    ManagementFiltersBtn.addEventListener('click', function () {
-      // ManagementFiltersBtn.classList.togle('active');
-      pageSidebar.classList.toggle('hide');
-      pageMain.classList.toggle('width');
-    });
-  }
-
-
-  // Лайки
-  const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
-  const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
-
-  likeButtons.forEach((button, index) => {
-    button.addEventListener("click", () => {
-      button.classList.toggle("is-active");
-      const current = Number(likeCounts[index].innerHTML);
-      const inc = button.classList.contains("is-active") ? 1 : -1;
-      likeCounts[index].innerHTML = current + inc;
-    });
-  });
+	for (let i = 0; i < item.length; i++) {
+		item[i].addEventListener('mouseenter', (e) => {
+			let child = item[i].getElementsByClassName('sub-list')[0];
+			child.classList.add('_active');
+			lineBlockBlk.classList.add('_active');
+			// html.classList.add('lock');
+			// body.style.paddingRight = '7px';
+			// document.documentElement.classList.add('lock');
+		})
+		item[i].addEventListener('mouseleave', () => {
+			let child = item[i].getElementsByClassName('sub-list')[0];
+			child.classList.remove('_active');
+			lineBlockBlk.classList.remove('_active');
+			// html.classList.remove('lock');
+			// body.style.paddingRight = '0px';
+			// document.documentElement.classList.remove('lock');
+		})
+	}
 
 
+	// Переключение корзины в карточке товаров
+	const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
+	const interAddingBascet = document.querySelectorAll('.interactive-adding-bascet');
+	const interAddingQuantity = document.querySelectorAll('.interactive-adding-quantity');
+
+	// if (interAddingBascetBtn) {
+	//   interAddingBascetBtn.addEventListener('click', function () {
+	//     interAddingBascet.classList.add('none');
+	//     interAddingQuantity.classList.toggle('active');
+	// 		console.log('клик');
+	//   });
+	// }
+
+	interAddingBascetBtn.forEach((btn, index) => {
+		btn.addEventListener('click', () => {
+
+			if (btn) {
+
+				interAddingBascet.forEach((interAddingBascet) => {
+					interAddingBascet.classList.add('none');
+				});
+				interAddingQuantity.forEach((interAddingQuantity) => {
+					interAddingQuantity.classList.add('active');
+				});
+
+				// BarSubMenuElems[index].classList.add('active')
+				// BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+				// btn.classList.add('sidebar__menu-icon_active')
+			}
+			// else {
+			// 	BarSubMenuElems[index].classList.remove('active')
+			// 	BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+			// 	btn.classList.remove('sidebar__menu-icon_active')
+			// }
+		})
+	})
+
+	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	//   const target = e.target // находим элемент, на котором был клик
+	//   if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+	//     // interAddingBascet.classList.remove('none');
+	//     interAddingQuantity.classList.remove('active');
+	//     // headsearch.classList.remove('_active')
+	//   }
+	// })
 
 
-  //BURGER
-  // if (catBtn) {
-  //   catBtn.addEventListener("click", function () {
-  //     iconMenu.classList.toggle("active");
-  //     body.classList.toggle("_lock");
-  //     // menuBody.classList.toggle("active");
-  //   });
-  // }
+	// Открытие/закрытие сайдбара
+	const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
+	const pageSidebar = document.querySelector('.page__sidebar');
+	const pageMain = document.querySelector('.page__main');
 
-  // Закрытие моб меню при клике на якорную ссылку
-  // if (menuListItemElems) {
-  //   menuListItemElems.addEventListener("click", function () {
-  //     iconMenu.classList.toggle("active");
-  //     body.classList.toggle("_lock");
-  //     // menuBody.classList.toggle("active");
-  //   });
-  // }
-
-  // Строка поиска на мобилках
-  // if (mobsearch) {
-  //   mobsearch.addEventListener("click", function () {
-  //     headsearch.classList.toggle("_active");
-  //   });
-  // }
+	if (ManagementFiltersBtn) {
+		ManagementFiltersBtn.addEventListener('click', function () {
+			// ManagementFiltersBtn.classList.togle('active');
+			pageSidebar.classList.toggle('hide');
+			pageMain.classList.toggle('width');
+		});
+	}
 
 
-  // Плавная прокрутка
-  // const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+	// Лайки
+	const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
+	const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
 
-  // smotScrollElems.forEach(link => {
-  //   link.addEventListener('click', (event) => {
-  //     event.preventDefault()
-  //     console.log(event);
-
-  //     const id = link.getAttribute('href').substring(1)
-  //     console.log('id : ', id);
-
-  //     document.getElementById(id).scrollIntoView({
-  //       behavior: 'smooth'
-  //     });
-  //   })
-  // });
+	likeButtons.forEach((button, index) => {
+		button.addEventListener("click", () => {
+			button.classList.toggle("is-active");
+			const current = Number(likeCounts[index].innerHTML);
+			const inc = button.classList.contains("is-active") ? 1 : -1;
+			likeCounts[index].innerHTML = current + inc;
+		});
+	});
 
 
-  // Кнопка вверх
-  // const btnUp = {
-  //   el: document.querySelector('.btn-up'),
-  //   show() {
-  //     // удалим у кнопки класс btn-up_hide
-  //     this.el.classList.remove('btn-up_hide');
-  //   },
-  //   hide() {
-  //     // добавим к кнопке класс btn-up_hide
-  //     this.el.classList.add('btn-up_hide');
-  //   },
-  //   addEventListener() {
-  //     // при прокрутке содержимого страницы
-  //     window.addEventListener('scroll', () => {
-  //       // определяем величину прокрутки
-  //       const scrollY = window.scrollY || document.documentElement.scrollTop;
-  //       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-  //       scrollY > 400 ? this.show() : this.hide();
-  //     });
-  //     // при нажатии на кнопку .btn-up
-  //     document.querySelector('.btn-up').onclick = () => {
-  //       // переместим в начало страницы
-  //       window.scrollTo({
-  //         top: 0,
-  //         left: 0,
-  //         behavior: 'smooth'
-  //       });
-  //     }
-  //   }
-  // }
 
 
-  // Полоса прокрутки в шапке
-  // const scrollProgress = document.getElementById('scroll-progress');
-  // const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+	//BURGER
+	// if (catBtn) {
+	//   catBtn.addEventListener("click", function () {
+	//     iconMenu.classList.toggle("active");
+	//     body.classList.toggle("_lock");
+	//     // menuBody.classList.toggle("active");
+	//   });
+	// }
 
-  // window.addEventListener('scroll', () => {
-  //   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-  //   scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-  // });
+	// Закрытие моб меню при клике на якорную ссылку
+	// if (menuListItemElems) {
+	//   menuListItemElems.addEventListener("click", function () {
+	//     iconMenu.classList.toggle("active");
+	//     body.classList.toggle("_lock");
+	//     // menuBody.classList.toggle("active");
+	//   });
+	// }
+
+	// Строка поиска на мобилках
+	// if (mobsearch) {
+	//   mobsearch.addEventListener("click", function () {
+	//     headsearch.classList.toggle("_active");
+	//   });
+	// }
 
 
-  // Ползунок выбора цены
-  // const priceEl = document.querySelector(".price");
+	// Плавная прокрутка
+	// const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
 
-  // function changePrice(price) {
-  //   priceEl.innerText = price;
-  //   console.log(price);
-  // };
+	// smotScrollElems.forEach(link => {
+	//   link.addEventListener('click', (event) => {
+	//     event.preventDefault()
+	//     console.log(event);
+
+	//     const id = link.getAttribute('href').substring(1)
+	//     console.log('id : ', id);
+
+	//     document.getElementById(id).scrollIntoView({
+	//       behavior: 'smooth'
+	//     });
+	//   })
+	// });
 
 
-  // Подсказки
-  // tippy('._tippy', {
-  //   content: "Подсказка",
-  // });
+	// Кнопка вверх
+	// const btnUp = {
+	//   el: document.querySelector('.btn-up'),
+	//   show() {
+	//     // удалим у кнопки класс btn-up_hide
+	//     this.el.classList.remove('btn-up_hide');
+	//   },
+	//   hide() {
+	//     // добавим к кнопке класс btn-up_hide
+	//     this.el.classList.add('btn-up_hide');
+	//   },
+	//   addEventListener() {
+	//     // при прокрутке содержимого страницы
+	//     window.addEventListener('scroll', () => {
+	//       // определяем величину прокрутки
+	//       const scrollY = window.scrollY || document.documentElement.scrollTop;
+	//       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+	//       scrollY > 400 ? this.show() : this.hide();
+	//     });
+	//     // при нажатии на кнопку .btn-up
+	//     document.querySelector('.btn-up').onclick = () => {
+	//       // переместим в начало страницы
+	//       window.scrollTo({
+	//         top: 0,
+	//         left: 0,
+	//         behavior: 'smooth'
+	//       });
+	//     }
+	//   }
+	// }
 
 
-  // Поочередное открытие нескольких блоков меню, табы, либо что то еще
-  // const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
-  // const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
-  // const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
+	// Полоса прокрутки в шапке
+	// const scrollProgress = document.getElementById('scroll-progress');
+	// const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
-  // BarIconElems.forEach((btn, index) => {
-  //   btn.addEventListener('click', () => {
+	// window.addEventListener('scroll', () => {
+	//   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	//   scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+	// });
 
-  //     if (!btn.classList.contains('sidebar__menu-icon_active')) {
 
-  //       BarSubMenuElems.forEach((BarSubMenuElem) => {
-  //         BarSubMenuElem.classList.remove('active')
-  //       });
-  //       BarIconElems.forEach((BarIconElem) => {
-  //         BarIconElem.classList.remove('sidebar__menu-icon_active')
-  //       });
-  //       BarLinkIconElems.forEach((BarLinkIconElem) => {
-  //         BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
-  //       });
+	// Ползунок выбора цены
+	// const priceEl = document.querySelector(".price");
 
-  //       BarSubMenuElems[index].classList.add('active')
-  //       BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-  //       btn.classList.add('sidebar__menu-icon_active')
-  //     } else {
-  //       BarSubMenuElems[index].classList.remove('active')
-  //       BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-  //       btn.classList.remove('sidebar__menu-icon_active')
-  //     }
-  //   })
-  // })
+	// function changePrice(price) {
+	//   priceEl.innerText = price;
+	//   console.log(price);
+	// };
+
+
+	// Подсказки
+	// tippy('._tippy', {
+	//   content: "Подсказка",
+	// });
+
+
+	// Поочередное открытие нескольких блоков меню, табы, либо что то еще
+	// const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
+	// const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
+	// const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
+
+	// BarIconElems.forEach((btn, index) => {
+	//   btn.addEventListener('click', () => {
+
+	//     if (!btn.classList.contains('sidebar__menu-icon_active')) {
+
+	//       BarSubMenuElems.forEach((BarSubMenuElem) => {
+	//         BarSubMenuElem.classList.remove('active')
+	//       });
+	//       BarIconElems.forEach((BarIconElem) => {
+	//         BarIconElem.classList.remove('sidebar__menu-icon_active')
+	//       });
+	//       BarLinkIconElems.forEach((BarLinkIconElem) => {
+	//         BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
+	//       });
+
+	//       BarSubMenuElems[index].classList.add('active')
+	//       BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
+	//       btn.classList.add('sidebar__menu-icon_active')
+	//     } else {
+	//       BarSubMenuElems[index].classList.remove('active')
+	//       BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
+	//       btn.classList.remove('sidebar__menu-icon_active')
+	//     }
+	//   })
+	// })
 
 }

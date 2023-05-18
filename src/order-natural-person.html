@@ -51,30 +51,28 @@
 
                   <form action="#" class="box-order__form">
                     <div class="box-order__row">
-                      <div class="box-order__options options">
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            checked
-                            type="radio"
-                            value="1"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Физическое лицо</span></span
-                          >
-                        </label>
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            type="radio"
-                            value="2"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Юридическое лицо</span></span
-                          >
-                        </label>
+                      <div class="box-order__options">
+
+                        <label class="box-order__options-item box-order__options-item_text">
+                          <input class="box-order__options-input" checked type="radio" name="radio">
+													<span class="box-order__options-inner">
+													<span class="box-order__options-checked"></span>
+													<span class="box-order__options-descp">
+														<span class="box-order__options-descp-title">Физическое лицо</span>
+													</span>
+													</span>
+												</label>
+
+                        <label class="box-order__options-item box-order__options-item_text">
+                          <input class="box-order__options-input" type="radio" name="radio">
+													<span class="box-order__options-inner">
+													<span class="box-order__options-checked"></span>
+													<span class="box-order__options-descp">
+														<span class="box-order__options-descp-title">Юридическое лицо</span>
+													</span>
+													</span>
+												</label>
+
                       </div>
                     </div>
                     <div class="box-order__row">
@@ -122,30 +120,49 @@
 
                   <form action="#" class="box-order__form">
                     <div class="box-order__row">
-                      <div class="box-order__options options">
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            checked
-                            type="radio"
-                            value="1"
-                            name="form[option]"
-                          />
-                          <span class="options__text">
-                            <span>Физическое лицо</span>
-                          </span>
-                        </label>
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            type="radio"
-                            value="2"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Юридическое лицо</span></span
-                          >
-                        </label>
+                      <div class="box-order__options">
+
+                        <label class="box-order__options-item">
+                          <input class="box-order__options-input" checked type="radio" name="radio">
+													<div class="box-order__options-inner">
+													<span class="box-order__options-checked"></span>
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-svg">
+															<use xlink:href="#favorites-product"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp">
+														<span class="box-order__options-descp-title">Доставка транспортом Алтайком</span>
+														<span class="box-order__options-descp-sticker sticker-product sticker-product_green">Бесплатно</span>
+														<span class="box-order__options-descp-term">1-2 дня</span>
+														<span class="box-order__options-descp-text">
+															Доставка осуществляется после согласования заказа
+															с менеджером
+														</span>
+													</div>
+													</span>
+												</label>
+
+												<label class="box-order__options-item">
+                          <input class="box-order__options-input" type="radio" name="radio">
+													<div class="box-order__options-inner">
+													<span class="box-order__options-checked"></span>
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-icon-svg">
+															<use xlink:href="#favorites-product"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp">
+														<span class="box-order__options-descp-title">Самовывоз</span>
+														<span class="box-order__options-descp-sticker sticker-product sticker-product_green">Бесплатно</span>
+														<span class="box-order__options-descp-term">Пн-Пт: 08:00-17:00, Сб-Вс: выходные</span>
+														<span class="box-order__options-descp-text">
+															Вы можете самостоятельно забрать заказ из нашего магазина
+														</span>
+													</div>
+													</span>
+												</label>
+
                       </div>
                     </div>
 
@@ -193,57 +210,49 @@
                   </div>
 
                   <form action="#" class="box-order__form">
-                    <div class="box-order__row">
-                      <div class="box-order__options options">
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            checked
-                            type="radio"
-                            value="1"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Предоплата, банковский счет</span></span
-                          >
-                        </label>
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            type="radio"
-                            value="2"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Наличные при получении</span></span
-                          >
-                        </label>
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            checked
-                            type="radio"
-                            value="1"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Оплата с отсрочкой платежа</span></span
-                          >
-                        </label>
-                        <label class="options__item">
-                          <input
-                            class="options__input"
-                            checked
-                            type="radio"
-                            value="1"
-                            name="form[option]"
-                          />
-                          <span class="options__text"
-                            ><span>Оплата по карте</span></span
-                          >
-                        </label>
-                      </div>
-                    </div>
+										<div class="box-order__options">
+
+											<label class="box-order__options-item box-order__options-item_text">
+												<input class="box-order__options-input" checked type="radio" name="radio">
+												<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp">
+													<span class="box-order__options-descp-title">Предоплата, банковский счет</span>
+												</span>
+												</span>
+											</label>
+
+											<label class="box-order__options-item box-order__options-item_text">
+												<input class="box-order__options-input" type="radio" name="radio">
+												<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp">
+													<span class="box-order__options-descp-title">Наличные при получении</span>
+												</span>
+												</span>
+											</label>
+
+											<label class="box-order__options-item box-order__options-item_text">
+												<input class="box-order__options-input" type="radio" name="radio">
+												<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp">
+													<span class="box-order__options-descp-title">Оплата с отсрочкой платежа</span>
+												</span>
+												</span>
+											</label>
+
+											<label class="box-order__options-item box-order__options-item_text">
+												<input class="box-order__options-input" type="radio" name="radio">
+												<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp">
+													<span class="box-order__options-descp-title">Оплата по карте</span>
+												</span>
+												</span>
+											</label>
+
+										</div>
                   </form>
                 </div>
               </div>
