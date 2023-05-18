@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Оформление заказа физлицо (продолжение)" })
+  @@include('html/_head.htm',{ "title":"Оформление заказа физлицо (когда зарегистрирован)" })
 
   <body>
     <div class="wrapper">
@@ -33,13 +33,207 @@
 
         <section id="page-user-sec" class="page-user-sec section">
           <div class="_container">
+
+						<div class="box-order">
+							<div class="box-order__row">
+								<div class="box-order__item">
+									<span class="box-order__item-number">1</span>
+									<div class="box-order__item-name">Корзина</div>
+								</div>
+								<!-- <button
+										type="button"
+										class="box-order__item-another-city text-animation"
+									>
+										Другой город
+									</button> -->
+							</div>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Артикул</th>
+										<th>Наименование</th>
+										<th>Производитель</th>
+										<th>Вес упаковки</th>
+										<th>Мера измерения</th>
+										<th>Цена с НДС</th>
+										<th></th>
+										<th>8</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div>5297765</div>
+											<div class="sticker-product sticker-product_crem">
+												прослеживаемый товар
+											</div>
+										</td>
+										<td>Желейные шарики «Мармелатье»</td>
+										<td>Фабрика Сладкого Декора</td>
+										<td>5</td>
+										<td>кг</td>
+										<td>
+											<div class="price-new price-new_red rub">600.00</div>
+											<div class="price-old rub">700.00</div>
+										</td>
+										<td>
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]" value="1">
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]" value="670.00">
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>5503240</div>
+											<!-- <div class="sticker-product sticker-product_crem">прослеживаемый товар</div> -->
+										</td>
+										<td>
+											Какао порошок темно-красный 100% "Cacao Barry" Extra
+											Brute алкализованный
+										</td>
+										<td>Фабрика Сладкого Декора</td>
+										<td>5</td>
+										<td>л</td>
+										<td>
+											<div class="price-new rub">1 375.00</div>
+											<!-- <div class="price-old rub">
+                        700.00
+                      </div> -->
+										</td>
+										<td>
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]" value="1">
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]" value="670.00">
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>5297765</div>
+											<div class="sticker-product sticker-product_crem">
+												прослеживаемый товар
+											</div>
+										</td>
+										<td>Желейные шарики «Мармелатье»</td>
+										<td>Фабрика Сладкого Декора</td>
+										<td>5</td>
+										<td>кг</td>
+										<td>
+											<div class="price-new price-new_red rub">600.00</div>
+											<div class="price-old rub">700.00</div>
+										</td>
+										<td>
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]" value="1">
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]" value="670.00">
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
             <div class="page-user-sec__inner">
               <div class="page-user-sec__main">
 
                 <div class="box-order">
                   <div class="box-order__row">
                     <div class="box-order__item">
-                      <span class="box-order__item-number">1</span>
+                      <span class="box-order__item-number">2</span>
                       <div class="box-order__item-name">Покупатель</div>
                     </div>
                     <!-- <button
@@ -128,7 +322,7 @@
                 <div class="box-order">
                   <div class="box-order__row">
                     <div class="box-order__item">
-                      <span class="box-order__item-number">2</span>
+                      <span class="box-order__item-number">3</span>
                       <div class="box-order__item-name">
                         Доставка: <span class="text-animation">Барнаул</span>
                       </div>
@@ -146,7 +340,7 @@
                       <div class="box-order__options">
 
                         <label class="box-order__options-item">
-                          <input class="box-order__options-input" type="radio" name="radio">
+                          <input class="box-order__options-input" checked type="radio" name="radio">
 													<div class="box-order__options-inner">
 													<span class="box-order__options-checked"></span>
 													<span class="box-order__options-icon">
@@ -167,7 +361,7 @@
 												</label>
 
 												<label class="box-order__options-item">
-                          <input class="box-order__options-input" checked type="radio" name="radio">
+                          <input class="box-order__options-input" type="radio" name="radio">
 													<div class="box-order__options-inner">
 													<span class="box-order__options-checked"></span>
 													<span class="box-order__options-icon">
@@ -191,11 +385,27 @@
 
                     <div class="box-order__inner">
                       <div class="box-order__title">
-                        Пункт самовывоза
+                        Выберите адрес доставки
                       </div>
-											<div class="box-order__map-title">Алтайский край, г. Барнаул, ул. Гридасова, 16</div>
-											<div id="map" class="box-order__map map"></div>
-											<textarea name="" placeholder="Комментарии к заказу" class="box-order__form-input input" data-placeholder="Комментарии к заказу"></textarea>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Адрес доставки*"
+                        class="box-order__form-input input"
+                      />
+                      <input
+                        type="text"
+                        name="email"
+                        data-required="email"
+                        data-validate
+                        placeholder="Индекс"
+                        class="box-order__form-input input"
+                      />
+                      <textarea
+                        name=""
+                        placeholder="Комментарии к заказу"
+                        class="box-order__form-input input"
+                      ></textarea>
                     </div>
                   </form>
                 </div>
@@ -203,7 +413,7 @@
                 <div class="box-order">
                   <div class="box-order__row">
                     <div class="box-order__item">
-                      <span class="box-order__item-number">3</span>
+                      <span class="box-order__item-number">4</span>
                       <div class="box-order__item-name">
                         Оплата <span class="text-animation"></span>
                       </div>
@@ -217,19 +427,19 @@
                   </div>
 
                   <form action="#" class="box-order__form">
-										<div class="box-order__options box-order__options_c">
+										<div class="box-order__options">
 
 											<label class="box-order__options-item box-order__options-item_text">
-												<input class="box-order__options-input" type="radio" name="radio">
+												<input class="box-order__options-input" checked type="radio" name="radio">
 												<span class="box-order__options-inner">
 												<span class="box-order__options-checked"></span>
 												<span class="box-order__options-descp box-order__options-descp_row">
 													<span class="box-order__options-icon">
 														<svg class="box-order__options-svg">
-															<use xlink:href="#card-icon-box"></use>
+															<use xlink:href="#doc-box-icon"></use>
 														</svg>
 													</span>
-													<span class="box-order__options-descp-title">Оплата по карте</span>
+													<span class="box-order__options-descp-title">Предоплата, банковский счет</span>
 													<span data-tippy-content class="box-order__options-descp-tippy">
 														<svg class="box-order__options-descp-tippy-svg">
 															<use xlink:href="#i-icon"></use>
@@ -249,7 +459,7 @@
 															<use xlink:href="#cash-box"></use>
 														</svg>
 													</span>
-													<span class="box-order__options-descp-title">Оплата в офисе</span>
+													<span class="box-order__options-descp-title">Наличные при получении</span>
 													<span data-tippy-content class="box-order__options-descp-tippy">
 														<svg class="box-order__options-descp-tippy-svg">
 															<use xlink:href="#i-icon"></use>
@@ -279,11 +489,31 @@
 												</span>
 											</label>
 
+											<label class="box-order__options-item box-order__options-item_text">
+												<input class="box-order__options-input" type="radio" name="radio">
+												<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp box-order__options-descp_row">
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-svg">
+															<use xlink:href="#card-icon-box"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp-title">Оплата по карте</span>
+													<span data-tippy-content class="box-order__options-descp-tippy">
+														<svg class="box-order__options-descp-tippy-svg">
+															<use xlink:href="#i-icon"></use>
+														</svg>
+													</span>
+												</span>
+												</span>
+											</label>
+
 										</div>
                   </form>
                 </div>
 
-								<div class="box-order-error">
+								<div class="box-order-error" style="display: none;">
 									Поля, обязательные для заполнения, отмечены звездочкой
 								</div>
 
