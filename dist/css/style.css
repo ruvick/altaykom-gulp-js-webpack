@@ -2124,10 +2124,6 @@ body.popup-show::after {
   padding: 25px 0;
 }
 
-.sliderSec__swiper {
-  padding: 10px;
-}
-
 ._swiper {
   overflow: hidden;
 }
@@ -5850,6 +5846,7 @@ body.ie ._ibg img {
 
 .page-user-sec__main {
   flex: 0 1 71.8309859155%;
+  overflow: hidden;
 }
 
 .page-user-sec__aside {
@@ -6447,6 +6444,11 @@ body.ie ._ibg img {
   cursor: pointer;
 }
 
+.box-order__options-item:hover .box-order__options-inner {
+  border: 1px solid #F3F3F4;
+  background: #F3F3F4;
+}
+
 .box-order__options-icon {
   display: flex;
   justify-content: center;
@@ -6590,6 +6592,85 @@ body.ie ._ibg img {
 
 .box-order__row .search-form__btn:before {
   left: 20px;
+}
+
+.box-order__slider .swiper-wrapper {
+  align-items: stretch !important;
+}
+
+.box-order__slider .box-order__options-item {
+  flex: 0 1 auto;
+  margin-bottom: 0;
+}
+
+.box-order__slider .box-order__options-inner {
+  padding: 15px;
+}
+
+.box-order__slider .box-order__options-descp-title {
+  font-size: 14px;
+  line-height: 128.5714285714%;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.box-order__options-descp-date {
+  font-size: 12px;
+  line-height: 200%;
+  color: #8F8E8E;
+}
+
+.box-order__slider .box-order__options-descp-text {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.new-profile-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 107px !important;
+  font-size: 12px;
+  line-height: 116.6666666667%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #E3E3E3;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.new-profile-btn:hover {
+  color: #fff;
+  background: #221F20;
+}
+
+.new-profile-btn__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  margin-bottom: 11px;
+  border-radius: 50%;
+  background: #F3F3F4;
+  overflow: hidden;
+}
+.new-profile-btn__icon svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  fill: #8f8e8e;
+}
+
+.new-profile-btn:hover .new-profile-btn__icon {
+  background: #221F20;
+}
+
+.new-profile-btn:hover .new-profile-btn__icon svg {
+  fill: #fff;
 }
 
 .page .lineBlock {

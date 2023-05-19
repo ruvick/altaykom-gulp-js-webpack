@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Каталог корневой</title>
+	<title>Оформление заказа Когда есть профиль</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20230519163605">
@@ -13,23 +13,17 @@
 
 <body>
 	<div class="wrapper">
-		<header id="header" class="header">
-			<div class="header__container _container">
+		<header id="header" class="header header-user">
+			<div class="header-user__container _container">
 				<div class="header__main">
 
-					<div class="header__main-column">
-						<div class="header__main-item address-item">
-							<svg class="address-item__icon">
-								<use xlink:href="#map-address"></use>
+					<div class="header__main-column header__main-column_left">
+						<button type="button" class="header-user__back-btn back-btn">
+							<svg class="back-btn__icon">
+								<use xlink:href="#reg-back-btn"></use>
 							</svg>
-							г. Барнаул, ул. Гридасова, 16
-						</div>
-						<a href="tel:+73852462031" class="header__main-item phone-item">
-							<svg class="phone-item__icon">
-								<use xlink:href="#phone-icon"></use>
-							</svg>
-							+7 (3852) 46 20 31
-						</a>
+							вернуться
+						</button>
 					</div>
 
 					<a href="index.html" class="header__logo logo-icon">
@@ -38,1045 +32,432 @@
 						</svg>
 					</a>
 
-					<div class="header__main-column">
-						<ul class="header__menu menu">
-							<li class="menu__item">
-								<a href="#" class="menu__link">О нас</a>
-								<button type="button" data-spoller class="menu__button-arrow">
-									<svg class="menu__arrow-icon">
-										<use xlink:href="#arrow-bottom"></use>
-									</svg>
-								</button>
-								<ul class="menu__sub-list">
-									<li class="menu__sub-item">
-										<a href="#" class="menu__sub-link">О компании</a>
-									</li>
-									<li class="menu__sub-item">
-										<a href="#" class="menu__sub-link">Контакты</a>
-									</li>
-									<li class="menu__sub-item">
-										<a href="#" class="menu__sub-link">Поставщики</a>
-									</li>
-									<li class="menu__sub-item">
-										<a href="#" class="menu__sub-link">Новости и статьи</a>
-									</li>
-								</ul>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Мастер-классы</a>
-							</li>
-							<li class="menu__item">
-								<a href="#" class="menu__link">Оплата и доставка</a>
-							</li>
-							<li class="menu__item"><a href="#" class="menu__link">Гарантии</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="header__navigation">
-					<div class="header__button-catalog button-catalog">
-						<div class="button-catalog__text">каталог</div>
-						<button type="button" class="button-catalog__icon icon-menu" aria-label="Бургер иконка">
-							<span></span>
-							<span></span>
-							<span></span>
-						</button>
-					</div>
-					<form action="#" method="get" class="header__search search-form">
-						<input type="text" placeholder="Поиск по каталогу" data-placeholder="Поиск по каталогу" class="search-form__input" />
-						<button type="reset" tabindex="1" class="search-form__btn-closed">
-							<svg class="search-form__btn-closed-icon">
-								<use xlink:href="#popup-close"></use>
+					<div class="header__main-column header__main-column_right">
+						<a href="tel:+73852462031" class="phone-item">
+							<svg class="phone-item__icon">
+								<use xlink:href="#phone-icon"></use>
 							</svg>
-						</button>
-						<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
-					</form>
-					<div class="header__interface interface">
-						<a href="#" class="interface__link interface__link_enter"><span class="interface__link-text">Войти</span></a>
-						<a href="#" class="interface__link interface__link_favourites"><span class="interface__link-text">Избранное</span></a>
-						<a href="#" class="interface__link interface__link_bascet"><span class="interface__link-text">Корзина</span></a>
-					</div>
-				</div>
-			</div>
-			<div class="menu-catalog">
-				<div class="menu-catalog__body">
-					<div class="menu-catalog__list">
-						<ul class="menu-lineBlock">
-							<li class="menu-lineBlock__item">
-								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-stocks">Акции</a>
-							</li>
-							<li class="menu-lineBlock__item">
-								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-newprd">Новинки</a>
-							</li>
-							<li class="menu-lineBlock__item">
-								<a href="#" class="menu-lineBlock__link menu-lineBlock__link-icon_ingredients">Ингредиенты</a>
-								<ul class="sub-list">
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Ароматизаторы пищевые и ванилин</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Пищевые кислоты, консерванты</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Глазурь кондитерская и шоколад</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Повидло, начинки, подварки</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Десертные пасты, топпинги</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Прочее сырье</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Для работы с карамелью</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Сахар, соль</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Дрожжи хлебопекарные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Сливки для взбивания</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Желирующие вещества и загустители</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Смеси кондитерские</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Какао-порошок, какао-масло</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Смеси хлебопекарные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Конфитюр, начинки фруктово-ягодные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Специи, пряности</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Красители пищевые</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Стабилизаторы сливок, смеси для суфле и муссов</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Крахмал</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Сухофрукты, цукаты</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Крема, гели, помадки</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Улучшители муки</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Маргарин, масло</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Фрукты консервированные, наполнители</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Мастика сахарная</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Химические разрыхлители</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Молочные продукты, сыры</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Эмульгаторы</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Мука, солод, отруби, сухари</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Яичные продукты</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Орехи, семена</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Патока</a>
-									</li>
-								</ul>
-							</li>
-							<li class="menu-lineBlock__item">
-								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-inventory">Инвентарь</a>
-								<ul class="sub-list">
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Валики, венчики, ножи кондитерские, резаки</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Прочий инвентарь</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Вырубки для работы с мастикой, марципаном</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Салфетки, подложки, подносы</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Емкость полимерная (торт, пирожное)</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Силиконовые формы, коврики</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Инструмент для работы с мастикой, марципаном</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Скребки пластмассовые</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Инструмент для работы с шоколадом</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Тара полимерная (ящики)</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Капсулы бумажные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Трафареты</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Кисти, лопатки, скалки</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Упаковочные материалы, лотки</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Коробка картонная (торт, пирожное)</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Формы (печенье, пирожные, торты)</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Лента бордюрная, декоративная</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Формы бумажные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Насадки, мешки кондитерские</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Формы хлебные и кексовые</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Подставки для торта</a>
-									</li>
-								</ul>
-							</li>
-							<li class="menu-lineBlock__item">
-								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-equipment">Оборудование</a>
-								<ul class="sub-list sub-list-block">
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Ванны моечные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Взбивальные машины, миксеры</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Мукопросеиватели</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Печи хлебопекарные, шкафы пекарские</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Прочее оборудование</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Тестомесильные машины</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Тестораскаточные машины</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Упаковочное оборудование</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Хлеборезательные машины</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Шкафы расстоечные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Электровафельницы</a>
-									</li>
-								</ul>
-							</li>
-							<li class="menu-lineBlock__item">
-								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-products">Наша продукция</a>
-								<ul class="sub-list sub-list-block">
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Ванны моечные</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Печи хлебопекарные, шкафы пекарские</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Прочее оборудование</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Тестомесильные машины</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Тестораскаточные машины</a>
-									</li>
-									<li class="sub-list__item">
-										<a href="#" class="sub-list__link">Упаковочное оборудование</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="menu-catalog__image-block">
-						<div class="menu-catalog__img menu-catalog__img_01">
-							<div class="menu-catalog__img-title">Изготовление сахарной пудры</div>
-						</div>
-						<div class="menu-catalog__img menu-catalog__img_02">
-							<div class="menu-catalog__img-title">Производство инвентаря</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="menu-search">
-				<div class="menu-search__inner">
-					<div class="similar-products-block">
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/01.webp" type="image/webp"><img src="img/similar-products/01.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										10551 Свадебная декорация
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new interactive-price-new_red rub">
-										670.00
-									</div>
-									<div class="card-product__interactive-price-old rub">790.00</div>
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/02.webp" type="image/webp"><img src="img/similar-products/02.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										14069 Вырубка с выталкивателем «Снежинки»
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new rub">670.00</div>
-									<!-- <div class="card-product__interactive-price-old rub">
-					790.00
-				</div> -->
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/01.webp" type="image/webp"><img src="img/similar-products/01.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										10551 Свадебная декорация
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new interactive-price-new_red rub">
-										670.00
-									</div>
-									<div class="card-product__interactive-price-old rub">790.00</div>
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/02.webp" type="image/webp"><img src="img/similar-products/02.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										14069 Вырубка с выталкивателем «Снежинки»
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new rub">670.00</div>
-									<!-- <div class="card-product__interactive-price-old rub">
-					790.00
-				</div> -->
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/01.webp" type="image/webp"><img src="img/similar-products/01.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										10551 Свадебная декорация
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new interactive-price-new_red rub">
-										670.00
-									</div>
-									<div class="card-product__interactive-price-old rub">790.00</div>
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/02.webp" type="image/webp"><img src="img/similar-products/02.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										14069 Вырубка с выталкивателем «Снежинки»
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new rub">670.00</div>
-									<!-- <div class="card-product__interactive-price-old rub">
-					790.00
-				</div> -->
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/01.webp" type="image/webp"><img src="img/similar-products/01.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										10551 Свадебная декорация
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new interactive-price-new_red rub">
-										670.00
-									</div>
-									<div class="card-product__interactive-price-old rub">790.00</div>
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/02.webp" type="image/webp"><img src="img/similar-products/02.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										14069 Вырубка с выталкивателем «Снежинки»
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new rub">670.00</div>
-									<!-- <div class="card-product__interactive-price-old rub">
-					790.00
-				</div> -->
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/01.webp" type="image/webp"><img src="img/similar-products/01.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										10551 Свадебная декорация
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new interactive-price-new_red rub">
-										670.00
-									</div>
-									<div class="card-product__interactive-price-old rub">790.00</div>
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/02.webp" type="image/webp"><img src="img/similar-products/02.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										14069 Вырубка с выталкивателем «Снежинки»
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new rub">670.00</div>
-									<!-- <div class="card-product__interactive-price-old rub">
-					790.00
-				</div> -->
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/01.webp" type="image/webp"><img src="img/similar-products/01.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										10551 Свадебная декорация
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new interactive-price-new_red rub">
-										670.00
-									</div>
-									<div class="card-product__interactive-price-old rub">790.00</div>
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
-
-						<div class="similar-products-block__row">
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__img">
-									<picture><source srcset="img/similar-products/02.webp" type="image/webp"><img src="img/similar-products/02.jpg?_v=1684503365502" alt="" /></picture>
-								</div>
-								<div class="similar-products-block__descp">
-									<div class="similar-products-block__title">
-										14069 Вырубка с выталкивателем «Снежинки»
-									</div>
-									<span class="similar-products-block__sticker sticker-product-value">5 кг</span>
-								</div>
-							</div>
-
-							<div class="similar-products-block__item">
-								<div class="similar-products-block__price card-product__interactive-price">
-									<div class="card-product__interactive-price-new rub">670.00</div>
-									<!-- <div class="card-product__interactive-price-old rub">
-					790.00
-				</div> -->
-								</div>
-								<button class="interactive-adding-bascet__button">
-									<svg class="interactive-adding-bascet__button-icon">
-										<use xlink:href="#bascet-btn-product"></use>
-									</svg>
-								</button>
-							</div>
-						</div>
+							+7 (3852) 46 20 31
+						</a>
 					</div>
 
 				</div>
 			</div>
+
 		</header>
-		<main class="page">
-			<div class="lineBlock">
-				<div class="_container">
-					<ul class="lineBlock__menu menu-lineBlock">
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-stocks">Акции</a>
-						</li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-newprd">Новинки</a></li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link-icon_ingredients">Ингредиенты</a>
-							<ul class="sub-list">
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Ароматизаторы пищевые и ванилин</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Пищевые кислоты, консерванты</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Глазурь кондитерская и шоколад</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Повидло, начинки, подварки</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Десертные пасты, топпинги</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Прочее сырье</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Для работы с карамелью</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Сахар, соль</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Дрожжи хлебопекарные</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Сливки для взбивания</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Желирующие вещества и загустители</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Смеси кондитерские</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Какао-порошок, какао-масло</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Смеси хлебопекарные</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Конфитюр, начинки фруктово-ягодные</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Специи, пряности</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Красители пищевые</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Стабилизаторы сливок, смеси для суфле
-										и муссов</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Крахмал</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Сухофрукты, цукаты</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Крема, гели, помадки</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Улучшители муки</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Маргарин, масло</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Фрукты консервированные, наполнители</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Мастика сахарная</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Химические разрыхлители</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Молочные продукты, сыры</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Эмульгаторы</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Мука, солод, отруби, сухари</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Яичные продукты</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Орехи, семена</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Патока</a></li>
-							</ul>
-						</li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-inventory">Инвентарь</a>
-							<ul class="sub-list">
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Валики, венчики, ножи кондитерские, резаки</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Прочий инвентарь</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Вырубки для работы с мастикой, марципаном</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Салфетки, подложки, подносы</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Емкость полимерная (торт, пирожное)</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Силиконовые формы, коврики</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Инструмент для работы с мастикой, марципаном</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Скребки пластмассовые</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Инструмент для работы с шоколадом</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Тара полимерная (ящики)</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Капсулы бумажные</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Трафареты</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Кисти, лопатки, скалки</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Упаковочные материалы, лотки</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Коробка картонная (торт, пирожное)</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Формы (печенье, пирожные, торты)</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Лента бордюрная, декоративная</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Формы бумажные</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Насадки, мешки кондитерские</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Формы хлебные и кексовые</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Подставки для торта</a></li>
-							</ul>
-						</li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-equipment">Оборудование</a>
-							<ul class="sub-list sub-list-block">
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Ванны моечные</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Взбивальные машины, миксеры</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Мукопросеиватели</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Печи хлебопекарные, шкафы пекарские</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Прочее оборудование</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Тестомесильные машины</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Тестораскаточные машины</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Упаковочное оборудование</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Хлеборезательные машины</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Шкафы расстоечные</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Электровафельницы</a></li>
-							</ul>
-						</li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-products">Наша
-								продукция</a>
-							<ul class="sub-list sub-list-block">
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Ванны моечные</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Печи хлебопекарные, шкафы пекарские</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Прочее оборудование</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Тестомесильные машины</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Тестораскаточные машины</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Упаковочное оборудование</a></li>
-							</ul>
-						</li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-services">Услуги</a>
-							<ul class="sub-list sub-list-block">
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Доставка товара</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Изготовление инвентаря</a></li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Информационная поддержка</a>
-								</li>
-								<li class="sub-list__item"><a href="#" class="sub-list__link">Технологическая поддержка</a></li>
-							</ul>
-						</li>
-						<li class="menu-lineBlock__item"><a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-wholesalers">Оптовикам</a></li>
-					</ul>
-				</div>
-				<div class="lineBlock-blk"></div>
-			</div>
-
+		<main class="page page-user">
 			<div class="breadcrumbs">
 				<div class="_container">
 					<div class="breadcrumbs__inner">
 						<span>
 							<span>
-								<a href="home.html"> главная </a> /
-								<span class="breadcrumb_last" aria-current="page"> каталог </span>
+								<a href="home.html"> главная </a> / <a href=""> корзина </a> /
+								<span class="breadcrumb_last" aria-current="page">
+									оформление заказа
+								</span>
 							</span>
 						</span>
 					</div>
 				</div>
 			</div>
 
-			<section class="section-title">
+			<div class="section-title">
 				<div class="_container">
-					<div class="section-title__title title-main">
-						каталог
-					</div>
-				</div>
-			</section>
-
-			<section id="popular-categories" class="popular-categories section">
-				<div class="_container">
-
-					<div class="popular-categories__imgBlock">
-						<div class="categoriesImgBlock d-flex">
-							<div class="categoriesImgBlock__column">
-								<div class="categoriesImgBlock__card categoriesImgBlock__card-01">
-									<div class="categoriesImgBlock__card-img">
-										<picture><source srcset="img/categories/categories-01.webp" type="image/webp"><img src="img/categories/categories-01.png?_v=1684503365502" alt="" /></picture>
-									</div>
-									<div class="categoriesImgBlock__card-text ingredients-color">Ингредиенты</div>
-								</div>
-							</div>
-
-							<div class="categoriesImgBlock__column">
-								<div class="categoriesImgBlock__card categoriesImgBlock__card-02">
-									<div class="categoriesImgBlock__card-img">
-										<picture><source srcset="img/categories/categories-02.webp" type="image/webp"><img src="img/categories/categories-02.png?_v=1684503365502" alt="" /></picture>
-									</div>
-									<div class="categoriesImgBlock__card-text inventory-color">Инвентарь</div>
-								</div>
-							</div>
-
-							<div class="categoriesImgBlock__column">
-								<div class="categoriesImgBlock__card categoriesImgBlock__card-03">
-									<div class="categoriesImgBlock__card-img">
-										<picture><source srcset="img/categories/categories-03.webp" type="image/webp"><img src="img/categories/categories-03.png?_v=1684503365502" alt="" /></picture>
-									</div>
-									<div class="categoriesImgBlock__card-text equipment-color">Оборудование</div>
-								</div>
-							</div>
-
-							<div class="categoriesImgBlock__column">
-								<div class="categoriesImgBlock__card categoriesImgBlock__card-04">
-									<div class="categoriesImgBlock__card-img">
-										<picture><source srcset="img/categories/categories-04.webp" type="image/webp"><img src="img/categories/categories-04.png?_v=1684503365502" alt="" /></picture>
-									</div>
-									<div class="categoriesImgBlock__card-text production-color">Наша продукция</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="popular-categories__filterBlock">
-						<div class="filterBlock d-flex">
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Ароматизаторы пищевые и ванилин</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Десертные пасты, топпинги</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Дрожжи хлебопекарные</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Какао-порошок, какао-масло</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Красители пищевые</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Кремы, гели, помадки</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Мастика сахарная</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Кремы, гели, помадки</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Мастика сахарная</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Мука, солод, отруби, сухари</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Патока</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Повидло, начинки, подварки</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Сахар, соль</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Смеси кондитерские</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Специи, пряности</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Смеси кондитерские</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Специи, пряности</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Сухофрукты, цукаты</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Фрукты консервированные, наполнители</a>
-							</div>
-							<div class="filterBlock__column">
-								<a href="#" class="filterBtn">Эмульгаторы</a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section>
-
-			<section id="sending-section" class="sending-section">
-				<div class="_container">
-					<div class="sending-banner d-flex">
-						<div class="sending-banner__img">
-							<picture><source srcset="img/sending.webp" type="image/webp"><img src="img/sending.png?_v=1684503365502" alt="" /></picture>
-						</div>
-						<div class="sending-banner__column">
-							<div class="sending-banner__descp">
-								Рецептуры, мастер-классы, семинары, новинки и многое другое
-							</div>
-							<div class="sending-banner__title">будь в курсе новых событий</div>
-						</div>
-						<div class="sending-banner__column">
-							<form action="#" class="sending-banner__form">
-								<div class="form__line">
-									<div class="form-body">
-										<input type="email" name="email" data-required="email" data-validate placeholder="Email*" class="sending-banner__input input" />
-										<button type="submit" class="sending-banner__btn form-body__btn form__btn"></button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-		</main>
-		<footer id="footer" class="footer">
-			<div class="footer__container _container">
-
-				<div class="footer__top d-flex">
-					<div class="footer__menu">
-						<div class="footer__column">
-							<div class="footer__menu-name">каталог</div>
-							<ul class="footer__list">
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Ингредиент</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Инвентарь</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Оборудование</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Собственное производство</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Новинки</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Акции</a>
-								</li>
-							</ul>
-						</div>
-						<div class="footer__column">
-							<div class="footer__menu-name">услуги</div>
-							<ul class="footer__list">
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Изготовление сахарной пудры</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Изготовление инвентаря</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Информационная поддержка</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Технологическая поддержка</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Доставка товара</a>
-								</li>
-							</ul>
-						</div>
-						<div class="footer__column">
-							<div class="footer__menu-name">о нас</div>
-							<ul class="footer__list">
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">О компании</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Контакты</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Оплата и доставка</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Гарантия</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Оптовикам</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Поставщики</a>
-								</li>
-								<li class="footer__list-item">
-									<a href="#" class="footer__list-item-link">Блог</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="footer__contacts">
-						<a href="tel:+73852462031" class="footer__phone">+7 (3852) 46 20 31</a>
-						<a href="tel:+73852467585" class="footer__phone">+7 (3852) 46 75 85</a>
-						<div class="footer__time-work">
-							Пн-Пт: 08:00-17:00, Сб-Вс: выходные
-						</div>
-						<a href="mailto:info@psnab22.ru" class="footer__email">info@psnab22.ru</a>
-						<a href="write-to-us.html" class="footer__btn btn btn_black">написать нам</a>
-					</div>
-				</div>
-
-				<div class="footer__bottom d-flex">
-					<div class="footer__bottom-column">
-						<a href="#" class="footer__policy">Политика конфиденциальности</a>
-					</div>
-					<div class="footer__bottom-column">
-						<div class="footer__copyright">
-							© 2023 Компания Алтайком. Все права защищены
-						</div>
-					</div>
-					<div class="footer__bottom-column">
-						<div class="footer__development">
-							<div class="footer__development-text">Разработка сайта:</div>
-							<a href="#" class="footer__development-link"></a>
+					<div class="section-title__inner">
+						<div class="section-title__title title-small">
+							Оформление заказа
 						</div>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<!-- svg спрайты -->
+
+			<section id="page-user-sec" class="page-user-sec section">
+				<div class="_container">
+					<div class="page-user-sec__inner">
+						<div class="page-user-sec__main">
+
+							<div class="box-order">
+								<div class="box-order__row">
+									<div class="box-order__item">
+										<span class="box-order__item-number">1</span>
+										<div class="box-order__item-name">Покупатель</div>
+									</div>
+									<!-- <button
+                      type="button"
+                      class="box-order__item-another-city text-animation"
+                    >
+                      Другой город
+                    </button> -->
+								</div>
+
+								<form action="#" class="box-order__form">
+									<div class="box-order__row">
+										<div class="box-order__options box-order__slider">
+
+											<div class="boxOrdersL swiper">
+												<div class="sliderSec__swiper">
+
+													<button type="button" class="new-profile-btn">
+														<span class="new-profile-btn__icon">
+															<svg>
+																<use xlink:href="#cursor-icon"></use>
+															</svg>
+														</span>
+														Новый профиль
+													</button>
+
+													<label class="box-order__options-item">
+														<input class="box-order__options-input" checked type="radio" name="radio">
+														<div class="box-order__options-inner">
+															<span class="box-order__options-descp">
+																<span class="box-order__options-descp-title">Константинопольская В. В.</span>
+																<span class="box-order__options-descp-date">Дата обновления 20.11.2022</span>
+																<span class="box-order__options-descp-text">
+																	Физическое лицо
+																</span>
+														</div>
+														</span>
+													</label>
+
+													<label class="box-order__options-item">
+														<input class="box-order__options-input" type="radio" name="radio">
+														<div class="box-order__options-inner">
+															<span class="box-order__options-descp">
+																<span class="box-order__options-descp-title">Открытое акционерное общество "Конфетка"</span>
+																<span class="box-order__options-descp-date">Дата обновления 20.11.2022</span>
+																<span class="box-order__options-descp-text">
+																	Юридическое лицо
+																</span>
+														</div>
+														</span>
+													</label>
+
+													<label class="box-order__options-item">
+														<input class="box-order__options-input" type="radio" name="radio">
+														<div class="box-order__options-inner">
+															<span class="box-order__options-descp">
+																<span class="box-order__options-descp-title">Константинопольская В. В.</span>
+																<span class="box-order__options-descp-date">Дата обновления 20.11.2022</span>
+																<span class="box-order__options-descp-text">
+																	Физическое лицо
+																</span>
+														</div>
+														</span>
+													</label>
+
+													<label class="box-order__options-item">
+														<input class="box-order__options-input" type="radio" name="radio">
+														<div class="box-order__options-inner">
+															<span class="box-order__options-descp">
+																<span class="box-order__options-descp-title">Открытое акционерное общество "Конфетка"</span>
+																<span class="box-order__options-descp-date">Дата обновления 20.11.2022</span>
+																<span class="box-order__options-descp-text">
+																	Юридическое лицо
+																</span>
+														</div>
+														</span>
+													</label>
+
+													<label class="box-order__options-item">
+														<input class="box-order__options-input" type="radio" name="radio">
+														<div class="box-order__options-inner">
+															<span class="box-order__options-descp">
+																<span class="box-order__options-descp-title">Константинопольская В. В.</span>
+																<span class="box-order__options-descp-date">Дата обновления 20.11.2022</span>
+																<span class="box-order__options-descp-text">
+																	Физическое лицо
+																</span>
+														</div>
+														</span>
+													</label>
+
+												</div>
+											</div>
+
+										</div>
+									</div>
+									<div class="box-order__row">
+										<input type="text" name="name" placeholder="ФИО*" class="box-order__form-input input" />
+										<input type="text" name="email" data-required="email" data-validate placeholder="Email*" class="box-order__form-input input" />
+										<input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*" class="box-order__form-input input tel" />
+									</div>
+								</form>
+							</div>
+
+							<div class="box-order">
+								<div class="box-order__row">
+									<div class="box-order__item">
+										<span class="box-order__item-number">2</span>
+										<div class="box-order__item-name">
+											Доставка: <span class="text-animation">Барнаул</span>
+										</div>
+									</div>
+									<button type="button" class="box-order__item-another-city text-animation">
+										Другой город
+									</button>
+								</div>
+
+								<div class="box-order__row">
+									<div class="search-form">
+										<input type="text" placeholder="Барнаул, Алтайский край, Сибирь, Россия" class="search-form__input" value="" name="search" data-placeholder="Барнаул, Алтайский край, Сибирь, Россия">
+										<span tabindex="1" class="search-form__btn-closed">
+											<svg class="search-form__btn-closed-icon">
+												<use xlink:href="#popup-close"></use>
+											</svg>
+										</span>
+										<button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
+									</div>
+								</div>
+
+								<form action="#" class="box-order__form">
+									<div class="box-order__row">
+										<div class="box-order__options">
+
+											<label class="box-order__options-item">
+												<input class="box-order__options-input" checked type="radio" name="radio">
+												<div class="box-order__options-inner">
+													<span class="box-order__options-checked"></span>
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-svg">
+															<use xlink:href="#delivery-icon"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp">
+														<span class="box-order__options-descp-title">Доставка транспортом Алтайком</span>
+														<span class="box-order__options-descp-sticker sticker-product sticker-product_green">Бесплатно</span>
+														<span class="box-order__options-descp-term">1-2 дня</span>
+														<span class="box-order__options-descp-text">
+															Доставка осуществляется после согласования заказа
+															с менеджером
+														</span>
+												</div>
+												</span>
+											</label>
+
+											<label class="box-order__options-item">
+												<input class="box-order__options-input" type="radio" name="radio">
+												<div class="box-order__options-inner">
+													<span class="box-order__options-checked"></span>
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-icon-svg">
+															<use xlink:href="#pickup-box"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp">
+														<span class="box-order__options-descp-title">Самовывоз</span>
+														<span class="box-order__options-descp-sticker sticker-product sticker-product_green">Бесплатно</span>
+														<span class="box-order__options-descp-term">Пн-Пт: 08:00-17:00, Сб-Вс: выходные</span>
+														<span class="box-order__options-descp-text">
+															Вы можете самостоятельно забрать заказ из нашего магазина
+														</span>
+												</div>
+												</span>
+											</label>
+
+										</div>
+									</div>
+
+									<div class="box-order__inner">
+										<div class="box-order__title">
+											Выберите адрес доставки
+										</div>
+										<input type="text" name="name" placeholder="Адрес доставки*" class="box-order__form-input input" />
+										<input type="text" name="email" data-required="email" data-validate placeholder="Индекс" class="box-order__form-input input" />
+										<textarea name="" placeholder="Комментарии к заказу" class="box-order__form-input input"></textarea>
+									</div>
+								</form>
+							</div>
+
+							<div class="box-order">
+								<div class="box-order__row">
+									<div class="box-order__item">
+										<span class="box-order__item-number">3</span>
+										<div class="box-order__item-name">
+											Оплата <span class="text-animation"></span>
+										</div>
+									</div>
+									<!-- <button
+                      type="button"
+                      class="box-order__item-another-city text-animation"
+                    >
+                      Другой город
+                    </button> -->
+								</div>
+
+								<form action="#" class="box-order__form">
+									<div class="box-order__options box-order__options_c">
+
+										<label class="box-order__options-item box-order__options-item_text">
+											<input class="box-order__options-input" checked type="radio" name="radio">
+											<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp box-order__options-descp_row">
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-svg">
+															<use xlink:href="#card-icon-box"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp-title">Оплата по карте</span>
+													<span data-tippy-content class="box-order__options-descp-tippy">
+														<svg class="box-order__options-descp-tippy-svg">
+															<use xlink:href="#i-icon"></use>
+														</svg>
+													</span>
+												</span>
+											</span>
+										</label>
+
+										<label class="box-order__options-item box-order__options-item_text">
+											<input class="box-order__options-input" type="radio" name="radio">
+											<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp box-order__options-descp_row">
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-svg">
+															<use xlink:href="#cash-box"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp-title">Оплата в офисе</span>
+													<span data-tippy-content class="box-order__options-descp-tippy">
+														<svg class="box-order__options-descp-tippy-svg">
+															<use xlink:href="#i-icon"></use>
+														</svg>
+													</span>
+												</span>
+											</span>
+										</label>
+
+										<label class="box-order__options-item box-order__options-item_text">
+											<input class="box-order__options-input" type="radio" name="radio">
+											<span class="box-order__options-inner">
+												<span class="box-order__options-checked"></span>
+												<span class="box-order__options-descp box-order__options-descp_row">
+													<span class="box-order__options-icon">
+														<svg class="box-order__options-svg">
+															<use xlink:href="#post-icon"></use>
+														</svg>
+													</span>
+													<span class="box-order__options-descp-title">Оплата с отсрочкой платежа</span>
+													<span data-tippy-content class="box-order__options-descp-tippy">
+														<svg class="box-order__options-descp-tippy-svg">
+															<use xlink:href="#i-icon"></use>
+														</svg>
+													</span>
+												</span>
+											</span>
+										</label>
+
+									</div>
+								</form>
+							</div>
+
+							<div class="box-order-error" style="display:none;">
+								Поля, обязательные для заполнения, отмечены звездочкой
+							</div>
+
+						</div>
+
+						<aside class="page-user-sec__aside">
+							<div class="formed-card">
+								<div class="formed-card__row">
+									<div class="formed-card__quantity">2 товара на сумму</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="formed-card__price-block">
+										<div class="sticker-product green-color">
+											экономия 100 ₽
+										</div>
+										<div class="total-price rub">2 200.00</div>
+									</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="table-info__inner">
+										<div class="table-info__table">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Товаров</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value rub">
+														2 200.00
+													</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Общий вес</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value rub">10 кг</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Доставка</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value how-card_green">
+														Бесплатно
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="formed-card__text-row">
+										Доставка: <span>Транспортом Алтайком</span>
+									</div>
+									<div class="formed-card__text-row">
+										Оплата: <span>Предоплата, банковский счет</span>
+									</div>
+								</div>
+
+								<div class="formed-card__row">
+									<form action="#" class="formed-card__form">
+										<div class="form__line">
+											<div class="formed-card__result result-form">
+												Промокод для скидки
+											</div>
+											<div class="formed-card__form-body form-body">
+												<input type="email" name="email" data-required="email" data-validate="" placeholder="Промокод" class="form-body__input input" data-placeholder="Промокод" />
+												<button type="submit" class="formed-card__btn form-body__btn form__btn"></button>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="formed-card__row">
+									<a href="" class="formed-card__link btn btn_black">оформить</a>
+								</div>
+							</div>
+							<div class="page-user-sec__agreement-policy agreement-policy">
+								Нажимая на кнопку «Оформить», Вы соглашаетесь на обработку
+								<a href="">персональных данных</a>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="footer footer-user">
+			<div class="footer-user__img">
+				<picture><source srcset="img/footer-user.webp" type="image/webp"><img src="img/footer-user.png?_v=1684503365502" alt=""></picture>
+			</div>
+			<div class="footer__container _container">
+				<div class="footer__copyright">
+					© 2023 Компания Алтайком. Все права защищены
+				</div>
+			</div>
+		</footer> <!-- svg спрайты -->
 		<svg xmlns="http://www.w3.org/2000/svg" display="none">
 
 			<!-- logo -->
