@@ -993,4 +993,10 @@
 		</g>
 	</symbol>
 
+	<!-- cursor-icon -->
+	<symbol id="cursor-icon" viewBox="0 0 20 20">
+		<path id="_" data-name="+" d="M14426,3455v-9h-9v-2h9v-9h2v9h9v2h-9v9Z"
+			transform="translate(-14416.999 -3434.999)" />
+	</symbol>
+
 </svg>

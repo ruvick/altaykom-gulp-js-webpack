@@ -2941,10 +2941,12 @@ body {
 
 .page-user-sec__main {
 	flex: 0 1 1020/1420*100%;
+	overflow: hidden;
 }
 
 .page-user-sec__aside {
 	flex: 0 0 340/1420*100%;
+	// overflow: hidden;
 }
 
 .formed-card {
@@ -3532,6 +3534,10 @@ body {
 	overflow: hidden;
 	cursor: pointer;
 }
+.box-order__options-item:hover .box-order__options-inner {
+	border: 1px solid #F3F3F4;
+  background: #F3F3F4;
+}
 .box-order__options-icon {
 	display: flex;
   justify-content: center;
@@ -3657,6 +3663,79 @@ body {
 }
 .box-order__row .search-form__btn:before {
 	left: 20px;
+}
+.box-order__slider .swiper-wrapper {
+	align-items: stretch !important;
+}
+.box-order__slider .box-order__options-item {
+	flex: 0 1 auto;
+	// height: 100%;
+	margin-bottom: 0;
+}
+.box-order__slider .box-order__options-inner {
+	padding: 15px;
+}
+.box-order__slider .box-order__options-descp-title {
+	font-size: 14px;
+	line-height: 18/14*100%;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+.box-order__options-descp-date {
+	font-size: 12px;
+	line-height: 24/12*100%;
+	color: #8F8E8E;
+	// margin-bottom: 6px;
+}
+.box-order__slider .box-order__options-descp-text {
+	font-size: 12px;
+	line-height: 18/12*100%;
+}
+
+.new-profile-btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 107px !important;
+	// height: 107px;
+	font-size: 12px;
+	line-height: 14/12*100%;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #E3E3E3;
+	background-color: #fff;
+	border-radius: 15px;
+	overflow: hidden;
+	cursor: pointer;
+	&:hover{
+		color: #fff;
+		background: #221F20;
+	}
+}
+.new-profile-btn__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	flex: 0 0 40px;
+	margin-bottom: 11px;
+	border-radius: 50%;
+	background: #F3F3F4;
+	overflow: hidden;
+	svg {
+		width: 20px;
+		height: 20px;
+		flex: 0 0 20px;
+		fill: #8f8e8e;
+	}
+}
+.new-profile-btn:hover .new-profile-btn__icon {
+	background: #221F20;
+}
+.new-profile-btn:hover .new-profile-btn__icon svg {
+	fill: #fff;
 }
 //========================================================================================================================================================
 
