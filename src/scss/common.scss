@@ -140,11 +140,11 @@
 
 .interface__link-text {
   margin-left: 10px;
+  transition: font-size 0.3s ease 0s;
 }
 
 .interface__link-text.none {
   font-size: 0;
-  transition: all 0.2s;
 }
 
 .interface__link_favourites {
