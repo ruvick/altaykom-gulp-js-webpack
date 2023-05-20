@@ -1793,6 +1793,7 @@ body {
 	flex: 0 0 201/1420 * 100%;
 	max-width: 300px;
 	margin-right: 15px;
+	transition: flex 0.5s ease 0s;
 	// border: 1px solid #000;
 }
 
@@ -1801,12 +1802,19 @@ body {
 	margin-right: 0;
 }
 
+.page__sidebar .page__sidebar-navigation {
+	transition: width 0.3s ease 0s;
+}
+
 .page__sidebar.hide .page__sidebar-navigation {
-	display: none;
+	// display: none;
+	width: 0;
+	overflow: hidden;
 }
 
 .page__main {
 	flex: 0 0 1180/1420 * 100%;
+	transition: flex 0.3s ease 0s;
 	// border: 1px solid #000;
 }
 
@@ -1826,6 +1834,7 @@ body {
 	display: flex;
 	flex: 0 1 20%;
 	padding: 0 10px 20px 10px;
+	transition: flex 0.3s ease 0s;
 }
 
 .page__main.width {

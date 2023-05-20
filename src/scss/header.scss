@@ -1,16 +1,25 @@
 //====================================================================================================
 .header {
-	position: fixed;
+	position: absolute;
 	z-index: 150;
 	width: 100%;
 	background: #fff;
 	padding: 10px 0 20px 0;
 	border-bottom: 1px solid #E3E3E3;
+	box-shadow: none;
+	transition: box-shadow 0.3s ease 0s;
 
 	&__row {
 		justify-content: space-between;
 		align-items: center;
 	}
+}
+
+._header-scroll {
+	position: fixed;
+	border-bottom: none;
+	box-shadow: 0px 6px 6px -8px #000000;
+	// z-index: 50000;
 }
 
 .lock .header {
@@ -23,14 +32,6 @@
 
 .header-user__container {
 	max-width: 1640px;
-}
-
-._header-scroll {
-	// position: fixed;
-	// width: 100%;
-	// background: #fff;
-	box-shadow: 0px 6px 6px -8px #000000;
-	// z-index: 50000;
 }
 
 .header__main {
