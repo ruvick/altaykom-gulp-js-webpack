@@ -20,8 +20,8 @@ window.onload = function () {
 
 	if (catBtn) {
 		catBtn.addEventListener('click', function () {
-			iconMenu.classList.toggle('active');
-			menuCatalog.classList.toggle('active');
+			iconMenu.classList.toggle('_active');
+			menuCatalog.classList.toggle('_active');
 			// lineBlockBlk.classList.toggle('_active');
 			// htmls.classList.toggle('lock');
 			// body.style.paddingRight = '7px';
@@ -31,8 +31,8 @@ window.onload = function () {
 	window.addEventListener('click', e => { // при клике в любом месте окна браузера
 		const target = e.target // находим элемент, на котором был клик
 		if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-			iconMenu.classList.remove('active'); // то закрываем окно навигации, удаляя активный класс
-			menuCatalog.classList.remove('active');
+			iconMenu.classList.remove('_active'); // то закрываем окно навигации, удаляя активный класс
+			menuCatalog.classList.remove('_active');
 			// html.classList.remove('lock');
 			// headsearch.classList.remove('_active')
 		}
@@ -51,7 +51,7 @@ window.onload = function () {
 			search.classList.add("_active");
 			searchMenu.classList.add("_active");
 			searchBtnClosed.classList.add("_active");
-			linkText.classList.add("none");
+			linkText.classList.add("_none");
 			lineBlockBlk.classList.add('_active');
 			// html.classList.add('lock');
 			// body.style.paddingRight = '7px';
@@ -61,7 +61,7 @@ window.onload = function () {
 			search.classList.remove("_active");
 			searchMenu.classList.remove("_active");
 			searchBtnClosed.classList.remove("_active");
-			linkText.classList.remove("none");
+			linkText.classList.remove("_none");
 			lineBlockBlk.classList.remove('_active');
 			// html.classList.remove('lock');
 			// body.style.paddingRight = '0px';
@@ -73,7 +73,7 @@ window.onload = function () {
 				search.classList.remove("_active");
 				searchMenu.classList.remove("_active");
 				searchBtnClosed.classList.remove('_active');
-				linkText.classList.remove("none");
+				linkText.classList.remove("_none");
 				lineBlockBlk.classList.remove('_active');
 				// document.documentElement.classList.remove('lock');
 				// html.classList.remove('lock');
