@@ -1394,8 +1394,8 @@ body {
 }
 
 .card-product {
-	// flex: 0 1 220px;
-	flex: 0 1 100%;
+	// flex: 0 1 100%;
+	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
 	padding: 10px;
@@ -2313,6 +2313,7 @@ body {
 }
 
 .card-product-block__column {
+	display: flex;
 	flex: 0 0 16.45%;
 	padding: 0 10px 20px 10px;
 }
@@ -3853,9 +3854,9 @@ body {
 	margin-bottom: 60px;
 }
 
-.card-product {
-	height: 100%;
-}
+// .card-product {
+// 	height: 100%;
+// }
 
 .section-title__inner {
 	display: flex;

@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 5,
+      "url": "card-product.html",
+      "image": "01.jpg",
+      "category": "Фабрика сладкого вкуса",
+      "title": "Кубики цукатные из апельсиновой цедры",
+      "quantity": "5 кг",
+      "avail": "Много",
+      "price": "670.00",
+      "priceOld": "790.00",
+      "stHit": "хит",
+      "stSale": "20%"
+    },
+    {
+      "id": 6,
+      "url": "card-product.html",
+      "image": "02.jpg",
+      "category": "Топ Декор",
+      "title": "RFP 12 Валик с шипами",
+      "quantity": "1шт",
+      "avail": "Мало",
+      "price": "1 200.00",
+      "priceOld": "",
+      "stHit": "хит",
+      "stSale": "new"
+    },
+    {
+      "id": 7,
+      "url": "card-product.html",
+      "image": "03.jpg",
+      "category": "Топ Декор",
+      "title": "RFP 12 Валик с шипами",
+      "quantity": "1шт",
+      "avail": "Мало",
+      "price": "1 200.00",
+      "priceOld": "",
+      "stHit": "хит",
+      "stSale": "new"
+    },
+    {
+      "id": 8,
+      "url": "card-product.html",
+      "image": "04.jpg",
+      "category": "Топ Декор",
+      "title": "RFP 12 Валик с шипами",
+      "quantity": "1шт",
+      "avail": "Мало",
+      "price": "1 200.00",
+      "priceOld": "",
+      "stHit": "хит",
+      "stSale": "new"
+    },
+  ]
+}

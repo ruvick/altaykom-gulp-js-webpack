@@ -182,6 +182,136 @@ window.onload = function () {
 	});
 
 
+	// Actions (делегирование события click)
+	document.addEventListener("click", documentActions);
+
+	function documentActions(e) {
+		const targetElement = e.target;
+		if (targetElement.classList.contains('show-more__btn')) {
+			getProducts(targetElement);
+			// e.preventDefault();
+		}
+	}
+
+	// Load More Products 
+	async function getProducts(button) {
+		if (!button.classList.contains('_hold')) {
+			button.classList.add('_hold');
+			const file = "json/products.json";
+			let response = await fetch(file, {
+				method: "GET"
+			});
+			if (response.ok) {
+				let result = await response.json();
+				loadProducts(result);
+				button.classList.remove('_hold');
+				button.remove();
+			} else {
+				alert("Ошибка");
+			}
+		}
+	}
+
+	function loadProducts(data) {
+		const productsItems = document.querySelector('.main-prod-card');
+
+		data.products.forEach(item => {
+			const productId = item.id;
+			const productUrl = item.url;
+			const productImage = item.image;
+			const productTitle = item.title;
+			const productQuantity = item.quantity;
+			const productAvail = item.avail;
+			const productPrice = item.price;
+			const productPriceOld = item.priceOld;
+			const producCategory = item.category;
+			const productStHit = item.stHit;
+			const productStSale = item.stSale;
+
+			let productsTemplate = `
+			<div data-pid="${productId}" class="main-prod-card__column">
+			<div class="card-product">
+				<div class="card-product__img">
+					<div class="card-product__sticker-block">
+						<span class="sticker-product">${productStHit}</span>
+						<!-- <span class="sticker-product sticker-product_red"
+								>${productStSale}</span
+							> -->
+						<button type="button" class="sticker-product-favorite">
+							<svg class="sticker-product-favorite__icon">
+								<use xlink:href="#favorites-product"></use>
+							</svg>
+						</button>
+					</div>
+					<img src="@img/card-product/${productImage}" alt="" />
+					<div class="sticker-product-rating">
+						<div class="sticker-product-rating__rating">
+							<svg class="sticker-product-rating__icon">
+								<use xlink:href="#rating-product"></use>
+							</svg>
+						</div>
+						<div class="sticker-product-rating__value">5,0</div>
+					</div>
+				</div>
+				<div class="card-product__descp">
+					<div class="card-product__descp-group">${producCategory}</div>
+					<a href="${productUrl}" class="card-product__descp-title">
+						${productTitle}
+					</a>
+					<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
+				</div>
+				<div class="card-product__interactive">
+					<div class="card-product__interactive-how interactive-how_green">
+						${productAvail}
+					</div>
+					<div class="card-product__interactive-price">
+						<div class="card-product__interactive-price-new interactive-price-new_green rub">
+							${productPrice}
+						</div>
+						<div class="card-product__interactive-price-old rub">
+							${productPriceOld}
+						</div>
+					</div>
+
+					<div class="card-product__interactive-adding">
+						<div class="interactive-adding-bascet">
+							<div class="interactive-adding-bascet__value">
+								<div class="interactive-adding-bascet__value-quantity">
+									${productQuantity}
+								</div>
+								<div class="interactive-adding-bascet__value-price rub">
+									${productPrice}
+								</div>
+							</div>
+							<button class="interactive-adding-bascet__button">
+								<svg class="interactive-adding-bascet__button-icon">
+									<use xlink:href="#bascet-btn-product"></use>
+								</svg>
+							</button>
+						</div>
+
+						<div class="interactive-adding-quantity">
+							<div class="quantity">
+								<div class="quantity__button quantity__button_minus _icon-minus"></div>
+								<div class="quantity__input">
+									<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+										value="1" />
+									<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+										value="670.00" />
+								</div>
+								<div class="quantity__button quantity__button_plus _icon-plus"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>`;
+
+			productsItems.insertAjacentHTML('beforeend', productsTemplate);
+
+		});
+
+	}
 
 
 	//BURGER
