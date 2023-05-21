@@ -11,7 +11,6 @@ window.onload = function () {
 
 	// const body = document.querySelector("body");
 	// const html = document.querySelector('html');
-	// let html = document.querySelector('html');
 
 	// Открыть/закрыть catalog в header 
 	const catBtn = document.querySelector('.button-catalog');
@@ -23,7 +22,7 @@ window.onload = function () {
 			iconMenu.classList.toggle('_active');
 			menuCatalog.classList.toggle('_active');
 			// lineBlockBlk.classList.toggle('_active');
-			// htmls.classList.toggle('lock');
+			// html.classList.toggle('lock');
 			// body.style.paddingRight = '7px';
 		});
 	}
