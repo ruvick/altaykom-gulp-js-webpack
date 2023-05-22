@@ -3924,6 +3924,9 @@ body.padding {
 	&:last-child{
 		border-right: none;
 	}
+	&:hover{
+		color: #C5934F;
+	}
 }
 .formed-card__row-inner {
 	display: flex;
@@ -3948,8 +3951,89 @@ body.padding {
 .formed-card__progress {
 	margin-top: 10px;
 }
+//========================================================================================================================================================
+.new-lists__btn {
 
+}
+.new-lists__btn {
+	margin-bottom: 30px;
+}
+.new-lists__inner {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+.new-lists__column {
+	display: flex;
+	flex: 0 1 33.333%;
+	padding: 0 10px 20px 10px;
+}
+.new-lists__card {
+}
+.card-new-list {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 100%;
+	height: 300px;
+	padding: 27px 30px;
+	overflow: hidden;
+	border-radius: 25px;
+	background: #F3F3F4;
+}
+.card-new-list_create {
+	cursor: pointer;
+	&:hover{
+		background: #221F20;
+		.card-new-list__title,
+		.card-new-list__value {
+			color: #fff;
+		}
+	}
+}
+.card-new-list__title {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22/18*100%;
+	margin-bottom: 5px;
+}
+.card-new-list__value {
+	font-size: 14px;
+	line-height: 18/14*100%;
+	span {
+		font-weight: 700;
+	}
+}
+.card-new-list__value-price {
 
+}
+.card-new-list__image {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 212px;
+	height: 212px;
+	overflow: hidden;
+}
+.card-new-list__btn-reset {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #fff;
+	svg {
+		flex: 0 0 24px;
+		width: 24px;
+		height: 24px;
+		fill: #707070;
+	}
+}
 //========================================================================================================================================================
 
 // Перенести

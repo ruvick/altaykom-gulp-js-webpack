@@ -40,8 +40,8 @@
 									</div>
 								</div>
 								<div class="card-person__nav">
-									<button type="button" class="card-person__btn">Позвонить</button>
-									<button type="button" class="card-person__btn">Написать</button>
+									<button type="button" class="card-person__btn text-animation">Позвонить</button>
+									<button type="button" class="card-person__btn text-animation">Написать</button>
 								</div>
 							</div>
             </div>
@@ -68,7 +68,105 @@
 										Содержимое второго таба
 										</div>
 										<div class="tabs__body">
-											Содержимое третьего таба
+
+											<div class="new-lists">
+												<button type="button" class="new-lists__btn btn btn_width">новый список</button>
+
+												<div class="new-lists__inner">
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Любимый список</div>
+															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/card-product/" alt="Изображение списка">
+															</div>
+															<button class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Новый Год</div>
+															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Любимый список</div>
+															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Инструменты</div>
+															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div data-popup="#new-list" class="new-lists__card card-new-list card-new-list_create">
+															<div class="card-new-list__title">Новый список</div>
+															<div class="card-new-list__value">0 товаров</div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="lists-empty" style="display: none;">
+												<div class="result-empty">
+													<div class="result-empty__img">
+														<svg class="result-empty__img-icon">
+															<use xlink:href="#basket-result-empty"></use>
+														</svg>
+													</div>
+													<div class="result-empty__title">У Вас еще нет ни одного списка</div>
+													<div class="result-empty__subtitle">Создавайте свои списки из любимых продуктов</div>
+													<button type="button" class="btn btn_width">новый список</button>
+												</div>
+											</div>
+
+
 										</div>
 										<div class="tabs__body">
 											Содержимое третьего таба
@@ -99,11 +197,10 @@
 											<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
 										</div>
 										<div class="formed-card__progress progress">
-											<progress max="100" value="75"></progress>
+											<progress max="100" value="50"></progress>
 											<div class="progress-value"></div>
 											<div class="progress-bg"><div class="progress-bar"></div></div>
 										</div>
-										
                   </div>
 
                   <div class="formed-card__row">
@@ -127,7 +224,7 @@
                             <div class="table-info__table-line"></div>
                           </div>
                           <div class="table-info__table-col">
-                            <div class="table-info__table-value rub">20 200.00</div>
+                            <div class="table-info__table-value text-pink rub">20 200.00</div>
                           </div>
                         </div>
 
