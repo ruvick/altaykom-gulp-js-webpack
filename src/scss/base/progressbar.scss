@@ -59,8 +59,11 @@
 .progress progress[value="50"] ~ .progress-bg .progress-bar:after {
 	background: #34B866;
 }
-.progress progress[value="70"] ~ .progress-bg .progress-bar:after {
-	background: red;
+.progress progress[value="70-85"] ~ .progress-bg .progress-bar:after {
+	background: #F3602B;
+}
+.progress progress[value="85"] ~ .progress-bg .progress-bar:after {
+	background: #EA2838;
 }
 @keyframes progress_bar {
   0% {
