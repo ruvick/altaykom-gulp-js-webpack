@@ -186,7 +186,7 @@ window.onload = function () {
 
 	function documentActions(e) {
 		const targetElement = e.target;
-		if (targetElement.classList.contains('show-more__btn')) {
+		if (targetElement.classList.contains('next')) {
 			getProducts(targetElement);
 			// e.preventDefault();
 		}
@@ -212,7 +212,7 @@ window.onload = function () {
 	}
 
 	function loadProducts(data) {
-		const productsItems = document.querySelector('.main-prod-card');
+		const productsItems = document.querySelector('.slider-info');
 
 		data.products.forEach(item => {
 			const productId = item.id;

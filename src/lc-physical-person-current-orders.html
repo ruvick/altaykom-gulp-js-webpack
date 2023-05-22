@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Заказ сформирован" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page-user">
+        <div class="breadcrumbs">
+          <div class="_container">
+            <div class="breadcrumbs__inner">
+              <span>
+                <span>
+                  <a href="home.html"> главная </a> /
+                  <span class="breadcrumb_last" aria-current="page">
+                    личный кабинет
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <div class="_container">
+            <div class="section-title__inner">
+              <div class="section-title__title title-small">
+                Константинопольская Вероника
+								Владимировна
+              </div>
+							<div class="card-person">
+								<div class="card-person__main">
+									<div class="card-person__image">
+										<img src="img/card-person/01.jpg" alt="Картинка менеджера">
+									</div>
+									<div class="card-person__descp">
+										<div class="card-person__name">Екатерина</div>
+										<div class="card-person__post">Персональный менеджер</div>
+										<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
+									</div>
+								</div>
+								<div class="card-person__nav">
+									<button type="button" class="card-person__btn">Позвонить</button>
+									<button type="button" class="card-person__btn">Написать</button>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+
+        <section class="lc-physical-person page-user-sec section">
+          <div class="_container">
+            <div class="page-user-sec__inner">
+              <div class="page-user-sec__main">
+
+								<div data-tabs class="lc-physical-person__tabs tabs">
+									<nav data-tabs-titles class="tabs__navigation">
+										<button type="button" class="tabs__title _tab-active">Текущие заказы</button>
+										<button type="button" class="tabs__title">История покупок</button>
+										<button type="button" class="tabs__title">Мои списки</button>
+										<button type="button" class="tabs__title">Настройка профиля</button>
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body">
+											Содержимое первого таба
+										</div>
+										<div class="tabs__body">
+										Содержимое второго таба
+										</div>
+										<div class="tabs__body">
+											Содержимое третьего таба
+										</div>
+										<div class="tabs__body">
+											Содержимое третьего таба
+										</div>
+									</div>
+								</div>
+
+              </div>
+
+              <aside class="page-user-sec__aside">
+
+                <div class="lc-physical-person__formed-card formed-card">
+
+                  <div class="formed-card__row">
+										<div class="formed-card__row-inner">
+											<div class="formed-card__small-text">лимит</div>
+										</div>
+										<div class="formed-card__limit rub">200 000.00</div>
+                  </div>
+
+                  <div class="formed-card__row">
+										<div class="formed-card__row-inner">
+											<div class="formed-card__small-text">израсходовано</div>
+											<div class="formed-card__small-text">остаток</div>
+										</div>
+										<div class="formed-card__row-inner">
+											<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
+											<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
+										</div>
+										<div class="formed-card__progress progress">
+											<progress max="100" value="70"></progress>
+											<div class="progress-value"></div>
+											<div class="progress-bg"><div class="progress-bar"></div></div>
+										</div>
+                  </div>
+
+                  <div class="formed-card__row">
+                    <div class="table-info__inner">
+                      <div class="table-info__table">
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Задолжность</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value rub">
+                              120 200.00
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Просроченная задолжность</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value rub">20 200.00</div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

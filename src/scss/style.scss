@@ -3851,6 +3851,104 @@ body.padding {
 .new-profile-btn:hover .new-profile-btn__icon svg {
 	fill: #fff;
 }
+//========================================================================================================================================================
+.lc-physical-person .page-user-sec__main {
+	flex: 0 1 940/1420*100%;
+}
+.lc-physical-person .page-user-sec__aside {
+	flex: 0 1 420/1420*100%;
+}
+.lc-physical-person__formed-card {
+	box-shadow: none;
+	border: 1px solid #E3E3E3;
+}
+.lc-physical-person__formed-card .table-info__table-row {
+	margin-bottom: 6px;
+}
+//========================================================================================================================================================
+
+.card-person {
+	flex: 0 0 420/1420*100%;
+  background: #fff;
+	border: 1px solid #E3E3E3;
+	border-radius: 25px;
+	overflow: hidden;
+}
+.card-person__main {
+	display: flex;
+	padding: 20px;
+	border-bottom: 1px solid #E3E3E3;
+}
+.card-person__image {
+	flex: 0 0 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 15px;
+	margin-right: 20px;
+}
+.card-person__descp {
+	*:last-child{
+		margin-bottom: 0;
+	}
+}
+.card-person__name {
+	font-size: 18px;
+	line-height: 22/15*100%;
+	font-weight: 700;
+	color: #161615;
+	margin-bottom: 7px;
+}
+.card-person__post {
+	font-size: 14px;
+	line-height: 24/14*100%;
+	color: #8F8E8E;
+	margin-bottom: 7px;
+}
+.card-person__time-working {
+	font-size: 13px;
+	line-height: 18/13*100%;
+	color: #161615;
+}
+.card-person__nav {
+	display: flex;
+	align-items: center;
+}
+.card-person__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 1 50%;
+	text-align: center;
+	padding: 18px;
+	border-right: 1px solid #E3E3E3;
+	&:last-child{
+		border-right: none;
+	}
+}
+.formed-card__row-inner {
+	display: flex;
+	justify-content: space-between;
+}
+.formed-card__small-text {
+	font-size: 12px;
+	line-height: 24/12*100%;
+	font-weight: 500;
+	color: #8F8E8E;
+}
+.formed-card__limit {
+	font-size: 30px;
+	line-height: 40/30*100%;
+	color: #161615;
+}
+.formed-card__limit_small {
+	font-size: inherit;
+	line-height: inherit;
+	color: #161615;
+}
+.formed-card__progress {
+	margin-top: 10px;
+}
+
 
 //========================================================================================================================================================
 
