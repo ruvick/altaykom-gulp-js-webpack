@@ -999,4 +999,48 @@
 			transform="translate(-14416.999 -3434.999)" />
 	</symbol>
 
+	<!-- copy-icon -->
+	<symbol id="copy-icon" viewBox="0 0 24 24">
+		<g id="copy" transform="translate(0 -8)" clip-path="url(#clip-path)">
+			<path id="Контур_1776" data-name="Контур 1776"
+				d="M14.717.75H4.962A4.211,4.211,0,0,0,.75,4.961V16.711M16.9,5.036H6.686A1.862,1.862,0,0,0,4.829,6.893v13A1.863,1.863,0,0,0,6.686,21.75H16.9a1.861,1.861,0,0,0,1.856-1.857v-13A1.861,1.861,0,0,0,16.9,5.036Z"
+				transform="translate(1.75 8.75)" fill="none" stroke="#292928" stroke-miterlimit="10"
+				stroke-width="1.5" />
+		</g>
+	</symbol>
+
+	<!-- more-icon -->
+	<symbol id="more-icon" viewBox="0 0 24 24">
+		<g id="more" transform="translate(0 -8)" clip-path="url(#clip-path)">
+			<g id="Сгруппировать_830" data-name="Сгруппировать 830" transform="translate(2 1)">
+				<circle id="Эллипс_57" data-name="Эллипс 57" cx="2.552" cy="2.552" r="2.552"
+					transform="translate(7.75 8.75)" fill="none" stroke="#292928" stroke-miterlimit="10"
+					stroke-width="1.5" />
+				<circle id="Эллипс_58" data-name="Эллипс 58" cx="2.552" cy="2.552" r="2.552"
+					transform="translate(7.75 16.198)" fill="none" stroke="#292928" stroke-miterlimit="10"
+					stroke-width="1.5" />
+				<circle id="Эллипс_59" data-name="Эллипс 59" cx="2.552" cy="2.552" r="2.552"
+					transform="translate(7.75 23.646)" fill="none" stroke="#292928" stroke-miterlimit="10"
+					stroke-width="1.5" />
+			</g>
+		</g>
+	</symbol>
+
+	<!-- copy-icon -->
+	<symbol id="urn-delete" viewBox="0 0 24 24">
+		<g id="delete" transform="translate(0 -8)" clip-path="url(#clip-path)">
+			<g id="Icon_material-delete" data-name="Icon material-delete" transform="translate(4 8)">
+				<g id="Сгруппировать_1026" data-name="Сгруппировать 1026" transform="translate(0 0)"
+					clip-path="url(#clip-path-2)">
+					<path id="Контур_1852" data-name="Контур 1852"
+						d="M0,20.814a2.72,2.72,0,0,0,2.727,2.693h10.91a2.719,2.719,0,0,0,2.726-2.693V6.388H0ZM1.636,8H14.727V20.809a1.094,1.094,0,0,1-1.09,1.083H2.733a1.1,1.1,0,0,1-1.1-1.077Z"
+						transform="translate(0 0.493)" fill="#292928" />
+					<path id="Контур_1853" data-name="Контур 1853"
+						d="M12.213,3.255a4.124,4.124,0,0,0-8.063,0H0V4.871H16.364V3.255Zm-6.36,0a2.473,2.473,0,0,1,4.657,0Z"
+						transform="translate(0 0)" fill="#292928" />
+				</g>
+			</g>
+		</g>
+	</symbol>
+
 </svg>
