@@ -23,7 +23,7 @@
 }
 
 .lock .header {
-	padding-right: 6px;
+	padding-right: 7px;
 }
 
 .header-user {
@@ -578,6 +578,74 @@
 }
 .bascket-icon-number_blue {
 	background: #46A5FC;
+}
+
+.header__multicorzine {
+	position: absolute;
+	top: 65px;
+	right: -65px;
+	z-index: 5000000;
+}
+.multicorzine-header {
+	display: flex;
+	flex-direction: column;
+	width: 210px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+.multicorzine-header__main {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 10px 15px 10px;
+	border-bottom: 1px solid #E3E3E3;
+}
+.multicorzine-header__link {
+	display: flex;
+	padding: 10px;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	svg {
+		width: 20px;
+		height: 20px;
+		flex: 0 0 20px;
+		margin-right: 10px;
+		fill: #46A5FC;
+	}
+}
+.multicorzine-header__link_main {
+	background: #F3F3F4;
+	svg {
+		fill: #C5934F;
+	}
+}
+.multicorzine-header__link-inner {
+	display: flex;
+	flex-direction: column;
+}
+.multicorzine-header__link-text {
+	font-size: 14px;
+	line-height: 20 /14  * 100%;
+	color: #161615;
+}
+.multicorzine-header__price {
+	font-size: 12px;
+	line-height: 1;
+	color: #8F8E8E;
+}
+.multicorzine-header__add {
+	font-size: 14px;
+	line-height: 20 /14  * 100%;
+	color: #8F8E8E;
+	padding: 10px;
+	&:hover{
+		color: #161615;
+	}
 }
 //====================================================================================================
 //Burger

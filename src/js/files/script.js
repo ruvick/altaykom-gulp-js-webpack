@@ -82,6 +82,21 @@ window.onload = function () {
 	})
 
 
+	// Меню корзины при наведении в шапке
+	// let linkBascet = document.querySelectorAll('.interface__link_bascet');
+
+	// for (let i = 0; i < linkBascet.length; i++) {
+	// 	linkBascet[i].addEventListener('mouseenter', (e) => {
+	// 		let headerMulticorzine = document.querySelector('.header__multicorzine');
+	// 		headerMulticorzine.style.display = 'flex';
+	// 	})
+	// 	linkBascet[i].addEventListener('mouseleave', () => {
+	// 		let headerMulticorzine = document.querySelector('.header__multicorzine');
+	// 		headerMulticorzine.style.display = 'none';
+	// 	})
+	// }
+
+
 	// Всплывающие меню при наведении
 	const item = document.querySelectorAll('.menu-lineBlock__item');
 	const lineBlockBlk = document.querySelector('.lineBlock-blk');
