@@ -129,7 +129,7 @@
 	}
 
 
-	.menu__item:hover .menu__arrow-icon {
+	.menu__item:hover .menu__arrow-icon { 
 		fill: #C5934F;
 		transform: rotate(180deg);
 	}
@@ -560,54 +560,25 @@
 	transition: top 0.8s;
 }
 
-// Иконка корзины
-.bascket-icon {
-	display: none;
-	justify-content: center;
-	align-items: center;
-	flex: 0 0 30px;
-	height: 30px;
-	background: #91b508;
-	border-radius: 50%;
-	position: relative;
-	margin-right: 15px;
 
-	&:before {
-		content: '';
-		float: left;
-		width: 16px;
-		height: 16px;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+DQogIDxpbWFnZSBpZD0iY2FydC1vdXRsaW5lX9C60L7Qv9C40Y9fMiIgZGF0YS1uYW1lPSJjYXJ0LW91dGxpbmUg0LrQvtC/0LjRjyAyIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQkFBQUFBUUNBWUFBQUFmOC85aEFBQUFCSE5DU1ZRSUNBZ0lmQWhraUFBQUFTOUpSRUZVT0UrVjA3OHJ0bEVjeC9IWEhTTUxJd09Ea2hSbE1KRkpQSlFWazFBTURMSmFSS2JuTDVERjRrY3BXVVFwSllOTlVuNUVZbUo2L2dGeTZkelBVVHBkM0xmdmNwM09kVDd2OHoyZjh6bUZMTXNhTU9aLzdlSWlqc3Y2RkxJczY4RnhYSDJJdnJLVWNWRUFWS0lLUzVqNWpSZzdBZkNwcWNjRC9tR3JCS2dhNDFqOENnaWF0ZWhITSs1L2dDeGpBazBwb0FtM1dNWDBONERRNlIxbXc0WXBJR2kyTVlSR1BPZEExdEdCZHJ6bEFicHdFanQ1eVFGMFl4RDc0VjhlNEMvbWNZbjNCUENLUFFRUGlwVUM2dUpOSEdHZ25DdE5BWjA0d3lPZVNnQVdjSm9DQ2xoQkx5cEtBT1pDZ3ZNOCtJUFdtSWtRcXE5Vmk4bjRYZzd5UEFnQnVvNktUWXdtZ0RBM2pCRGZGdHlrSFFUQVZUQVhlWUFOalB3RUNCdjJveTJtTVQxQ0RhWndqdUlSUGdEQkNXY1lIbVlOOUFBQUFBQkpSVTVFcmtKZ2dnPT0iLz4NCjwvc3ZnPg0K);
-	}
-}
-
-.bascket-icon__number {
+.bascket-icon-number {
 	position: absolute;
-	top: -18%;
-	right: -30%;
+	top: -25px;
+	right: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 18px;
-	height: 18px;
-	font-size: 10px;
-	// color: #fff;
-	background: #ffc800;
-	border-radius: 50%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 157.1428571429%;
+	padding: 2px 8px;
+	color: #fff;
+	background: #C5934F;
+	border-radius: 8px;
 }
-
-// Полоса прокрутки
-#scroll-progress {
-	position: absolute;
-	bottom: 0;
-	width: 0%;
-	height: 4px;
-	background: #7983ff;
-	z-index: 10000;
+.bascket-icon-number_blue {
+	background: #46A5FC;
 }
-
 //====================================================================================================
 //Burger
 /*
