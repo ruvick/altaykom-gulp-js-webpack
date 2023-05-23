@@ -269,3 +269,95 @@ body.popup-show::after {
 		height: 14px;
 	}
 }
+
+.popup__btn-block {
+	display: flex;
+	align-items: center;
+	.btn {
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	.btn_black {
+		&:hover{
+			color: #fff;
+			background: #221F20;
+			opacity: 0.7;
+		}
+	}
+}
+
+// Создать новую корзину
+.new-bascet__color-block {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px 40px -10px;
+}
+.new-bascet__color-block-column {
+	display: flex;
+	flex: 0 1 33.333%;
+	padding: 0 5px 5px 10px;
+}
+.new-bascet__color-btn {
+
+}
+.color-btn {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 1 100%;
+	height: 40px;
+	background: grey;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.color-btn__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		left: 0;
+		top: 0;
+		visibility: hidden;
+}
+.color-btn__check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 26px;
+	height: 26px;
+	width: 26px;
+	background: #ffffff61;
+	border-radius: 50%;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	overflow: hidden;
+	svg {
+		flex: 0 0 10px;
+		height: 7.5px;
+		width: 7.5px;
+	}
+}
+.color-btn input[type=radio]:checked+.color-btn__check {
+	transform: scale(1);
+}
+.violet-bg {
+	background: #6584EE;
+}
+.brown-bg {
+	background: #C5934F;
+}
+.green-bg {
+	background: #34B866;
+}
+.pink-bg {
+	background: #F47FBD;
+}
+.blue-bg {
+	background: #46A5FC;
+}
+.orange-bg {
+	background: #F3602B;
+}

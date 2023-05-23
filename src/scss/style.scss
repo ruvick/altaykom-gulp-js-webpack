@@ -4277,7 +4277,9 @@ body.padding {
 	justify-content: space-between;
 	align-items: center;
 }
-
+.section-title__inner .title-small {
+	max-width: 650px;
+}
 .section-title__button {
 	width: auto;
 	color: #8F8E8E;
