@@ -1043,4 +1043,13 @@
 		</g>
 	</symbol>
 
+	<!-- edit-icon -->
+	<symbol id="edit-icon" viewBox="0 0 24 24">
+		<g id="pen" transform="translate(0 -8)" clip-path="url(#clip-path)">
+			<path id="Icon_awesome-pen" data-name="Icon awesome-pen"
+				d="M12.492,4.007l5.5,5.5L6.048,21.452l-4.9.541A1.031,1.031,0,0,1,.006,20.854l.546-4.908L12.492,4.007Zm8.9-.819L18.812.6a2.064,2.064,0,0,0-2.918,0l-2.43,2.43,5.5,5.5,2.43-2.43a2.064,2.064,0,0,0,0-2.918Z"
+				transform="translate(1 8.999)" fill="none" stroke="#292928" stroke-width="1.5" />
+		</g>
+	</symbol>
+
 </svg>
