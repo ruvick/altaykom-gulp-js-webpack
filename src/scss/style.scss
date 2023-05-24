@@ -4301,7 +4301,7 @@ body.padding {
 }
 .physical-list-person__body {
 	flex: 1 1 auto;
-	height: 940px;
+	max-height: 940px;
 	overflow: hidden;
 	margin-bottom: 30px;
 }
