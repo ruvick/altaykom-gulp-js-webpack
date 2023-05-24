@@ -70,9 +70,10 @@
 	color: #fff;
 	background: #221F20;
 
-	&:hover {
-		color: #221F20;
-		background-color: #fff;
+	&:hover{
+		opacity: 0.7;
+		color: #fff;
+    background: #221F20;
 	}
 }
 
