@@ -750,6 +750,57 @@
 		color: #161615;
 	}
 }
+
+.header-legal-person {
+	border-bottom: none;
+}
+.header-legal-person .header__interface {
+	flex: 0 1 100%;
+}
+.header-legal-person .interface__link {
+	padding: 0 71px;
+}
+.header-legal-person .interface__link_my-orders {
+	border-left: 1px solid #E3E3E3;
+}
+.header-legal-person .header__menu-cabinet {
+  left: 33%;
+}
+.header__cabinet-leg-person {
+	position: absolute;
+	top: 65px;
+	left: 75px;
+	max-width: 380px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+	border-radius: 15px;
+	overflow: hidden;
+	.card-person {
+		box-shadow: none;
+		border-radius: 0;
+		border: 0;
+		border-top: 1px solid #E3E3E3;
+	}
+	.card-person__btn {
+		&:hover{
+			color: #fff;
+		}
+	}
+}
+.cabinet-leg-person {
+
+}
+.header__cabinet-leg-person .menu-cabinet {
+	max-width: 100%;
+	width: 100%;
+	background: #fff;
+	box-shadow: none;
+	border-radius: 0;
+	.menu-cabinet__btn {
+		margin-top: 15px;
+	}
+}
 //====================================================================================================
 //Burger
 /*
