@@ -182,6 +182,16 @@ window.onload = function () {
 	}
 
 
+	// Мои списки
+	const physicalListPerson = document.querySelector('.physical-list-person');
+	const newListsCard = document.querySelectorAll('.new-lists__card');
+	newListsCard.forEach((item) => {
+		item.addEventListener("click", function () {
+			physicalListPerson.classList.toggle("_active");
+		});
+	});
+
+
 	// Лайки
 	const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
 	const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
