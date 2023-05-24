@@ -4263,6 +4263,158 @@ body.padding {
 }
 //========================================================================================================================================================
 
+.physical-list-person {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+	display: flex;
+	flex-direction: column;
+	min-width: 38%;
+  height: 100%;
+  padding: 30px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+}
+.physical-list-person__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.physical-list-person__back-btn {
+	background: #fff;
+}
+.physical-list-person__header-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.physical-list-person__header-btn {
+  flex: 0 0 40px;
+  height: 40px;
+	margin-right: 5px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.physical-list-person__body {
+	flex: 1 1 auto;
+	height: 940px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.physical-list-person__title {
+	font-size: 26px;
+	line-height: 42 /26  * 100%;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+.physical-list-person__pord-price {
+	font-size: 18px;
+	line-height: 18 /18  * 100%;
+	margin-bottom: 30px;
+}
+.physical-list-person__pord-price-value {
+	color: #34B866;
+}
+.physical-list-person__inner {
+	// padding: 30px 0;
+	padding-bottom: 30px;
+	overflow: auto;
+	height: 800px;
+}
+.physical-list-person__inner::-webkit-scrollbar-thumb,
+.physical-list-person__inner::-webkit-scrollbar {
+	display: none !important;
+}
+.physical-list-person__box {
+	// overflow: hidden;
+	// height: 800px;
+}
+.physical-list-person__row {
+}
+.physical-list-person__item {
+	padding: 15px 0;
+	border-top: 1px solid #E3E3E3;
+	border-bottom: 1px solid #E3E3E3;
+	&:first-child{
+		border-top: none;
+	}
+}
+.item-physical-list-person {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+}
+.item-physical-list-person__img {
+	flex: 0 0 70px;
+	height: 70px;
+	width: 70px;
+	overflow: hidden;
+	border-radius: 15px;
+}
+.item-physical-list-person__descp {
+	flex: 0 1 250px;
+}
+.item-physical-list-person__text {
+	// margin-bottom: 10px;
+}
+.item-physical-list-person__sticker {
+}
+.item-physical-list-person__value-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.item-physical-list-person__quantity {
+	max-width: 120px;
+	margin-bottom: 5px;
+}
+.item-physical-list-person__value-price {
+	display: flex;
+	font-size: 14px;
+	line-height: 26 /14  * 100%;
+	text-align: center;
+}
+.item-physical-list-person__value-price-number {
+}
+.item-physical-list-person__price {
+	font-size: 18px;
+	line-height: 26 /18  * 100%;
+	font-weight: 700;
+}
+.item-physical-list-person__delete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 15px;
+	width: 15px;
+	height: 22px;
+	overflow: hidden;
+	svg {
+		flex: 0 0 15px;
+		width: 15px;
+		height: 22px;
+	}
+}
+.physical-list-person__btn {
+	width: 100%;
+}
+.item-physical-list-person__footnote {
+	font-size: 12px;
+	line-height: 22 /12  * 100%;
+	color: #8F8E8E;
+	margin-top: 5px;
+	span {
+		font-weight: 700;
+		color: #161615;
+	}
+}
+
+//========================================================================================================================================================
+
 // Перенести
 .page .lineBlock {
 	margin-bottom: 60px;
