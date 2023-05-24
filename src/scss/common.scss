@@ -132,18 +132,29 @@
   padding: 0 20px;
 	&:hover{
 		color: #C5934F;
+		svg {
+			fill: #C5934F;
+		}
 	}
-
-  &::before {
-    content: '';
-    float: left;
-    width: 24px;
+	svg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
     flex: 0 0 24px;
     height: 24px;
-    background-size: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-  }
+	}
+
+  // &::before {
+  //   content: '';
+  //   float: left;
+  //   width: 24px;
+  //   flex: 0 0 24px;
+  //   height: 24px;
+  //   background-size: 100%;
+  //   background-position: 0 0;
+  //   background-repeat: no-repeat;
+  // }
 }
 
 .interface__link-text {
