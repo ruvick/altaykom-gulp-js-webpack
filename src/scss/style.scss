@@ -4420,6 +4420,72 @@ body.padding {
 		color: #161615;
 	}
 }
+//========================================================================================================================================================
+.individual-order-details__table-info {
+	margin-bottom: 30px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.individual-order-details__table-info .table-info__subtitle {
+	font-weight: 700;
+	margin-bottom: 17px;
+}
+.individual-order-details__box-product .basket-individuals-sorting__quantity-cost {
+	justify-content: space-between;
+	flex: 1 1 auto;
+}
+.individual-order-details__buton-back {
+	background: #fff;
+	margin-top: 60px;
+}
+.individual-order-details__box-product-value {
+	font-size: 20px;
+	line-height: 30 /20  * 100%;
+	margin-bottom: 30px;
+	span {
+		font-weight: 700;
+	}
+}
+.individual-order-details__box-product {
+	margin-bottom: 60px;
+}
+.section-title__inner-title {
+	display: flex;
+	align-items: center;
+}
+.individual-order-details__title-btn {
+	display: flex;
+	align-items: center;
+	margin-left: 36px;
+}
+.individual-order-details__order-block {
+	display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.individual-order-details-main {
+	margin-top: -110px;
+}
+.individual-order-details__order-block {
+	margin-bottom: 57px;
+	.order-block-individual__date {
+		color: #8F8E8E;
+		margin-bottom: 20px;
+	}
+	.order-block-individual__text-row {
+		span {
+			font-weight: 700;
+		}
+		margin-bottom: 3px;
+	}
+	.sticker-product {
+		margin-bottom: 20px;
+	}
+	.order-block-individual__btn {
+	}
+
+}
 
 //========================================================================================================================================================
 
