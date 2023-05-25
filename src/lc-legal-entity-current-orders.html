@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"ЛК Юрлицо Текущие заказы" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page page-user">
+
+				@@include('html/components/_physical-list-person.htm',{})
+
+        <div class="breadcrumbs">
+          <div class="_container">
+            <div class="breadcrumbs__inner">
+              <span>
+                <span>
+                  <a href="home.html"> главная </a> /
+                  <span class="breadcrumb_last" aria-current="page">
+                    личный кабинет
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <div class="_container">
+            <div class="section-title__inner">
+              <div class="section-title__title title-small">
+								Открытое акционерное общество "Конфетка"
+              </div>
+							<div class="card-person">
+								<div class="card-person__main">
+									<div class="card-person__image">
+										<img src="img/card-person/01.jpg" alt="Картинка менеджера">
+									</div>
+									<div class="card-person__descp">
+										<div class="card-person__name">Екатерина</div>
+										<div class="card-person__post">Персональный менеджер</div>
+										<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
+									</div>
+								</div>
+								<div class="card-person__nav">
+									<button type="button" class="card-person__btn text-animation">Позвонить</button>
+									<button type="button" class="card-person__btn text-animation">Написать</button>
+								</div>
+							</div>
+            </div>
+          </div>
+        </div>
+
+        <section class="lc-physical-person page-user-sec section">
+          <div class="_container">
+            <div class="page-user-sec__inner">
+              <div class="page-user-sec__main">
+
+								<div data-tabs class="lc-physical-person__tabs tabs">
+									<nav data-tabs-titles class="tabs__navigation">
+										<button type="button" class="tabs__title _tab-active">Текущие заказы</button>
+										<button type="button" class="tabs__title">История покупок</button>
+										<button type="button" class="tabs__title">Мои списки</button>
+										<button type="button" class="tabs__title">Настройка профиля</button>
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body">
+											
+											<div class="lc-physical-person__select-block">
+												<div class="lc-physical-person__select-block-select">
+												<select name="form[]" class="form">
+													<option value="1" selected="selected">Статус заказа</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="lc-physical-person__select-block-select">
+												<select name="form[]" class="form">
+													<option value="1" selected="selected">Дата заказа</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="lc-physical-person__select-block-select">
+												<select name="form[]" class="form">
+													<option value="1" selected="selected">Сумма заказа</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											</div>
+
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Заказ №</th>
+														<th>Статус</th>
+														<th>Дата доставки</th>
+														<th>Сумма с НДС</th>
+														<th>Количество</th>
+														<th></th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+
+													<tr>
+														<td>
+															<div>5503240</div>
+														</td>
+														<td><span class="sticker-product sticker-product_green">создан</span></td>
+														<td>Доставка</td>
+														<td>6 875.00 ₽</td>
+														<td>5</td>
+														<td>
+														</td>
+														<td class="table-row">
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#copy-icon"></use>
+																</svg>
+															</button>
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#urn-delete"></use>
+																</svg>
+															</button>
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<div>5503240</div>
+														</td>
+														<td><span class="sticker-product sticker-product_green">подтвержден</span></td>
+														<td>Самовывоз</td>
+														<td>6 875.00 ₽</td>
+														<td>5</td>
+														<td>
+														</td>
+														<td class="table-row">
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#copy-icon"></use>
+																</svg>
+															</button>
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#urn-delete"></use>
+																</svg>
+															</button>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
+
+										</div>
+										<div class="tabs__body">
+								
+											
+
+										</div>
+										<div class="tabs__body">
+
+											<div class="new-lists">
+												<button type="button" class="new-lists__btn btn btn_width">новый список</button>
+
+												<div class="new-lists__inner">
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Любимый список</div>
+															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/card-product/" alt="Изображение списка">
+															</div>
+															<button data-tippy-content class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Новый Год</div>
+															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button data-tippy-content class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Любимый список</div>
+															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button data-tippy-content class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div class="new-lists__card card-new-list">
+															<div class="card-new-list__title">Инструменты</div>
+															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button data-tippy-content class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+													<div class="new-lists__column">
+														<div data-popup="#new-list" class="new-lists__card card-new-list card-new-list_create">
+															<div class="card-new-list__title">Новый список</div>
+															<div class="card-new-list__value">0 товаров</div>
+															<div class="card-new-list__image">
+																<img src="img/" alt="Изображение списка">
+															</div>
+															<button data-tippy-content class="card-new-list__btn-reset">
+																<svg class="result-empty__img-icon">
+																	<use xlink:href="#urn-icon"></use>
+																</svg>
+															</button>
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+
+											<div class="lists-empty" style="display: none;">
+												<div class="result-empty">
+													<div class="result-empty__img">
+														<svg class="result-empty__img-icon">
+															<use xlink:href="#basket-result-empty"></use>
+														</svg>
+													</div>
+													<div class="result-empty__title">У Вас еще нет ни одного списка</div>
+													<div class="result-empty__subtitle">Создавайте свои списки из любимых продуктов</div>
+													<button type="button" class="btn btn_width">новый список</button>
+												</div>
+											</div>
+
+
+										</div>
+										<div class="tabs__body">
+											
+
+												<div class="setting-profile">
+													<div class="setting-profile__title">Мои данные</div>
+													<form action="#" class="setting-profile__form">
+														<div class="setting-profile__row">
+															<input type="text" name="name" placeholder="ФИО*" class="box-order__form-input input" data-placeholder="ФИО*">
+															<input type="text" name="email" data-required="email" data-validate="" placeholder="Email*" class="box-order__form-input input" data-placeholder="Email*">
+															<input type="tel" name="phone" data-required="tel" data-validate="" placeholder="Телефон*" class="box-order__form-input input tel" data-placeholder="Телефон*">
+														</div>
+														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
+													</form>
+												</div>
+
+												<div class="setting-profile">
+													<div class="setting-profile__title">Профили</div>
+													<div class="setting-profile__row row_column">
+														<div class="setting-profile__item item-profile">
+															<div class="item-profile__descp">
+																<div class="item-profile__title">Открытое акционерное общество "Конфетка"</div>
+																<div class="item-profile__text">Дата обновления 20.11.2022</div>
+																<div class="item-profile__text">Тип плательщика: <span>Юридическое лицо</span></div>
+															</div>
+															<div class="item-profile__button">
+																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+																	<svg class="btn-icon-big__icon">
+																		<use xlink:href="#edit-icon"></use>  
+																	</svg>
+																</button>
+																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+																	<svg class="btn-icon-big__icon">
+																		<use xlink:href="#urn-delete"></use>
+																	</svg>
+																</button>
+															</div>
+														</div>
+														<div class="setting-profile__item item-profile">
+															<div class="item-profile__descp">
+																<div class="item-profile__title">Константинопольская Вероника Владимировна</div>
+																<div class="item-profile__text">Дата обновления 01.11.2022</div>
+																<div class="item-profile__text">Тип плательщика: <span>Физическое лицо</span></div>
+															</div>
+															<div class="item-profile__button">
+																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+																	<svg class="btn-icon-big__icon">
+																		<use xlink:href="#edit-icon"></use>  
+																	</svg>
+																</button>
+																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+																	<svg class="btn-icon-big__icon">
+																		<use xlink:href="#urn-delete"></use>
+																	</svg>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="setting-profile">
+													<div class="setting-profile__title">Рассылки</div>
+													<div class="setting-profile__title-small">Присылать информацию на почту:</div>
+													<form action="#" class="setting-profile__form">
+														<div class="setting-profile__row row_nowrap">
+															<input type="text" name="email" data-required="email" data-validate="" placeholder="Email*" class="box-order__form-input input" data-placeholder="Email*">
+															<div class="setting-profile__form-descp">
+																<div class="setting-profile__form-descp-text">После добавления или изменения адреса подписки вам будет выслан код подтверждения.</div>
+																<div class="setting-profile__form-descp-text">Подписка будет не активной до ввода кода подтверждения.</div>
+															</div>
+														</div>
+														<div class="setting-profile__checkbox">
+															<label data-index="0" class="checkbox">
+																<input data-razdel="form" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<span class="checkbox__text"><span>Семинары, мастер-классы</span></span>
+															</label>
+															<label data-index="1" class="checkbox">
+																<input data-razdel="form" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																<span class="checkbox__text"><span>Новинки, поступления</span></span>
+															</label>
+														</div>
+														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
+													</form>
+												</div>
+
+												<div class="setting-profile">
+													<div class="setting-profile__title">Смена пароля</div>
+													<form action="#" class="setting-profile__form">
+														<div class="setting-profile__row row_rewers">
+															<input type="text" name="name" placeholder="Пароль повторно*" class="box-order__form-input input" data-placeholder="Пароль повторно*">
+															<input type="tel" name="phone" data-required="tel" data-validate="" placeholder="Старый пароль*" class="box-order__form-input input tel" data-placeholder="Старый пароль*">
+															<input type="text" name="email" data-required="email" data-validate="" placeholder="Новый пароль*" class="box-order__form-input input" data-placeholder="Новый пароль*">
+														</div>
+														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
+													</form>
+												</div>
+
+												<button type="button" class="profile-back-btn">Выйти из личного кабинета</button>
+
+										</div>
+									</div>
+								</div>
+
+              </div>
+
+              <aside class="page-user-sec__aside">
+
+                <div class="lc-physical-person__formed-card formed-card">
+
+                  <div class="formed-card__row">
+										<div class="formed-card__row-inner">
+											<div class="formed-card__small-text">лимит</div>
+										</div>
+										<div class="formed-card__limit rub">200 000.00</div>
+                  </div>
+
+                  <div class="formed-card__row">
+										<div class="formed-card__row-inner">
+											<div class="formed-card__small-text">израсходовано</div>
+											<div class="formed-card__small-text">остаток</div>
+										</div>
+										<div class="formed-card__row-inner">
+											<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
+											<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
+										</div>
+										<div class="formed-card__progress progress">
+											<progress max="100" value="50"></progress>
+											<div class="progress-value"></div>
+											<div class="progress-bg"><div class="progress-bar"></div></div>
+										</div>
+                  </div>
+
+                  <div class="formed-card__row">
+                    <div class="table-info__inner">
+                      <div class="table-info__table">
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Задолжность</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value rub">
+                              120 200.00
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="table-info__table-row d-flex">
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-name">Просроченная задолжность</div>
+                            <div class="table-info__table-line"></div>
+                          </div>
+                          <div class="table-info__table-col">
+                            <div class="table-info__table-value text-pink rub">20 200.00</div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </aside>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

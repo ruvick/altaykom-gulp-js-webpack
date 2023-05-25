@@ -4487,7 +4487,36 @@ body.padding {
 	}
 
 }
+//========================================================================================================================================================
 
+.lc-physical-person__select-block {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+
+}
+.lc-physical-person__select-block-select {
+	margin-right: 10px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.table-row {
+	display: flex;
+	align-items: center;
+}
+.lc-physical-person table .btn-icon-big {
+	width: 40px;
+	flex: 0 0 40px;
+	height: 40px;
+	margin-right: 10px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.lc-physical-person .table tbody td:nth-child(2) {
+	background: inherit;
+}
 //========================================================================================================================================================
 
 // Перенести
@@ -4504,9 +4533,9 @@ body.padding {
 	justify-content: space-between;
 	align-items: center;
 }
-.section-title__inner .title-small {
-	max-width: 650px;
-}
+// .section-title__inner .title-small {
+// 	max-width: 650px;
+// }
 .section-title__button {
 	width: auto;
 	color: #8F8E8E;
