@@ -4531,6 +4531,94 @@ body.padding {
 }
 //========================================================================================================================================================
 
+.multicorzine-legal-entity {
+	min-width: 47.15%;
+
+	transform: translate(0, 0);
+}
+.multicorzine-legal-entity .btn {
+	display: flex;
+	flex-direction: column;
+	span {
+		font-size: 12px;
+	}
+}
+.multicorzine-legal-entity__btn-close {
+	svg {
+		flex: 0 0 14px;
+    width: 14px;
+    height: 14px;
+	}
+}
+.multicorzine-legal-entity__header-inner {
+	display: flex;
+	align-items: center;
+}
+.multicorzine-legal-entity__name {
+	font-size: 26px;
+	line-height: 42 /26  * 100%;
+	font-weight: 700;	
+}
+.multicorzine-legal-entity__name-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 24px;
+	height: 24px;
+	width: 24px;
+	margin-left: 15px;
+	overflow: hidden;
+	svg {
+		flex: 0 0 24px;
+		height: 24px;
+		width: 24px;
+	}
+}
+.multicorzine-legal-entity__col-name {
+	font-size: 16px;
+	line-height: 20 /16  * 100%;
+	margin-bottom: 3px;
+}
+.multicorzine-legal-entity__quantity {
+	max-width: 120px;
+}
+.multicorzine-legal-entity__total-item {
+	font-size: 18px;
+	line-height: 30 /18  * 100%;
+	font-weight: 700;
+}
+.multicorzine-legal-entity__table-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 15px;
+	width: 15px;
+	height: 20px;
+	overflow: hidden;
+	svg {
+		flex: 0 0 100%;
+		width: 100%;
+		height: 100%;
+	}
+}
+.multicorzine-legal-entity .table {
+	margin-bottom: 30px;
+}
+.multicorzine-legal-entity .table tbody td:nth-child(2) {
+	background: inherit;
+}
+.multicorzine-legal-entity__row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 27px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.multicorzine-legal-entity__item {
+}
+//========================================================================================================================================================
+
 // Перенести
 .page .lineBlock {
 	margin-bottom: 60px;
