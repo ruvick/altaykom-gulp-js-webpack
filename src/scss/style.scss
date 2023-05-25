@@ -4488,12 +4488,15 @@ body.padding {
 
 }
 //========================================================================================================================================================
-
+.lc-physical-person__select-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
 .lc-physical-person__select-block {
 	display: flex;
 	align-items: center;
-	margin-bottom: 30px;
-
 }
 .lc-physical-person__select-block-select {
 	margin-right: 10px;
@@ -4504,6 +4507,7 @@ body.padding {
 .table-row {
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 }
 .lc-physical-person table .btn-icon-big {
 	width: 40px;
@@ -4516,6 +4520,14 @@ body.padding {
 }
 .lc-physical-person .table tbody td:nth-child(2) {
 	background: inherit;
+}
+.lc-physical-person__select-buttons {
+	display: flex;
+}
+.lc-physical-person__select-buttons button {
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
 }
 //========================================================================================================================================================
 

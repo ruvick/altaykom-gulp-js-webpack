@@ -65,32 +65,41 @@
 									<div data-tabs-body class="tabs__content">
 										<div class="tabs__body">
 											
-											<div class="lc-physical-person__select-block">
+											<div class="lc-physical-person__select-inner">
+												<div class="lc-physical-person__select-block">
+													<div class="lc-physical-person__select-block-select">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Статус заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
 												<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Статус заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Дата заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="lc-physical-person__select-block-select">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Сумма заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
 											</div>
-											<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Дата заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
+											<div class="lc-physical-person__select-buttons">
+												<button data-tippy-content="" type="button" class="btn-icon-big">
+													<svg class="btn-icon-big__icon">
+														<use xlink:href="#printer-icon"></use>
+													</svg>
+												</button>
 											</div>
-											<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Сумма заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
-											</div>
-											</div>
+										</div>
 
 											<table class="table">
 												<thead>
@@ -160,7 +169,125 @@
 										</div>
 										<div class="tabs__body">
 								
-											
+										<div class="lc-physical-person__select-inner">
+											<div class="lc-physical-person__select-block">
+												<div class="lc-physical-person__select-block-select">
+												<select name="form[]" class="form">
+													<option value="1" selected="selected">Статус заказа</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="lc-physical-person__select-block-select">
+												<select name="form[]" class="form">
+													<option value="1" selected="selected">Дата заказа</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+											<div class="lc-physical-person__select-block-select">
+												<select name="form[]" class="form">
+													<option value="1" selected="selected">Сумма заказа</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option value="4">Пункт №4</option>
+												</select>
+											</div>
+										</div>
+										<div class="lc-physical-person__select-buttons">
+											<button data-tippy-content="" type="button" class="btn-icon-big">
+												<svg class="btn-icon-big__icon">
+													<use xlink:href="#printer-icon"></use>
+												</svg>
+											</button>
+										</div>
+									</div>
+
+											<table class="table">
+												<thead>
+													<tr>
+														<th>Заказ №</th>
+														<th>Статус</th>
+														<th>Дата доставки</th>
+														<th>Сумма с НДС</th>
+														<th>Количество</th>
+														<th></th>
+														<th></th>
+													</tr>
+												</thead>
+												<tbody>
+
+													<tr>
+														<td>
+															<div>5503240</div>
+														</td>
+														<td><span class="sticker-product sticker-product_red">не оплачен</span></td>
+														<td>Самовывоз</td>
+														<td>6 875.00 ₽</td>
+														<td>5</td>
+														<td>
+														</td>
+														<td class="table-row">
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#copy-icon"></use>
+																</svg>
+															</button>
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#urn-delete"></use>
+																</svg>
+															</button>
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<div>5503240</div>
+														</td>
+														<td><span class="sticker-product sticker-product_green">оплачен</span></td>
+														<td>Самовывоз</td>
+														<td>6 875.00 ₽</td>
+														<td>5</td>
+														<td>
+														</td>
+														<td class="table-row">
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#copy-icon"></use>
+																</svg>
+															</button>
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#urn-delete"></use>
+																</svg>
+															</button>
+														</td>
+													</tr>
+
+													<tr>
+														<td>
+															<div>5503240</div>
+														</td>
+														<td><span class="sticker-product sticker-product_grey">отменен</span></td>
+														<td>Самовывоз</td>
+														<td>6 875.00 ₽</td>
+														<td>5</td>
+														<td>
+														</td>
+														<td class="table-row">
+															<button data-tippy-content="" type="button" class="btn-icon-big">
+																<svg class="btn-icon-big__icon">
+																	<use xlink:href="#copy-icon"></use>
+																</svg>
+															</button>
+														</td>
+													</tr>
+
+												</tbody>
+											</table>
 
 										</div>
 										<div class="tabs__body">
