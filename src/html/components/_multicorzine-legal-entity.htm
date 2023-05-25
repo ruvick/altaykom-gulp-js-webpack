@@ -23,6 +23,42 @@
 
 			<div class="physical-list-person__box">
 
+				<div class="multicorzine-legal-entity__row row_start">
+					<form action="#" class="multicorzine-legal-entity__radiobuttons">
+						<label class="multicorzine-legal-entity__radio-label">
+							<input checked type="radio" name="radio" class="multicorzine-legal-entity__radio-input">
+							<span class="multicorzine-legal-entity__radio-check"></span>
+							<span class="multicorzine-legal-entity__radio-text">Заказ</span>
+						</label>
+						<label class="multicorzine-legal-entity__radio-label">
+							<input type="radio" name="radio" class="multicorzine-legal-entity__radio-input">
+							<span class="multicorzine-legal-entity__radio-check"></span>
+							<span class="multicorzine-legal-entity__radio-text">Предзаказ</span>
+						</label>
+					</form>
+					Дейсвтия
+				</div>
+
+				<div class="multicorzine-legal-entity__row">
+					<div class="multicorzine-legal-entity__item">
+						<label data-index="0" class="checkbox">
+							<input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+							<span class="checkbox__text"><span>Выбрать все</span></span>
+						</label>
+					</div>
+					<div class="multicorzine-legal-entity__item">
+						<div class="multicorzine-legal-entity__sel-move">
+						<select name="form[]" class="form">
+							<option value="1" selected="selected">Переместить в</option>
+							<option value="2">Пункт №2</option>
+							<option value="3">Пункт №3</option>
+							<option value="4">Пункт №4</option>
+						</select>
+					</div>
+						<button type="button" class="multicorzine-legal-entity__btn-delete">Удалить из корзины</button>
+					</div>
+				</div>
+
 				<table class="table">
 					<thead>
 						<tr>
@@ -210,16 +246,18 @@
 						</form>
 					</div>
 					<div class="multicorzine-legal-entity__item">
-						123
+						<div class="multicorzine-legal-entity__quan-text">3 товара на сумму</div>
+						<div class="sticker-product green-color">экономия 100 ₽</div>
+						<div class="multicorzine-legal-entity__price-val rub">6 000.00</div>
 					</div>
 				</div>
 
 				<div class="multicorzine-legal-entity__row">
 					<div class="multicorzine-legal-entity__item">
-						123
+						<div class="multicorzine-legal-entity__item-title">Недоступны для заказа</div>
 					</div>
 					<div class="multicorzine-legal-entity__item">
-						123
+						<button type="button" class="multicorzine-legal-entity__btn-delete">Удалить из корзины</button>
 					</div>
 				</div>
 

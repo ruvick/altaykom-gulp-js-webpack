@@ -3591,15 +3591,15 @@ body.padding {
 	margin-bottom: 10px;
 }
 
-.box-order__options-input {
-	position: absolute;
-	width: 0;
-	height: 0;
-	opacity: 0;
-	left: 0;
-	top: 0;
-	visibility: hidden;
-}
+// .box-order__options-input {
+// 	position: absolute;
+// 	width: 0;
+// 	height: 0;
+// 	opacity: 0;
+// 	left: 0;
+// 	top: 0;
+// 	visibility: hidden;
+// }
 
 .box-order__options-inner {
 	width: 100%;
@@ -4617,6 +4617,81 @@ body.padding {
 }
 .multicorzine-legal-entity__item {
 }
+.multicorzine-legal-entity__item-title {
+	font-size: 20px;
+	line-height: 30 /20  * 100%;
+}
+.multicorzine-legal-entity__btn-delete {
+	font-size: 14px;
+	line-height: 26 /14  * 100%;
+	color: #8F8E8E;
+}
+.row_start .multicorzine-legal-entity__item {
+	display: flex;
+	align-items: center;
+}
+.multicorzine-legal-entity__quan-text {
+	font-size: 14px;
+	line-height: 24 /14  * 100%;
+	margin-bottom: 3px;
+}
+.multicorzine-legal-entity__price-val {
+	font-size: 26px;
+	line-height: 42 /26  * 100%;
+	font-weight: 700;
+}
+.multicorzine-legal-entity__sel-move {
+	margin-right: 40px;
+	.select__title {
+		border: none;
+	}
+}
+.row_start {
+	justify-content: start;
+}
+
+.multicorzine-legal-entity__radiobuttons {
+	display: flex;
+	align-items: center;
+}
+.multicorzine-legal-entity__radio-label {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.multicorzine-legal-entity__radio-input {
+}
+.multicorzine-legal-entity__radio-check {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22px;
+	flex: 0 0 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid #000;
+	&::after{
+		content:''; 
+		float: left; 
+		flex: 0 0 16px; 
+		height: 16px; 
+		border-radius: 50%;
+		background: #161615;
+		transform: scale(0);
+		transition: transform 0.3s ease 0s;
+	}
+}
+.multicorzine-legal-entity__radio-text {
+	margin-left: 10px;
+}
+.multicorzine-legal-entity__radio-label input[type=radio]:checked+.multicorzine-legal-entity__radio-check:after {
+	transform: scale(1);
+}
+
 //========================================================================================================================================================
 
 // Перенести
