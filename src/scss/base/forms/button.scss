@@ -2,6 +2,7 @@
 //<BUTTONS для форм (a.btn+tab)>
 // Снипет (HTML): btn
 .button {
+	font-family: "Lack", sans-serif;
 	display: inline-flex;
 	padding: 0px 0px;
 
@@ -16,6 +17,7 @@
 
 // Стандартный класс кнопки
 .btn {
+	font-family: "Lack", sans-serif;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -39,6 +41,7 @@
 
 // Кнопка назад 
 .back-btn {
+	font-family: "Lack", sans-serif;
 	display: flex;
 	align-items: center;
 	font-size: 14px;
