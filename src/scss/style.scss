@@ -4800,6 +4800,103 @@ body.padding {
 }
 //========================================================================================================================================================
 
+.content-article__float-block {
+	margin-bottom: 78px;
+}
+.content-article__description {
+	margin-bottom: 50px;
+}
+.content-article__description-img {
+	max-width: 340px;
+	width: 100%;
+	float: right;
+	padding-bottom: 29.6%;
+	border-radius: 35px;
+	overflow: hidden;
+}
+.content-article__description-title {
+	font-size: 26px;
+	line-height: 36 /26  * 100%;
+	margin-bottom: 26px;
+}
+.content-article__description-subtitle {
+	margin-bottom: 20px;
+}
+.content-article__description-footnote {
+	display: inline-block;
+	text-align: center;
+	padding: 3.5px 20px;
+	border-radius: 15px;
+	background: #c5934f8c;
+	margin-bottom: 26px;
+}
+.content-article__description-subtitle-list {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.content-article__descriptioni-list {
+	margin-bottom: 26px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.content-article__descriptioni-list-item {
+	margin-bottom: 20px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.content-article__bg-descp {
+	padding: 20px;
+	background: #c5934f8c;
+	border-radius: 25px;
+	overflow: hidden;
+	margin-bottom: 68px;
+}
+.content-article__video {
+	position: relative;
+	height: 530px;
+	overflow: hidden;
+	border-radius: 25px;
+	background: url('../img/') 0 0 no-repeat;
+}
+.content-article__video-title {
+	position: relative;
+	z-index: 5;
+	font-size: 26px;
+	line-height: 36 /26  * 100%;
+	color: #fff;
+	padding: 35px 40px;
+}
+.content-article__video-play-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 43%;
+	left: 43%;
+	z-index: 5;
+	width: 80px;
+	flex: 0 0 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 30px;
+	border: 1px solid #fff;
+	&::before{
+		content:''; 
+		float: left;
+		width: 34px;
+		flex: 0 0 34px;
+    height: 35px;
+    margin-right: -8px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNC4yODYiIHZpZXdCb3g9IjAgMCAzMCAzNC4yODYiPg0KICA8cGF0aCBpZD0iXzEiIGRhdGEtbmFtZT0iMSIgZD0iTTEzLjY3LDYuMDc4YTQsNCwwLDAsMSw2Ljk0NiwwbDEwLjI1LDE3LjkzOEE0LDQsMCwwLDEsMjcuMzkzLDMwSDYuODkzQTQsNCwwLDAsMSwzLjQyLDI0LjAxNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwKSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+DQo8L3N2Zz4NCg==');
+	}
+}
+//========================================================================================================================================================
+
 // Перенести
 .page .lineBlock {
 	margin-bottom: 60px;
