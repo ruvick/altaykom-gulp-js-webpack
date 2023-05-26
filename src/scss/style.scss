@@ -347,11 +347,9 @@ body.padding {
 	background-repeat: no-repeat;
 	transition: all 0.5s;
 }
-
 .servicesBlock-bg__card:hover {
 	background-size: 52%;
 }
-
 .servicesBlock-bg__card-icon-text {
 	display: flex;
 	align-items: center;
@@ -647,6 +645,10 @@ body.padding {
 
 .servicesBlock-bg__card_small {
 	flex: 0 1 32.4%;
+	background-size: 70%;
+}
+.servicesBlock-bg__card_small:hover {
+	background-size: 72%;
 }
 
 .services-section__row .servicesBlock-bg__card-text {
