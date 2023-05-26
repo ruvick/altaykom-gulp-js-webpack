@@ -182,6 +182,23 @@ window.onload = function () {
 	}
 
 
+	// open multicorzine  
+	const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
+	const multicorzineLegalEntity = document.querySelector('.multicorzine-legal-entity');
+	const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
+
+	if (headerLegalBascetIcon) {
+		headerLegalBascetIcon.addEventListener('click', function () {
+			multicorzineLegalEntity.classList.add('_active');
+		});
+	}
+	if (multicorClose) {
+		multicorClose.addEventListener('click', function () {
+			multicorzineLegalEntity.classList.remove('_active');
+		});
+	}
+
+
 	// Мои списки
 	const physicalListPerson = document.querySelector('.physical-list-person');
 	const newListsCard = document.querySelectorAll('.new-lists__card');

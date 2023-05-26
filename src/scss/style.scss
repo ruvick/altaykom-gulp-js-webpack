@@ -4534,7 +4534,7 @@ body.padding {
 .multicorzine-legal-entity {
 	min-width: 47.15%;
 
-	transform: translate(0, 0);
+	// transform: translate(0, 0);
 }
 .multicorzine-legal-entity .btn {
 	display: flex;
@@ -4551,8 +4551,13 @@ body.padding {
 	}
 }
 .multicorzine-legal-entity__header-inner {
+	position: relative;
 	display: flex;
 	align-items: center;
+	.bascket-icon-number {
+		top: -20px;
+    right: -70px;
+	}
 }
 .multicorzine-legal-entity__name {
 	font-size: 26px;
@@ -4610,6 +4615,7 @@ body.padding {
 .multicorzine-legal-entity__row {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin-bottom: 27px;
 	&:last-child{
 		margin-bottom: 0;
@@ -4653,12 +4659,14 @@ body.padding {
 .multicorzine-legal-entity__radiobuttons {
 	display: flex;
 	align-items: center;
+	margin-right: 31px;
 }
 .multicorzine-legal-entity__radio-label {
 	position: relative;
 	display: flex;
 	align-items: center;
 	margin-right: 30px;
+	cursor: pointer;
 	&:last-child{
 		margin-right: 0;
 	}
