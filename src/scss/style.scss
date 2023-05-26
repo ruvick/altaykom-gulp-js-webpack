@@ -6,8 +6,18 @@
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+@font-face {
+	font-family: "Lack";
+	src: url("../fonts/Lack.eot");
+	src: local("☺"), url("../fonts/Lack.woff") format("woff"), url("../fonts/Lack.ttf") format("truetype"),
+		url("../fonts/Lack.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
 // Подключить если есть локальные файлы шрифтов
-//@import "fonts/fonts";
+// @import "fonts/fonts"; 
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
@@ -385,7 +395,13 @@ body.padding {
 .servicesBlock-bg__card_02 {
 	background-image: url('../img/services/02.png');
 }
+.servicesBlock-bg__card_01-1 {
+	background-image: url('../img/services/1-1.png');
+}
 
+.servicesBlock-bg__card_02-2 {
+	background-image: url('../img/services/2-2.png');
+}
 .servicesBlock-bg__card_03 {
 	background-image: url('../img/services/03.png');
 }
