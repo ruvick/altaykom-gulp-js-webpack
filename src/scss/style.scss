@@ -5003,10 +5003,23 @@ body.padding {
 // 	max-width: 650px;
 // }
 .section-title__button {
+	display: flex;
+	align-items: center;
 	width: auto;
 	color: #8F8E8E;
 	padding: 11px 27px;
 	margin-top: 15px;
+	svg {
+		width: 9.4px;
+		flex: 0 0 9.4px;
+		height: 14px;
+		margin-left: 17px;
+	}
+}
+.section-title__button:hover{
+	svg {
+		fill: #fff;
+	}
 }
 
 .modal-windows-sec__inner {
