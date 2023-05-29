@@ -283,7 +283,8 @@ body.padding {
 .categoriesImgBlock__card-img {
 	position: relative;
 	flex: 1 1 auto;
-	height: 300px;
+	// height: 300px;
+	padding-bottom: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -556,12 +557,20 @@ body.padding {
 }
 
 //========================================================================================================================================================
-
+.about__subtitle,
 .subtitle {
 	font-size: 26px;
 	line-height: 42px;
 }
-
+.our-clients__subtitle,
+.own-production__subtitle,
+.about__subtitle {
+	span {
+		background: #c5934f70;
+		border-radius: 15px;
+    padding: 0 5px;
+	}
+}
 .our-clients__inner {
 	flex-wrap: wrap;
 	margin: 56px -10px 0 -10px;
@@ -695,7 +704,7 @@ body.padding {
 	margin-bottom: 30px;
 
 	&:last-child {
-		margin-bottom: 0;
+		margin-bottom: 0; 
 	}
 }
 
@@ -1431,9 +1440,7 @@ body.padding {
 
 .card-product__img {
 	position: relative;
-	// flex: 0 0 100%;
-	height: 200px;
-	height: 200px;
+	padding-bottom: 100%;
 	border-radius: 15px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1458,6 +1465,7 @@ body.padding {
 	left: 0;
 	z-index: 5;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	width: 100%;
 	padding: 8px;
@@ -1526,8 +1534,8 @@ body.padding {
 
 .card-product__interactive-how {
 	// убрать
-	font-size: 14px;
-	line-height: 22/14 * 100%;
+	// font-size: 14px;
+	// line-height: 22/14 * 100%;
 	// ============================
 	margin-bottom: 3px;
 }
@@ -1554,7 +1562,7 @@ body.padding {
 	// Убрать
 	font-size: 20px;
 	line-height: 22/20 *100%;
-	// =======================
+	// ======================= 
 }
 
 // Убрать
@@ -4917,6 +4925,11 @@ body.padding {
     background-repeat: no-repeat;
 		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMCIgaGVpZ2h0PSIzNC4yODYiIHZpZXdCb3g9IjAgMCAzMCAzNC4yODYiPg0KICA8cGF0aCBpZD0iXzEiIGRhdGEtbmFtZT0iMSIgZD0iTTEzLjY3LDYuMDc4YTQsNCwwLDAsMSw2Ljk0NiwwbDEwLjI1LDE3LjkzOEE0LDQsMCwwLDEsMjcuMzkzLDMwSDYuODkzQTQsNCwwLDAsMSwzLjQyLDI0LjAxNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwKSByb3RhdGUoOTApIiBmaWxsPSIjZmZmIi8+DQo8L3N2Zz4NCg==');
 	}
+}
+//========================================================================================================================================================
+
+.salesLeaders {
+	padding: 10px;
 }
 //========================================================================================================================================================
 
