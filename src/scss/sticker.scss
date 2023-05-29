@@ -30,7 +30,7 @@
 	color: #161615;
 	background: #F3F3F4;
 }
-.sticker-product_grey-bg {
+.sticker-product_grey-bg { 
 	color: #8F8E8E;
 	background: #E3E3E3;
 }
@@ -62,12 +62,18 @@
   border-radius: 10px;
   background: #fff;
   overflow: hidden;
+	svg {
+		width: 17.5px;
+		flex: 0 0 17.5px;
+		height: 17px;
+		fill: none;
+	}
 }
 
-.sticker-product-favorite__icon {
-  width: 17.5px;
-  flex: 0 0 17.5px;
-  height: 17px;
+.sticker-product-favorite:hover {
+	svg {
+		fill: #221f20;
+	}
 }
 
 .sticker-product-rating {
