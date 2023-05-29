@@ -76,6 +76,12 @@
 	}
 }
 
+.sticker-product-favorite:focus {
+	svg {
+		fill: #221f20;
+	}
+}
+
 .sticker-product-rating {
   // Убрать
   position: absolute;
