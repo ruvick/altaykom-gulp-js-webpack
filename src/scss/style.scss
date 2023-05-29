@@ -768,6 +768,10 @@ body.padding {
 .sliderCert__slide {
 	height: 311px;
 	overflow: hidden;
+	transition: 1s;
+	&:hover{
+		transform: scale(1.03);
+	}
 }
 
 .sliderCert__slide img {
