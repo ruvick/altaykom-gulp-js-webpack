@@ -2606,14 +2606,15 @@ body.padding {
 }
 
 .product-btn {
+	position: relative;
 	font-size: 16px;
 	padding: 4px 10px 4px 10px;
 	border: 1px solid #E3E3E3;
 	border-radius: 10px;
+	overflow: hidden;
 	transition: all 0.5s;
 
 	&:hover {
-		color: #C5934F;
 		border: 1px solid #C5934F;
 	}
 }
@@ -2622,7 +2623,19 @@ body.padding {
 	color: #C5934F;
 	border: 1px solid #C5934F;
 }
-
+.inactive {
+	color: #8F8E8E;
+}
+.inactive:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 45%;
+	border-bottom: 0.3px solid #8F8E8E;
+	transform: rotate(-20deg);
+}
 .card-product-sec__button-block-btn {
 	margin-right: 5px;
 }
@@ -2751,6 +2764,7 @@ body.padding {
 .conclusion__button-bascet:hover .conclusion__button-bascet-icon {
 	fill: #000;
 }
+
 
 //========================================================================================================================================================
 
@@ -4942,9 +4956,43 @@ body.padding {
 }
 //========================================================================================================================================================
 .card-product-sec__intro {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.share-menu {
+	position: absolute;
+	top: -60px;
+	left: 170px;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+.share-menu__btn {
+	margin-right: 5px;
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.share-icon-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 40px;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 15px;
+	border: 1px solid #E3E3E3;
+	svg {
+		flex: 0 0 20px;
+		height: 20px;
+		width: 20px;
+	}
 }
 .card-product-sec__intro-article {
 	display: flex;
@@ -4971,7 +5019,7 @@ body.padding {
 	}
 }
 .card-product-sec__intro-article .article-intro {
-	margin-right: 22px;
+	margin-right: 32px;
 }
 .card-product-sec__intro-rating .rating {
 	font-size: 25.5px;
