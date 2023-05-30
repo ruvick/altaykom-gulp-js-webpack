@@ -4994,6 +4994,54 @@ body.padding {
 		width: 20px;
 	}
 }
+.share-icon-btn_vk {
+	svg {
+		fill: #07f;
+	}
+	&:hover{
+		background: #0077FF;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.share-icon-btn_tg {
+	svg {
+		fill: #0084c6;
+	}
+	&:hover{
+		background: #0084C6;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.share-icon-btn_whatsap {
+	svg {
+		fill: #00a356;
+	}
+	&:hover{
+		background: #00A356;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.share-icon-btn_tw {
+	svg {
+		fill: #00acee;
+	}
+	&:hover{
+		background: #00ACEE;
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
 .card-product-sec__intro-article {
 	display: flex;
 	align-items: center;
