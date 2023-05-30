@@ -1,13 +1,13 @@
 /*
 Документация по работе в шаблоне: 
-Документация слайдера: https://swiperjs.com/
+Документация слайдера: https://swiperjs.com/ 
 Сниппет(HTML): swiper
 */
 
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Autoplay, Thumbs } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -49,14 +49,14 @@ function initSliders() {
 		new Swiper('.sliderInfo', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
-			/*
+			modules: [Navigation, Autoplay],
+
 			effect: 'fade',
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
+
 			observer: true,
 			observeParents: true,
 			slidesPerView: 3,
@@ -388,7 +388,7 @@ function initSliders() {
 
 			}
 		});
-		new Swiper('.cardProductSmallSl', {
+		let cardProductSmallSl = new Swiper('.cardProductSmallSl', {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation],
@@ -409,6 +409,7 @@ function initSliders() {
 			//touchRatio: 0,
 			//simulateTouch: false,
 			loop: true,
+			slideToClickedSlide: true,
 			//preloadImages: false,
 			//lazy: true,
 			// Dotts
@@ -446,13 +447,11 @@ function initSliders() {
 
 			}
 		});
-		new Swiper('.cardProductSl', {
+
+		let cardProductSl = new Swiper('.cardProductSl', {
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
-			// thumbs: {
-			// 	swiper: cardProductSmallSl
-			// },
+			modules: [Navigation, Thumbs],
 
 			// effect: 'fade',
 			autoplay: {
@@ -481,6 +480,9 @@ function initSliders() {
 				nextEl: '.slider-info__button-next',
 				prevEl: '.slider-info__button-prev',
 			},
+			thumbs: {
+				swiper: cardProductSmallSl
+			},
 			/*
 			breakpoints: {
 				320: {
@@ -506,7 +508,6 @@ function initSliders() {
 
 			}
 		});
-
 		new Swiper('.boxOrdersL', {
 			// Подключаем модули слайдера
 			// для конкретного случая
