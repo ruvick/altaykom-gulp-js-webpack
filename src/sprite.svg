@@ -1297,4 +1297,19 @@
 			transform="translate(0 13.333) rotate(-90)" />
 	</symbol>
 
+	<!-- Прямоугольник zoom -->
+	<symbol id="zoom-icon" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_1049" data-name="Прямоугольник 1049" width="32" height="32" transform="translate(-4 -6)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_725" data-name="Сгруппировать 725" transform="translate(4 6)" clip-path="url(#clip-path)">
+    <path id="Контур_1723" data-name="Контур 1723" d="M1.714,7.714H0V2.362A2.364,2.364,0,0,1,2.361,0H9.427V1.714H2.361a.648.648,0,0,0-.647.648Z" transform="translate(-1)" fill="#fff"/>
+    <path id="Контур_1724" data-name="Контур 1724" d="M25.714,7.715H24V2.362a.65.65,0,0,0-.649-.648H16.285V0h7.066a2.365,2.365,0,0,1,2.363,2.362Z" transform="translate(-1)" fill="#fff"/>
+    <path id="Контур_1725" data-name="Контур 1725" d="M23.352,20H16.286V18.286h7.066A.65.65,0,0,0,24,17.637v-4.26h1.715v4.26A2.366,2.366,0,0,1,23.352,20" transform="translate(-1)" fill="#fff"/>
+    <path id="Контур_1726" data-name="Контур 1726" d="M9.427,20H2.361A2.365,2.365,0,0,1,0,17.637v-4.26H1.714v4.26a.649.649,0,0,0,.647.649H9.427Z" transform="translate(-1)" fill="#fff"/>
+  </g>
+	</symbol>
+
 </svg>

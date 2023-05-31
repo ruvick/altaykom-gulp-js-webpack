@@ -1922,6 +1922,11 @@ body.padding {
 	width: 22.2px;
 	height: 20.2px;
 	margin-left: 18px;
+	transition: transform 0.1s ease 0s;
+}
+
+.show-more__btn:hover .show-more__btn-icon {
+	transform: rotate(180deg);
 }
 
 .show-more__btn:hover .show-more__btn-icon {
@@ -5554,6 +5559,24 @@ body.padding {
 	height: 100%;
 	border-radius: 10px;
 	margin-bottom: 3px;
+}
+
+//========================================================================================================================================================
+
+.catalog-entity-table__icon-zoom {}
+
+.zoom-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+
+	svg {
+		flex: 0 0 32px;
+		height: 32px;
+	}
 }
 
 //========================================================================================================================================================

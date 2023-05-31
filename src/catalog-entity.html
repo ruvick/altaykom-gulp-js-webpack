@@ -1,525 +1,404 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Каталог юрлицо" })
+@@include('html/_head.htm',{ "title":"Каталог юрлицо" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header-legal-person.htm',{})  
-      <main class="page">
+<body>
+	<div class="wrapper">
+		@@include('html/_header-legal-person.htm',{})
+		<main class="page">
 
-				@@include('html/components/_multicorzine-legal-entity.htm',{})
+			@@include('html/components/_multicorzine-legal-entity.htm',{})
 
-        <div class="breadcrumbs">
-          <div class="_container">
-            <div class="breadcrumbs__inner">
-              <span>
-                <span>
-                  <a href="home.html"> главная </a> /
-                  <span class="breadcrumb_last" aria-current="page">
-                    ингредиенты
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<span>
+							<span>
+								<a href="home.html"> главная </a> /
+								<span class="breadcrumb_last" aria-current="page">
+									ингредиенты
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
 
-        <div class="section-title">
-          <div class="_container">
-            <div class="section-title__title title-main">ингредиенты</div>
-          </div>
-        </div>
+			<div class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">ингредиенты</div>
+				</div>
+			</div>
 
-        <section id="catalog-entity-sec" class="catalog-entity-sec section">
-          <div class="_container">
-            <div class="catalog-entity-sec__row">
-              <ul class="catalog-entity-sec__menu-lineBlock menu-lineBlock">
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link_icon-stocks"
-                    >Акции</a
-                  >
-                </li>
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link_icon-newprd"
-                    >Новинки</a
-                  >
-                </li>
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link-icon_ingredients"
-                    >Ингредиенты</a
-                  >
-                </li>
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link_icon-inventory"
-                    >Инвентарь</a
-                  >
-                </li>
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link_icon-equipment"
-                    >Оборудование</a
-                  >
-                </li>
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link_icon-products"
-                    >Наша продукция</a
-                  >
-                </li>
-                <li class="menu-lineBlock__item">
-                  <a
-                    href="#"
-                    class="menu-lineBlock__link menu-lineBlock__link_icon-services"
-                    >Услуги</a
-                  >
-                </li>
-              </ul>
-              <form
-                action="#"
-                method="get"
-                class="catalog-entity-sec__search search-form"
-              >
-                <input
-                  type="text"
-                  placeholder="Например декор"
-                  data-placeholder="Например декор"
-                  class="search-form__input"
-                />
-                <button
-                  type="reset"
-                  tabindex="1"
-                  class="search-form__btn-closed"
-                >
-                  <svg class="search-form__btn-closed-icon">
-                    <use xlink:href="#popup-close"></use>
-                  </svg>
-                </button>
-                <button
-                  type="submit"
-                  tabindex="2"
-                  id="searchsubmit"
-                  class="search-form__btn"
-                ></button>
-              </form>
-            </div>
+			<section id="catalog-entity-sec" class="catalog-entity-sec section">
+				<div class="_container">
+					<div class="catalog-entity-sec__row">
+						<ul class="catalog-entity-sec__menu-lineBlock menu-lineBlock">
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-stocks">Акции</a>
+							</li>
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-newprd">Новинки</a>
+							</li>
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link-icon_ingredients">Ингредиенты</a>
+							</li>
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-inventory">Инвентарь</a>
+							</li>
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-equipment">Оборудование</a>
+							</li>
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-products">Наша продукция</a>
+							</li>
+							<li class="menu-lineBlock__item">
+								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-services">Услуги</a>
+							</li>
+						</ul>
+						<form action="#" method="get" class="catalog-entity-sec__search search-form">
+							<input type="text" placeholder="Например декор" data-placeholder="Например декор"
+								class="search-form__input" />
+							<button type="reset" tabindex="1" class="search-form__btn-closed">
+								<svg class="search-form__btn-closed-icon">
+									<use xlink:href="#popup-close"></use>
+								</svg>
+							</button>
+							<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
+						</form>
+					</div>
 
-            <div class="catalog-entity-filters">
-              <div class="catalog-entity-filters__filters-block">
-                <div class="catalog-entity-filters__item filters-catalog-item">
-                  <div class="filters-catalog-item__title">Подкатегория</div>
-                  <div class="filters-catalog-item__menu"></div>
-                </div>
+					<div class="catalog-entity-filters">
+						<div class="catalog-entity-filters__filters-block">
+							<div class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Подкатегория</div>
+								<div class="filters-catalog-item__menu"></div>
+							</div>
 
-                <div class="catalog-entity-filters__item filters-catalog-item">
-                  <div class="filters-catalog-item__title">Производитель</div>
-                  <div class="filters-catalog-item__menu"></div>
-                </div>
+							<div class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Производитель</div>
+								<div class="filters-catalog-item__menu"></div>
+							</div>
 
-                <div class="catalog-entity-filters__item filters-catalog-item">
-                  <div class="filters-catalog-item__title">
-                    Страна производителя
-                  </div>
-                  <div class="filters-catalog-item__menu"></div>
-                </div>
+							<div class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">
+									Страна производителя
+								</div>
+								<div class="filters-catalog-item__menu"></div>
+							</div>
 
-                <div class="catalog-entity-filters__item filters-catalog-item">
-                  <div class="filters-catalog-item__title">Цена</div>
-                  <div class="filters-catalog-item__menu"></div>
-                </div>
+							<div class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Цена</div>
+								<div class="filters-catalog-item__menu"></div>
+							</div>
 
-                <div class="catalog-entity-filters__item filters-catalog-item">
-                  <div class="filters-catalog-item__title">Еденица заказа</div>
-                  <div class="filters-catalog-item__menu"></div>
-                </div>
+							<div class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Еденица заказа</div>
+								<div class="filters-catalog-item__menu"></div>
+							</div>
 
-                <div class="catalog-entity-filters__item filters-catalog-item">
-                  <div class="filters-catalog-item__title">Наличие</div>
-                  <div class="filters-catalog-item__menu"></div>
-                </div>
+							<div class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Наличие</div>
+								<div class="filters-catalog-item__menu"></div>
+							</div>
 
-                <button
-                  type="button"
-                  class="catalog-entity-filters__item filters-catalog-item"
-                >
-                  <div class="filters-catalog-item__title">Новинки</div>
-                </button>
+							<button type="button" class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Новинки</div>
+							</button>
 
-                <button
-                  type="button"
-                  class="catalog-entity-filters__item filters-catalog-item"
-                >
-                  <div class="filters-catalog-item__title">Акции</div>
-                </button>
-              </div>
+							<button type="button" class="catalog-entity-filters__item filters-catalog-item">
+								<div class="filters-catalog-item__title">Акции</div>
+							</button>
+						</div>
 
-              <div class="catalog-entity-filters__button-block">
-                <button
-                  type="submit"
-                  class="catalog-entity-filters__btn control-filter-btn btn"
-                >
-                  применить</button
-                ><button
-                  type="rest"
-                  class="catalog-entity-filters__btn control-filter-btn btn btn_reset"
-                >
-                  сбросить
-                  <svg class="control-filter-btn__icon">
-                    <use xlink:href="#urn-icon"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
+						<div class="catalog-entity-filters__button-block">
+							<button type="submit" class="catalog-entity-filters__btn control-filter-btn btn">
+								применить
+							</button>
+							<button type="rest" class="catalog-entity-filters__btn control-filter-btn btn btn_reset">
+								сбросить
+								<svg class="control-filter-btn__icon">
+									<use xlink:href="#urn-icon"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
 
-            <div class="catalog-entity-sec__inner">
-              <div class="catalog-entity-sec__row">
-                <div class="catalog-entity-sec__sorting-number sorting-number">
-                  <span class="sorting-number__value">2 790</span>
-                  товара
-                </div>
+					<div class="catalog-entity-sec__inner">
+						<div class="catalog-entity-sec__row">
+							<div class="catalog-entity-sec__sorting-number sorting-number">
+								<span class="sorting-number__value">2 790</span>
+								товара
+							</div>
 
-                <div class="catalog-entity-sec__swith swith-control">
-                  <button
-                    type="button"
-                    class="swith-control__btn swith-control__btn_row active"
-                  >
-                    <svg class="swith-control__btn-icon">
-                      <use xlink:href="#burger-row"></use>
-                    </svg>
-                  </button>
-                  <button
-                    type="button"
-                    class="swith-control__btn swith-control__btn_table"
-                  >
-                    <svg class="swith-control__btn-icon">
-                      <use xlink:href="#burger-table"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
+							<div class="catalog-entity-sec__swith swith-control">
+								<button type="button" class="swith-control__btn swith-control__btn_row active">
+									<svg class="swith-control__btn-icon">
+										<use xlink:href="#burger-row"></use>
+									</svg>
+								</button>
+								<button type="button" class="swith-control__btn swith-control__btn_table">
+									<svg class="swith-control__btn-icon">
+										<use xlink:href="#burger-table"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
 
-              <div class="catalog-entity-table">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Артикул</th>
-                      <th>Наименование</th>
-                      <th>Производитель</th>
-                      <th>Вес упаковки</th>
-                      <th>Мера измерения</th>
-                      <th>Цена с НДС</th>
-                      <th></th>
-                      <th>8</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div>5297765</div>
-                        <div class="sticker-product sticker-product_crem">
-                          прослеживаемый товар
-                        </div>
-                      </td>
-                      <td>Желейные шарики «Мармелатье»</td>
-                      <td>Фабрика Сладкого Декора</td>
-                      <td>5</td>
-                      <td>кг</td>
-                      <td>
-                        <div class="price-new price-new_red rub">600.00</div>
-                        <div class="price-old rub">700.00</div>
-                      </td>
-                      <td>
-                        <div
-                          class="card-product__interactive-adding interactive-adding-block"
-                        >
-                          <div class="interactive-adding-bascet">
-                            <div class="interactive-adding-bascet__value">
-                              <div
-                                class="interactive-adding-bascet__value-quantity"
-                              >
-                                1 шт.
-                              </div>
-                              <div
-                                class="interactive-adding-bascet__value-price rub"
-                              >
-                                670
-                              </div>
-                            </div>
-                            <button class="interactive-adding-bascet__button">
-                              <svg
-                                class="interactive-adding-bascet__button-icon"
-                              >
-                                <use xlink:href="#bascet-btn-product"></use>
-                              </svg>
-                            </button>
-                          </div>
+						<div class="catalog-entity-table">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Артикул</th>
+										<th>Наименование</th>
+										<th>Производитель</th>
+										<th>Вес упаковки</th>
+										<th>Мера измерения</th>
+										<th>Цена с НДС</th>
+										<th></th>
+										<th>
+											<button type="button" class="catalog-entity-table__icon-zoom zoom-icon">
+												<svg>
+													<use xlink:href="#zoom-icon"></use>
+												</svg>
+											</button>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<div>5297765</div>
+											<div class="sticker-product sticker-product_crem">
+												прослеживаемый товар
+											</div>
+										</td>
+										<td>Желейные шарики «Мармелатье»</td>
+										<td>Фабрика Сладкого Декора</td>
+										<td>5</td>
+										<td>кг</td>
+										<td>
+											<div class="price-new price-new_red rub">600.00</div>
+											<div class="price-old rub">700.00</div>
+										</td>
+										<td>
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
 
-                          <div class="interactive-adding-quantity">
-                            <div class="quantity">
-                              <div
-                                class="quantity__button quantity__button_minus _icon-minus"
-                              ></div>
-                              <div class="quantity__input">
-                                <input
-                                  class="quantity__input-quantity"
-                                  autocomplete="off"
-                                  type="text"
-                                  name="form[]"
-                                  value="1"
-                                />
-                                <input
-                                  class="quantity__input-price rub"
-                                  autocomplete="off"
-                                  type="text"
-                                  name="form[]"
-                                  value="670.00"
-                                />
-                              </div>
-                              <div
-                                class="quantity__button quantity__button_plus _icon-plus"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <button type="button" class="sticker-product-favorite">
-                          <svg class="sticker-product-favorite__icon">
-                            <use xlink:href="#favorites-product"></use>
-                          </svg>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>5503240</div>
-                        <!-- <div class="sticker-product sticker-product_crem">прослеживаемый товар</div> -->
-                      </td>
-                      <td>
-                        Какао порошок темно-красный 100% "Cacao Barry" Extra
-                        Brute алкализованный
-                      </td>
-                      <td>Фабрика Сладкого Декора</td>
-                      <td>5</td>
-                      <td>л</td>
-                      <td>
-                        <div class="price-new rub">1 375.00</div>
-                        <!-- <div class="price-old rub">
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>5503240</div>
+											<!-- <div class="sticker-product sticker-product_crem">прослеживаемый товар</div> -->
+										</td>
+										<td>
+											Какао порошок темно-красный 100% "Cacao Barry" Extra
+											Brute алкализованный
+										</td>
+										<td>Фабрика Сладкого Декора</td>
+										<td>5</td>
+										<td>л</td>
+										<td>
+											<div class="price-new rub">1 375.00</div>
+											<!-- <div class="price-old rub">
                         700.00
                       </div> -->
-                      </td>
-                      <td>
-                        <div
-                          class="card-product__interactive-adding interactive-adding-block"
-                        >
-                          <div class="interactive-adding-bascet">
-                            <div class="interactive-adding-bascet__value">
-                              <div
-                                class="interactive-adding-bascet__value-quantity"
-                              >
-                                1 шт.
-                              </div>
-                              <div
-                                class="interactive-adding-bascet__value-price rub"
-                              >
-                                670
-                              </div>
-                            </div>
-                            <button class="interactive-adding-bascet__button">
-                              <svg
-                                class="interactive-adding-bascet__button-icon"
-                              >
-                                <use xlink:href="#bascet-btn-product"></use>
-                              </svg>
-                            </button>
-                          </div>
+										</td>
+										<td>
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
 
-                          <div class="interactive-adding-quantity">
-                            <div class="quantity">
-                              <div
-                                class="quantity__button quantity__button_minus _icon-minus"
-                              ></div>
-                              <div class="quantity__input">
-                                <input
-                                  class="quantity__input-quantity"
-                                  autocomplete="off"
-                                  type="text"
-                                  name="form[]"
-                                  value="1"
-                                />
-                                <input
-                                  class="quantity__input-price rub"
-                                  autocomplete="off"
-                                  type="text"
-                                  name="form[]"
-                                  value="670.00"
-                                />
-                              </div>
-                              <div
-                                class="quantity__button quantity__button_plus _icon-plus"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <button type="button" class="sticker-product-favorite">
-                          <svg class="sticker-product-favorite__icon">
-                            <use xlink:href="#favorites-product"></use>
-                          </svg>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div>5297765</div>
-                        <div class="sticker-product sticker-product_crem">
-                          прослеживаемый товар
-                        </div>
-                      </td>
-                      <td>Желейные шарики «Мармелатье»</td>
-                      <td>Фабрика Сладкого Декора</td>
-                      <td>5</td>
-                      <td>кг</td>
-                      <td>
-                        <div class="price-new price-new_red rub">600.00</div>
-                        <div class="price-old rub">700.00</div>
-                      </td>
-                      <td>
-                        <div
-                          class="card-product__interactive-adding interactive-adding-block"
-                        >
-                          <div class="interactive-adding-bascet">
-                            <div class="interactive-adding-bascet__value">
-                              <div
-                                class="interactive-adding-bascet__value-quantity"
-                              >
-                                1 шт.
-                              </div>
-                              <div
-                                class="interactive-adding-bascet__value-price rub"
-                              >
-                                670
-                              </div>
-                            </div>
-                            <button class="interactive-adding-bascet__button">
-                              <svg
-                                class="interactive-adding-bascet__button-icon"
-                              >
-                                <use xlink:href="#bascet-btn-product"></use>
-                              </svg>
-                            </button>
-                          </div>
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div>5297765</div>
+											<div class="sticker-product sticker-product_crem">
+												прослеживаемый товар
+											</div>
+										</td>
+										<td>Желейные шарики «Мармелатье»</td>
+										<td>Фабрика Сладкого Декора</td>
+										<td>5</td>
+										<td>кг</td>
+										<td>
+											<div class="price-new price-new_red rub">600.00</div>
+											<div class="price-old rub">700.00</div>
+										</td>
+										<td>
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
 
-                          <div class="interactive-adding-quantity">
-                            <div class="quantity">
-                              <div
-                                class="quantity__button quantity__button_minus _icon-minus"
-                              ></div>
-                              <div class="quantity__input">
-                                <input
-                                  class="quantity__input-quantity"
-                                  autocomplete="off"
-                                  type="text"
-                                  name="form[]"
-                                  value="1"
-                                />
-                                <input
-                                  class="quantity__input-price rub"
-                                  autocomplete="off"
-                                  type="text"
-                                  name="form[]"
-                                  value="670.00"
-                                />
-                              </div>
-                              <div
-                                class="quantity__button quantity__button_plus _icon-plus"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <button type="button" class="sticker-product-favorite">
-                          <svg class="sticker-product-favorite__icon">
-                            <use xlink:href="#favorites-product"></use>
-                          </svg>
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td>
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 
-              <div class="page__show-more show-more">
-                <button class="show-more__btn btn">
-                  показать еще
-                  <svg class="show-more__btn-icon">
-                    <use xlink:href="#show-more"></use>
-                  </svg>
-                </button>
-              </div>
-              <div class="page__main-pagging main-pagging">
-                <div class="main-pagging__pagging pagging">
-                  <a href="" class="pagging__arrow">Назад</a>
-                  <ul class="pagging__list">
-                    <li>
-                      <a href="" class="pagging__item _active">1</a>
-                    </li>
-                    <li>
-                      <span class="pagging__item">...</span>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">3</a>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">4</a>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">5</a>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">6</a>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">7</a>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">8</a>
-                    </li>
-                    <li>
-                      <a href="" class="pagging__item">9</a>
-                    </li>
-                  </ul>
-                  <a href="" class="pagging__arrow">Дальше</a>
-                </div>
-                <div class="main-pagging__select">
-                  <select name="form[]" class="form">
-                    <option value="1" selected>Показывать по: 20</option>
-                    <option value="2">Показывать по: 30</option>
-                    <option value="3">Показывать по: 40</option>
-                    <option value="4">Показывать по: 50</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+						<div class="page__show-more show-more">
+							<button class="show-more__btn btn">
+								показать еще
+								<svg class="show-more__btn-icon">
+									<use xlink:href="#show-more"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="page__main-pagging main-pagging">
+							<div class="main-pagging__pagging pagging">
+								<a href="" class="pagging__arrow">Назад</a>
+								<ul class="pagging__list">
+									<li>
+										<a href="" class="pagging__item _active">1</a>
+									</li>
+									<li>
+										<span class="pagging__item">...</span>
+									</li>
+									<li>
+										<a href="" class="pagging__item">3</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">4</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">5</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">6</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">7</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">8</a>
+									</li>
+									<li>
+										<a href="" class="pagging__item">9</a>
+									</li>
+								</ul>
+								<a href="" class="pagging__arrow">Дальше</a>
+							</div>
+							<div class="main-pagging__select">
+								<select name="form[]" class="form">
+									<option value="1" selected>Показывать по: 20</option>
+									<option value="2">Показывать по: 30</option>
+									<option value="3">Показывать по: 40</option>
+									<option value="4">Показывать по: 50</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        @@include('html/components/_recently-watched.htm',{})
-        @@include('html/components/_sending.htm',{})
-      </main>
-      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
+			@@include('html/components/_recently-watched.htm',{})
+			@@include('html/components/_sending.htm',{})
+		</main>
+		@@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
 </html>
