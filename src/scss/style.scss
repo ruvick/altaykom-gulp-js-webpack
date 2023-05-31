@@ -2067,10 +2067,10 @@ body.padding {
 }
 
 .directory-management__filters-value {
-	min-width: 16px;
+	min-width: 18px;
 	display: flex;
 	justify-content: center;
-	height: 19px;
+	height: 18px;
 	font-size: 12px;
 	align-items: center;
 	color: #fff;
@@ -5612,6 +5612,19 @@ body.padding {
 	&:hover {
 		color: #fff;
 		background: #221F20;
+	}
+}
+
+.page__sidebar-navigation-col .spollers__title {
+
+	&::before {
+		content: '';
+		float: left;
+		width: 6px;
+		height: 12px;
+		background: #C5934F;
+		border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+		margin-right: 8px;
 	}
 }
 
