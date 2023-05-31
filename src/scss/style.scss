@@ -1802,12 +1802,12 @@ body.padding {
 }
 
 .recently-watched-slider__slide .card-product {
-	padding: 10px 10px 20px 10px;
+	padding: 5px;
 }
 
 .recently-watched-slider__slide .card-product__img {
-	flex: 0 0 100%;
-	max-height: 175px;
+	height: 172px;
+	// padding-bottom: 89.8%;
 }
 
 .recently-watched-slider__slide .card-product__descp-title {
@@ -1819,6 +1819,14 @@ body.padding {
 	*:last-child {
 		margin-bottom: 0;
 	}
+}
+
+.recently-watched-slider__slide .card-product__descp {
+	padding: 0 10px;
+}
+
+.recently-watched-slider__slide .card-product__interactive {
+	padding: 0 10px 20px 10px;
 }
 
 //========================================================================================================================================================
