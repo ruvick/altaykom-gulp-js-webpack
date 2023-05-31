@@ -21,9 +21,10 @@
 		background: #fff;
 		border: 1px solid #e3e3e3;
 		cursor: pointer;
-		/* display: flex; */
-		/* align-items: center; */
 
+		&:hover {
+			border: 1px solid #221F20;
+		}
 	}
 
 
@@ -36,6 +37,18 @@
 		justify-content: space-between;
 		flex-direction: row-reverse;
 
+		&::after {
+			content: '';
+			float: left;
+			width: 17px;
+			flex: 0 0 17px;
+			height: 17px;
+			margin-right: 8px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTciIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNyAxNyI+DQogIDxkZWZzPg0KICAgIDxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj4NCiAgICAgIDxyZWN0IGlkPSLQn9GA0Y/QvNC+0YPQs9C+0LvRjNC90LjQul8xMDY5IiBkYXRhLW5hbWU9ItCf0YDRj9C80L7Rg9Cz0L7Qu9GM0L3QuNC6IDEwNjkiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjMuNzc4IDEwKSIgZmlsbD0iIzIyMWYyMCIgc3Ryb2tlPSIjNzA3MDcwIiBzdHJva2Utd2lkdGg9IjEiLz4NCiAgICA8L2NsaXBQYXRoPg0KICA8L2RlZnM+DQogIDxnIGlkPSJJY29uX21hdGVyaWFsLXNvcnQiIGRhdGEtbmFtZT0iSWNvbiBtYXRlcmlhbC1zb3J0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMuNzc4IC0xMCkiIGNsaXAtcGF0aD0idXJsKCNjbGlwLXBhdGgpIj4NCiAgICA8cGF0aCBpZD0iSWNvbl9tYXRlcmlhbC1zb3J0LTIiIGRhdGEtbmFtZT0iSWNvbiBtYXRlcmlhbC1zb3J0IiBkPSJNNC41LDIwLjMzM2g1LjY2N1YxOC40NDRINC41Wk00LjUsOXYxLjg4OWgxN1Y5Wm0wLDYuNjExSDE1LjgzM1YxMy43MjJINC41WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMjc4IDQpIiBmaWxsPSIjMjIxZjIwIi8+DQogIDwvZz4NCjwvc3ZnPg0K');
+		}
 
 		&:before {
 			content: "";
@@ -73,15 +86,14 @@
 	&__options {
 		color: #000;
 		position: absolute;
-		top: 29px;
-		border-radius: 0 0 4px 4px;
-		min-width: 100%;
-		left: 0;
+		top: 56px;
+		z-index: 15;
+		border-radius: 15px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		min-width: 240px;
+		left: -48px;
 		background-color: #fff;
-		border-top: 0;
-		border: 1px solid #d9d9d9;
-		border-top: 0;
-		padding: 10px 0px 5px 0px;
+		padding: 20px;
 	}
 
 	// .select__scroll
@@ -104,6 +116,8 @@
 		width: 100%;
 		display: block;
 		text-align: left;
+		font-size: 14px;
+		line-height: 20px/14px*100%;
 		cursor: pointer;
 		padding: 5px 15px;
 		color: inherit;
@@ -114,7 +128,8 @@
 
 		@media (any-hover: hover) {
 			&:hover {
-				background: #d9d9d9;
+				color: #C5934F;
+				// background: #d9d9d9;
 			}
 		}
 	}
@@ -131,7 +146,7 @@
 
 	// Состояния селекта
 	&._select-open {
-		z-index: 5;
+		z-index: 15;
 	}
 
 	&._select-disabled {}
