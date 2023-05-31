@@ -2055,6 +2055,7 @@ body.padding {
 
 .directory-management__filters-btnBlock {
 	display: flex;
+	align-items: center;
 }
 
 .directory-management__filters-btn {
@@ -2063,6 +2064,21 @@ body.padding {
 	font-size: 20px;
 	// line-height: 22/20*100%;
 	color: #161615;
+}
+
+.directory-management__filters-value {
+	min-width: 16px;
+	display: flex;
+	justify-content: center;
+	height: 19px;
+	font-size: 12px;
+	align-items: center;
+	color: #fff;
+	padding: 5px;
+	background: #C5934F;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-left: 11px;
 }
 
 .directory-management-sorting {
