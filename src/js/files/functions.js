@@ -473,6 +473,44 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
+
+// Открыть/закрыть catalog в header 
+const catBtn = document.querySelector('.button-catalog');
+const iconMenu = document.querySelector('.icon-menu');
+const menuCatalog = document.querySelector('.menu-catalog');
+
+if (catBtn) {
+	catBtn.addEventListener('click', function () {
+		iconMenu.classList.toggle('_active');
+		menuCatalog.classList.toggle('_active');
+		bodyLock();
+		// lineBlockBlk.classList.toggle('_active');
+		// html.classList.toggle('lock');
+		// body.style.paddingRight = '7px';
+	});
+}
+
+// Всплывающие меню при наведении ===================================================================================================================
+const item = document.querySelectorAll('.menu-lineBlock__item');
+const lineBlockBlk = document.querySelector('.lineBlock-blk');
+
+function menuHover() {
+	for (let i = 0; i < item.length; i++) {
+		item[i].addEventListener('mouseenter', (e) => {
+			let child = item[i].getElementsByClassName('sub-list')[0];
+			child.classList.add('_active');
+			lineBlockBlk.classList.add('_active');
+			bodyLock();
+		})
+		item[i].addEventListener('mouseleave', () => {
+			let child = item[i].getElementsByClassName('sub-list')[0];
+			child.classList.remove('_active');
+			lineBlockBlk.classList.remove('_active');
+			bodyUnlock();
+		})
+	}
+}
+menuHover();
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне:

@@ -9,33 +9,17 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 window.onload = function () {
 
-	// const body = document.querySelector("body");
-	// const html = document.querySelector('html');
 
-	// Открыть/закрыть catalog в header 
-	const catBtn = document.querySelector('.button-catalog');
-	const iconMenu = document.querySelector('.icon-menu');
-	const menuCatalog = document.querySelector('.menu-catalog');
 
-	if (catBtn) {
-		catBtn.addEventListener('click', function () {
-			iconMenu.classList.toggle('_active');
-			menuCatalog.classList.toggle('_active');
-			// lineBlockBlk.classList.toggle('_active');
-			// html.classList.toggle('lock');
-			// body.style.paddingRight = '7px';
-		});
-	}
-
-	window.addEventListener('click', e => { // при клике в любом месте окна браузера
-		const target = e.target // находим элемент, на котором был клик
-		if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-			iconMenu.classList.remove('_active'); // то закрываем окно навигации, удаляя активный класс
-			menuCatalog.classList.remove('_active');
-			// html.classList.remove('lock');
-			// headsearch.classList.remove('_active')
-		}
-	})
+	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	// 	const target = e.target // находим элемент, на котором был клик
+	// 	if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+	// 		iconMenu.classList.remove('_active'); // то закрываем окно навигации, удаляя активный класс
+	// 		menuCatalog.classList.remove('_active');
+	// 		// html.classList.remove('lock');
+	// 		// headsearch.classList.remove('_active')
+	// 	}
+	// })
 
 
 	// Срабатывание поиска
@@ -97,28 +81,6 @@ window.onload = function () {
 	// }
 
 
-	// Всплывающие меню при наведении
-	const item = document.querySelectorAll('.menu-lineBlock__item');
-	const lineBlockBlk = document.querySelector('.lineBlock-blk');
-
-	for (let i = 0; i < item.length; i++) {
-		item[i].addEventListener('mouseenter', (e) => {
-			let child = item[i].getElementsByClassName('sub-list')[0];
-			child.classList.add('_active');
-			lineBlockBlk.classList.add('_active');
-			// html.classList.add('lock');
-			// body.style.paddingRight = '7px';
-			// document.documentElement.classList.add('lock');
-		})
-		item[i].addEventListener('mouseleave', () => {
-			let child = item[i].getElementsByClassName('sub-list')[0];
-			child.classList.remove('_active');
-			lineBlockBlk.classList.remove('_active');
-			// html.classList.remove('lock');
-			// body.style.paddingRight = '0px';
-			// document.documentElement.classList.remove('lock');
-		})
-	}
 
 
 	// Переключение корзины в карточке товаров
