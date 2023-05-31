@@ -204,6 +204,15 @@
 	border: 1px solid #fff;
 }
 
+.filterBtn_more {
+	background: #F3F3F4;
+
+	&:hover {
+		color: #fff;
+		background: #221F20;
+	}
+}
+
 // Большие кнопки (Показать еще, Показать все, Написать нам)
 .bigButton {
 	display: inline-flex;

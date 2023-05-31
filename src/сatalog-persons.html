@@ -3,65 +3,68 @@
 @@include('html/_head.htm',{ "title":"Каталог физлицо" })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
-      <div class="breadcrumbs">
-        <div class="_container">
-          <div class="breadcrumbs__inner">
-            <span>
-              <span>
-                <a href="home.html"> главная </a> /
-                <span class="breadcrumb_last" aria-current="page">
-                  ингредиенты
-                </span>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<span>
+							<span>
+								<a href="home.html"> главная </a> /
+								<span class="breadcrumb_last" aria-current="page">
+									ингредиенты
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__title title-main">ингредиенты</div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">ингредиенты</div>
+				</div>
+			</section>
 
-      <section id="catalog-filterBlock" class="catalog-filterBlock section">
-        <div class="_container">
-          <div class="catalog-filterBlock__item filterBlock d-flex">
-            <div class="filterBlock__column">
-              <a href="#" class="filterBtn">Ароматизаторы пищевые и ванилин</a>
-            </div>
-            <div class="filterBlock__column">
-              <a href="#" class="filterBtn">Десертные пасты, топпинги</a>
-            </div>
-            <div class="filterBlock__column">
-              <a href="#" class="filterBtn">Дрожжи хлебопекарные</a>
-            </div>
-            <div class="filterBlock__column">
-              <a href="#" class="filterBtn">Какао-порошок, какао-масло</a>
-            </div>
-            <div class="filterBlock__column">
-              <a href="#" class="filterBtn">Красители пищевые</a>
-            </div>
-            <div class="filterBlock__column">
-              <a href="#" class="filterBtn">Кремы, гели, помадки</a>
-            </div>
-          </div>
-        </div>
-      </section>
+			<section id="catalog-filterBlock" class="catalog-filterBlock section">
+				<div class="_container">
+					<div class="catalog-filterBlock__item filterBlock d-flex">
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn">Ароматизаторы пищевые и ванилин</button>
+						</div>
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn">Десертные пасты, топпинги</button>
+						</div>
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn">Дрожжи хлебопекарные</button>
+						</div>
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn">Какао-порошок, какао-масло</button>
+						</div>
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn">Красители пищевые</button>
+						</div>
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn">Кремы, гели, помадки</button>
+						</div>
+						<div class="filterBlock__column">
+							<button type="button" class="filterBtn filterBtn_more">Еще</button>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      @@include('html/components/_сatalog-persons.htm',{})
+			@@include('html/components/_сatalog-persons.htm',{})
 
-      @@include('html/components/_recently-watched.htm',{})
-      @@include('html/components/_sending.htm',{})
-    </main>
-    @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+			@@include('html/components/_recently-watched.htm',{})
+			@@include('html/components/_sending.htm',{})
+		</main>
+		@@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
 </body>
 
 </html>
