@@ -5495,6 +5495,7 @@ body.padding {
 .main {
 
 	&__applied-filters {
+		height: 32px;
 		margin-bottom: 40px;
 	}
 }
@@ -5502,6 +5503,7 @@ body.padding {
 .applied-filters {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 
 	&__item {
 		display: flex;
@@ -5510,6 +5512,7 @@ body.padding {
 		margin-right: 5px;
 		border-radius: 10px;
 		background: #221F20;
+		margin-bottom: 3px;
 
 		&:last-child {
 			margin-right: 0;
@@ -5547,8 +5550,10 @@ body.padding {
 .applied-filters__btn-reset {
 	font-size: 14px;
 	line-height: 22px/14px*100%;
-	padding: 5px 10px;
+	// padding: 3.5px 10px;
+	height: 100%;
 	border-radius: 10px;
+	margin-bottom: 3px;
 }
 
 //========================================================================================================================================================
