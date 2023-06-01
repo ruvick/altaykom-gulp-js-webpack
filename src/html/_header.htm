@@ -69,14 +69,21 @@
 			</div>
 
 			<form action="#" method="get" class="header__search search-form">
-				<input type="text" placeholder="Поиск по каталогу" data-placeholder="Поиск по каталогу"
-					class="search-form__input" />
-				<button type="reset" tabindex="1" class="search-form__btn-closed">
-					<svg class="search-form__btn-closed-icon">
-						<use xlink:href="#popup-close"></use>
-					</svg>
-				</button>
-				<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
+				<div class="search-form__inner">
+					<input type="text" placeholder="Поиск по каталогу" data-placeholder="Поиск по каталогу"
+						class="search-form__input" />
+					<button type="reset" tabindex="1" class="search-form__btn-closed">
+						<svg class="search-form__btn-closed-icon">
+							<use xlink:href="#popup-close"></use>
+						</svg>
+					</button>
+					<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
+				</div>
+				<div class="menu-search">
+					<div class="menu-search__inner">
+						@@include('/components/_similar-products-block.htm',{})
+					</div>
+				</div>
 			</form>
 
 			<div class="header__interface interface">
@@ -217,9 +224,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="menu-search">
+	<!-- <div class="menu-search">
 		<div class="menu-search__inner">
-			@@include('/components/_similar-products-block.htm',{})
+			@@include('/components/_similar-products-block.htm',{}) 
 		</div>
-	</div>
+	</div> -->
 </header>

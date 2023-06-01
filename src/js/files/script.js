@@ -22,48 +22,7 @@ window.onload = function () {
 	// })
 
 
-	// Срабатывание поиска
-	const search = document.querySelector(".search-form");
-	const searchInput = document.querySelector(".search-form__input");
-	const searchMenu = document.querySelector(".menu-search");
-	const searchBtnClosed = document.querySelector(".search-form__btn-closed");
-	const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
-	interFacelinkText.forEach(linkText => {
-		searchInput.addEventListener('click', function () {
-			search.classList.add("_active");
-			searchMenu.classList.add("_active");
-			searchBtnClosed.classList.add("_active");
-			linkText.classList.add("_none");
-			lineBlockBlk.classList.add('_active');
-			// html.classList.add('lock');
-			// body.style.paddingRight = '7px';
-			// document.documentElement.classList.add('lock');
-		})
-		searchBtnClosed.addEventListener('click', function () {
-			search.classList.remove("_active");
-			searchMenu.classList.remove("_active");
-			searchBtnClosed.classList.remove("_active");
-			linkText.classList.remove("_none");
-			lineBlockBlk.classList.remove('_active');
-			// html.classList.remove('lock');
-			// body.style.paddingRight = '0px';
-			// document.documentElement.classList.remove('lock');
-		})
-		window.addEventListener('click', e => { // при клике в любом месте окна браузера
-			const target = e.target // находим элемент, на котором был клик
-			if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-				search.classList.remove("_active");
-				searchMenu.classList.remove("_active");
-				searchBtnClosed.classList.remove('_active');
-				linkText.classList.remove("_none");
-				lineBlockBlk.classList.remove('_active');
-				// document.documentElement.classList.remove('lock');
-				// html.classList.remove('lock');
-				// body.style.paddingRight = '0px';
-			}
-		})
-	})
 
 
 	// Меню корзины при наведении в шапке
