@@ -56,15 +56,22 @@
 								<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-services">Услуги</a>
 							</li>
 						</ul>
-						<form action="#" method="get" class="catalog-entity-sec__search search-form">
-							<input type="text" placeholder="Например декор" data-placeholder="Например декор"
-								class="search-form__input" />
-							<button type="reset" tabindex="1" class="search-form__btn-closed">
-								<svg class="search-form__btn-closed-icon">
-									<use xlink:href="#popup-close"></use>
-								</svg>
-							</button>
-							<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
+						<form action="#" method="get" class="header__search search-form">
+							<div class="search-form__inner">
+								<input type="text" placeholder="Например декор" data-placeholder="Например декор"
+									class="search-form__input" />
+								<button type="reset" tabindex="1" class="search-form__btn-closed">
+									<svg class="search-form__btn-closed-icon">
+										<use xlink:href="#popup-close"></use>
+									</svg>
+								</button>
+								<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
+							</div>
+							<div class="menu-search">
+								<div class="menu-search__inner">
+									@@include('html/components/_similar-products-block.htm',{})
+								</div>
+							</div>
 						</form>
 					</div>
 

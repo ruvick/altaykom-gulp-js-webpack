@@ -23,7 +23,7 @@
 }
 
 .lock .header {
-	padding-right: 7px;
+	padding-right: 6px;
 }
 
 .header-user {
@@ -359,7 +359,7 @@
 
 .menu-search {
 	display: none;
-	display: flex;
+	// display: flex;
 	visibility: hidden;
 	opacity: 0;
 	justify-content: center;
@@ -377,7 +377,7 @@
 }
 
 .menu-search._active {
-	// display: flex;
+	display: flex;
 	visibility: visible;
 	opacity: 1;
 }
@@ -385,10 +385,10 @@
 .menu-search__inner {
 	max-width: 935px;
 	width: 100%;
-	height: 735px;
+	// height: 735px;
+	height: 65vh;
 	overflow: auto;
 	padding: 15px 0;
-	// margin: 0px auto;
 }
 
 .menu-search__inner::-webkit-scrollbar-thumb,
@@ -779,7 +779,7 @@
 	border-bottom: none;
 }
 
-.header-legal-person .header__interface {
+.header-legal-person__interface {
 	flex: 0 1 100%;
 }
 
