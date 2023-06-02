@@ -376,6 +376,10 @@
 	background-size: 110%;
 }
 
+._stocks-sub-menu .sales-leaders-banner:hover {
+	background-size: contain;
+}
+
 .menu-catalog__img_01 {
 	background-image: url('../img/menu-catalog-01.png');
 }
@@ -386,8 +390,13 @@
 
 .menu-catalog__img-title {
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 30px/20px*100%;
 	color: #fff;
+}
+
+.menu-catalog__image-block .sales-leaders-banner__sticker-title {
+	font-size: 20px;
+	line-height: 30px/20px*100%;
 }
 
 .menu-search {
