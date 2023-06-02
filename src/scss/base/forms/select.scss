@@ -164,3 +164,7 @@
 ._select-tag {
 	cursor: pointer;
 }
+
+.select__option._select-selected {
+	display: none;
+}

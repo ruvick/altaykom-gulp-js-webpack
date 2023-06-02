@@ -3269,14 +3269,10 @@ body.padding {
 }
 
 .filters-catalog-item {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: 700;
-	color: inherit;
-	text-align: center;
 	padding: 6px 11.5px;
 	border-radius: 15px;
 	background: #fff;
@@ -3297,9 +3293,53 @@ body.padding {
 	}
 }
 
-.filters-catalog-item__title {}
+.filters-catalog-item__title {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: inherit;
+	text-align: center;
+}
 
-.filters-catalog-item__menu {}
+.filters-catalog-item__menu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	z-index: 5;
+}
+
+.menu-filters-catalog {
+	min-width: 280px;
+	width: 100%;
+	padding: 18px 20px 22px 20px;
+	border-radius: 15px;
+	background: #fff;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.menu-filters-catalog__form {
+	display: flex;
+	justify-content: space-between;
+
+	.checkbox {
+		display: block;
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.menu-filters-catalog__column {
+	flex: 0 1 50%;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
 
 .catalog-entity-filters__btn {
 	margin-right: 10px;
@@ -5592,6 +5632,10 @@ body.padding {
 .salesLeaders {
 	padding: 10px;
 }
+
+//========================================================================================================================================================
+
+
 
 //========================================================================================================================================================
 
