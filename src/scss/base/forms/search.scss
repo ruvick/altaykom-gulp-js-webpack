@@ -97,4 +97,10 @@
 		opacity: 1;
 		visibility: visible;
 	}
+
+	&:hover {
+		svg {
+			stroke: #221F20;
+		}
+	}
 }

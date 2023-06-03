@@ -367,10 +367,14 @@ body.padding {
 }
 
 .servicesBlock-bg__card-icon-text {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	font-size: 22px;
 	margin-bottom: 20px;
+
+	&:hover {
+		color: #F3602B;
+	}
 
 	&::before {
 		content: '';
@@ -640,6 +644,26 @@ body.padding {
 	border-radius: 35px;
 	background: #C5934F;
 	overflow: hidden;
+
+	.input:hover {
+		border: 1px solid #E3E3E3;
+	}
+}
+
+.sending-banner__input:hover::-webkit-input-placeholder {
+	color: #161615;
+}
+
+.sending-banner__input:hover::-moz-placeholder {
+	color: #161615;
+}
+
+.sending-banner__input:hover:-moz-placeholder {
+	color: #161615;
+}
+
+.sending-banner__input:hover:-ms-input-placeholder {
+	color: #161615;
 }
 
 .sending-banner__img {
@@ -658,6 +682,7 @@ body.padding {
 }
 
 .sending-banner__title {
+	font-family: "Lack", sans-serif;
 	font-size: 44px;
 	line-height: 38px;
 }

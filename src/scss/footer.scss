@@ -1,164 +1,169 @@
 //====================================================================================================
 .footer {
-  padding: 60px 0 28px 0;
-  color: #fff;
-  border-radius: 100px 100px 0px 0px;
-  background: #221f20;
+	padding: 60px 0 28px 0;
+	color: #fff;
+	border-radius: 100px 100px 0px 0px;
+	background: #221f20;
 
-  a {
-    color: #fff;
-  }
+	a {
+		color: #fff;
+	}
 }
 
 .footer-user {
-  position: relative;
-  padding: 30px 0;
+	position: relative;
+	padding: 30px 0;
 }
 
 .footer-user__img {
-  position: absolute;
-  bottom: 0;
-  left: 2.5%;
-  z-index: 1;
-  width: 89.5px;
-  height: 77px;
-  overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 2.5%;
+	z-index: 1;
+	width: 89.5px;
+	height: 77px;
+	overflow: hidden;
 }
 
 .footer__container {}
 
 .footer__top {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
 }
 
 .footer__menu {
-  display: flex;
-  flex: 1 1 auto;
-  margin: 0 -15px;
+	display: flex;
+	flex: 1 1 auto;
+	margin: 0 -15px;
 }
 
 .footer__column {
-  flex: 0 1 33.333%;
-  padding: 0 15px;
+	flex: 0 1 33.333%;
+	padding: 0 15px;
 }
 
 .footer__menu-name {
-  font-size: 30px;
-  margin-bottom: 30px;
+	font-family: "Lack", sans-serif;
+	font-size: 30px;
+	margin-bottom: 30px;
 }
 
 .footer__list {}
 
 .footer__list-item {
-  opacity: 0.7;
-  margin-bottom: 10px;
-  transition: $mainTransition;
+	opacity: 0.7;
+	margin-bottom: 10px;
+	transition: $mainTransition;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+	&:last-child {
+		margin-bottom: 0;
+	}
 
-  &:hover {
-    opacity: 1;
-  }
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .footer__list-item-link {}
 
 .footer__contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
 }
 
 .footer__phone {
-  display: block;
-  font-size: 30px;
-  margin-bottom: 15px;
-  transition: $mainTransition;
+	display: block;
+	font-size: 30px;
+	margin-bottom: 15px;
+	transition: $mainTransition;
 
-  &:hover {
-    color: #C5934F;
-  }
+	&:hover {
+		color: #C5934F;
+	}
 }
 
 .footer__time-work {
-  font-size: 16px;
-  opacity: 0.8;
-  margin-top: 20px;
-  margin-bottom: 29px;
+	font-size: 16px;
+	opacity: 0.8;
+	margin-top: 20px;
+	margin-bottom: 29px;
 }
 
 .footer__email {
-  font-size: 22px;
-  display: inline-block;
-  color: #C5934F !important;
-  text-decoration: underline !important;
-  transition: $mainTransition;
+	font-size: 22px;
+	display: inline-block;
+	color: #C5934F !important;
+	text-decoration: underline !important;
+	transition: $mainTransition;
 
-  &:hover {
-    text-decoration: none !important;
-  }
+	&:hover {
+		text-decoration: none !important;
+	}
 }
 
 .footer__btn {
-  margin-top: 40px;
-  border: 1px solid #fff;
+	margin-top: 40px;
+	border: 1px solid #fff;
 }
 
 .footer__bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 28px;
-  opacity: 0.8;
-  border-top: 1px solid #707070;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 28px;
+	opacity: 0.8;
+	border-top: 1px solid #707070;
 }
 
 .footer__bottom-column {}
 
 .footer__policy {
-  font-size: 14px;
-  opacity: 0.8;
-  color: #fff;
-  transition: $mainTransition;
+	font-size: 14px;
+	opacity: 0.8;
+	color: #fff;
+	transition: $mainTransition;
 
-  &:hover {
-    opacity: 1;
-  }
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .footer__copyright {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 .footer__development {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
+	display: flex;
+	align-items: center;
+	font-size: 14px;
 }
+
 .footer__development-text {
 	margin-right: 18px;
 }
+
 .footer__development-link {
 	display: flex;
 	align-items: center;
+
 	svg {
 		width: 93px;
 		height: 20px;
 		flex: 0 0 93px;
 		fill: #fff;
 		transition: fill 0.3s ease 0s;
-		&:hover{
+
+		&:hover {
 			fill: #C5934F;
 		}
 	}
 }
 
 .footer-user .footer__copyright {
-  text-align: center;
+	text-align: center;
 }
 
 //====================================================================================================
