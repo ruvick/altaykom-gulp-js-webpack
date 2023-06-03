@@ -1,0 +1,10 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_984" data-name="Прямоугольник 984" width="17" height="17" fill="#46a5fc"/>
+    </clipPath>
+  </defs>
+  <g id="Fire" clip-path="url(#clip-path)">
+    <path id="Контур_1674" data-name="Контур 1674" d="M13.835,8.344,5.943.5A1.136,1.136,0,0,0,5.191.175L1.182,0A1.129,1.129,0,0,0,0,1.15L.092,5.235a1.119,1.119,0,0,0,.332.771l7.882,7.831a1.138,1.138,0,0,0,1.6,0l3.927-3.9a1.12,1.12,0,0,0,0-1.591" transform="translate(1.417 1.417)" fill="#46a5fc"/>
+  </g>
+</svg>
