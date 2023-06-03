@@ -1456,10 +1456,11 @@ body.padding {
 	border-radius: 15px;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	background-image: url('../img/nophoto.jpg');
 	overflow: hidden;
 	margin-bottom: 10px;
+	transition: background-size 1s ease 0s;
 
 	img {
 		transition: 1s;
@@ -1468,6 +1469,10 @@ body.padding {
 
 .card-product:hover .card-product__img img {
 	transform: scale(1.1);
+}
+
+.card-product:hover .card-product__img {
+	background-size: 110%;
 }
 
 .card-product-slider__sticker-block,
@@ -5709,6 +5714,14 @@ body.padding {
 .recentlyWatched,
 .salesLeaders {
 	padding: 10px;
+}
+
+.sliderInfo {
+	border-radius: 15px;
+}
+
+.slider-info .swiper-button__inner {
+	align-items: center;
 }
 
 //========================================================================================================================================================
