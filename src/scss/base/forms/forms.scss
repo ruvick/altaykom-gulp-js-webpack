@@ -86,14 +86,14 @@
 	background-color: #221F20;
 
 	svg {
-		// flex: 0 0 30px;
+		flex: 0 0 30px;
 		height: 12px;
 		transition: height 0.3s ease 0s;
 	}
 
-	&:hover {
-		svg {
-			height: 16px;
-		}
-	}
+	// &:hover {
+	// 	svg {
+	// 		height: 16px;
+	// 	}
+	// }
 }
