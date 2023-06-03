@@ -351,16 +351,19 @@ body.padding {
 	color: #fff;
 	min-height: 250px;
 	background: #221F20;
-	border-radius: 25px;
+	border-radius: 30px;
 	overflow: hidden;
-	background-position: right bottom;
-	background-size: 50%;
+	background-position: 105% 100%;
+	background-size: 52.8%;
+	// background-position: right bottom;
+	// background-size: 50%;
 	background-repeat: no-repeat;
 	transition: all 0.5s;
 }
 
 .servicesBlock-bg__card:hover {
-	background-size: 52%;
+	background-size: 54%;
+	// background-position: 100% 112%;
 }
 
 .servicesBlock-bg__card-icon-text {
@@ -643,6 +646,7 @@ body.padding {
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
 }
 
 .sending-banner__column {
@@ -695,6 +699,7 @@ body.padding {
 .main-content {}
 
 .main-content__inner {
+	position: relative;
 	justify-content: space-between;
 	align-items: start;
 }
@@ -724,6 +729,10 @@ body.padding {
 .main-content__column_right .sending-banner {
 	flex-wrap: wrap;
 	padding: 36px 26px;
+
+	position: fixed;
+	width: 340px;
+	height: 354px;
 }
 
 .main-content__column_right .sending-banner__img {

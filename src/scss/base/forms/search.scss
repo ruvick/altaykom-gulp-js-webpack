@@ -4,6 +4,7 @@
 	border-radius: 15px;
 	transition: right 0.3s ease 0s;
 	cursor: pointer;
+	border: 1px solid #E3E3E3;
 
 	&:hover {
 		border: 1px solid #221F20;
@@ -20,7 +21,7 @@
 	align-items: center;
 	height: 100%;
 	overflow: hidden;
-	border: 1px solid #E3E3E3;
+	// border: 1px solid #E3E3E3;
 	border-radius: 15px;
 }
 

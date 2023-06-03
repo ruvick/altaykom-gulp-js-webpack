@@ -5,80 +5,110 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
-      <div class="breadcrumbs">
-        <div class="_container">
-          <div class="breadcrumbs__inner">
-            <span>
-              <span>
-                <a href="home.html"> главная </a> /
-                <span class="breadcrumb_last" aria-current="page"> о компании </span>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<span>
+							<span>
+								<a href="home.html"> главная </a> /
+								<span class="breadcrumb_last" aria-current="page"> о компании </span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__title title-main">
-            о компании
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">
+						о компании
+					</div>
+				</div>
+			</section>
 
-      <div class="main-content section">
-        <div class="_container">
-          <div class="main-content__inner d-flex">
-            <div class="main-content__column main-content__column_left">
-              <div class="main-content__text">
-                Компания «Алтайком», входящая в состав «COMPANY GROUP», – <span>ведущий поставщик сырья</span> для предприятий кондитерской и хлебопекарной 
-                промышленности на рынке Алтайского края
-              </div>
-              <div class="main-content__text">
-                Мы работаем с крупнейшими российскими и зарубежными поставщиками. Долгосрочные отношения с нашими
-                производителями позволили минимизировать затраты и издержки. Благодаря этому мы сохраняем оптимальные
-                цены
-                на все категории товаров. Весь наш товар <span>сертифицирован</span>. Поэтому его использование в производстве обеспечивает
-                получение
-                продукции высокого качества.
-              </div>
-              <div class="main-content__text">
-                Наша компания работает как с крупными, так и небольшими кондитерскими и хлебопекарными предприятиями.
-                Большинство сотрудников «Алтайком» имеет специальное <span>образование</span> . Прекрасно понимая особенности пищевого
-                производства, мы работаем для Вас и Вашего успеха.
-              </div>
-              <div class="main-content__text">
-                Частью нашего сервиса является предоставление информационных и технологических <span>услуг</span>. Это регулярное
-                проведение
-                семинаров и мастер-классов, а также выезд технолога на предприятия. По желанию клиента изготавливаем
-                разнообразный инвентарь.
-              </div>
-              <div class="main-content__text">
-                Склад и офис у нас находятся в одном месте, что удобно для получения товара. Всегда в наличии на складе
-                имеются основные виды сырья и оборудования в достаточном объеме. Имея <span>имея собственный транспорт</span>, осуществляем доставку товара
-                покупателям по всему Сибирскому региону.
-              </div>
-            </div>
-            <div class="main-content__column main-content__column_right">
-							@@include('html/components/_sending.htm',{})
-            </div>
-          </div>
-        </div>
-      </div>
+			<div class="main-content section">
+				<div class="_container">
+					<div class="main-content__inner d-flex">
+						<div class="main-content__column main-content__column_left">
+							<div class="main-content__text">
+								Компания «Алтайком», входящая в состав «COMPANY GROUP», – <span>ведущий поставщик сырья</span> для
+								предприятий кондитерской и хлебопекарной
+								промышленности на рынке Алтайского края
+							</div>
+							<div class="main-content__text">
+								Мы работаем с крупнейшими российскими и зарубежными поставщиками. Долгосрочные отношения с нашими
+								производителями позволили минимизировать затраты и издержки. Благодаря этому мы сохраняем оптимальные
+								цены
+								на все категории товаров. Весь наш товар <span>сертифицирован</span>. Поэтому его использование в
+								производстве обеспечивает
+								получение
+								продукции высокого качества.
+							</div>
+							<div class="main-content__text">
+								Наша компания работает как с крупными, так и небольшими кондитерскими и хлебопекарными предприятиями.
+								Большинство сотрудников «Алтайком» имеет специальное <span>образование</span> . Прекрасно понимая
+								особенности пищевого
+								производства, мы работаем для Вас и Вашего успеха.
+							</div>
+							<div class="main-content__text">
+								Частью нашего сервиса является предоставление информационных и технологических <span>услуг</span>. Это
+								регулярное
+								проведение
+								семинаров и мастер-классов, а также выезд технолога на предприятия. По желанию клиента изготавливаем
+								разнообразный инвентарь.
+							</div>
+							<div class="main-content__text">
+								Склад и офис у нас находятся в одном месте, что удобно для получения товара. Всегда в наличии на складе
+								имеются основные виды сырья и оборудования в достаточном объеме. Имея <span>имея собственный
+									транспорт</span>, осуществляем доставку товара
+								покупателям по всему Сибирскому региону.
+							</div>
+						</div>
+						<div class="main-content__column main-content__column_right">
+							<div class="sending-banner d-flex">
+								<div class="sending-banner__img">
+									<img src="img/sending.png" alt="" />
+								</div>
+								<div class="sending-banner__column">
+									<div class="sending-banner__descp">
+										Рецептуры, мастер-классы, семинары, новинки и многое другое
+									</div>
+									<div class="sending-banner__title">будь в курсе новых событий</div>
+								</div>
+								<div class="sending-banner__column">
+									<form data-dev data-popup-message="#order-service" action="#" class="sending-banner__form form">
+										<div class="form__line">
+											<div class="form-body">
+												<input type="email" name="email" data-required="email" data-validate placeholder="Email*"
+													class="sending-banner__input input" />
+												<button type="submit" class="sending-banner__btn form-body__btn">
+													<svg>
+														<use xlink:href="#arrow-sending"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      @@include('html/components/_certificatesSec.htm',{})
+			@@include('html/components/_certificatesSec.htm',{})
 
-    </main>
-    @@include('html/_footer.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>
