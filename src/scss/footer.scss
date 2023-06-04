@@ -77,6 +77,7 @@
 .footer__phone {
 	display: block;
 	font-size: 30px;
+	white-space: nowrap;
 	margin-bottom: 15px;
 	transition: $mainTransition;
 
@@ -112,6 +113,7 @@
 .footer__bottom {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 	padding-top: 28px;
 	opacity: 0.8;
