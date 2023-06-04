@@ -19,6 +19,21 @@
 		padding: 0 10px;
 		border: none;
 	}
+
+	.sales-leaders ._container,
+	.sales-leaders-slider .sliderSec__container {
+		padding-right: 0;
+	}
+
+	.salesLeaders {
+		padding: 0;
+	}
+}
+
+@media (max-width: 1330px) {
+	.servicesBlock-bg__card {
+		min-height: 220px;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -50,6 +65,18 @@
 
 	.lineBlock__menu .menu-lineBlock__link {
 		padding: 15px 0 15px 20px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.servicesBlock-bg__card {
+		min-height: 200px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.servicesBlock-bg__card {
+		min-height: 170px;
 	}
 }
 
@@ -142,6 +169,24 @@
 	.slider-brends__slide {
 		padding-bottom: 10%;
 	}
+
+	.servicesBlock-bg__card-text {
+		font-size: 22px;
+		line-height: 26px;
+		max-width: 250px;
+
+		br {
+			display: none;
+		}
+	}
+
+	.servicesBlock-bg__card-icon-text {
+		font-size: 18px;
+	}
+
+	.servicesBlock-bg__card {
+		background-size: contain;
+	}
 }
 
 @media (max-width: 830px) {
@@ -178,6 +223,22 @@
 
 }
 
+@media (max-width: 812px) {
+	.categoriesImgBlock__card-text {
+		font-size: 18px;
+		line-height: 36px;
+		margin-top: -15px;
+	}
+
+	.categoriesImgBlock__card-img {
+		margin-bottom: 0;
+	}
+
+	.categoriesImgBlock__card {
+		background-position: 0 0%;
+	}
+}
+
 @media (max-width: 768px) {
 	.button-catalog__text {
 		display: none;
@@ -210,6 +271,62 @@
 	.slider-info__slide {
 		border-radius: 30px;
 	}
+
+	.popular-categories__filterBlock {
+		display: none;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+
+	.servicesBlock-bg__card {
+		min-height: 131px;
+		padding: 20px 20px 31px 20px;
+		border-radius: 30px;
+	}
+
+	.servicesBlock-bg__card-text {
+		font-size: 18px;
+		line-height: 22px;
+		max-width: 200px;
+	}
+
+	.servicesBlock-bg__card-icon-text {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.sales-leaders-slider__slide .card-product__descp-group {
+		display: none;
+	}
+
+	.sales-leaders-slider__slide .card-product__descp-title {
+		font-size: 13px;
+	}
+
+	.sales-leaders-slider__slide .card-product__interactive-price-new {
+		font-size: 16px;
+	}
+
+	.card-product__interactive-price-old {
+		font-size: 12px;
+		margin-left: 10px;
+	}
+
+	.interactive-adding-bascet__value {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 730px) {
+	.categoriesImgBlock {
+		flex-wrap: wrap;
+	}
+
+	.categoriesImgBlock__column {
+		flex: 0 1 33%;
+	}
 }
 
 @media (max-width: 540px) {
@@ -236,11 +353,34 @@
 	.header__main-column {
 		flex: 0 1 auto;
 	}
+
+	.tabs__navigation {
+		width: auto;
+		overflow: auto;
+	}
+
+	.tabs__navigation::-webkit-scrollbar-thumb,
+	.tabs__navigation::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media (max-width: 515px) {
 	.slider-info__slide {
 		padding-bottom: 31%;
+	}
+
+	.categoriesImgBlock__column {
+		flex: 0 1 50%;
+	}
+
+	.servicesBlock-bg__card {
+		flex: 0 1 100%;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -251,6 +391,13 @@
 
 	.slider-brends__slide {
 		padding-bottom: 18%;
+	}
+}
+
+@media (max-width: 365px) {
+	.categoriesImgBlock__card-text {
+		font-size: 14px;
+		line-height: 26px;
 	}
 }
 
