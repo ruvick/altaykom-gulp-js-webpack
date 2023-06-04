@@ -66,6 +66,14 @@
 	.lineBlock__menu .menu-lineBlock__link {
 		padding: 15px 0 15px 20px;
 	}
+
+	.our-clients__column {
+		padding: 0 5px 10px 5px;
+	}
+
+	.our-clients__inner {
+		margin: 56px -5px 0 -5px;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -187,6 +195,57 @@
 	.servicesBlock-bg__card {
 		background-size: contain;
 	}
+
+	.advantagesBlock__item-title {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.advantagesBlock__item-subtitle {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.own-production__banner {
+		min-height: 339px;
+		padding: 40px;
+	}
+
+	.own-production__banner-item-title {
+		font-size: 34px;
+		margin-bottom: 6px;
+	}
+
+	.own-production__banner-row {
+		flex: 0 1 660px;
+	}
+
+	.own-production__banner-inner {
+		align-items: center;
+	}
+
+	.our-clients__column {
+		flex: 0 1 50%;
+	}
+
+	.our-clients__card {
+		height: 162px;
+		background-position: 100% 100%;
+	}
+
+	.sending-banner {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 40px;
+	}
+
+	.sending-banner__column {
+		margin-bottom: 35px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media (max-width: 830px) {
@@ -236,6 +295,27 @@
 
 	.categoriesImgBlock__card {
 		background-position: 0 0%;
+	}
+
+	.advantagesBlock__column {
+		padding: 0 10px 0 10px;
+	}
+
+	.advantagesBlock__inner {
+		margin: 0 -10px;
+	}
+
+	.own-production__banner-btn {
+		display: none;
+	}
+
+	.own-production__banner-row {
+		flex: 0 1 100%;
+	}
+
+	.own-production__banner {
+		padding: 30px;
+		border-radius: 30px;
 	}
 }
 
@@ -317,6 +397,29 @@
 	.interactive-adding-bascet__value {
 		flex-wrap: wrap;
 	}
+
+	.about__subtitle,
+	.subtitle {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.advantagesBlock__item-subtitle {
+		display: none;
+	}
+
+	.advantagesBlock__item-title {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.advantagesBlock__btn {
+		margin-top: 30px;
+	}
+
+	.our-clients__card-text {
+		max-width: 170px;
+	}
 }
 
 @media (max-width: 730px) {
@@ -326,6 +429,44 @@
 
 	.categoriesImgBlock__column {
 		flex: 0 1 33%;
+	}
+}
+
+@media (max-width: 612px) {
+	.about__advantagesBlock {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.advantagesBlock__inner {
+		width: 100%;
+		overflow: auto;
+	}
+
+	.advantagesBlock__inner::-webkit-scrollbar-thumb,
+	.advantagesBlock__inner::-webkit-scrollbar {
+		display: none;
+	}
+
+	.advantagesBlock__column {
+		flex: 0 0 33.333%;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.own-production__banner-row {
+		flex-direction: column;
+	}
+
+	.own-production__banner-item {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -363,6 +504,15 @@
 	.tabs__navigation::-webkit-scrollbar {
 		display: none;
 	}
+
+	.advantagesBlock__item-title {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.our-clients__column {
+		flex: 0 1 100%;
+	}
 }
 
 @media (max-width: 515px) {
@@ -382,6 +532,23 @@
 			margin-bottom: 0;
 		}
 	}
+
+	.advantagesBlock__column {
+		margin-right: 0;
+	}
+
+	.sending-banner__title {
+		line-height: 44px;
+	}
+
+	.sending-banner__form,
+	.sending-banner__column {
+		width: 100%;
+	}
+
+	.sending-banner {
+		padding: 30px;
+	}
 }
 
 @media (max-width: 414px) {
@@ -391,6 +558,22 @@
 
 	.slider-brends__slide {
 		padding-bottom: 18%;
+	}
+
+	.advantagesBlock__column {
+		flex: 0 0 45%;
+	}
+
+	.advantagesBlock__btn {
+		width: 95%;
+	}
+
+	.footer__mob-fixed-menu {
+		display: flex;
+	}
+
+	.footer {
+		padding-bottom: 100px;
 	}
 }
 
