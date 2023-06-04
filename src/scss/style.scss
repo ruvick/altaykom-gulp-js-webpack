@@ -238,7 +238,8 @@ body.padding {
 }
 
 .slider-brends__slide {
-	height: 77px;
+	// height: 77px;
+	padding-bottom: 5.68%;
 	overflow: hidden;
 }
 
@@ -5776,10 +5777,6 @@ body.padding {
 .recentlyWatched,
 .salesLeaders {
 	padding: 10px;
-}
-
-.sliderInfo {
-	border-radius: 15px;
 }
 
 .slider-info .swiper-button__inner {

@@ -79,8 +79,12 @@ function initSliders() {
 				prevEl: '.slider-info__button-prev',
 			},
 			breakpoints: {
-				515: {
-					slidesPerView: 2.5,
+				415: {
+					slidesPerView: 1.8,
+					spaceBetween: 10,
+				},
+				516: {
+					slidesPerView: 2.6,
 					spaceBetween: 10,
 				},
 				// 768: {
@@ -113,8 +117,8 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 8,
-			spaceBetween: 30,
+			slidesPerView: 2.8,
+			spaceBetween: 10,
 			autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
@@ -132,27 +136,36 @@ function initSliders() {
 			// 	nextEl: '.slider-info__button-next',
 			// 	prevEl: '.slider-info__button-prev',
 			// },
-			/*
 			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+				415: {
+					slidesPerView: 4.8,
+					spaceBetween: 10,
 				},
-				768: {
-					slidesPerView: 2,
-					spaceBetween: 20,
+				515: {
+					slidesPerView: 5.3,
+					spaceBetween: 10,
 				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
+				767: {
+					slidesPerView: 5.5,
+					spaceBetween: 10,
 				},
-				1268: {
-					slidesPerView: 4,
+				1025: {
+					slidesPerView: 6.5,
+					spaceBetween: 10,
+				},
+				1281: {
+					slidesPerView: 8,
 					spaceBetween: 30,
 				},
+				// 992: {
+				// 	slidesPerView: 3,
+				// 	spaceBetween: 20,
+				// },
+				// 1268: {
+				// 	slidesPerView: 4,
+				// 	spaceBetween: 30,
+				// },
 			},
-			*/
 			on: {
 
 			}
