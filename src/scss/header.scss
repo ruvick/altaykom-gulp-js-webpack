@@ -57,10 +57,40 @@
 
 .header__main-column_right {
 	justify-content: flex-end;
+
+	.phone-item {
+		display: none;
+	}
+}
+
+.header__menu-burger {
+	display: none;
+	align-items: center;
+	color: #161615;
+	padding: 5px 10px;
+	border-radius: 9px;
+	background: #f3f3f4;
+
+	svg {
+		flex: 0 0 16px;
+		width: 16px;
+		height: 10px;
+		margin-left: 11px;
+	}
 }
 
 .header__main-item {
 	padding-right: 57px;
+}
+
+.phone-item__icon-mob {
+	width: 20px;
+	flex: 0 0 20px;
+	height: 20px;
+}
+
+.header__main-item .phone-item__icon-mob {
+	display: none;
 }
 
 .header__logo {
@@ -91,7 +121,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-	flex: 0 1 555px;
+	// flex: 0 1 555px;
 }
 
 .menu__item {

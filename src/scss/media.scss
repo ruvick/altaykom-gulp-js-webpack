@@ -1,5 +1,151 @@
 @media (max-width: 1440px) {
-  ._container {
-    padding: 0 10px;
-  }
+	._container {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.interface__link-text {
+		display: none;
+	}
+
+	.interface__link {
+		padding: 0 14.3px;
+	}
+
+	.header__button-catalog {
+		flex: 0 0 18%;
+	}
+
+	.button-catalog__text {
+		margin-top: -6px;
+	}
+
+	.header__logo {
+		width: 154px;
+		flex: 0 0 154px;
+		height: 40px;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__main-column .phone-item {
+		display: none;
+	}
+
+	.header__main-column_right {
+		.phone-item {
+			display: flex;
+			padding-right: 0;
+			margin-right: 34px;
+		}
+	}
+
+	.header__menu-burger {
+		display: flex;
+	}
+}
+
+@media (max-width: 830px) {
+	.header__main-column .address-item {
+		display: none;
+	}
+
+	.header__logo {
+		order: 2;
+	}
+
+	.header__main-column {
+		order: 3;
+		justify-content: flex-end;
+	}
+
+	.header__main-column_right {
+		justify-content: start;
+		order: 1;
+	}
+
+	.header__main-column_right .phone-item {
+		display: none;
+	}
+
+	.header__main-column .phone-item {
+		display: flex;
+		padding-right: 0;
+	}
+
+	.header__main-column_right .phone-item {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.button-catalog__text {
+		display: none;
+	}
+
+	.header__button-catalog {
+		flex: 0 0 50px;
+		height: 50px;
+		justify-content: center;
+		margin-right: 8px;
+	}
+
+	.header__search {
+		margin-right: 8px;
+		height: 50px;
+	}
+
+	.header__interface {
+		height: 50px;
+
+		.interface__link {
+			padding: 0 13.7px;
+		}
+	}
+
+	.icon-menu span {
+		left: 0;
+	}
+}
+
+@media (max-width: 540px) {
+	.header__interface {
+		display: none;
+	}
+
+	.header__search {
+		margin-right: 0;
+	}
+
+	.header__main-column .phone-item {
+		font-size: 0;
+	}
+
+	.header__main-item .phone-item__icon {
+		display: none;
+	}
+
+	.header__main-item .phone-item__icon-mob {
+		display: block;
+	}
+
+	.header__main-column {
+		flex: 0 1 auto;
+	}
+}
+
+@media (max-width: 345px) {
+	.header__logo {
+		width: 145px;
+		flex: 0 0 145px;
+		height: 35px;
+		margin: 0;
+	}
+
+	.header__search .search-form__input {
+		padding: 0 50px 0 10px;
+	}
 }

@@ -2242,13 +2242,6 @@ body.padding {
 	margin-bottom: 30px;
 }
 
-.submission-form__item-file-notification {
-	font-size: 14px;
-	line-height: 24px/14px*100%;
-	color: #8F8E8E;
-	margin-top: 6px;
-}
-
 .submission-form__title {
 	font-size: 26px;
 	line-height: 42/26*100%;
@@ -2271,6 +2264,21 @@ body.padding {
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
+}
+
+.submission-form__item-file {
+	color: #C5934F;
+
+	label {
+		cursor: pointer;
+	}
+}
+
+.submission-form__item-file-notification {
+	font-size: 14px;
+	line-height: 24px/14px*100%;
+	color: #8F8E8E;
+	margin-top: 6px;
 }
 
 .submission-form__clue {
