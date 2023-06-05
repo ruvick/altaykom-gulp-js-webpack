@@ -564,6 +564,10 @@
 	.blog-block__inner {
 		margin: 0 -5px;
 	}
+
+	.main-pagging__select {
+		margin-top: 20px;
+	}
 }
 
 @media (max-width: 730px) {
@@ -619,6 +623,15 @@
 
 	.sliderCert__slide {
 		padding-bottom: 48%;
+	}
+
+	.main-pagging__select,
+	.main-pagging__pagging {
+		display: none;
+	}
+
+	.page__show-more {
+		margin: 20px 0 0 0;
 	}
 }
 
