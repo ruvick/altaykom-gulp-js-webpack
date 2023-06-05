@@ -315,8 +315,8 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 6,
-			spaceBetween: 20,
+			slidesPerView: 1.5,
+			spaceBetween: 10,
 			autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
@@ -334,27 +334,36 @@ function initSliders() {
 				nextEl: '.slider-info__button-next',
 				prevEl: '.slider-info__button-prev',
 			},
-			/*
 			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+				376: {
+					slidesPerView: 1.8,
 				},
-				768: {
-					slidesPerView: 2,
+				415: {
+					slidesPerView: 2.1,
+				},
+				541: {
+					slidesPerView: 2.8,
+				},
+				613: {
+					slidesPerView: 3.2,
+				},
+				769: {
+					slidesPerView: 3.8,
+				},
+				813: {
+					slidesPerView: 4.2,
+				},
+				1025: {
+					slidesPerView: 4.8,
+				},
+				1201: {
+					slidesPerView: 5.3,
+				},
+				1281: {
+					slidesPerView: 6,
 					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
 				},
 			},
-			*/
 			on: {
 
 			}

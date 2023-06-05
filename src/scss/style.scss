@@ -736,6 +736,7 @@ body.padding {
 
 .main-content__column_left {
 	flex: 0 1 940px;
+	margin-right: 15px;
 }
 
 .main-content__text {
@@ -756,9 +757,9 @@ body.padding {
 	flex-wrap: wrap;
 	padding: 36px 26px;
 
-	position: fixed;
-	width: 340px;
-	height: 354px;
+	// position: fixed;
+	// width: 340px;
+	// height: 354px;
 }
 
 .main-content__column_right .sending-banner__img {
@@ -809,7 +810,8 @@ body.padding {
 }
 
 .sliderCert__slide {
-	height: 311px;
+	// height: 311px;
+	padding-bottom: 21.9%;
 	overflow: hidden;
 	transition: 1s;
 
@@ -5771,6 +5773,12 @@ body.padding {
 		flex: 0 0 32px;
 		height: 32px;
 	}
+}
+
+//========================================================================================================================================================
+
+.page-about .sending-section {
+	display: none;
 }
 
 //========================================================================================================================================================
