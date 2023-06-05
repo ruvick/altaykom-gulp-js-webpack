@@ -1434,7 +1434,7 @@ body.padding {
 }
 
 .content-article__img-width-image {
-	height: 553px;
+	padding-bottom: 58.9%;
 	border-radius: 30px;
 	overflow: hidden;
 }
@@ -5351,7 +5351,8 @@ body.padding {
 
 .content-article__video {
 	position: relative;
-	height: 530px;
+	// height: 530px;
+	padding-bottom: 45.2%;
 	overflow: hidden;
 	border-radius: 25px;
 	background: url('../img/') 0 0 no-repeat;

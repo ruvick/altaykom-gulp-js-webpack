@@ -92,6 +92,10 @@
 	.sliderCert__slide {
 		padding-bottom: 28%;
 	}
+
+	.recommend ._container {
+		padding-right: 0;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -293,6 +297,10 @@
 
 	.blog-block__column {
 		flex: 0 1 33.333%;
+	}
+
+	.content-article__description-img {
+		padding-bottom: 35%;
 	}
 }
 
