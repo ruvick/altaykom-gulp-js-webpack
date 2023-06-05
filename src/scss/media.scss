@@ -288,6 +288,12 @@
 	}
 }
 
+@media (max-width: 860px) {
+	.title-main {
+		font-size: 60px;
+	}
+}
+
 @media (max-width: 830px) {
 	.header__main-column .address-item {
 		display: none;
@@ -367,7 +373,7 @@
 		display: none;
 	}
 
-	.page-about .sending-section {
+	.page-recurring .sending-section {
 		display: block;
 	}
 
