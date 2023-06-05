@@ -460,6 +460,18 @@
 			margin-bottom: 0;
 		}
 	}
+
+	.title-main {
+		font-size: 40px;
+	}
+
+	.section {
+		padding: 20px 0;
+	}
+
+	.page {
+		padding-bottom: 40px;
+	}
 }
 
 @media (max-width: 730px) {
@@ -640,10 +652,21 @@
 			position: absolute;
 			top: 35%;
 			right: 0;
-			width: 10px;
-			height: 10px;
-			border: 1px solid #000;
+			width: 7.78px;
+			height: 7px;
+			background-size: 100%;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3Ljc3OCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgNy43NzggNyI+DQogIDxwYXRoIGlkPSJOZXh0IiBkPSJNMy4wMTUsMS41NzNhMSwxLDAsMCwxLDEuNzQ4LDBMNi45NTIsNS41MTRBMSwxLDAsMCwxLDYuMDc4LDdIMS43QTEsMSwwLDAsMSwuODI1LDUuNTE0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNy43NzggNykgcm90YXRlKDE4MCkiIGZpbGw9IiNmZmYiLz4NCjwvc3ZnPg0K');
 		}
+
+		._spoller-active:before {
+			transform: rotate(180deg);
+		}
+	}
+
+	.footer__menu-name._spoller-active:before {
+		transform: rotate(180deg);
 	}
 
 	.footer__contacts {
@@ -672,7 +695,19 @@
 
 		&:last-child {
 			margin-right: 0;
+
 		}
+
+		&::before {
+			content: '/';
+			float: right;
+			font-size: 17px;
+			margin-left: 15px;
+		}
+	}
+
+	.footer__phone:nth-child(2):before {
+		display: none;
 	}
 
 	.footer__btn {
