@@ -66,6 +66,10 @@
 	.sliderSec .sliderSec__container {
 		padding-right: 0;
 	}
+
+	.favorites-sec .card-product-block__column {
+		flex: 0 0 20%;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -317,6 +321,10 @@
 	.border-wrap-block__inner {
 		padding: 40px 25px;
 	}
+
+	.favorites-sec .card-product-block__column {
+		flex: 0 1 25%;
+	}
 }
 
 @media (max-width: 960px) {
@@ -421,6 +429,10 @@
 
 	.sliderCert__slide {
 		padding-bottom: 36%;
+	}
+
+	.favorites-sec .card-product-block__column {
+		flex: 0 1 33.333%;
 	}
 }
 
