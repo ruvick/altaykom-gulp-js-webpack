@@ -1254,6 +1254,11 @@
 	.registration-section__form {
 		margin-bottom: 40px;
 	}
+
+	.registration-section__btn {
+		width: 100%;
+		justify-content: center;
+	}
 }
 
 @media (max-width: 375px) {
