@@ -74,6 +74,14 @@
 	.page-user-sec__aside {
 		flex: 0 0 26%;
 	}
+
+	.card-product-sec__conclusion {
+		padding: 25px 20px;
+	}
+
+	.card-product-sec__conclusion .conclusion__item-iconBtn {
+		margin-left: 15px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -103,6 +111,19 @@
 
 	.recommend ._container {
 		padding-right: 0;
+	}
+
+	.conclusion__row_flex {
+		flex-wrap: wrap;
+	}
+
+	.conclusion__row_flex .conclusion__item {
+		margin-right: 15px;
+
+		&:last-child {
+			margin-top: 10px;
+			margin-right: 0;
+		}
 	}
 }
 
@@ -346,11 +367,31 @@
 	.page-user {
 		padding-top: 80px;
 	}
+
+	.card-product-sec__slider {
+		margin-right: 50px;
+	}
+
+	.table-info__table-col {
+		margin-right: 15px;
+	}
 }
 
 @media (max-width: 960px) {
 	.page-404-section .typical-block__img {
 		margin-right: 0;
+	}
+
+	.baking-ideas-sec__column {
+		flex: 0 1 33.333%;
+	}
+}
+
+@media (max-width: 915px) {
+	.card-product-sec__slider {
+		width: 400px;
+		flex: 0 0 400px;
+		margin-right: 20px;
 	}
 }
 
@@ -362,6 +403,25 @@
 	.typical-block__img {
 		flex: 0 0 400px;
 		height: 250px;
+	}
+}
+
+@media (max-width: 840px) {
+	.card-product-sec__inner {
+		flex-wrap: wrap;
+	}
+
+	.card-product-sec__slider {
+		margin-right: 0;
+		margin-bottom: 35px;
+	}
+
+	.card-product-sec__intro {
+		justify-content: start;
+	}
+
+	.card-product-sec__intro-article {
+		margin-right: 35px;
 	}
 }
 
@@ -715,6 +775,20 @@
 	.card-product__descp-title {
 		font-size: 14px;
 	}
+
+	.baking-ideas-sec__column {
+		flex: 0 1 33.333%;
+		padding: 0 5px 20px 5px;
+	}
+
+	.sticker-info {
+		font-size: 10px;
+		line-height: 2.3;
+	}
+
+	.card-product-sec__inner {
+		justify-content: center;
+	}
 }
 
 @media (max-width: 730px) {
@@ -889,6 +963,10 @@
 	.submission-form__column {
 		margin-bottom: 10px;
 	}
+
+	.baking-ideas-sec__column {
+		flex: 0 1 50%;
+	}
 }
 
 @media (max-width: 515px) {
@@ -937,6 +1015,15 @@
 
 	.current-promotions__column {
 		flex: 0 1 100%;
+	}
+
+	.card-product-sec__slider {
+		width: 100%;
+		flex: 0 1 100%;
+	}
+
+	.card-product-sec__slider {
+		border-radius: 0;
 	}
 }
 
@@ -1299,6 +1386,15 @@
 
 	.page-user-sec__main {
 		margin-bottom: 20px;
+	}
+
+	.conclusion__row_flex .conclusion__item {
+		flex-wrap: wrap;
+	}
+
+	.card-product-sec__conclusion .conclusion__item-iconBtn {
+		margin-left: 0;
+		margin-top: 10px;
 	}
 }
 

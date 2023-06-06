@@ -2599,7 +2599,7 @@ body.padding {
 .baking-ideas-sec__inner {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -20px;
+	margin: 0 -10px;
 }
 
 .baking-ideas-sec__column {
@@ -2636,7 +2636,7 @@ body.padding {
 .card-product-slider__slide {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 	overflow: hidden;
 	cursor: pointer;
 }
@@ -2687,8 +2687,7 @@ body.padding {
 }
 
 .card-product-slider-small__slide {
-	height: 100%;
-	height: 83px;
+	padding-bottom: 16%;
 	overflow: hidden;
 	border-radius: 15px;
 	cursor: pointer;
@@ -2759,6 +2758,7 @@ body.padding {
 
 .card-product-sec__button-block-btn {
 	margin-right: 5px;
+	margin-bottom: 5px;
 }
 
 .card-product-sec__conclusion {
@@ -5405,6 +5405,7 @@ body.padding {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 28px;
 }
 
 .share-menu {
@@ -5520,7 +5521,6 @@ body.padding {
 .card-product-sec__intro-article {
 	display: flex;
 	align-items: center;
-	margin-bottom: 28px;
 }
 
 .article-intro {
