@@ -44,7 +44,7 @@
 
 @media (max-width: 1280px) {
 	.page .lineBlock {
-		margin-bottom: 0px;
+		margin-bottom: 30px;
 	}
 
 	.slider-brends .sliderSec__container {
@@ -669,6 +669,14 @@
 		height: 100%;
 		margin-top: 25px;
 	}
+
+	.card-product__descp-group {
+		display: none;
+	}
+
+	.card-product__descp-title {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 730px) {
@@ -739,6 +747,10 @@
 
 	.page__show-more {
 		margin: 20px 0 0 0;
+	}
+
+	.favorites-sec .card-product-block__column {
+		flex: 0 1 50%;
 	}
 }
 
@@ -1054,6 +1066,55 @@
 	.page-404-section__button-block {
 		flex-wrap: wrap;
 	}
+
+	.card-product-block__column {
+		padding: 0 5px 10px 5px;
+	}
+
+	.card-product__interactive-price-new {
+		font-size: 16px;
+	}
+
+	.interactive-adding-bascet__value-quantity {
+		font-size: 12px;
+	}
+
+	.interactive-adding-bascet__value-price {
+		font-size: 12px;
+	}
+
+	.interactive-adding-bascet__button-icon {
+		width: 18.5px;
+		flex: 0 0 18.5px;
+		height: 16px;
+	}
+
+	.interactive-adding-bascet__button {
+		width: 40px;
+		height: 40px;
+		flex: 0 0 40px;
+	}
+
+	.card-product__interactive-adding {
+		height: 46px;
+		border-radius: 13px;
+	}
+
+	.card-product {
+		padding: 5px;
+	}
+
+	.card-product-block__column {
+		padding: 0 2.5px 8px 2.5px;
+	}
+
+	.card-product__descp-title {
+		font-size: 12px;
+	}
+
+	.sticker-product-value {
+		font-size: 12px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1063,6 +1124,10 @@
 
 	.suppliers__column {
 		flex: 0 1 50%;
+	}
+
+	.section-title__button {
+		width: 100%;
 	}
 }
 

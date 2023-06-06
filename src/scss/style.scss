@@ -2460,7 +2460,7 @@ body.padding {
 .card-product-block {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 -20px;
+	margin: 0 -10px;
 }
 
 .card-product-block__column {
@@ -5812,6 +5812,7 @@ body.padding {
 
 .section-title__inner {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
