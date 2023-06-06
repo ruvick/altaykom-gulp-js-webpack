@@ -70,6 +70,10 @@
 	.favorites-sec .card-product-block__column {
 		flex: 0 0 20%;
 	}
+
+	.page-user-sec__aside {
+		flex: 0 0 26%;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -330,6 +334,18 @@
 		position: static;
 		margin-bottom: 20px;
 	}
+
+	.page-user-sec__main {
+		flex: 0 1 66%;
+	}
+
+	.page-user-sec__aside {
+		flex: 0 0 32%;
+	}
+
+	.page-user {
+		padding-top: 80px;
+	}
 }
 
 @media (max-width: 960px) {
@@ -438,6 +454,23 @@
 
 	.favorites-sec .card-product-block__column {
 		flex: 0 1 33.333%;
+	}
+
+	.page-user-sec__inner {
+		flex-wrap: wrap;
+	}
+
+	.page-user-sec__main {
+		flex: 0 1 100%;
+		margin-bottom: 35px;
+	}
+
+	.page-user-sec__aside {
+		flex: 0 1 70%;
+	}
+
+	.page-user-sec__aside {
+		flex: 0 1 100%;
 	}
 }
 
@@ -1258,6 +1291,14 @@
 	.registration-section__btn {
 		width: 100%;
 		justify-content: center;
+	}
+
+	.order-payment {
+		padding: 17px 20px 25px 20px;
+	}
+
+	.page-user-sec__main {
+		margin-bottom: 20px;
 	}
 }
 
