@@ -85,7 +85,7 @@
 }
 
 @media (max-width: 1200px) {
-	.lineBlock__menu .menu-lineBlock__item:last-child {
+	.lineBlock .menu-lineBlock__item:last-child {
 		margin-left: 0;
 	}
 
@@ -93,8 +93,8 @@
 		min-height: auto;
 	}
 
-	.lineBlock__menu .menu-lineBlock__link {
-		padding: 15px 0 15px 20px;
+	.lineBlock .menu-lineBlock__link {
+		padding: 15px 0 15px 20px; 
 	}
 
 	.our-clients__column {
@@ -196,23 +196,23 @@
 	.lineBlock {
 		min-height: auto;
 		height: 58px;
-		width: auto;
-		overflow-x: auto;
-		overflow-y: hidden;
-	}
-
-	.lineBlock::-webkit-scrollbar,
-	.lineBlock::-webkit-scrollbar-thumb {
-		display: none;
 	}
 
 	.menu-lineBlock {
 		flex-wrap: nowrap;
-		margin-left: -20px;
+		margin: 0 -20px;
+		width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
 	}
 
-	.lineBlock__menu .menu-lineBlock__item {
-		white-space: nowrap;
+	.menu-lineBlock::-webkit-scrollbar,
+	.menu-lineBlock::-webkit-scrollbar-thumb {
+		display: none;
+	}
+
+	
+	.lineBlock .menu-lineBlock__item {
 		order: 2;
 	}
 
@@ -378,6 +378,9 @@
 	.header-legal-person .interface__link-text {
 		display: block;
     font-size: 14px;
+	}
+	.catalog-entity-sec__row .menu-lineBlock {
+    margin: 0 -10px 30px -10px;
 	}
 }
 

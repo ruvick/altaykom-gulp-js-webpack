@@ -3320,10 +3320,12 @@ body.padding {
 	border: 2px solid #221F20;
 }
 
-.catalog-entity-sec__menu-lineBlock {
+.catalog-entity-sec .menu-lineBlock {
 	margin-bottom: 30px;
+} 
+.catalog-entity-sec .menu-lineBlock__item:last-child {
+	margin-left: 0;
 }
-
 .catalog-entity-filters {
 	display: flex;
 	align-items: start;

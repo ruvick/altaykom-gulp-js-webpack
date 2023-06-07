@@ -358,6 +358,7 @@
 .menu-lineBlock__item {
 	position: relative;
 	display: flex;
+	white-space: nowrap;
 }
 
 .menu-lineBlock__link {
@@ -510,16 +511,17 @@
 
 
 .lineBlock__menu {
-	margin-left: -30px;
+	margin-left: -20px;
 }
 
-.lineBlock__menu .menu-lineBlock__link {
+.menu-lineBlock__link {
 	padding: 19px 0 19px 30px;
+	padding: 19px 15px 19px 15px;
 }
 
 .lineBlock__menu .menu-lineBlock__item {
 	&:last-child {
-		margin-left: auto;
+		margin-left: auto; 
 	}
 }
 
