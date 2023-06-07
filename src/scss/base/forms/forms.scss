@@ -69,7 +69,7 @@
 	align-items: center;
 }
 
-.sending-banner__btn {
+.form-body__btn {
 	position: absolute;
 	right: 5px;
 	display: flex;
@@ -90,10 +90,8 @@
 		height: 12px;
 		transition: height 0.3s ease 0s;
 	}
+}
 
-	// &:hover {
-	// 	svg {
-	// 		height: 16px;
-	// 	}
-	// }
+.sending-banner__btn {
+
 }
