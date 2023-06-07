@@ -801,6 +801,22 @@
 	.card-product-sec__inner {
 		justify-content: center;
 	}
+	.breadcrumbs__inner {
+    margin: 0 -10px;
+	}
+	.breadcrumbs span:nth-child(1) {
+    overflow: auto;
+	}
+	.breadcrumbs span {
+    margin-left: 12px;
+	}
+	.breadcrumbs span span {
+    display: flex;
+    width: 700px;
+	}
+	.breadcrumbs span:nth-child(1)::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 @media (max-width: 730px) {

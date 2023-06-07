@@ -2,7 +2,9 @@
 .breadcrumbs {
 	margin-left: -11px;
 }
-
+.breadcrumbs__inner {
+	display: flex;
+}
 .breadcrumbs ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
