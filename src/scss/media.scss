@@ -375,6 +375,10 @@
 	.table-info__table-col {
 		margin-right: 15px;
 	}
+	.header-legal-person .interface__link-text {
+		display: block;
+    font-size: 14px;
+	}
 }
 
 @media (max-width: 960px) {
@@ -456,7 +460,12 @@
 	.header__main-column_right .phone-item {
 		display: none;
 	}
-
+	.header-legal-person .interface__link {
+		padding: 0 10px;
+	}
+	.header-legal-person .interface__link-text {
+    font-size: 12px;
+	}
 }
 
 @media (max-width: 812px) {
@@ -807,6 +816,12 @@
 	}
 }
 
+@media (max-width: 640px) {
+	.header-legal-person .interface__link-text {
+		display: none;
+	}
+}
+
 @media (max-width: 612px) {
 	.about__advantagesBlock {
 		margin-left: -10px;
@@ -966,6 +981,12 @@
 
 	.baking-ideas-sec__column {
 		flex: 0 1 50%;
+	}
+	.header-legal-person__interface {
+		display: none;
+	}
+	.header-legal-person .search-form {
+		display: block;
 	}
 }
 

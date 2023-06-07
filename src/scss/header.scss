@@ -877,13 +877,16 @@
 	padding-bottom: 0;
 	box-shadow: 0px 6px 6px -11px #000000;
 }
-
+.header-legal-person .search-form {
+	display: none;
+}
 .header-legal-person__interface {
 	flex: 0 1 100%;
 }
 
 .header-legal-person .interface__link {
-	padding: 0 71px;
+	justify-content: center;
+	flex: 0 1 301px;
 }
 
 .header-legal-person .interface__link_my-orders {
