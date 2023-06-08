@@ -40,6 +40,9 @@
 	.servicesBlock-bg__card {
 		min-height: 220px;
 	}
+	.recentlyWatched {
+		margin: 0 -10px;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -867,6 +870,18 @@
 	}
 	.main-prod-card__column {
     padding: 0 5px 10px 5px;
+	}
+	.page__main-pagging {
+		display: none;
+	}
+	.page__show-more {
+		margin: 20px 0 0 0;
+	}
+	.titleBlock {
+    margin-bottom: 10px;
+	}
+	.breadcrumbs {
+    padding-top: 20px;
 	}
 }
 
