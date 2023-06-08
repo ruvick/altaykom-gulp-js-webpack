@@ -2127,7 +2127,7 @@ body.padding {
 	color: #161615;
 }
 
-.directory-management__filters-value {
+.filters-value {
 	min-width: 18px;
 	display: flex;
 	justify-content: center;
@@ -2139,6 +2139,9 @@ body.padding {
 	background: #C5934F;
 	border-radius: 5px;
 	overflow: hidden;
+}
+
+.directory-management__filters-value {
 	margin-left: 11px;
 }
 
@@ -5885,6 +5888,9 @@ body.padding {
 		height: 16px;
 		margin-right: 8px;
 	}
+}
+.filter-mob-block__filters-value {
+	margin-left: 10px;
 }
 .catalog__filter-mob-block {
 	display: none;
