@@ -78,6 +78,19 @@
 	.card-product-sec__conclusion .conclusion__item-iconBtn {
 		margin-left: 15px;
 	}
+	.sidebar {
+    flex: 0 0 200px;
+		margin-right: 25px;
+	}
+}
+
+@media (max-width: 1250px) {
+.main-prod-card__column {
+	flex: 0 1 25%;
+}
+.page__main.width .main-prod-card__column {
+	flex: 0 1 20%;
+}
 }
 
 @media (max-width: 1200px) {
@@ -130,6 +143,9 @@
 
 	.contacts-section__inner .icon-info-card {
 		flex: 0 1 48%;
+	}
+	.main-prod-card__column {
+    flex: 0 1 33.333%;
 	}
 }
 
@@ -378,6 +394,9 @@
 	.catalog-entity-sec__row .menu-lineBlock {
     margin: 0 -10px 30px -10px;
 	}
+	.page__main.width .main-prod-card__column {
+    flex: 0 1 25%;
+	}
 }
 
 @media (max-width: 960px) {
@@ -425,6 +444,9 @@
 
 	.card-product-sec__intro-article {
 		margin-right: 35px;
+	}
+	.main-prod-card__column {
+    flex: 0 1 50%;
 	}
 }
 
@@ -539,6 +561,9 @@
 
 	.page-user-sec__aside {
 		flex: 0 1 100%;
+	}
+	.page__main.width .main-prod-card__column {
+    flex: 0 1 33.333%;
 	}
 }
 
@@ -766,10 +791,6 @@
 		margin-top: 25px;
 	}
 
-	.section-title {
-		padding-bottom: 5px;
-	}
-
 	.page-404-section .typical-block__img {
 		flex: 0 1 100%;
 		height: 100%;
@@ -812,6 +833,40 @@
 	}
 	.breadcrumbs span:nth-child(1)::-webkit-scrollbar {
 		display: none;
+	}
+	.catalog-filterBlock {
+		display: none;
+	}
+	.page__sidebar {
+		display: none;
+	}
+	.main-prod-card__column {
+    flex: 0 1 33.333%;
+	}
+	.main__applied-filters {
+		display: none;
+	}
+	.catalog__directory-management .directory-management-sorting-select,
+	.catalog__directory-management .directory-management__filters-item {
+		display: none;
+	}
+	.directory-management-sorting-number {
+		font-size: 22px;
+	}
+	.section-title {
+    padding-bottom: 30px;
+	}
+	.catalog__filter-mob-block {
+		display: flex;
+	}
+	.card-product__interactive-price-new {
+    font-size: 16px;
+	}
+	.main-prod-card {
+    margin: 0 -5px;
+	}
+	.main-prod-card__column {
+    padding: 0 5px 10px 5px;
 	}
 }
 
@@ -1003,6 +1058,9 @@
 	.header-legal-person .search-form {
 		display: block;
 	}
+	.main-prod-card__column {
+    flex: 0 1 50%;
+	}
 }
 
 @media (max-width: 515px) {
@@ -1060,6 +1118,9 @@
 
 	.card-product-sec__slider {
 		border-radius: 0;
+	}
+	.filter-mob-block__btn {
+    font-size: 14px;
 	}
 }
 
@@ -1432,6 +1493,9 @@
 		margin-left: 0;
 		margin-top: 10px;
 	}
+	.filter-mob-block__btn {
+    padding: 15px 5px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1478,6 +1542,9 @@
 
 	.new-bascet__color-block-column .color-btn {
 		height: 50px;
+	}
+	.filter-mob-block__btn {
+    font-size: 12px;
 	}
 }
 

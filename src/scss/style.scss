@@ -1926,15 +1926,9 @@ body.padding {
 .page__main {
 	flex: 0 0 1180/1420 * 100%;
 	transition: flex 0.3s ease 0s;
-	// border: 1px solid #000;
+	flex: 1 1 auto;
 }
 
-// .page__sidebar {
-// 	flex: 0 0 20.5%;
-// 	margin-right: 15px;
-// 	max-width: 300px;
-// 	border: 1px solid #000;
-// }
 .main-prod-card {
 	display: flex;
 	flex-wrap: wrap;
@@ -5868,6 +5862,33 @@ body.padding {
 }
 .page-user {
 	padding-top: 80px;
+}
+.filter-mob-block {
+	display: flex;
+	justify-content: space-between;
+	border-radius: 15px;
+	border: 1px solid #E3E3E3;
+}
+.filter-mob-block__btn {
+	flex: 0 1 50%;
+	width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	padding: 15px;
+	border-right: 1px solid #E3E3E3;
+	&:last-child{
+		border-right: none;
+	}
+	svg {
+		flex: 0 0 16px;
+		height: 16px;
+		margin-right: 8px;
+	}
+}
+.catalog__filter-mob-block {
+	display: none;
+	margin-bottom: 27px;
 }
 //========================================================================================================================================================
 
