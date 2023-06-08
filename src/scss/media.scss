@@ -40,6 +40,9 @@
 	.servicesBlock-bg__card {
 		min-height: 220px;
 	}
+	.recently-watched-slider .sliderSec__container {
+		padding: 0;
+	}
 	.recentlyWatched {
 		margin: 0 -10px;
 	}
@@ -1076,6 +1079,19 @@
 	.main-prod-card__column {
     flex: 0 1 50%;
 	}
+	// Стили всплывающей шапки
+	// ._header-scroll {
+  //   position: static;
+	// 	.header__navigation {
+	// 		position: fixed;
+	// 		top: 0;
+	// 		left: 0;
+	// 		padding: 10px 10px;
+	// 		width: 100%;
+	// 		background: #fff;
+	// 		border-bottom: 1px solid #E3E3E3;
+	// 	}
+	// }
 }
 
 @media (max-width: 515px) {
