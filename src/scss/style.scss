@@ -2964,6 +2964,7 @@ body.padding {
 
 .reviews-block__body-main-descp-top {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 14px;
 }
@@ -2989,6 +2990,7 @@ body.padding {
 .reviews-block__body-main-descp-information {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 
 	*:last-child {
 		margin-right: 0;
@@ -5715,9 +5717,9 @@ body.padding {
 	z-index: 5;
 }
 
-.reviews-sec__inner {
-	position: relative;
-}
+// .reviews-sec__inner {
+// 	position: relative;
+// }
 
 .reviews-sec__applic-popup {
 	display: none;

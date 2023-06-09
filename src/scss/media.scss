@@ -511,6 +511,17 @@
 	.header-legal-person .interface__link-text {
     font-size: 12px;
 	}
+	.reviews-sec__inner {
+    flex-wrap: wrap-reverse;
+	}
+	.reviews-sec__evaluations {
+    flex: 0 1 100%;
+    margin-bottom: 25px;
+	}
+	.reviews-block {
+    flex: 0 1 100%;
+    margin-right: 0;
+	}
 }
 
 @media (max-width: 812px) {
@@ -1189,6 +1200,9 @@
 	// 		border-bottom: 1px solid #E3E3E3;
 	// 	}
 	// }
+	.reviews-block__body-answer {
+    margin-left: -80px;
+	}
 }
 
 @media (max-width: 515px) {
