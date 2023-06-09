@@ -521,7 +521,7 @@
 
 .lineBlock__menu .menu-lineBlock__item {
 	&:last-child {
-		margin-left: auto; 
+		margin-left: auto;
 	}
 }
 
@@ -890,6 +890,7 @@
 
 .rub:after {
 	content: "₽";
+	margin-left: 5px;
 }
 
 //====================================================================================================
