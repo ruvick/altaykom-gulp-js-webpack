@@ -1,0 +1,10 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_984" data-name="Прямоугольник 984" width="24" height="24" fill="#5a93a7"/>
+    </clipPath>
+  </defs>
+  <g id="Fire" clip-path="url(#clip-path)">
+    <path id="_1" data-name="1" d="M0,1.774V18.226A1.775,1.775,0,0,0,1.775,20H18.227A1.774,1.774,0,0,0,20,18.226V1.774A1.774,1.774,0,0,0,18.227,0H1.775A1.774,1.774,0,0,0,0,1.774" transform="translate(2 2)" fill="#6584ee"/>
+  </g>
+</svg>
