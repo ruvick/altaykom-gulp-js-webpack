@@ -589,6 +589,19 @@
 	.page__main.width .main-prod-card__column {
     flex: 0 1 33.333%;
 	}
+	.payment-delivery-box {
+		flex-wrap: wrap;
+	}
+	.payment-delivery-box__column {
+    flex: 0 1 100%;
+	}
+	.payment-delivery-box {
+    padding: 30px 20px;
+	}
+	.payment-delivery-box__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -878,7 +891,7 @@
 		font-size: 22px;
 	}
 	.section-title {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 	}
 	.catalog__filter-mob-block {
 		display: flex;
@@ -963,6 +976,9 @@
 	}
 	.card-reviews__interface-rating-block {
     margin-bottom: 20px;
+	}
+	.section-title__title br {
+		display: none;
 	}
 }
 
