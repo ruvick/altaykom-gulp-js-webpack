@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"ЛК Юрлицо Текущие заказы" })
+@@include('html/_head.htm',{ "title":"ЛК Юрлицо Текущие заказы" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page page-user">
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-user">
 
-				@@include('html/components/_physical-list-person.htm',{})
+			@@include('html/components/_physical-list-person.htm',{})
 
-        <div class="breadcrumbs">
-          <div class="_container">
-            <div class="breadcrumbs__inner">
-              <span>
-                <span>
-                  <a href="home.html"> главная </a> /
-                  <span class="breadcrumb_last" aria-current="page">
-                    личный кабинет
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-        </div>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<span>
+							<span>
+								<a href="home.html"> главная </a> /
+								<span class="breadcrumb_last" aria-current="page">
+									личный кабинет
+								</span>
+							</span>
+						</span>
+					</div>
+				</div>
+			</div>
 
-        <div class="section-title">
-          <div class="_container">
-            <div class="section-title__inner">
-              <div class="section-title__title title-small">
-								Открытое акционерное общество "Конфетка"
-              </div>
-							<div class="card-person">
-								<div class="card-person__main">
-									<div class="card-person__image">
-										<img src="img/card-person/01.jpg" alt="Картинка менеджера">
-									</div>
-									<div class="card-person__descp">
-										<div class="card-person__name">Екатерина</div>
-										<div class="card-person__post">Персональный менеджер</div>
-										<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
-									</div>
+			<div class="section-title">
+				<div class="_container">
+					<div class="section-title__inner">
+						<div class="section-title__title title-small">
+							Открытое акционерное общество "Конфетка"
+						</div>
+						<div class="card-person">
+							<div class="card-person__main">
+								<div class="card-person__image">
+									<img src="img/card-person/01.jpg" alt="Картинка менеджера">
 								</div>
-								<div class="card-person__nav">
-									<button type="button" class="card-person__btn text-animation">Позвонить</button>
-									<button type="button" class="card-person__btn text-animation">Написать</button>
+								<div class="card-person__descp">
+									<div class="card-person__name">Екатерина</div>
+									<div class="card-person__post">Персональный менеджер</div>
+									<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
 								</div>
 							</div>
-            </div>
-          </div>
-        </div>
+							<div class="card-person__nav">
+								<button type="button" class="card-person__btn text-animation">Позвонить</button>
+								<button type="button" class="card-person__btn text-animation">Написать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <section class="lc-physical-person page-user-sec section">
-          <div class="_container">
-            <div class="page-user-sec__inner">
-              <div class="page-user-sec__main">
+			<section class="lc-physical-person page-user-sec section">
+				<div class="_container">
+					<div class="page-user-sec__inner">
+						<div class="page-user-sec__main">
 
-								<div data-tabs class="lc-physical-person__tabs tabs">
-									<nav data-tabs-titles class="tabs__navigation">
-										<button type="button" class="tabs__title _tab-active">Текущие заказы</button>
-										<button type="button" class="tabs__title">История покупок</button>
-										<button type="button" class="tabs__title">Предзаказы</button>
-										<button type="button" class="tabs__title">Мои списки</button>
-									</nav>
-									<div data-tabs-body class="tabs__content">
-										<div class="tabs__body">
-											
-											<div class="lc-physical-person__select-inner">
-												<div class="lc-physical-person__select-block">
-													<div class="lc-physical-person__select-block-select">
+							<div data-tabs class="lc-physical-person__tabs tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active">Текущие заказы</button>
+									<button type="button" class="tabs__title">История покупок</button>
+									<button type="button" class="tabs__title">Предзаказы</button>
+									<button type="button" class="tabs__title">Мои списки</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+
+										<div class="lc-physical-person__select-inner">
+											<div class="lc-physical-person__select-block">
+												<div class="lc-physical-person__select-block-select">
 													<select name="form[]" class="form">
 														<option value="1" selected="selected">Статус заказа</option>
 														<option value="2">Пункт №2</option>
@@ -101,493 +101,513 @@
 											</div>
 										</div>
 
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Заказ №</th>
-														<th>Статус</th>
-														<th>Дата доставки</th>
-														<th>Сумма с НДС</th>
-														<th>Количество</th>
-														<th></th>
-														<th></th>
-													</tr>
-												</thead>
-												<tbody>
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Заказ №</th>
+													<th>Статус</th>
+													<th>Дата доставки</th>
+													<th>Сумма с НДС</th>
+													<th>Количество</th>
+													<th></th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
 
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_green">создан</span></td>
-														<td>Доставка</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_green">создан</span></td>
+													<td>Доставка</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
 
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_green">подтвержден</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_green">подтвержден</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
 
-												</tbody>
-											</table>
+											</tbody>
+										</table>
 
-										</div>
+									</div>
 
-										<div class="tabs__body">
-								
+									<div class="tabs__body">
+
 										<div class="lc-physical-person__select-inner">
 											<div class="lc-physical-person__select-block">
 												<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Статус заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Статус заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="lc-physical-person__select-block-select">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Дата заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="lc-physical-person__select-block-select">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Сумма заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
 											</div>
-											<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Дата заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
-											</div>
-											<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Сумма заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
+											<div class="lc-physical-person__select-buttons">
+												<button data-tippy-content="" type="button" class="btn-icon-big">
+													<svg class="btn-icon-big__icon">
+														<use xlink:href="#printer-icon"></use>
+													</svg>
+												</button>
 											</div>
 										</div>
-										<div class="lc-physical-person__select-buttons">
-											<button data-tippy-content="" type="button" class="btn-icon-big">
-												<svg class="btn-icon-big__icon">
-													<use xlink:href="#printer-icon"></use>
-												</svg>
-											</button>
-										</div>
+
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Заказ №</th>
+													<th>Статус</th>
+													<th>Дата доставки</th>
+													<th>Сумма с НДС</th>
+													<th>Количество</th>
+													<th></th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_red">не оплачен</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_green">оплачен</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_grey">отменен</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+
 									</div>
 
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Заказ №</th>
-														<th>Статус</th>
-														<th>Дата доставки</th>
-														<th>Сумма с НДС</th>
-														<th>Количество</th>
-														<th></th>
-														<th></th>
-													</tr>
-												</thead>
-												<tbody>
+									<div class="tabs__body">
 
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_red">не оплачен</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
-
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_green">оплачен</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
-
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_grey">отменен</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
-
-												</tbody>
-											</table>
-
-										</div>
-
-										<div class="tabs__body">
-								
 										<div class="lc-physical-person__select-inner">
 											<div class="lc-physical-person__select-block">
 												<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Статус заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Статус заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="lc-physical-person__select-block-select">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Дата заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
+												<div class="lc-physical-person__select-block-select">
+													<select name="form[]" class="form">
+														<option value="1" selected="selected">Сумма заказа</option>
+														<option value="2">Пункт №2</option>
+														<option value="3">Пункт №3</option>
+														<option value="4">Пункт №4</option>
+													</select>
+												</div>
 											</div>
-											<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Дата заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
-											</div>
-											<div class="lc-physical-person__select-block-select">
-												<select name="form[]" class="form">
-													<option value="1" selected="selected">Сумма заказа</option>
-													<option value="2">Пункт №2</option>
-													<option value="3">Пункт №3</option>
-													<option value="4">Пункт №4</option>
-												</select>
+											<div class="lc-physical-person__select-buttons">
+												<button data-tippy-content="" type="button" class="btn-icon-big">
+													<svg class="btn-icon-big__icon">
+														<use xlink:href="#printer-icon"></use>
+													</svg>
+												</button>
 											</div>
 										</div>
-										<div class="lc-physical-person__select-buttons">
-											<button data-tippy-content="" type="button" class="btn-icon-big">
-												<svg class="btn-icon-big__icon">
-													<use xlink:href="#printer-icon"></use>
-												</svg>
-											</button>
-										</div>
+
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Заказ №</th>
+													<th>Статус</th>
+													<th>Дата доставки</th>
+													<th>Сумма с НДС</th>
+													<th>Количество</th>
+													<th></th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_green">создан</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_green">согласован</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														<div>5503240</div>
+													</td>
+													<td><span class="sticker-product sticker-product_grey">отменен</span></td>
+													<td>Самовывоз</td>
+													<td>6 875.00 ₽</td>
+													<td>5</td>
+													<td>
+													</td>
+													<td class="table-row">
+														<button data-tippy-content="" type="button" class="btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+
 									</div>
 
-											<table class="table">
-												<thead>
-													<tr>
-														<th>Заказ №</th>
-														<th>Статус</th>
-														<th>Дата доставки</th>
-														<th>Сумма с НДС</th>
-														<th>Количество</th>
-														<th></th>
-														<th></th>
-													</tr>
-												</thead>
-												<tbody>
+									<div class="tabs__body">
 
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_green">создан</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
+										<div class="new-lists">
+											<button type="button" class="new-lists__btn btn btn_width">новый список</button>
 
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_green">согласован</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
+											<div class="new-lists__inner">
 
-													<tr>
-														<td>
-															<div>5503240</div>
-														</td>
-														<td><span class="sticker-product sticker-product_grey">отменен</span></td>
-														<td>Самовывоз</td>
-														<td>6 875.00 ₽</td>
-														<td>5</td>
-														<td>
-														</td>
-														<td class="table-row">
-															<button data-tippy-content="" type="button" class="btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>
-																</svg>
-															</button>
-														</td>
-													</tr>
-
-												</tbody>
-											</table>
-
-										</div>
-
-										<div class="tabs__body">
-
-											<div class="new-lists">
-												<button type="button" class="new-lists__btn btn btn_width">новый список</button>
-
-												<div class="new-lists__inner">
-
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Любимый список</div>
-															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/card-product/jhjss" alt="Изображение списка">
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Любимый список</div>
+														<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2
+																200.00</span></div>
+														<div class="card-new-list__image">
+															<div class="card-new-list__image-img-bg">
 															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Новый Год</div>
-															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
+															<div class="card-new-list__image-img">
+																<img src="img/card-product/01.jpg" alt="Изображение списка">
 															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
 														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
 													</div>
+												</div>
 
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Любимый список</div>
-															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Новый Год</div>
+														<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25
+																000.00</span></div>
+														<div class="card-new-list__image">
+															<div class="card-new-list__image-img-bg">
 															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Инструменты</div>
-															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
+															<div class="card-new-list__image-img">
+																<img src="img/card-product/04.jpg" alt="Изображение списка">
 															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
 														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
 													</div>
+												</div>
 
-													<div class="new-lists__column">
-														<div data-popup="#new-list" class="new-lists__card card-new-list card-new-list_create">
-															<div class="card-new-list__title">Новый список</div>
-															<div class="card-new-list__value">0 товаров</div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Любимый список</div>
+														<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2
+																200.00</span></div>
+														<div class="card-new-list__image">
+															<div class="card-new-list__image-img-bg">
 															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
+															<div class="card-new-list__image-img">
+																<img src="img/card-product/01.jpg" alt="Изображение списка">
+															</div>
 														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
 													</div>
+												</div>
 
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Инструменты</div>
+														<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25
+																000.00</span></div>
+														<div class="card-new-list__image">
+															<div class="card-new-list__image-img-bg">
+															</div>
+															<div class="card-new-list__image-img">
+																<img src="img/card-product/02.jpg" alt="Изображение списка">
+															</div>
+														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="new-lists__column">
+													<div data-popup="#new-list" class="new-lists__card card-new-list card-new-list_create">
+														<div class="card-new-list__title">Новый список</div>
+														<div class="card-new-list__value">0 товаров</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
 												</div>
 
 											</div>
 
-											<div class="lists-empty" style="display: none;">
-												<div class="result-empty">
-													<div class="result-empty__img">
-														<svg class="result-empty__img-icon">
-															<use xlink:href="#basket-result-empty"></use>
-														</svg>
-													</div>
-													<div class="result-empty__title">У Вас еще нет ни одного списка</div>
-													<div class="result-empty__subtitle">Создавайте свои списки из любимых продуктов</div>
-													<button type="button" class="btn btn_width">новый список</button>
-												</div>
-											</div>
-
-
 										</div>
 
+										<div class="lists-empty" style="display: none;">
+											<div class="result-empty">
+												<div class="result-empty__img">
+													<svg class="result-empty__img-icon">
+														<use xlink:href="#basket-result-empty"></use>
+													</svg>
+												</div>
+												<div class="result-empty__title">У Вас еще нет ни одного списка</div>
+												<div class="result-empty__subtitle">Создавайте свои списки из любимых продуктов</div>
+												<button type="button" class="btn btn_width">новый список</button>
+											</div>
+										</div>
+
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<aside class="page-user-sec__aside">
+
+							<div class="lc-physical-person__formed-card formed-card">
+
+								<div class="formed-card__row">
+									<div class="formed-card__row-inner">
+										<div class="formed-card__small-text">лимит</div>
+									</div>
+									<div class="formed-card__limit rub">200 000.00</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="formed-card__row-inner">
+										<div class="formed-card__small-text">израсходовано</div>
+										<div class="formed-card__small-text">остаток</div>
+									</div>
+									<div class="formed-card__row-inner">
+										<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
+										<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
+									</div>
+									<div class="formed-card__progress progress">
+										<progress max="100" value="70"></progress>
+										<div class="progress-value"></div>
+										<div class="progress-bg">
+											<div class="progress-bar"></div>
+										</div>
 									</div>
 								</div>
 
-              </div>
+								<div class="formed-card__row">
+									<div class="table-info__inner">
+										<div class="table-info__table">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Задолжность</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value rub">
+														120 200.00
+													</div>
+												</div>
+											</div>
 
-              <aside class="page-user-sec__aside">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Просроченная задолжность</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value text-pink rub">20 200.00</div>
+												</div>
+											</div>
 
-                <div class="lc-physical-person__formed-card formed-card">
-
-                  <div class="formed-card__row">
-										<div class="formed-card__row-inner">
-											<div class="formed-card__small-text">лимит</div>
 										</div>
-										<div class="formed-card__limit rub">200 000.00</div>
-                  </div>
+									</div>
+								</div>
 
-                  <div class="formed-card__row">
-										<div class="formed-card__row-inner">
-											<div class="formed-card__small-text">израсходовано</div>
-											<div class="formed-card__small-text">остаток</div>
-										</div>
-										<div class="formed-card__row-inner">
-											<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
-											<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
-										</div>
-										<div class="formed-card__progress progress">
-											<progress max="100" value="70"></progress>
-											<div class="progress-value"></div>
-											<div class="progress-bg"><div class="progress-bar"></div></div>
-										</div>
-                  </div>
+							</div>
 
-                  <div class="formed-card__row">
-                    <div class="table-info__inner">
-                      <div class="table-info__table">
-                        <div class="table-info__table-row d-flex">
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-name">Задолжность</div>
-                            <div class="table-info__table-line"></div>
-                          </div>
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-value rub">
-                              120 200.00
-                            </div>
-                          </div>
-                        </div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 
-                        <div class="table-info__table-row d-flex">
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-name">Просроченная задолжность</div>
-                            <div class="table-info__table-line"></div>
-                          </div>
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-value text-pink rub">20 200.00</div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </aside>
-            </div>
-          </div>
-        </section>
-      </main>
-      @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
 </html>
