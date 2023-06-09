@@ -999,11 +999,10 @@ body.padding {
 	}
 
 	&__img {
-		flex: 0 0 530px;
-		// height: 100%;
-		width: 530px;
-    height: 300px;
-		overflow: hidden;
+		max-width: 530px;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
 	}
 	.breadcrumbs {
     padding-top: 0;
@@ -1022,12 +1021,13 @@ body.padding {
 	color: #fff;
 }
 
-.banner-bg {
-	max-height: 300px;
-}
+// .banner-bg {
+// 	min-height: 300px;
+// }
 
 .service-banner__bg {
 	background: #221F20;
+	overflow: hidden;
 }
 
 .service-banner__text .breadcrumbs {
@@ -1080,17 +1080,18 @@ body.padding {
 
 	&__row {
 		flex-wrap: wrap;
-		margin: 0 -20px;
+		margin: 0 -10px;
 	}
 
 	&__column {
 		flex: 0 1 33.333%;
-		padding: 0 10px 10px 10px;
+		padding: 0 10px 20px 10px;
 	}
 
 	&__item {
 		flex: 0 1 100%;
-		padding: 20px;
+		padding: 16px;
+		height: 100%;
 		border-radius: 30px;
 		background: #fff;
 		border: 1px solid #e3e3e3;
@@ -1197,14 +1198,21 @@ body.padding {
 		line-height: 24px;
 		color: #161615;
 	}
-
+	&__fully {
+		font-size: 14px;
+		line-height: 26px;
+		color: #C5934F;
+		margin-bottom: 30px;
+	}
 	&__interface {
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__interface-rating-block {
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	&__interface-like-block {

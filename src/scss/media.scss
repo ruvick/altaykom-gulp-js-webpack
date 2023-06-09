@@ -46,6 +46,9 @@
 	.recentlyWatched {
 		margin: 0 -10px;
 	}
+	.service-banner__text {
+    padding: 30px 0;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -63,10 +66,6 @@
 
 	.sliderCert__slide {
 		padding-bottom: 25%;
-	}
-
-	.sliderSec .sliderSec__container {
-		padding-right: 0;
 	}
 
 	.favorites-sec .card-product-block__column {
@@ -153,6 +152,12 @@
 	.main-prod-card__column {
     flex: 0 1 33.333%;
 	}
+	.service-banner__img {
+    width: auto;
+	}
+	.documents-block__item-icon-descp-name {
+    font-size: 16px;
+	}
 }
 
 @media (max-width: 1100px) {
@@ -165,6 +170,13 @@
 @media (max-width: 1050px) {
 	.servicesBlock-bg__card {
 		min-height: 170px;
+	}
+	.service-banner__text .title {
+    font-size: 36px;
+    line-height: 46px;
+	}
+	.documents-block__column {
+    flex: 0 1 50%;
 	}
 }
 
@@ -412,6 +424,12 @@
 
 	.baking-ideas-sec__column {
 		flex: 0 1 33.333%;
+	}
+	.service-banner__inner {
+    align-items: flex-end;
+	}
+	.service-banner__img img {
+    height: auto;
 	}
 }
 
@@ -886,6 +904,66 @@
 	.breadcrumbs {
     padding-top: 20px;
 	}
+	.service-banner__inner {
+    flex-wrap: wrap;
+	}
+	.service-banner__img {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+		margin-bottom: -50px;
+	}
+	.service-banner {
+    padding-bottom: 0;
+	}
+	.service-description__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+	}
+	.service-description__text {
+    margin-bottom: 10px;
+	}
+	.documents-block__item {
+    padding: 13px 15px;
+	}
+	.documents-block__column {
+    padding: 0 5px 10px 5px;
+	}
+	.card-reviews {
+		padding: 20px;
+	}
+	.card-reviews__props-icon {
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 27px;
+		border-radius: 15px;
+	}
+	.card-reviews__props-descp-name {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 4px;
+	}
+	.card-reviews__descp-text {
+    font-size: 14px;
+    line-height: 22px;
+	}
+	.card-reviews__descp {
+    margin-bottom: 15px;
+	}
+	.card-reviews__fully {
+    font-size: 14px;
+    line-height: 26px;
+    color: #C5934F;
+    margin-bottom: 20px;
+	}
+	.card-reviews__props {
+    margin-bottom: 11px;
+	}
+	.card-reviews__interface-rating-block {
+    margin-bottom: 20px;
+	}
 }
 
 @media (max-width: 730px) {
@@ -895,6 +973,9 @@
 
 	.categoriesImgBlock__column {
 		flex: 0 1 33%;
+	}
+	.documents-block__column {
+    flex: 0 1 100%;
 	}
 }
 
@@ -1527,6 +1608,16 @@
 	.filter-mob-block__btn {
     padding: 15px 5px;
 	}
+	.btn {
+		width: 100%;
+	}
+	.service-description__text {
+    text-align: justify;
+	}
+	.documents-block__item {
+    padding: 5px 15px;
+		border: none;
+	}
 }
 
 @media (max-width: 375px) {
@@ -1576,6 +1667,16 @@
 	}
 	.filter-mob-block__btn {
     font-size: 12px;
+	}
+	.service-banner__img {
+    margin-bottom: -30px;
+	}
+	.documents-block__item-icon-descp-name {
+    font-size: 14px;
+    line-height: 16px;
+	}
+	.documents-block__item-icon-descp-value {
+    font-size: 14px;
 	}
 }
 

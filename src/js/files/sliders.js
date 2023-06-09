@@ -396,8 +396,8 @@ function initSliders() {
 			*/
 			observer: true,
 			observeParents: true,
-			slidesPerView: 3,
-			spaceBetween: 20,
+			slidesPerView: 1.1,
+			spaceBetween: 10,
 			autoHeight: true,
 			speed: 800,
 			//touchRatio: 0,
@@ -415,29 +415,40 @@ function initSliders() {
 				nextEl: '.slider-info__button-next',
 				prevEl: '.slider-info__button-prev',
 			},
-			/*
 			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					spaceBetween: 0,
-					autoHeight: true,
+				345: {
+					slidesPerView: 1.2,
 				},
-				768: {
-					slidesPerView: 2,
+				// 376: {
+				// 	slidesPerView: 1.4,
+				// },
+				414: {
+					slidesPerView: 1.4,
+				},
+				540: {
+					slidesPerView: 1.8,
+				},
+				630: {
+					slidesPerView: 2.1,
+				},
+				// 768: {
+				// 	slidesPerView: 2.5,
+				// },
+				812: {
+					slidesPerView: 2.4,
+				},
+				1024: {
+					slidesPerView: 2.6,
 					spaceBetween: 20,
 				},
-				992: {
+				1200: {
+					slidesPerView: 2.8,
+				},
+				1330: {
 					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
 				},
 			},
-			*/
 			on: {
-
 			}
 		});
 		let cardProductSmallSl = new Swiper('.cardProductSmallSl', {
