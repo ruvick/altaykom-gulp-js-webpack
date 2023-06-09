@@ -3158,7 +3158,15 @@ body.padding {
 	flex: 0 0 340/1420*100%;
 	// overflow: hidden;
 }
-
+.page-user .section-title__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: start;
+}
+.page-user-sec {
+	padding: 0;
+}
 .formed-card {
 	padding: 30px;
 	border-radius: 30px;
@@ -3745,6 +3753,7 @@ body.padding {
 .basket-individuals-sorting__price-block .price-new {
 	font-size: 14px;
 	line-height: 26/14*100%;
+	white-space: nowrap;
 }
 
 .basket-individuals-sorting__price-block .price-old {
@@ -3756,12 +3765,14 @@ body.padding {
 	display: flex;
 	align-items: center;
 	margin-right: 25px;
+	white-space: nowrap;
 }
 
 .basket-individuals-sorting__quantity-cost-column {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
+	margin-left: 15px;
 
 	*:last-child {
 		margin-bottom: 0;
@@ -4929,6 +4940,7 @@ body.padding {
 .section-title__inner-title {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .individual-order-details__title-btn {
@@ -5872,9 +5884,9 @@ body.padding {
 .page-service .lineBlock {
 	margin-bottom: 60px;
 }
-.page-user {
-	padding-top: 80px;
-}
+// .page-user {
+// 	padding-top: 80px;
+// }
 .filter-mob-block {
 	display: flex;
 	justify-content: space-between;
@@ -5905,6 +5917,8 @@ body.padding {
 	display: none;
 	margin-bottom: 27px;
 }
+//========================================================================================================================================================
+
 //========================================================================================================================================================
 
 // Перенести
