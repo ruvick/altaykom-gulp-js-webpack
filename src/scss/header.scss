@@ -62,7 +62,10 @@
 		display: none;
 	}
 }
-
+.header-user .header__main-column_right .phone-item {
+	display: flex;
+	margin-right: 0 !important;
+}
 .header__menu-burger {
 	display: none;
 	align-items: center;

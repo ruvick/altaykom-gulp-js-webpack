@@ -180,11 +180,12 @@ body.padding {
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
-	// padding-top: 40px;
 	padding-top: 150px;
 	padding-bottom: 80px;
 }
-
+.page-user {
+	padding-top: 80px;
+}
 .section {
 	padding: 40px 0;
 }
@@ -3337,7 +3338,9 @@ body.padding {
 		margin-right: 10px;
 	}
 }
-
+.formed-card__link {
+	padding: 16px 10px;
+}
 //========================================================================================================================================================
 
 .catalog-entity-sec__row {
@@ -3694,12 +3697,13 @@ body.padding {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 20px;
 }
 
 .basket-individuals-block__title {
 	font-size: 20px;
 	line-height: 30/20*100%;
-	margin-bottom: 20px;
+	margin-right: 15px;
 }
 
 .basket-individuals-sorting {
@@ -6051,7 +6055,9 @@ body.padding {
 .main-pagging__pagging {
 	margin-right: 15px;
 }
-
+.section-title__title {
+	margin-right: 15px;
+}
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
