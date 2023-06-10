@@ -154,10 +154,9 @@
 			margin-right: 0;
 		}
 	}
-
-	// .new-lists__card {
-	// 	height: 250px;
-	// }
+	.box-order__options_c .box-order__options-item {
+		flex: 0 1 49.5%;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -1370,6 +1369,9 @@
 			margin-bottom: 0;
 		}
 	}
+	.box-order__options_c .box-order__options-item {
+    flex: 0 1 100%;
+	}
 }
 
 @media (max-width: 540px) {
@@ -2042,6 +2044,16 @@
 	.box-order__item-another-city {
     margin-top: 10px;
     text-align: left;
+	}
+	.box-order__options_c .box-order__options-inner {
+    padding: 20px;
+	}
+	.box-order__options-item_text .box-order__options-descp-title {
+    font-size: 14px;
+    line-height: 1.5;
+	}
+	.formed-card {
+    padding: 15px 10px;
 	}
 }
 
