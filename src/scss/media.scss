@@ -1358,6 +1358,18 @@
 	.setting-profile__form-descp {
     margin-left: 0;
 	}
+	.box-order__options-item {
+    flex: 0 1 100%;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.box-order__form-input {
+    flex: 0 1 100%;
+    &:last-child{
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media (max-width: 540px) {
@@ -2023,6 +2035,13 @@
 		.item-profile__descp {
 			margin-bottom: 10px;
 		}
+	}
+	.box-order__options-inner {
+		padding: 20px;
+	}
+	.box-order__item-another-city {
+    margin-top: 10px;
+    text-align: left;
 	}
 }
 
