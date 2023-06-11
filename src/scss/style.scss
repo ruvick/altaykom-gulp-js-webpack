@@ -82,6 +82,7 @@ body.padding {
 
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
+	position: relative;
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -6084,6 +6085,108 @@ body.padding {
 .select-mob-menu__list-link {
 	font-size: 20px;
 	line-height: 30px;
+}
+.main-mob-menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	transform: translateY(-100%);
+	transition: transform 0.3s ease 0s;
+}
+.main-mob-menu._active {
+	transform: translateY(0%);
+}
+.main-mob-menu__header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	min-height: 50px;
+	padding: 10px 25px 0 25px;
+}
+.main-mob-menu__header-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 155px;
+	width: 155px;
+	height: 40px;
+}
+.main-mob-menu__close {
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	z-index: 5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #E3E3E3;
+	border-radius: 15px;
+	svg {
+		flex: 0 0 17px;
+		width: 17px;
+		height: 17px;
+		stroke: #8F8E8E;
+	}
+}
+.main-mob-menu__body {
+	padding: 43px 35px 30px 35px;
+	.button-catalog {
+		margin-bottom: 30px;
+	}
+}
+.main-mob-menu__footer {
+	text-align: center;
+	padding: 30px 25px;
+	border-top: 1px solid #E3E3E3;
+} 
+.main-mob-menu__list {
+}
+.main-mob-menu__list-item {
+	margin-bottom: 20px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.main-mob-menu__list-link {
+	font-size: 20px;
+}
+.main-mob-menu__footer-address {
+	margin-bottom: 28px;
+}
+.main-mob-menu__footer-phone-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	span {
+		font-weight: 400;
+		margin: 0 14px;
+	}
+}
+.main-mob-menu__footer-phone-item {
+	font-size: 17px;
+	line-height: 42px;
+	font-weight: 700;
+}
+.main-mob-menu__footer-mode {
+	font-size: 14px;
+	color: #8F8E8E;
+	margin-bottom: 16px;
+}
+.main-mob-menu__footer-email {
+	font-size: 17px;
+	color: #C5934F;
+}
+.main-mob-menu__btn {
+	width: 100%;
+	margin-top: 40px;
 }
 //========================================================================================================================================================
 

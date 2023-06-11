@@ -134,6 +134,22 @@ if (ManagementFiltersBtn) {
 	});
 }
 
+// MainMobMenu
+const MainMobMenu = document.querySelector('.main-mob-menu');
+const MainMobMenuCl = document.querySelector('.main-mob-menu__close');
+const headerMenuBurger = document.querySelector('.header__menu-burger');
+
+if (headerMenuBurger) {
+	headerMenuBurger.addEventListener('click', function () {
+		MainMobMenu.classList.add('_active');
+	});
+}
+if (MainMobMenuCl) {
+	MainMobMenuCl.addEventListener('click', function () {
+		MainMobMenu.classList.remove('_active');
+	});
+}
+
 // FiltersMob
 const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
 const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');
