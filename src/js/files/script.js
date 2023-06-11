@@ -134,6 +134,21 @@ if (ManagementFiltersBtn) {
 	});
 }
 
+// FiltersMob
+const filterMobOp = document.querySelector('.filter-mob-block__btn_open');
+const filtersMobCl = document.querySelector('.filters-mob-menu__header-close');
+const filtersMobMenu = document.querySelector('.filters-mob-menu');
+
+if (filterMobOp) {
+	filterMobOp.addEventListener('click', function () {
+		filtersMobMenu.classList.add('_active');
+	});
+}
+if (filtersMobCl) {
+	filtersMobCl.addEventListener('click', function () {
+		filtersMobMenu.classList.remove('_active');
+	});
+}
 
 // Range 
 const rangeInput = document.querySelectorAll(".range-input input"),
