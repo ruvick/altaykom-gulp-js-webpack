@@ -5,7 +5,7 @@
 <body>
 	<div class="wrapper">
 		@@include('html/_header-legal-person.htm',{})
-		<main class="page">
+		<main class="page page-cat-entry">
 
 			@@include('html/components/_multicorzine-legal-entity.htm',{})
 
@@ -29,7 +29,7 @@
 				<div class="_container">
 					<div class="section-title__title title-main">ингредиенты</div>
 				</div>
-			</div>
+			</div> 
 
 			<section id="catalog-entity-sec" class="catalog-entity-sec section"> 
 				<div class="_container">
@@ -390,6 +390,8 @@
 							</button>
 						</div>
 					</div>
+
+					@@include('html/components/_filter-mob-block.htm',{})
 
 					<div class="catalog-entity-sec__inner">
 						<div class="catalog-entity-sec__row">

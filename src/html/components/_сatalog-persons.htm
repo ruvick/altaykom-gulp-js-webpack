@@ -1,21 +1,7 @@
 <section class="catalog">
 	<div class="_container">
 
-		<div class="catalog__filter-mob-block filter-mob-block">
-			<button type="button" class="filter-mob-block__btn">
-				<svg>
-					<use xlink:href="#filters"></use>
-				</svg>
-				Фильтры
-				<span class="filter-mob-block__filters-value filters-value">20</span>
-			</button>
-			<button type="button" class="filter-mob-block__btn">
-				<svg>
-					<use xlink:href="#arrow-vertical"></use>
-				</svg>
-				По популярности
-			</button>
-		</div>
+		@@include('_filter-mob-block.htm',{}) 
 
 		<div class="catalog__directory-management directory-management">
 			<div class="directory-management__filters-item">
