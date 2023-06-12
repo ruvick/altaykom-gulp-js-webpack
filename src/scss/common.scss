@@ -368,7 +368,7 @@
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
-	padding: 3px 30px 3px 0;
+	padding: 19px 15px 19px 15px;
 	transition: $mainTransition;
 
 	&::before {
@@ -512,11 +512,6 @@
 
 .lineBlock__menu {
 	margin-left: -20px;
-}
-
-.menu-lineBlock__link {
-	padding: 19px 0 19px 30px;
-	padding: 19px 15px 19px 15px;
 }
 
 .lineBlock__menu .menu-lineBlock__item {

@@ -348,6 +348,7 @@
 	// transform: translate(0, -125px);
 	transition: opacity 0.5s ease 0s;
 	opacity: 0;
+	align-items: flex-end;
 }
 
 .menu-catalog__list {
@@ -413,9 +414,10 @@
 }
 
 .menu-catalog__img {
-	flex: 0 0 340px;
-	height: 298px;
+	flex: 0 1 340px;
+	// height: 298px;
 	padding: 30px 50px 30px 30px;
+	padding-bottom: 17.3%;
 	border-radius: 30px;
 	margin-right: 20px;
 	overflow: hidden;
@@ -432,6 +434,10 @@
 
 .menu-catalog__img:hover {
 	background-size: 110%;
+}
+
+.header .menu-lineBlock__link {
+	padding: 0;
 }
 
 ._stocks-sub-menu .sales-leaders-banner:hover {
