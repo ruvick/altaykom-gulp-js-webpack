@@ -1685,6 +1685,12 @@
 	.header-user__back-btn {
     font-size: 0;
 	}
+	.catalog-entity-sec__inner .catalog-entity-table {
+		display: none;
+	}
+	.catalog-entity-mob {
+		display: block;
+	}
 }
 
 @media (max-width: 480px) {
