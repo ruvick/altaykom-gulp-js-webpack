@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_960" data-name="Прямоугольник 960" width="24" height="24" transform="translate(1551 103)" fill="#221f20" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-1551 -103)" clip-path="url(#clip-path)">
+    <path id="Icon_open-person" data-name="Icon open-person" d="M11,0C7.975,0,5.5,3.08,5.5,6.875S7.975,13.75,11,13.75s5.5-3.08,5.5-6.875S14.025,0,11,0ZM5.253,13.75A5.506,5.506,0,0,0,0,19.25V22H22V19.25a5.486,5.486,0,0,0-5.253-5.5A7.723,7.723,0,0,1,11,16.5,7.723,7.723,0,0,1,5.253,13.75Z" transform="translate(1552 104)" fill="#221f20"/>
+  </g>
+</svg>
