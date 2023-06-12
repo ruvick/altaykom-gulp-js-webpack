@@ -1457,6 +1457,16 @@
 	.box-order__options_c .box-order__options-item {
     flex: 0 1 100%;
 	}
+	.menu-catalog__image-block {
+    flex-wrap: wrap;
+	}
+	.menu-catalog__img {
+    flex: 0 1 100%;
+    padding-bottom: 15%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    background-size: 50%;
+	}
 }
 
 @media (max-width: 540px) {
