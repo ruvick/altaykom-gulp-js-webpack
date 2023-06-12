@@ -173,6 +173,16 @@ if (filterMobSl) {
 	});
 }
 
+// MulticorzineMobFxed
+const multicorzineMobFxed = document.getElementById('multicorzineMobFxed');
+const MobfixedMenuFt = document.getElementById('MobfixedMenuFt');
+
+if (MobfixedMenuFt) {
+	MobfixedMenuFt.addEventListener('click', function () {
+		multicorzineMobFxed.classList.toggle('_active');
+	});
+}
+
 // Range 
 const rangeInput = document.querySelectorAll(".range-input input"),
 	priceInput = document.querySelectorAll(".price-input input"),

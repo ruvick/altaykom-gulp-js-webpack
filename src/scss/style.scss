@@ -6093,7 +6093,6 @@ body.padding {
 	left: 0;
 	z-index: 500;
 	width: 100%;
-	height: 100%;
 	background-color: #fff;
 	transform: translateY(-100%);
 	transition: transform 0.3s ease 0s;
@@ -6187,6 +6186,33 @@ body.padding {
 .main-mob-menu__btn {
 	width: 100%;
 	margin-top: 40px;
+}
+.multicorzine-mob-fixed {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px;
+	border-radius: 35px 35px 0 0;
+	padding-bottom: 100px;
+	transform: translateY(100%);
+	transition: transform 0.3s ease 0s;
+	.multicorzine-header__main {
+    padding: 0;
+		margin-bottom: 20px;
+		border-bottom: none;
+	}
+	.multicorzine-header__link {
+    padding: 15px;
+	}
+	.multicorzine-header__add {
+    border: 1px solid #E3E3E3;
+		border-radius: 15px;
+	}
+}
+.multicorzine-mob-fixed._active {
+	transform: translateY(0%);
 }
 //========================================================================================================================================================
 
