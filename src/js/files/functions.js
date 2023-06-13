@@ -475,8 +475,9 @@ export function menuClose() {
 }
 
 // Открыть/закрыть catalog в header ==========================================================================================================================
-const catBtn = document.querySelector('.button-catalog');
-const iconMenu = document.querySelector('.icon-menu');
+const catBtn = document.getElementById('catBtn');
+const catBtnCl = document.getElementById('catBtnCl');
+const iconMenu = document.getElementById('iconMenu');
 const menuCatalog = document.querySelector('.menu-catalog');
 
 if (catBtn) {
@@ -486,7 +487,30 @@ if (catBtn) {
 		bodyLock();
 	});
 }
+if (catBtnCl) {
+	catBtnCl.addEventListener('click', function () {
+		iconMenu.classList.remove('_active');
+		menuCatalog.classList.remove('_active');
+		bodyUnlock();
+	});
+}
+// MainMobMenu =====================================================================================================================================
+const MainMobMenu = document.querySelector('.main-mob-menu');
+const MainMobMenuCl = document.querySelector('.main-mob-menu__close');
+const headerMenuBurger = document.querySelector('.header__menu-burger');
 
+if (headerMenuBurger) {
+	headerMenuBurger.addEventListener('click', function () {
+		MainMobMenu.classList.add('_active');
+		bodyLock();
+	});
+}
+if (MainMobMenuCl) {
+	MainMobMenuCl.addEventListener('click', function () {
+		MainMobMenu.classList.remove('_active');
+		bodyUnlock();
+	});
+}
 // Всплывающие меню при наведении ===================================================================================================================
 const item = document.querySelectorAll('.menu-lineBlock__item');
 const lineBlockBlk = document.querySelector('.lineBlock-blk');

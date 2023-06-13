@@ -351,6 +351,28 @@
 	align-items: flex-end;
 }
 
+.menu-catalog__header {
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 56px;
+	padding: 15px 25px;
+	background-color: #221F20;
+}
+.menu-catalog__header-text {
+	font-family: "Lack", sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+.menu-catalog__header-close {
+	svg {
+		flex: 0 0 18.3px;
+		width: 18.3px;
+		height: 18.3px;
+		stroke: #fff;
+	}
+}
+
 .menu-catalog__list {
 	flex: 0 0 220px;
 }

@@ -75,9 +75,9 @@
 		</div>
 
 		<div class="header__navigation">
-			<div class="header__button-catalog button-catalog">
+			<div id="catBtn" class="header__button-catalog button-catalog">
 				<div class="button-catalog__text">каталог</div>
-				<button type="button" class="button-catalog__icon icon-menu" aria-label="Бургер иконка">
+				<button id="iconMenu" type="button" class="button-catalog__icon icon-menu" aria-label="Бургер иконка">
 					<span></span>
 					<span></span>
 					<span></span>
@@ -179,41 +179,8 @@
 
 		</div>
 	</div>
-	<div class="menu-catalog">
-		<div class="menu-catalog__inner">
-			<div class="menu-catalog__body">
-				<div class="menu-catalog__list">
-					<ul class="menu-lineBlock">
-						<li class="menu-lineBlock__item">
-							<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-stocks">Акции</a>
-						</li>
-						<li class="menu-lineBlock__item">
-							<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-newprd">Новинки</a>
-						</li>
-						<li class="menu-lineBlock__item">
-							<a href="#" class="menu-lineBlock__link menu-lineBlock__link-icon_ingredients">Ингредиенты</a>
-						</li>
-						<li class="menu-lineBlock__item">
-							<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-inventory">Инвентарь</a>
-						</li>
-						<li class="menu-lineBlock__item">
-							<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-equipment">Оборудование</a>
-						</li>
-						<li class="menu-lineBlock__item">
-							<a href="#" class="menu-lineBlock__link menu-lineBlock__link_icon-products">Наша продукция</a>
-						</li>
-					</ul>
-				</div>
-				<div class="menu-catalog__image-block">
-					<div class="menu-catalog__img menu-catalog__img_01">
-						<div class="menu-catalog__img-title">Изготовление сахарной пудры</div>
-					</div>
-					<div class="menu-catalog__img menu-catalog__img_02">
-						<div class="menu-catalog__img-title">Производство инвентаря</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
+	@@include('/components/_menu-catalog.htm',{})
+	
 </header>
 
