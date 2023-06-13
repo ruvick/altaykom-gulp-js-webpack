@@ -134,7 +134,7 @@ if (ManagementFiltersBtn) {
 	});
 }
 
-// Product Preview
+// Product Preview =================================================================================================================================
 const prodPrew = document.getElementById('prodPrew');
 const prodPrewCl = document.getElementById('prodPrewCl');
 const catEntityMbCard = document.querySelector('.catalog-entity-mob__card');
