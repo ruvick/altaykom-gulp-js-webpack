@@ -1428,4 +1428,12 @@
 		</g>
 	</symbol>
 
+	<!-- Arrow-vertical -->
+	<symbol id="question" viewBox="0 0 8 21">
+		<text id="_" data-name="?" transform="translate(0 17)" fill="#161615" font-size="16"
+			font-family="SegoeUI, Segoe UI">
+			<tspan x="0" y="0">?</tspan>
+		</text>
+	</symbol>
+
 </svg>
