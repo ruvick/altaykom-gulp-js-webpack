@@ -1820,6 +1820,9 @@
 	.physical-list-person__header-buttons {
     justify-content: start;
 	}
+	.physical-list-person__close {
+		display: flex;
+	}
 }
  
 @media (max-width: 480px) {

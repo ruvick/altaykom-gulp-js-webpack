@@ -4884,7 +4884,20 @@ body.padding {
 		border-top: none;
 	}
 }
-
+.physical-list-person__close {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	flex: 0 0 40px;
+	height: 40px;
+	svg {
+		width: 18.3px;
+		flex: 0 0 18.3px;
+		height: 18.3px;
+		stroke: #8F8E8E;
+	}
+}
 .item-physical-list-person {
 	display: flex;
 	justify-content: space-between;
