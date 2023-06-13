@@ -4856,20 +4856,21 @@ body.padding {
 
 .physical-list-person__pord-price-value {
 	color: #34B866;
+	font-weight: 700;
 }
 
 .physical-list-person__inner {
 	padding-bottom: 30px;
 }
 
-.physical-list-person__inner::-webkit-scrollbar-thumb,
-.physical-list-person__inner::-webkit-scrollbar {
-	display: none !important;
+.physical-list-person__box {
+	height: 600px;
+	overflow: auto;
 }
 
-.physical-list-person__box {
-	// overflow: hidden;
-	// height: 800px;
+.physical-list-person__box::-webkit-scrollbar-thumb,
+.physical-list-person__box::-webkit-scrollbar {
+	display: none !important;
 }
 
 .physical-list-person__row {}
@@ -4932,6 +4933,7 @@ body.padding {
 	font-size: 18px;
 	line-height: 26 /18 * 100%;
 	font-weight: 700;
+	white-space: nowrap;
 }
 
 .item-physical-list-person__delete {

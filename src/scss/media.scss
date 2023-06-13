@@ -243,7 +243,7 @@
 }
 
 @media (max-width: 910px) {
-	.multicorzine-legal-entity {
+	.physical-list-person {
 		width: 90%;
 		min-width: 0;
 		padding: 25px 15px;
@@ -806,7 +806,7 @@
 	.page-user {
     padding-top: 80px;
 	}
-	.multicorzine-legal-entity {
+	.physical-list-person {
     width: 96%;
 	}
 }
@@ -1727,7 +1727,7 @@
 	.catalog-entity-mob {
 		display: block;
 	}
-	.multicorzine-legal-entity {
+	.physical-list-person {
     width: 100%;
 	}
 	.multicorzine-legal-entity-promo {
@@ -1781,7 +1781,7 @@
     margin-right: 0;
     flex-wrap: wrap;
 	}
-	.multicorzine-legal-entity {
+	.physical-list-person {
     padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -1790,6 +1790,35 @@
 	}
 	.physical-list-person__body {
     margin-bottom: 0;
+	}
+
+
+	.physical-list-person__item {
+		position: relative;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+		padding-top: 0;
+		padding-left: 100px;
+		.item-physical-list-person__img {
+			border: 1px solid grey;
+			position: absolute;
+			top: 23px;
+			left: 0;
+		}
+		.item-physical-list-person__descp {
+			flex: 1 1 auto;
+		}
+		.item-physical-list-person__value-block {
+			align-items: start;
+		}
+	}
+	.physical-list-person__back-btn {
+    display: none;
+	}
+	.physical-list-person__header-buttons {
+    justify-content: start;
 	}
 }
  
