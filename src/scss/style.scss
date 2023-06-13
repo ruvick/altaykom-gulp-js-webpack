@@ -4790,12 +4790,15 @@ body.padding {
 	height: 100%;
 	padding: 30px;
 	background: #fff;
-	overflow: hidden;
+	overflow: auto;
 	box-shadow: 0 0 5px rgb(0 0 0 / 30%);
 	transform: translate(100%, 0);
 	transition: transform 0.3s ease 0s;
 }
-
+.physical-list-person::-webkit-scrollbar-thumb,
+.physical-list-person::-webkit-scrollbar {
+	display: none;
+}
 .physical-list-person._active {
 	transform: translate(0, 0);
 }
@@ -4829,8 +4832,8 @@ body.padding {
 
 .physical-list-person__body {
 	flex: 1 1 auto;
-	max-height: 940px;
-	overflow: hidden;
+	// max-height: 940px;
+	// overflow: hidden;
 	margin-bottom: 30px;
 }
 
@@ -4856,10 +4859,7 @@ body.padding {
 }
 
 .physical-list-person__inner {
-	// padding: 30px 0;
 	padding-bottom: 30px;
-	overflow: auto;
-	height: 800px;
 }
 
 .physical-list-person__inner::-webkit-scrollbar-thumb,
@@ -5177,6 +5177,7 @@ body.padding {
 	font-size: 18px;
 	line-height: 30 /18 * 100%;
 	font-weight: 700;
+	white-space: nowrap;
 }
 
 .multicorzine-legal-entity__table-btn {
@@ -5209,12 +5210,19 @@ body.padding {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-bottom: 20px;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 
+}
+.multicorzine-legal-entity__item {
+	margin-right: 15px;
+	&:last-child{
+		margin-right: 0;
+	}
 }
 .multicorzine-legal-entity__table-box {
 	.table thead th {
@@ -5252,6 +5260,7 @@ body.padding {
 	font-size: 26px;
 	line-height: 42 /26 * 100%;
 	font-weight: 700;
+	white-space: nowrap;
 }
 
 .multicorzine-legal-entity__sel-move {
@@ -5259,6 +5268,9 @@ body.padding {
 
 	.select__title {
 		border: none;
+	}
+	.select__value::after {
+		display: none;
 	}
 }
 
@@ -5332,6 +5344,18 @@ body.padding {
 		flex: 0 0 7px;
 		height: 21px;
 	}
+}
+.multicorzine-legal-entity__table-box {
+	overflow: auto;
+  height: 450px;
+	margin-bottom: 30px;
+}
+.multicorzine-legal-entity__table-box::-webkit-scrollbar-thumb,
+.multicorzine-legal-entity__table-box::-webkit-scrollbar {
+	display: none !important;
+}
+.multicorzine-legal-entity__formed-card {
+	display: none;
 }
 //========================================================================================================================================================
 .current-promotions__title {
