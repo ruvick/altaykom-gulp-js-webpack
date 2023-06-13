@@ -134,7 +134,23 @@ if (ManagementFiltersBtn) {
 	});
 }
 
+// Product Preview
+const prodPrew = document.getElementById('prodPrew');
+const prodPrewCl = document.getElementById('prodPrewCl');
+const catEntityMbCard = document.querySelector('.catalog-entity-mob__card');
 
+if (catEntityMbCard) {
+	catEntityMbCard.addEventListener('click', function () {
+		prodPrew.classList.add('_active');
+		// bodyLock();
+	});
+}
+if (prodPrewCl) {
+	prodPrewCl.addEventListener('click', function () {
+		prodPrew.classList.remove('_active');
+		// bodyUnlock();
+	});
+}
 
 // FiltersMob
 const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
