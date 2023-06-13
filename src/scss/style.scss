@@ -6285,6 +6285,10 @@ body.padding {
 	background-color: #fff;
 	transition: transform 0.3s ease 0s;
 	transform: translateX(100%);
+	.conclusion {
+    padding: 15px;
+    border-radius: 25px;
+	}
 }
 .product-preview._active {
 	transform: translateY(0%);
@@ -6344,6 +6348,19 @@ body.padding {
 	font-size: 14px;
 	color: #C5934F;
 	margin-top: 13px;
+}
+.product-preview__btn-fav {
+	display: flex;
+	align-items: center;
+	border: 1px solid #E3E3E3;
+	margin-top: 10px;
+	svg {
+		flex: 0 0 20px;
+		width: 20px;
+		height: 20px;
+		fill: #fff;
+		margin-right: 5px;
+	}
 }
 //========================================================================================================================================================
 
