@@ -5037,8 +5037,8 @@ body.padding {
 	align-items: start;
 }
 
-.individual-order-details-main {
-	margin-top: -110px;
+.page-order-details .individual-order-details-main {
+	margin-top: -50px; 
 }
 
 .individual-order-details__order-block {
@@ -6463,6 +6463,9 @@ body.padding {
 	background-color: #fff;
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
+.mob-btn-block {
+	display: none;
+}
 //========================================================================================================================================================
 
 //========================================================================================================================================================
@@ -6482,7 +6485,9 @@ body.padding {
 	justify-content: space-between;
 	align-items: center;
 }
-
+.section-title_top {
+	align-items: start;
+}
 // .section-title__inner .title-small {
 // 	max-width: 650px;
 // }

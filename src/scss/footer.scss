@@ -74,7 +74,7 @@
 	align-items: start;
 }
 
-.footer__phone {
+.footer__phone { 
 	display: block;
 	font-size: 30px;
 	white-space: nowrap;
@@ -85,7 +85,10 @@
 		color: #C5934F;
 	}
 }
-
+.footer__phone-separator {
+	display: none;
+	color: #707070;
+}
 .footer__time-work {
 	font-size: 16px;
 	opacity: 0.8;
