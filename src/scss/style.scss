@@ -6438,6 +6438,19 @@ body.padding {
 .product-preview__slider {
 	height: 104px;
 }
+.header__menu-catalog .menu-lineBlock__item {
+	display: flex;
+	align-items: center;
+	svg {
+		display: none;
+		width: 11px;
+		flex: 0 0 11px;
+		height: 10px;
+		transform: rotate(180deg);
+		margin-top: 2px;
+		margin-left: 20px;
+	}
+}
 //========================================================================================================================================================
 
 //========================================================================================================================================================

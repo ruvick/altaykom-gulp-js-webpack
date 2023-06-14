@@ -601,6 +601,9 @@
 	.menu-catalog__body {
 		padding: 170px 25px 60px 25px;
 	}
+	.header__menu-catalog .menu-catalog__list {
+    flex: 0 1 100%;
+	}
 }
 
 @media (max-width: 840px) {
@@ -1298,6 +1301,15 @@
 	.multicorzine-legal-entity__table-box .table tbody td {
     padding: 10px;
 	}
+	.menu-catalog {
+		height: 100%;
+	}
+	.menu-catalog._active .menu-catalog__body {
+		height: auto;
+	}
+	.header__menu-catalog .menu-lineBlock__item svg {
+		display: block;
+	}
 }
 
 @media (max-width: 730px) {
@@ -1638,6 +1650,12 @@
 	}
 	.catalog-entity-sec__inner .catalog-entity-sec__row {
 		margin-bottom: 36px;
+	}
+	.header__menu-catalog .menu-lineBlock__item {
+    justify-content: space-between;
+	}
+	.menu-catalog._active .menu-catalog__body {
+    padding: 30px 13px;
 	}
 }
 
