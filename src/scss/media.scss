@@ -548,6 +548,9 @@
 	.header .menu-lineBlock {
     margin: 0;
 	}
+	.menu-catalog__list {
+    flex: 0 0 190px;
+	}
 }
 
 @media (max-width: 960px) {
