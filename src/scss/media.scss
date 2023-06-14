@@ -1335,6 +1335,15 @@
 	.page {
     padding-top: 130px;
 	}
+	.main-content {
+		padding: 0;
+	}
+	.main-content__text p {
+    margin-bottom: 15px;
+	}
+	.slider-certificates__title {
+    margin-bottom: 15px;
+	}
 }
 
 @media (max-width: 730px) {
@@ -1943,9 +1952,9 @@
 }
 
 @media (max-width: 445px) {
-.section-title__title {
-	margin-bottom: 30px;
-}
+// .section-title__title {
+// 	margin-bottom: 30px;
+// }
 .page-cat-entry .section-title__title {
 	margin-bottom: 0;
 	}
