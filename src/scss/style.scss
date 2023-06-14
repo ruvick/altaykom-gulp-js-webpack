@@ -188,6 +188,9 @@ body.padding {
 .page-user {
 	padding-top: 80px;
 }
+.page-person {
+
+}
 .section {
 	padding: 40px 0;
 }
@@ -286,8 +289,6 @@ body.padding {
 
 .categoriesImgBlock__card-img {
 	position: relative;
-	flex: 1 1 auto;
-	// height: 300px;
 	padding-bottom: 100%;
 	display: flex;
 	justify-content: center;
@@ -3850,6 +3851,7 @@ body.padding {
 	width: 100%;
 	height: 100%;
 	flex: 0 0 100%;
+	fill: #fff;
 }
 
 .basket-individuals-sorting__urn {
@@ -6058,6 +6060,7 @@ body.padding {
 
 .catalog__filter-mob-block {
 	display: none;
+	margin-top: 25px;
 	margin-bottom: 27px;
 }
 .box-order .table thead th {
@@ -6504,6 +6507,7 @@ body.padding {
 		flex: 0 0 9.4px;
 		height: 14px;
 		margin-left: 17px;
+		fill: #8f8e8e;
 	}
 }
 

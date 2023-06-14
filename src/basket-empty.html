@@ -7,7 +7,7 @@
 <body>
   <div class="wrapper">
     @@include('html/_header-user.htm',{})
-    <main class="page">
+    <main class="page page-user">
 
       <div class="breadcrumbs">
         <div class="_container">
@@ -28,12 +28,6 @@
             <div class="section-title__title title-main">
               Корзина
             </div>
-            <!-- <button type="reset" class="section-title__button filter-controll__btn btn btn_reset">
-              очистить
-              <svg class="filter-controll__btn-icon">
-                <use xlink:href="#urn-icon"></use>
-              </svg>
-            </button> -->
           </div>
         </div>
       </section>
@@ -58,7 +52,7 @@
         </div>
       </section>
 
-      @@include('html/components/_sales-leaders-sec.htm',{})
+      @@include('html/components/_sales-leaders-sec.htm',{}) 
 
     </main>
     @@include('html/_footer-user.htm',{})

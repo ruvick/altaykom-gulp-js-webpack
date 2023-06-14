@@ -119,6 +119,9 @@
 	.menu-catalog__inner {
     min-height: 500px;
 	}
+	.section-title__inner .card-person {
+		margin-top: 25px;
+	}
 }
 
 @media (max-width: 1250px) {
@@ -295,7 +298,7 @@
 
 	.lineBlock {
 		min-height: auto;
-		height: 58px;
+		// height: 58px;
 	}
 
 	.menu-lineBlock {
@@ -320,7 +323,7 @@
 	}
 
 	.page {
-		padding-top: 140px;
+		padding-top: 135px;
 	}
 
 	.swiper-button__inner {
@@ -552,6 +555,12 @@
 	.page-order-details .individual-order-details-main {
     margin-top: 0;
 	}
+	.main-pagging__select {
+		margin-top: 20px;
+	}
+	.catalog-entity-sec {
+		padding: 0 !important;
+	}
 }
 
 @media (max-width: 960px) {
@@ -760,6 +769,7 @@
 
 	.page-user-sec__aside {
 		flex: 0 1 100%;
+		margin-bottom: 15px;
 	}
 
 	.page__main.width .main-prod-card__column {
@@ -957,7 +967,7 @@
 	}
 
 	.page {
-		padding-bottom: 40px;
+		padding-bottom: 30px;
 	}
 
 	.sliderCert__slide {
@@ -1343,6 +1353,18 @@
 	}
 	.slider-certificates__title {
     margin-bottom: 15px;
+	}
+	.page-user {
+    padding-top: 80px;
+	}
+	.privacy-policy-block__row {
+    margin-bottom: 30px;
+	}
+	.privacy-policy-section {
+		padding-bottom: 20px;
+	}
+	.page-user-sec .box-order {
+		margin-bottom: 20px;
 	}
 }
 
@@ -1893,6 +1915,9 @@
 	.physical-list-person__close {
 		display: flex;
 	}
+	.card-product-sec__conclusion {
+    margin-bottom: 30px;
+	}
 }
  
 @media (max-width: 480px) {
@@ -1952,11 +1977,14 @@
 }
 
 @media (max-width: 445px) {
-// .section-title__title {
-// 	margin-bottom: 30px;
-// }
 .page-cat-entry .section-title__title {
 	margin-bottom: 0;
+	}
+	.page-user .icon-block {
+		margin-top: 30px;
+	}
+	.title-main {
+    font-size: 36px;
 	}
 }
 
@@ -2386,6 +2414,9 @@
 	.multicorzine-mob-fixed {
 		display: flex;
 	}
+	.card-product-sec__conclusion .conclusion__item:nth-child(3) {
+		display: none;
+	}
 }
 
 @media (max-width: 375px) {
@@ -2427,6 +2458,9 @@
 	.footer__phone-separator {
     margin: 0 10px;
 	}
+	.title-main {
+    font-size: 33px;
+	}
 }
 
 @media (max-width: 365px) {
@@ -2456,6 +2490,9 @@
 	.footer__phone {
     flex: 0 1 100%;
     text-align: center;
+	}
+	.title-main {
+    font-size: 33px;
 	}
 }
 
@@ -2507,6 +2544,9 @@
 	}
 	.page {
     padding-top: 125px;
+	}
+	.page-user {
+    padding-top: 60px;
 	}
 }
 
