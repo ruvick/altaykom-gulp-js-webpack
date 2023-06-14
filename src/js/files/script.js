@@ -246,11 +246,26 @@ if (multicorClose) {
 // Мои списки
 const physicalListPerson = document.querySelector('.physical-list-person');
 const newListsCard = document.querySelectorAll('.new-lists__card');
+const backBtn = document.getElementById('back-btn');
+const physicalCl = document.getElementById('physical-close');
+
 newListsCard.forEach((item) => {
 	item.addEventListener("click", function () {
-		physicalListPerson.classList.toggle("_active");
+		physicalListPerson.classList.add("_active");
 	});
 });
+
+if (backBtn) {
+	backBtn.addEventListener('click', function () {
+		physicalListPerson.classList.remove('_active');
+	});
+}
+
+if (physicalCl) {
+	physicalCl.addEventListener('click', function () {
+		physicalListPerson.classList.remove('_active');
+	});
+}
 
 
 // Лайки
