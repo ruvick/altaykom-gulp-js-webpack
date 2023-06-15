@@ -503,14 +503,12 @@ if (headerMenuBurger) {
 	headerMenuBurger.addEventListener('click', function () {
 		MainMobMenu.classList.add('_active');
 		bodyLock();
-		bodyLockToggle();
 	});
 }
 if (MainMobMenuCl) {
 	MainMobMenuCl.addEventListener('click', function () {
 		MainMobMenu.classList.remove('_active');
-		bodyUnlock();
-		bodyLockToggle();
+		bodyUnlock();;
 	});
 }
 // Search =====================================================================================================================================
