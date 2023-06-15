@@ -1101,7 +1101,7 @@ body.padding {
 		flex: 0 1 100%;
 		padding: 16px;
 		height: 100%;
-		border-radius: 30px;
+		border-radius: 30px; 
 		background: #fff;
 		border: 1px solid #e3e3e3;
 		overflow: hidden;
@@ -1131,7 +1131,9 @@ body.padding {
 		color: #8F8E8E;
 	}
 }
-
+.documents-block__item:hover .documents-block__item-icon-descp-name {
+	color: #C5934F;
+}
 //========================================================================================================================================================
 .reviews-slider {
 	padding-bottom: 80px;

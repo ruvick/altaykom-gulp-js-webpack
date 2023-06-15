@@ -2,24 +2,27 @@
 	opacity: 0;
 }
 [data-tippy-root] {
-	max-width: calc(100vw - 10px);
+	max-width: calc(225px - 10px); 
 }
 .tippy-box {
 	position: relative;
-	background-color: #333;
-	color: #fff;
-	border-radius: 4px;
-	font-size: 14px;
-	line-height: 1.4;
+	background-color: #fff;
+	color: #161615;
+	border: 1px solid #221F20;
+	border-radius: 8px;
+	font-size: 13px;
+	line-height: 15px;
 	outline: 0;
+	bottom: -18px;
+	right: -48px;
 	transition-property: transform, visibility, opacity;
 }
 .tippy-box[data-placement^="top"] > .tippy-arrow {
 	bottom: 0;
 }
 .tippy-box[data-placement^="top"] > .tippy-arrow:before {
-	bottom: -7px;
-	left: 0;
+	bottom: -8px;
+	left: -25px;
 	border-width: 8px 8px 0;
 	border-top-color: initial;
 	transform-origin: center top;
@@ -56,9 +59,9 @@
 	transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
 }
 .tippy-arrow {
-	width: 16px;
-	height: 16px;
-	color: #333;
+	width: 10px;
+	height: 10px;
+	color: #161615;
 }
 .tippy-arrow:before {
 	content: "";
@@ -68,6 +71,6 @@
 }
 .tippy-content {
 	position: relative;
-	padding: 5px 9px;
+	padding: 5px 10px;
 	z-index: 1;
 }
