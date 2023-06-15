@@ -3597,11 +3597,15 @@ body.padding {
 		width: 18px;
 		height: 18px;
 		flex: 0 0 18px;
+		fill: #221f20;
 	}
 }
 
 .swith-control__btn.active {
 	background: #221f20;
+	svg {
+		fill: #fff;
+	}
 }
 
 // .catalog-entity-table__row {
@@ -3904,7 +3908,12 @@ body.padding {
 		}
 	}
 }
-
+.catEntity {
+	display: none;
+}
+.catEntity.active {
+	display: block;
+}
 //========================================================================================================================================================
 
 .box-order {

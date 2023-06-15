@@ -9,7 +9,7 @@
 
 			@@include('html/components/_filters-mob-menu.htm',{})
 
-			@@include('html/components/_multicorzine-legal-entity.htm',{})
+			@@include('html/components/_multicorzine-legal-entity.htm',{}) 
 
 			<div class="breadcrumbs">
 				<div class="_container">
@@ -402,13 +402,13 @@
 								товара
 							</div>
 
-							<div class="catalog-entity-sec__swith swith-control">
-								<button type="button" class="swith-control__btn swith-control__btn_row active">
+							<div class="catalog-entity-sec__swith swith-control"> 
+								<button type="button" class="swith-control__btn swith-control__btn_row active" data-view="table">
 									<svg class="swith-control__btn-icon">
 										<use xlink:href="#burger-row"></use>
 									</svg>
 								</button>
-								<button type="button" class="swith-control__btn swith-control__btn_table">
+								<button type="button" class="swith-control__btn swith-control__btn_table" data-view="row">
 									<svg class="swith-control__btn-icon">
 										<use xlink:href="#burger-table"></use>
 									</svg>
@@ -416,7 +416,7 @@
 							</div>
 						</div>
 
-						<div class="catalog-entity-table">
+						<div class="catalog-entity-table catEntity active" data-view="table">
 							<table class="table">
 								<thead>
 									<tr>
@@ -1008,6 +1008,826 @@
 									</tr>
 								</tbody>
 							</table>
+						</div>
+
+						<div class="favorites-sec catEntity" data-view="row">
+							<div class="card-product-block">
+
+								<!-- Карточка -->
+								<div class="card-product-block__column"> 
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<span class="sticker-product sticker-product_red">20%</span>
+												<button type="button" class="sticker-product-favorite">
+													<svg>
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button> 
+											</div>
+											<img src="@img/card-product/01.jpg" alt="" />
+			
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">
+												Фабрика сладкого вкуса
+											</div>
+											<a href="#" class="card-product__descp-title">
+												Кубики цукатные из апельсиновой цедры
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
+										</div>
+			
+										<div class="card-product__interactive">
+			
+											<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div
+													class="card-product__interactive-price-new price-new price-new_red interactive-price-new_red rub">
+													670.00
+												</div>
+												<div class="card-product__interactive-price-old price-old rub">
+													790.00
+												</div>
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<span class="sticker-product sticker-product_blue">new</span>
+												<button type="button" class="sticker-product-favorite">
+													<svg class="sticker-product-favorite__icon">
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button>
+											</div>
+											<img src="@img/card-product/02.jpg" alt="" />
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">Топ Декор</div>
+											<a href="#" class="card-product__descp-title">
+												RFP 12 Валик с шипами
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">1 шт</span>
+										</div>
+										<div class="card-product__interactive">
+											<div class="card-product__interactive-how how-card interactive-how_grey">
+												Мaло
+											</div>
+											<div class="card-product__interactive-price">
+												<div
+													class="card-product__interactive-price-new price-new price-new_grey interactive-price-new_grey rub">
+													1 200.00
+												</div>
+												<!-- <div
+											class="card-product__interactive-price-old rub"
+										>
+											790.00
+										</div> -->
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															1 200.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<!-- <span class="sticker-product sticker-product_red"
+											>20%</span
+										> -->
+												<button type="button" class="sticker-product-favorite">
+													<svg class="sticker-product-favorite__icon">
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button>
+											</div>
+											<img src="@img/card-product/03.jpg" alt="" />
+											<!-- <div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div> -->
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">Топ Декор</div>
+											<a href="#" class="card-product__descp-title">
+												Зефир жевательный ароматизированный «Сердечки мини»
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
+										</div>
+										<div class="card-product__interactive">
+											<div class="card-product__interactive-how how-card interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div class="card-product__interactive-price-new price-new interactive-price-new_green rub">
+													1 200.00
+												</div>
+												<!-- <div
+											class="card-product__interactive-price-old rub"
+										>
+											790.00
+										</div> -->
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															1 200.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<!-- <span class="sticker-product sticker-product_red"
+											>20%</span
+										> -->
+												<button type="button" class="sticker-product-favorite">
+													<svg class="sticker-product-favorite__icon">
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button>
+											</div>
+											<img src="@img/card-product/04.jpg" alt="" />
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">Топ Декор</div>
+											<a href="#" class="card-product__descp-title">
+												Желейные шарики «Мармелатье», заголовок до 3х
+												строк...
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
+										</div>
+										<div class="card-product__interactive">
+											<div class="card-product__interactive-how how-card interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div class="card-product__interactive-price-new price-new interactive-price-new_green rub">
+													1 200.00
+												</div>
+												<!-- <div class="card-product__interactive-price-old price-old rub">
+													790.00
+												</div> -->
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															1 200.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<span class="sticker-product sticker-product_red">20%</span>
+												<button type="button" class="sticker-product-favorite">
+													<svg>
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button> 
+											</div>
+											<img src="@img/card-product/01.jpg" alt="" />
+			
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">
+												Фабрика сладкого вкуса
+											</div>
+											<a href="#" class="card-product__descp-title">
+												Кубики цукатные из апельсиновой цедры
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
+										</div>
+			
+										<div class="card-product__interactive">
+			
+											<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div
+													class="card-product__interactive-price-new price-new price-new_red interactive-price-new_red rub">
+													670.00
+												</div>
+												<div class="card-product__interactive-price-old price-old rub">
+													790.00
+												</div>
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<!-- <span class="sticker-product sticker-product_red"
+											>20%</span
+										> -->
+												<button type="button" class="sticker-product-favorite">
+													<svg class="sticker-product-favorite__icon">
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button>
+											</div>
+											<img src="@img/card-product/03.jpg" alt="" />
+											<!-- <div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div> -->
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">Топ Декор</div>
+											<a href="#" class="card-product__descp-title">
+												Зефир жевательный ароматизированный «Сердечки мини»
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
+										</div>
+										<div class="card-product__interactive">
+											<div class="card-product__interactive-how how-card interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div class="card-product__interactive-price-new price-new interactive-price-new_green rub">
+													1 200.00
+												</div>
+												<!-- <div
+											class="card-product__interactive-price-old rub"
+										>
+											790.00
+										</div> -->
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															1 200.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<span class="sticker-product sticker-product_red">20%</span>
+												<button type="button" class="sticker-product-favorite">
+													<svg>
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button> 
+											</div>
+											<img src="@img/card-product/01.jpg" alt="" />
+			
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">
+												Фабрика сладкого вкуса
+											</div>
+											<a href="#" class="card-product__descp-title">
+												Кубики цукатные из апельсиновой цедры
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
+										</div>
+			
+										<div class="card-product__interactive">
+			
+											<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div
+													class="card-product__interactive-price-new price-new price-new_red interactive-price-new_red rub">
+													670.00
+												</div>
+												<div class="card-product__interactive-price-old price-old rub">
+													790.00
+												</div>
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<span class="sticker-product sticker-product_blue">new</span>
+												<button type="button" class="sticker-product-favorite">
+													<svg class="sticker-product-favorite__icon">
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button>
+											</div>
+											<img src="@img/card-product/02.jpg" alt="" />
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">Топ Декор</div>
+											<a href="#" class="card-product__descp-title">
+												RFP 12 Валик с шипами
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">1 шт</span>
+										</div>
+										<div class="card-product__interactive">
+											<div class="card-product__interactive-how how-card interactive-how_grey">
+												Мaло
+											</div>
+											<div class="card-product__interactive-price">
+												<div
+													class="card-product__interactive-price-new price-new price-new_grey interactive-price-new_grey rub">
+													1 200.00
+												</div>
+												<!-- <div
+											class="card-product__interactive-price-old rub"
+										>
+											790.00
+										</div> -->
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															1 200.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<span class="sticker-product sticker-product_red">20%</span>
+												<button type="button" class="sticker-product-favorite">
+													<svg>
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button> 
+											</div>
+											<img src="@img/card-product/01.jpg" alt="" />
+			
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">
+												Фабрика сладкого вкуса
+											</div>
+											<a href="#" class="card-product__descp-title">
+												Кубики цукатные из апельсиновой цедры
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
+										</div>
+			
+										<div class="card-product__interactive">
+			
+											<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div
+													class="card-product__interactive-price-new price-new price-new_red interactive-price-new_red rub">
+													670.00
+												</div>
+												<div class="card-product__interactive-price-old price-old rub">
+													790.00
+												</div>
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Карточка -->
+								<div class="card-product-block__column">
+									<div class="card-product">
+										<div class="card-product__img _ibg">
+											<div class="card-product__sticker-block">
+												<span class="sticker-product">хит</span>
+												<!-- <span class="sticker-product sticker-product_red"
+											>20%</span
+										> -->
+												<button type="button" class="sticker-product-favorite">
+													<svg class="sticker-product-favorite__icon">
+														<use xlink:href="#favorites-product"></use>
+													</svg>
+												</button>
+											</div>
+											<img src="@img/card-product/04.jpg" alt="" />
+											<div class="card-product__sticker-rating sticker-product-rating">
+												<div class="sticker-product-rating__rating">
+													<svg class="sticker-product-rating__icon">
+														<use xlink:href="#rating-product"></use>
+													</svg>
+												</div>
+												<div class="sticker-product-rating__value">5,0</div>
+											</div>
+										</div>
+										<div class="card-product__descp">
+											<div class="card-product__descp-group">Топ Декор</div>
+											<a href="#" class="card-product__descp-title">
+												Желейные шарики «Мармелатье», заголовок до 3х
+												строк...
+											</a>
+											<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
+										</div>
+										<div class="card-product__interactive">
+											<div class="card-product__interactive-how how-card interactive-how_green">
+												Много
+											</div>
+											<div class="card-product__interactive-price">
+												<div class="card-product__interactive-price-new price-new interactive-price-new_green rub">
+													1 200.00
+												</div>
+												<!-- <div class="card-product__interactive-price-old price-old rub">
+													790.00
+												</div> -->
+											</div>
+			
+											<div class="card-product__interactive-adding">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															1 200.00
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+			
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text"
+																name="form[]" value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text"
+																name="form[]" value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
 						</div>
 
 						<div class="catalog-entity-mob">
@@ -1771,7 +2591,7 @@
 								</div>
 							</div>
 
-							@@include('html/components/_product-preview.htm',{})
+							@@include('html/components/_product-preview.htm',{}) 
 
 						</div> 
 

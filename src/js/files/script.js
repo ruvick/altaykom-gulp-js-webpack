@@ -76,8 +76,8 @@ interFacelinkText.forEach(linkText => {
 
 // Переключение корзины в карточке товаров
 const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
-const interAddingBascet = document.querySelectorAll('.interactive-adding-bascet');
-const interAddingQuantity = document.querySelectorAll('.interactive-adding-quantity');
+//const interAddingBascet = document.querySelectorAll('.interactive-adding-bascet');
+//const interAddingQuantity = document.querySelectorAll('.interactive-adding-quantity');
 
 // if (interAddingBascetBtn) {
 //   interAddingBascetBtn.addEventListener('click', function () {
@@ -91,13 +91,28 @@ interAddingBascetBtn.forEach((btn, index) => {
 	btn.addEventListener('click', () => {
 
 		if (btn) {
+			let interAddingBascet = btn.closest('.interactive-adding-bascet');
 
-			interAddingBascet.forEach((interAddingBascet) => {
+			if (!!interAddingBascet) {
 				interAddingBascet.classList.add('none');
-			});
-			interAddingQuantity.forEach((interAddingQuantity) => {
-				interAddingQuantity.classList.add('active');
-			});
+			}
+
+			let interContainer = btn.closest('.card-product__interactive-adding');
+
+			if (!!interContainer) {
+				let interAddingQuantity = interContainer.querySelector('.interactive-adding-quantity');
+
+				if (interAddingQuantity) {
+					interAddingQuantity.classList.add('active');
+				}
+			}
+
+			// interAddingBascet.forEach((interAddingBascet) => {
+			// 	interAddingBascet.classList.add('none');
+			// });
+			// interAddingQuantity.forEach((interAddingQuantity) => {
+			// 	interAddingQuantity.classList.add('active');
+			// });
 
 			// BarSubMenuElems[index].classList.add('active')
 			// BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
@@ -119,6 +134,38 @@ interAddingBascetBtn.forEach((btn, index) => {
 //     // headsearch.classList.remove('_active')
 //   }
 // })
+
+// Переключение вида списка товаров
+const productsViewToggle = document.querySelectorAll('.swith-control__btn');
+
+if (productsViewToggle.length > 0) {
+	productsViewToggle.forEach((btn, index) => {
+		btn.addEventListener('click', () => {
+			let btns = document.querySelectorAll('.swith-control__btn');
+
+			btns.forEach((b) => {
+				if (b == btn) {
+					b.classList.add('active');
+				} else {
+					b.classList.remove('active');
+				}
+			});
+
+			let catalogEntity = document.querySelectorAll('.catEntity');
+			let view = btn.getAttribute('data-view');
+
+			if (catalogEntity.length > 0) {
+				catalogEntity.forEach((ce) => {
+					if (view == ce.getAttribute('data-view')) {
+						ce.classList.add('active');
+					} else {
+						ce.classList.remove('active');
+					}
+				});
+			}
+		});
+	});
+}
 
 
 // Открытие/закрытие сайдбара
