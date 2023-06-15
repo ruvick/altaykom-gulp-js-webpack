@@ -2566,7 +2566,10 @@ body.padding {
 
 .similar-products-block__item {
 	display: flex;
-	// flex: 0 1 50%;
+	margin-right: 10px;
+	&:last-child{
+		margin-right: 0;
+	}
 }
 
 .similar-products-block__img {

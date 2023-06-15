@@ -178,6 +178,9 @@
 	.box-order__options_c .box-order__options-item {
 		flex: 0 1 49.5%;
 	}
+	.similar-products-block__price {
+    margin-right: 10px;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -561,6 +564,9 @@
 	.catalog-entity-sec {
 		padding: 0 !important;
 	}
+	.similar-products-block__price {
+    width: 140px;
+	}
 }
 
 @media (max-width: 960px) {
@@ -697,7 +703,7 @@
 	}
 }
 
-@media (max-width: 812px) {
+@media (max-width: 812px) { 
 	.categoriesImgBlock__card-text {
 		font-size: 18px;
 		line-height: 36px;
@@ -836,6 +842,9 @@
 			border: 1px solid #221F20;
 			margin-left: 0;
 		}
+	}
+	.similar-products-block__price {
+    width: 110px;
 	}
 }
 

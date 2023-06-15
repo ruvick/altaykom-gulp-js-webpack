@@ -489,7 +489,7 @@
 	line-height: 30px/20px*100%;
 }
 
-.menu-search {
+.menu-search { 
 	display: none;
 	// display: flex;
 	visibility: hidden;
@@ -500,6 +500,7 @@
 	top: 60px;
 	left: 50%;
 	width: 250vh;
+	width: 100%;
 	margin-right: -50%;
 	z-index: 60;
 	background: #fff;
@@ -512,6 +513,15 @@
 	display: flex;
 	visibility: visible;
 	opacity: 1;
+	&::before{
+		content: "";
+		position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 1000%;
+    height: 100%;
+    background-color: #fff;
+	}
 }
 
 .menu-search__inner {
