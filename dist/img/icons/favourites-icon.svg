@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_960" data-name="Прямоугольник 960" width="24" height="24" transform="translate(1551 103)" fill="#221f20" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="favorite" transform="translate(-1551 -103)" clip-path="url(#clip-path)">
+    <path id="Icon_metro-favorite" data-name="Icon metro-favorite" d="M17.131,28.427,15.392,26.85c-6.174-5.6-10.251-9.3-10.251-13.829a6.523,6.523,0,0,1,6.594-6.594,7.2,7.2,0,0,1,5.4,2.5,7.2,7.2,0,0,1,5.4-2.5,6.523,6.523,0,0,1,6.594,6.594c0,4.526-4.076,8.225-10.251,13.829l-1.738,1.577Z" transform="translate(1545.858 97.573)" fill="#221f20"/>
+  </g>
+</svg>
