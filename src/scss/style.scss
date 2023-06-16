@@ -435,6 +435,11 @@ body.padding {
 
 .about__advantagesBlock {
 	margin-top: 22px;
+	._container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .advantagesBlock {
