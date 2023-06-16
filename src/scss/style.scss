@@ -3860,9 +3860,13 @@ body.padding {
 	width: 100%;
 	height: 100%;
 	flex: 0 0 100%;
-	fill: #fff;
+	fill: #fff; 
 }
-
+.basket-individuals-sorting__favorite:focus {
+	svg {
+		fill: #221f20;
+	}
+}
 .basket-individuals-sorting__urn {
 	display: flex;
 	justify-content: center;

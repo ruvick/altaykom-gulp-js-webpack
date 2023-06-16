@@ -515,10 +515,10 @@
 	visibility: visible;
 	opacity: 1;
 	&::before{
-    content: "";
+		content: "";
     position: absolute;
     top: 0;
-    left: -65%;
+    left: -200%;
     z-index: -1;
     width: 2000%;
     height: 100%;
