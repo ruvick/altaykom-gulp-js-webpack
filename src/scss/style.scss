@@ -6240,6 +6240,10 @@ ul .content-article__descriptioni-list-item {
 	transform: translateY(-100%);
 	transition: transform 0.3s ease 0s;
 }
+.main-mob-menu::-webkit-scrollbar,
+.main-mob-menu::-webkit-scrollbar-thumb {
+	display: none;
+}
 .main-mob-menu._active {
 	transform: translateY(0%);
 }
