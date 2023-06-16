@@ -502,7 +502,7 @@
 	left: 50%;
 	width: 250vh;
 	width: 100%;
-	height: 100%;
+	// height: 100%;
 	margin-right: -50%;
 	z-index: 60;
 	background: #fff;
@@ -535,6 +535,7 @@
 	overflow: auto;
 	padding: 15px 0;
 	margin: 0 auto;
+	background-color: #fff;
 }
 
 .menu-search__inner::-webkit-scrollbar-thumb,
