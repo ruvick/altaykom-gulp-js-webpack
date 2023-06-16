@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_984" data-name="Прямоугольник 984" width="40" height="40" transform="translate(0 0)" fill="#c5934f"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Прямоугольник_984-2" data-name="Прямоугольник 984" width="40" height="40" fill="#c5934f"/>
+    </clipPath>
+  </defs>
+  <g id="icon" transform="translate(0 0)">
+    <g id="Fire" clip-path="url(#clip-path)">
+      <g id="icon-2" data-name="icon" transform="translate(0 0)">
+        <g id="Fire-2" data-name="Fire" clip-path="url(#clip-path-2)">
+          <g id="Сгруппировать_619" data-name="Сгруппировать 619" transform="translate(0 1.333)">
+            <path id="Контур_1640" data-name="Контур 1640" d="M16.071,20.843h1.455a9.674,9.674,0,0,1,6.463-6.608,9.765,9.765,0,0,0-5.391-3,5.777,5.777,0,1,0-3.6,0,9.765,9.765,0,0,0-5.391,3,9.677,9.677,0,0,1,6.463,6.608" transform="translate(3.203)" fill="#c5934f"/>
+            <path id="Контур_1641" data-name="Контур 1641" d="M26.84,24.656a5.908,5.908,0,1,0-3.68,0A10,10,0,0,0,15,34.48H35a10,10,0,0,0-8.16-9.824" transform="translate(5 4.388)" fill="#c5934f"/>
+            <path id="Контур_1642" data-name="Контур 1642" d="M11.84,24.656a5.908,5.908,0,1,0-3.68,0A10,10,0,0,0,0,34.48H20a10,10,0,0,0-8.16-9.824" transform="translate(0 4.388)" fill="#c5934f"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
