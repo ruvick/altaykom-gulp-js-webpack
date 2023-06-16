@@ -9,83 +9,26 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 // window.onload = function () {
 
-// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-// 	const target = e.target // находим элемент, на котором был клик
-// 	if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-// 		iconMenu.classList.remove('_active'); // то закрываем окно навигации, удаляя активный класс
-// 		menuCatalog.classList.remove('_active');
-// 		// html.classList.remove('lock');
-// 		// headsearch.classList.remove('_active')
-// 	}
-// })
-
-
-// Срабатывание поиска ===========================================================================================================================================
-// const search = document.querySelector(".search-form");
-// const searchInput = document.querySelector(".search-form__input");
-// const searchMenu = document.querySelector(".menu-search");
-// const searchBtnClosed = document.querySelector(".search-form__btn-closed");
-// const interFacelinkText = document.querySelectorAll(".interface__link-text");
-
-// interFacelinkText.forEach(linkText => {
-// 	searchInput.addEventListener('click', function () {
-// 		search.classList.add("_active");
-// 		searchMenu.classList.add("_active");
-// 		searchBtnClosed.classList.add("_active");
-// 		linkText.classList.add("_none");
-// 		lineBlockBlk.classList.add('_active');
-// 		bodyLock();
-// 	})
-// 	searchBtnClosed.addEventListener('click', function () {
-// 		search.classList.remove("_active");
-// 		searchMenu.classList.remove("_active");
-// 		searchBtnClosed.classList.remove("_active");
-// 		linkText.classList.remove("_none");
-// 		lineBlockBlk.classList.remove('_active');
-// 	})
-// 	window.addEventListener('click', e => { // при клике в любом месте окна браузера
-// 		const target = e.target // находим элемент, на котором был клик
-// 		if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-// 			search.classList.remove("_active");
-// 			searchMenu.classList.remove("_active");
-// 			searchBtnClosed.classList.remove('_active');
-// 			linkText.classList.remove("_none");
-// 			lineBlockBlk.classList.remove('_active');
-// 			bodyUnlock();
-// 		}
-// 	})
-// })
 
 
 // Меню корзины при наведении в шапке
-// let linkBascet = document.querySelectorAll('.interface__link_bascet');
+let linkBascet = document.querySelectorAll('.interface__link_bascet');
+let headerMulticorzine = document.querySelector('.header__multicorzine');
 
-// for (let i = 0; i < linkBascet.length; i++) {
-// 	linkBascet[i].addEventListener('mouseenter', (e) => {
-// 		let headerMulticorzine = document.querySelector('.header__multicorzine');
-// 		headerMulticorzine.style.display = 'flex';
-// 	})
-// 	linkBascet[i].addEventListener('mouseleave', () => {
-// 		let headerMulticorzine = document.querySelector('.header__multicorzine');
-// 		headerMulticorzine.style.display = 'none';
-// 	})
-// }
-
-
+for (let i = 0; i < linkBascet.length; i++) {
+	linkBascet[i].addEventListener('mouseenter', (e) => {
+		let headerMulticorzine = document.querySelector('.header__multicorzine');
+		headerMulticorzine.style.display = 'flex';
+	})
+	headerMulticorzine.addEventListener('mouseleave', () => {
+		// let headerMulticorzine = document.querySelector('.header__multicorzine');
+		headerMulticorzine.style.display = 'none';
+	})
+}
 
 
 // Переключение корзины в карточке товаров
 const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
-//const interAddingBascet = document.querySelectorAll('.interactive-adding-bascet');
-//const interAddingQuantity = document.querySelectorAll('.interactive-adding-quantity');
-
-// if (interAddingBascetBtn) {
-//   interAddingBascetBtn.addEventListener('click', function () {
-//     interAddingBascet.classList.add('none');
-//     interAddingQuantity.classList.toggle('active');
-// 		console.log('клик');
-//   });
-// }
 
 interAddingBascetBtn.forEach((btn, index) => {
 	btn.addEventListener('click', () => {
@@ -106,23 +49,7 @@ interAddingBascetBtn.forEach((btn, index) => {
 					interAddingQuantity.classList.add('active');
 				}
 			}
-
-			// interAddingBascet.forEach((interAddingBascet) => {
-			// 	interAddingBascet.classList.add('none');
-			// });
-			// interAddingQuantity.forEach((interAddingQuantity) => {
-			// 	interAddingQuantity.classList.add('active');
-			// });
-
-			// BarSubMenuElems[index].classList.add('active')
-			// BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-			// btn.classList.add('sidebar__menu-icon_active')
 		}
-		// else {
-		// 	BarSubMenuElems[index].classList.remove('active')
-		// 	BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-		// 	btn.classList.remove('sidebar__menu-icon_active')
-		// }
 	})
 })
 
@@ -399,125 +326,125 @@ function documentActions(e) {
 	}
 }
 
-// Load More Products 
-async function getProducts(button) {
-	if (!button.classList.contains('_hold')) {
-		button.classList.add('_hold');
-		const file = "json/products.json";
-		let response = await fetch(file, {
-			method: "GET"
-		});
-		if (response.ok) {
-			let result = await response.json();
-			loadProducts(result);
-			button.classList.remove('_hold');
-			button.remove();
-		} else {
-			alert("Ошибка");
-		}
-	}
-}
+// Load More Products
+// async function getProducts(button) {
+// 	if (!button.classList.contains('_hold')) {
+// 		button.classList.add('_hold');
+// 		const file = "json/products.json";
+// 		let response = await fetch(file, {
+// 			method: "GET"
+// 		});
+// 		if (response.ok) {
+// 			let result = await response.json();
+// 			loadProducts(result);
+// 			button.classList.remove('_hold');
+// 			button.remove();
+// 		} else {
+// 			alert("Ошибка");
+// 		}
+// 	}
+// }
 
-function loadProducts(data) {
-	const productsItems = document.querySelector('.slider-info');
+// function loadProducts(data) {
+// 	const productsItems = document.querySelector('.slider-info');
 
-	data.products.forEach(item => {
-		const productId = item.id;
-		const productUrl = item.url;
-		const productImage = item.image;
-		const productTitle = item.title;
-		const productQuantity = item.quantity;
-		const productAvail = item.avail;
-		const productPrice = item.price;
-		const productPriceOld = item.priceOld;
-		const producCategory = item.category;
-		const productStHit = item.stHit;
-		const productStSale = item.stSale;
+// 	data.products.forEach(item => {
+// 		const productId = item.id;
+// 		const productUrl = item.url;
+// 		const productImage = item.image;
+// 		const productTitle = item.title;
+// 		const productQuantity = item.quantity;
+// 		const productAvail = item.avail;
+// 		const productPrice = item.price;
+// 		const productPriceOld = item.priceOld;
+// 		const producCategory = item.category;
+// 		const productStHit = item.stHit;
+// 		const productStSale = item.stSale;
 
-		let productsTemplate = `
-			<div data-pid="${productId}" class="main-prod-card__column">
-			<div class="card-product">
-				<div class="card-product__img">
-					<div class="card-product__sticker-block">
-						<span class="sticker-product">${productStHit}</span>
-						<!-- <span class="sticker-product sticker-product_red"
-								>${productStSale}</span
-							> -->
-						<button type="button" class="sticker-product-favorite">
-							<svg class="sticker-product-favorite__icon">
-								<use xlink:href="#favorites-product"></use>
-							</svg>
-						</button>
-					</div>
-					<img src="@img/card-product/${productImage}" alt="" />
-					<div class="sticker-product-rating">
-						<div class="sticker-product-rating__rating">
-							<svg class="sticker-product-rating__icon">
-								<use xlink:href="#rating-product"></use>
-							</svg>
-						</div>
-						<div class="sticker-product-rating__value">5,0</div>
-					</div>
-				</div>
-				<div class="card-product__descp">
-					<div class="card-product__descp-group">${producCategory}</div>
-					<a href="${productUrl}" class="card-product__descp-title">
-						${productTitle}
-					</a>
-					<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
-				</div>
-				<div class="card-product__interactive">
-					<div class="card-product__interactive-how interactive-how_green">
-						${productAvail}
-					</div>
-					<div class="card-product__interactive-price">
-						<div class="card-product__interactive-price-new interactive-price-new_green rub">
-							${productPrice}
-						</div>
-						<div class="card-product__interactive-price-old rub">
-							${productPriceOld}
-						</div>
-					</div>
+// 		let productsTemplate = `
+// 			<div data-pid="${productId}" class="main-prod-card__column">
+// 			<div class="card-product">
+// 				<div class="card-product__img">
+// 					<div class="card-product__sticker-block">
+// 						<span class="sticker-product">${productStHit}</span>
+// 						<!-- <span class="sticker-product sticker-product_red"
+// 								>${productStSale}</span
+// 							> -->
+// 						<button type="button" class="sticker-product-favorite">
+// 							<svg class="sticker-product-favorite__icon">
+// 								<use xlink:href="#favorites-product"></use>
+// 							</svg>
+// 						</button>
+// 					</div>
+// 					<img src="@img/card-product/${productImage}" alt="" />
+// 					<div class="sticker-product-rating">
+// 						<div class="sticker-product-rating__rating">
+// 							<svg class="sticker-product-rating__icon">
+// 								<use xlink:href="#rating-product"></use>
+// 							</svg>
+// 						</div>
+// 						<div class="sticker-product-rating__value">5,0</div>
+// 					</div>
+// 				</div>
+// 				<div class="card-product__descp">
+// 					<div class="card-product__descp-group">${producCategory}</div>
+// 					<a href="${productUrl}" class="card-product__descp-title">
+// 						${productTitle}
+// 					</a>
+// 					<span class="card-product__descp-sticker sticker-product-value">4 кг</span>
+// 				</div>
+// 				<div class="card-product__interactive">
+// 					<div class="card-product__interactive-how interactive-how_green">
+// 						${productAvail}
+// 					</div>
+// 					<div class="card-product__interactive-price">
+// 						<div class="card-product__interactive-price-new interactive-price-new_green rub">
+// 							${productPrice}
+// 						</div>
+// 						<div class="card-product__interactive-price-old rub">
+// 							${productPriceOld}
+// 						</div>
+// 					</div>
 
-					<div class="card-product__interactive-adding">
-						<div class="interactive-adding-bascet">
-							<div class="interactive-adding-bascet__value">
-								<div class="interactive-adding-bascet__value-quantity">
-									${productQuantity}
-								</div>
-								<div class="interactive-adding-bascet__value-price rub">
-									${productPrice}
-								</div>
-							</div>
-							<button class="interactive-adding-bascet__button">
-								<svg class="interactive-adding-bascet__button-icon">
-									<use xlink:href="#bascet-btn-product"></use>
-								</svg>
-							</button>
-						</div>
+// 					<div class="card-product__interactive-adding">
+// 						<div class="interactive-adding-bascet">
+// 							<div class="interactive-adding-bascet__value">
+// 								<div class="interactive-adding-bascet__value-quantity">
+// 									${productQuantity}
+// 								</div>
+// 								<div class="interactive-adding-bascet__value-price rub">
+// 									${productPrice}
+// 								</div>
+// 							</div>
+// 							<button class="interactive-adding-bascet__button">
+// 								<svg class="interactive-adding-bascet__button-icon">
+// 									<use xlink:href="#bascet-btn-product"></use>
+// 								</svg>
+// 							</button>
+// 						</div>
 
-						<div class="interactive-adding-quantity">
-							<div class="quantity">
-								<div class="quantity__button quantity__button_minus _icon-minus"></div>
-								<div class="quantity__input">
-									<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
-										value="1" />
-									<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
-										value="670.00" />
-								</div>
-								<div class="quantity__button quantity__button_plus _icon-plus"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>`;
+// 						<div class="interactive-adding-quantity">
+// 							<div class="quantity">
+// 								<div class="quantity__button quantity__button_minus _icon-minus"></div>
+// 								<div class="quantity__input">
+// 									<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+// 										value="1" />
+// 									<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+// 										value="670.00" />
+// 								</div>
+// 								<div class="quantity__button quantity__button_plus _icon-plus"></div>
+// 							</div>
+// 						</div>
+// 					</div>
+// 				</div>
+// 			</div>
+// 		</div>`;
 
-		productsItems.insertAjacentHTML('beforeend', productsTemplate);
+// 		productsItems.insertAjacentHTML('beforeend', productsTemplate);
 
-	});
+// 	});
 
-}
+// }
 
 
 	//BURGER

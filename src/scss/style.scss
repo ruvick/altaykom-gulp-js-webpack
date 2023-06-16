@@ -1233,12 +1233,13 @@ body.padding {
 	}
 
 	&__interface-rating-block-ratings {
+		display: flex;
+		align-items: center;
 		flex: 0 0 114px;
 		width: 114px;
 		height: 18px;
 		align-items: center;
 		margin-right: 20px;
-		border: 1px solid #000;
 	}
 
 	&__interface-date {
@@ -1281,7 +1282,21 @@ body.padding {
 	text-align: center;
 	margin-top: 40px;
 }
-
+.interface-rating-block-ratings__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-right: 5px;
+	&:last-child{
+		margin-right: 0;
+	}
+	svg {
+		flex: 0 0 18.8px;
+		width: 18.8px;
+		height: 18px;
+	}
+}
 //========================================================================================================================================================
 
 .sticker-info {
