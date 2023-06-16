@@ -137,21 +137,22 @@ if (document.documentElement.clientWidth > 1024) {
 			});
 		});
 	}
-} else {
-	const menuCatalogBody = document.querySelector('.menu-catalog__body');
-	const dropMenuCatalog = document.querySelector('.drop-menu-catalog"');
-	let catalogMenuItems = document.querySelectorAll('.menu-lineBlock__item svg');
-	if (catalogMenuItems) {
-		catalogMenuItems.forEach((item, index) => {
-			item.addEventListener('click', () => {
-
-				menuCatalogBody.style.display = "none";
-				dropMenuCatalog.classList.add('active');
-
-			});
-		});
-	}
 }
+// else {
+// 	const menuCatalogBody = document.querySelector('.menu-catalog__body');
+// 	const dropMenuCatalog = document.querySelector('.drop-menu-catalog"');
+// 	let catalogMenuItems = document.querySelectorAll('.menu-lineBlock__item svg');
+// 	if (catalogMenuItems) {
+// 		catalogMenuItems.forEach((item, index) => {
+// 			item.addEventListener('click', () => {
+
+// 				menuCatalogBody.style.display = "none";
+// 				dropMenuCatalog.classList.add('active');
+
+// 			});
+// 		});
+// 	}
+// }
 
 
 // Открытие/закрытие сайдбара
