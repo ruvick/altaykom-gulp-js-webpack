@@ -220,17 +220,19 @@ body.popup-show::after {
 	left: 50%;
 	right: 0;
 	bottom: 3%;
+	padding: 10px;
 	margin-right: -50%;
 	transform: translate(-50%, 0%);
 	z-index: 9999999;
+	// box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
+	// overflow: hidden;
+}
+.popup-cookie__wrap {
 	max-width: 600px;
 	width: 100%;
 	border-radius: 30px;
 	background: #221f20;
-	box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
 }
-
 .popup-cookie__body {
 	display: flex;
 	align-items: center;
@@ -259,6 +261,7 @@ body.popup-show::after {
 	justify-content: center;
 	align-items: center;
 	width: 40px;
+	flex: 0 0 40px;
 	height: 40px;
 	border-radius: 15px;
 	background: #221f20;
