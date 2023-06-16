@@ -9,22 +9,20 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 // window.onload = function () {
 
-
-
 // Меню корзины при наведении в шапке
-let linkBascet = document.querySelectorAll('.interface__link_bascet');
-let headerMulticorzine = document.querySelector('.header__multicorzine');
+// let linkBascet = document.querySelectorAll('.interface__link_bascet');
+// let headerMulticorzine = document.querySelector('.header__multicorzine');
 
-for (let i = 0; i < linkBascet.length; i++) {
-	linkBascet[i].addEventListener('mouseenter', (e) => {
-		let headerMulticorzine = document.querySelector('.header__multicorzine');
-		headerMulticorzine.style.display = 'flex';
-	})
-	headerMulticorzine.addEventListener('mouseleave', () => {
-		// let headerMulticorzine = document.querySelector('.header__multicorzine');
-		headerMulticorzine.style.display = 'none';
-	})
-}
+// for (let i = 0; i < linkBascet.length; i++) {
+// 	linkBascet[i].addEventListener('mouseenter', (e) => {
+// 		let headerMulticorzine = document.querySelector('.header__multicorzine');
+// 		headerMulticorzine.style.display = 'flex';
+// 	})
+// 	headerMulticorzine.addEventListener('mouseleave', () => {
+// 		// let headerMulticorzine = document.querySelector('.header__multicorzine');
+// 		headerMulticorzine.style.display = 'none';
+// 	})
+// }
 
 
 // Переключение корзины в карточке товаров

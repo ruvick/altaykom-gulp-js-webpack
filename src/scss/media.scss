@@ -331,18 +331,24 @@
 	.page {
 		padding-top: 135px;
 	}
-
+	.swiper {
+		margin: 0 -10px;
+    padding-left: 10px;
+	}
+	.sales-leaders-slider .sliderSec__container {
+		padding: 0;
+	}
 	.swiper-button__inner {
 		display: none;
 	}
 	// .slider-info .sliderSec__container {
 	// 	padding-right: 0;
 	// }
-	.sliderSec__container {
-    padding-right: 0;
-    padding-left: 0;
-		margin: 0 -10px;
-	}
+	// .sliderSec__container {
+  //   padding-right: 0;
+  //   padding-left: 0;
+	// 	margin: 0 -10px;
+	// }
 	.slider-info__slide {
 		padding-bottom: 22%;
 	}
@@ -1990,6 +1996,9 @@
 	}
 	.card-product-sec__conclusion {
     margin-bottom: 30px;
+	}
+	.menu-search {
+    padding-bottom: 100px;
 	}
 }
  

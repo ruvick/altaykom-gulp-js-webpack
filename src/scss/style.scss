@@ -5125,6 +5125,15 @@ body.padding {
 	&:last-child {
 		margin-right: 0;
 	}
+	.select__options {
+    left: 10px;
+	}
+	.select__value::after {
+		display: none;
+	}
+	.select__title {
+    padding: 10.5px 20px;
+	}
 }
 
 .table-row {

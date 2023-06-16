@@ -525,7 +525,7 @@ interFacelinkText.forEach(linkText => {
 		searchBtnClosed.classList.add("_active");
 		linkText.classList.add("_none");
 		lineBlockBlk.classList.add('_active');
-		bodyLock();
+		// bodyLock();
 	})
 	searchBtnClosed.addEventListener('click', function () {
 		search.classList.remove("_active");
@@ -542,33 +542,33 @@ interFacelinkText.forEach(linkText => {
 			searchBtnClosed.classList.remove('_active');
 			linkText.classList.remove("_none");
 			lineBlockBlk.classList.remove('_active');
-			bodyUnlock();
+			// bodyUnlock();
 		}
 	})
 })
 // Всплывающие меню при наведении ===================================================================================================================
+
 const item = document.querySelectorAll('.menu-lineBlock__item');
 const lineBlockBlk = document.querySelector('.lineBlock-blk');
-
-function menuHover() {
-	for (let i = 0; i < item.length; i++) {
-		item[i].addEventListener('mouseenter', (e) => {
-			let child = item[i].getElementsByClassName('sub-list')[0];
-			child.classList.add('_active');
-			lineBlockBlk.classList.add('_active');
-			bodyLock();
-		})
-		item[i].addEventListener('mouseleave', () => {
-			let child = item[i].getElementsByClassName('sub-list')[0];
-			child.classList.remove('_active');
-			lineBlockBlk.classList.remove('_active');
-			bodyUnlock();
-		})
+if (document.documentElement.clientWidth > 1024) {
+	function menuHover() {
+		for (let i = 0; i < item.length; i++) {
+			item[i].addEventListener('mouseenter', (e) => {
+				let child = item[i].getElementsByClassName('sub-list')[0];
+				child.classList.add('_active');
+				lineBlockBlk.classList.add('_active');
+				bodyLock();
+			})
+			item[i].addEventListener('mouseleave', () => {
+				let child = item[i].getElementsByClassName('sub-list')[0];
+				child.classList.remove('_active');
+				lineBlockBlk.classList.remove('_active');
+				bodyUnlock();
+			})
+		}
 	}
+	menuHover();
 }
-
-
-menuHover();
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне:
