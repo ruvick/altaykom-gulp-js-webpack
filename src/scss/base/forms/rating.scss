@@ -5,7 +5,7 @@
 	align-items: flex-end;
 	font-size: 40px;
 	line-height: 0.75;
-	transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s; 
 }
 
 .rating.rating_sending {
@@ -36,7 +36,7 @@
 	overflow: hidden;
 }
 
-.rating__active::before {
+.rating__active::before { 
 	content: "★★★★★";
 	position: absolute;
 	width: 100%;
@@ -65,4 +65,42 @@
 	font-size: 50%;
 	line-height: 1;
 	padding: 0px 0px 0px 0px;
+}
+
+
+.popup__rating {
+	display: flex;
+}
+.rating__label {
+	width: 23px;
+	flex: 0 0 23px;
+	height: 22px;
+	overflow: hidden;
+	margin-right: 5px;
+	cursor: pointer;
+	&:last-child{
+		margin-right: 0;
+	}
+
+}
+.rating__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+	left: 0;
+	top: 0;
+	visibility: hidden;
+}
+.rating__check {
+	svg {
+		width: 100%;
+		flex: 0 0 100%;
+		height: 100%;
+		fill: grey;
+		// fill: #c5934f;
+	}
+}
+.rating__label input[type=checkbox]:checked + .rating__check svg {
+	fill: #c5934f;
 }
