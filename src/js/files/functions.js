@@ -475,6 +475,7 @@ export function menuClose() {
 }
 
 // Открыть/закрыть catalog в header ==========================================================================================================================
+const header = document.querySelector(".header");
 const catBtn = document.getElementById('catBtn');
 const catBtnCl = document.getElementById('catBtnCl');
 const iconMenu = document.getElementById('iconMenu');
@@ -484,6 +485,7 @@ if (catBtn) {
 	catBtn.addEventListener('click', function () {
 		iconMenu.classList.toggle('_active');
 		menuCatalog.classList.toggle('_active');
+		header.classList.toggle('_active');
 		bodyLock();
 	});
 }
@@ -491,6 +493,7 @@ if (catBtnCl) {
 	catBtnCl.addEventListener('click', function () {
 		iconMenu.classList.remove('_active');
 		menuCatalog.classList.remove('_active');
+		header.classList.remove('_active');
 		bodyUnlock();
 	});
 }
@@ -512,7 +515,7 @@ if (MainMobMenuCl) {
 	});
 }
 // Search =====================================================================================================================================
-const header = document.querySelector(".header");
+
 const search = document.querySelector(".search-form");
 const searchInput = document.querySelector(".search-form__input");
 const searchMenu = document.querySelector(".menu-search");

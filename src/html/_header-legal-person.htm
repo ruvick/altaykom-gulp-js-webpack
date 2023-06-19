@@ -17,7 +17,7 @@
 					</svg>
 					+7 (3852) 46 20 31
 					<svg class="phone-item__icon-mob">
-						<use xlink:href="#phone-mob"></use>
+						<use xlink:href="#phone-mob"></use> 
 					</svg>
 				</a>
 			</div>
@@ -76,6 +76,11 @@
 		</div>
 
 		<div class="header__navigation">
+			<a href="index.html" class="header__logo header__logo_fix logo-icon">
+				<svg class="logo-icon__svg">
+					<use xlink:href="#logo"></use>
+				</svg>
+			</a>
 			<div id="catBtn" class="header__button-catalog button-catalog">
 				<div class="button-catalog__text">каталог</div>
 				<button id="iconMenu" type="button" class="button-catalog__icon icon-menu" aria-label="Бургер иконка">
@@ -160,7 +165,7 @@
 
 			</div>
 
-			<form action="#" method="get" class="search-form">
+			<form action="#" method="get" class="header__search search-form"> 
 				<div class="search-form__inner">
 					<input type="text" placeholder="Поиск по каталогу" data-placeholder="Поиск по каталогу"
 						class="search-form__input" />
@@ -175,8 +180,17 @@
 					<div class="menu-search__inner">
 						@@include('/components/_similar-products-block.htm',{})
 					</div>
+					<div class="menu-search__footer">
+						<button type="button" class="menu-search__btn btn">показать все</button>
+					</div>
 				</div>
-			</form>
+			</form> 
+
+			<button type="button" class="header__search-fix-closed">
+				<svg>
+					<use xlink:href="#popup-close"></use>
+				</svg>
+			</button>
 
 		</div>
 	</div>
