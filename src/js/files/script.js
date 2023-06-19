@@ -10,20 +10,43 @@
 // window.onload = function () {
 
 // Меню корзины при наведении в шапке
-// let linkBascet = document.querySelectorAll('.interface__link_bascet');
-// let headerMulticorzine = document.querySelector('.header__multicorzine');
+let linkBascet = document.querySelectorAll('.interface__link_bascet');
+let headerMulticorzine = document.querySelector('.header__multicorzine');
 
-// for (let i = 0; i < linkBascet.length; i++) {
-// 	linkBascet[i].addEventListener('mouseenter', (e) => {
-// 		let headerMulticorzine = document.querySelector('.header__multicorzine');
-// 		headerMulticorzine.style.display = 'flex';
-// 	})
-// 	headerMulticorzine.addEventListener('mouseleave', () => {
-// 		// let headerMulticorzine = document.querySelector('.header__multicorzine');
-// 		headerMulticorzine.style.display = 'none';
-// 	})
-// }
+for (let i = 0; i < linkBascet.length; i++) {
+	linkBascet[i].addEventListener('mouseenter', (e) => {
+		headerMulticorzine.style.display = 'flex';
+	})
+	headerMulticorzine.addEventListener('mouseleave', () => {
+		headerMulticorzine.style.display = 'none';
+	})
+}
 
+// Меню Мой кабинет
+let interfacelinkEnter = document.querySelectorAll('.interface__link_enter');
+let headerMenuCabinet = document.querySelector('.header__menu-cabinet');
+
+for (let i = 0; i < interfacelinkEnter.length; i++) {
+	interfacelinkEnter[i].addEventListener('mouseenter', (e) => {
+		headerMenuCabinet.style.display = 'block';
+	})
+	headerMenuCabinet.addEventListener('mouseleave', () => {
+		headerMenuCabinet.style.display = 'none';
+	})
+}
+
+// Меню Мой кабинет
+let interfaceLinkLgPerson = document.querySelectorAll('.interface__link_lg-person');
+let headerCabinetLegPerson = document.querySelector('.header__cabinet-leg-person');
+
+for (let i = 0; i < interfaceLinkLgPerson.length; i++) {
+	interfaceLinkLgPerson[i].addEventListener('mouseenter', (e) => {
+		headerCabinetLegPerson.style.display = 'block';
+	})
+	headerCabinetLegPerson.addEventListener('mouseleave', () => {
+		headerCabinetLegPerson.style.display = 'none';
+	})
+}
 
 // Переключение корзины в карточке товаров
 const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
