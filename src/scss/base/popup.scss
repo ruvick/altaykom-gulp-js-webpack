@@ -220,17 +220,14 @@ body.popup-show::after {
 	left: 50%;
 	right: 0;
 	bottom: 3%;
+	max-width: 620px;
+	width: 100%;
 	padding: 10px;
 	margin-right: -50%;
 	transform: translate(-50%, 0%);
 	z-index: 9999999;
-	margin: 0px auto;
-	// box-shadow: 0px 3px 11px rgba(0, 0, 0, 0.1);
-	// overflow: hidden;
 }
 .popup-cookie__wrap {
-	max-width: 600px;
-	width: 100%;
 	border-radius: 30px;
 	background: #221f20;
 }
@@ -248,6 +245,11 @@ body.popup-show::after {
 	height: 60px;
 	text-align: center;
 	margin-right: 20px;
+	svg {
+		flex: 0 0 60px;
+		width: 60px;
+		height: 60px;
+	}
 }
 
 .popup-cookie__text {
