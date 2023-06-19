@@ -512,10 +512,12 @@ if (MainMobMenuCl) {
 	});
 }
 // Search =====================================================================================================================================
+const header = document.querySelector(".header");
 const search = document.querySelector(".search-form");
 const searchInput = document.querySelector(".search-form__input");
 const searchMenu = document.querySelector(".menu-search");
 const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+const headerSearchFxCl = document.querySelector(".header__search-fix-closed");
 const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
 interFacelinkText.forEach(linkText => {
@@ -525,6 +527,7 @@ interFacelinkText.forEach(linkText => {
 		searchBtnClosed.classList.add("_active");
 		linkText.classList.add("_none");
 		lineBlockBlk.classList.add('_active');
+		header.classList.add('_active');
 		// bodyLock();
 	})
 	searchBtnClosed.addEventListener('click', function () {
@@ -533,6 +536,15 @@ interFacelinkText.forEach(linkText => {
 		searchBtnClosed.classList.remove("_active");
 		linkText.classList.remove("_none");
 		lineBlockBlk.classList.remove('_active');
+		header.classList.remove('_active');
+	})
+	headerSearchFxCl.addEventListener('click', function () {
+		search.classList.remove("_active");
+		searchMenu.classList.remove("_active");
+		searchBtnClosed.classList.remove("_active");
+		linkText.classList.remove("_none");
+		lineBlockBlk.classList.remove('_active');
+		header.classList.remove('_active');
 	})
 	window.addEventListener('click', e => { // при клике в любом месте окна браузера
 		const target = e.target // находим элемент, на котором был клик
