@@ -6435,20 +6435,25 @@ ul .content-article__descriptioni-list-item {
 }
 
 .product-preview {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 500;
-	width: 100%;
-	// height: 100%;
-	padding: 20px 12px;
-	background-color: #fff;
-	transition: transform 0.3s ease 0s;
-	transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    padding: 20px 12px;
+    background-color: #fff;
+    transition: transform 0.3s ease 0s;
+    transform: translateX(100%);
+    overflow: auto;
 	.conclusion {
     padding: 15px;
     border-radius: 25px;
 	}
+}
+.product-preview::-webkit-scrollbar,
+.product-preview::-webkit-scrollbar-thumb {
+	display: none;
 }
 .product-preview._active {
 	transform: translateY(0%);

@@ -80,18 +80,9 @@
 						Пн-Пт: 08:00-17:00, Сб-Вс: выходные
 					</div>
 					<a href="mailto:info@psnab22.ru" class="footer__email">info@psnab22.ru</a>
-					<a href="write-to-us.html" class="footer__btn btn btn_black">написать нам</a>
+					<a href="write-to-us.html" class="footer__btn btn btn_black">написать нам</a> 
 				</div>
 			</div>
-			<!-- <div class="footer__column footer__contacts">
-				<a href="tel:+73852462031" class="footer__phone">+7 (3852) 46 20 31</a>
-				<a href="tel:+73852467585" class="footer__phone">+7 (3852) 46 75 85</a>
-				<div class="footer__time-work">
-					Пн-Пт: 08:00-17:00, Сб-Вс: выходные
-				</div>
-				<a href="mailto:info@psnab22.ru" class="footer__email">info@psnab22.ru</a>
-				<a href="write-to-us.html" class="footer__btn btn btn_black">написать нам</a>
-			</div> -->
 		</div>
 
 		<div class="footer__bottom d-flex">
@@ -118,71 +109,76 @@
 	</div>
 </footer>
 
-<div id="multicorzineMobFxed" class="multicorzine-mob-fixed multicorzine-header">
-	<div class="multicorzine-header__main">
-		<a href="#" class="multicorzine-header__link multicorzine-header__link_main">
-			<svg>
-				<use xlink:href="#bascet-icon-h"></use>
-			</svg>
-			<span class="multicorzine-header__link-inner">
-				<span class="multicorzine-header__link-text">Основная</span>
-				<span class="multicorzine-header__price rub">1 200</span>
-			</span>
-		</a>
-		<a href="#" class="multicorzine-header__link">
-			<svg>
-				<use xlink:href="#bascet-icon-h"></use>
-			</svg>
-			<span class="multicorzine-header__link-inner">
-				<span class="multicorzine-header__link-text">Мои покупки</span>
-				<!-- <span class="multicorzine-header__price rub"></span> -->
-			</span>
-		</a>
+
+<div class="mob-fixed-menu-footer-wrp">
+
+	<div id="multicorzineMobFxed" class="multicorzine-mob-fixed multicorzine-header">
+		<div class="multicorzine-header__main">
+			<a href="#" class="multicorzine-header__link multicorzine-header__link_main">
+				<svg>
+					<use xlink:href="#bascet-icon-h"></use>
+				</svg>
+				<span class="multicorzine-header__link-inner">
+					<span class="multicorzine-header__link-text">Основная</span>
+					<span class="multicorzine-header__price rub">1 200</span>
+				</span>
+			</a>
+			<a href="#" class="multicorzine-header__link">
+				<svg>
+					<use xlink:href="#bascet-icon-h"></use>
+				</svg>
+				<span class="multicorzine-header__link-inner">
+					<span class="multicorzine-header__link-text">Мои покупки</span>
+					<!-- <span class="multicorzine-header__price rub"></span> -->
+				</span>
+			</a>
+		</div>
+		<button data-popup="#new-bascet" type="button" class="multicorzine-header__add">+ добавить</button>
 	</div>
-	<button data-popup="#new-bascet" type="button" class="multicorzine-header__add">+ добавить</button>
-</div>
 
-<div class="mob-fixed-menu-footer"> 
-	<div class="mob-fixed-menu-footer__header">
+	<div class="mob-fixed-menu-footer"> 
+	
+		<div class="mob-fixed-menu-footer__header">
 
-		<button type="button" class="mob-fixed-menu-footer__btn into-basket-btn btn btn_black">
-			<span class="into-basket-btn__text">в корзину</span>
-			<span class="into-basket-btn__point"></span>
-			<span class="into-basket-btn__price rub">1 800.00</span> 
-		</button>
+			<button type="button" class="mob-fixed-menu-footer__btn into-basket-btn btn btn_black">
+				<span class="into-basket-btn__text">в корзину</span>
+				<span class="into-basket-btn__point"></span>
+				<span class="into-basket-btn__price rub">1 800.00</span> 
+			</button>
 
+		</div>
+		<div class="mob-fixed-menu-footer__panel">
+			<a href="tel:0000000" class="mob-fixed-menu-footer__button">
+				<svg class="phone-item__icon">
+					<use xlink:href="#phone-icon"></use>
+				</svg>
+				Менеджер
+			</a>
+			<a href="#" class="mob-fixed-menu-footer__button">
+				<svg>
+					<use xlink:href="#inter-icon"></use>
+				</svg>
+				Кабинет
+			</a>
+			<a href="#" class="mob-fixed-menu-footer__button">
+				<svg>
+					<use xlink:href="#my-orders"></use>
+				</svg>
+				Заказы
+			</a>
+			<a href="#" class="mob-fixed-menu-footer__button">
+				<svg>
+					<use xlink:href="#favorites-icon"></use>
+				</svg>
+				Избранное
+			</a>
+			<button type="button" id="MobfixedMenuFt" class="mob-fixed-menu-footer__button">
+				<span class="mob-fixed-menu-footer__value">0</span>
+				<svg>
+					<use xlink:href="#bascet-icon-h"></use>
+				</svg>
+				Корзина
+			</button>
+		</div>
 	</div>
-	<div class="mob-fixed-menu-footer__panel">
-	<a href="tel:0000000" class="mob-fixed-menu-footer__button">
-		<svg class="phone-item__icon">
-			<use xlink:href="#phone-icon"></use>
-		</svg>
-		Менеджер
-	</a>
-	<a href="#" class="mob-fixed-menu-footer__button">
-		<svg>
-			<use xlink:href="#inter-icon"></use>
-		</svg>
-		Кабинет
-	</a>
-	<a href="#" class="mob-fixed-menu-footer__button">
-		<svg>
-			<use xlink:href="#my-orders"></use>
-		</svg>
-		Заказы
-	</a>
-	<a href="#" class="mob-fixed-menu-footer__button">
-		<svg>
-			<use xlink:href="#favorites-icon"></use>
-		</svg>
-		Избранное
-	</a>
-	<button type="button" id="MobfixedMenuFt" class="mob-fixed-menu-footer__button">
-		<span class="mob-fixed-menu-footer__value">0</span>
-		<svg>
-			<use xlink:href="#bascet-icon-h"></use>
-		</svg>
-		Корзина
-	</button>
-</div>
 </div>
