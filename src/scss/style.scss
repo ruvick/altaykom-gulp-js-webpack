@@ -6154,15 +6154,20 @@ ul .content-article__descriptioni-list-item {
 }
 .filters-mob-menu {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 500;
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 	background-color: #fff;
 	transform: translateY(-100%);
 	transition: transform 0.3s ease 0s;
+}
+.filters-mob-menu::-webkit-scrollbar, 
+.filters-mob-menu::-webkit-scrollbar {
+	display: none;
 }
 .filters-mob-menu._active {
 	transform: translateY(0%);
