@@ -531,7 +531,7 @@ interFacelinkText.forEach(linkText => {
 		linkText.classList.add("_none");
 		lineBlockBlk.classList.add('_active');
 		header.classList.add('_active');
-		// bodyLock();
+		bodyLock();
 	})
 	searchBtnClosed.addEventListener('click', function () {
 		search.classList.remove("_active");
@@ -557,10 +557,28 @@ interFacelinkText.forEach(linkText => {
 			searchBtnClosed.classList.remove('_active');
 			linkText.classList.remove("_none");
 			lineBlockBlk.classList.remove('_active');
-			// bodyUnlock();
+			bodyUnlock();
 		}
 	})
 })
+
+// cat-search 
+const catEntityInp = document.getElementById('cat-entity-input');
+const catEntityCl = document.getElementById('cat-entity-cl');
+const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
+
+if (catEntityInp) {
+	catEntityInp.addEventListener('click', function () {
+		catEntityMenuSearch.classList.add('_active');
+		catEntityCl.classList.add('_active');
+	});
+}
+if (catEntityCl) {
+	catEntityCl.addEventListener('click', function () {
+		catEntityMenuSearch.classList.remove('_active');
+		catEntityCl.classList.remove('_active');
+	});
+}
 // Всплывающие меню при наведении ===================================================================================================================
 
 const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
