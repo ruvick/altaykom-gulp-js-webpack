@@ -8,6 +8,13 @@
 	a {
 		color: #fff;
 	}
+	.spollers__item {
+    font-size: inherit;
+    border-bottom: none;
+	}
+	.spollers__body {
+    padding-top: 0;
+	}
 }
 
 .footer-user {
@@ -45,6 +52,7 @@
 }
 
 .footer__menu-name {
+	display: block;
 	font-family: "Lack", sans-serif;
 	font-size: 30px;
 	margin-bottom: 30px;
