@@ -485,7 +485,7 @@ if (catBtn) {
 	catBtn.addEventListener('click', function () {
 		iconMenu.classList.toggle('_active');
 		menuCatalog.classList.toggle('_active');
-		// header.classList.toggle('_before');
+		header.classList.toggle('_before');
 		// bodyLock();
 	});
 }
@@ -493,7 +493,7 @@ if (catBtnCl) {
 	catBtnCl.addEventListener('click', function () {
 		iconMenu.classList.remove('_active');
 		menuCatalog.classList.remove('_active');
-		// header.classList.remove('_before');
+		header.classList.remove('_before');
 		// bodyUnlock();
 	});
 }
