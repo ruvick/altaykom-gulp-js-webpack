@@ -454,17 +454,17 @@ export function tabs() {
 	}
 }
 // Модуь работы с меню (бургер) =======================================================================================================================================================================================================================
-export function menuInit() {
-	let iconMenu = document.querySelector(".icon-menu");
-	if (iconMenu) {
-		iconMenu.addEventListener("click", function (e) {
-			if (bodyLockStatus) {
-				bodyLockToggle();
-				document.documentElement.classList.toggle("menu-open");
-			}
-		});
-	};
-}
+// export function menuInit() {
+// 	let iconMenu = document.querySelector(".icon-menu");
+// 	if (iconMenu) {
+// 		iconMenu.addEventListener("click", function (e) {
+// 			if (bodyLockStatus) {
+// 				bodyLockToggle();
+// 				document.documentElement.classList.toggle("menu-open");
+// 			}
+// 		});
+// 	};
+// }
 export function menuOpen() {
 	bodyLock();
 	document.documentElement.classList.add("menu-open");
@@ -485,16 +485,16 @@ if (catBtn) {
 	catBtn.addEventListener('click', function () {
 		iconMenu.classList.toggle('_active');
 		menuCatalog.classList.toggle('_active');
-		header.classList.toggle('_before');
-		bodyLock();
+		// header.classList.toggle('_before');
+		// bodyLock();
 	});
 }
 if (catBtnCl) {
 	catBtnCl.addEventListener('click', function () {
 		iconMenu.classList.remove('_active');
 		menuCatalog.classList.remove('_active');
-		header.classList.remove('_before');
-		bodyUnlock();
+		// header.classList.remove('_before');
+		// bodyUnlock();
 	});
 }
 // MainMobMenu =====================================================================================================================================
@@ -505,13 +505,13 @@ const headerMenuBurger = document.querySelector('.header__menu-burger');
 if (headerMenuBurger) {
 	headerMenuBurger.addEventListener('click', function () {
 		MainMobMenu.classList.add('_active');
-		bodyLock();
+		// bodyLock();
 	});
 }
 if (MainMobMenuCl) {
 	MainMobMenuCl.addEventListener('click', function () {
 		MainMobMenu.classList.remove('_active');
-		bodyUnlock();;
+		// bodyUnlock();
 	});
 }
 // Search =====================================================================================================================================
@@ -531,7 +531,7 @@ interFacelinkText.forEach(linkText => {
 		linkText.classList.add("_none");
 		lineBlockBlk.classList.add('_active');
 		header.classList.add('_active');
-		bodyLock();
+		// bodyLock();
 	})
 	searchBtnClosed.addEventListener('click', function () {
 		search.classList.remove("_active");
@@ -557,7 +557,7 @@ interFacelinkText.forEach(linkText => {
 			searchBtnClosed.classList.remove('_active');
 			linkText.classList.remove("_none");
 			lineBlockBlk.classList.remove('_active');
-			bodyUnlock();
+			// bodyUnlock();
 		}
 	})
 })
@@ -590,13 +590,13 @@ if (document.documentElement.clientWidth > 1024) {
 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
 				child.classList.add('_active');
 				lineBlockBlk.classList.add('_active');
-				bodyLock();
+				// bodyLock();
 			})
 			menuLineBlockItem[i].addEventListener('mouseleave', () => {
 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
 				child.classList.remove('_active');
 				lineBlockBlk.classList.remove('_active');
-				bodyUnlock();
+				// bodyUnlock();
 			})
 		}
 	}

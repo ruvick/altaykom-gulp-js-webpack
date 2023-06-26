@@ -9,7 +9,7 @@
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 // window.onload = function () {
 
-// Меню корзины при наведении в шапке
+// Меню корзины при наведении в шапке ======================================================================================================================================================================
 let linkBascet = document.querySelectorAll('.interface__link_bascet');
 let headerMulticorzine = document.querySelector('.header__multicorzine');
 
@@ -22,7 +22,7 @@ for (let i = 0; i < linkBascet.length; i++) {
 	})
 }
 
-// Меню Мой кабинет
+// Меню Мой кабинет =======================================================================================================================================================================================
 let interfacelinkEnter = document.querySelectorAll('.interface__link_enter');
 let headerMenuCabinet = document.querySelector('.header__menu-cabinet');
 
@@ -35,7 +35,7 @@ for (let i = 0; i < interfacelinkEnter.length; i++) {
 	})
 }
 
-// Меню Мой кабинет
+// Меню Мой кабинет =======================================================================================================================================================================================
 let interfaceLinkLgPerson = document.querySelectorAll('.interface__link_lg-person');
 let headerCabinetLegPerson = document.querySelector('.header__cabinet-leg-person');
 
@@ -48,7 +48,7 @@ for (let i = 0; i < interfaceLinkLgPerson.length; i++) {
 	})
 }
 
-// Переключение корзины в карточке товаров
+// Переключение корзины в карточке товаров ======================================================================================================================================================================
 const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
 
 interAddingBascetBtn.forEach((btn, index) => {
@@ -83,7 +83,7 @@ interAddingBascetBtn.forEach((btn, index) => {
 //   }
 // })
 
-// Переключение вида списка товаров
+// Переключение вида списка товаров ======================================================================================================================================================================
 const productsViewToggle = document.querySelectorAll('.swith-control__btn');
 
 if (productsViewToggle.length > 0) {
@@ -115,7 +115,7 @@ if (productsViewToggle.length > 0) {
 	});
 }
 
-// Menu Catalog 
+// Menu Catalog ======================================================================================================================================================================
 if (document.documentElement.clientWidth > 768) {
 	const catalogMenuItems = document.querySelectorAll('.menu-catalog__body .menu-lineBlock__item');
 
@@ -173,8 +173,7 @@ if (document.documentElement.clientWidth > 768) {
 	}
 }
 
-
-// Открытие/закрытие сайдбара
+// Открытие/закрытие сайдбара ======================================================================================================================================================================
 const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
 const pageSidebar = document.querySelector('.page__sidebar');
 const pageMain = document.querySelector('.page__main');
@@ -187,7 +186,7 @@ if (ManagementFiltersBtn) {
 	});
 }
 
-// Product Preview =================================================================================================================================
+// Product Preview =====================================================================================================================================================================================
 const prodPrew = document.getElementById('prodPrew');
 const prodPrewCl = document.getElementById('prodPrewCl');
 const catEntityMbCard = document.querySelector('.catalog-entity-mob__card');
@@ -205,7 +204,7 @@ if (prodPrewCl) {
 	});
 }
 
-// FiltersMob
+// FiltersMob =========================================================================================================================================================================================
 const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
 const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');
 const filtersMobCl = document.querySelector('.filters-mob-menu__header-close');
@@ -228,7 +227,7 @@ if (filterMobSl) {
 	});
 }
 
-// MulticorzineMobFxed
+// MulticorzineMobFxed ==================================================================================================================================================================================
 const multicorzineMobFxed = document.getElementById('multicorzineMobFxed');
 const MobfixedMenuFt = document.getElementById('MobfixedMenuFt');
 
@@ -238,7 +237,7 @@ if (MobfixedMenuFt) {
 	});
 }
 
-// Range 
+// Range ================================================================================================================================================================================================
 const rangeInput = document.querySelectorAll(".range-input input"),
 	priceInput = document.querySelectorAll(".price-input input"),
 	range = document.querySelector(".slider .progress");
@@ -279,7 +278,7 @@ rangeInput.forEach(input => {
 });
 
 
-// open multicorzine  
+// Open multicorzine ======================================================================================================================================================================================
 const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
 const multicorzineLegalEntity = document.querySelector('.multicorzine-legal-entity');
 const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
@@ -296,7 +295,7 @@ if (multicorClose) {
 }
 
 
-// Мои списки
+// Мои списки =============================================================================================================================================================================================
 const physicalListPerson = document.querySelector('.physical-list-person');
 const newListsCard = document.querySelectorAll('.new-lists__card');
 const backBtn = document.getElementById('back-btn');
@@ -321,7 +320,7 @@ if (physicalCl) {
 }
 
 
-// Лайки
+// Лайки ================================================================================================================================================================================================
 const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
 const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
 
@@ -467,136 +466,5 @@ likeButtons.forEach((button, index) => {
 // }
 
 
-	//BURGER
-	// if (catBtn) {
-	//   catBtn.addEventListener("click", function () {
-	//     iconMenu.classList.toggle("active");
-	//     body.classList.toggle("_lock");
-	//     // menuBody.classList.toggle("active");
-	//   });
-	// }
-
-	// Закрытие моб меню при клике на якорную ссылку
-	// if (menuListItemElems) {
-	//   menuListItemElems.addEventListener("click", function () {
-	//     iconMenu.classList.toggle("active");
-	//     body.classList.toggle("_lock");
-	//     // menuBody.classList.toggle("active");
-	//   });
-	// }
-
-	// Строка поиска на мобилках
-	// if (mobsearch) {
-	//   mobsearch.addEventListener("click", function () {
-	//     headsearch.classList.toggle("_active");
-	//   });
-	// }
 
 
-	// Плавная прокрутка
-	// const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
-
-	// smotScrollElems.forEach(link => {
-	//   link.addEventListener('click', (event) => {
-	//     event.preventDefault()
-	//     console.log(event);
-
-	//     const id = link.getAttribute('href').substring(1)
-	//     console.log('id : ', id);
-
-	//     document.getElementById(id).scrollIntoView({
-	//       behavior: 'smooth'
-	//     });
-	//   })
-	// });
-
-
-	// Кнопка вверх
-	// const btnUp = {
-	//   el: document.querySelector('.btn-up'),
-	//   show() {
-	//     // удалим у кнопки класс btn-up_hide
-	//     this.el.classList.remove('btn-up_hide');
-	//   },
-	//   hide() {
-	//     // добавим к кнопке класс btn-up_hide
-	//     this.el.classList.add('btn-up_hide');
-	//   },
-	//   addEventListener() {
-	//     // при прокрутке содержимого страницы
-	//     window.addEventListener('scroll', () => {
-	//       // определяем величину прокрутки
-	//       const scrollY = window.scrollY || document.documentElement.scrollTop;
-	//       // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-	//       scrollY > 400 ? this.show() : this.hide();
-	//     });
-	//     // при нажатии на кнопку .btn-up
-	//     document.querySelector('.btn-up').onclick = () => {
-	//       // переместим в начало страницы
-	//       window.scrollTo({
-	//         top: 0,
-	//         left: 0,
-	//         behavior: 'smooth'
-	//       });
-	//     }
-	//   }
-	// }
-
-
-	// Полоса прокрутки в шапке
-	// const scrollProgress = document.getElementById('scroll-progress');
-	// const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-	// window.addEventListener('scroll', () => {
-	//   const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-	//   scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-	// });
-
-
-	// Ползунок выбора цены
-	// const priceEl = document.querySelector(".price");
-
-	// function changePrice(price) {
-	//   priceEl.innerText = price;
-	//   console.log(price);
-	// };
-
-
-	// Подсказки
-	// tippy('._tippy', {
-	//   content: "Подсказка",
-	// });
-
-
-	// Поочередное открытие нескольких блоков меню, табы, либо что то еще
-	// const BarIconElems = document.querySelectorAll('.sidebar__menu-open');
-	// const BarLinkIconElems = document.querySelectorAll('.sidebar__menu-icon');
-	// const BarSubMenuElems = document.querySelectorAll('.sidebar__submenu');
-
-	// BarIconElems.forEach((btn, index) => {
-	//   btn.addEventListener('click', () => {
-
-	//     if (!btn.classList.contains('sidebar__menu-icon_active')) {
-
-	//       BarSubMenuElems.forEach((BarSubMenuElem) => {
-	//         BarSubMenuElem.classList.remove('active')
-	//       });
-	//       BarIconElems.forEach((BarIconElem) => {
-	//         BarIconElem.classList.remove('sidebar__menu-icon_active')
-	//       });
-	//       BarLinkIconElems.forEach((BarLinkIconElem) => {
-	//         BarLinkIconElem.classList.remove('sidebar__menu-icon_active')
-	//       });
-
-	//       BarSubMenuElems[index].classList.add('active')
-	//       BarLinkIconElems[index].classList.add('sidebar__menu-icon_active')
-	//       btn.classList.add('sidebar__menu-icon_active')
-	//     } else {
-	//       BarSubMenuElems[index].classList.remove('active')
-	//       BarLinkIconElems[index].classList.remove('sidebar__menu-icon_active')
-	//       btn.classList.remove('sidebar__menu-icon_active')
-	//     }
-	//   })
-	// })
-
-// }
