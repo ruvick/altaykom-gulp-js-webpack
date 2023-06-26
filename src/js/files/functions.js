@@ -549,17 +549,17 @@ interFacelinkText.forEach(linkText => {
 		lineBlockBlk.classList.remove('_active');
 		header.classList.remove('_active');
 	})
-	window.addEventListener('click', e => { // при клике в любом месте окна браузера
-		const target = e.target // находим элемент, на котором был клик
-		if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-			search.classList.remove("_active");
-			searchMenu.classList.remove("_active");
-			searchBtnClosed.classList.remove('_active');
-			linkText.classList.remove("_none");
-			lineBlockBlk.classList.remove('_active');
-			// bodyUnlock();
-		}
-	})
+	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	// 	const target = e.target // находим элемент, на котором был клик
+	// 	if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+	// 		search.classList.remove("_active");
+	// 		searchMenu.classList.remove("_active");
+	// 		searchBtnClosed.classList.remove('_active');
+	// 		linkText.classList.remove("_none");
+	// 		lineBlockBlk.classList.remove('_active');
+	// 		// bodyUnlock();
+	// 	}
+	// })
 })
 
 // cat-search 
@@ -581,27 +581,27 @@ if (catEntityCl) {
 }
 // Всплывающие меню при наведении ===================================================================================================================
 
-const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
-const lineBlockBlk = document.querySelector('.lineBlock-blk');
-if (document.documentElement.clientWidth > 1024) {
-	function menuHover() {
-		for (let i = 0; i < menuLineBlockItem.length; i++) {
-			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
-				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-				child.classList.add('_active');
-				lineBlockBlk.classList.add('_active');
-				// bodyLock();
-			})
-			menuLineBlockItem[i].addEventListener('mouseleave', () => {
-				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-				child.classList.remove('_active');
-				lineBlockBlk.classList.remove('_active');
-				// bodyUnlock();
-			})
-		}
-	}
-	menuHover();
-}
+// const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
+// const lineBlockBlk = document.querySelector('.lineBlock-blk');
+// if (document.documentElement.clientWidth > 1024) {
+// 	function menuHover() {
+// 		for (let i = 0; i < menuLineBlockItem.length; i++) {
+// 			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
+// 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+// 				child.classList.add('_active');
+// 				lineBlockBlk.classList.add('_active');
+// 				// bodyLock();
+// 			})
+// 			menuLineBlockItem[i].addEventListener('mouseleave', () => {
+// 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+// 				child.classList.remove('_active');
+// 				lineBlockBlk.classList.remove('_active');
+// 				// bodyUnlock();
+// 			})
+// 		}
+// 	}
+// 	menuHover();
+// }
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне:
