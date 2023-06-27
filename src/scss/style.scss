@@ -1959,6 +1959,7 @@ body.padding {
 .sidebar {
 	flex: 0 0 201/1420 * 100%;
 	max-width: 300px;
+	max-width: initial;
 	margin-right: 15px;
 	transition: flex 0.5s ease 0s;
 	// border: 1px solid #000;
@@ -1970,18 +1971,22 @@ body.padding {
 }
 
 .page__sidebar .page__sidebar-navigation {
-	transition: width 0.3s ease 0s;
+	width: 300px;
+	opacity: 1;
+	transition: opacity 0.3s ease 0.2s;
 }
 
 .page__sidebar.hide .page__sidebar-navigation {
 	// display: none;
 	width: 0;
+	opacity: 0;
 	overflow: hidden;
+	transition: opacity 0.3s ease 0.2s;
 }
 
 .page__main {
 	flex: 0 0 1180/1420 * 100%;
-	transition: flex 0.3s ease 0s;
+	transition: flex 0.2s ease 0s;
 	flex: 1 1 auto;
 }
 
