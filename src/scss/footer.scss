@@ -104,11 +104,12 @@
 	margin-bottom: 29px;
 }
 
-.footer__email {
+.footer__email { 
 	font-size: 22px;
 	display: inline-block;
 	color: #C5934F !important;
 	text-decoration: underline !important;
+	text-underline-position: under;
 	transition: $mainTransition;
 
 	&:hover {
