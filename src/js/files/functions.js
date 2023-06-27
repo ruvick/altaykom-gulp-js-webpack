@@ -497,6 +497,21 @@ if (catBtnCl) {
 		// bodyUnlock();
 	});
 }
+
+
+// catBtn.addEventListener('click', foo);
+// function foo() {
+// 	if (catBtn) {
+// 		iconMenu.classList.toggle('_active');
+// 		menuCatalog.classList.toggle('_active');
+// 		header.classList.toggle('_before');
+// 		bodyLock();
+// 	} else {
+// 		bodyUnlock();
+// 	}
+
+// }
+
 // MainMobMenu =====================================================================================================================================
 const MainMobMenu = document.querySelector('.main-mob-menu');
 const MainMobMenuCl = document.querySelector('.main-mob-menu__close');

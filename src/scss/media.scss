@@ -2149,7 +2149,8 @@
 	.footer__column {
 		flex: 0 1 100%;
 		margin-bottom: 10px;
-		padding: 12px 20px;
+		// padding: 12px 20px;
+		padding: 8px 20px 18px 12px;
 		background: #70707047;
 		border-radius: 15px;
 	}
@@ -2158,7 +2159,7 @@
 		position: relative;
 		font-size: 26px;
 		line-height: 30px;
-		margin-bottom: 10px;
+		margin-bottom: 0;
 
 		&::before {
 			content: '';
