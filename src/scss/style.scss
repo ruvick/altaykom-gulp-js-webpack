@@ -552,8 +552,12 @@ body.padding {
 .own-production__banner-item-title {
 	font-size: 40px;
 	line-height: 42px;
-	color: #fff;
+	color: #fff; 
 	margin-bottom: 10px;
+	transition: color 0.3s ease 0s;
+	&:hover{
+    color: #C5934F;
+	}
 }
 
 .own-production__banner-item-subtitle {
