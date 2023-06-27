@@ -597,9 +597,10 @@ body.padding {
 .own-production__subtitle,
 .about__subtitle {
 	span {
+		padding: 0 5px;
 		background: #c5934f70;
 		border-radius: 15px;
-		padding: 0 5px;
+		-webkit-box-decoration-break: clone;
 	}
 }
 
