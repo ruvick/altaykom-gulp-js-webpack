@@ -501,6 +501,7 @@ if (catBtnCl) {
 const MainMobMenu = document.querySelector('.main-mob-menu');
 const MainMobMenuCl = document.querySelector('.main-mob-menu__close');
 const headerMenuBurger = document.querySelector('.header__menu-burger');
+const btnCatMob = document.getElementById('btnCatMob');
 
 if (headerMenuBurger) {
 	headerMenuBurger.addEventListener('click', function () {
@@ -512,6 +513,14 @@ if (MainMobMenuCl) {
 	MainMobMenuCl.addEventListener('click', function () {
 		MainMobMenu.classList.remove('_active');
 		// bodyUnlock();
+	});
+}
+if (btnCatMob) {
+	btnCatMob.addEventListener('click', function () {
+		MainMobMenu.classList.remove('_active');
+		iconMenu.classList.add('_active');
+		menuCatalog.classList.add('_active');
+		header.classList.add('_before');
 	});
 }
 // Search =====================================================================================================================================
