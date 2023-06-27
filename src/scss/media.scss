@@ -24,7 +24,7 @@
 	._container {
 		padding: 0 10px;
 	}
-	.menu-catalog._active .menu-catalog__body {
+	.menu-catalog .menu-catalog__body {
     padding: 198px 50px 60px 50px;
 	}
 }
@@ -116,7 +116,7 @@
 	.table tbody td {
     padding: 10px;
 	}
-	.menu-catalog._active .menu-catalog__body {
+	.menu-catalog .menu-catalog__body {
     padding: 170px 40px 60px 40px;
 	}
 	.menu-catalog__inner {
@@ -589,7 +589,7 @@
 	.header__menu-catalog .menu-lineBlock__item svg {
 		display: block;
 	}
-	.menu-catalog._active .menu-catalog__body {
+	.menu-catalog .menu-catalog__body {
     padding: 170px 20px 60px 20px;
 	}
 	.menu-catalog__right-block {
@@ -1401,6 +1401,7 @@
 	}
 	.menu-catalog {
 		height: 100%;
+		transform: translate(-50%, -100%);
 	}
 	.menu-catalog._active .menu-catalog__body {
 		height: auto;
