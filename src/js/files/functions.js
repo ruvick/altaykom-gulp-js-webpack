@@ -623,27 +623,27 @@ if (catEntityCl) {
 }
 // Всплывающие меню при наведении ===================================================================================================================
 
-// const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
-// const lineBlockBlk = document.querySelector('.lineBlock-blk');
-// if (document.documentElement.clientWidth > 1024) {
-// 	function menuHover() {
-// 		for (let i = 0; i < menuLineBlockItem.length; i++) {
-// 			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
-// 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-// 				child.classList.add('_active');
-// 				lineBlockBlk.classList.add('_active');
-// 				// bodyLock();
-// 			})
-// 			menuLineBlockItem[i].addEventListener('mouseleave', () => {
-// 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-// 				child.classList.remove('_active');
-// 				lineBlockBlk.classList.remove('_active');
-// 				// bodyUnlock();
-// 			})
-// 		}
-// 	}
-// 	menuHover();
-// }
+const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
+const lineBlockBlk = document.querySelector('.lineBlock-blk');
+if (document.documentElement.clientWidth > 1024) {
+	function menuHover() {
+		for (let i = 0; i < menuLineBlockItem.length; i++) {
+			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
+				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+				child.classList.add('_active');
+				lineBlockBlk.classList.add('_active');
+				bodyLockToggle();
+			})
+			menuLineBlockItem[i].addEventListener('mouseleave', () => {
+				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+				child.classList.remove('_active');
+				lineBlockBlk.classList.remove('_active');
+				bodyLockToggle();
+			})
+		}
+	}
+	menuHover();
+}
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне:
