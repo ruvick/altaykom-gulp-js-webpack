@@ -1,39 +1,34 @@
 // Хлебные крошки ===============================================================================================================================================
 .breadcrumbs {
 	padding-top: 40px;
-	margin-left: -11px;
 }
 .breadcrumbs__inner {
 	display: flex;
-}
-.breadcrumbs ul {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+	a {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 22px;
+		color: #8F8E8E;
+		text-decoration: none;
+		margin: 0 15px;
+		transition: $mainTransition;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:hover{
+			color: #221F20;
+		}
+	}
+	span {
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 22px;
+		color: #221F20;
+		margin-left: 15px;
+	}
 }
-
-.breadcrumbs span {
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 22px;
-	margin-left: 7px;
-	color: #221F20;
-}
-
-.breadcrumbs span a {
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 22px;
-	margin-right: 10px;
-	color: #8F8E8E;
-	text-decoration: none;
-}
-
+// pagging =====================================================================================================================================
 .pagging {
 	display: flex;
 	align-items: center;

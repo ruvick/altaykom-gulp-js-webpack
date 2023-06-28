@@ -681,6 +681,19 @@ if (filterMobSl) {
 // 		bodyLockToggle();
 // 	}
 // })
+// document.addEventListener('click', outsideEvtListener);
+
+// function outsideEvtListener(evt) {
+// 	if (evt.target === selectMobMenu || selectMobMenu.contains(evt.target)) {
+// 		// клик внутри
+// 		return;
+// 	}
+// 	selectMobMenu.classList.remove('_active');
+// 	// код для закрытия меню, например el.classList.add('hidden')
+
+// 	// не забыть убрать слушатель событий (не для каждой имплементации требуется)
+// 	document.removeEventListener(outsideEvtListener);
+// }
 // Product Preview =====================================================================================================================================================================================
 const prodPrew = document.getElementById('prodPrew');
 const prodPrewCl = document.getElementById('prodPrewCl');
@@ -695,6 +708,16 @@ if (catEntityMbCard) {
 if (prodPrewCl) {
 	prodPrewCl.addEventListener('click', function () {
 		prodPrew.classList.remove('_active');
+		bodyLockToggle();
+	});
+}
+// MulticorzineMobFxed ==================================================================================================================================================================================
+const multicorzineMobFxed = document.getElementById('multicorzineMobFxed');
+const MobfixedMenuFt = document.getElementById('MobfixedMenuFt');
+
+if (MobfixedMenuFt) {
+	MobfixedMenuFt.addEventListener('click', function () {
+		multicorzineMobFxed.classList.toggle('_active');
 		bodyLockToggle();
 	});
 }
