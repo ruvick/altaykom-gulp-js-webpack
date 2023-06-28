@@ -139,6 +139,7 @@
 	align-items: center;
 	padding: 0 16.5px;
 	cursor: pointer;
+	transition: $mainTransition;
 
 	&:hover {
 		color: #C5934F;
@@ -155,6 +156,7 @@
 		width: 24px;
 		flex: 0 0 24px;
 		height: 24px;
+		transition: $mainTransition;
 	}
 
 	// &::before {
@@ -781,6 +783,7 @@
 	border-radius: 15px;
 	background: #fff;
 	cursor: pointer;
+	transition: $mainTransition;
 
 	&:hover {
 		background: #221F20;
@@ -789,6 +792,7 @@
 	svg {
 		flex: 0 0 15px;
 		height: 13px;
+		transition: $mainTransition;
 	}
 }
 

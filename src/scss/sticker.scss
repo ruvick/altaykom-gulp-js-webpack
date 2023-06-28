@@ -62,11 +62,13 @@
   border-radius: 10px;
   background: #fff;
   overflow: hidden;
+	transition: $mainTransition;
 	svg {
 		width: 17.5px;
 		flex: 0 0 17.5px;
 		height: 17px;
 		fill: none;
+		transition: $mainTransition;
 	}
 }
 

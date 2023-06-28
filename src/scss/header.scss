@@ -156,16 +156,15 @@
 	position: relative;
 	display: flex;
 	align-items: center;
-	transition: all 0.5s;
-
-	&:hover {
-		color: #C5934F;
-	}
 }
 
 .menu__link {
 	padding-left: 30px;
-	padding-bottom: 1.5px;
+	padding-bottom: 1.5px; 
+	transition: $mainTransition; 
+	&:hover {
+		color: #C5934F;
+	}
 }
 
 .menu__button-arrow {
@@ -179,7 +178,7 @@
 .menu__arrow-icon {
 	width: 100%;
 	height: 100%;
-	transition: all 0.3s;
+	transition: $mainTransition;
 }
 
 @media (any-hover: hover) {
@@ -228,15 +227,17 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 12.4px;
-	transition: all 0.3s;
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 }
 
-.menu__sub-item:hover .menu__sub-link {
-	color: #C5934F;
+.menu__sub-link {
+	transition: $mainTransition;
+	&:hover{
+		color: #C5934F;
+	}
 }
 
 .header-user__back-btn {
@@ -277,7 +278,7 @@
 .button-catalog {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-between; 
 	flex: 0 1 100%;
 	height: 56px;
 	padding: 20px;
@@ -883,6 +884,7 @@
 	line-height: 20 /14 * 100%;
 	color: #8F8E8E;
 	padding: 10px;
+	transition: $mainTransition;
 
 	&:hover {
 		color: #161615;
@@ -980,6 +982,7 @@
 }
 
 .menu-cabinet__link {
+	transition: $mainTransition;
 	&:hover {
 		color: #C5934F;
 	}

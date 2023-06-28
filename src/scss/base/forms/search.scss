@@ -6,6 +6,7 @@
 	transition: right 0.3s ease 0s;
 	cursor: pointer;
 	border: 1px solid #E3E3E3;
+	transition: $mainTransition;
 
 	&:hover {
 		border: 1px solid #221F20;
