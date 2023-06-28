@@ -1069,15 +1069,19 @@ body.padding {
 }
 
 .service-banner__text .breadcrumbs {
+	color: #8F8E8E; 
 	margin-bottom: 20px;
 }
 
-.service-banner__text .breadcrumbs span {
-	color: grey;
+.service-banner__text .breadcrumbs a {
+	color: #8F8E8E; 
+	&:hover{
+		color: #fff;
+	}
 }
 
-.service-banner .breadcrumb_last {
-	color: #fff !important;
+.service-banner span {
+	color: #fff;
 }
 
 .service-description {
@@ -1617,7 +1621,7 @@ body.padding {
 	margin-left: auto;
 }
 
-.card-product__sticker-rating {
+.card-product__sticker-rating { 
 	position: absolute;
 	left: 0;
 	z-index: 5;
