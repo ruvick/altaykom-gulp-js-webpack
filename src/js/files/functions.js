@@ -666,6 +666,32 @@ if (filtersMobCl) {
 if (filterMobSl) {
 	filterMobSl.addEventListener('click', function () {
 		selectMobMenu.classList.add('_active');
+		// menuHover();
+		bodyLockToggle();
+	});
+}
+// Закрытие моб меню при клике вне области меню 
+// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+// 	const target = e.target // находим элемент, на котором был клик
+// 	if (!target.closest('.select-mob-menu') && !target.closest('.select-mob-menu__list-link')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+// 		selectMobMenu.classList.remove('_active')
+// 		bodyLockToggle();
+// 	}
+// })
+// Product Preview =====================================================================================================================================================================================
+const prodPrew = document.getElementById('prodPrew');
+const prodPrewCl = document.getElementById('prodPrewCl');
+const catEntityMbCard = document.querySelector('.catalog-entity-mob__card');
+
+if (catEntityMbCard) {
+	catEntityMbCard.addEventListener('click', function () {
+		prodPrew.classList.add('_active');
+		bodyLockToggle();
+	});
+}
+if (prodPrewCl) {
+	prodPrewCl.addEventListener('click', function () {
+		prodPrew.classList.remove('_active');
 		bodyLockToggle();
 	});
 }
