@@ -1554,7 +1554,7 @@ body.padding {
 }
 
 .card-product {
-	// flex: 0 1 100%;
+	position: relative;
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
@@ -1593,7 +1593,7 @@ body.padding {
 .card-product-slider__sticker-block,
 .card-product__sticker-block {
 	position: absolute;
-	top: 0;
+	top: 10px;
 	left: 0;
 	z-index: 5;
 	display: flex;
