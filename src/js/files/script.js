@@ -203,28 +203,7 @@ if (prodPrewCl) {
 	});
 }
 
-// FiltersMob =========================================================================================================================================================================================
-const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
-const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');
-const filtersMobCl = document.querySelector('.filters-mob-menu__header-close');
-const filtersMobMenu = document.querySelector('.filters-mob-menu');
-const selectMobMenu = document.querySelector('.select-mob-menu');
 
-if (filterMobFl) {
-	filterMobFl.addEventListener('click', function () {
-		filtersMobMenu.classList.add('_active');
-	});
-}
-if (filtersMobCl) {
-	filtersMobCl.addEventListener('click', function () {
-		filtersMobMenu.classList.remove('_active');
-	});
-}
-if (filterMobSl) {
-	filterMobSl.addEventListener('click', function () {
-		selectMobMenu.classList.add('_active');
-	});
-}
 
 // MulticorzineMobFxed ==================================================================================================================================================================================
 const multicorzineMobFxed = document.getElementById('multicorzineMobFxed');

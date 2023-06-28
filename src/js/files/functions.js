@@ -604,7 +604,7 @@ interFacelinkText.forEach(linkText => {
 	// })
 })
 
-// cat-search 
+// cat-search ================================================================================================================================================================
 const catEntityInp = document.getElementById('cat-entity-input');
 const catEntityCl = document.getElementById('cat-entity-cl');
 const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
@@ -643,6 +643,31 @@ if (document.documentElement.clientWidth > 1024) {
 		}
 	}
 	menuHover();
+}
+// FiltersMob =========================================================================================================================================================================================
+const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
+const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');
+const filtersMobCl = document.querySelector('.filters-mob-menu__header-close');
+const filtersMobMenu = document.querySelector('.filters-mob-menu');
+const selectMobMenu = document.querySelector('.select-mob-menu');
+
+if (filterMobFl) {
+	filterMobFl.addEventListener('click', function () {
+		filtersMobMenu.classList.add('_active');
+		bodyLockToggle();
+	});
+}
+if (filtersMobCl) {
+	filtersMobCl.addEventListener('click', function () {
+		filtersMobMenu.classList.remove('_active');
+		bodyLockToggle();
+	});
+}
+if (filterMobSl) {
+	filterMobSl.addEventListener('click', function () {
+		selectMobMenu.classList.add('_active');
+		bodyLockToggle();
+	});
 }
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
