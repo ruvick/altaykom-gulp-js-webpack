@@ -1173,9 +1173,9 @@
 		justify-content: center;
 	}
 
-	.breadcrumbs__inner {
-		margin: 0 -10px;
-	}
+	// .breadcrumbs__inner {
+	// 	margin: 0 -10px;
+	// }
 
 	.breadcrumbs span:nth-child(1) {
 		overflow: auto;
@@ -2714,7 +2714,7 @@
 	.documents-block__item-icon-descp-value {
 		font-size: 14px;
 	}
-	.multicorzine-legal-entity__table-box .table tbody td:nth-child(5), .multicorzine-legal-entity__table-box .table tbody td:nth-child(6) {
+	.multicorzine-legal-entity__table-box .table tbody td:nth-child(5), .multicorzine-legal-entity__table-box .table tbody td:nth-child(6) { 
     flex: 0 1 20%;
 		display: flex;
     align-items: center;
