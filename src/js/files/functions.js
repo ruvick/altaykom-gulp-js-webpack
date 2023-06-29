@@ -482,6 +482,26 @@ export function menuInit() {
 			});
 		}
 	})
+	// Закрытие моб меню при клике вне области меню 
+	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	// 	const target = e.target // находим элемент, на котором был клик
+	// 	if (!target.closest('.header__container')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+	// 		iconMenu.classList.remove('_active');
+	// 		menuCatalog.classList.remove('_active');
+	// 		header.classList.remove('_before');
+	// 		bodyLockToggle();
+	// 	}
+	// })
+	// Модуль закрытия по ESC 
+	window.onkeydown = function (event) {
+		if (event.keyCode == 27) {
+			iconMenu.classList.remove('_active');
+			menuCatalog.classList.remove('_active');
+			header.classList.remove('_before');
+			bodyLockToggle();
+			console.log('escape click');
+		}
+	};
 }
 export function menuOpen() {
 	bodyLock();
