@@ -51,10 +51,12 @@ button {
 	cursor: pointer;
 	color: inherit;
 	background-color: inherit;
+	transition: $mainTransition;
 }
 
 a {
 	color: inherit;
+	transition: $mainTransition;
 }
 
 a:link,

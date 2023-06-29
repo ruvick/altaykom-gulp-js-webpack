@@ -246,29 +246,28 @@ if (multicorClose) {
 
 
 // Мои списки =============================================================================================================================================================================================
-const physicalListPerson = document.querySelector('.physical-list-person');
-const newListsCard = document.querySelectorAll('.new-lists__card');
-const backBtn = document.getElementById('back-btn');
-const physicalCl = document.getElementById('physical-close');
+// const physicalListPerson = document.querySelector('.physical-list-person');
+// const newListsCard = document.querySelectorAll('.new-lists__card');
+// const backBtn = document.getElementById('back-btn');
+// const physicalCl = document.getElementById('physical-close');
 
-newListsCard.forEach((item) => {
-	item.addEventListener("click", function () {
-		physicalListPerson.classList.add("_active");
-	});
-});
+// newListsCard.forEach((item) => {
+// 	item.addEventListener("click", function () {
+// 		physicalListPerson.classList.add("_active");
+// 	});
+// });
 
-if (backBtn) {
-	backBtn.addEventListener('click', function () {
-		physicalListPerson.classList.remove('_active');
-	});
-}
+// if (backBtn) {
+// 	backBtn.addEventListener('click', function () {
+// 		physicalListPerson.classList.remove('_active');
+// 	});
+// }
 
-if (physicalCl) {
-	physicalCl.addEventListener('click', function () {
-		physicalListPerson.classList.remove('_active');
-	});
-}
-
+// if (physicalCl) {
+// 	physicalCl.addEventListener('click', function () {
+// 		physicalListPerson.classList.remove('_active');
+// 	});
+// }
 
 // Лайки ================================================================================================================================================================================================
 const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));

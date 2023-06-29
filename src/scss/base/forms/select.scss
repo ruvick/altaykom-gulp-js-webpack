@@ -21,7 +21,7 @@
 		background: #fff;
 		border: 1px solid #e3e3e3;
 		cursor: pointer;
-
+		transition: $mainTransition;
 		&:hover {
 			border: 1px solid #221F20;
 		}
@@ -121,7 +121,7 @@
 		cursor: pointer;
 		padding: 5px 15px;
 		color: inherit;
-
+		transition: $mainTransition;
 		&._select-selected {
 			background-color: #eee;
 		}

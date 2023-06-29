@@ -2411,7 +2411,7 @@ body.padding {
 	color: #C5934F;
 	text-align: center;
 	margin-top: 30px;
-
+	transition: $mainTransition;
 	&:hover {
 		color: #221F20;
 	}
@@ -2449,7 +2449,7 @@ body.padding {
 	border-radius: 15px;
 	overflow: hidden;
 	margin-right: 10px;
-
+	transition: $mainTransition;
 	&:last-child {
 		margin-right: 0;
 	}
@@ -3476,7 +3476,7 @@ body.padding {
 	background: #fff;
 	border: 1px solid #e3e3e3;
 	cursor: pointer;
-
+	transition: $mainTransition;
 	// &::after {
 	// 	content: '';
 	// 	float: right;
@@ -3495,6 +3495,7 @@ body.padding {
 		width: 17px;
 		height: 17px;
 		margin-right: 5px;
+		transition: $mainTransition;
 	}
 }
 
@@ -3614,6 +3615,9 @@ body.padding {
 
 	&:last-child {
 		margin-right: 0;
+	}
+	svg {
+		transition: $mainTransition;
 	}
 }
 
@@ -4046,6 +4050,7 @@ body.padding {
 	font-size: 14px;
 	line-height: 22/14*100%;
 	color: #C5934F;
+	transition: $mainTransition;
 }
 
 .box-order__form {}
@@ -4091,6 +4096,7 @@ body.padding {
 	margin-bottom: 0;
 	overflow: hidden;
 	cursor: pointer;
+	transition: $mainTransition;
 }
 
 .box-order__options-item:hover .box-order__options-inner {
@@ -4297,10 +4303,13 @@ body.padding {
 	border-radius: 15px;
 	overflow: hidden;
 	cursor: pointer;
-
+	transition: $mainTransition;
 	&:hover {
 		color: #fff;
 		background: #221F20;
+	}
+	svg {
+		transition: $mainTransition;
 	}
 }
 
@@ -4315,12 +4324,13 @@ body.padding {
 	border-radius: 50%;
 	background: #F3F3F4;
 	overflow: hidden;
-
+	transition: $mainTransition;
 	svg {
 		width: 20px;
 		height: 20px;
 		flex: 0 0 20px;
 		fill: #8f8e8e;
+		transition: $mainTransition;
 	}
 }
 
@@ -4414,7 +4424,7 @@ body.padding {
 	text-align: center;
 	padding: 18px;
 	border-right: 1px solid #E3E3E3;
-
+	transition: $mainTransition;
 	&:last-child {
 		border-right: none;
 	}

@@ -498,6 +498,7 @@ export function menuInit() {
 			iconMenu.classList.remove('_active');
 			menuCatalog.classList.remove('_active');
 			header.classList.remove('_before');
+			physicalListPerson.classList.remove('_active');
 			bodyLockToggle();
 			console.log('escape click');
 		}
@@ -511,7 +512,33 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
+// Мои списки =============================================================================================================================================================================================
 
+const physicalListPerson = document.querySelector('.physical-list-person');
+const newListsCard = document.querySelectorAll('.new-lists__card');
+const backBtn = document.getElementById('back-btn');
+const physicalCl = document.getElementById('physical-close');
+
+newListsCard.forEach((item) => {
+	item.addEventListener("click", function () {
+		physicalListPerson.classList.add("_active");
+		bodyLockToggle();
+	});
+});
+
+if (backBtn) {
+	backBtn.addEventListener('click', function () {
+		physicalListPerson.classList.remove('_active');
+		bodyLockToggle();
+	});
+}
+
+if (physicalCl) {
+	physicalCl.addEventListener('click', function () {
+		physicalListPerson.classList.remove('_active');
+		bodyLockToggle();
+	});
+}
 // Открыть/закрыть catalog в header ==========================================================================================================================
 // const header = document.querySelector(".header");
 // const catBtn = document.getElementById('catBtn');
