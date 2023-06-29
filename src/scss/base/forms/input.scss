@@ -31,7 +31,7 @@ input[type="radio"] {
 	color: #8F8E8E;
 	border-radius: 15px;
 	border: 1px solid #E3E3E3;
-
+	transition: $mainTransition;
 	&:hover {
 		border: 1px solid #221F20;
 	}

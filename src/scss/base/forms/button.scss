@@ -57,6 +57,9 @@
 		color: #fff;
 		background-color: #221F20;
 	}
+	svg {
+		transition: $mainTransition;
+	}
 }
 
 .back-btn__icon {

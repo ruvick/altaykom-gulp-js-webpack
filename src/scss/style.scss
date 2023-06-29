@@ -3272,7 +3272,7 @@ body.padding {
 	font-size: 14px;
 	line-height: 26/14*100%;
 	color: #8F8E8E;
-
+	transition: $mainTransition;
 	&:hover {
 		color: #161615;
 	}
@@ -3814,7 +3814,7 @@ body.padding {
 	flex: 1 1 auto;
 	line-height: 20px;
 	margin-bottom: 9px;
-
+	transition: $mainTransition;
 	&:hover {
 		color: #C5934F;
 	}
@@ -3955,6 +3955,7 @@ body.padding {
 .basket-individuals-sorting__quantity-cost-btn-text {
 	font-size: 12px;
 	color: #C5934F;
+	transition: $mainTransition;
 }
 
 .page-user-sec__agreement-policy {
