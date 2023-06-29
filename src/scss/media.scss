@@ -2128,7 +2128,7 @@
 	}
 }
 
-@media (max-width: 414px) { 
+@media (max-width: 414px) {  
 	.slider-info__slide {
 		padding-bottom: 40%;
 	}
@@ -2587,6 +2587,10 @@
 	.btn-up {
     bottom: 80px;
 	}
+	.header-default .header__logo {
+		margin-right: auto;
+    margin-left: 21px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -2723,6 +2727,9 @@
 	}
 	.advantagesBlock__inner {
     width: 350px;
+	}
+	.header-default .header__logo {
+    margin-left: 5px;
 	}
 }
 
