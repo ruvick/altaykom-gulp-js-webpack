@@ -448,12 +448,16 @@
 	transition: $mainTransition;
 	pointer-events: none;
 }
-
+.menu-lineBlock .sub-list::-webkit-scrollbar-thumb,
+.menu-lineBlock .sub-list::-webkit-scrollbar {
+	display: none;
+}
 .sub-list._active {
-	height: auto;
 	opacity: 1;
 	visibility: visible;
 	overflow: visible;
+	overflow: auto;
+	max-height: calc(76.3vh - 150px);
 	pointer-events: auto;
 }
 
