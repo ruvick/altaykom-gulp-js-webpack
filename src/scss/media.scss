@@ -921,6 +921,9 @@
 }
 
 @media (max-width: 768px) {
+	.header {
+    border-bottom: none;
+}
 	.button-catalog__text {
 		display: none;
 	}
