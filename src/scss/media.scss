@@ -1812,6 +1812,8 @@
     position: absolute;
 		.menu-catalog._active {
 			top: 400px;
+			position: fixed;
+			top: 0;
 		}
 	}
 	.similar-products-block__price {
