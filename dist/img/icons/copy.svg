@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_1107" data-name="Прямоугольник 1107" width="24" height="24" transform="translate(0 8)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="copy" transform="translate(0 -8)" clip-path="url(#clip-path)">
+    <path id="Контур_1776" data-name="Контур 1776" d="M14.717.75H4.962A4.211,4.211,0,0,0,.75,4.961V16.711M16.9,5.036H6.686A1.862,1.862,0,0,0,4.829,6.893v13A1.863,1.863,0,0,0,6.686,21.75H16.9a1.861,1.861,0,0,0,1.856-1.857v-13A1.861,1.861,0,0,0,16.9,5.036Z" transform="translate(1.75 8.75)" fill="none" stroke="#292928" stroke-miterlimit="10" stroke-width="1.5"/>
+  </g>
+</svg>
