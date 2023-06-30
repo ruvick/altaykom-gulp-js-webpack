@@ -694,7 +694,7 @@
 	}
 }
 
-@media (max-width: 840px) {
+@media (max-width: 840px) { 
 	.card-product-sec__inner {
 		flex-wrap: wrap;
 	}
@@ -714,6 +714,9 @@
 
 	.main-prod-card__column {
 		flex: 0 1 50%;
+	}
+	.card-product-sec__inner {
+		justify-content: center;
 	}
 }
 
@@ -1170,10 +1173,6 @@
 	.sticker-info {
 		font-size: 10px;
 		line-height: 2.3;
-	}
-
-	.card-product-sec__inner {
-		justify-content: center;
 	}
 
 	// .breadcrumbs__inner {
