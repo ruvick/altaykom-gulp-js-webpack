@@ -490,6 +490,7 @@ export function menuInit() {
 			header.classList.remove('_before');
 			physicalListPerson.classList.remove('_active');
 			bodyLockToggle();
+			blackout();
 			console.log('escape click');
 		}
 	};
@@ -512,6 +513,7 @@ newListsCard.forEach((item) => {
 	item.addEventListener("click", function () {
 		physicalListPerson.classList.add("_active");
 		bodyLockToggle();
+		blackout();
 	});
 });
 
@@ -519,6 +521,7 @@ if (backBtn) {
 	backBtn.addEventListener('click', function () {
 		physicalListPerson.classList.remove('_active');
 		bodyLockToggle();
+		blackout();
 	});
 }
 
@@ -526,6 +529,7 @@ if (physicalCl) {
 	physicalCl.addEventListener('click', function () {
 		physicalListPerson.classList.remove('_active');
 		bodyLockToggle();
+		blackout();
 	});
 }
 // Открыть/закрыть catalog в header ==========================================================================================================================
