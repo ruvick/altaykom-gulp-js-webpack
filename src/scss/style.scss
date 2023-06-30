@@ -63,6 +63,7 @@ $mainTransition: all 0.3s ease 0s;
 
 body {
 	line-height: 26px;
+	transition: opacity 0.8s ease 0s;
 	
 	// Скролл заблокирован 
 	.lock & {
@@ -75,10 +76,18 @@ body {
 		color: #161615;
 	}
 }
-body._after {
-	&::after{
-		content:''; 
-		opacity: 1;
+body._before {
+	&::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    opacity: 1;
+    pointer-events: none;
 	}
 }
 
