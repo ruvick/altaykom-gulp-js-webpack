@@ -503,7 +503,6 @@ export function menuClose() {
 	document.documentElement.classList.remove("menu-open");
 }
 // Мои списки =============================================================================================================================================================================================
-
 const physicalListPerson = document.querySelector('.physical-list-person');
 const newListsCard = document.querySelectorAll('.new-lists__card');
 const backBtn = document.getElementById('back-btn');
@@ -594,7 +593,6 @@ if (btnCatMob) {
 	});
 }
 // Search =====================================================================================================================================
-
 const search = document.querySelector(".search-form");
 const searchInput = document.querySelector(".search-form__input");
 const searchMenu = document.querySelector(".menu-search");
@@ -705,18 +703,19 @@ if (filtersMobCl) {
 if (filterMobSl) {
 	filterMobSl.addEventListener('click', function () {
 		selectMobMenu.classList.add('_active');
-		// menuHover();
+		blackout();
 		bodyLockToggle();
 	});
 }
 // Закрытие моб меню при клике вне области меню 
 // window.addEventListener('click', e => { // при клике в любом месте окна браузера
 // 	const target = e.target // находим элемент, на котором был клик
-// 	if (!target.closest('.select-mob-menu') && !target.closest('.select-mob-menu__list-link')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+// 	if (!target.closest('.mob-fixed-menu-footer')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
 // 		selectMobMenu.classList.remove('_active')
 // 		bodyLockToggle();
 // 	}
 // })
+
 // document.addEventListener('click', outsideEvtListener);
 
 // function outsideEvtListener(evt) {
@@ -755,7 +754,13 @@ if (MobfixedMenuFt) {
 	MobfixedMenuFt.addEventListener('click', function () {
 		multicorzineMobFxed.classList.toggle('_active');
 		bodyLockToggle();
+		blackout();
 	});
+}
+// Модуль затемнения =====================================================================================================================================================================================
+function blackout() {
+	const element = document.querySelector("body");
+	element.classList.toggle('_after');
 }
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*

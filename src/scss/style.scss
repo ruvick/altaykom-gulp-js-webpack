@@ -75,6 +75,12 @@ body {
 		color: #161615;
 	}
 }
+body._after {
+	&::after{
+		content:''; 
+		opacity: 1;
+	}
+}
 
 body.padding {
 	padding-right: 7px;
@@ -6290,7 +6296,7 @@ ul .content-article__descriptioni-list-item {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	z-index: 150;
+	z-index: 610;
 	width: 100%;
 	padding: 40px 32px 36px 32px;
 	background-color: #fff;
@@ -6428,6 +6434,7 @@ ul .content-article__descriptioni-list-item {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	z-index: 510;
 	padding: 30px;
 	border-radius: 35px 35px 0 0;
 	padding-bottom: 100px;
