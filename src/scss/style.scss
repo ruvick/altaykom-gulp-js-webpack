@@ -2805,7 +2805,9 @@ body.padding {
 	font-weight: 700;
 	margin-bottom: 10px;
 }
-
+.product-btn-label {
+	cursor: pointer;
+}
 .product-btn {
 	position: relative;
 	font-size: 16px;
@@ -2819,10 +2821,26 @@ body.padding {
 		border: 1px solid #C5934F;
 	}
 }
-
-.product-btn.active {
+.product-btn-label input[type=radio]:checked + .product-btn {
 	color: #C5934F;
 	border: 1px solid #C5934F;
+}
+.product-btn-label input[type=radio]:disabled + .product-btn {
+	position: relative;
+	color: #8F8E8E;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 45%;
+		border-bottom: 0.3px solid #8F8E8E;
+		transform: rotate(-20deg);
+	}
+	&:hover{
+		border: 1px solid #E3E3E3;
+	}
 }
 
 .inactive {

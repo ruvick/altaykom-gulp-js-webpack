@@ -482,16 +482,6 @@ export function menuInit() {
 			});
 		}
 	})
-	// Закрытие моб меню при клике вне области меню 
-	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-	// 	const target = e.target // находим элемент, на котором был клик
-	// 	if (!target.closest('.header__container')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-	// 		iconMenu.classList.remove('_active');
-	// 		menuCatalog.classList.remove('_active');
-	// 		header.classList.remove('_before');
-	// 		bodyLockToggle();
-	// 	}
-	// })
 	// Модуль закрытия по ESC 
 	window.onkeydown = function (event) {
 		if (event.keyCode == 27) {
@@ -652,18 +642,6 @@ interFacelinkText.forEach(linkText => {
 		// header.classList.remove('_active');
 		bodyLockToggle();
 	})
-
-	// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-	// 	const target = e.target // находим элемент, на котором был клик
-	// 	if (!target.closest('.search-form__btn') && !target.closest('.search-form__input') && !target.closest('.menu-search')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-	// 		search.classList.remove("_active");
-	// 		searchMenu.classList.remove("_active");
-	// 		searchBtnClosed.classList.remove('_active');
-	// 		linkText.classList.remove("_none");
-	// 		lineBlockBlk.classList.remove('_active');
-	// 		// bodyUnlock();
-	// 	}
-	// })
 })
 
 // cat-search ================================================================================================================================================================
@@ -684,7 +662,6 @@ if (catEntityCl) {
 	});
 }
 // Всплывающие меню при наведении ===================================================================================================================
-
 const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
 const lineBlockBlk = document.querySelector('.lineBlock-blk');
 if (document.documentElement.clientWidth > 1024) {
