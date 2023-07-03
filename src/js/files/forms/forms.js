@@ -231,7 +231,7 @@ export function formViewpass() {
 	document.addEventListener("click", function (e) {
 		let targetElement = e.target;
 		if (targetElement.closest('[class*="__viewpass"]')) {
-			let inputType = targetElement.classList.contains('active') ? "password" : "text";
+			let inputType = targetElement.classList.contains('active') ? "password" : svg;
 			targetElement.parentElement.querySelector('input').setAttribute("type", inputType);
 			targetElement.classList.toggle('active');
 		}

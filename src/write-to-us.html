@@ -32,22 +32,22 @@
 
 										<div class="submission-form__input input">
 											<label for="name-inp" class="submission-form__label">ФИО*</label>
-											<input id="name-inp" type="text" name="name" data-required="name" data-validate placeholder="">
+											<input id="name-inp" type="text" name="name" data-validate data-required="name">
 										</div>
 
 										<div class="submission-form__input input">
 											<label for="job-inp" class="submission-form__label">Должность*</label>
-											<input id="job-inp" type="text" name="job-title" data-required="job-title" data-validate placeholder="">
+											<input id="job-inp" type="text" name="job-title" data-validate data-required="job-title">
 										</div>
 
 										<div class="submission-form__column">
 											<div class="submission-form__input input tel">
 												<label for="phone-inp" class="submission-form__label">Телефон*</label>
-												<input id="phone-inp" type="tel" name="phone" data-required="tel" data-validate placeholder="">
+												<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">
 											</div>
 											<div class="submission-form__input input tel">
 												<label for="email-inp" class="submission-form__label">Email*</label>
-												<input id="email-inp" type="text" name="email" data-required="email" data-validate placeholder="">
+												<input id="email-inp" type="text" name="email" data-validate data-required="email">
 											</div>
 										</div>
 									</div>
@@ -56,7 +56,7 @@
 										<div class="submission-form__title-low">Комментарий</div>
 										<div class="submission-form__input input submission-form__textarea">
 											<label for="email-in" class="submission-form__label">Сообщение*</label>
-											<textarea id="email-in" type="text" name="message"  data-validate placeholder=""></textarea>
+											<textarea id="email-in" type="text" name="message"  data-validate></textarea>
 										</div>
 									</div>
 
@@ -74,14 +74,14 @@
 
 									<script>
 										const notification = document.querySelector('.submission-form__item-file-notification');
-
+										// Получение файла
 										function getFileName() {
 											let file = document.getElementById('myfile').value;
 												file = file.replace(/\\/g, '/').split('/').pop();
 												document.getElementById('file-name').innerHTML = '' + file;
 												emptyFile();
 											}
-
+											// Проверка файла
 											function emptyFile() {
 												let file = document.getElementById('myfile');
         									if(file.files.value == 0 ) {
@@ -95,7 +95,7 @@
 									</script>
 
 									<div class="submission-form__policy">
-										Нажимая на кнопку «Зарегистрироваться», Вы соглашаетесь на
+										Нажимая на кнопку «Отправить», Вы соглашаетесь на
 										обработку
 										<a href="#privacy-policy.html" class="submission-form__policy-link">персональных данных</a>
 									</div>

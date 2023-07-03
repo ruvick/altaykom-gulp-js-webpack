@@ -37,12 +37,6 @@
                       <span class="box-order__item-number">1</span>
                       <div class="box-order__item-name">Покупатель</div>
                     </div>
-                    <!-- <button
-                      type="button"
-                      class="box-order__item-another-city text-animation"
-                    >
-                      Другой город
-                    </button> -->
                   </div>
 
                   <form action="#" class="box-order__form">
@@ -71,29 +65,16 @@
 
                       </div>
                     </div>
-                    <div class="box-order__row">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="ФИО*"
-                        class="box-order__form-input input"
-                      />
-                      <input
-                        type="text"
-                        name="email"
-                        data-required="email"
-                        data-validate
-                        placeholder="Email*"
-                        class="box-order__form-input input"
-                      />
-                      <input
-                        type="tel"
-                        name="phone"
-                        data-required="tel"
-                        data-validate
-                        placeholder="Телефон*"
-                        class="box-order__form-input input tel"
-                      />
+                    <div class="box-order__row">     
+											<div class="box-order__form-input submission-form__input input">
+												<label for="name-inp" class="submission-form__label">ФИО*</label>
+												<input id="name-inp" type="text" name="name" data-validate data-required="name">
+											</div> 
+
+                      <!-- <input type="text" name="name" placeholder="ФИО*" class="box-order__form-input input"> -->
+
+                      <input type="text" name="email" data-required="email" data-validate placeholder="Email*" class="box-order__form-input input">
+                      <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*" class="box-order__form-input input tel">
                     </div>
                   </form>
                 </div>
@@ -163,25 +144,9 @@
                       <div class="box-order__title">
                         Выберите адрес доставки
                       </div>
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Адрес доставки*"
-                        class="box-order__form-input input"
-                      />
-                      <input
-                        type="text"
-                        name="email"
-                        data-required="email"
-                        data-validate
-                        placeholder="Индекс"
-                        class="box-order__form-input input"
-                      />
-                      <textarea
-                        name=""
-                        placeholder="Комментарии к заказу"
-                        class="box-order__form-input input"
-                      ></textarea>
+                      <input type="text" name="name" placeholder="Адрес доставки*" class="box-order__form-input input">
+                      <input type="text" name="email" data-required="email" data-validate placeholder="Индекс" class="box-order__form-input input">
+                      <textarea name="" placeholder="Комментарии к заказу" class="box-order__form-input input"></textarea>
                     </div>
                   </form>
                 </div>

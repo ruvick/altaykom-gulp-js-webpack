@@ -1474,4 +1474,13 @@
 			transform="translate(-1658.5 -4083.223)" fill="none" stroke-width="2" />
 	</symbol>
 
+	<!-- Показать пароль -->
+	<symbol id="show-password" viewBox="0 0 18 18">
+		<g id="Группа_масок_31" data-name="Группа масок 31" clip-path="url(#clip-path)">
+			<path id="Icon_ionic-md-eye-2" data-name="Icon ionic-md-eye"
+				d="M11.25,7.383a9.678,9.678,0,0,0-9,6.067,9.709,9.709,0,0,0,18,0A9.678,9.678,0,0,0,11.25,7.383Zm0,10.113a4.046,4.046,0,1,1,4.09-4.046A4.08,4.08,0,0,1,11.25,17.5Zm0-6.473A2.427,2.427,0,1,0,13.7,13.45,2.449,2.449,0,0,0,11.25,11.023Z"
+				transform="translate(-2.25 -4.383)" fill="#221f20" />
+		</g>
+	</symbol>
+
 </svg>

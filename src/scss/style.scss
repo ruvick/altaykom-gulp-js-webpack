@@ -2403,7 +2403,12 @@ body.padding {
 	font-size: 14px;
 	line-height: 20/14*100%;
 	color: #8F8E8E;
+	text-underline-position: under;
 	text-decoration: underline !important;
+	transition: $mainTransition;
+	&:hover {
+		text-decoration: none !important;
+	}
 }
 
 .submission-form__button {
@@ -6766,12 +6771,33 @@ ul .content-article__descriptioni-list-item {
     left: 20px;
 	}
 }
-
+.submission-form__show-pass {
+	position: absolute;
+	// top: 14px;
+	transform: translate(0px,100%);
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 18px;
+	flex: 0 0 18px;
+	height: 18px;
+	overflow: hidden;
+	opacity: 0;
+	// transition: opacity 0.3s ease 0s;
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+}
 .submission-form__input._form-focus {
 	.submission-form__label {
 		top: 0;
 		font-size: 12px;
 		color: #8F8E8E;
+	}
+	.submission-form__show-pass{
+		opacity: 1;
 	}
 }
 .submission-form__input._form-error {

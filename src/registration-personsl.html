@@ -23,23 +23,35 @@
                 <div class="form__line">
                   <div class="submission-form__item">
                     <div class="submission-form__title">Регистрация</div>
-                    <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-                      class="submission-form__input input tel" />
-                    <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-                      class="submission-form__input input" />
+										<div class="submission-form__input input tel">
+											<label for="phone-inp" class="submission-form__label">Телефон*</label>
+											<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">
+										</div>
+										<div class="submission-form__input input tel">
+											<label for="email-inp" class="submission-form__label">Email*</label>
+											<input id="email-inp" type="text" name="email" data-validate data-required="email">
+										</div>
                   </div>
                   <div class="submission-form__item">
                     <div class="submission-form__title">Пароль</div>
-                    <input type="tel" name="password" data-required="password" data-validate placeholder="Пароль*"
-                      class="submission-form__input input __viewpass" />
-                    <button class="form__viewpass" type="button" style="display: none">
-                      Показать пароль
-                    </button>
-                    <input type="tel" name="password" data-required="password" data-validate
-                      placeholder="Пароль повторно*" class="submission-form__input input __viewpass" />
-                    <button class="form__viewpass" type="button" style="display: none">
-                      Показать пароль
-                    </button>
+											<div class="submission-form__input input">
+												<label for="pass-inp" class="submission-form__label">Пароль*</label>
+												<input id="pass-inp" autocomplete="off" type="password" name="form[]" value="">
+												<button class="submission-form__show-pass form__viewpass" type="button">
+													<svg>
+														<use xlink:href="#show-password"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="submission-form__input input">
+												<label for="passShow-inp" class="submission-form__label">Пароль повторно*</label>
+												<input id="passShow-inp" autocomplete="off" type="password" name="form[]" value="">
+												<button class="submission-form__show-pass form__viewpass" type="button">
+													<svg>
+														<use xlink:href="#show-password"></use>
+													</svg>
+												</button>
+											</div>
                     <div class="submission-form__clue">
                       Пароль должен содержать не менее 8 символов латинского
                       алфавита, в том числе цифры, заглавные и строчные буквы
@@ -47,7 +59,7 @@
                   </div>
                   <label data-index="0" class="submission-form__checkbox checkbox">
                     <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
-                      value="1" name="form[]" value="Подписаться на рассылку новостей, мастерклассов" />
+                      value="1" name="form[]" value="Подписаться на рассылку новостей, мастерклассов">
                     <span class="checkbox__text"><span>Подписаться на рассылку новостей, мастерклассов</span></span>
                   </label>
                   <div class="submission-form__policy">

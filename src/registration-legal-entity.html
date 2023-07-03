@@ -13,7 +13,7 @@
           <div class="registration-section__body">
             <button type="button" class="registration-section__btn back-btn">
               <svg class="back-btn__icon">
-                <use xlink:href="#reg-back-btn"></use>
+                <use xlink:href="#reg-back-btn"></use> 
               </svg>
               вернуться
             </button>
@@ -49,31 +49,47 @@
                     <div class="submission-form__title-low">
                       Контактное лицо
                     </div>
-                    <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
-                      class="submission-form__input input" />
-                    <input type="text" name="job-title" data-required="job-title" data-validate placeholder="Должность*"
-                      class="submission-form__input input" />
+										<div class="submission-form__input input">
+											<label for="name-inp" class="submission-form__label">ФИО*</label>
+											<input id="name-inp" type="text" name="name" data-validate data-required="name">
+										</div>
+										<div class="submission-form__input input">
+											<label for="job-inp" class="submission-form__label">Должность*</label>
+											<input id="job-inp" type="text" name="job-title" data-validate data-required="job-title">
+										</div>
                     <div class="submission-form__column">
-                      <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-                        class="submission-form__input input tel" />
-                      <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-                        class="submission-form__input input" />
+											<div class="submission-form__input input tel">
+												<label for="phone-inp" class="submission-form__label">Телефон*</label>
+												<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">
+											</div>
+											<div class="submission-form__input input">
+												<label for="email-inp" class="submission-form__label">Email*</label>
+												<input id="email-inp" type="text" name="email" data-validate data-required="email">
+											</div>
                     </div>
                   </div>
 
                   <div class="submission-form__item">
                     <div class="submission-form__title-low">Пароль</div>
                     <div class="submission-form__column">
-                      <input type="tel" name="password" data-required="password" data-validate placeholder="Пароль*"
-                        class="submission-form__input input __viewpass" />
-                      <button class="form__viewpass" type="button" style="display: none">
-                        Показать пароль
-                      </button>
-                      <input type="tel" name="password" data-required="password" data-validate
-                        placeholder="Пароль повторно*" class="submission-form__input input __viewpass" />
-                      <button class="form__viewpass" type="button" style="display: none">
-                        Показать пароль
-                      </button>
+											<div class="submission-form__input input">
+												<label for="pass-inp" class="submission-form__label">Пароль*</label>
+												<input id="pass-inp" autocomplete="off" type="password" name="form[]" value="">
+												<button class="submission-form__show-pass form__viewpass" type="button">
+													<svg>
+														<use xlink:href="#show-password"></use>
+													</svg>
+												</button>
+											</div>
+											<div class="submission-form__input input">
+												<label for="passShow-inp" class="submission-form__label">Пароль повторно*</label>
+												<input id="passShow-inp" autocomplete="off" type="password" name="form[]" value="">
+												<button class="submission-form__show-pass form__viewpass" type="button"> 
+													<svg>
+														<use xlink:href="#show-password"></use>
+													</svg>
+												</button>
+											</div>
                     </div>
                     <div class="submission-form__clue">
                       Пароль должен содержать не менее 8 символов латинского
