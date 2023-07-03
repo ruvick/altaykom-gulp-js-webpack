@@ -23,11 +23,16 @@ input[type="radio"] {
 	visibility: hidden;
 }
 
+input {
+	width: 100%;
+	padding: 0px 20px;
+}
+
 .input {
 	display: flex;
 	width: 100%;
 	height: 56px;
-	padding: 0px 20px;
+	// padding: 0px 20px;
 	color: #8F8E8E;
 	border-radius: 15px;
 	border: 1px solid #E3E3E3;
@@ -42,17 +47,17 @@ input[type="radio"] {
 	}
 
 	&._error {
-		border: 1px solid red;
+		border: 1px solid #EA2838;
 	}
 }
 
 .input._form-error {
-	border: 1px solid red;
+	border: 1px solid #EA2838;
 }
 
-textarea.input {
+textarea {
 	resize: none;
-	padding: 17px 20px;
+	padding: 20px;
 }
 
 input[type=range] {

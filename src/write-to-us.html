@@ -11,7 +11,7 @@
 			<section class="registration-section section">
 				<div class="_container">
 					<div class="registration-section__body">
-						<button type="button" class="registration-section__btn back-btn">
+						<button type="button" class="registration-section__btn back-btn"> 
 							<svg class="back-btn__icon">
 								<use xlink:href="#reg-back-btn"></use>
 							</svg>
@@ -29,21 +29,36 @@
 										<div class="submission-form__title-low">
 											Контактное лицо
 										</div>
-										<input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
-											class="submission-form__input input" />
-										<input type="text" name="job-title" data-required="job-title" data-validate placeholder="Должность*"
-											class="submission-form__input input" />
+
+										<div class="submission-form__input input">
+											<label for="name-inp" class="submission-form__label">ФИО*</label>
+											<input id="name-inp" type="text" name="name" data-required="name" data-validate placeholder="">
+										</div>
+
+										<div class="submission-form__input input">
+											<label for="job-inp" class="submission-form__label">Должность*</label>
+											<input id="job-inp" type="text" name="job-title" data-required="job-title" data-validate placeholder="">
+										</div>
+
 										<div class="submission-form__column">
-											<input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-												class="submission-form__input input tel" />
-											<input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-												class="submission-form__input input" />
+											<div class="submission-form__input input tel">
+												<label for="phone-inp" class="submission-form__label">Телефон*</label>
+												<input id="phone-inp" type="tel" name="phone" data-required="tel" data-validate placeholder="">
+											</div>
+											<div class="submission-form__input input tel">
+												<label for="email-inp" class="submission-form__label">Email*</label>
+												<input id="email-inp" type="text" name="email" data-required="email" data-validate placeholder="">
+											</div>
 										</div>
 									</div>
 
 									<div class="submission-form__item">
 										<div class="submission-form__title-low">Комментарий</div>
-										<textarea name="" id="" placeholder="Сообщение*" class="submission-form__textarea input"></textarea>
+										<div class="submission-form__input input submission-form__textarea">
+											<label for="email-in" class="submission-form__label">Сообщение*</label>
+											<textarea id="email-in" type="text" name="message"  data-validate placeholder=""></textarea>
+										</div>
+										<!-- <textarea name="" id="" placeholder="Сообщение*" class="submission-form__textarea input"></textarea> -->
 									</div>
 
 									<div class="submission-form__item">

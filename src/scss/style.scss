@@ -6758,6 +6758,30 @@ ul .content-article__descriptioni-list-item {
 .sliderReviews {
 	padding: 0 2px;
 }
+
+
+.submission-form__input {
+	position: relative;
+	overflow: hidden;
+	.submission-form__label {
+		position: absolute;
+    top: 14px;
+    left: 20px;
+	}
+}
+
+.submission-form__input._form-focus {
+	.submission-form__label {
+		top: 0;
+		font-size: 12px;
+		color: #8F8E8E;
+	}
+}
+.submission-form__input._form-error {
+	.submission-form__label {
+		color: #EA2838;
+	}
+}
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
