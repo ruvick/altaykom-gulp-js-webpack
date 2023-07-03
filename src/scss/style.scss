@@ -2359,20 +2359,18 @@ body.padding {
 	}
 }
 
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+#myfile {
+	display: none;
 }
 
 .submission-form__item-file {
 	color: #C5934F;
-
+	transition: $mainTransition;
 	label {
 		cursor: pointer;
+	}
+	&:hover{
+		color: #221F20;
 	}
 }
 
@@ -2380,7 +2378,7 @@ body.padding {
 	font-size: 14px;
 	line-height: 24px/14px*100%;
 	color: #8F8E8E;
-	margin-top: 6px;
+	// margin-top: 6px;
 }
 
 .submission-form__clue {

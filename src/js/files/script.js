@@ -8,7 +8,15 @@
 
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 // window.onload = function () {
+function getFileName() {
+	var file = document.getElementById('myfile').value;
+	file = file.replace(/\\/g, '/').split('/').pop();
+	document.getElementById('file-name').innerHTML = '' + file;
 
+	var file = document.getElementById('myfiles').value;
+	file = file.replace(/\\/g, '/').split('/').pop();
+	document.getElementById('file-names').innerHTML = '' + file;
+}
 // Меню корзины при наведении в шапке ======================================================================================================================================================================
 let linkBascet = document.querySelectorAll('.interface__link_bascet');
 let headerMulticorzine = document.querySelector('.header__multicorzine');
@@ -73,16 +81,6 @@ interAddingBascetBtn.forEach((btn, index) => {
 		}
 	})
 })
-
-// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-//   const target = e.target // находим элемент, на котором был клик
-//   if (!target.closest('.card-product')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-//     // interAddingBascet.classList.remove('none');
-//     interAddingQuantity.classList.remove('active');
-//     // headsearch.classList.remove('_active')
-//   }
-// })
-
 // Переключение вида списка товаров ======================================================================================================================================================================
 const productsViewToggle = document.querySelectorAll('.swith-control__btn');
 
@@ -114,7 +112,6 @@ if (productsViewToggle.length > 0) {
 		});
 	});
 }
-
 // Menu Catalog ======================================================================================================================================================================
 if (document.documentElement.clientWidth > 768) {
 	const catalogMenuItems = document.querySelectorAll('.menu-catalog__body .menu-lineBlock__item');
@@ -184,9 +181,21 @@ if (ManagementFiltersBtn) {
 		pageMain.classList.toggle('width');
 	});
 }
+// Open multicorzine ======================================================================================================================================================================================
+const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
+const multicorzineLegalEntity = document.querySelector('.multicorzine-legal-entity');
+const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
 
-
-
+if (headerLegalBascetIcon) {
+	headerLegalBascetIcon.addEventListener('click', function () {
+		multicorzineLegalEntity.classList.add('_active');
+	});
+}
+if (multicorClose) {
+	multicorClose.addEventListener('click', function () {
+		multicorzineLegalEntity.classList.remove('_active');
+	});
+}
 // Range ================================================================================================================================================================================================
 const rangeInput = document.querySelectorAll(".range-input input"),
 	priceInput = document.querySelectorAll(".price-input input"),
@@ -226,49 +235,6 @@ rangeInput.forEach(input => {
 		}
 	});
 });
-
-
-// Open multicorzine ======================================================================================================================================================================================
-const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
-const multicorzineLegalEntity = document.querySelector('.multicorzine-legal-entity');
-const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
-
-if (headerLegalBascetIcon) {
-	headerLegalBascetIcon.addEventListener('click', function () {
-		multicorzineLegalEntity.classList.add('_active');
-	});
-}
-if (multicorClose) {
-	multicorClose.addEventListener('click', function () {
-		multicorzineLegalEntity.classList.remove('_active');
-	});
-}
-
-
-// Мои списки =============================================================================================================================================================================================
-// const physicalListPerson = document.querySelector('.physical-list-person');
-// const newListsCard = document.querySelectorAll('.new-lists__card');
-// const backBtn = document.getElementById('back-btn');
-// const physicalCl = document.getElementById('physical-close');
-
-// newListsCard.forEach((item) => {
-// 	item.addEventListener("click", function () {
-// 		physicalListPerson.classList.add("_active");
-// 	});
-// });
-
-// if (backBtn) {
-// 	backBtn.addEventListener('click', function () {
-// 		physicalListPerson.classList.remove('_active');
-// 	});
-// }
-
-// if (physicalCl) {
-// 	physicalCl.addEventListener('click', function () {
-// 		physicalListPerson.classList.remove('_active');
-// 	});
-// }
-
 // Лайки ================================================================================================================================================================================================
 const likeButtons = Array.from(document.querySelectorAll("._like-icon-btn"));
 const likeCounts = Array.from(document.querySelectorAll("._like-icon-count"));
@@ -287,7 +253,6 @@ function hasTouch() {
 		|| navigator.maxTouchPoints > 0
 		|| navigator.msMaxTouchPoints > 0;
 }
-
 // Отключаем hover на мобилках ==========================================================================================================================================================================
 if (hasTouch()) {
 	try {
@@ -336,7 +301,6 @@ const btnUp = {
 		}
 	}
 }
-
 btnUp.addEventListener();
 // ============================================================================================================================================================================================
 
@@ -470,6 +434,7 @@ btnUp.addEventListener();
 // 	});
 
 // }
+
 
 
 
