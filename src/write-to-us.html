@@ -19,7 +19,7 @@
 						</button>
 
 						<div class="registration-section__form submission-form submission-form_big">
-							<form action="#" class="submission-form__form">
+							<form name="Form" onsubmit="return validateForm()" action="#" class="submission-form__form">
 								<div class="form__line">
 									<!-- <div class="submission-form__item"> -->
 									<div class="submission-form__title">Написать нам</div>
@@ -58,66 +58,40 @@
 											<label for="email-in" class="submission-form__label">Сообщение*</label>
 											<textarea id="email-in" type="text" name="message"  data-validate placeholder=""></textarea>
 										</div>
-										<!-- <textarea name="" id="" placeholder="Сообщение*" class="submission-form__textarea input"></textarea> -->
 									</div>
 
 									<div class="submission-form__item">
-
 										<div class="submission-form__item-file">
-
 											<label id="mylabel" class="submission-form__item-file">
 												<span id="file-name" class="popup__upload" placeholder="File.txt">Прикрепить файл</span>
-												<input class="item-file" id="myfile" type="file" name="file" onchange="getFileName ();">
+												<input id="myfile" type="file" name="file" onchange="getFileName ();">
 											</label>
-											
 										</div>
-
-										<!-- <div class="submission-form__item-file">
-											<input id="myfile" type="file" name="file" id="file" class="inputfile" onchange="getFileName ();">
-											<label id="mylabel" for="file">Прикрепить файл</label>
-										</div> -->
-										
-
 										<div class="submission-form__item-file-notification">
 											Не более 50 МБ, jpeg, png, pdf, doc, xls, ppt
 										</div>
 									</div>
 
 									<script>
-										// const fileText = document.body.querySelector('.submission-form__item-file-notification');
+										const notification = document.querySelector('.submission-form__item-file-notification');
+
 										function getFileName() {
-											var file = document.getElementById('myfile').value;
+											let file = document.getElementById('myfile').value;
 												file = file.replace(/\\/g, '/').split('/').pop();
 												document.getElementById('file-name').innerHTML = '' + file;
+												emptyFile();
 											}
 
-											const inputAll = Array.from(document.body.querySelectorAll('.item-file'));
-const link = document.body.querySelector('.submission-form__item-file-notification');
-
-inputAll.forEach(item => item.addEventListener('input', requiredField_inputHandler));
-
-
-function requiredField_inputHandler(){
-  if( isInputIsNotEmptyAllValid(inputAll) ){
-    link.classList.remove('not-validate');
-  }else{
-    link.classList.add('not-validate');
-  }
-}
-
-function isInputIsNotEmptyAllValid( inputAll ){
-  let length = inputAll.length;
-  
-  while(length--){
-    let input = inputAll[length];
-    
-    if( ! input.value ){
-      return false;
-    }
-  }
-  
-  return true;
-}
+											function emptyFile() {
+												let file = document.getElementById('myfile');
+        									if(file.files.value == 0 ) {
+														console.log('Пустой файл');
+        									} 
+													else {
+														notification.style.fontSize = "0px";
+														console.log('Пустой файл');
+        										}
+    											}
 									</script>
 
 									<div class="submission-form__policy">
