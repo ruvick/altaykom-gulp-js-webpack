@@ -649,7 +649,7 @@ body.padding {
 
 .our-clients__card_01 {
 	background-image: url('../img/our-clients/01.png');
-}
+} 
 
 .our-clients__card_02 {
 	background-image: url('../img/our-clients/02.png');
@@ -4046,7 +4046,7 @@ body.padding {
 
 .box-order__form-input {
 	flex: 0 1 49.5%;
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 }
 
 .box-order__item {
@@ -6800,8 +6800,10 @@ ul .content-article__descriptioni-list-item {
 		opacity: 1;
 	}
 }
-.submission-form__input._form-error {
+.submission-form__input._form-focus._form-error {
 	.submission-form__label {
+		top: 16px;
+		font-size: inherit;
 		color: #EA2838;
 	}
 }

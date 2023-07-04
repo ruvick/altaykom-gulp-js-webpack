@@ -12,7 +12,7 @@
 				<div class="breadcrumbs">
 					<div class="_container">
 						<div class="breadcrumbs__inner"> 
-							<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">личный кабинет</span>
+							<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">личный кабинет</span> 
 						</div>
 					</div>
 				</div> 
@@ -622,16 +622,28 @@
 
 
 										</div>
-										<div class="tabs__body">
+										<div class="tabs__body"> 
 											
-
 												<div class="setting-profile">
 													<div class="setting-profile__title">Мои данные</div>
 													<form action="#" class="setting-profile__form">
 														<div class="setting-profile__row">
-															<input type="text" name="name" placeholder="ФИО*" class="box-order__form-input input" data-placeholder="ФИО*">
-															<input type="text" name="email" data-required="email" data-validate="" placeholder="Email*" class="box-order__form-input input" data-placeholder="Email*">
-															<input type="tel" name="phone" data-required="tel" data-validate="" placeholder="Телефон*" class="box-order__form-input input tel" data-placeholder="Телефон*">
+
+															<div class="box-order__form-input submission-form__input input">
+																<label for="name-inp" class="submission-form__label">ФИО*</label>
+																<input id="name-inp" type="text" name="name" data-validate data-required="name">
+															</div>
+
+															<div class="box-order__form-input submission-form__input input">
+																<label for="email-inp" class="submission-form__label">Email*</label>
+																<input id="email-inp" type="text" name="email" data-validate data-required="email">
+															</div>
+
+															<div class="box-order__form-input submission-form__input input tel">
+																<label for="phone-inp" class="submission-form__label">Телефон*</label>
+																<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel"> 
+															</div>
+
 														</div>
 														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
 													</form>
@@ -686,7 +698,10 @@
 													<div class="setting-profile__title-small">Присылать информацию на почту:</div>
 													<form action="#" class="setting-profile__form">
 														<div class="setting-profile__row row_nowrap">
-															<input type="text" name="email" data-required="email" data-validate="" placeholder="Email*" class="box-order__form-input input" data-placeholder="Email*">
+															<div class="box-order__form-input submission-form__input input">
+																<label for="emails-inp" class="submission-form__label">Email*</label>
+																<input id="emails-inp" type="text" name="email" data-validate data-required="email">
+															</div>
 															<div class="setting-profile__form-descp">
 																<div class="setting-profile__form-descp-text">После добавления или изменения адреса подписки вам будет выслан код подтверждения.</div>
 																<div class="setting-profile__form-descp-text">Подписка будет не активной до ввода кода подтверждения.</div>
@@ -710,9 +725,37 @@
 													<div class="setting-profile__title">Смена пароля</div>
 													<form action="#" class="setting-profile__form">
 														<div class="setting-profile__row row_rewers">
-															<input type="text" name="name" placeholder="Пароль повторно*" class="box-order__form-input input" data-placeholder="Пароль повторно*">
-															<input type="tel" name="phone" data-required="tel" data-validate="" placeholder="Старый пароль*" class="box-order__form-input input tel" data-placeholder="Старый пароль*">
-															<input type="text" name="email" data-required="email" data-validate="" placeholder="Новый пароль*" class="box-order__form-input input" data-placeholder="Новый пароль*">
+
+															<div class="box-order__form-input submission-form__input input">
+																<label for="pass-inp" class="submission-form__label">Пароль повторно*</label>
+																<input id="pass-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
+																<button class="submission-form__show-pass form__viewpass" type="button"> ffgg
+																	<svg>
+																		<use xlink:href="#show-password"></use>
+																	</svg>
+																</button>
+															</div>
+
+															<div class="box-order__form-input submission-form__input input">
+																<label for="pass-old-inp" class="submission-form__label">Старый пароль*</label>
+																<input id="pass-old-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
+																<button class="submission-form__show-pass form__viewpass" type="button"> 
+																	<svg>
+																		<use xlink:href="#show-password"></use>
+																	</svg>
+																</button>
+															</div>
+
+															<div class="box-order__form-input submission-form__input input">
+																<label for="pass-new-inp" class="submission-form__label">Новый пароль*</label>
+																<input id="pass-new-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
+																<button class="submission-form__show-pass form__viewpass" type="button">
+																	<svg>
+																		<use xlink:href="#show-password"></use>
+																	</svg>
+																</button>
+															</div>
+
 														</div>
 														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
 													</form>

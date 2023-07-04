@@ -54,8 +54,10 @@ export function formFieldsInit() {
 			if (targetElement.dataset.placeholder) {
 				targetElement.placeholder = targetElement.dataset.placeholder;
 			}
-			targetElement.classList.remove('_form-focus');
-			targetElement.parentElement.classList.remove('_form-focus');
+
+			// Удаляем класс при потере фокуса
+			// targetElement.classList.remove('_form-focus');
+			// targetElement.parentElement.classList.remove('_form-focus');
 
 			// Моментальная валидация
 			if (targetElement.hasAttribute('data-validate')) {
@@ -231,7 +233,7 @@ export function formViewpass() {
 	document.addEventListener("click", function (e) {
 		let targetElement = e.target;
 		if (targetElement.closest('[class*="__viewpass"]')) {
-			let inputType = targetElement.classList.contains('active') ? "password" : svg;
+			let inputType = targetElement.classList.contains('active') ? "password" : '';
 			targetElement.parentElement.querySelector('input').setAttribute("type", inputType);
 			targetElement.classList.toggle('active');
 		}
