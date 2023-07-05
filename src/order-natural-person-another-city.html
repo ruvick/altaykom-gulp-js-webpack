@@ -65,9 +65,22 @@
                       </div>
                     </div>
                     <div class="box-order__row">
-                      <input type="text" name="name" placeholder="ФИО*" class="box-order__form-input input"/>
-                      <input type="text" name="email" data-required="email" data-validate placeholder="Email*" class="box-order__form-input input"/>
-                      <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*" class="box-order__form-input input tel"/>
+
+											<div class="box-order__form-input submission-form__input input">
+												<label for="name-inp" class="submission-form__label">ФИО*</label>
+												<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+											</div>
+
+												<div class="box-order__form-input submission-form__input input">
+													<label for="email-inp" class="submission-form__label">Email*</label>
+													<input id="email-inp" type="text" name="email" data-validate data-required="email">
+												</div>
+
+												<div class="box-order__form-input submission-form__input input">
+													<label for="phone-inp" class="submission-form__label">Телефон*</label>
+													<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel"> 
+												</div>
+
                     </div>
                   </form>
                 </div>
@@ -149,9 +162,22 @@
                       <div class="box-order__title">
                         Выберите адрес доставки
                       </div>
-                      <input type="text" name="name" placeholder="Адрес доставки*" class="box-order__form-input input"/>
-                      <input type="text" name="email" data-required="email" data-validate placeholder="Индекс" class="box-order__form-input input"/>
-                      <textarea name="" placeholder="Комментарии к заказу" class="box-order__form-input input"></textarea>
+
+											<div class="box-order__form-input submission-form__input input">
+												<label for="address-inp" class="submission-form__label">Адрес доставки*</label>
+												<input id="address-inp" type="text" name="address" data-validate data-required="addres">
+											</div> 
+											
+											<div class="box-order__form-input submission-form__input input">
+												<label for="index-inp" class="submission-form__label">Индекс</label>
+												<input id="index-inp" type="number" name="index" data-validate data-required="index"> 
+											</div> 
+
+                      <div class="box-order__form-input input submission-form__input">
+												<label for="email-in" class="submission-form__label">Комментарии к заказу</label>
+												<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+											</div>
+											
                     </div>
                   </form>
                 </div>

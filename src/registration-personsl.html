@@ -23,35 +23,41 @@
                 <div class="form__line">
                   <div class="submission-form__item">
                     <div class="submission-form__title">Регистрация</div>
-										<div class="submission-form__input input tel">
+
+										<div class="submission-form__input input">
 											<label for="phone-inp" class="submission-form__label">Телефон*</label>
 											<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">
 										</div>
+
 										<div class="submission-form__input input tel">
 											<label for="email-inp" class="submission-form__label">Email*</label>
 											<input id="email-inp" type="text" name="email" data-validate data-required="email">
 										</div>
+
                   </div>
                   <div class="submission-form__item">
                     <div class="submission-form__title">Пароль</div>
+
 											<div class="submission-form__input input">
 												<label for="pass-inp" class="submission-form__label">Пароль*</label>
-												<input id="pass-inp" autocomplete="off" type="password" name="form[]" value="">
+												<input id="pass-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
 												<button class="submission-form__show-pass form__viewpass" type="button">
 													<svg>
 														<use xlink:href="#show-password"></use>
 													</svg>
 												</button>
 											</div>
+
 											<div class="submission-form__input input">
-												<label for="passShow-inp" class="submission-form__label">Пароль повторно*</label>
-												<input id="passShow-inp" autocomplete="off" type="password" name="form[]" value="">
-												<button class="submission-form__show-pass form__viewpass" type="button">
+												<label for="pass-rep-inp" class="submission-form__label">Пароль повторно*</label>
+												<input id="pass-rep-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
+												<button class="submission-form__show-pass form__viewpass" type="button"> 
 													<svg>
 														<use xlink:href="#show-password"></use>
 													</svg>
 												</button>
 											</div>
+
                     <div class="submission-form__clue">
                       Пароль должен содержать не менее 8 символов латинского
                       алфавита, в том числе цифры, заглавные и строчные буквы

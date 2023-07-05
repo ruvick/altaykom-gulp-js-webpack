@@ -23,22 +23,21 @@
                 <div class="form__line">
                   <div class="submission-form__item">
                     <div class="submission-form__title">Войти</div>
+
 											<div class="submission-form__input input tel">
 												<label for="phone-inp" class="submission-form__label">Телефон*</label>
 												<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">
 											</div>
+
 											<div class="submission-form__input input">
 												<label for="pass-inp" class="submission-form__label">Пароль*</label>
-												<input id="pass-inp" autocomplete="off" type="password" name="form[]" value="">
+												<input id="pass-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
 												<button class="submission-form__show-pass form__viewpass" type="button">
 													<svg>
 														<use xlink:href="#show-password"></use>
 													</svg>
 												</button>
 											</div>
-
-                    <!-- <input type="tel" name="password" data-required="password" data-validate placeholder="Пароль*"
-                      class="submission-form__input input __viewpass" /> -->
 
                   </div>
 
