@@ -289,7 +289,7 @@ export function formRating() {
 			const ratingActiveWidth = index / 0.05;
 			ratingActive.style.width = `${ratingActiveWidth}%`;
 		}
-		// Возможность указать оценку 
+		// Возможность указать оценку
 		function setRating(rating) {
 			const ratingItems = rating.querySelectorAll('.rating__item');
 			for (let index = 0; index < ratingItems.length; index++) {
@@ -328,10 +328,10 @@ export function formRating() {
 					method: 'GET',
 
 					//body: JSON.stringify({
-					//	userRating: value
+					//    userRating: value
 					//}),
 					//headers: {
-					//	'content-type': 'application/json'
+					//    'content-type': 'application/json'
 					//}
 
 				});
@@ -357,4 +357,3 @@ export function formRating() {
 		}
 	}
 }
-

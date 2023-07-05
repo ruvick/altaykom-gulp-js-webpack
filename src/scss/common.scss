@@ -298,8 +298,18 @@
 // ===============================================================================================================
 
 //<ЗАГОЛОВКИ> ====================================================================================================
+// font-family: Lack;
+// font-weight: normal;
+// font-size: 60px;
+// letter-spacing: -0.03em;
+// line-height: 50px;
+// text-align: left;
+// color: #161615;
+
+
 .title-main {
 	font-size: 80px;
+	letter-spacing: -0.03em;
 	font-weight: 400;
 	color: #161615;
 	line-height: 80 / 80 *100%;
@@ -307,6 +317,7 @@
 
 .title-small {
 	font-size: 40px;
+	letter-spacing: -0.03em;
 	color: #161615;
 	line-height: 50/40*100%;
 }
@@ -314,6 +325,7 @@
 .title {
 	font-family: "Lack", sans-serif;
 	font-size: 60px;
+	letter-spacing: -0.03em;
 	font-weight: 400;
 	color: #161615;
 	line-height: 50 / 60 *100%;
@@ -336,7 +348,7 @@
 	width: 100%;
 	// padding: 19px 0;
 	min-height: 64px;
-	border-bottom: 1px solid #E3E3E3;
+	border-bottom: 1px solid #E3E3E3; 
 	background: #fff;
 }
 
