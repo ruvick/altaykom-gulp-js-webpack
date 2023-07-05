@@ -204,33 +204,9 @@
 							</div>
 
 							<div class="main-content__column main-content__column_right">
-								<div class="sending-banner d-flex">
-									<div class="sending-banner__img">
-										<img src="img/sending-f.png" alt="" />
-									</div>
-									<div class="sending-banner__column">
-										<div class="sending-banner__descp">
-											Рецептуры, мастер-классы, семинары, новинки и многое другое
-										</div>
-										<div class="sending-banner__title">будь в курсе новых событий</div>
-									</div>
-									<div class="sending-banner__column">
-										<form data-dev data-popup-message="#order-service" action="#" class="sending-banner__form form">
-											<div class="form__line">
-												<div class="form-body">
-													<input type="email" name="email" data-required="email" data-validate placeholder="Email*"
-														class="sending-banner__input input" />
-													<button type="submit" class="sending-banner__btn form-body__btn">
-														<svg>
-															<use xlink:href="#arrow-sending"></use>
-														</svg>
-													</button>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
+								@@include('html/components/_sending-banner-small.htm',{})
 							</div>
+
 						</div>
 					</div>
 

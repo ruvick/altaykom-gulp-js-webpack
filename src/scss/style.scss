@@ -97,10 +97,10 @@ body.padding {
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
 	// position: relative;
-	min-height: 100%;
+	// min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden;
+	// overflow: hidden;
 
 	// Сайт загружен
 	.loaded & {}
@@ -762,7 +762,7 @@ body.padding {
 .main-content__inner {
 	position: relative;
 	justify-content: space-between;
-	align-items: start;
+	// align-items: start;
 }
 
 .main-content__column {
@@ -788,7 +788,7 @@ body.padding {
 .main-content__column_right {
 	flex: 0 0 340px;
 	margin-left: 140px;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .main-content__column_right .sending-banner {
@@ -2726,7 +2726,7 @@ body.padding {
 	// height: 460px;
 	flex: 0 0 460px;
 	border-radius: 35px;
-	overflow: hidden;
+	// overflow: hidden;
 	margin-right: 140px;
 	// border: 1px solid #000;
 }
@@ -6806,6 +6806,11 @@ ul .content-article__descriptioni-list-item {
 		font-size: inherit;
 		color: #EA2838;
 	}
+}
+
+.sticky {
+	position: sticky;
+	top: 180px;
 }
 //========================================================================================================================================================
 
