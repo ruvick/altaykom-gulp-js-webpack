@@ -1593,7 +1593,7 @@ body.padding {
 	background-image: url('../img/nophoto.jpg');
 	overflow: hidden;
 	margin-bottom: 10px;
-	transition: background-size 1s ease 0s;
+	transition: background-size 1s ease 0s; 
 
 	img {
 		transition: 1s;
@@ -1601,11 +1601,11 @@ body.padding {
 }
 
 .card-product:hover .card-product__img img {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .card-product:hover .card-product__img {
-	background-size: 110%;
+	background-size: 105%;
 }
 
 .card-product-slider__sticker-block,
