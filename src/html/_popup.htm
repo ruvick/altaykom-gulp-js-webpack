@@ -25,13 +25,25 @@
       </div>
       <form action="#" class="popup__form form">
         <div class="form__line">
-          <input type="text" name="name" placeholder="Имя" class="popup__form-input input" />
-          <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-            class="popup__form-input input tel" />
-          <textarea name="" id="" placeholder="Комментарий" class="popup__form-textarea input"></textarea>
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="name-inp" class="submission-form__label">Имя</label>
+						<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+					</div>
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="phone-inp" class="submission-form__label">Телефон*</label>
+						<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">   
+					</div>
+
+					<div class="submission-form__input popup__form-textarea input">
+						<label for="email-in" class="submission-form__label">Комментарий</label>
+						<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+					</div>
+
           <div class="popup__form-confirmation">
             Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку
-            <a href="#" class="popup__form-confirmation-link">персональных данных</a>
+            <a href="#" class="popup__form-confirmation-link text-animation">персональных данных</a>
           </div>
           <button type="submit" class="popup__form-btn btn btn_black">
             отправить
@@ -57,13 +69,25 @@
       </div>
       <form action="#" class="popup__form form">
         <div class="form__line">
-          <input type="text" name="name" placeholder="Имя" class="popup__form-input input" />
-          <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-            class="popup__form-input input tel" />
-          <textarea name="" id="" placeholder="Комментарий" class="popup__form-textarea input"></textarea>
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="name-inp" class="submission-form__label">Имя</label>
+						<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+					</div>
+
+					<div class="submission-form__input popup__form-input input">
+						<label for="phone-inp" class="submission-form__label">Телефон*</label>
+						<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">   
+					</div>
+
+					<div class="submission-form__input popup__form-textarea input">
+						<label for="email-in" class="submission-form__label">Комментарий</label>
+						<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+					</div>
+
           <div class="popup__form-confirmation">
             Нажимая на кнопку «Отправить», Вы соглашаетесь на обработку
-            <a href="#" class="popup__form-confirmation-link">персональных данных</a>
+            <a href="#" class="popup__form-confirmation-link text-animation">персональных данных</a>
           </div>
           <button type="submit" class="popup__form-btn btn btn_black">
             отправить
@@ -74,7 +98,7 @@
   </div>
 </div>
 
-<!-- НСоздать новую корзину -->
+<!-- Создать новую корзину -->
 <div id="new-bascet" aria-hidden="true" class="new-list-popup popup">
   <div class="popup__wrapper">
     <div class="popup__content">
@@ -211,12 +235,22 @@
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Личные данные</div>
-            <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
-              class="submission-form__input input" />
-            <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-              class="submission-form__input input" />
-            <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-              class="submission-form__input input tel" />
+
+						<div class="submission-form__input input input">
+							<label for="name-inpt" class="submission-form__label">ФИО</label>
+							<input id="name-inpt" type="text" name="name" data-validate data-required="name"> 
+						</div>
+
+						<div class="submission-form__input input">
+							<label for="email-inpte" class="submission-form__label">Email*</label>
+							<input id="email-inpte" type="text" name="email" data-validate data-required="email">
+						</div>
+	
+						<div class="submission-form__input input">
+							<label for="phone-inpt" class="submission-form__label">Телефон*</label>
+							<input id="phone-inpt" type="tel" name="phone" data-validate data-required="tel">   
+						</div>
+
           </div>
 
           <div class="submission-form__item">
@@ -231,20 +265,27 @@
               </span>
               <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
             </div>
-            <input type="text" name="address" data-required="address" data-validate placeholder="Адрес доставки*"
-              class="submission-form__input input" />
-            <input type="text" name="index" placeholder="Индекс" class="submission-form__input input" />
+
+						<div class="submission-form__input input">
+							<label for="address-inp" class="submission-form__label">Адрес доставки*</label>
+							<input id="address-inp" type="text" name="address" data-validate data-required="addres">
+						</div> 
+
+						<div class="submission-form__input input">
+							<label for="index-inp" class="submission-form__label">Индекс</label>
+							<input id="index-inp" type="number" name="index" data-validate data-required="index">  
+						</div> 
+
           </div>
 
           <button type="submit" class="submission-form__button btn">
             сохранить
           </button>
+
         </div>
       </form>
-      <!-- <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a> -->
     </div>
 
-    <!-- </div> -->
   </div>
 </div>
 
@@ -265,40 +306,71 @@
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Компания</div>
+
             <div class="submission-form__column">
-              <input type="text" name="name" data-required="name" data-validate placeholder="Название компании*"
-                class="submission-form__input input" />
-              <input type="text" name="email" placeholder="Юридический адрес" class="submission-form__input input" />
+							<div class="submission-form__input input">
+								<label for="name-comp-inp" class="submission-form__label">Название компании*</label>
+								<input id="name-comp-inp" type="text" name="form[]" data-validate>
+							</div> 
+
+							<div class="submission-form__input input">
+								<label for="legaladdress-inp" class="submission-form__label">Юридический адрес</label>
+								<input id="legaladdress-inp" type="text" name="form[]" data-validate>
+							</div> 
             </div>
+
             <div class="submission-form__column">
-              <input type="text" name="bank" data-required="bank" data-validate placeholder="Банк"
-                class="submission-form__input input" />
-              <input type="text" name="shet" data-validate placeholder="Расчетный счет"
-                class="submission-form__input input" />
+							<div class="submission-form__input input">
+								<label for="bank-inp" class="submission-form__label">Банк</label>
+								<input id="bank-inp" type="text" name="form[]" data-validate>
+							</div> 
+							<div class="submission-form__input input">
+								<label for="score-inp" class="submission-form__label">Расчетный счет</label>
+								<input id="score-inp" type="number" name="form[]" data-validate>
+							</div> 
             </div>
+
             <div class="submission-form__column">
-              <input type="text" name="inn" data-required="inn" data-validate placeholder="ИНН*"
-                class="submission-form__input input" />
-              <input type="text" name="text" placeholder="КПП" class="submission-form__input input" />
+							<div class="submission-form__input input">
+								<label for="inn-inp" class="submission-form__label">ИНН*</label>
+								<input id="inn-inp" type="number" name="form[]" data-validate>
+							</div> 
+							<div class="submission-form__input input">
+								<label for="kpp-inp" class="submission-form__label">КПП</label>
+								<input id="kpp-inp" type="number" name="form[]" data-validate>
+							</div> 
             </div>
+
             <div class="submission-form__column">
-              <input type="text" name="name" data-required="name" data-validate placeholder="БИК Банка"
-                class="submission-form__input input" />
+							<div class="submission-form__input input">
+								<label for="bik-inp" class="submission-form__label">БИК Банка</label>
+								<input id="bik-inp" type="number" name="form[]" data-validate>
+							</div> 
             </div>
           </div>
 
           <div class="submission-form__item">
             <div class="submission-form__title-low">Контактное лицо</div>
+
             <div class="submission-form__column">
-              <input type="text" name="name" data-required="name" data-validate placeholder="ФИО*"
-                class="submission-form__input input" />
-              <input type="text" name="email" data-required="email" data-validate placeholder="Email*"
-                class="submission-form__input input" />
+							<div class="submission-form__input input">
+								<label for="name-inp" class="submission-form__label">ФИО*</label>
+								<input id="name-inp" type="text" name="name" data-validate data-required="name"> 
+							</div>
+
+							<div class="submission-form__input input">
+								<label for="email-inp" class="submission-form__label">Email*</label>
+								<input id="email-inp" type="text" name="email" data-validate data-required="email">
+							</div>
             </div>
+
             <div class="submission-form__column">
-              <input type="tel" name="phone" data-required="tel" data-validate placeholder="Телефон*"
-                class="submission-form__input input tel" />
+							<div class="submission-form__input input">
+								<label for="phone-inp" class="submission-form__label">Телефон*</label>
+								<input id="phone-inp" type="number" name="phone" data-validate data-required="tel"> 
+							</div>
             </div>
+
           </div>
 
           <div class="submission-form__item">
@@ -313,11 +385,18 @@
               </span>
               <button tabindex="2" value="" id="searchsubmit" class="search-form__btn"></button>
             </div>
+
             <div class="submission-form__column">
-              <input type="text" name="address" data-required="address" data-validate placeholder="Адрес доставки*"
-                class="submission-form__input input" />
-              <input type="text" name="index" placeholder="Индекс" class="submission-form__input input" />
+							<div class="submission-form__input input">
+								<label for="address-inp" class="submission-form__label">Адрес доставки*</label>
+								<input id="address-inp" type="text" name="address" data-validate data-required="addres">
+							</div> 
+							<div class="submission-form__input input">
+								<label for="index-inp" class="submission-form__label">Индекс</label>
+								<input id="index-inp" type="number" name="index" data-validate data-required="index">  
+							</div> 
             </div>
+
           </div>
 
           <button type="submit" class="submission-form__button btn">
@@ -325,10 +404,8 @@
           </button>
         </div>
       </form>
-      <!-- <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a> -->
     </div>
 
-    <!-- </div> -->
   </div>
 </div>
 
@@ -351,7 +428,6 @@
       </div>
     </div>
 
-    <!-- </div> -->
   </div>
 </div>
 
@@ -382,7 +458,10 @@
 
       <form action="#" class="popup__form form">
         <div class="form__line">
-          <textarea name="" id="" placeholder="Отзыв*" class="popup__form-textarea input"></textarea>
+					<div class="popup__form-textarea submission-form__input input">
+						<label for="email-in" class="submission-form__label">Отзыв*</label>
+						<textarea id="email-in" type="text" name="message"  data-validate></textarea>
+					</div>
           <button type="submit" class="popup__form-btn btn btn_black">
             отправить
           </button>
