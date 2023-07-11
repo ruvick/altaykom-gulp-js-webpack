@@ -469,7 +469,7 @@ export function menuInit() {
 					menuCatalog.classList.toggle('_active');
 					header.classList.toggle('_before');
 					bodyLockToggle();
-					document.documentElement.classList.toggle("menu-open");
+					// document.documentElement.classList.toggle("menu-open");
 				}
 			});
 		};
@@ -478,7 +478,8 @@ export function menuInit() {
 				iconMenu.classList.remove('_active');
 				menuCatalog.classList.remove('_active');
 				header.classList.remove('_before');
-				bodyLockToggle();
+				// bodyLockToggle();
+				bodyUnlock();
 			});
 		}
 	})
@@ -488,9 +489,10 @@ export function menuInit() {
 			iconMenu.classList.remove('_active');
 			menuCatalog.classList.remove('_active');
 			header.classList.remove('_before');
-			physicalListPerson.classList.remove('_active');
-			bodyLockToggle();
-			blackout();
+			// physicalListPerson.classList.remove('_active');
+			// blackout();
+			// bodyLockToggle();
+			bodyUnlock();
 			console.log('escape click');
 		}
 	};
@@ -503,6 +505,81 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
+// Search =====================================================================================================================================
+const lineBlockBlk = document.querySelector(".lineBlock-blk");
+const search = document.querySelector(".search-form");
+const searchInput = document.querySelector(".search-form__input");
+const searchMenu = document.querySelector(".menu-search");
+const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+const headerSearchFxCl = document.querySelector(".header__search-fix-closed");
+const interFacelinkText = document.querySelectorAll(".interface__link-text");
+
+interFacelinkText.forEach(linkText => {
+	searchInput.addEventListener('click', function () {
+		search.classList.add("_active");
+		searchMenu.classList.add("_active");
+		searchBtnClosed.classList.add("_active");
+		linkText.classList.add("_none");
+		// lineBlockBlk.classList.add('_active');
+		// header.classList.add('_active');
+		bodyLock();
+		// bodyLockToggle();
+	})
+	searchBtnClosed.addEventListener('click', function () {
+		search.classList.remove("_active");
+		searchMenu.classList.remove("_active");
+		searchBtnClosed.classList.remove("_active");
+		linkText.classList.remove("_none");
+		// lineBlockBlk.classList.remove('_active');
+		// header.classList.remove('_active');
+		// bodyLockToggle();
+		bodyUnlock();
+		window.onkeydown = function (event) {
+			if (event.keyCode == 27) {
+				search.classList.remove("_active");
+				searchMenu.classList.remove("_active");
+				searchBtnClosed.classList.remove("_active");
+				linkText.classList.remove("_none");
+				// lineBlockBlk.classList.remove('_active');
+				// bodyLockToggle();
+				bodyUnlock();
+				// console.log('escape click');
+			}
+		};
+	})
+	headerSearchFxCl.addEventListener('click', function () {
+		search.classList.remove("_active");
+		searchMenu.classList.remove("_active");
+		searchBtnClosed.classList.remove("_active");
+		linkText.classList.remove("_none");
+		// lineBlockBlk.classList.remove('_active');
+		// header.classList.remove('_active');
+		// bodyLockToggle();
+		bodyUnlock();
+	})
+})
+// Всплывающие меню при наведении ===================================================================================================================
+// const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
+// const lineBlockBlk = document.querySelector('.lineBlock-blk');
+// if (document.documentElement.clientWidth > 1024) {
+// 	function menuHover() {
+// 		for (let i = 0; i < menuLineBlockItem.length; i++) {
+// 			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
+// 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+// 				child.classList.add('_active');
+// 				lineBlockBlk.classList.add('_active');
+// 				bodyLockToggle();
+// 			})
+// 			menuLineBlockItem[i].addEventListener('mouseleave', () => {
+// 				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+// 				child.classList.remove('_active');
+// 				lineBlockBlk.classList.remove('_active');
+// 				bodyLockToggle();
+// 			})
+// 		}
+// 	}
+// 	menuHover();
+// }
 // Мои списки =============================================================================================================================================================================================
 const physicalListPerson = document.querySelector('.physical-list-person');
 const newListsCard = document.querySelectorAll('.new-lists__card');
@@ -596,56 +673,6 @@ if (btnCatMob) {
 		header.classList.add('_before');
 	});
 }
-// Search =====================================================================================================================================
-const search = document.querySelector(".search-form");
-const searchInput = document.querySelector(".search-form__input");
-const searchMenu = document.querySelector(".menu-search");
-const searchBtnClosed = document.querySelector(".search-form__btn-closed");
-const headerSearchFxCl = document.querySelector(".header__search-fix-closed");
-const interFacelinkText = document.querySelectorAll(".interface__link-text");
-
-interFacelinkText.forEach(linkText => {
-	searchInput.addEventListener('click', function () {
-		search.classList.add("_active");
-		searchMenu.classList.add("_active");
-		searchBtnClosed.classList.add("_active");
-		linkText.classList.add("_none");
-		lineBlockBlk.classList.add('_active');
-		// header.classList.add('_active');
-		// bodyLock();
-		bodyLockToggle();
-	})
-	searchBtnClosed.addEventListener('click', function () {
-		search.classList.remove("_active");
-		searchMenu.classList.remove("_active");
-		searchBtnClosed.classList.remove("_active");
-		linkText.classList.remove("_none");
-		lineBlockBlk.classList.remove('_active');
-		// header.classList.remove('_active');
-		bodyLockToggle();
-		window.onkeydown = function (event) {
-			if (event.keyCode == 27) {
-				search.classList.remove("_active");
-				searchMenu.classList.remove("_active");
-				searchBtnClosed.classList.remove("_active");
-				linkText.classList.remove("_none");
-				lineBlockBlk.classList.remove('_active');
-				bodyLockToggle();
-				console.log('escape click');
-			}
-		};
-	})
-	headerSearchFxCl.addEventListener('click', function () {
-		search.classList.remove("_active");
-		searchMenu.classList.remove("_active");
-		searchBtnClosed.classList.remove("_active");
-		linkText.classList.remove("_none");
-		lineBlockBlk.classList.remove('_active');
-		// header.classList.remove('_active');
-		bodyLockToggle();
-	})
-})
-
 // cat-search ================================================================================================================================================================
 const catEntityInp = document.getElementById('cat-entity-input');
 const catEntityCl = document.getElementById('cat-entity-cl');
@@ -662,28 +689,6 @@ if (catEntityCl) {
 		catEntityMenuSearch.classList.remove('_active');
 		catEntityCl.classList.remove('_active');
 	});
-}
-// Всплывающие меню при наведении ===================================================================================================================
-const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
-const lineBlockBlk = document.querySelector('.lineBlock-blk');
-if (document.documentElement.clientWidth > 1024) {
-	function menuHover() {
-		for (let i = 0; i < menuLineBlockItem.length; i++) {
-			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
-				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-				child.classList.add('_active');
-				lineBlockBlk.classList.add('_active');
-				bodyLockToggle();
-			})
-			menuLineBlockItem[i].addEventListener('mouseleave', () => {
-				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-				child.classList.remove('_active');
-				lineBlockBlk.classList.remove('_active');
-				bodyLockToggle();
-			})
-		}
-	}
-	menuHover();
 }
 // FiltersMob =========================================================================================================================================================================================
 const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');

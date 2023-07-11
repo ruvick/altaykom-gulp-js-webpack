@@ -42,8 +42,10 @@
 	box-shadow: 0px 6px 6px -8px #000000;
 }
 
-.lock .header {
-	padding-right: 7px;
+@media (min-width: 1025px) {
+	.lock .header {
+		padding-right: 7px;
+	}
 }
 
 .header-user {

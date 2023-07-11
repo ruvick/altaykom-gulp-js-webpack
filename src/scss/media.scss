@@ -34,15 +34,9 @@
 		padding: 0 10px;
 		border: none;
 	}
-
-	// .sales-leaders ._container,
-	// .sales-leaders-slider .sliderSec__container {
-	// 	padding-right: 0;
-	// }
-
-	// .salesLeaders {
-	// 	padding: 0;
-	// }
+	.our-clients__card-bg {
+    background-position: 100% 0%;
+	}
 }
 
 @media (max-width: 1330px) {
@@ -312,7 +306,7 @@
 
 	.menu-lineBlock {
 		flex-wrap: nowrap;
-		margin: 0 -20px;
+		margin: 0 -10px;
 		width: auto;
 		overflow-x: auto;
 		overflow-y: hidden;
@@ -411,8 +405,7 @@
 	}
 
 	.our-clients__card {
-		height: 162px;
-		background-position: 100% 100%;
+		// height: 162px;
 	}
 
 	.sending-banner {
@@ -635,6 +628,9 @@
 	}
 	.main-content__column_right {
     margin-left: 30px;
+	}
+	.our-clients__card-bg {
+    background-position: 100% 50%;
 	}
 }
 
@@ -923,7 +919,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
 	.header {
     border-bottom: none;
 }
@@ -1025,9 +1021,9 @@
 		margin-top: 30px;
 	}
 
-	.our-clients__card-text {
-		max-width: 170px;
-	}
+	// .our-clients__card-text {
+	// 	max-width: 170px;
+	// }
 
 	.footer__column {
 		padding: 0;
@@ -1468,6 +1464,9 @@
 	.menu-catalog._active .menu-catalog__inner::-webkit-scrollbar-thumb {
 		display: none;
 	}
+	.sales-leaders__tabs .tabs__content {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 730px) {
@@ -1543,23 +1542,21 @@
 	// 	margin-right: -10px;
 	// }
 
-	.advantagesBlock__inner {
-		// width: 100%;
-		overflow: auto;
+	.about__advantagesBlock {
+    overflow: auto;
+    flex-wrap: nowrap;
+    width: auto;
 	}
 
-	.advantagesBlock__inner::-webkit-scrollbar-thumb,
-	.advantagesBlock__inner::-webkit-scrollbar {
+	.about__advantagesBlock::-webkit-scrollbar-thumb,
+	.about__advantagesBlock::-webkit-scrollbar {
 		display: none;
 	}
-
+	.advantagesBlock__inner {
+		flex-wrap: nowrap;
+	}
 	.advantagesBlock__column {
-		flex: 0 0 33.333%;
-		margin-right: 10px;
-
-		&:last-child {
-			margin-right: 0;
-		}
+		flex: 0 0 38%;
 	}
 
 	.own-production__banner-row {
@@ -1672,6 +1669,16 @@
 	}
 	.menu-catalog._active .menu-catalog__body {
     padding: 30px 20px;
+	}
+	.advantagesBlock {
+    margin: 22px -10px 0 -10px;
+	}
+	.advantagesBlock__inner {
+		margin: 0;
+		padding: 0 10px;
+	}
+	.advantagesBlock__item-title {
+    margin-bottom: 0;
 	}
 }
 
@@ -1850,7 +1857,7 @@
 	}
 }
 
-@media (max-width: 515px) {
+@media (max-width: 515px) { 
 	.slider-info__slide {
 		padding-bottom: 31%;
 	}
@@ -2038,6 +2045,9 @@
 	.menu-search {
     padding-bottom: 100px;
 	}
+	.advantagesBlock__column {
+    flex: 0 0 45%;
+	}
 }
  
 @media (max-width: 480px) {
@@ -2103,13 +2113,12 @@
 	.drop-menu-catalog__list-item {
     flex: 0 1 100%;
 	}
-	.advantagesBlock__inner {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 500px;
-	}
+	// .advantagesBlock__inner {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+	// }
 	.advantagesBlock__column {
-    flex: 0 0 38%;
+		padding: 0;
 	}
 	.about__advantagesBlock {
 		._container {
@@ -2130,7 +2139,7 @@
 	}
 }
 
-@media (max-width: 414px) {  
+@media (max-width: 414px) {   
 	.slider-info__slide {
 		padding-bottom: 40%;
 	}
@@ -2140,7 +2149,7 @@
 	}
 
 	.advantagesBlock__column {
-		flex: 0 0 45%;
+		flex: 0 0 50%;
 	}
 
 	.advantagesBlock__btn {
@@ -2569,9 +2578,6 @@
 	.similar-products-block__item:last-child {
     display: none;
 	}
-	.advantagesBlock__inner {
-    width: 450px;
-	}
 	.popup-cookie__icon-closed {
     background: #fff;
     border: 1px solid #E3E3E3;
@@ -2593,9 +2599,12 @@
 		margin-right: auto;
     margin-left: 21px;
 	}
+	.advantagesBlock__inner {
+    width: 414px;
+	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px) { 
 	.sliderCert__slide {
 		padding-bottom: 90%;
 	}
@@ -2638,7 +2647,10 @@
     font-size: 33px;
 	}
 	.advantagesBlock__inner {
-    width: 400px;
+    width: 375px;
+	}
+	.advantagesBlock__column {
+    flex: 0 0 68%;
 	}
 }
 
@@ -2672,6 +2684,9 @@
 	}
 	.title-main {
     font-size: 33px;
+	}
+	.advantagesBlock__inner {
+    width: 365px;
 	}
 }
 
@@ -2727,16 +2742,19 @@
 	.page-user {
     padding-top: 60px;
 	}
-	.advantagesBlock__inner {
-    width: 350px;
-	}
 	.header-default .header__logo {
     margin-left: 5px;
+	}
+	.advantagesBlock__inner {
+    width: 345px;
 	}
 }
 
 @media (max-width: 320px) {
 	.slider-info__slide {
 		padding-bottom: 40%;
+	}
+	.advantagesBlock__inner {
+    width: 330px;
 	}
 }

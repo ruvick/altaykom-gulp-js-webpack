@@ -253,7 +253,6 @@
 		background-size: 100%;
 		background-position: 0 0;
 		background-repeat: no-repeat;
-
 	}
 }
 
@@ -267,11 +266,13 @@
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
+	z-index: 20;
 	border: 1px solid #8F8E8E;
 	border-radius: 15px;
 	// background-color: #221F20;
 	cursor: pointer;
-	// transition: background-color 0.3s ease 0s;
+	mix-blend-mode: difference;
+	transition: $mainTransition;
 	svg {
 		flex: 0 0 30.11px;
 		width: 30.11px;
@@ -279,9 +280,11 @@
 		transform: rotate(-90deg);
 		fill: #8F8E8E;
 		stroke: #8f8e8e;
+		mix-blend-mode: difference;
+		transition: $mainTransition;
 	}
 	&:hover{
-		background-color: #221F20;
+		background-color: #fff;
 		svg {
 			fill: #fff;
 			stroke: #fff;
@@ -292,8 +295,6 @@
 .btn-up_hide {
 	display: none;
 }
-
-// <div class="btn-up btn-up_hide"></div>
 
 // ===============================================================================================================
 
@@ -462,6 +463,8 @@
 	box-shadow: 0px 8px 13px rgba(0, 0, 0, 0.09);
 	transition: $mainTransition;
 	pointer-events: none;
+
+	display: none !important;
 }
 .menu-lineBlock .sub-list::-webkit-scrollbar-thumb,
 .menu-lineBlock .sub-list::-webkit-scrollbar {
@@ -725,6 +728,7 @@
 
 // Swiper-Slider
 .sliderSec {
+	position: relative;
 	padding: 25px 0;
 }
 
@@ -1051,7 +1055,7 @@ ol.counter {
 
 //====================================================================================================
 ._ibg {
-	position: relative;
+	position: relative; 
 
 	img {
 		position: absolute;
