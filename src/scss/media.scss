@@ -919,7 +919,7 @@
 	}
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {  
 	.header {
     border-bottom: none;
 }
@@ -1481,6 +1481,9 @@
 	::-webkit-scrollbar,
 	::-webkit-scrollbar-thumb {
 		display: none;
+	}
+	.service-banner .section-title__title {
+    margin-right: 0;
 	}
 }
 
@@ -2157,7 +2160,7 @@
 	}
 }
 
-@media (max-width: 414px) {   
+@media (max-width: 414px) {    
 	.slider-info__slide {
 		padding-bottom: 40%;
 	}
@@ -2622,6 +2625,9 @@
 	} 
 	.header__search .menu-search {
     padding-bottom: 230px;
+	}
+	.drop-menu-catalog__body {
+    padding: 30px 0 10px 0;
 	}
 }
 
