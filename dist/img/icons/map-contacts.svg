@@ -1,0 +1,15 @@
+<svg id="geo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.395" height="70" viewBox="0 0 50.395 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_1084" data-name="Прямоугольник 1084" width="26" height="26" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <path id="_2" data-name="2" d="M0,25.2A25.2,25.2,0,1,1,47.316,37.276C44.608,42.224,25.2,70,25.2,70S5.456,41.92,2.773,36.7A25.086,25.086,0,0,1,0,25.2" fill="#221f20"/>
+  <g id="_1" data-name="1" transform="translate(12.194 11)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_801" data-name="Сгруппировать 801" transform="translate(3.9)">
+      <path id="Контур_1557" data-name="Контур 1557" d="M423.941,32.652V24.913a7.74,7.74,0,0,0-7.74,7.739h0v7.739a7.74,7.74,0,0,0,7.74-7.739Z" transform="translate(-405.873 -14.392)" fill="#fff"/>
+      <path id="Контур_1558" data-name="Контур 1558" d="M391.746,32.652V24.913a7.739,7.739,0,0,1,7.739,7.739v7.739A7.739,7.739,0,0,1,391.746,32.652Z" transform="translate(-391.746 -14.392)" fill="#fff"/>
+      <path id="Контур_1559" data-name="Контур 1559" d="M407.844,0a7.728,7.728,0,0,0,0,13.391,7.729,7.729,0,0,0,0-13.391" transform="translate(-398.81)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

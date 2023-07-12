@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_1090" data-name="Прямоугольник 1090" width="34" height="34" transform="translate(17 20)" fill="#221f20" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Прямоугольник_1094" data-name="Прямоугольник 1094" width="34" height="22.684" transform="translate(0 6)" fill="#221f20"/>
+    </clipPath>
+  </defs>
+  <g id="delivery" transform="translate(-17 -20)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_814" data-name="Сгруппировать 814" transform="translate(17 20)">
+      <g id="Сгруппировать_813" data-name="Сгруппировать 813" clip-path="url(#clip-path-2)">
+        <path id="Контур_1764" data-name="Контур 1764" d="M34,19.541V17.232a2.335,2.335,0,0,0-.68-1.632l-4.128-4.159a2.488,2.488,0,0,0-1.776-.713H24.4V7.866A1.866,1.866,0,0,0,22.534,6H5.845V9.925H0V12.47H5.845v1.862H1.7v2.545H5.845v1.86H3.393v2.545H5.845v4.739H9.184a3.712,3.712,0,0,0,7.121,0h7.383a3.712,3.712,0,0,0,7.121,0H34V21.238H31.071v-1.7ZM12.745,26.4A1.456,1.456,0,1,1,14.2,24.946,1.457,1.457,0,0,1,12.745,26.4h0m14.5.034a1.49,1.49,0,1,1,1.491-1.491,1.491,1.491,0,0,1-1.491,1.491" fill="#221f20"/>
+      </g>
+    </g>
+  </g>
+</svg>
