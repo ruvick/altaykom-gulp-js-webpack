@@ -1029,9 +1029,9 @@
 		padding: 0;
 	}
 
-	.footer {
-		padding: 50px 35px 28px 35px;
-	}
+	// .footer {
+	// 	padding: 50px 35px 28px 35px;
+	// }
 
 	.footer__bottom-column {
 		margin-bottom: 25px;
@@ -1536,7 +1536,7 @@
 	}
 }
 
-@media (max-width: 612px) {
+@media (max-width: 612px) { 
 	// .about__advantagesBlock {
 	// 	margin-left: -10px;
 	// 	margin-right: -10px;
@@ -1679,6 +1679,9 @@
 	}
 	.advantagesBlock__item-title {
     margin-bottom: 0;
+	}
+		.footer {
+		padding: 50px 35px 28px 35px;
 	}
 }
 
