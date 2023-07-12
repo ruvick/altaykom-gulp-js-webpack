@@ -6,7 +6,7 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
-
+				@@include('html/components/_lineBlock.htm',{})
 				@@include('html/components/_physical-list-person.htm',{})
 
 				<div class="breadcrumbs">
@@ -36,8 +36,8 @@
 									</div>
 								</div>
 								<div class="card-person__nav">
-									<button type="button" class="card-person__btn text-animation">Позвонить</button>
-									<button type="button" class="card-person__btn text-animation">Написать</button>
+									<a href="tel:0000" class="card-person__btn text-animation">Позвонить</a>
+									<a href="mailto:" class="card-person__btn text-animation">Написать</a>
 								</div>
 							</div>
             </div>
