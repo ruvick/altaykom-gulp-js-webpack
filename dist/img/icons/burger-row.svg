@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Прямоугольник_1060" data-name="Прямоугольник 1060" width="18" height="18" transform="translate(1601 654)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-1601 -654)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_751" data-name="Сгруппировать 751" transform="translate(1619 669.239) rotate(180)">
+      <rect id="Прямоугольник_151" data-name="Прямоугольник 151" width="18" height="1.89" rx="0.945" transform="translate(0 0)" fill="#fff"/>
+      <rect id="Прямоугольник_151-2" data-name="Прямоугольник 151" width="18" height="1.89" rx="0.945" transform="translate(0 5.294)" fill="#fff"/>
+      <rect id="Прямоугольник_151-3" data-name="Прямоугольник 151" width="18" height="1.89" rx="0.945" transform="translate(0 10.588)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
