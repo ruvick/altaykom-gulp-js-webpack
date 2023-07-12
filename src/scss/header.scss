@@ -1,6 +1,7 @@
 //====================================================================================================
 .header {
 	position: absolute;
+	position: fixed;
 	z-index: 150;
 	width: 100%;
 	background: #fff;
@@ -13,33 +14,43 @@
 		justify-content: space-between;
 		align-items: center;
 	}
-	&::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: scale(0); 
-    float: left;
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    margin-right: 10px;
-    background-size: 100%;
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.3960784314);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: scale(0);
+		float: left;
+		flex: 0 0 100%;
+		width: 100%;
+		height: 100%;
+		min-height: 100vh;
+		margin-right: 10px;
+		background-size: 100%;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-color: rgba(0, 0, 0, 0.3960784314);
 		transition: transform 0s ease 0.1s;
 	}
 }
+
 .header._before:before {
-	transform: scale(1); 
+	transform: scale(1);
 	transition: transform 0s ease 0.2s;
 }
+
 ._header-scroll {
 	position: fixed;
 	border-bottom: none;
 	box-shadow: 0px 6px 6px -8px #000000;
+
+	top: -200px;
+}
+
+._header-show {
+	top: 0;
+	transition: all 0.3s ease 0s;
 }
 
 @media (min-width: 1025px) {
@@ -84,13 +95,16 @@
 		display: none;
 	}
 }
+
 .header-user .header__main-column_right .phone-item {
 	display: flex;
 	margin-right: 0 !important;
 }
+
 .header-user .header__main-item {
 	padding-right: 0;
 }
+
 .header__menu-burger {
 	display: none;
 	align-items: center;
@@ -141,9 +155,11 @@
 	// fill: red;
 	// stroke: #000;
 }
+
 .header__logo_fix {
 	display: none;
 }
+
 .header__menu {}
 
 .menu {
@@ -162,8 +178,9 @@
 
 .menu__link {
 	padding-left: 30px;
-	padding-bottom: 1.5px; 
-	transition: $mainTransition; 
+	padding-bottom: 1.5px;
+	transition: $mainTransition;
+
 	&:hover {
 		color: #C5934F;
 	}
@@ -237,7 +254,8 @@
 
 .menu__sub-link {
 	transition: $mainTransition;
-	&:hover{
+
+	&:hover {
 		color: #C5934F;
 	}
 }
@@ -280,7 +298,7 @@
 .button-catalog {
 	display: flex;
 	align-items: center;
-	justify-content: space-between; 
+	justify-content: space-between;
 	flex: 0 1 100%;
 	height: 56px;
 	padding: 20px;
@@ -331,13 +349,13 @@
 
 .menu-catalog {
 	display: flex;
-	justify-content: center; 
-	position: absolute; 
+	justify-content: center;
+	position: absolute;
 	top: -380%;
 	left: 50%;
 	margin-right: -50%;
 	width: 100%;
-	min-height: 0; 
+	min-height: 0;
 	top: 0;
 	min-height: 100vh;
 	// background-color: rgba(0, 0, 0, 0.3960784314);
@@ -348,18 +366,18 @@
 	transition: transform 1s ease 0s;
 }
 
-.menu-catalog._active {  
+.menu-catalog._active {
 	// top: 0;
 	// min-height: 100vh;
 	// opacity: 1;
 	// visibility: visible;
-	transform: translate(-50%, 0%);  
+	transform: translate(-50%, 0%);
 	transition: transform 0.6s ease 0s;
 }
 
 .menu-catalog__inner {
 	max-width: 1652px;
-	width: 100%; 
+	width: 100%;
 	height: 0;
 	min-height: 568px;
 	// height: 100%;
@@ -370,11 +388,13 @@
 	// transition: transform 0.5s ease 0s;
 	// transform: translate(0, -100%);
 }
+
 .menu-catalog._active .menu-catalog__inner {
 	transform: translate(0, 0%);
 	height: 100%;
 	overflow: auto;
 }
+
 .menu-catalog__body {
 	display: flex;
 	justify-content: space-between;
@@ -387,10 +407,12 @@
 	align-items: start;
 	transition: opacity 0.2s ease 0.05s;
 }
+
 .menu-catalog._active .menu-catalog__body {
 	opacity: 1;
 	transition: opacity 2.5s ease 0.3s;
 }
+
 .menu-catalog__header {
 	display: none;
 	justify-content: space-between;
@@ -399,11 +421,13 @@
 	padding: 15px 25px;
 	background-color: #221F20;
 }
+
 .menu-catalog__header-text {
 	font-family: "Lack", sans-serif;
 	font-size: 18px;
 	color: #fff;
 }
+
 .menu-catalog__header-close {
 	svg {
 		flex: 0 0 18.3px;
@@ -513,7 +537,7 @@
 	line-height: 30px/20px*100%;
 }
 
-.menu-search { 
+.menu-search {
 	display: none;
 	// display: flex;
 	visibility: hidden;
@@ -538,15 +562,16 @@
 	display: block;
 	visibility: visible;
 	opacity: 1;
-	&::before{
+
+	&::before {
 		content: "";
-    position: absolute;
-    top: 0;
-    left: -200%;
-    z-index: -1;
-    width: 2000%;
-    height: 100%;
-    background-color: #fff;
+		position: absolute;
+		top: 0;
+		left: -200%;
+		z-index: -1;
+		width: 2000%;
+		height: 100%;
+		background-color: #fff;
 	}
 }
 
@@ -565,6 +590,7 @@
 .menu-search__inner::-webkit-scrollbar {
 	display: none;
 }
+
 .menu-search__footer {
 	display: none;
 	align-items: center;
@@ -582,51 +608,60 @@
 	height: 100%;
 	display: none;
 }
+
 .drop-menu-catalog.active {
 	display: block;
 }
-.drop-menu-catalog__header {
 
-}
+.drop-menu-catalog__header {}
+
 .drop-menu-catalog__btn-back {
 	display: flex;
 	align-items: center;
+
 	svg {
 		flex: 0 0 11px;
 		width: 11px;
-		height: 10px;		
+		height: 10px;
 		margin-right: 10px;
 	}
 }
+
 .drop-menu-back {
 	.label-icon {
 		flex: 0 0 28px;
 		width: 28px;
-		height: 28px;		
+		height: 28px;
 		margin-right: 10px;
 	}
 }
+
 .drop-menu-catalog__body {
 	padding: 30px 0 40px 0;
 }
+
 .drop-menu-catalog__list {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
 }
+
 .drop-menu-catalog__list-item {
 	flex: 0 1 48%;
 	margin-right: 10px;
 	margin-bottom: 20px;
-	&:last-child{
+
+	&:last-child {
 		margin-right: 0;
 	}
 }
-.drop-menu-catalog__list-link {
-}
+
+.drop-menu-catalog__list-link {}
+
 .drop-menu-catalog__footer {
 	width: 100%;
 }
+
 .drop-menu-catalog__footer-btn {
 	width: 100%;
 }
@@ -985,6 +1020,7 @@
 
 .menu-cabinet__link {
 	transition: $mainTransition;
+
 	&:hover {
 		color: #C5934F;
 	}
@@ -1017,9 +1053,11 @@
 	padding-bottom: 0;
 	box-shadow: 0px 6px 6px -11px #000000;
 }
+
 .header-legal-person .search-form {
 	display: none;
 }
+
 .header-legal-person__interface {
 	flex: 0 1 100%;
 }
@@ -1088,13 +1126,15 @@
 	border-radius: 15px;
 	border: 1px solid #e3e3e3;
 	margin-left: 8px;
+
 	svg {
 		width: 18px;
-    flex: 0 0 18px;
-    height: 18px;
-    stroke: #8F8E8E;
+		flex: 0 0 18px;
+		height: 18px;
+		stroke: #8F8E8E;
 	}
 }
+
 //====================================================================================================
 //Burger
 /*
