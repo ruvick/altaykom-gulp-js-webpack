@@ -1444,6 +1444,17 @@
 	}
 	.header__search .menu-search {
     top: 130px;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 180px;
+	}
+	.menu-search__inner {
+    max-width: 100%;
+    height: auto;
+	}
+	.menu-search__footer {
+
+    padding: 10px 25px 0 25px;
 	}
 	.header__search .search-form__btn-closed {
     top: 15px;
@@ -1466,6 +1477,10 @@
 	}
 	.sales-leaders__tabs .tabs__content {
 		padding-bottom: 0;
+	}
+	::-webkit-scrollbar,
+	::-webkit-scrollbar-thumb {
+		display: none;
 	}
 }
 
@@ -2604,6 +2619,9 @@
 	}
 	.advantagesBlock__inner {
     width: 414px;
+	} 
+	.header__search .menu-search {
+    padding-bottom: 230px;
 	}
 }
 
