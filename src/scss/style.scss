@@ -1334,6 +1334,8 @@ body.padding {
 		font-size: 16px;
 		line-height: 24px;
 		color: #161615;
+		overflow: hidden;
+		min-height: 100px !important;
 	}
 
 	&__fully {
@@ -1341,6 +1343,7 @@ body.padding {
 		line-height: 26px;
 		color: #C5934F;
 		margin-bottom: 30px;
+		text-align: left;
 	}
 
 	&__interface {
@@ -6971,6 +6974,10 @@ ul .content-article__descriptioni-list-item {
 	.tabs__content {
 		padding: 0;
 	}
+}
+
+.sliderReviews .swiper-wrapper {
+	height: 100% !important;
 }
 //========================================================================================================================================================
 
