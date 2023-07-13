@@ -993,7 +993,7 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
 	.header {
 		border-bottom: none;
 	}
@@ -1606,6 +1606,10 @@
 
 	.lc-physical-person__tabs .tabs__content {
 		padding-bottom: 0;
+	}
+	.reviews-sec__applic-popup {
+		top: 0;
+    right: 0;
 	}
 }
 
@@ -2912,6 +2916,13 @@
 
 	.page {
 		padding-bottom: 20px;
+	}
+	.applic-popup__close {
+    top: -45px;
+    right: 5px;
+	}
+	.applic-popup {
+    overflow: visible;
 	}
 }
 

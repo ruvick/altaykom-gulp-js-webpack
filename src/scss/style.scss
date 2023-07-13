@@ -3143,6 +3143,7 @@ body.padding {
 }
 
 .reviews-sec__inner {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
@@ -6281,8 +6282,8 @@ ul .content-article__descriptioni-list-item {
 .reviews-sec__applic-popup {
 	display: none;
 	position: absolute;
-	top: -115px;
-	right: 0px;
+	top: -80px;
+	right: 23%;
 	z-index: 5;
 }
 
