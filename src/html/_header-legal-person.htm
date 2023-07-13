@@ -91,16 +91,65 @@
 			</div>
 
 			<div class="header-legal-person__interface interface">
-				<a href="#" class="interface__link interface__link_lg-person">
+				<div class="interface__link interface__link_lg-person blockHover">
 					<svg>
 						<use xlink:href="#inter-icon"></use>
 					</svg>
-					<span class="interface__link-text">ИП Сладкоежка</span></a>
-				<a href="#" class="interface__link interface__link_enter interface__link_my-orders">
+					<span class="interface__link-text">ИП Сладкоежка</span>
+					<div class="header__cabinet-leg-person cabinet-leg-person blockHover-child">
+						<div class="menu-cabinet">
+							<ul class="menu-cabinet__list">
+								<li class="menu-cabinet__item">
+									<a href="#" class="menu-cabinet__link">Мой кабинет</a>
+									<!-- <span class="menu-cabinet__number"></span> -->
+								</li>
+								<li class="menu-cabinet__item">
+									<a href="#" class="menu-cabinet__link">Настройки профиля</a>
+									<!-- <span class="menu-cabinet__number"></span> -->
+								</li>
+							</ul>
+							<button type="button" class="menu-cabinet__btn">выход</button>
+						</div>
+						<div class="card-person">
+							<div class="card-person__main">
+								<div class="card-person__image">
+									<img src="img/card-person/01.jpg" alt="Картинка менеджера"> 
+								</div>
+								<div class="card-person__descp">
+									<div class="card-person__name">Екатерина</div>
+									<div class="card-person__post">Персональный менеджер</div>
+									<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
+								</div>
+							</div>
+							<div class="card-person__nav">
+								<a href="mailto:info@psnab22.ru" class="card-person__btn btn_black">Написать</a>
+								<a href="tel:+73852467585" class="card-person__btn btn_black">Позвонить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="interface__link interface__link_enter interface__link_my-orders blockHover">
 					<svg>
 						<use xlink:href="#my-orders"></use>
 					</svg>
-					<span class="interface__link-text">Мои заказы</span></a>
+					<span class="interface__link-text">Мои заказы</span>
+					<div class="header__menu-cabinet menu-cabinet blockHover-child">
+						<ul class="menu-cabinet__list">
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">Текущие заказы</a>
+								<!-- <span class="menu-cabinet__number">3</span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">Шаблоны</a>
+								<!-- <span class="menu-cabinet__number">11</span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">История покупок</a>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+						</ul>
+					</div>
+				</div>
 				<a href="#" class="interface__link interface__link_favourites">
 					<svg>
 						<use xlink:href="#favorites-icon"></use> 
@@ -113,55 +162,6 @@
 					<span class="bascket-icon-number rub">200 700</span>
 					<span class="interface__link-text">Корзина</span>
 				</a>
-
-				<div class="header__cabinet-leg-person cabinet-leg-person" style="display: none;">
-					<div class="menu-cabinet">
-						<ul class="menu-cabinet__list">
-							<li class="menu-cabinet__item">
-								<a href="#" class="menu-cabinet__link">Мой кабинет</a>
-								<!-- <span class="menu-cabinet__number"></span> -->
-							</li>
-							<li class="menu-cabinet__item">
-								<a href="#" class="menu-cabinet__link">Настройки профиля</a>
-								<!-- <span class="menu-cabinet__number"></span> -->
-							</li>
-						</ul>
-						<button type="button" class="menu-cabinet__btn">выход</button>
-					</div>
-					<div class="card-person">
-						<div class="card-person__main">
-							<div class="card-person__image">
-								<img src="img/card-person/01.jpg" alt="Картинка менеджера"> 
-							</div>
-							<div class="card-person__descp">
-								<div class="card-person__name">Екатерина</div>
-								<div class="card-person__post">Персональный менеджер</div>
-								<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
-							</div>
-						</div>
-						<div class="card-person__nav">
-							<a href="mailto:info@psnab22.ru" class="card-person__btn btn_black">Написать</a>
-							<a href="tel:+73852467585" class="card-person__btn btn_black">Позвонить</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="header__menu-cabinet menu-cabinet" style="display: none;">
-					<ul class="menu-cabinet__list">
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Текущие заказы</a>
-							<!-- <span class="menu-cabinet__number">3</span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Шаблоны</a>
-							<!-- <span class="menu-cabinet__number">11</span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">История покупок</a>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-					</ul>
-				</div>
 
 			</div>
 

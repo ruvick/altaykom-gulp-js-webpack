@@ -46,17 +46,17 @@ function getFileName() {
 // }
 
 // Меню Мой кабинет =======================================================================================================================================================================================
-let interfaceLinkLgPerson = document.querySelectorAll('.interface__link_lg-person');
-let headerCabinetLegPerson = document.querySelector('.header__cabinet-leg-person');
+// let interfaceLinkLgPerson = document.querySelectorAll('.interface__link_lg-person');
+// let headerCabinetLegPerson = document.querySelector('.header__cabinet-leg-person');
 
-for (let i = 0; i < interfaceLinkLgPerson.length; i++) {
-	interfaceLinkLgPerson[i].addEventListener('mouseenter', (e) => {
-		headerCabinetLegPerson.style.display = 'block';
-	})
-	headerCabinetLegPerson.addEventListener('mouseleave', () => {
-		headerCabinetLegPerson.style.display = 'none';
-	})
-}
+// for (let i = 0; i < interfaceLinkLgPerson.length; i++) {
+// 	interfaceLinkLgPerson[i].addEventListener('mouseenter', (e) => {
+// 		headerCabinetLegPerson.style.display = 'block';
+// 	})
+// 	headerCabinetLegPerson.addEventListener('mouseleave', () => {
+// 		headerCabinetLegPerson.style.display = 'none';
+// 	})
+// }
 
 // Переключение корзины в карточке товаров ======================================================================================================================================================================
 const interAddingBascetBtn = document.querySelectorAll('.interactive-adding-bascet__button');
