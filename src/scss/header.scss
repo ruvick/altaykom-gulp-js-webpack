@@ -213,10 +213,6 @@
 }
 
 .menu__sub-list {
-	// display: none;
-	visibility: hidden;
-	overflow: hidden;
-	opacity: 0;
 	position: absolute;
 	top: 28px;
 	left: 30px;
@@ -229,17 +225,6 @@
 	transition: all 0.3s ease 0s;
 	pointer-events: none;
 	transform: translate(0, -10px);
-}
-
-@media (any-hover: hover) {
-	.menu__item:hover .menu__sub-list {
-		// display: block;
-		overflow: visible;
-		visibility: visible;
-		opacity: 1;
-		pointer-events: auto;
-		transform: translate(0, 0);
-	}
 }
 
 .menu__sub-item {
@@ -826,7 +811,6 @@
 	transition: top 0.8s;
 }
 
-
 .bascket-icon-number {
 	position: absolute;
 	top: -25px;
@@ -849,9 +833,34 @@
 
 .header__multicorzine {
 	position: absolute;
-	top: 65px;
+	top: 45px;
 	right: -65px;
 	z-index: 5000000;
+	visibility: hidden;
+	&::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
+}
+
+.blockHover-child {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(0, -10px);
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+	.blockHover:hover .blockHover-child {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		transform: translate(0, 0);
+	}
 }
 
 .multicorzine-header {
@@ -861,7 +870,7 @@
 	background: #fff;
 	border-radius: 15px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .multicorzine-header__main {
@@ -877,6 +886,8 @@
 	border-radius: 15px;
 	overflow: hidden;
 	margin-bottom: 15px;
+	position: relative;
+	z-index: 500;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -921,6 +932,8 @@
 	line-height: 20 /14 * 100%;
 	color: #8F8E8E;
 	padding: 10px;
+	border-radius: 15px;
+	z-index: 500;
 	transition: $mainTransition;
 
 	&:hover {
@@ -992,18 +1005,26 @@
 
 .header__menu-cabinet {
 	position: absolute;
-	top: 65px;
+	top: 45px;
 	left: 10px;
+	&::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
 }
 
 .menu-cabinet {
-	max-width: 220px;
+	min-width: 220px;
 	width: 100%;
 	padding: 20px;
 	background: #fff;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 	border-radius: 15px;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .menu-cabinet__list {}

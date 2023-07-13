@@ -30,14 +30,14 @@
 
 			<div class="header__main-column header__main-column_right">
 				<ul class="header__menu menu">
-					<li class="menu__item">
+					<li class="menu__item blockHover">
 						<a href="#" class="menu__link">О нас</a>
 						<button type="button" data-spoller class="menu__button-arrow">
 							<svg class="menu__arrow-icon">
 								<use xlink:href="#arrow-bottom"></use>
 							</svg>
 						</button>
-						<ul class="menu__sub-list">
+						<ul class="menu__sub-list blockHover-child">
 							<li class="menu__sub-item">
 								<a href="#" class="menu__sub-link">О компании</a>
 							</li>
@@ -117,49 +117,74 @@
 			</button>
 
 			<div class="header__interface interface">
-				<a href="#" class="interface__link interface__link_enter">
+				<a href="#" class="interface__link interface__link_enter blockHover">
 					<svg>
 						<use xlink:href="#inter-icon"></use>
 					</svg>
-					<span class="interface__link-text">Войти</span></a>
+					<span class="interface__link-text">Войти</span>
+					<div class="header__menu-cabinet menu-cabinet blockHover-child">
+						<ul class="menu-cabinet__list">
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Мой кабинет</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Текущие заказы</button>
+								<span class="menu-cabinet__number">3</span>
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">История покупок</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Мои списки</button>
+								<span class="menu-cabinet__number">11</span>
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Настройки профиля</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+						</ul>
+						<button type="button" class="menu-cabinet__btn">выход</button>
+					</div>
+				</a>
 				<a href="#" class="interface__link interface__link_favourites">
 					<svg>
 						<use xlink:href="#favorites-icon"></use>
 					</svg>
 					<span class="interface__link-text">Избранное</span></a>
-				<a href="basket-individuals.html" class="interface__link interface__link_bascet">
+				<a href="basket-individuals.html" class="interface__link interface__link_bascet blockHover">
 					<svg>
 						<use xlink:href="#bascet-icon-h"></use>
 					</svg>
 					<span class="bascket-icon-number rub" style="display: none;">200 700</span>
 					<span class="interface__link-text">Корзина</span>
-				</a>
 
-				<div class="header__menu-cabinet menu-cabinet" style="display: none;">
-					<ul class="menu-cabinet__list">
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Мой кабинет</a>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Текущие заказы</a>
-							<span class="menu-cabinet__number">3</span>
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">История покупок</a>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Мои списки</a>
-							<span class="menu-cabinet__number">11</span>
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Настройки профиля</a>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-					</ul>
-					<button type="button" class="menu-cabinet__btn">выход</button>
-				</div>
+					<div class="header__multicorzine multicorzine-header blockHover-child">
+						<div class="multicorzine-header__main">
+							<button class="multicorzine-header__link multicorzine-header__link_main">
+								<svg>
+									<use xlink:href="#bascet-icon-h"></use>
+								</svg>
+								<span class="multicorzine-header__link-inner">
+									<span class="multicorzine-header__link-text">Основная</span>
+									<span class="multicorzine-header__price rub">1 200</span>
+								</span>
+							</button>
+							<button class="multicorzine-header__link">
+								<svg>
+									<use xlink:href="#bascet-icon-h"></use>
+								</svg>
+								<span class="multicorzine-header__link-inner">
+									<span class="multicorzine-header__link-text">Мои покупки</span>
+									<!-- <span class="multicorzine-header__price rub"></span> -->
+								</span>
+							</button>
+						</div>
+						<button data-popup="#new-bascet" type="button" class="multicorzine-header__add">+ добавить</button>
+					</div>
+
+				</a>
 
 				<div class="header__menu-entry menu-entry-header" style="display: none;">
 					<div class="menu-entry-header__title">Войдите или зарегистрируйтесь</div>
@@ -191,29 +216,7 @@
 					<button type="button" class="menu-entry-header__btn btn btn_black">войти или зарегестрироватся</button>
 				</div>
 
-				<div class="header__multicorzine multicorzine-header" style="display: none;">
-					<div class="multicorzine-header__main">
-						<a href="#" class="multicorzine-header__link multicorzine-header__link_main">
-							<svg>
-								<use xlink:href="#bascet-icon-h"></use>
-							</svg>
-							<span class="multicorzine-header__link-inner">
-								<span class="multicorzine-header__link-text">Основная</span>
-								<span class="multicorzine-header__price rub">1 200</span>
-							</span>
-						</a>
-						<a href="#" class="multicorzine-header__link">
-							<svg>
-								<use xlink:href="#bascet-icon-h"></use>
-							</svg>
-							<span class="multicorzine-header__link-inner">
-								<span class="multicorzine-header__link-text">Мои покупки</span>
-								<!-- <span class="multicorzine-header__price rub"></span> -->
-							</span>
-						</a>
-					</div>
-					<button data-popup="#new-bascet" type="button" class="multicorzine-header__add">+ добавить</button>
-				</div>
+
 
 			</div>
 		</div>

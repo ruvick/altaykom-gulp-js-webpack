@@ -8,6 +8,8 @@
 
 // Скрипт будет срабатывать, когда весь контент на странице загрузится
 // window.onload = function () {
+
+// Input file
 function getFileName() {
 	var file = document.getElementById('myfile').value;
 	file = file.replace(/\\/g, '/').split('/').pop();
@@ -18,30 +20,30 @@ function getFileName() {
 	document.getElementById('file-names').innerHTML = '' + file;
 }
 // Меню корзины при наведении в шапке ======================================================================================================================================================================
-let linkBascet = document.querySelectorAll('.interface__link_bascet');
-let headerMulticorzine = document.querySelector('.header__multicorzine');
+// let linkBascet = document.querySelectorAll('.interface__link_bascet');
+// let headerMulticorzine = document.querySelector('.header__multicorzine');
 
-for (let i = 0; i < linkBascet.length; i++) {
-	linkBascet[i].addEventListener('mouseenter', (e) => {
-		headerMulticorzine.style.display = 'flex';
-	})
-	headerMulticorzine.addEventListener('mouseleave', () => {
-		headerMulticorzine.style.display = 'none';
-	})
-}
+// for (let i = 0; i < linkBascet.length; i++) {
+// 	linkBascet[i].addEventListener('mouseenter', (e) => {
+// 		headerMulticorzine.style.display = 'flex';
+// 	})
+// 	linkBascet[i].addEventListener('mouseleave', () => {
+// 		headerMulticorzine.style.display = 'none';
+// 	})
+// }
 
 // Меню Мой кабинет =======================================================================================================================================================================================
-let interfacelinkEnter = document.querySelectorAll('.interface__link_enter');
-let headerMenuCabinet = document.querySelector('.header__menu-cabinet');
+// let interfacelinkEnter = document.querySelectorAll('.interface__link_enter');
+// let headerMenuCabinet = document.querySelector('.header__menu-cabinet');
 
-for (let i = 0; i < interfacelinkEnter.length; i++) {
-	interfacelinkEnter[i].addEventListener('mouseenter', (e) => {
-		headerMenuCabinet.style.display = 'block';
-	})
-	headerMenuCabinet.addEventListener('mouseleave', () => {
-		headerMenuCabinet.style.display = 'none';
-	})
-}
+// for (let i = 0; i < interfacelinkEnter.length; i++) {
+// 	interfacelinkEnter[i].addEventListener('mouseenter', (e) => {
+// 		headerMenuCabinet.style.display = 'block';
+// 	})
+// 	headerMenuCabinet.addEventListener('mouseleave', () => {
+// 		headerMenuCabinet.style.display = 'none';
+// 	})
+// }
 
 // Меню Мой кабинет =======================================================================================================================================================================================
 let interfaceLinkLgPerson = document.querySelectorAll('.interface__link_lg-person');

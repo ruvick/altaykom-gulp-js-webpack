@@ -383,7 +383,7 @@ export function tabs() {
 	// Работа с контентом
 	function initTabs(tabsBlock) {
 		const tabsTitles = tabsBlock.querySelectorAll('[data-tabs-titles]>*');
-		const tabsContent = tabsBlock.querySelectorAll('[data-tabs-body]>*');
+		const tabsContent = tabsBlock.querySelectorAll('[data-tabs-body]>*'); 
 		const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
 		const tabsActiveHashBlock = tabsActiveHash[0] == tabsBlockIndex;
 

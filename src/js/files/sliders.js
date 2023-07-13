@@ -101,7 +101,15 @@ function initSliders() {
 				// },
 			},
 			on: {
+				init() {
+					this.el.addEventListener('mouseenter', () => {
+						this.autoplay.stop();
+					});
 
+					this.el.addEventListener('mouseleave', () => {
+						this.autoplay.start();
+					});
+				}
 			}
 		});
 		new Swiper('.sliderBrends', {
@@ -451,6 +459,7 @@ function initSliders() {
 				},
 			},
 			on: {
+
 			}
 		});
 		let cardProductSmallSl = new Swiper('.cardProductSmallSl', {
