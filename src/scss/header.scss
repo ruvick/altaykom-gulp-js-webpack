@@ -1174,7 +1174,21 @@
 		stroke: #8F8E8E;
 	}
 }
-
+.header-legal-person__interface--fixed {
+	display: none;
+}
+.header-legal-person._header-show .header-legal-person__interface {
+	display: none;
+}
+.header-legal-person._header-show {
+	padding: 10px 0 20px 0;
+	.search-form {
+    display: block;
+	}
+	.header-legal-person__interface--fixed {
+		display: flex;
+	}
+}
 //====================================================================================================
 //Burger
 /*

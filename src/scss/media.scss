@@ -1866,6 +1866,7 @@
 }
 
 @media (max-width: 540px) {
+	.header-legal-person._header-show .header-legal-person__interface--fixed,
 	.header__interface {
 		display: none;
 	}
@@ -2053,6 +2054,9 @@
 
 	.header._header-scroll .header__navigation {
 		border-radius: 0;
+	}
+	.page-cat-entry .lineBlock {
+		display: block;
 	}
 }
 
