@@ -383,7 +383,7 @@ export function tabs() {
 	// Работа с контентом
 	function initTabs(tabsBlock) {
 		const tabsTitles = tabsBlock.querySelectorAll('[data-tabs-titles]>*');
-		const tabsContent = tabsBlock.querySelectorAll('[data-tabs-body]>*'); 
+		const tabsContent = tabsBlock.querySelectorAll('[data-tabs-body]>*');
 		const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
 		const tabsActiveHashBlock = tabsActiveHash[0] == tabsBlockIndex;
 
@@ -489,9 +489,6 @@ export function menuInit() {
 			iconMenu.classList.remove('_active');
 			menuCatalog.classList.remove('_active');
 			header.classList.remove('_before');
-			// physicalListPerson.classList.remove('_active');
-			// blackout();
-			// bodyLockToggle();
 			bodyUnlock();
 			console.log('escape click');
 		}
@@ -543,7 +540,7 @@ interFacelinkText.forEach(linkText => {
 				// lineBlockBlk.classList.remove('_active');
 				// bodyLockToggle();
 				bodyUnlock();
-				// console.log('escape click');
+				console.log('escape click');
 			}
 		};
 	})
