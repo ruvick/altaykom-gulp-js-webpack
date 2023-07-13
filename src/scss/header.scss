@@ -1040,6 +1040,8 @@
 }
 
 .menu-cabinet__link {
+	color: #000;
+	z-index: 50;
 	transition: $mainTransition;
 
 	&:hover {
