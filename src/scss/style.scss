@@ -7157,6 +7157,24 @@ ul .content-article__descriptioni-list-item {
 .page-cat-entry .lineBlock {
 	display: none;
 }
+
+.mob-fixed-menu-footer__header-bascket {
+	display: block;
+	.into-basket-btn {
+		padding: 7px 0;
+		flex-direction: column;
+		.into-basket-btn__text {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		.into-basket-btn__price {
+			font-size: 12px;
+		}
+		.into-basket-btn__point {
+			display: none;
+		}
+	}
+}
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================
