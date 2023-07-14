@@ -1,3 +1,78 @@
+import { bodyLockStatus, bodyLockToggle } from "./functions.js";
+
+let showedWindow = ""
+
+// Каталог
+const catBtnAll = document.getElementById('catBtn');
+const headerMenuCatalog = document.getElementById('header-menu-catalog');
+const iconMenu = document.getElementById('iconMenu');
+
+function toggleCatalog() {
+
+	if (showedWindow == "searchFormInput") toggleSearch()
+
+	headerMenuCatalog.classList.toggle("_active");
+	iconMenu.classList.toggle('_active');
+	showedWindow = (headerMenuCatalog.classList.contains("_active")) ? "headerMenuCatalog" : ""
+}
+
+catBtnAll.onclick = (e) => {
+	e.preventDefault()
+	toggleCatalog()
+	bodyLockToggle()
+}
+
+// Поиск
+
+const searchFormInput = document.getElementById('searchFormInput');
+const search = document.querySelector(".search-form");
+const searchMenu = document.querySelector(".menu-search");
+const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+
+const interFacelinkText = document.querySelectorAll(".interface__link-text");
+
+
+
+function toggleSearch() {
+
+	if (showedWindow == "headerMenuCatalog") toggleCatalog()
+
+	searchFormInput.classList.toggle("_active")
+	search.classList.toggle("_active");
+	searchMenu.classList.toggle("_active");
+	searchBtnClosed.classList.toggle("_active");
+	interFacelinkText.forEach(linkText => {
+		linkText.classList.toggle("_none");
+	})
+	showedWindow = (searchFormInput.classList.contains("_active")) ? "searchFormInput" : ""
+}
+
+searchFormInput.onclick = (e) => {
+	e.preventDefault()
+	toggleSearch()
+	bodyLockToggle()
+}
+
+searchBtnClosed.onclick = (e) => {
+	e.preventDefault()
+	toggleSearch()
+	bodyLockToggle()
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+	window.onkeydown = function (event) {
+		console.log(event.keyCode)
+		console.log(showedWindow)
+		if (event.keyCode == 27) {
+			if (showedWindow == "headerMenuCatalog") toggleCatalog()
+			if (showedWindow == "searchFormInput") toggleSearch()
+			bodyLockToggle();
+		}
+	};
+})
+
+
 // Модуь работы с меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
 	const header = document.querySelector(".header");
@@ -32,11 +107,11 @@ export function menuInit() {
 // Модуль закрытия по ESC 
 window.onkeydown = function (event) {
 	if (event.keyCode == 27) {
-		iconMenu.classList.remove('_active');
-		menuCatalog.classList.remove('_active');
-		header.classList.remove('_before');
-		bodyUnlock();
-		console.log('escape click');
+		// iconMenu.classList.remove('_active');
+		// menuCatalog.classList.remove('_active');
+		// header.classList.remove('_before');
+		// bodyUnlock();
+		// console.log('escape click');
 	}
 };
 // Menu Catalog ======================================================================================================================================================================
@@ -98,46 +173,48 @@ if (document.documentElement.clientWidth > 768) {
 }
 // Search =====================================================================================================================================
 const lineBlockBlk = document.querySelector(".lineBlock-blk");
-const search = document.querySelector(".search-form");
-const searchInput = document.querySelector(".search-form__input");
-const searchMenu = document.querySelector(".menu-search");
-const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+// const search = document.querySelector(".search-form");
+// const searchInput = document.querySelector(".search-form__input");
+// const searchMenu = document.querySelector(".menu-search");
+// const searchBtnClosed = document.querySelector(".search-form__btn-closed");
 const headerSearchFxCl = document.querySelector(".header__search-fix-closed");
-const interFacelinkText = document.querySelectorAll(".interface__link-text");
+// const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
 interFacelinkText.forEach(linkText => {
-	searchInput.addEventListener('click', function () {
-		search.classList.add("_active");
-		searchMenu.classList.add("_active");
-		searchBtnClosed.classList.add("_active");
-		linkText.classList.add("_none");
-		// lineBlockBlk.classList.add('_active');
-		// header.classList.add('_active');
-		bodyLock();
-		// bodyLockToggle();
-	})
-	searchBtnClosed.addEventListener('click', function () {
-		search.classList.remove("_active");
-		searchMenu.classList.remove("_active");
-		searchBtnClosed.classList.remove("_active");
-		linkText.classList.remove("_none");
-		// lineBlockBlk.classList.remove('_active');
-		// header.classList.remove('_active');
-		// bodyLockToggle();
-		bodyUnlock();
-		window.onkeydown = function (event) {
-			if (event.keyCode == 27) {
-				search.classList.remove("_active");
-				searchMenu.classList.remove("_active");
-				searchBtnClosed.classList.remove("_active");
-				linkText.classList.remove("_none");
-				// lineBlockBlk.classList.remove('_active');
-				// bodyLockToggle();
-				bodyUnlock();
-				console.log('escape click');
-			}
-		};
-	})
+	// searchInput.addEventListener('click', function () {
+	// 	search.classList.add("_active");
+	// 	searchMenu.classList.add("_active");
+	// 	searchBtnClosed.classList.add("_active");
+	// 	linkText.classList.add("_none");
+	// 	// lineBlockBlk.classList.add('_active');
+	// 	// header.classList.add('_active');
+	// 	bodyLock();
+	// 	// bodyLockToggle();
+	// })
+
+	// searchBtnClosed.addEventListener('click', function () {
+	// 	search.classList.remove("_active");
+	// 	searchMenu.classList.remove("_active");
+	// 	searchBtnClosed.classList.remove("_active");
+	// 	linkText.classList.remove("_none");
+	// 	// lineBlockBlk.classList.remove('_active');
+	// 	// header.classList.remove('_active');
+	// 	// bodyLockToggle();
+	// 	bodyUnlock();
+	// 	window.onkeydown = function (event) {
+	// 		if (event.keyCode == 27) {
+	// 			// search.classList.remove("_active");
+	// 			// searchMenu.classList.remove("_active");
+	// 			// searchBtnClosed.classList.remove("_active");
+	// 			// linkText.classList.remove("_none");
+	// 			// // lineBlockBlk.classList.remove('_active');
+	// 			// // bodyLockToggle();
+	// 			// bodyUnlock();
+	// 			// console.log('escape click');
+	// 		}
+	// 	};
+	// })
+
 	headerSearchFxCl.addEventListener('click', function () {
 		search.classList.remove("_active");
 		searchMenu.classList.remove("_active");
@@ -153,21 +230,21 @@ interFacelinkText.forEach(linkText => {
 const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
 // const lineBlockBlk = document.querySelector('.lineBlock-blk');
 if (document.documentElement.clientWidth > 1024) {
-	function menuHover() {
-		for (let i = 0; i < menuLineBlockItem.length; i++) {
-			menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
-				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-				child.classList.add('_active');
-				lineBlockBlk.classList.add('_active');
-				bodyLockToggle();
-			})
-			menuLineBlockItem[i].addEventListener('mouseleave', () => {
-				let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
-				child.classList.remove('_active');
-				lineBlockBlk.classList.remove('_active');
-				bodyLockToggle();
-			})
-		}
+	// function menuHover() {
+	for (let i = 0; i < menuLineBlockItem.length; i++) {
+		menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
+			let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+			child.classList.add('_active');
+			// lineBlockBlk.classList.add('_active');
+			bodyLockToggle();
+		})
+		menuLineBlockItem[i].addEventListener('mouseleave', () => {
+			let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
+			child.classList.remove('_active');
+			// lineBlockBlk.classList.remove('_active');
+			bodyLockToggle();
+		})
 	}
-	menuHover();
+	// }
+	// menuHover();
 }

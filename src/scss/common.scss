@@ -111,11 +111,13 @@
 		fill: #fff;
 	}
 }
+
 .btn-icon-big:focus {
 	svg {
 		fill: #221f20;
 	}
 }
+
 // ИНТЕРАКТИВНЫЕ КНОПКИ===========================================================================
 // Кнопки интерфейса
 .interface {
@@ -260,7 +262,7 @@
 .btn-up {
 	display: flex;
 	align-items: center;
-	justify-content: center; 
+	justify-content: center;
 	width: 56px;
 	height: 56px;
 	position: fixed;
@@ -273,6 +275,7 @@
 	cursor: pointer;
 	mix-blend-mode: difference;
 	transition: $mainTransition;
+
 	svg {
 		flex: 0 0 30.11px;
 		width: 30.11px;
@@ -283,8 +286,10 @@
 		mix-blend-mode: difference;
 		transition: $mainTransition;
 	}
-	&:hover{
+
+	&:hover {
 		background-color: #fff;
+
 		svg {
 			fill: #fff;
 			stroke: #fff;
@@ -349,7 +354,7 @@
 	width: 100%;
 	// padding: 19px 0;
 	min-height: 64px;
-	border-bottom: 1px solid #E3E3E3; 
+	border-bottom: 1px solid #E3E3E3;
 	background: #fff;
 }
 
@@ -390,7 +395,7 @@
 	white-space: nowrap;
 }
 
-.menu-lineBlock__link { 
+.menu-lineBlock__link {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -464,12 +469,14 @@
 	transition: $mainTransition;
 	pointer-events: none;
 
-	display: none !important;
+	// display: none !important;
 }
+
 .menu-lineBlock .sub-list::-webkit-scrollbar-thumb,
 .menu-lineBlock .sub-list::-webkit-scrollbar {
 	display: none;
 }
+
 .sub-list._active {
 	opacity: 1;
 	visibility: visible;
@@ -705,17 +712,18 @@
 	&:last-child {
 		margin-bottom: 0;
 	}
-	&::before{
-		content:''; 
-		float: left; 
+
+	&::before {
+		content: '';
+		float: left;
 		width: 16px;
-		flex: 0 0 16px; 
-		height: 8px; 
+		flex: 0 0 16px;
+		height: 8px;
 		margin-top: 10px;
-		margin-right: 20px; 
-		background-size: 100%; 
-		background-position: 0 0; 
-		background-repeat: no-repeat; 
+		margin-right: 20px;
+		background-size: 100%;
+		background-position: 0 0;
+		background-repeat: no-repeat;
 		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTYgOCI+DQogIDxwYXRoIGlkPSJtYXJrIiBkPSJNOCwwaDhBOCw4LDAsMCwxLDgsOEgwQTgsOCwwLDAsMSw4LDAiIGZpbGw9IiMyMjFmMjAiLz4NCjwvc3ZnPg0K');
 	}
 }
@@ -1055,7 +1063,7 @@ ol.counter {
 
 //====================================================================================================
 ._ibg {
-	position: relative; 
+	position: relative;
 
 	img {
 		position: absolute;
