@@ -306,6 +306,24 @@ const btnUp = {
 btnUp.addEventListener();
 // ============================================================================================================================================================================================
 
+// Открытие карточки товара в таблице юрлицо 
+const catEntityTableTr = document.querySelector('.catalog-entity-table-tr');
+const catEntityTableCard = document.querySelector('.catalog-entity-table-card');
+
+if (catEntityTableTr) {
+	catEntityTableTr.addEventListener('click', function () {
+		catEntityTableCard.classList.toggle('_active');
+	})
+}
+
+// Закрытие моб меню при клике вне области меню 
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	const target = e.target // находим элемент, на котором был клик
+	if (!target.closest('.catalog-entity-table-tr')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+		catEntityTableCard.classList.remove('_active');
+	}
+})
+
 // Actions (делегирование события click)
 // document.addEventListener("click", documentActions);
 

@@ -7306,6 +7306,10 @@ ul .content-article__descriptioni-list-item {
 	z-index: 500;
 	background-color: #fff;
 	border: 2px solid #221F20;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.6s, opacity 0.3s;
+
 	.catalog-entity-table-card__col {
 		flex: 0 1 50%;
 		padding: 20px;
@@ -7313,6 +7317,33 @@ ul .content-article__descriptioni-list-item {
 	.catalog-entity-table-card__col--descp {
 		background: #F9F9F9;
 	}
+	.catalog-entity-table-card__col--interface {
+		// max-width: 622px;
+	}
+	.card-product-slider-small {
+		max-width: 540px;
+    height: 104px;
+		margin: 0 0 24px 0;
+	}
+	.card-product-slider-small__slide {
+    padding-bottom: 19.3%;
+	}
+	.productPreviewSl {
+    margin: 0;
+	}
+	.conclusion {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+	}
+	.product-preview__button-block {
+		margin-top: 20px;
+	}
+}
+
+.catalog-entity-table-card._active {
+	visibility: visible;
+	opacity: 1;
 }
 //========================================================================================================================================================
 
