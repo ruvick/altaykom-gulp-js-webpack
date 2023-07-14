@@ -92,7 +92,7 @@
 
 			<form action="#" method="get" class="header__search search-form">
 				<div class="search-form__inner">
-					<input type="text" placeholder="Поиск по каталогу" class="search-form__input" />
+					<input id="searchFormInput" type="text" placeholder="Поиск по каталогу" class="search-form__input" />
 					<button type="button" tabindex="1" class="search-form__btn-closed">
 						<svg class="search-form__btn-closed-icon">
 							<use xlink:href="#popup-close"></use>
@@ -100,7 +100,7 @@
 					</button>
 					<button type="submit" tabindex="2" id="searchsubmit" class="search-form__btn"></button>
 				</div>
-				<div class="menu-search">
+				<div id="menu-search" class="menu-search">
 					<div class="menu-search__inner">
 						@@include('/components/_similar-products-block.htm',{})
 					</div>
@@ -158,33 +158,33 @@
 						<use xlink:href="#inter-icon"></use>
 					</svg>
 					<button type="submit" class="interface__link-text">Кабинет</button>
-				<div class="header__menu-cabinet menu-cabinet blockHover-child">
-					<ul class="menu-cabinet__list">
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Мой кабинет</a>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Текущие заказы</a>
-							<span class="menu-cabinet__number">3</span>
-						</li>
-						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">История покупок</button>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Мои списки</a>
-							<span class="menu-cabinet__number">11</span>
-						</li>
-						<li class="menu-cabinet__item">
-							<a href="#" class="menu-cabinet__link">Настройки профиля</a>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-					</ul>
-					<button type="button" class="menu-cabinet__btn">выход</button>
+					<div class="header__menu-cabinet menu-cabinet blockHover-child">
+						<ul class="menu-cabinet__list">
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">Мой кабинет</a>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">Текущие заказы</a>
+								<span class="menu-cabinet__number">3</span>
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">История покупок</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">Мои списки</a>
+								<span class="menu-cabinet__number">11</span>
+							</li>
+							<li class="menu-cabinet__item">
+								<a href="#" class="menu-cabinet__link">Настройки профиля</a>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+						</ul>
+						<button type="button" class="menu-cabinet__btn">выход</button>
+					</div>
 				</div>
-				</div>
-				
+
 				<a href="#" class="interface__link interface__link_favourites">
 					<svg>
 						<use xlink:href="#favorites-icon"></use>

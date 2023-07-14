@@ -1,6 +1,6 @@
 @@include('components/_main-mob-menu.htm',{})
-<header data-scroll="120" data-scroll-show class="header header-default header-legal-person"> 
-	
+<header data-scroll="120" data-scroll-show class="header header-default header-legal-person">
+
 	<div class="header__container _container">
 		<div class="header__main">
 
@@ -11,13 +11,13 @@
 					</svg>
 					г. Барнаул, ул. Гридасова, 16
 				</div>
-				<a href="tel:+73852462031" class="header__main-item phone-item">  
+				<a href="tel:+73852462031" class="header__main-item phone-item">
 					<svg class="phone-item__icon">
 						<use xlink:href="#phone-icon"></use>
 					</svg>
 					+7 (3852) 46 20 31
 					<svg class="phone-item__icon-mob">
-						<use xlink:href="#phone-mob"></use> 
+						<use xlink:href="#phone-mob"></use>
 					</svg>
 				</a>
 			</div>
@@ -113,7 +113,7 @@
 						<div class="card-person">
 							<div class="card-person__main">
 								<div class="card-person__image">
-									<img src="img/card-person/01.jpg" alt="Картинка менеджера"> 
+									<img src="img/card-person/01.jpg" alt="Картинка менеджера">
 								</div>
 								<div class="card-person__descp">
 									<div class="card-person__name">Екатерина</div>
@@ -152,7 +152,7 @@
 				</div>
 				<a href="#" class="interface__link interface__link_favourites">
 					<svg>
-						<use xlink:href="#favorites-icon"></use> 
+						<use xlink:href="#favorites-icon"></use>
 					</svg>
 					<span class="interface__link-text">Избранные товары</span></a>
 				<a class="interface__link header-legal-bascet-icon">
@@ -165,9 +165,9 @@
 
 			</div>
 
-			<form action="#" method="get" class="header__search search-form"> 
+			<form action="#" method="get" class="header__search search-form">
 				<div class="search-form__inner">
-					<input type="text" placeholder="Поиск по каталогу" data-placeholder="Поиск по каталогу"
+					<input id="searchFormInput" type="text" placeholder="Поиск по каталогу" data-placeholder="Поиск по каталогу"
 						class="search-form__input" />
 					<button type="reset" tabindex="1" class="search-form__btn-closed">
 						<svg class="search-form__btn-closed-icon">
@@ -184,7 +184,7 @@
 						<button type="button" class="menu-search__btn btn">показать все</button>
 					</div>
 				</div>
-			</form> 
+			</form>
 
 			<div class="header__interface header-legal-person__interface--fixed interface">
 				<a href="#" class="interface__link interface__link_enter blockHover">
@@ -228,33 +228,33 @@
 						<use xlink:href="#inter-icon"></use>
 					</svg>
 					<span class="interface__link-text">Кабинет</span>
-				<div class="header__menu-cabinet menu-cabinet blockHover-child">
-					<ul class="menu-cabinet__list">
-						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Мой кабинет</button>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Текущие заказы</button>
-							<span class="menu-cabinet__number">3</span>
-						</li>
-						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">История покупок</button>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Мои списки</button>
-							<span class="menu-cabinet__number">11</span>
-						</li>
-						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Настройки профиля</button>
-							<!-- <span class="menu-cabinet__number"></span> -->
-						</li>
-					</ul>
-					<button type="button" class="menu-cabinet__btn">выход</button>
-				</div>
+					<div class="header__menu-cabinet menu-cabinet blockHover-child">
+						<ul class="menu-cabinet__list">
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Мой кабинет</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Текущие заказы</button>
+								<span class="menu-cabinet__number">3</span>
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">История покупок</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Мои списки</button>
+								<span class="menu-cabinet__number">11</span>
+							</li>
+							<li class="menu-cabinet__item">
+								<button class="menu-cabinet__link">Настройки профиля</button>
+								<!-- <span class="menu-cabinet__number"></span> -->
+							</li>
+						</ul>
+						<button type="button" class="menu-cabinet__btn">выход</button>
+					</div>
 				</a>
-				
+
 				<a href="#" class="interface__link interface__link_favourites">
 					<svg>
 						<use xlink:href="#favorites-icon"></use>
@@ -306,6 +306,5 @@
 	</div>
 
 	@@include('/components/_menu-catalog.htm',{})
-	
-</header>
 
+</header>
