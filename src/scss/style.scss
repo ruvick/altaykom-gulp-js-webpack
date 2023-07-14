@@ -6485,7 +6485,7 @@ ul .content-article__descriptioni-list-item {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 500;
+	z-index: 5000;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
@@ -6514,7 +6514,7 @@ ul .content-article__descriptioni-list-item {
 }
 
 .filters-mob-menu__body {
-	padding: 20px 12px;
+	padding: 20px 12px 80px 12px;
 }
 
 .filters-mob-menu__header-close {
@@ -7173,6 +7173,113 @@ ul .content-article__descriptioni-list-item {
 		.into-basket-btn__point {
 			display: none;
 		}
+	}
+}
+
+.filter-controll-mob-fixed {
+	display: flex;
+	display: none;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	z-index: 50;
+	bottom: 0;
+	left: 0;
+	z-index: 50000;
+	-webkit-box-shadow: -1px -3px 8px 0px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: -1px -3px 8px 0px rgba(34, 60, 80, 0.2);
+	box-shadow: -1px -3px 8px 0px rgba(34, 60, 80, 0.2);
+	.filter-controll__btn {
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+		margin-bottom: 0;
+	}
+}
+.filter-controll-mob-fixed._active {
+	display: flex;
+}
+
+.mob-fixed-menu-footer {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	z-index: 510;
+	width: 100%;
+	padding: 10px 12px;
+	background: #fff;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+.mob-fixed-menu-footer__header {
+	display: none;
+	padding-bottom: 10px;
+}
+
+.into-basket-btn {
+	display: flex;
+	align-items: center;
+}
+.into-basket-btn__text {
+}
+.into-basket-btn__point {
+	margin: 0 15px;
+	&::before{
+		content: ".";
+    float: left;
+    font-size: 0px;
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+	}
+}
+.into-basket-btn__price {
+}
+
+.mob-fixed-menu-footer__panel {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+}
+.mob-fixed-menu-footer__button {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 11px;
+	line-height: 22px/11px*100%;
+
+	svg {
+		width: 24px;
+		flex: 0 0 24px;
+		height: 24px;
+		margin-bottom: 4px;
+	}
+}
+
+.mob-fixed-menu-footer__value {
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	min-width: 20px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 12px;
+	line-height: 22px;
+	background: #C5934F;
+	border-radius: 5px;
+}
+.mob-fixed-menu-footer__header-bascket {
+	display: block;
+	.mob-fixed-menu-footer__button--reset {
+		color: grey;
 	}
 }
 //========================================================================================================================================================

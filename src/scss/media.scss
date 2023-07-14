@@ -2895,7 +2895,7 @@
 
 	.advantagesBlock__inner {
 		width: 414px;
-	}
+	} 
 
 	.header__search .menu-search {
 		padding-bottom: 230px;
@@ -2923,6 +2923,13 @@
 	}
 	.applic-popup {
     overflow: visible;
+	}
+	.footer-user {
+		padding-bottom: 120px;
+	}
+	.header-user {
+    position: fixed !important;
+    top: 0;
 	}
 }
 

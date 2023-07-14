@@ -693,16 +693,19 @@ const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');
 const filtersMobCl = document.querySelector('.filters-mob-menu__header-close');
 const filtersMobMenu = document.querySelector('.filters-mob-menu');
 const selectMobMenu = document.querySelector('.select-mob-menu');
+const filtrContrMobFiX = document.querySelector('.filter-controll-mob-fixed');
 
 if (filterMobFl) {
 	filterMobFl.addEventListener('click', function () {
 		filtersMobMenu.classList.add('_active');
+		filtrContrMobFiX.classList.add('_active');
 		bodyLockToggle();
 	});
 }
 if (filtersMobCl) {
 	filtersMobCl.addEventListener('click', function () {
 		filtersMobMenu.classList.remove('_active');
+		filtrContrMobFiX.classList.remove('_active');
 		bodyLockToggle();
 	});
 }
