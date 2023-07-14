@@ -117,11 +117,11 @@
 			</button>
 
 			<div class="header__interface interface">
-				<a href="#" class="interface__link interface__link_enter blockHover">
+				<div class="interface__link interface__link_enter blockHover">
 					<svg>
 						<use xlink:href="#inter-icon"></use>
 					</svg>
-					<span class="interface__link-text">Войти</span>
+					<button type="submit" class="interface__link-text">Войти</button>
 					<div class="header__menu-entry menu-entry-header blockHover-child">
 						<div class="menu-entry-header__title">Войдите или зарегистрируйтесь</div>
 						<div class="menu-entry-header__subtitle">Чтобы вы смогли делать покупки, оформлять заказы, а также:</div>
@@ -131,7 +131,7 @@
 									<use xlink:href="#opt-gold"></use>
 								</svg>
 							</span>
-							<div class="menu-entry-header__item-text">Пользоваться персональными скидками</div>
+							<button type="submit" class="menu-entry-header__item-text">Пользоваться персональными скидками</button>
 						</div>
 						<div class="menu-entry-header__item">
 							<span class="menu-entry-header__item-icons">
@@ -139,7 +139,7 @@
 									<use xlink:href="#castle-icon"></use>
 								</svg>
 							</span>
-							<div class="menu-entry-header__item-text">Отслеживать заказы</div>
+							<button type="submit" class="menu-entry-header__item-text">Отслеживать заказы</button>
 						</div>
 						<div class="menu-entry-header__item">
 							<span class="menu-entry-header__item-icons">
@@ -147,25 +147,25 @@
 									<use xlink:href="#rating-product"></use>
 								</svg>
 							</span>
-							<div class="menu-entry-header__item-text">Покупать товары по оптовым ценам</div>
+							<button type="submit" class="menu-entry-header__item-text">Покупать товары по оптовым ценам</button>
 						</div>
 						<button type="button" class="menu-entry-header__btn btn btn_black">войти или зарегестрироватся</button>
 					</div>
-				</a>
+				</div>
 
-				<a href="#" class="interface__link interface__link_enter blockHover" style="display:none;">
+				<div class="interface__link interface__link_enter blockHover" style="display:none;">
 					<svg>
 						<use xlink:href="#inter-icon"></use>
 					</svg>
-					<span class="interface__link-text">Кабинет</span>
+					<button type="submit" class="interface__link-text">Кабинет</button>
 				<div class="header__menu-cabinet menu-cabinet blockHover-child">
 					<ul class="menu-cabinet__list">
 						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Мой кабинет</button>
+							<a href="#" class="menu-cabinet__link">Мой кабинет</a>
 							<!-- <span class="menu-cabinet__number"></span> -->
 						</li>
 						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Текущие заказы</button>
+							<a href="#" class="menu-cabinet__link">Текущие заказы</a>
 							<span class="menu-cabinet__number">3</span>
 						</li>
 						<li class="menu-cabinet__item">
@@ -173,33 +173,34 @@
 							<!-- <span class="menu-cabinet__number"></span> -->
 						</li>
 						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Мои списки</button>
+							<a href="#" class="menu-cabinet__link">Мои списки</a>
 							<span class="menu-cabinet__number">11</span>
 						</li>
 						<li class="menu-cabinet__item">
-							<button class="menu-cabinet__link">Настройки профиля</button>
+							<a href="#" class="menu-cabinet__link">Настройки профиля</a>
 							<!-- <span class="menu-cabinet__number"></span> -->
 						</li>
 					</ul>
 					<button type="button" class="menu-cabinet__btn">выход</button>
 				</div>
-				</a>
+				</div>
 				
 				<a href="#" class="interface__link interface__link_favourites">
 					<svg>
 						<use xlink:href="#favorites-icon"></use>
 					</svg>
-					<span class="interface__link-text">Избранное</span></a>
-				<a href="basket-individuals.html" class="interface__link interface__link_bascet blockHover">
+					<span class="interface__link-text">Избранное</span>
+				</a>
+				<div class="interface__link interface__link_bascet blockHover">
 					<svg>
 						<use xlink:href="#bascet-icon-h"></use>
 					</svg>
 					<span class="bascket-icon-number rub" style="display: none;">200 700</span>
-					<span class="interface__link-text">Корзина</span>
+					<a href="basket-individuals.html" class="interface__link-text">Корзина</a>
 
 					<div class="header__multicorzine multicorzine-header blockHover-child">
 						<div class="multicorzine-header__main">
-							<button class="multicorzine-header__link multicorzine-header__link_main">
+							<a href="#" class="multicorzine-header__link multicorzine-header__link_main">
 								<svg>
 									<use xlink:href="#bascet-icon-h"></use>
 								</svg>
@@ -207,8 +208,8 @@
 									<span class="multicorzine-header__link-text">Основная</span>
 									<span class="multicorzine-header__price rub">1 200</span>
 								</span>
-							</button>
-							<button class="multicorzine-header__link">
+							</a>
+							<a href="#" class="multicorzine-header__link">
 								<svg>
 									<use xlink:href="#bascet-icon-h"></use>
 								</svg>
@@ -216,12 +217,12 @@
 									<span class="multicorzine-header__link-text">Мои покупки</span>
 									<!-- <span class="multicorzine-header__price rub"></span> -->
 								</span>
-							</button>
+							</a>
 						</div>
 						<button data-popup="#new-bascet" type="button" class="multicorzine-header__add">+ добавить</button>
 					</div>
 
-				</a>
+				</div>
 
 			</div>
 		</div>
