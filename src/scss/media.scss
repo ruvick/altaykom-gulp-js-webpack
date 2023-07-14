@@ -2338,7 +2338,7 @@
 	}
 	.catalog-entity-table-card .card-product-slider-small {
     order: 2;
-		margin-left: -10px;
+		margin-left: -20px;
 	}
 	.catalog-entity-table-card__name-block {
     order: 1;
@@ -2355,6 +2355,9 @@
 	}
 	.catalog-entity-table-card .card-product-slider-small__slide {
     padding-bottom: 30.5%;
+	}
+	.catalog-entity-table-card .swiper-wrapper {
+    padding-left: 20px;
 	}
 }
 
