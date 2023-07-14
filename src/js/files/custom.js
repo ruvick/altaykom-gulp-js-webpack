@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (event.keyCode == 27) {
 			if (showedWindow == "headerMenuCatalog") toggleCatalog()
 			if (showedWindow == "searchFormInput") toggleSearch()
-			bodyUnlock();
+			bodyLockToggle()
 		}
 	};
 })
