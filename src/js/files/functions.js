@@ -455,44 +455,44 @@ export function tabs() {
 }
 // Модуь работы с меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
-	const header = document.querySelector(".header");
-	// const catBtn = document.getElementById('catBtn');
-	const catBtnCl = document.getElementById('catBtnCl');
-	const iconMenu = document.getElementById('iconMenu');
-	const menuCatalog = document.querySelector('.menu-catalog');
-	const buttonCat = document.querySelectorAll(".button-catalog");
-	buttonCat.forEach(buttonCat => {
-		if (buttonCat) {
-			buttonCat.addEventListener("click", function (e) {
-				if (bodyLockStatus) {
-					iconMenu.classList.toggle('_active');
-					menuCatalog.classList.toggle('_active');
-					header.classList.toggle('_before');
-					bodyLockToggle();
-					// document.documentElement.classList.toggle("menu-open");
-				}
-			});
-		};
-		if (catBtnCl) {
-			catBtnCl.addEventListener('click', function () {
-				iconMenu.classList.remove('_active');
-				menuCatalog.classList.remove('_active');
-				header.classList.remove('_before');
-				// bodyLockToggle();
-				bodyUnlock();
-			});
-		}
-	})
-	// Модуль закрытия по ESC 
-	window.onkeydown = function (event) {
-		if (event.keyCode == 27) {
-			iconMenu.classList.remove('_active');
-			menuCatalog.classList.remove('_active');
-			header.classList.remove('_before');
-			bodyUnlock();
-			console.log('escape click');
-		}
-	};
+	// 	const header = document.querySelector(".header");
+	// 	// const catBtn = document.getElementById('catBtn');
+	// 	const catBtnCl = document.getElementById('catBtnCl');
+	// 	const iconMenu = document.getElementById('iconMenu');
+	// 	const menuCatalog = document.querySelector('.menu-catalog');
+	// 	const buttonCat = document.querySelectorAll(".button-catalog");
+	// 	buttonCat.forEach(buttonCat => {
+	// 		if (buttonCat) {
+	// 			buttonCat.addEventListener("click", function (e) {
+	// 				if (bodyLockStatus) {
+	// 					iconMenu.classList.toggle('_active');
+	// 					menuCatalog.classList.toggle('_active');
+	// 					header.classList.toggle('_before');
+	// 					bodyLockToggle();
+	// 					// document.documentElement.classList.toggle("menu-open");
+	// 				}
+	// 			});
+	// 		};
+	// 		if (catBtnCl) {
+	// 			catBtnCl.addEventListener('click', function () {
+	// 				iconMenu.classList.remove('_active');
+	// 				menuCatalog.classList.remove('_active');
+	// 				header.classList.remove('_before');
+	// 				// bodyLockToggle();
+	// 				bodyUnlock();
+	// 			});
+	// 		}
+	// 	})
+	// 	// Модуль закрытия по ESC 
+	// 	window.onkeydown = function (event) {
+	// 		if (event.keyCode == 27) {
+	// 			iconMenu.classList.remove('_active');
+	// 			menuCatalog.classList.remove('_active');
+	// 			header.classList.remove('_before');
+	// 			bodyUnlock();
+	// 			console.log('escape click');
+	// 		}
+	// 	};
 }
 export function menuOpen() {
 	bodyLock();
@@ -502,59 +502,59 @@ export function menuClose() {
 	bodyUnlock();
 	document.documentElement.classList.remove("menu-open");
 }
-// Search =====================================================================================================================================
-const lineBlockBlk = document.querySelector(".lineBlock-blk");
-const search = document.querySelector(".search-form");
-const searchInput = document.querySelector(".search-form__input");
-const searchMenu = document.querySelector(".menu-search");
-const searchBtnClosed = document.querySelector(".search-form__btn-closed");
-const headerSearchFxCl = document.querySelector(".header__search-fix-closed");
-const interFacelinkText = document.querySelectorAll(".interface__link-text");
+// // Search =====================================================================================================================================
+// const lineBlockBlk = document.querySelector(".lineBlock-blk");
+// const search = document.querySelector(".search-form");
+// const searchInput = document.querySelector(".search-form__input");
+// const searchMenu = document.querySelector(".menu-search");
+// const searchBtnClosed = document.querySelector(".search-form__btn-closed");
+// const headerSearchFxCl = document.querySelector(".header__search-fix-closed");
+// const interFacelinkText = document.querySelectorAll(".interface__link-text");
 
-interFacelinkText.forEach(linkText => {
-	searchInput.addEventListener('click', function () {
-		search.classList.add("_active");
-		searchMenu.classList.add("_active");
-		searchBtnClosed.classList.add("_active");
-		linkText.classList.add("_none");
-		// lineBlockBlk.classList.add('_active');
-		// header.classList.add('_active');
-		bodyLock();
-		// bodyLockToggle();
-	})
-	searchBtnClosed.addEventListener('click', function () {
-		search.classList.remove("_active");
-		searchMenu.classList.remove("_active");
-		searchBtnClosed.classList.remove("_active");
-		linkText.classList.remove("_none");
-		// lineBlockBlk.classList.remove('_active');
-		// header.classList.remove('_active');
-		// bodyLockToggle();
-		bodyUnlock();
-		window.onkeydown = function (event) {
-			if (event.keyCode == 27) {
-				search.classList.remove("_active");
-				searchMenu.classList.remove("_active");
-				searchBtnClosed.classList.remove("_active");
-				linkText.classList.remove("_none");
-				// lineBlockBlk.classList.remove('_active');
-				// bodyLockToggle();
-				bodyUnlock();
-				console.log('escape click');
-			}
-		};
-	})
-	headerSearchFxCl.addEventListener('click', function () {
-		search.classList.remove("_active");
-		searchMenu.classList.remove("_active");
-		searchBtnClosed.classList.remove("_active");
-		linkText.classList.remove("_none");
-		// lineBlockBlk.classList.remove('_active');
-		// header.classList.remove('_active');
-		// bodyLockToggle();
-		bodyUnlock();
-	})
-})
+// interFacelinkText.forEach(linkText => {
+// 	searchInput.addEventListener('click', function () {
+// 		search.classList.add("_active");
+// 		searchMenu.classList.add("_active");
+// 		searchBtnClosed.classList.add("_active");
+// 		linkText.classList.add("_none");
+// 		// lineBlockBlk.classList.add('_active');
+// 		// header.classList.add('_active');
+// 		bodyLock();
+// 		// bodyLockToggle();
+// 	})
+// 	searchBtnClosed.addEventListener('click', function () {
+// 		search.classList.remove("_active");
+// 		searchMenu.classList.remove("_active");
+// 		searchBtnClosed.classList.remove("_active");
+// 		linkText.classList.remove("_none");
+// 		// lineBlockBlk.classList.remove('_active');
+// 		// header.classList.remove('_active');
+// 		// bodyLockToggle();
+// 		bodyUnlock();
+// 		window.onkeydown = function (event) {
+// 			if (event.keyCode == 27) {
+// 				search.classList.remove("_active");
+// 				searchMenu.classList.remove("_active");
+// 				searchBtnClosed.classList.remove("_active");
+// 				linkText.classList.remove("_none");
+// 				// lineBlockBlk.classList.remove('_active');
+// 				// bodyLockToggle();
+// 				bodyUnlock();
+// 				console.log('escape click');
+// 			}
+// 		};
+// 	})
+// 	headerSearchFxCl.addEventListener('click', function () {
+// 		search.classList.remove("_active");
+// 		searchMenu.classList.remove("_active");
+// 		searchBtnClosed.classList.remove("_active");
+// 		linkText.classList.remove("_none");
+// 		// lineBlockBlk.classList.remove('_active');
+// 		// header.classList.remove('_active');
+// 		// bodyLockToggle();
+// 		bodyUnlock();
+// 	})
+// })
 // Всплывающие меню при наведении ===================================================================================================================
 // const menuLineBlockItem = document.querySelectorAll('.menu-lineBlock__item');
 // const lineBlockBlk = document.querySelector('.lineBlock-blk');
@@ -671,22 +671,22 @@ if (btnCatMob) {
 	});
 }
 // cat-search ================================================================================================================================================================
-const catEntityInp = document.getElementById('cat-entity-input');
-const catEntityCl = document.getElementById('cat-entity-cl');
-const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
+// const catEntityInp = document.getElementById('cat-entity-input');
+// const catEntityCl = document.getElementById('cat-entity-cl');
+// const catEntityMenuSearch = document.getElementById('cat-entity-menu-search');
 
-if (catEntityInp) {
-	catEntityInp.addEventListener('click', function () {
-		catEntityMenuSearch.classList.add('_active');
-		catEntityCl.classList.add('_active');
-	});
-}
-if (catEntityCl) {
-	catEntityCl.addEventListener('click', function () {
-		catEntityMenuSearch.classList.remove('_active');
-		catEntityCl.classList.remove('_active');
-	});
-}
+// if (catEntityInp) {
+// 	catEntityInp.addEventListener('click', function () {
+// 		catEntityMenuSearch.classList.add('_active');
+// 		catEntityCl.classList.add('_active');
+// 	});
+// }
+// if (catEntityCl) {
+// 	catEntityCl.addEventListener('click', function () {
+// 		catEntityMenuSearch.classList.remove('_active');
+// 		catEntityCl.classList.remove('_active');
+// 	});
+// }
 // FiltersMob =========================================================================================================================================================================================
 const filterMobFl = document.querySelector('.filter-mob-block__btn_fl');
 const filterMobSl = document.querySelector('.filter-mob-block__btn_sl');

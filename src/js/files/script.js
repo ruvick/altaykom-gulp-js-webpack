@@ -114,63 +114,63 @@ if (productsViewToggle.length > 0) {
 		});
 	});
 }
-// Menu Catalog ======================================================================================================================================================================
-if (document.documentElement.clientWidth > 768) {
-	const catalogMenuItems = document.querySelectorAll('.menu-catalog__body .menu-lineBlock__item');
+// // Menu Catalog ======================================================================================================================================================================
+// if (document.documentElement.clientWidth > 768) {
+// 	const catalogMenuItems = document.querySelectorAll('.menu-catalog__body .menu-lineBlock__item');
 
-	if (catalogMenuItems.length > 0) {
-		catalogMenuItems.forEach((item, index) => {
-			item.addEventListener('mouseenter', () => {
-				let wrappers = document.querySelectorAll('.menu-catalog__sub-menu__wrapper');
-				let id = item.getAttribute('data-id');
+// 	if (catalogMenuItems.length > 0) {
+// 		catalogMenuItems.forEach((item, index) => {
+// 			item.addEventListener('mouseenter', () => {
+// 				let wrappers = document.querySelectorAll('.menu-catalog__sub-menu__wrapper');
+// 				let id = item.getAttribute('data-id');
 
-				if (wrappers.length > 0) {
-					wrappers.forEach((w) => {
-						if (id == w.getAttribute('data-id')) {
-							w.classList.add('active');
-						} else {
-							w.classList.remove('active');
-						}
-					});
-				}
-			});
-		});
-	}
-} else {
-	const catalogMenuItems = document.querySelectorAll('.menu-lineBlock__item svg');
+// 				if (wrappers.length > 0) {
+// 					wrappers.forEach((w) => {
+// 						if (id == w.getAttribute('data-id')) {
+// 							w.classList.add('active');
+// 						} else {
+// 							w.classList.remove('active');
+// 						}
+// 					});
+// 				}
+// 			});
+// 		});
+// 	}
+// } else {
+// 	const catalogMenuItems = document.querySelectorAll('.menu-lineBlock__item svg');
 
-	if (catalogMenuItems.length > 0) {
-		catalogMenuItems.forEach((item, index) => {
-			item.addEventListener('click', () => {
-				let wrappers = document.querySelectorAll('.menu-catalog__body');
-				let id = item.closest('.menu-lineBlock__item').getAttribute('data-id');
+// 	if (catalogMenuItems.length > 0) {
+// 		catalogMenuItems.forEach((item, index) => {
+// 			item.addEventListener('click', () => {
+// 				let wrappers = document.querySelectorAll('.menu-catalog__body');
+// 				let id = item.closest('.menu-lineBlock__item').getAttribute('data-id');
 
-				if (wrappers.length > 0) {
-					wrappers.forEach((w) => {
-						if (id == w.getAttribute('data-id')) {
-							w.classList.remove('drop-menu-catalog');
-						} else {
-							w.classList.add('drop-menu-catalog');
-						}
-					});
-				}
-			});
-		});
+// 				if (wrappers.length > 0) {
+// 					wrappers.forEach((w) => {
+// 						if (id == w.getAttribute('data-id')) {
+// 							w.classList.remove('drop-menu-catalog');
+// 						} else {
+// 							w.classList.add('drop-menu-catalog');
+// 						}
+// 					});
+// 				}
+// 			});
+// 		});
 
-		const catalogMenuBacks = document.querySelectorAll('.drop-menu-catalog__btn-back');
+// 		const catalogMenuBacks = document.querySelectorAll('.drop-menu-catalog__btn-back');
 
-		catalogMenuBacks.forEach((item, index) => {
-			item.addEventListener('click', () => {
-				item.closest('.menu-catalog__body').classList.add('drop-menu-catalog');
+// 		catalogMenuBacks.forEach((item, index) => {
+// 			item.addEventListener('click', () => {
+// 				item.closest('.menu-catalog__body').classList.add('drop-menu-catalog');
 
-				let item0 = document.querySelector('.menu-catalog__body[data-id="0"]');
+// 				let item0 = document.querySelector('.menu-catalog__body[data-id="0"]');
 
-				item0?.classList.remove('drop-menu-catalog');
+// 				item0?.classList.remove('drop-menu-catalog');
 
-			});
-		});
-	}
-}
+// 			});
+// 		});
+// 	}
+// }
 // Открытие/закрытие сайдбара ======================================================================================================================================================================
 const ManagementFiltersBtn = document.querySelector('.directory-management__filters-btn');
 const pageSidebar = document.querySelector('.page__sidebar');
