@@ -316,13 +316,13 @@ if (catEntityTableTr) {
 	})
 }
 
-// Закрытие моб меню при клике вне области меню 
-window.addEventListener('click', e => { // при клике в любом месте окна браузера
-	const target = e.target // находим элемент, на котором был клик
-	if (!target.closest('.catalog-entity-table-tr')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-		catEntityTableCard.classList.remove('_active');
-	}
-})
+// Закрытие моб меню при клике вне области меню
+// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+// 	const target = e.target // находим элемент, на котором был клик
+// 	if (!target.closest('.catalog-entity-table-tr')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+// 		catEntityTableCard.classList.remove('_active');
+// 	}
+// })
 
 // Actions (делегирование события click)
 // document.addEventListener("click", documentActions);

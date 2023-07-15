@@ -35,6 +35,12 @@
 	}
 }
 
+.header._active {
+	z-index: 550;
+	background: #fff0;
+	border-bottom: none;
+}
+
 .header._before:before {
 	transform: scale(1);
 	transition: transform 0s ease 0.2s;
@@ -475,7 +481,7 @@
 .menu-catalog__img {
 	flex: 0 1 340px;
 	// height: 298px;
-	padding: 30px 50px 30px 30px; 
+	padding: 30px 50px 30px 30px;
 	padding-bottom: 17.3%;
 	border-radius: 30px;
 	margin-right: 20px;
@@ -565,9 +571,11 @@
 		background-color: #fff;
 	}
 }
+
 .catalog-entity-sec__search .menu-search._active::before {
 	display: none;
 }
+
 .menu-search__inner {
 	max-width: 935px;
 	width: 100%;
@@ -845,13 +853,14 @@
 	right: -65px;
 	z-index: 5000000;
 	visibility: hidden;
-	&::before{
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -860,8 +869,9 @@
 	opacity: 0;
 	pointer-events: none;
 	transform: translate(0, -10px);
-  transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
 }
+
 @media (any-hover: hover) {
 	.blockHover:hover .blockHover-child {
 		opacity: 1;
@@ -953,13 +963,14 @@
 	position: absolute;
 	top: 50px;
 	left: -45px;
-	&::before{
-    content: "";
-    position: absolute;
-    top: -35px;
-    left: 0;
-    width: 100%;
-    height: 10%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -35px;
+		left: 0;
+		width: 100%;
+		height: 10%;
 	}
 }
 
@@ -1028,13 +1039,14 @@
 	position: absolute;
 	top: 45px;
 	left: 10px;
-	&::before{
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -20px;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -1119,13 +1131,14 @@
 	top: 53px;
 	left: 33%;
 	max-width: 220px;
-	&::before{
+
+	&::before {
 		content: "";
-    position: absolute;
-    top: -35px;
-    left: 0;
-    width: 100%;
-    height: 30%;
+		position: absolute;
+		top: -35px;
+		left: 0;
+		width: 100%;
+		height: 30%;
 	}
 }
 
@@ -1138,13 +1151,14 @@
 	background: #fff;
 	box-shadow: 0 0 5px rgb(0 0 0 / 30%);
 	border-radius: 15px;
-	&::before{
+
+	&::before {
 		content: "";
-    position: absolute;
-    top: -35px;
-    left: 0;
-    width: 100%;
-    height: 16%;
+		position: absolute;
+		top: -35px;
+		left: 0;
+		width: 100%;
+		height: 16%;
 	}
 
 	.card-person {
@@ -1195,21 +1209,27 @@
 		stroke: #8F8E8E;
 	}
 }
+
 .header-legal-person__interface--fixed {
 	display: none;
 }
+
 .header-legal-person._header-show .header-legal-person__interface {
 	display: none;
 }
+
 .header-legal-person._header-show {
 	padding: 10px 0 20px 0;
+
 	.search-form {
-    display: block;
+		display: block;
 	}
+
 	.header-legal-person__interface--fixed {
 		display: flex;
 	}
 }
+
 //====================================================================================================
 //Burger
 /*

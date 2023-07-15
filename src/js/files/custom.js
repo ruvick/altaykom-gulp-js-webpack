@@ -3,9 +3,11 @@ import { bodyLockStatus, bodyLockToggle } from "./functions.js";
 let showedWindow = ""
 
 // Каталог
+const header = document.querySelector('.header');
 const catBtnAll = document.getElementById('catBtn');
 const headerMenuCatalog = document.getElementById('header-menu-catalog');
 const iconMenu = document.getElementById('iconMenu');
+const shadow = document.querySelector('.shadow');
 
 function toggleCatalog() {
 
@@ -13,6 +15,8 @@ function toggleCatalog() {
 
 	headerMenuCatalog.classList.toggle("_active");
 	iconMenu.classList.toggle('_active');
+	shadow.classList.toggle('_active');
+	header.classList.toggle('_active');
 	showedWindow = (headerMenuCatalog.classList.contains("_active")) ? "headerMenuCatalog" : ""
 }
 
@@ -41,6 +45,7 @@ function toggleSearch() {
 	search.classList.toggle("_active");
 	searchMenu.classList.toggle("_active");
 	searchBtnClosed.classList.toggle("_active");
+	// shadow.classList.toggle('_active');
 	interFacelinkText.forEach(linkText => {
 		linkText.classList.toggle("_none");
 	})
@@ -72,7 +77,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	};
 })
 
-
+// Закрытие моб меню при клике вне области меню 
+// window.addEventListener('click', e => { // при клике в любом месте окна браузера
+// 	const target = e.target // находим элемент, на котором был клик
+// 	if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+// 		toggleCatalog()
+// 		bodyLockToggle()
+// 		console.log('closest');
+// 	}
+// })
 // Модуь работы с меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
 	const header = document.querySelector(".header");
@@ -235,14 +248,14 @@ if (document.documentElement.clientWidth > 1024) {
 		menuLineBlockItem[i].addEventListener('mouseenter', (e) => {
 			let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
 			child.classList.add('_active');
-			// lineBlockBlk.classList.add('_active');
-			bodyLockToggle();
+			lineBlockBlk.classList.add('_active');
+			// bodyLockToggle();
 		})
 		menuLineBlockItem[i].addEventListener('mouseleave', () => {
 			let child = menuLineBlockItem[i].getElementsByClassName('sub-list')[0];
 			child.classList.remove('_active');
-			// lineBlockBlk.classList.remove('_active');
-			bodyLockToggle();
+			lineBlockBlk.classList.remove('_active');
+			// bodyLockToggle();
 		})
 	}
 	// }

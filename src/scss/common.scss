@@ -351,6 +351,7 @@
 
 // Блок линии (Блок с двумя горизонтальными линиями)
 .lineBlock {
+	position: relative;
 	width: 100%;
 	// padding: 19px 0;
 	min-height: 64px;
@@ -359,17 +360,17 @@
 }
 
 .lineBlock-blk {
-	// display: none;
 	visibility: hidden;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
-	top: 213px;
+	top: 64px;
 	left: 0;
-	z-index: 100;
+	z-index: 150;
 	width: 100%;
-	height: 1000%;
-	background-color: #00000065;
+	height: 100%;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3960784314);
 	transition: all 0.3s;
 }
 
