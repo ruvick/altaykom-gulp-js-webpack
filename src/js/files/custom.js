@@ -77,13 +77,23 @@ document.addEventListener("DOMContentLoaded", () => {
 	};
 })
 
+if (shadow) {
+	shadow.addEventListener('click', function () {
+		headerMenuCatalog.classList.remove("_active");
+		iconMenu.classList.remove('_active');
+		shadow.classList.remove('_active');
+		header.classList.remove('_active');
+		bodyLockToggle()
+	});
+}
+
 // Закрытие моб меню при клике вне области меню 
 // window.addEventListener('click', e => { // при клике в любом месте окна браузера
 // 	const target = e.target // находим элемент, на котором был клик
 // 	if (!target.closest('.header')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
 // 		toggleCatalog()
 // 		bodyLockToggle()
-// 		console.log('closest');
+// 		console.log('closest');   
 // 	}
 // })
 // Модуь работы с меню (бургер) =======================================================================================================================================================================================================================
