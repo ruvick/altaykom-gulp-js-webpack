@@ -693,6 +693,11 @@
 	.slider-brends .slider-brends__inner {
 		border-radius: 0;
 	}
+
+	.breadcrumbs {
+		width: auto;
+		overflow: auto;
+	}
 }
 
 @media (max-width: 960px) {
@@ -1620,6 +1625,11 @@
 
 	.shadow {
 		display: none;
+	}
+
+	.service-banner__text,
+	.service-banner__text .title {
+		width: 100%;
 	}
 }
 
