@@ -5,67 +5,68 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page page-typical">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-typical">
+			@@include('html/components/_lineBlock.htm',{})
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
+					<div class="breadcrumbs__inner">
 						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">гарантии</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
-      <section class="section-title"> 
-        <div class="_container">
-          <div class="section-title__title title-main">
-            гарантии
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">
+						гарантии
+					</div>
+				</div>
+			</section>
 
-      <section class="typical-section section">
-        <div class="_container">
+			<section class="typical-section section">
+				<div class="_container">
 
-          <div class="typical-block d-flex">
+					<div class="typical-block d-flex">
 
-            <div class="typical-block__content"> 
-              <ul>
-                <li>
-                  На все пищевые ингредиенты, инвентарь и оборудование у нас есть сертификаты и документы.
-                </li>
-                <li>
-                  Производство нашей продукции происходит под нашим строгим контролем.
-                </li>
-                <li>
-                  Наша продукция проходит лабораторные исследования
-                  на соответствие стандартам и нормам.
-                </li>
-              </ul>
-            </div>
+						<div class="typical-block__content">
+							<ul>
+								<li>
+									На все пищевые ингредиенты, инвентарь и оборудование у нас есть сертификаты и документы.
+								</li>
+								<li>
+									Производство нашей продукции происходит под нашим строгим контролем.
+								</li>
+								<li>
+									Наша продукция проходит лабораторные исследования
+									на соответствие стандартам и нормам.
+								</li>
+							</ul>
+						</div>
 
-            <div class="typical-block__img">
-              <img src="@img/typical/01.jpg" alt="Картинка блока">
-            </div>
+						<div class="typical-block__img">
+							<img src="@img/typical/01.jpg" alt="Картинка блока">
+						</div>
 
-          </div>
+					</div>
 
-        </div>
-      </section>
+				</div>
+			</section>
 
-      @@include('html/components/_certificatesSec.htm',{})
+			@@include('html/components/_certificatesSec.htm',{})
 
-      @@include('html/components/_sending.htm',{})
+			@@include('html/components/_sending.htm',{})
 
-    </main>
-    @@include('html/_footer.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>

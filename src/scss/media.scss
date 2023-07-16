@@ -268,11 +268,11 @@
 }
 
 @media (max-width: 910px) {
-	.physical-list-person {
-		width: 90%;
-		min-width: 0;
-		padding: 25px 15px;
-	}
+	// .physical-list-person {
+	// 	width: 90%;
+	// 	min-width: 0;
+	// 	padding: 25px 15px;
+	// }
 }
 
 @media (max-width: 1024px) {
@@ -973,7 +973,7 @@
 	}
 
 	.physical-list-person {
-		width: 96%;
+		width: 100%;
 	}
 
 	.mob-btn-block {

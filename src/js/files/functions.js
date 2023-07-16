@@ -577,35 +577,35 @@ export function menuClose() {
 // 	}
 // 	menuHover();
 // }
-// Мои списки =============================================================================================================================================================================================
-const physicalListPerson = document.querySelector('.physical-list-person');
-const newListsCard = document.querySelectorAll('.new-lists__card');
-const backBtn = document.getElementById('back-btn');
-const physicalCl = document.getElementById('physical-close');
+// // Мои списки =============================================================================================================================================================================================
+// const physicalListPerson = document.querySelector('.physical-list-person'); 
+// const newListsCard = document.querySelectorAll('.new-lists__card');
+// const backBtn = document.getElementById('back-btn');
+// const physicalCl = document.getElementById('physical-close');
 
-newListsCard.forEach((item) => {
-	item.addEventListener("click", function () {
-		physicalListPerson.classList.add("_active");
-		bodyLockToggle();
-		blackout();
-	});
-});
+// newListsCard.forEach((item) => {
+// 	item.addEventListener("click", function () {
+// 		physicalListPerson.classList.add("_active");
+// 		bodyLockToggle();
+// 		blackout();
+// 	});
+// });
 
-if (backBtn) {
-	backBtn.addEventListener('click', function () {
-		physicalListPerson.classList.remove('_active');
-		bodyLockToggle();
-		blackout();
-	});
-}
+// if (backBtn) {
+// 	backBtn.addEventListener('click', function () {
+// 		physicalListPerson.classList.remove('_active');
+// 		bodyLockToggle();
+// 		blackout();
+// 	});
+// }
 
-if (physicalCl) {
-	physicalCl.addEventListener('click', function () {
-		physicalListPerson.classList.remove('_active');
-		bodyLockToggle();
-		blackout();
-	});
-}
+// if (physicalCl) {
+// 	physicalCl.addEventListener('click', function () {
+// 		physicalListPerson.classList.remove('_active');
+// 		bodyLockToggle();
+// 		blackout();
+// 	});
+// }
 // Открыть/закрыть catalog в header ==========================================================================================================================
 // const header = document.querySelector(".header");
 // const catBtn = document.getElementById('catBtn');

@@ -217,3 +217,55 @@ if (document.documentElement.clientWidth > 1024) {
 	// }
 	// menuHover();
 }
+// Open multicorzine ======================================================================================================================================================================================
+
+const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
+const multicorzineLegalEntity = document.querySelector('.physical-list-person');
+const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
+
+// function toggleMulticorzine() {
+
+if (headerLegalBascetIcon) {
+	headerLegalBascetIcon.addEventListener('click', function () {
+		multicorzineLegalEntity.classList.add('_active');
+		shadow.classList.add('_active');
+		bodyLockToggle()
+	});
+}
+if (multicorClose) {
+	multicorClose.addEventListener('click', function () {
+		multicorzineLegalEntity.classList.remove('_active');
+		shadow.classList.remove('_active');
+		bodyLockToggle()
+	});
+}
+// }
+// Мои списки =============================================================================================================================================================================================
+const physicalListPerson = document.querySelector('.physical-list-person');
+const newListsCard = document.querySelectorAll('.new-lists__card');
+const backBtn = document.getElementById('back-btn');
+const physicalCl = document.getElementById('physical-close');
+
+newListsCard.forEach((item) => {
+	item.addEventListener("click", function () {
+		physicalListPerson.classList.add("_active");
+		shadow.classList.add('_active');
+		bodyLockToggle();
+	});
+});
+
+if (backBtn) {
+	backBtn.addEventListener('click', function () {
+		physicalListPerson.classList.remove('_active');
+		shadow.classList.remove('_active');
+		bodyLockToggle();
+	});
+}
+
+if (physicalCl) {
+	physicalCl.addEventListener('click', function () {
+		physicalListPerson.classList.remove('_active');
+		shadow.classList.remove('_active');
+		bodyLockToggle();
+	});
+}

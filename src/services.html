@@ -5,80 +5,81 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{}) 
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
-						<a href="home.html"> главная </a> / 
+					<div class="breadcrumbs__inner">
+						<a href="home.html"> главная </a> /
 						<span class="breadcrumb_last" aria-current="page">услуги</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__title title-main">
-            услуги
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">
+						услуги
+					</div>
+				</div>
+			</section>
 
-      <section class="services-section section">
-        <div class="_container">
+			<section class="services-section section">
+				<div class="_container">
 
-          <div class="services-section__row servicesBlock-bg d-flex">
-            <a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_01">
-              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
-              <div class="servicesBlock-bg__card-text">
-                Изготовление сахарной пудры
-              </div>
-            </a>
+					<div class="services-section__row servicesBlock-bg d-flex">
+						<a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_01">
+							<!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+							<div class="servicesBlock-bg__card-text">
+								Изготовление сахарной пудры
+							</div>
+						</a>
 
-            <a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_02">
-              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
-              <div class="servicesBlock-bg__card-text">
-                Производство инвентаря
-              </div>
-            </a>
+						<a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_02">
+							<!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+							<div class="servicesBlock-bg__card-text">
+								Производство инвентаря
+							</div>
+						</a>
 
-            <a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_small servicesBlock-bg__card_03">
-              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
-              <div class="servicesBlock-bg__card-text">
-                Доставка товара
-              </div>
-            </a>
+						<a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_small servicesBlock-bg__card_03">
+							<!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+							<div class="servicesBlock-bg__card-text">
+								Доставка товара
+							</div>
+						</a>
 
-            <a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_small servicesBlock-bg__card_04">
-              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
-              <div class="servicesBlock-bg__card-text">
-                Информационная <br> поддержка
-              </div>
-            </a>
+						<a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_small servicesBlock-bg__card_04">
+							<!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+							<div class="servicesBlock-bg__card-text">
+								Информационная <br> поддержка
+							</div>
+						</a>
 
-            <a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_small servicesBlock-bg__card_05">
-              <!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
-              <div class="servicesBlock-bg__card-text">
-                Технологическая <br> поддержка
-              </div>
-            </a>
-          </div>
+						<a href="#" class="servicesBlock-bg__card servicesBlock-bg__card_small servicesBlock-bg__card_05">
+							<!-- <div class="servicesBlock-bg__card-icon-text">Услуги</div> -->
+							<div class="servicesBlock-bg__card-text">
+								Технологическая <br> поддержка
+							</div>
+						</a>
+					</div>
 
-        </div>
-      </section>
+				</div>
+			</section>
 
-      @@include('html/components/_sending.htm',{})
+			@@include('html/components/_sending.htm',{})
 
-    </main>
-    @@include('html/_footer.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>

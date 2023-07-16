@@ -1,6 +1,7 @@
 // Импорт функционала ==============================================================================================================================================================================================================================================================================================================================
 // import { isMobile } from "./functions.js";
 // import { formsModules } from "./forms/forms.js";
+import { bodyLockStatus, bodyLockToggle } from "./functions.js";
 
 // 'use strict';
 // document.addEventListener('DOMContentLoaded', () => {
@@ -129,7 +130,7 @@ if (productsViewToggle.length > 0) {
 // 						if (id == w.getAttribute('data-id')) {
 // 							w.classList.add('active');
 // 						} else {
-// 							w.classList.remove('active');
+// 							w.classList.remove('active'); 
 // 						}
 // 					});
 // 				}
@@ -183,21 +184,25 @@ if (ManagementFiltersBtn) {
 		pageMain.classList.toggle('width');
 	});
 }
-// Open multicorzine ======================================================================================================================================================================================
-const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
-const multicorzineLegalEntity = document.querySelector('.multicorzine-legal-entity');
-const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
+// // Open multicorzine ======================================================================================================================================================================================
+// const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon');
+// const multicorzineLegalEntity = document.querySelector('.multicorzine-legal-entity');
+// const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
 
-if (headerLegalBascetIcon) {
-	headerLegalBascetIcon.addEventListener('click', function () {
-		multicorzineLegalEntity.classList.add('_active');
-	});
-}
-if (multicorClose) {
-	multicorClose.addEventListener('click', function () {
-		multicorzineLegalEntity.classList.remove('_active');
-	});
-}
+// if (headerLegalBascetIcon) {
+// 	headerLegalBascetIcon.addEventListener('click', function () {
+// 		multicorzineLegalEntity.classList.add('_active');
+// 		shadow.classList.toggle('_active');
+// 		bodyLockToggle()
+// 	});
+// }
+// if (multicorClose) {
+// 	multicorClose.addEventListener('click', function () {
+// 		multicorzineLegalEntity.classList.remove('_active');
+// 		shadow.classList.toggle('_active');
+// 		bodyLockToggle()
+// 	});
+// }
 // Range ================================================================================================================================================================================================
 const rangeInput = document.querySelectorAll(".range-input input"),
 	priceInput = document.querySelectorAll(".price-input input"),

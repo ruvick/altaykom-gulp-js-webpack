@@ -1,330 +1,341 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Корзина физлицо" })
+@@include('html/_head.htm',{ "title":"Корзина физлицо" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header-user.htm',{})
-      <main class="page page-user">
+<body>
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header-user.htm',{})
+		<main class="page page-user">
 
-				<div class="breadcrumbs">
-					<div class="_container">
-						<div class="breadcrumbs__inner"> 
-							<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">корзина</span>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">корзина</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-title">
+				<div class="_container">
+					<div class="section-title__inner">
+						<div class="section-title__title title-small">Корзина</div>
+
+						<div class="icon-block">
+							<button type="button" data-tippy-content="в список" class="icon-block__btn btn-icon-big">
+								<svg class="btn-icon-big__icon">
+									<use xlink:href="#print-icon"></use>
+								</svg>
+							</button>
+
+							<button type="button" class="icon-block__btn btn-icon-big">
+								<svg class="btn-icon-big__icon">
+									<use xlink:href="#share-icon"></use>
+								</svg>
+							</button>
+
+							<button type="button" data-tippy-content="скачать файлом" class="icon-block__btn btn-icon-big">
+								<svg class="btn-icon-big__icon">
+									<use xlink:href="#download-icon"></use>
+								</svg>
+							</button>
+
+							<button type="button" data-tippy-content="распечатать" class="icon-block__btn btn-icon-big">
+								<svg class="btn-icon-big__icon">
+									<use xlink:href="#printer-icon"></use>
+								</svg>
+							</button>
 						</div>
 					</div>
-				</div> 
+				</div>
+			</div>
 
-        <div class="section-title">
-          <div class="_container">
-            <div class="section-title__inner">
-              <div class="section-title__title title-small">Корзина</div>
+			<section id="page-user-sec" class="page-user-sec section">
+				<div class="_container">
+					<div class="page-user-sec__inner basket-individuals-inner">
+						<div class="page-user-sec__main">
+							<div class="basket-individuals-block">
+								<div class="basket-individuals-block__row">
+									<div class="box-wrapper">
+										<div class="box-wrapper__row">
+											<div class="basket-individuals-sorting">
+												<div class="basket-individuals-sorting__checbox">
+													<label data-index="0" class="checkbox">
+														<input checked data-razdel="form" data-error="Ошибка" class="checkbox__input"
+															type="checkbox" value="1" name="form[]" />
+														<span class="checkbox__text"><span></span></span>
+													</label>
+												</div>
 
-              <div class="icon-block">
-                <button type="button" data-tippy-content="в список" class="icon-block__btn btn-icon-big">
-                  <svg class="btn-icon-big__icon">
-                    <use xlink:href="#print-icon"></use>
-                  </svg>
-                </button>
+												<div class="basket-individuals-sorting__img">
+													<img src="img/card-product/08.jpg" alt="" />
+												</div>
 
-                <button type="button" class="icon-block__btn btn-icon-big">
-                  <svg class="btn-icon-big__icon">
-                    <use xlink:href="#share-icon"></use>
-                  </svg>
-                </button>
+												<div class="basket-individuals-sorting__descp">
+													<div class="basket-individuals-sorting__title">
+														Кубики цукатные из апельсиновой цедры, длинная
+														строка
+													</div>
+													<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">5 кг
+													</div>
+													<div class="basket-individuals-sorting__add-info add-info">
+														<div class="add-info__item">
+															Вкус <span>Апельсин</span>
+														</div>
+														<div class="add-info__item">Арт. 56789056789</div>
+													</div>
+												</div>
+												<div class="basket-individuals-sorting__price-block">
+													<div class="basket-individuals-sorting__price-block-column">
+														<div class="price-new">
+															200.00<span class="rub"></span>/шт.
+														</div>
+													</div>
+												</div>
+												<div class="basket-individuals-sorting__quantity-cost">
+													<div class="card-product__interactive-adding">
+														<div class="interactive-adding-quantity active">
+															<div class="quantity">
+																<div class="quantity__button quantity__button_minus _icon-minus"></div>
+																<div class="quantity__input">
+																	<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																		value="10" />
+																</div>
+																<div class="quantity__button quantity__button_plus _icon-plus"></div>
+															</div>
+														</div>
+													</div>
+													<div class="basket-individuals-sorting__quantity-cost-column">
+														<div class="total-price rub">2 000.00</div>
+													</div>
+												</div>
 
-                <button type="button" data-tippy-content="скачать файлом" class="icon-block__btn btn-icon-big">
-                  <svg class="btn-icon-big__icon">
-                    <use xlink:href="#download-icon"></use> 
-                  </svg>
-                </button>
+												<div class="basket-individuals-sorting__icon">
+													<div class="basket-individuals-sorting__icon-item">
+														<button type="button" class="basket-individuals-sorting__favorite">
+															<svg class="basket-individuals-sorting__favorite-icon">
+																<use xlink:href="#favorites-product"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="basket-individuals-sorting__icon-item">
+														<button type="button" class="basket-individuals-sorting__urn">
+															<svg class="basket-individuals-sorting__urn-icon">
+																<use xlink:href="#bascket-grey"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="box-wrapper__row">
+											<div class="basket-individuals-sorting">
+												<div class="basket-individuals-sorting__checbox">
+													<label data-index="0" class="checkbox">
+														<input checked data-razdel="form" data-error="Ошибка" class="checkbox__input"
+															type="checkbox" value="1" name="form[]" />
+														<span class="checkbox__text"><span></span></span>
+													</label>
+												</div>
 
-                <button type="button" data-tippy-content="распечатать" class="icon-block__btn btn-icon-big">
-                  <svg class="btn-icon-big__icon">
-                    <use xlink:href="#printer-icon"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+												<div class="basket-individuals-sorting__img">
+													<img src="img/card-product/04.jpg" alt="" />
+												</div>
 
-        <section id="page-user-sec" class="page-user-sec section">
-          <div class="_container">
-            <div class="page-user-sec__inner basket-individuals-inner">
-              <div class="page-user-sec__main">
-                <div class="basket-individuals-block">
-                  <div class="basket-individuals-block__row">
-                    <div class="box-wrapper">
-                      <div class="box-wrapper__row">
-                        <div class="basket-individuals-sorting">
-                          <div class="basket-individuals-sorting__checbox">
-                            <label data-index="0" class="checkbox">
-                              <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input"  type="checkbox" value="1" name="form[]"/>
-                              <span class="checkbox__text"><span></span></span>
-                            </label>
-                          </div>
+												<div class="basket-individuals-sorting__descp">
+													<div class="basket-individuals-sorting__title">
+														Желейные шарики «Мармелатье»
+													</div>
+													<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">5 кг
+													</div>
+													<div class="basket-individuals-sorting__add-info add-info">
+														<div class="add-info__item">
+															Вкус <span>Апельсин</span>
+														</div>
+														<div class="add-info__item">Арт. 56789056789</div>
+													</div>
+												</div>
+												<div class="basket-individuals-sorting__price-block">
+													<div class="basket-individuals-sorting__price-block-column">
+														<div class="price-new price-new_red">
+															200.00<span class="rub"></span>/шт.
+														</div>
+														<div class="price-old">
+															300.00<span class="rub"></span>/шт.
+														</div>
+													</div>
+												</div>
+												<div class="basket-individuals-sorting__quantity-cost">
+													<div class="card-product__interactive-adding">
+														<div class="interactive-adding-quantity active">
+															<div class="quantity">
+																<div class="quantity__button quantity__button_minus _icon-minus"></div>
+																<div class="quantity__input">
+																	<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																		value="1" />
+																</div>
+																<div class="quantity__button quantity__button_plus _icon-plus"></div>
+															</div>
+														</div>
+													</div>
+													<div class="basket-individuals-sorting__quantity-cost-column">
+														<div class="sticker-product green-color">
+															экономия 100 ₽
+														</div>
+														<div class="total-price rub">200.00</div>
+													</div>
+												</div>
 
-                          <div class="basket-individuals-sorting__img">
-                            <img src="img/card-product/08.jpg" alt="" />
-                          </div>
+												<div class="basket-individuals-sorting__icon">
+													<div class="basket-individuals-sorting__icon-item">
+														<button type="button" class="basket-individuals-sorting__favorite">
+															<svg class="basket-individuals-sorting__favorite-icon">
+																<use xlink:href="#favorites-product"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="basket-individuals-sorting__icon-item">
+														<button type="button" class="basket-individuals-sorting__urn">
+															<svg class="basket-individuals-sorting__urn-icon">
+																<use xlink:href="#bascket-grey"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                          <div class="basket-individuals-sorting__descp">
-                            <div class="basket-individuals-sorting__title">
-                              Кубики цукатные из апельсиновой цедры, длинная
-                              строка
-                            </div>
-                            <div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">5 кг</div>
-                            <div class="basket-individuals-sorting__add-info add-info">
-                              <div class="add-info__item">
-                                Вкус <span>Апельсин</span>
-                              </div>
-                              <div class="add-info__item">Арт. 56789056789</div>
-                            </div>
-                          </div>
-                          <div class="basket-individuals-sorting__price-block">
-                            <div class="basket-individuals-sorting__price-block-column">
-                              <div class="price-new">
-                                200.00<span class="rub"></span>/шт.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="basket-individuals-sorting__quantity-cost">
-                            <div class="card-product__interactive-adding">
-                              <div class="interactive-adding-quantity active">
-                                <div class="quantity">
-                                  <div class="quantity__button quantity__button_minus _icon-minus"></div>
-                                  <div class="quantity__input">
-                                    <input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]" value="10"/>
-                                  </div>
-                                  <div class="quantity__button quantity__button_plus _icon-plus"></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="basket-individuals-sorting__quantity-cost-column">
-                              <div class="total-price rub">2 000.00</div>
-                            </div>
-                          </div>
+								<div class="basket-individuals-block__row">
+									<div class="basket-individuals-block__row-flex">
+										<div class="basket-individuals-block__title">
+											Недоступны для заказа
+										</div>
+										<button class="basket-individuals-block__btn-reset button-reset">
+											Удалить из корзины
+										</button>
+									</div>
+									<div class="box-wrapper">
+										<div class="box-wrapper__row">
+											<div class="basket-individuals-sorting">
+												<div class="basket-individuals-sorting__checbox" style="visibility: hidden">
+													<label data-index="0" class="checkbox">
+														<input checked data-razdel="form" data-error="Ошибка" class="checkbox__input"
+															type="checkbox" value="1" name="form[]" />
+														<span class="checkbox__text"><span></span></span>
+													</label>
+												</div>
 
-                          <div class="basket-individuals-sorting__icon">
-                            <div class="basket-individuals-sorting__icon-item">
-                              <button type="button" class="basket-individuals-sorting__favorite">
-                                <svg class="basket-individuals-sorting__favorite-icon">
-                                  <use xlink:href="#favorites-product"></use>
-                                </svg>
-                              </button>
-                            </div>
-                            <div class="basket-individuals-sorting__icon-item">
-                              <button type="button" class="basket-individuals-sorting__urn">
-                                <svg class="basket-individuals-sorting__urn-icon">
-                                  <use xlink:href="#bascket-grey"></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="box-wrapper__row">
-                        <div class="basket-individuals-sorting">
-                          <div class="basket-individuals-sorting__checbox">
-                            <label data-index="0" class="checkbox">
-                              <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]"/>
-                              <span class="checkbox__text"><span></span></span>
-                            </label>
-                          </div>
+												<div class="basket-individuals-sorting__img">
+													<img src="img/card-product/09.jpg" alt="" />
+												</div>
 
-                          <div class="basket-individuals-sorting__img">
-                            <img src="img/card-product/04.jpg" alt="" />
-                          </div>
-
-                          <div class="basket-individuals-sorting__descp">
-                            <div class="basket-individuals-sorting__title">
-                              Желейные шарики «Мармелатье»
-                            </div>
-                            <div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">5 кг</div>
-                            <div class="basket-individuals-sorting__add-info add-info">
-                              <div class="add-info__item">
-                                Вкус <span>Апельсин</span>
-                              </div>
-                              <div class="add-info__item">Арт. 56789056789</div>
-                            </div>
-                          </div>
-                          <div class="basket-individuals-sorting__price-block">
-                            <div class="basket-individuals-sorting__price-block-column">
-                              <div class="price-new price-new_red">
-                                200.00<span class="rub"></span>/шт.
-                              </div>
-                              <div class="price-old">
-                                300.00<span class="rub"></span>/шт.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="basket-individuals-sorting__quantity-cost">
-                            <div class="card-product__interactive-adding">
-                              <div class="interactive-adding-quantity active">
-                                <div class="quantity">
-                                  <div class="quantity__button quantity__button_minus _icon-minus"></div>
-                                  <div class="quantity__input">
-                                    <input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]" value="1"/>
-                                  </div>
-                                  <div class="quantity__button quantity__button_plus _icon-plus"
-                                  ></div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="basket-individuals-sorting__quantity-cost-column">
-                              <div class="sticker-product green-color">
-                                экономия 100 ₽
-                              </div>
-                              <div class="total-price rub">200.00</div>
-                            </div>
-                          </div>
-
-                          <div class="basket-individuals-sorting__icon">
-                            <div class="basket-individuals-sorting__icon-item">
-                              <button type="button" class="basket-individuals-sorting__favorite">
-                                <svg class="basket-individuals-sorting__favorite-icon">
-                                  <use xlink:href="#favorites-product"></use>
-                                </svg>
-                              </button>
-                            </div>
-                            <div class="basket-individuals-sorting__icon-item">
-                              <button type="button" class="basket-individuals-sorting__urn">
-                                <svg class="basket-individuals-sorting__urn-icon">
-                                  <use xlink:href="#bascket-grey"></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="basket-individuals-block__row">
-                    <div class="basket-individuals-block__row-flex">
-                      <div class="basket-individuals-block__title">
-                        Недоступны для заказа
-                      </div>
-                      <button class="basket-individuals-block__btn-reset button-reset">
-                        Удалить из корзины
-                      </button>
-                    </div>
-                    <div class="box-wrapper">
-                      <div class="box-wrapper__row">
-                        <div class="basket-individuals-sorting">
-                          <div class="basket-individuals-sorting__checbox" style="visibility: hidden">
-                            <label data-index="0" class="checkbox">
-                              <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]"/>
-                              <span class="checkbox__text"><span></span></span>
-                            </label>
-                          </div>
-
-                          <div class="basket-individuals-sorting__img">
-                            <img src="img/card-product/09.jpg" alt="" />
-                          </div>
-
-                          <div class="basket-individuals-sorting__descp">
-                            <div class="basket-individuals-sorting__title">
-                              Ароматизаторы для кондитерских изделий
-                            </div>
-                            <div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">2 кг</div>
-                            <div class="basket-individuals-sorting__add-info add-info">
-                              <!-- <div class="add-info__item">
+												<div class="basket-individuals-sorting__descp">
+													<div class="basket-individuals-sorting__title">
+														Ароматизаторы для кондитерских изделий
+													</div>
+													<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">2 кг
+													</div>
+													<div class="basket-individuals-sorting__add-info add-info">
+														<!-- <div class="add-info__item">
                                 Вкус <span>Апельсин</span>
                               </div> -->
-                              <div class="add-info__item">Арт. 56789056789</div>
-                            </div>
-                          </div>
-                          <div class="basket-individuals-sorting__price-block">
-                            <div class="basket-individuals-sorting__price-block-column">
-                              <div class="sticker-product pink-color">
-                                Закончился
-                              </div>
-                            </div>
-                          </div>
-                          <div class="basket-individuals-sorting__quantity-cost">
-                            <div class="basket-individuals-sorting__quantity-cost-column">
-                              <button type="button" class="basket-individuals-sorting__quantity-cost-btn btn">
-                                заказать
-                              </button>
-                              <button type="button" class="basket-individuals-sorting__quantity-cost-btn-text text-animation">
-                                Найти похожий
-                              </button>
-                            </div>
-                          </div>
+														<div class="add-info__item">Арт. 56789056789</div>
+													</div>
+												</div>
+												<div class="basket-individuals-sorting__price-block">
+													<div class="basket-individuals-sorting__price-block-column">
+														<div class="sticker-product pink-color">
+															Закончился
+														</div>
+													</div>
+												</div>
+												<div class="basket-individuals-sorting__quantity-cost">
+													<div class="basket-individuals-sorting__quantity-cost-column">
+														<button type="button" class="basket-individuals-sorting__quantity-cost-btn btn">
+															заказать
+														</button>
+														<button type="button"
+															class="basket-individuals-sorting__quantity-cost-btn-text text-animation">
+															Найти похожий
+														</button>
+													</div>
+												</div>
 
-                          <div class="basket-individuals-sorting__icon">
-                            <div class="basket-individuals-sorting__icon-item">
-                              <button type="button" class="basket-individuals-sorting__favorite">
-                                <svg class="basket-individuals-sorting__favorite-icon">
-                                  <use xlink:href="#favorites-product"></use>
-                                </svg>
-                              </button>
-                            </div>
-                            <div class="basket-individuals-sorting__icon-item">
-                              <button type="button" class="basket-individuals-sorting__urn">
-                                <svg class="basket-individuals-sorting__urn-icon">
-                                  <use xlink:href="#bascket-grey"></use>
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+												<div class="basket-individuals-sorting__icon">
+													<div class="basket-individuals-sorting__icon-item">
+														<button type="button" class="basket-individuals-sorting__favorite">
+															<svg class="basket-individuals-sorting__favorite-icon">
+																<use xlink:href="#favorites-product"></use>
+															</svg>
+														</button>
+													</div>
+													<div class="basket-individuals-sorting__icon-item">
+														<button type="button" class="basket-individuals-sorting__urn">
+															<svg class="basket-individuals-sorting__urn-icon">
+																<use xlink:href="#bascket-grey"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
-              <aside class="page-user-sec__aside">
-                <div class="formed-card">
-                  <div class="formed-card__row formed-card__row_flex">
-                    <div class="formed-card__text">2 товара на сумму</div>
-                    <button class="formed-card__btn-reset button-reset">
-                      Очистить
-                    </button>
-                  </div>
+						<aside class="page-user-sec__aside">
+							<div class="formed-card">
+								<div class="formed-card__row formed-card__row_flex">
+									<div class="formed-card__text">2 товара на сумму</div>
+									<button class="formed-card__btn-reset button-reset">
+										Очистить
+									</button>
+								</div>
 
-                  <div class="formed-card__row">
-                    <div class="formed-card__price-block">
-                      <div class="sticker-product green-color">
-                        экономия 100 ₽
-                      </div>
-                      <div class="total-price rub">2 200.00</div>
-                    </div>
-                  </div>
+								<div class="formed-card__row">
+									<div class="formed-card__price-block">
+										<div class="sticker-product green-color">
+											экономия 100 ₽
+										</div>
+										<div class="total-price rub">2 200.00</div>
+									</div>
+								</div>
 
-                  <div class="formed-card__row">
-                    <form action="#" class="formed-card__form">
-                      <div class="form__line">
-                        <div class="formed-card__result result-form">
-                          Промокод для скидки
-                        </div>
-                        <div class="formed-card__form-body form-body">
-                          <input type="email" name="email" data-required="email" data-validate="" placeholder="Промокод" class="form-body__input input" data-placeholder="Промокод"/>
-                          <button type="submit" class="formed-card__btn form-body__btn form__btn">
-														<svg>
-															<use xlink:href="#arrow-sending"></use>
-														</svg>
-													</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="formed-card__row">
-                    <a href="" class="formed-card__link btn btn_black">перейти к оформлению</a>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-      </main>
-      @@include('html/_footer-user.htm',{}) 
-			@@include('html/components/_mob-fixed-menu-card.htm',{})
-			@@include('sprite.svg',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
+								<div class="formed-card__row">
+									<form action="#" class="formed-card__form">
+										<div class="form__line">
+											<div class="formed-card__result result-form">
+												Промокод для скидки
+											</div>
+											<div class="formed-card__form-body form-body">
+												<input type="email" name="email" data-required="email" data-validate="" placeholder="Промокод"
+													class="form-body__input input" data-placeholder="Промокод" />
+												<button type="submit" class="formed-card__btn form-body__btn form__btn">
+													<svg>
+														<use xlink:href="#arrow-sending"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="formed-card__row">
+									<a href="" class="formed-card__link btn btn_black">перейти к оформлению</a>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer-user.htm',{})
+		@@include('html/components/_mob-fixed-menu-card.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
 </html>

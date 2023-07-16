@@ -1,841 +1,862 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"ЛК Физлицо текущие заказы" })
+@@include('html/_head.htm',{ "title":"ЛК Физлицо текущие заказы" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-				@@include('html/components/_lineBlock.htm',{})
-				@@include('html/components/_physical-list-person.htm',{})
+<body>
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
+			@@include('html/components/_physical-list-person.htm',{})
 
-				<div class="breadcrumbs">
-					<div class="_container">
-						<div class="breadcrumbs__inner"> 
-							<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">личный кабинет</span> 
-						</div>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">личный кабинет</span>
 					</div>
-				</div> 
+				</div>
+			</div>
 
-        <div class="section-title">
-          <div class="_container">
-            <div class="section-title__inner section-title_top">
-              <div class="section-title__title title-small">
-                Константинопольская Вероника <br>
-								Владимировна
-              </div>
-							<div class="card-person"> 
-								<div class="card-person__main">
-									<div class="card-person__image">
-										<img src="img/card-person/01.jpg" alt="Картинка менеджера">
-									</div>
-									<div class="card-person__descp">
-										<div class="card-person__name">Екатерина</div>
-										<div class="card-person__post">Персональный менеджер</div>
-										<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
-									</div>
+			<div class="section-title">
+				<div class="_container">
+					<div class="section-title__inner section-title_top">
+						<div class="section-title__title title-small">
+							Константинопольская Вероника <br>
+							Владимировна
+						</div>
+						<div class="card-person">
+							<div class="card-person__main">
+								<div class="card-person__image">
+									<img src="img/card-person/01.jpg" alt="Картинка менеджера">
 								</div>
-								<div class="card-person__nav">
-									<a href="tel:0000" class="card-person__btn text-animation">Позвонить</a>
-									<a href="mailto:" class="card-person__btn text-animation">Написать</a>
+								<div class="card-person__descp">
+									<div class="card-person__name">Екатерина</div>
+									<div class="card-person__post">Персональный менеджер</div>
+									<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
 								</div>
 							</div>
-            </div>
-          </div>
-        </div>
+							<div class="card-person__nav">
+								<a href="tel:0000" class="card-person__btn text-animation">Позвонить</a>
+								<a href="mailto:" class="card-person__btn text-animation">Написать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <section class="lc-physical-person page-user-sec section">
-          <div class="_container">
-            <div class="page-user-sec__inner">
-              <div class="page-user-sec__main">
+			<section class="lc-physical-person page-user-sec section">
+				<div class="_container">
+					<div class="page-user-sec__inner">
+						<div class="page-user-sec__main">
 
-								<div data-tabs class="lc-physical-person__tabs tabs">
-									<nav data-tabs-titles class="tabs__navigation">
-										<button type="button" class="tabs__title _tab-active">Текущие заказы</button>
-										<button type="button" class="tabs__title">История покупок</button>
-										<button type="button" class="tabs__title">Мои списки</button>
-										<button type="button" class="tabs__title">Настройка профиля</button>
-									</nav>
-									<div data-tabs-body class="tabs__content">
-										<div class="tabs__body">
-											
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 55 от 15 ноября</div>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_red">создан, не оплачен</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
+							<div data-tabs class="lc-physical-person__tabs tabs">
+								<nav data-tabs-titles class="tabs__navigation">
+									<button type="button" class="tabs__title _tab-active">Текущие заказы</button>
+									<button type="button" class="tabs__title">История покупок</button>
+									<button type="button" class="tabs__title">Мои списки</button>
+									<button type="button" class="tabs__title">Настройка профиля</button>
+								</nav>
+								<div data-tabs-body class="tabs__content">
+									<div class="tabs__body">
+
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 55 от 15 ноября</div>
 													</div>
 												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Доставка транспортом Алтайком: <span>По согласованию</span></div>
-															<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content="Подсказка" type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-															<button type="button" class="orders-box__payment btn btn_black">оплатить</button>
-														</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_red">создан, не оплачен</span>
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/01.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/02.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
 													</div>
 												</div>
 											</div>
-
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 56 от 15 ноября</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Доставка транспортом Алтайком: <span>По согласованию</span>
 														</div>
+														<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_green">создан, оплачен</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
+													<div class="orders-box__row">
+														<button data-tippy-content="Подсказка" type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+														<button type="button" class="orders-box__payment btn btn_black">оплатить</button>
 													</div>
 												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Доставка транспортом Алтайком: <span>23 февраля с 11:00 до 15:00</span></div>
-															<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/01.jpg" alt="Картинка">
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/02.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/02.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
 													</div>
 												</div>
 											</div>
+										</div>
 
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 58 от 17 ноября</div>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_green">подтвержен</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 56 от 15 ноября</div>
 													</div>
 												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Доставка транспортом Алтайком: <span>По согласованию</span></div>
-															<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_green">создан, оплачен</span>
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/02.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
 													</div>
 												</div>
 											</div>
-
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 59 от 17 ноября</div>
-														</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Доставка транспортом Алтайком: <span>23 февраля с 11:00 до
+																15:00</span></div>
+														<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_green">доставка</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
 													</div>
 												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Доставка транспортом Алтайком: <span>23 февраля с 11:00 до 15:00</span></div>
-															<div class="orders-box__text">Оплата: <span>Оплата в офисе</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/02.jpg" alt="Картинка">
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
 													</div>
 												</div>
 											</div>
+										</div>
 
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 60 от 17 ноября</div>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_green">готов к выдаче</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 58 от 17 ноября</div>
 													</div>
 												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Самовывоз: <span>Алтайский край, г. Барнаул, ул. Гридасова, 16</span></div>
-															<div class="orders-box__text">Время: <span>Пн-Пт: 08:00-17:00,  Сб-Вс: выходные</span></div>
-															<div class="orders-box__text">Оплата: <span>Оплата в офисе</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#urn-delete"></use>
-																</svg>
-															</button>
-														</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_green">подтвержен</span>
 													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
 													</div>
 												</div>
+											</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Доставка транспортом Алтайком: <span>По согласованию</span>
+														</div>
+														<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
+													</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/02.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 59 от 17 ноября</div>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_green">доставка</span>
+													</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
+													</div>
+												</div>
+											</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Доставка транспортом Алтайком: <span>23 февраля с 11:00 до
+																15:00</span></div>
+														<div class="orders-box__text">Оплата: <span>Оплата в офисе</span></div>
+													</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 60 от 17 ноября</div>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_green">готов к выдаче</span>
+													</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
+													</div>
+												</div>
+											</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Самовывоз: <span>Алтайский край, г. Барнаул, ул. Гридасова,
+																16</span></div>
+														<div class="orders-box__text">Время: <span>Пн-Пт: 08:00-17:00, Сб-Вс: выходные</span></div>
+														<div class="orders-box__text">Оплата: <span>Оплата в офисе</span></div>
+													</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="tabs__body">
+
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 55 от 15 ноября</div>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_red">получен, не оплачен</span>
+													</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
+													</div>
+												</div>
+											</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Доставлено: <span>23 февраля с 11:00 до 15:00</span></div>
+														<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
+													</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+														<button type="button" class="orders-box__payment btn btn_black">оплатить</button>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/01.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/02.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 55 от 15 ноября</div>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_green">получен, оплачен</span>
+													</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
+													</div>
+												</div>
+											</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Доставлено: <span>23 февраля с 11:00 до 15:00</span></div>
+														<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
+													</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/01.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/02.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="orders-box">
+											<div class="orders-box__header">
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<div class="orders-box__number">№ 60 от 17 ноября</div>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__item">
+														<span class="sticker-product sticker-product_grey-bg">отменен</span>
+													</div>
+													<div class="orders-box__item">
+														<div class="orders-box__price rub">115 320.00</div>
+													</div>
+												</div>
+											</div>
+											<div class="orders-box__body">
+												<div class="orders-box__column orders-box__column_row">
+													<div class="orders-box__row orders-box__row_col">
+														<div class="orders-box__text">Самовывоз: <span>Алтайский край, г. Барнаул, ул. Гридасова,
+																16</span></div>
+														<div class="orders-box__text">Время: <span>Пн-Пт: 08:00-17:00, Сб-Вс: выходные</span></div>
+														<div class="orders-box__text">Оплата: <span>Оплата в офисе</span></div>
+													</div>
+													<div class="orders-box__row">
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#copy-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#printer-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#more-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="orders-box__column">
+													<div class="orders-box__img">
+														<img src="img/card-product/03.jpg" alt="Картинка">
+													</div>
+													<div class="orders-box__img">
+														<img src="img/card-product/04.jpg" alt="Картинка">
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									<div class="tabs__body">
+
+										<div class="new-lists">
+											<button type="button" class="new-lists__btn btn btn_width">новый список</button>
+
+											<div class="new-lists__inner">
+
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Любимый список</div>
+														<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2
+																200.00</span></div>
+														<div class="card-new-list__image">
+															<img src="img/card-product/" alt="Изображение списка">
+														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Новый Год</div>
+														<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25
+																000.00</span></div>
+														<div class="card-new-list__image">
+															<img src="img/" alt="Изображение списка">
+														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Любимый список</div>
+														<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2
+																200.00</span></div>
+														<div class="card-new-list__image">
+															<img src="img/" alt="Изображение списка">
+														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="new-lists__column">
+													<div class="new-lists__card card-new-list">
+														<div class="card-new-list__title">Инструменты</div>
+														<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25
+																000.00</span></div>
+														<div class="card-new-list__image">
+															<img src="img/" alt="Изображение списка">
+														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
+												<div class="new-lists__column">
+													<div data-popup="#new-list" class="new-lists__card card-new-list card-new-list_create">
+														<div class="card-new-list__title">Новый список</div>
+														<div class="card-new-list__value">0 товаров</div>
+														<div class="card-new-list__image">
+															<img src="img/" alt="Изображение списка">
+														</div>
+														<button data-tippy-content class="card-new-list__btn-reset">
+															<svg class="result-empty__img-icon">
+																<use xlink:href="#urn-icon"></use>
+															</svg>
+														</button>
+													</div>
+												</div>
+
 											</div>
 
 										</div>
-										<div class="tabs__body">
-										
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 55 от 15 ноября</div>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_red">получен, не оплачен</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
-													</div>
-												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Доставлено: <span>23 февраля с 11:00 до 15:00</span></div>
-															<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-															<button type="button" class="orders-box__payment btn btn_black">оплатить</button>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/01.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/02.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-													</div>
-												</div>
-											</div>
 
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 55 от 15 ноября</div>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_green">получен, оплачен</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
-													</div>
+										<div class="lists-empty" style="display: none;">
+											<div class="result-empty">
+												<div class="result-empty__img">
+													<svg class="result-empty__img-icon">
+														<use xlink:href="#basket-result-empty"></use>
+													</svg>
 												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Доставлено: <span>23 февраля с 11:00 до 15:00</span></div>
-															<div class="orders-box__text">Оплата: <span>Предоплата, банковский счет</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/01.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/02.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-													</div>
-												</div>
+												<div class="result-empty__title">У Вас еще нет ни одного списка</div>
+												<div class="result-empty__subtitle">Создавайте свои списки из любимых продуктов</div>
+												<button type="button" class="btn btn_width">новый список</button>
 											</div>
-
-											<div class="orders-box">
-												<div class="orders-box__header">
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<div class="orders-box__number">№ 60 от 17 ноября</div>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__item">
-															<span class="sticker-product sticker-product_grey-bg">отменен</span>
-														</div>
-														<div class="orders-box__item">
-															<div class="orders-box__price rub">115 320.00</div>
-														</div>
-													</div>
-												</div>
-												<div class="orders-box__body">
-													<div class="orders-box__column orders-box__column_row">
-														<div class="orders-box__row orders-box__row_col">
-															<div class="orders-box__text">Самовывоз: <span>Алтайский край, г. Барнаул, ул. Гридасова, 16</span></div>
-															<div class="orders-box__text">Время: <span>Пн-Пт: 08:00-17:00,  Сб-Вс: выходные</span></div>
-															<div class="orders-box__text">Оплата: <span>Оплата в офисе</span></div>
-														</div>
-														<div class="orders-box__row">
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#copy-icon"></use>  
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#printer-icon"></use>
-																</svg>
-															</button>
-															<button data-tippy-content type="button" class="orders-box__btn btn-icon-big">
-																<svg class="btn-icon-big__icon">
-																	<use xlink:href="#more-icon"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-													<div class="orders-box__column">
-														<div class="orders-box__img">
-															<img src="img/card-product/03.jpg" alt="Картинка">
-														</div>
-														<div class="orders-box__img">
-															<img src="img/card-product/04.jpg" alt="Картинка">
-														</div>
-													</div>
-												</div>
-											</div>
-
 										</div>
-										<div class="tabs__body">
 
-											<div class="new-lists">
-												<button type="button" class="new-lists__btn btn btn_width">новый список</button>
 
-												<div class="new-lists__inner">
+									</div>
+									<div class="tabs__body">
 
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Любимый список</div>
-															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/card-product/" alt="Изображение списка">
-															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
+										<div class="setting-profile">
+											<div class="setting-profile__title">Мои данные</div>
+											<form action="#" class="setting-profile__form">
+												<div class="setting-profile__row">
+
+													<div class="box-order__form-input submission-form__input input">
+														<label for="name-inp" class="submission-form__label">ФИО*</label>
+														<input id="name-inp" type="text" name="name" data-validate data-required="name">
 													</div>
 
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Новый Год</div>
-															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
-															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
+													<div class="box-order__form-input submission-form__input input">
+														<label for="email-inp" class="submission-form__label">Email*</label>
+														<input id="email-inp" type="text" name="email" data-validate data-required="email">
 													</div>
 
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Любимый список</div>
-															<div class="card-new-list__value">2 шт. на <span class="card-new-list__value-price rub">2 200.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
-															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-
-													<div class="new-lists__column">
-														<div class="new-lists__card card-new-list">
-															<div class="card-new-list__title">Инструменты</div>
-															<div class="card-new-list__value">70 шт. на <span class="card-new-list__value-price rub">25 000.00</span></div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
-															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
-													</div>
-
-													<div class="new-lists__column">
-														<div data-popup="#new-list" class="new-lists__card card-new-list card-new-list_create">
-															<div class="card-new-list__title">Новый список</div>
-															<div class="card-new-list__value">0 товаров</div>
-															<div class="card-new-list__image">
-																<img src="img/" alt="Изображение списка">
-															</div>
-															<button data-tippy-content class="card-new-list__btn-reset">
-																<svg class="result-empty__img-icon">
-																	<use xlink:href="#urn-icon"></use>
-																</svg>
-															</button>
-														</div>
+													<div class="box-order__form-input submission-form__input input tel">
+														<label for="phone-inp" class="submission-form__label">Телефон*</label>
+														<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel">
 													</div>
 
 												</div>
-
-											</div>
-
-											<div class="lists-empty" style="display: none;">
-												<div class="result-empty">
-													<div class="result-empty__img">
-														<svg class="result-empty__img-icon">
-															<use xlink:href="#basket-result-empty"></use>
-														</svg>
-													</div>
-													<div class="result-empty__title">У Вас еще нет ни одного списка</div>
-													<div class="result-empty__subtitle">Создавайте свои списки из любимых продуктов</div>
-													<button type="button" class="btn btn_width">новый список</button>
-												</div>
-											</div>
-
-
+												<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
+											</form>
 										</div>
-										<div class="tabs__body"> 
-											
-												<div class="setting-profile">
-													<div class="setting-profile__title">Мои данные</div>
-													<form action="#" class="setting-profile__form">
-														<div class="setting-profile__row">
 
-															<div class="box-order__form-input submission-form__input input">
-																<label for="name-inp" class="submission-form__label">ФИО*</label>
-																<input id="name-inp" type="text" name="name" data-validate data-required="name">
-															</div>
-
-															<div class="box-order__form-input submission-form__input input">
-																<label for="email-inp" class="submission-form__label">Email*</label>
-																<input id="email-inp" type="text" name="email" data-validate data-required="email">
-															</div>
-
-															<div class="box-order__form-input submission-form__input input tel">
-																<label for="phone-inp" class="submission-form__label">Телефон*</label>
-																<input id="phone-inp" type="tel" name="phone" data-validate data-required="tel"> 
-															</div>
-
-														</div>
-														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
-													</form>
-												</div>
-
-												<div class="setting-profile">
-													<div class="setting-profile__title">Профили</div>
-													<div class="setting-profile__row row_column">
-														<div class="setting-profile__item item-profile">
-															<div class="item-profile__descp">
-																<div class="item-profile__title">Открытое акционерное общество "Конфетка"</div>
-																<div class="item-profile__text">Дата обновления 20.11.2022</div>
-																<div class="item-profile__text">Тип плательщика: <span>Юридическое лицо</span></div>
-															</div>
-															<div class="item-profile__button">
-																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
-																	<svg class="btn-icon-big__icon">
-																		<use xlink:href="#edit-icon"></use>  
-																	</svg>
-																</button>
-																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
-																	<svg class="btn-icon-big__icon">
-																		<use xlink:href="#urn-delete"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
-														<div class="setting-profile__item item-profile">
-															<div class="item-profile__descp">
-																<div class="item-profile__title">Константинопольская Вероника Владимировна</div>
-																<div class="item-profile__text">Дата обновления 01.11.2022</div>
-																<div class="item-profile__text">Тип плательщика: <span>Физическое лицо</span></div>
-															</div>
-															<div class="item-profile__button">
-																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
-																	<svg class="btn-icon-big__icon">
-																		<use xlink:href="#edit-icon"></use>  
-																	</svg>
-																</button>
-																<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
-																	<svg class="btn-icon-big__icon">
-																		<use xlink:href="#urn-delete"></use>
-																	</svg>
-																</button>
-															</div>
-														</div>
+										<div class="setting-profile">
+											<div class="setting-profile__title">Профили</div>
+											<div class="setting-profile__row row_column">
+												<div class="setting-profile__item item-profile">
+													<div class="item-profile__descp">
+														<div class="item-profile__title">Открытое акционерное общество "Конфетка"</div>
+														<div class="item-profile__text">Дата обновления 20.11.2022</div>
+														<div class="item-profile__text">Тип плательщика: <span>Юридическое лицо</span></div>
+													</div>
+													<div class="item-profile__button">
+														<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#edit-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
 													</div>
 												</div>
-
-												<div class="setting-profile">
-													<div class="setting-profile__title">Рассылки</div>
-													<div class="setting-profile__title-small">Присылать информацию на почту:</div>
-													<form action="#" class="setting-profile__form">
-														<div class="setting-profile__row row_nowrap">
-															<div class="box-order__form-input submission-form__input input">
-																<label for="emails-inp" class="submission-form__label">Email*</label>
-																<input id="emails-inp" type="text" name="email" data-validate data-required="email">
-															</div>
-															<div class="setting-profile__form-descp">
-																<div class="setting-profile__form-descp-text">После добавления или изменения адреса подписки вам будет выслан код подтверждения.</div>
-																<div class="setting-profile__form-descp-text">Подписка будет не активной до ввода кода подтверждения.</div>
-															</div>
-														</div>
-														<div class="setting-profile__checkbox">
-															<label data-index="0" class="checkbox">
-																<input data-razdel="form" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-																<span class="checkbox__text"><span>Семинары, мастер-классы</span></span>
-															</label>
-															<label data-index="1" class="checkbox">
-																<input data-razdel="form" checked data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-																<span class="checkbox__text"><span>Новинки, поступления</span></span>
-															</label>
-														</div>
-														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
-													</form>
+												<div class="setting-profile__item item-profile">
+													<div class="item-profile__descp">
+														<div class="item-profile__title">Константинопольская Вероника Владимировна</div>
+														<div class="item-profile__text">Дата обновления 01.11.2022</div>
+														<div class="item-profile__text">Тип плательщика: <span>Физическое лицо</span></div>
+													</div>
+													<div class="item-profile__button">
+														<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#edit-icon"></use>
+															</svg>
+														</button>
+														<button data-tippy-content type="button" class="item-profile__btn btn-icon-big">
+															<svg class="btn-icon-big__icon">
+																<use xlink:href="#urn-delete"></use>
+															</svg>
+														</button>
+													</div>
 												</div>
+											</div>
+										</div>
 
-												<div class="setting-profile">
-													<div class="setting-profile__title">Смена пароля</div>
-													<form action="#" class="setting-profile__form">
-														<div class="setting-profile__row row_rewers">
-
-															<div class="box-order__form-input submission-form__input input">
-																<label for="pass-inp" class="submission-form__label">Пароль повторно*</label>
-																<input id="pass-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
-																<button class="submission-form__show-pass form__viewpass" type="button"> ffgg
-																	<svg>
-																		<use xlink:href="#show-password"></use>
-																	</svg>
-																</button>
-															</div>
-
-															<div class="box-order__form-input submission-form__input input">
-																<label for="pass-old-inp" class="submission-form__label">Старый пароль*</label>
-																<input id="pass-old-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
-																<button class="submission-form__show-pass form__viewpass" type="button"> 
-																	<svg>
-																		<use xlink:href="#show-password"></use>
-																	</svg>
-																</button>
-															</div>
-
-															<div class="box-order__form-input submission-form__input input">
-																<label for="pass-new-inp" class="submission-form__label">Новый пароль*</label>
-																<input id="pass-new-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
-																<button class="submission-form__show-pass form__viewpass" type="button">
-																	<svg>
-																		<use xlink:href="#show-password"></use>
-																	</svg>
-																</button>
-															</div>
-
-														</div>
-														<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
-													</form>
+										<div class="setting-profile">
+											<div class="setting-profile__title">Рассылки</div>
+											<div class="setting-profile__title-small">Присылать информацию на почту:</div>
+											<form action="#" class="setting-profile__form">
+												<div class="setting-profile__row row_nowrap">
+													<div class="box-order__form-input submission-form__input input">
+														<label for="emails-inp" class="submission-form__label">Email*</label>
+														<input id="emails-inp" type="text" name="email" data-validate data-required="email">
+													</div>
+													<div class="setting-profile__form-descp">
+														<div class="setting-profile__form-descp-text">После добавления или изменения адреса подписки
+															вам будет выслан код подтверждения.</div>
+														<div class="setting-profile__form-descp-text">Подписка будет не активной до ввода кода
+															подтверждения.</div>
+													</div>
 												</div>
+												<div class="setting-profile__checkbox">
+													<label data-index="0" class="checkbox">
+														<input data-razdel="form" checked data-error="Ошибка" class="checkbox__input"
+															type="checkbox" value="1" name="form[]">
+														<span class="checkbox__text"><span>Семинары, мастер-классы</span></span>
+													</label>
+													<label data-index="1" class="checkbox">
+														<input data-razdel="form" checked data-error="Ошибка" class="checkbox__input"
+															type="checkbox" value="1" name="form[]">
+														<span class="checkbox__text"><span>Новинки, поступления</span></span>
+													</label>
+												</div>
+												<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
+											</form>
+										</div>
 
-												<button type="button" class="profile-back-btn">Выйти из личного кабинета</button>
+										<div class="setting-profile">
+											<div class="setting-profile__title">Смена пароля</div>
+											<form action="#" class="setting-profile__form">
+												<div class="setting-profile__row row_rewers">
+
+													<div class="box-order__form-input submission-form__input input">
+														<label for="pass-inp" class="submission-form__label">Пароль повторно*</label>
+														<input id="pass-inp" autocomplete="off" type="password" name="password" value=""
+															data-validate data-required="password">
+														<button class="submission-form__show-pass form__viewpass" type="button"> ffgg
+															<svg>
+																<use xlink:href="#show-password"></use>
+															</svg>
+														</button>
+													</div>
+
+													<div class="box-order__form-input submission-form__input input">
+														<label for="pass-old-inp" class="submission-form__label">Старый пароль*</label>
+														<input id="pass-old-inp" autocomplete="off" type="password" name="password" value=""
+															data-validate data-required="password">
+														<button class="submission-form__show-pass form__viewpass" type="button">
+															<svg>
+																<use xlink:href="#show-password"></use>
+															</svg>
+														</button>
+													</div>
+
+													<div class="box-order__form-input submission-form__input input">
+														<label for="pass-new-inp" class="submission-form__label">Новый пароль*</label>
+														<input id="pass-new-inp" autocomplete="off" type="password" name="password" value=""
+															data-validate data-required="password">
+														<button class="submission-form__show-pass form__viewpass" type="button">
+															<svg>
+																<use xlink:href="#show-password"></use>
+															</svg>
+														</button>
+													</div>
+
+												</div>
+												<button type="submit" class="setting-profile__btn btn btn_black">сохранить изменения</button>
+											</form>
+										</div>
+
+										<button type="button" class="profile-back-btn">Выйти из личного кабинета</button>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<aside class="page-user-sec__aside">
+
+							<div class="lc-physical-person__formed-card formed-card">
+
+								<div class="formed-card__row">
+									<div class="formed-card__row-inner">
+										<div class="formed-card__small-text">лимит</div>
+									</div>
+									<div class="formed-card__limit rub">200 000.00</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="formed-card__row-inner">
+										<div class="formed-card__small-text">израсходовано</div>
+										<div class="formed-card__small-text">остаток</div>
+									</div>
+									<div class="formed-card__row-inner">
+										<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
+										<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
+									</div>
+									<div class="formed-card__progress progress">
+										<progress max="100" value="50"></progress>
+										<div class="progress-value"></div>
+										<div class="progress-bg">
+											<div class="progress-bar"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="table-info__inner">
+										<div class="table-info__table">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Задолжность</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value rub">
+														120 200.00
+													</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Просроченная задолжность</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value text-pink rub">20 200.00</div>
+												</div>
+											</div>
 
 										</div>
 									</div>
 								</div>
 
-              </div>
+							</div>
 
-              <aside class="page-user-sec__aside">
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('html/components/_mob-fixed-menu.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 
-                <div class="lc-physical-person__formed-card formed-card">
-
-                  <div class="formed-card__row">
-										<div class="formed-card__row-inner">
-											<div class="formed-card__small-text">лимит</div>
-										</div>
-										<div class="formed-card__limit rub">200 000.00</div>
-                  </div>
-
-                  <div class="formed-card__row">
-										<div class="formed-card__row-inner">
-											<div class="formed-card__small-text">израсходовано</div>
-											<div class="formed-card__small-text">остаток</div>
-										</div>
-										<div class="formed-card__row-inner">
-											<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
-											<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
-										</div>
-										<div class="formed-card__progress progress">
-											<progress max="100" value="50"></progress>
-											<div class="progress-value"></div>
-											<div class="progress-bg"><div class="progress-bar"></div></div>
-										</div>
-                  </div>
-
-                  <div class="formed-card__row">
-                    <div class="table-info__inner">
-                      <div class="table-info__table">
-                        <div class="table-info__table-row d-flex">
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-name">Задолжность</div>
-                            <div class="table-info__table-line"></div>
-                          </div>
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-value rub">
-                              120 200.00
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="table-info__table-row d-flex">
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-name">Просроченная задолжность</div>
-                            <div class="table-info__table-line"></div>
-                          </div>
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-value text-pink rub">20 200.00</div>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </aside>
-            </div>
-          </div>
-        </section>
-      </main>
-      @@include('html/_footer.htm',{}) 
-			@@include('html/components/_mob-fixed-menu.htm',{})
-			@@include('sprite.svg',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
 </html>

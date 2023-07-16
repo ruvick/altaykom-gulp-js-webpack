@@ -5,314 +5,316 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
+					<div class="breadcrumbs__inner">
 						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">контакты</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__title title-main"> 
-            контакты
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">
+						контакты
+					</div>
+				</div>
+			</section>
 
-      <section id="contacts-section" class="contacts-section section">
-        <div class="_container">
+			<section id="contacts-section" class="contacts-section section">
+				<div class="_container">
 
-          <div class="contacts-section__inner">
+					<div class="contacts-section__inner">
 
-            <div class="border-wrap-block">
-              <div class="border-wrap-block__inner">
-                <div class="border-wrap-block__row d-flex">
+						<div class="border-wrap-block">
+							<div class="border-wrap-block__inner">
+								<div class="border-wrap-block__row d-flex">
 
-                  <div class="icon-info-card d-flex">
-                    <div class="icon-info-card__icon icon-border">
-                      <svg class="icon-border__svg">
-                        <use xlink:href="#map-gold"></use>
-                      </svg>
-                    </div>
-                    <div class="icon-info-card__descp">
-                      <div class="icon-info-card__title">Адрес</div>
-                      <div class="icon-info-card__item">Алтайский край, г. Барнаул, ул. Гридасова, д. 16</div>
-                    </div>
-                  </div>
+									<div class="icon-info-card d-flex">
+										<div class="icon-info-card__icon icon-border">
+											<svg class="icon-border__svg">
+												<use xlink:href="#map-gold"></use>
+											</svg>
+										</div>
+										<div class="icon-info-card__descp">
+											<div class="icon-info-card__title">Адрес</div>
+											<div class="icon-info-card__item">Алтайский край, г. Барнаул, ул. Гридасова, д. 16</div>
+										</div>
+									</div>
 
-                  <div class="icon-info-card d-flex">
-                    <div class="icon-info-card__icon icon-border">
-                      <svg class="icon-border__svg">
-                        <use xlink:href="#time-gold"></use>
-                      </svg>
-                    </div>
-                    <div class="icon-info-card__descp">
-                      <div class="icon-info-card__title">Время работы</div>
-                      <div class="icon-info-card__item">Пн-Пт: 08:00-17:00, Сб-Вс: выходные</div>
-                    </div>
-                  </div>
+									<div class="icon-info-card d-flex">
+										<div class="icon-info-card__icon icon-border">
+											<svg class="icon-border__svg">
+												<use xlink:href="#time-gold"></use>
+											</svg>
+										</div>
+										<div class="icon-info-card__descp">
+											<div class="icon-info-card__title">Время работы</div>
+											<div class="icon-info-card__item">Пн-Пт: 08:00-17:00, Сб-Вс: выходные</div>
+										</div>
+									</div>
 
-                </div>
-              </div>
-              <div class="contacts-section__map">
-                <div id="map" class="map"></div>
-              </div>
-            </div>
+								</div>
+							</div>
+							<div class="contacts-section__map">
+								<div id="map" class="map"></div>
+							</div>
+						</div>
 
-            <div class="border-wrap-block">
-              <div class="border-wrap-block__inner">
-                <div class="border-wrap-block__row d-flex">
+						<div class="border-wrap-block">
+							<div class="border-wrap-block__inner">
+								<div class="border-wrap-block__row d-flex">
 
-                  <div class="icon-info-card d-flex">
-                    <div class="icon-info-card__icon icon-border">
-                      <svg class="icon-border__svg">
-                        <use xlink:href="#headphones-gold"></use>
-                      </svg>
-                    </div>
-                    <div class="icon-info-card__descp">
-                      <div class="icon-info-card__title">Позвонить по номеру</div>
-                      <div class="icon-info-card__item"><a href="tel:+73852462031" class="icon-info-card__link">
-												+7 (3852) 46 20 31</a> <span>/</span> <a href="tel:+73852467585" class="icon-info-card__link">
-												+7 (3852) 46 75 85</a></div>
-                    </div>
-                  </div>
+									<div class="icon-info-card d-flex">
+										<div class="icon-info-card__icon icon-border">
+											<svg class="icon-border__svg">
+												<use xlink:href="#headphones-gold"></use>
+											</svg>
+										</div>
+										<div class="icon-info-card__descp">
+											<div class="icon-info-card__title">Позвонить по номеру</div>
+											<div class="icon-info-card__item"><a href="tel:+73852462031" class="icon-info-card__link">
+													+7 (3852) 46 20 31</a> <span>/</span> <a href="tel:+73852467585" class="icon-info-card__link">
+													+7 (3852) 46 75 85</a></div>
+										</div>
+									</div>
 
-                  <div class="icon-info-card d-flex">
-                    <div class="icon-info-card__icon icon-border">
-                      <svg class="icon-border__svg">
-                        <use xlink:href="#mobile-gold"></use>
-                      </svg>
-                    </div>
-                    <div class="icon-info-card__descp">
-                      <div class="icon-info-card__title">Мобильный</div>
-                      <div class="icon-info-card__item"><a href="tel:+73852462031" class="icon-info-card__link">
-												+7 (3852) 46 20 31</a> <span>/</span> <a href="tel:+73852467585" class="icon-info-card__link">
-												+7 (3852) 46 75 85</a></div>
-                    </div>
-                  </div>
+									<div class="icon-info-card d-flex">
+										<div class="icon-info-card__icon icon-border">
+											<svg class="icon-border__svg">
+												<use xlink:href="#mobile-gold"></use>
+											</svg>
+										</div>
+										<div class="icon-info-card__descp">
+											<div class="icon-info-card__title">Мобильный</div>
+											<div class="icon-info-card__item"><a href="tel:+73852462031" class="icon-info-card__link">
+													+7 (3852) 46 20 31</a> <span>/</span> <a href="tel:+73852467585" class="icon-info-card__link">
+													+7 (3852) 46 75 85</a></div>
+										</div>
+									</div>
 
-                </div>
-                <div class="border-wrap-block__row d-flex">
+								</div>
+								<div class="border-wrap-block__row d-flex">
 
-                  <div class="icon-info-card d-flex">
-                    <div class="icon-info-card__icon icon-border">
-                      <svg class="icon-border__svg">
-                        <use xlink:href="#opt-gold"></use>
-                      </svg>
-                    </div>
-                    <div class="icon-info-card__descp">
-                      <div class="icon-info-card__title">Оптовикам</div>
-                      <div class="icon-info-card__item"><a href="#" class="icon-info-card__link">Сотрудничать с нами</a>
-                      </div>
-                    </div>
-                  </div>
+									<div class="icon-info-card d-flex">
+										<div class="icon-info-card__icon icon-border">
+											<svg class="icon-border__svg">
+												<use xlink:href="#opt-gold"></use>
+											</svg>
+										</div>
+										<div class="icon-info-card__descp">
+											<div class="icon-info-card__title">Оптовикам</div>
+											<div class="icon-info-card__item"><a href="#" class="icon-info-card__link">Сотрудничать с нами</a>
+											</div>
+										</div>
+									</div>
 
-                  <div class="icon-info-card d-flex">
-                    <div class="icon-info-card__icon icon-border">
-                      <svg class="icon-border__svg">
-                        <use xlink:href="#messege-gold"></use>
-                      </svg>
-                    </div>
-                    <div class="icon-info-card__descp">
-                      <div class="icon-info-card__title">Оставить заявку</div>
-                      <div class="icon-info-card__item"><a href="#" class="icon-info-card__link">Связаться с нами</a>
-                      </div>
-                    </div>
-                  </div>
+									<div class="icon-info-card d-flex">
+										<div class="icon-info-card__icon icon-border">
+											<svg class="icon-border__svg">
+												<use xlink:href="#messege-gold"></use>
+											</svg>
+										</div>
+										<div class="icon-info-card__descp">
+											<div class="icon-info-card__title">Оставить заявку</div>
+											<div class="icon-info-card__item"><a href="#" class="icon-info-card__link">Связаться с нами</a>
+											</div>
+										</div>
+									</div>
 
-                </div>
-              </div>
-            </div>
+								</div>
+							</div>
+						</div>
 
-            <div class="table-info">
+						<div class="table-info">
 
-              <div class="table-info__title">Юридическая информация</div>
-              <div class="table-info__subtitle">
-								<p>Зарегистрировано 08.06.2018 по юридическому адресу: <span>656006, Алтайский край, г. Барнаул, ул. Гридасова, д. 16</span></p> 
+							<div class="table-info__title">Юридическая информация</div>
+							<div class="table-info__subtitle">
+								<p>Зарегистрировано 08.06.2018 по юридическому адресу: <span>656006, Алтайский край, г. Барнаул, ул.
+										Гридасова, д. 16</span></p>
 							</div>
 
-              <div class="table-info__inner">
+							<div class="table-info__inner">
 
-                <div class="table-info__table">
+								<div class="table-info__table">
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">Полное название организации</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «АЛТАЙКОМ»</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">Полное название организации</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «АЛТАЙКОМ»</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">Генеральный директор</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">Иванов Данил Сергеевич</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">Генеральный директор</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">Иванов Данил Сергеевич</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">Английское название</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">OOO "ALTAIKOM"</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">Английское название</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">OOO "ALTAIKOM"</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ИНН</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">2222868602</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ИНН</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">2222868602</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ОГРН</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">1182225020890 от 08 июня 2018</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ОГРН</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">1182225020890 от 08 июня 2018</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">КПП</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">222201001</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">КПП</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">222201001</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ОКПО</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">28792184</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ОКПО</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">28792184</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ОКАТО</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">Алтайский край, Барнаул, Индустриальный</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ОКАТО</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">Алтайский край, Барнаул, Индустриальный</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ОКПО</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">28792184</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ОКПО</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">28792184</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ФСС</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">220302485722031</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ФСС</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">220302485722031</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">ФСС</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">220302485722031</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">ФСС</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">220302485722031</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">Регистрационный номер ПФР</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">032010126491</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">Регистрационный номер ПФР</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">032010126491</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">Банк</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">«Сбербанк» (ПАО) г. Барнаул</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">Банк</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">«Сбербанк» (ПАО) г. Барнаул</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">БИК</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">040173604</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">БИК</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">040173604</div>
+										</div>
+									</div>
 
-                  <div class="table-info__table-row d-flex">
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-name">К/с</div>
-                      <div class="table-info__table-line"></div>
-                    </div>
-                    <div class="table-info__table-col">
-                      <div class="table-info__table-value">000000000000</div>
-                    </div>
-                  </div>
+									<div class="table-info__table-row d-flex">
+										<div class="table-info__table-col">
+											<div class="table-info__table-name">К/с</div>
+											<div class="table-info__table-line"></div>
+										</div>
+										<div class="table-info__table-col">
+											<div class="table-info__table-value">000000000000</div>
+										</div>
+									</div>
 
-                </div>
+								</div>
 
-              </div>
+							</div>
 
 
-            </div>
+						</div>
 
-          </div>
+					</div>
 
-        </div>
-      </section>
+				</div>
+			</section>
 
-      @@include('html/components/_sending.htm',{})
+			@@include('html/components/_sending.htm',{})
 
-    </main>
-    @@include('html/_footer.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>

@@ -3,6 +3,7 @@
 @@include('html/_head.htm',{ "title":"ЛК Юрлицо Текущие заказы" })
 
 <body>
+	<div class="shadow"></div>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
@@ -11,22 +12,22 @@
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
+					<div class="breadcrumbs__inner">
 						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">личный кабинет</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
 			<div class="section-title">
 				<div class="_container">
 					<div class="section-title__inner">
 						<div class="section-title__title title-small">
-							Открытое акционерное общество "Конфетка" 
+							Открытое акционерное общество "Конфетка"
 						</div>
 						<div class="card-person">
 							<div class="card-person__main">
 								<div class="card-person__image">
-									<img src="img/card-person/01.jpg" alt="Картинка менеджера"> 
+									<img src="img/card-person/01.jpg" alt="Картинка менеджера">
 								</div>
 								<div class="card-person__descp">
 									<div class="card-person__name">Екатерина</div>
@@ -36,7 +37,7 @@
 							</div>
 							<div class="card-person__nav">
 								<a href="tel:0000" class="card-person__btn text-animation">Позвонить</a>
-								<a href="mailto:" type="button" class="card-person__btn text-animation">Написать</a> 
+								<a href="mailto:" type="button" class="card-person__btn text-animation">Написать</a>
 							</div>
 						</div>
 					</div>
@@ -60,45 +61,55 @@
 
 										<div class="lc-physical-person__select-inner">
 
-											<div data-spollers class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
+											<div data-spollers
+												class="lc-physical-person__select-block catalog-entity-filters__filters-block spollers _spoller-init">
 
-												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
-													<div data-spoller="" class="filters-catalog-item__title spollers__title">Статус заказа<span>: <span class="filters-catalog-item__title-value">0</span></span></div>
+												<div
+													class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
+													<div data-spoller="" class="filters-catalog-item__title spollers__title">Статус заказа<span>:
+															<span class="filters-catalog-item__title-value">0</span></span></div>
 													<div class="filters-catalog-item__menu menu-filters-catalog spollers__body" hidden="">
 														<form action="#" class="menu-filters-catalog__form">
-					
+
 															<div class="menu-filters-catalog__column">
 																<label data-index="0" class="checkbox">
-																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
 																	<span class="checkbox__text"><span>Создан</span></span>
 																</label>
 																<label data-index="0" class="checkbox">
-																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
 																	<span class="checkbox__text"><span>Подтвержден</span></span>
 																</label>
 																<label data-index="0" class="checkbox">
-																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
 																	<span class="checkbox__text"><span>Доставка</span></span>
 																</label>
 																<label data-index="0" class="checkbox">
-																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
 																	<span class="checkbox__text"><span>Готов к выдаче</span></span>
 																</label>
 																<label data-index="0" class="checkbox">
-																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+																	<input data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+																		value="1" name="form[]">
 																	<span class="checkbox__text"><span>Получен</span></span>
 																</label>
 															</div>
-					
+
 														</form>
 													</div>
 												</div>
 
-												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
-													<div data-spoller="" class="filters-catalog-item__title spollers__title">Дата заказа<span>: <span class="filters-catalog-item__title-value">0</span></span></div>
+												<div
+													class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
+													<div data-spoller="" class="filters-catalog-item__title spollers__title">Дата заказа<span>:
+															<span class="filters-catalog-item__title-value">0</span></span></div>
 													<div class="filters-catalog-item__menu menu-filters-catalog spollers__body" hidden="">
 														<form action="#" class="menu-filters-catalog__form">
-					
+
 															<div class="menu-filters-catalog__column">
 
 																<div class="datepicker">
@@ -108,16 +119,18 @@
 																</div>
 
 															</div>
-					
+
 														</form>
 													</div>
 												</div>
 
-												<div class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
-													<div data-spoller="" class="filters-catalog-item__title spollers__title">Сумма заказа<span>: <span class="filters-catalog-item__title-value">0</span></span></div>
+												<div
+													class="lc-physical-person__select-block-select catalog-entity-filters__item filters-catalog-item spollers__item">
+													<div data-spoller="" class="filters-catalog-item__title spollers__title">Сумма заказа<span>:
+															<span class="filters-catalog-item__title-value">0</span></span></div>
 													<div class="filters-catalog-item__menu menu-filters-catalog spollers__body" hidden="">
 														<div class="price-input">
-					
+
 															<div class="field">
 																<input type="number" class="input-min" value="0">
 															</div>
@@ -128,14 +141,14 @@
 														<div class="slider">
 															<div class="progress"></div>
 														</div>
-					
+
 														<div class="range-input">
 															<input type="range" class="range-min" min="0" max="10000" value="0" step="100">
 															<input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
 														</div>
 													</div>
 												</div>
-					
+
 											</div>
 
 											<div class="lc-physical-person__select-buttons">
@@ -651,7 +664,7 @@
 				</div>
 			</section>
 		</main>
-		@@include('html/_footer.htm',{}) 
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
 		@@include('sprite.svg',{})
 	</div>

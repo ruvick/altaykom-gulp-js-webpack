@@ -5,57 +5,60 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page page-typical">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-typical">
+			@@include('html/components/_lineBlock.htm',{})
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
-						<a href="home.html"> главная </a> / 
+					<div class="breadcrumbs__inner">
+						<a href="home.html"> главная </a> /
 						<span class="breadcrumb_last" aria-current="page">оплата и доставка</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__title title-main">
-            оплата <br> и доставка
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__title title-main">
+						оплата <br> и доставка
+					</div>
+				</div>
+			</section>
 
-      <section class="payment-delivery section">
-        <div class="_container">
+			<section class="payment-delivery section">
+				<div class="_container">
 
-          <div class="typical-block d-flex">
+					<div class="typical-block d-flex">
 
-            <div class="typical-block__content">
-              <ul>
-                <li>
-                  Выгодные цены на миллионы товаров
-                </li>
-                <li>
-                  Быстрая доставка по всей России
-                </li>
-                <li>
-                  Удобный документооборот и возмещение НДС
-                </li>
-              </ul>
-            </div>
+						<div class="typical-block__content">
+							<ul>
+								<li>
+									Выгодные цены на миллионы товаров
+								</li>
+								<li>
+									Быстрая доставка по всей России
+								</li>
+								<li>
+									Удобный документооборот и возмещение НДС
+								</li>
+							</ul>
+						</div>
 
-            <div class="typical-block__img">
-              <img src="@img/typical/02.jpg" alt="Картинка блока">
-            </div>
+						<div class="typical-block__img">
+							<img src="@img/typical/02.jpg" alt="Картинка блока">
+						</div>
 
-          </div>
+					</div>
 
 					<div class="payment-delivery-box">
 						<div class="payment-delivery-box__column">
 							<div class="payment-delivery-box__title">Бесплатная доставка по Барнаулу</div>
-							<div class="payment-delivery-box__subtitle"><p>*при сумме заказа от 1 500 ₽</p></div>
+							<div class="payment-delivery-box__subtitle">
+								<p>*при сумме заказа от 1 500 ₽</p>
+							</div>
 						</div>
 						<div class="payment-delivery-box__column">
 							<ul>
@@ -63,14 +66,15 @@
 									<span>При заказе менее 1 500 ₽</span> сумма доставки – от 100 до 300 ₽, оплата наличными водителю.
 								</li>
 								<li>
-									Доставка по городу осуществляется на <span>следующий рабочий день</span> после подтверждения заказа менеджером. 
+									Доставка по городу осуществляется на <span>следующий рабочий день</span> после подтверждения заказа
+									менеджером.
 								</li>
 								<li>
 									При <span>самовывозе</span> минимальной суммы заказа не существует.
 								</li>
 								<li>
 									Для населенных пунктов <span>Алтайского края</span> доставка осуществляется
-									по согласованию с менеджером компании. Оплата производится 
+									по согласованию с менеджером компании. Оплата производится
 									по безналичному расчету или наличными водителю.
 								</li>
 							</ul>
@@ -87,7 +91,7 @@
 									Доставка осуществляется <span>Почтой России</span> или <span>Транспортной компанией</span>.
 								</li>
 								<li>
-									Стоимость и время доставки зависит от <span>веса</span> и <span>адреса</span>. 
+									Стоимость и время доставки зависит от <span>веса</span> и <span>адреса</span>.
 								</li>
 								<li>
 									Доставка заказов осуществляется только при <span>100% предоплате</span>.
@@ -99,7 +103,9 @@
 					<div class="payment-delivery-box">
 						<div class="payment-delivery-box__column">
 							<div class="payment-delivery-box__title">Самовывоз</div>
-							<div class="payment-delivery-box__subtitle"><p>Алтайский край, г. Барнаул, ул. Гридасова, 16</p></div>
+							<div class="payment-delivery-box__subtitle">
+								<p>Алтайский край, г. Барнаул, ул. Гридасова, 16</p>
+							</div>
 						</div>
 						<div class="payment-delivery-box__column">
 							<ul>
@@ -117,18 +123,18 @@
 						</div>
 					</div>
 
-        </div>
-      </section>
+				</div>
+			</section>
 
-      @@include('html/components/_sending.htm',{})
+			@@include('html/components/_sending.htm',{})
 
-    </main>
-    @@include('html/_footer.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>

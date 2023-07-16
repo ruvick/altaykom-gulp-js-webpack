@@ -3,29 +3,30 @@
 @@include('html/_head.htm',{ "title":"Поиск" })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
-      <section class="search-section section-title">
-        <div class="_container">
-          <div class="section-title__title title">По вашему запросу ничего не найдено</div>
-          <div class="search-section__subtitle">Попробуйте изменить ваш запрос или воспользуйтесь
-            <a href="#сatalog-persons.html" class="search-section__subtitle-link text-animation">Каталогом</a>
-          </div>
-        </div>
-      </section>
+			<section class="search-section section-title">
+				<div class="_container">
+					<div class="section-title__title title">По вашему запросу ничего не найдено</div>
+					<div class="search-section__subtitle">Попробуйте изменить ваш запрос или воспользуйтесь
+						<a href="#сatalog-persons.html" class="search-section__subtitle-link text-animation">Каталогом</a>
+					</div>
+				</div>
+			</section>
 
-      @@include('html/components/_sales-leaders-sec.htm',{})
+			@@include('html/components/_sales-leaders-sec.htm',{})
 
-      @@include('html/components/_sending.htm',{})
-    </main>
-    @@include('html/_footer.htm',{}) 
+			@@include('html/components/_sending.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
 		@@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
 </body>
 
 </html>

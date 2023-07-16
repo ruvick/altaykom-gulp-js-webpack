@@ -5,52 +5,53 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
+					<div class="breadcrumbs__inner">
 						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">избранное</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__inner">
-            <div class="section-title__title title-main">
-              избранное
-            </div>
-            <button type="reset" class="section-title__button filter-controll__btn btn btn_reset">
-              очистить
-              <svg class="filter-controll__btn-icon">
-                <use xlink:href="#urn-icon"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__inner">
+						<div class="section-title__title title-main">
+							избранное
+						</div>
+						<button type="reset" class="section-title__button filter-controll__btn btn btn_reset">
+							очистить
+							<svg class="filter-controll__btn-icon">
+								<use xlink:href="#urn-icon"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</section>
 
-      <section id="favorites-sec" class="favorites-sec section">
-        <div class="_container">
+			<section id="favorites-sec" class="favorites-sec section">
+				<div class="_container">
 
-          <div data-tabs class="favorites-sec__tabs tabs">
-            <nav data-tabs-titles class="tabs__navigation">
-              <button type="button" class="tabs__title _tab-active">Ингредиенты</button>
-              <button type="button" class="tabs__title">Инвентарь</button>
-              <button type="button" class="tabs__title">Оборудование</button>
-              <button type="button" class="tabs__title">Наша продукция</button>
-            </nav>
-            <div data-tabs-body class="tabs__content">
-              <div class="tabs__body">
+					<div data-tabs class="favorites-sec__tabs tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _tab-active">Ингредиенты</button>
+							<button type="button" class="tabs__title">Инвентарь</button>
+							<button type="button" class="tabs__title">Оборудование</button>
+							<button type="button" class="tabs__title">Наша продукция</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
 
-                <div class="card-product-block">
+								<div class="card-product-block">
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column"> 
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -60,10 +61,10 @@
 														<svg>
 															<use xlink:href="#favorites-product"></use>
 														</svg>
-													</button> 
+													</button>
 												</div>
 												<img src="@img/card-product/01.jpg" alt="" />
-				
+
 												<div class="card-product__sticker-rating sticker-product-rating">
 													<div class="sticker-product-rating__rating">
 														<svg class="sticker-product-rating__icon">
@@ -82,9 +83,9 @@
 												</a>
 												<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
 											</div>
-				
+
 											<div class="card-product__interactive">
-				
+
 												<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
 													Много
 												</div>
@@ -97,7 +98,7 @@
 														790.00
 													</div>
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -114,15 +115,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -130,10 +131,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -177,7 +178,7 @@
 												790.00
 											</div> -->
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -194,15 +195,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -210,10 +211,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -258,7 +259,7 @@
 												790.00
 											</div> -->
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -275,15 +276,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -291,10 +292,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -338,7 +339,7 @@
 														790.00
 													</div> -->
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -355,15 +356,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -371,10 +372,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -384,10 +385,10 @@
 														<svg>
 															<use xlink:href="#favorites-product"></use>
 														</svg>
-													</button> 
+													</button>
 												</div>
 												<img src="@img/card-product/01.jpg" alt="" />
-				
+
 												<div class="card-product__sticker-rating sticker-product-rating">
 													<div class="sticker-product-rating__rating">
 														<svg class="sticker-product-rating__icon">
@@ -406,9 +407,9 @@
 												</a>
 												<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
 											</div>
-				
+
 											<div class="card-product__interactive">
-				
+
 												<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
 													Много
 												</div>
@@ -421,7 +422,7 @@
 														790.00
 													</div>
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -438,15 +439,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -454,10 +455,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -502,7 +503,7 @@
 												790.00
 											</div> -->
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -519,15 +520,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -535,10 +536,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -548,10 +549,10 @@
 														<svg>
 															<use xlink:href="#favorites-product"></use>
 														</svg>
-													</button> 
+													</button>
 												</div>
 												<img src="@img/card-product/01.jpg" alt="" />
-				
+
 												<div class="card-product__sticker-rating sticker-product-rating">
 													<div class="sticker-product-rating__rating">
 														<svg class="sticker-product-rating__icon">
@@ -570,9 +571,9 @@
 												</a>
 												<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
 											</div>
-				
+
 											<div class="card-product__interactive">
-				
+
 												<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
 													Много
 												</div>
@@ -585,7 +586,7 @@
 														790.00
 													</div>
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -602,15 +603,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -618,10 +619,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -665,7 +666,7 @@
 												790.00
 											</div> -->
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -682,15 +683,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -698,10 +699,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -711,10 +712,10 @@
 														<svg>
 															<use xlink:href="#favorites-product"></use>
 														</svg>
-													</button> 
+													</button>
 												</div>
 												<img src="@img/card-product/01.jpg" alt="" />
-				
+
 												<div class="card-product__sticker-rating sticker-product-rating">
 													<div class="sticker-product-rating__rating">
 														<svg class="sticker-product-rating__icon">
@@ -733,9 +734,9 @@
 												</a>
 												<span class="card-product__descp-sticker sticker-product-value">5 кг</span>
 											</div>
-				
+
 											<div class="card-product__interactive">
-				
+
 												<div class="card-product__interactive-how how-card how-card_green interactive-how_green">
 													Много
 												</div>
@@ -748,7 +749,7 @@
 														790.00
 													</div>
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -765,15 +766,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -781,10 +782,10 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                  <!-- Карточка -->
-                  <div class="card-product-block__column">
+									<!-- Карточка -->
+									<div class="card-product-block__column">
 										<div class="card-product">
 											<div class="card-product__img _ibg">
 												<div class="card-product__sticker-block">
@@ -828,7 +829,7 @@
 														790.00
 													</div> -->
 												</div>
-				
+
 												<div class="card-product__interactive-adding">
 													<div class="interactive-adding-bascet">
 														<div class="interactive-adding-bascet__value">
@@ -845,15 +846,15 @@
 															</svg>
 														</button>
 													</div>
-				
+
 													<div class="interactive-adding-quantity">
 														<div class="quantity">
 															<div class="quantity__button quantity__button_minus _icon-minus"></div>
 															<div class="quantity__input">
-																<input class="quantity__input-quantity" autocomplete="off" type="text"
-																	name="form[]" value="1" />
-																<input class="quantity__input-price rub" autocomplete="off" type="text"
-																	name="form[]" value="670.00" />
+																<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																	value="1" />
+																<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																	value="670.00" />
 															</div>
 															<div class="quantity__button quantity__button_plus _icon-plus"></div>
 														</div>
@@ -861,35 +862,35 @@
 												</div>
 											</div>
 										</div>
-                  </div>
+									</div>
 
-                </div>
+								</div>
 
-              </div>
-              <div class="tabs__body">
-                Нет товаров для просмотра
-              </div>
-              <div class="tabs__body">
-                Нет товаров для просмотра
-              </div>
-              <div class="tabs__body">
-                Нет товаров для просмотра
-              </div>
-            </div>
-          </div>
+							</div>
+							<div class="tabs__body">
+								Нет товаров для просмотра
+							</div>
+							<div class="tabs__body">
+								Нет товаров для просмотра
+							</div>
+							<div class="tabs__body">
+								Нет товаров для просмотра
+							</div>
+						</div>
+					</div>
 
-        </div>
-      </section>
+				</div>
+			</section>
 
-      @@include('html/components/_sending.htm',{})
+			@@include('html/components/_sending.htm',{})
 
-    </main>
-    @@include('html/_footer.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>

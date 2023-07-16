@@ -3,6 +3,7 @@
 @@include('html/_head.htm',{ "title":"Каталог физлицо" })
 
 <body>
+	<div class="shadow"></div>
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page">
@@ -12,12 +13,12 @@
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
+					<div class="breadcrumbs__inner">
 						<a href="home.html"> главная </a> / <a href="home.html">каталог </a> /
 						<span class="breadcrumb_last" aria-current="page">ингредиенты</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
 			<section class="section-title">
 				<div class="_container">
@@ -53,7 +54,7 @@
 				</div>
 			</section>
 
-			@@include('html/components/_сatalog-persons.htm',{}) 
+			@@include('html/components/_сatalog-persons.htm',{})
 
 			@@include('html/components/_recently-watched.htm',{})
 
@@ -62,7 +63,7 @@
 			@@include('html/components/_select-mob-menu.htm',{})
 
 		</main>
-		@@include('html/_footer.htm',{}) 
+		@@include('html/_footer.htm',{})
 		@@include('html/components/_mob-fixed-menu.htm',{})
 		@@include('sprite.svg',{})
 	</div>

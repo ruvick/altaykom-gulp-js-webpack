@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Физлицо заказ подробно" })
+@@include('html/_head.htm',{ "title":"Физлицо заказ подробно" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page page-order-details">
-				@@include('html/components/_lineBlock.htm',{})
-				@@include('html/components/_physical-list-person.htm',{}) 
+<body>
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-order-details">
+			@@include('html/components/_lineBlock.htm',{})
+			@@include('html/components/_physical-list-person.htm',{})
 
-				<div class="breadcrumbs">
-					<div class="_container">
-						<div class="breadcrumbs__inner"> 
-							<a href="home.html"> главная </a> / <a href="home.html"> личный кабинет </a> / <span class="breadcrumb_last" aria-current="page">заказ № 55</span>
-						</div>
+			<div class="breadcrumbs">
+				<div class="_container">
+					<div class="breadcrumbs__inner">
+						<a href="home.html"> главная </a> / <a href="home.html"> личный кабинет </a> / <span class="breadcrumb_last"
+							aria-current="page">заказ № 55</span>
 					</div>
-				</div> 
+				</div>
+			</div>
 
-        <div class="section-title">
-          <div class="_container">
-            <div class="section-title__inner">
-							<div class="section-title__inner-title">
-              <div class="section-title__title title-small">
+			<div class="section-title">
+				<div class="_container">
+					<div class="section-title__inner">
+						<div class="section-title__inner-title">
+							<div class="section-title__title title-small">
 								Заказ № 55
-              </div>
+							</div>
 							<div class="individual-order-details__title-btn">
 								<button data-tippy-content="" type="button" class="orders-box__btn btn-icon-big">
 									<svg class="btn-icon-big__icon">
@@ -42,323 +44,329 @@
 								</button>
 							</div>
 						</div>
-							<div class="card-person">
-								<div class="card-person__main">
-									<div class="card-person__image">
-										<img src="img/card-person/01.jpg" alt="Картинка менеджера">
-									</div>
-									<div class="card-person__descp">
-										<div class="card-person__name">Екатерина</div>
-										<div class="card-person__post">Персональный менеджер</div>
-										<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div> 
-									</div>
+						<div class="card-person">
+							<div class="card-person__main">
+								<div class="card-person__image">
+									<img src="img/card-person/01.jpg" alt="Картинка менеджера">
 								</div>
-								<div class="card-person__nav">
-									<button type="button" class="card-person__btn text-animation">Позвонить</button>
-									<button type="button" class="card-person__btn text-animation">Написать</button>
+								<div class="card-person__descp">
+									<div class="card-person__name">Екатерина</div>
+									<div class="card-person__post">Персональный менеджер</div>
+									<div class="card-person__time-working">Пн-Пт: 08:00-17:00</div>
 								</div>
 							</div>
-            </div>
-          </div>
-        </div>
+							<div class="card-person__nav">
+								<button type="button" class="card-person__btn text-animation">Позвонить</button>
+								<button type="button" class="card-person__btn text-animation">Написать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <section class="lc-physical-person page-user-sec section">
-          <div class="_container">
-            <div class="page-user-sec__inner">
-              <div class="page-user-sec__main individual-order-details-main"> 
+			<section class="lc-physical-person page-user-sec section">
+				<div class="_container">
+					<div class="page-user-sec__inner">
+						<div class="page-user-sec__main individual-order-details-main">
 
-								<div class="individual-order-details">
+							<div class="individual-order-details">
 
-									<div class="individual-order-details__order-block order-block-individual">
-										<div class="order-block-individual__date">Создан 15.10.2022</div>
-											<div class="order-block-individual__text-row">
-												Доставка: <span>Транспортом Алтайком</span>
-											</div>
-											<div class="order-block-individual__text-row">
-												Оплата: <span>Предоплата, банковский счет</span>
-										</div>
-										<span class="sticker-product sticker-product_red">создан, не оплачен</span>
-										<button type="button" class="order-block-individual__btn btn btn_black">оплатить заказ</button>
+								<div class="individual-order-details__order-block order-block-individual">
+									<div class="order-block-individual__date">Создан 15.10.2022</div>
+									<div class="order-block-individual__text-row">
+										Доставка: <span>Транспортом Алтайком</span>
+									</div>
+									<div class="order-block-individual__text-row">
+										Оплата: <span>Предоплата, банковский счет</span>
+									</div>
+									<span class="sticker-product sticker-product_red">создан, не оплачен</span>
+									<button type="button" class="order-block-individual__btn btn btn_black">оплатить заказ</button>
+								</div>
+
+								<div class="individual-order-details__box-product">
+
+									<div class="individual-order-details__box-product-value rub">2 товара на сумму <span>2 200.00</span>
 									</div>
 
-									<div class="individual-order-details__box-product">
+									<div class="basket-individuals-block">
+										<div class="basket-individuals-block__row">
+											<div class="box-wrapper">
+												<div class="box-wrapper__row">
+													<div class="basket-individuals-sorting">
 
-										<div class="individual-order-details__box-product-value rub">2 товара на сумму <span>2 200.00</span></div>
+														<div class="basket-individuals-sorting__img">
+															<img src="img/card-product/08.jpg" alt="">
+														</div>
 
-										<div class="basket-individuals-block">
-											<div class="basket-individuals-block__row">
-												<div class="box-wrapper">
-													<div class="box-wrapper__row">
-														<div class="basket-individuals-sorting">
-			
-															<div class="basket-individuals-sorting__img">
-																<img src="img/card-product/08.jpg" alt="">
+														<div class="basket-individuals-sorting__descp">
+															<div class="basket-individuals-sorting__title">
+																Кубики цукатные из апельсиновой цедры, длинная
+																строка
 															</div>
-			
-															<div class="basket-individuals-sorting__descp">
-																<div class="basket-individuals-sorting__title">
-																	Кубики цукатные из апельсиновой цедры, длинная
-																	строка
-																</div>
-																<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">
-																	5 кг
-																</div>
-																<div class="basket-individuals-sorting__add-info add-info">
-																	<div class="add-info__item">
-																		Вкус <span>Апельсин</span>
-																	</div>
-																	<div class="add-info__item">Арт. 56789056789</div>
-																</div>
+															<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">
+																5 кг
 															</div>
-															<div class="basket-individuals-sorting__price-block">
-																<div class="basket-individuals-sorting__price-block-column">
-																	<div class="price-new">
-																		200.00<span class="rub"></span>/шт.
-																	</div>
+															<div class="basket-individuals-sorting__add-info add-info">
+																<div class="add-info__item">
+																	Вкус <span>Апельсин</span>
 																</div>
+																<div class="add-info__item">Арт. 56789056789</div>
 															</div>
-															<div class="basket-individuals-sorting__quantity-cost">
-																10 шт.
-																<div class="basket-individuals-sorting__quantity-cost-column">
-																	<div class="total-price rub">2 000.00</div>
+														</div>
+														<div class="basket-individuals-sorting__price-block">
+															<div class="basket-individuals-sorting__price-block-column">
+																<div class="price-new">
+																	200.00<span class="rub"></span>/шт.
 																</div>
 															</div>
 														</div>
-													</div>
-													<div class="box-wrapper__row">
-														<div class="basket-individuals-sorting">
-			
-															<div class="basket-individuals-sorting__img">
-																<img src="img/card-product/04.jpg" alt="">
-															</div>
-			
-															<div class="basket-individuals-sorting__descp">
-																<div class="basket-individuals-sorting__title">
-																	Желейные шарики «Мармелатье»
-																</div>
-																<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">
-																	5 кг
-																</div>
-																<div class="basket-individuals-sorting__add-info add-info">
-																	<div class="add-info__item">Арт. 56789056789</div>
-																</div>
-															</div>
-															<div class="basket-individuals-sorting__price-block">
-																<div class="basket-individuals-sorting__price-block-column">
-																	<div class="price-new price-new_red">
-																		200.00<span class="rub"></span>/шт.
-																	</div>
-																	<div class="price-old">
-																		300.00<span class="rub"></span>/шт.
-																	</div>
-																</div>
-															</div>
-															<div class="basket-individuals-sorting__quantity-cost">
-																1 шт.
-																<div class="basket-individuals-sorting__quantity-cost-column">
-																	<div class="sticker-product green-color">экономия 100 ₽</div>
-																	<div class="total-price rub">200.00</div>
-																</div>
+														<div class="basket-individuals-sorting__quantity-cost">
+															10 шт.
+															<div class="basket-individuals-sorting__quantity-cost-column">
+																<div class="total-price rub">2 000.00</div>
 															</div>
 														</div>
 													</div>
 												</div>
-											</div>
+												<div class="box-wrapper__row">
+													<div class="basket-individuals-sorting">
 
+														<div class="basket-individuals-sorting__img">
+															<img src="img/card-product/04.jpg" alt="">
+														</div>
+
+														<div class="basket-individuals-sorting__descp">
+															<div class="basket-individuals-sorting__title">
+																Желейные шарики «Мармелатье»
+															</div>
+															<div class="basket-individuals-sorting__sticker sticker-product sticker-product_grey">
+																5 кг
+															</div>
+															<div class="basket-individuals-sorting__add-info add-info">
+																<div class="add-info__item">Арт. 56789056789</div>
+															</div>
+														</div>
+														<div class="basket-individuals-sorting__price-block">
+															<div class="basket-individuals-sorting__price-block-column">
+																<div class="price-new price-new_red">
+																	200.00<span class="rub"></span>/шт.
+																</div>
+																<div class="price-old">
+																	300.00<span class="rub"></span>/шт.
+																</div>
+															</div>
+														</div>
+														<div class="basket-individuals-sorting__quantity-cost">
+															1 шт.
+															<div class="basket-individuals-sorting__quantity-cost-column">
+																<div class="sticker-product green-color">экономия 100 ₽</div>
+																<div class="total-price rub">200.00</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 
 									</div>
-
-									<div class="individual-order-details__table-info table-info">
-										<div class="table-info__subtitle">Покупатель</div>
-										<div class="table-info__inner">
-											<div class="table-info__table">
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">ФИО</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">Константинопольская Вероника Владимировна</div>
-													</div>
-												</div>
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Emai</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">veronikaconst_1977@yandex.ru</div>
-													</div>
-												</div>
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Телефон</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">+ 7 (906) 890-50-50"</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="individual-order-details__table-info table-info">
-										<div class="table-info__subtitle">Доставка и оплата</div>
-										<div class="table-info__inner">
-											<div class="table-info__table">
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Доставка</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">Транспортом Алтайком</div>
-													</div>
-												</div>
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Стоимость</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">Бесплатно</div>
-													</div>
-												</div>
-
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Дата</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">По согласованию</div>
-													</div>
-												</div>
-
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Адрес доставки</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">Алтайский край, г. Барнаул, ул. Гридасова, 16</div>
-													</div>
-												</div>
-
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Индекс</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">700700</div>
-													</div>
-												</div>
-
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Комментарий к заказу</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта,        на котором используется, и нужен только для заполнения пространства. </div>
-													</div>
-												</div>
-
-												<div class="table-info__table-row d-flex">
-													<div class="table-info__table-col">
-														<div class="table-info__table-name">Оплата</div>
-														<div class="table-info__table-line"></div>
-													</div>
-													<div class="table-info__table-col">
-														<div class="table-info__table-value">Предоплата, банковский счет</div>
-													</div>
-												</div>
-
-											</div>
-										</div>
-									</div>
-									
-									<button type="button" class="individual-order-details__buton-back back-btn">
-										<svg class="back-btn__icon">
-											<use xlink:href="#reg-back-btn"></use>
-										</svg>
-										вернуться к спискам
-									</button>
 
 								</div>
 
-              </div>
-
-              <aside class="page-user-sec__aside">
-
-                <div class="lc-physical-person__formed-card formed-card">
-
-                  <div class="formed-card__row">
-										<div class="formed-card__row-inner">
-											<div class="formed-card__small-text">лимит</div>
+								<div class="individual-order-details__table-info table-info">
+									<div class="table-info__subtitle">Покупатель</div>
+									<div class="table-info__inner">
+										<div class="table-info__table">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">ФИО</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">Константинопольская Вероника Владимировна</div>
+												</div>
+											</div>
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Emai</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">veronikaconst_1977@yandex.ru</div>
+												</div>
+											</div>
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Телефон</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">+ 7 (906) 890-50-50"</div>
+												</div>
+											</div>
 										</div>
-										<div class="formed-card__limit rub">200 000.00</div>
-                  </div>
+									</div>
+								</div>
 
-                  <div class="formed-card__row">
-										<div class="formed-card__row-inner">
-											<div class="formed-card__small-text">израсходовано</div>
-											<div class="formed-card__small-text">остаток</div>
+								<div class="individual-order-details__table-info table-info">
+									<div class="table-info__subtitle">Доставка и оплата</div>
+									<div class="table-info__inner">
+										<div class="table-info__table">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Доставка</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">Транспортом Алтайком</div>
+												</div>
+											</div>
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Стоимость</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">Бесплатно</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Дата</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">По согласованию</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Адрес доставки</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">Алтайский край, г. Барнаул, ул. Гридасова, 16</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Индекс</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">700700</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Комментарий к заказу</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">Рыбный текст – это текст, выполняющий исключительно
+														утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен
+														только для заполнения пространства. </div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Оплата</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value">Предоплата, банковский счет</div>
+												</div>
+											</div>
+
 										</div>
-										<div class="formed-card__row-inner">
-											<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
-											<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
+									</div>
+								</div>
+
+								<button type="button" class="individual-order-details__buton-back back-btn">
+									<svg class="back-btn__icon">
+										<use xlink:href="#reg-back-btn"></use>
+									</svg>
+									вернуться к спискам
+								</button>
+
+							</div>
+
+						</div>
+
+						<aside class="page-user-sec__aside">
+
+							<div class="lc-physical-person__formed-card formed-card">
+
+								<div class="formed-card__row">
+									<div class="formed-card__row-inner">
+										<div class="formed-card__small-text">лимит</div>
+									</div>
+									<div class="formed-card__limit rub">200 000.00</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="formed-card__row-inner">
+										<div class="formed-card__small-text">израсходовано</div>
+										<div class="formed-card__small-text">остаток</div>
+									</div>
+									<div class="formed-card__row-inner">
+										<div class="formed-card__limit formed-card__limit_small rub">99 99.99</div>
+										<div class="formed-card__limit formed-card__limit_small rub">100 000.01</div>
+									</div>
+									<div class="formed-card__progress progress">
+										<progress max="100" value="85"></progress>
+										<div class="progress-value"></div>
+										<div class="progress-bg">
+											<div class="progress-bar"></div>
 										</div>
-										<div class="formed-card__progress progress">
-											<progress max="100" value="85"></progress>
-											<div class="progress-value"></div>
-											<div class="progress-bg"><div class="progress-bar"></div></div>
+									</div>
+								</div>
+
+								<div class="formed-card__row">
+									<div class="table-info__inner">
+										<div class="table-info__table">
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Задолжность</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value rub">
+														120 200.00
+													</div>
+												</div>
+											</div>
+
+											<div class="table-info__table-row d-flex">
+												<div class="table-info__table-col">
+													<div class="table-info__table-name">Просроченная задолжность</div>
+													<div class="table-info__table-line"></div>
+												</div>
+												<div class="table-info__table-col">
+													<div class="table-info__table-value text-pink rub">20 200.00</div>
+												</div>
+											</div>
+
 										</div>
-                  </div>
+									</div>
+								</div>
 
-                  <div class="formed-card__row">
-                    <div class="table-info__inner">
-                      <div class="table-info__table">
-                        <div class="table-info__table-row d-flex">
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-name">Задолжность</div>
-                            <div class="table-info__table-line"></div>
-                          </div>
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-value rub">
-                              120 200.00
-                            </div>
-                          </div>
-                        </div>
+							</div>
 
-                        <div class="table-info__table-row d-flex">
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-name">Просроченная задолжность</div>
-                            <div class="table-info__table-line"></div>
-                          </div>
-                          <div class="table-info__table-col">
-                            <div class="table-info__table-value text-pink rub">20 200.00</div>
-                          </div>
-                        </div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('html/components/_mob-fixed-menu.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </aside>
-            </div>
-          </div>
-        </section>
-      </main>
-      @@include('html/_footer.htm',{}) 
-			@@include('html/components/_mob-fixed-menu.htm',{})
-			@@include('sprite.svg',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
 </html>

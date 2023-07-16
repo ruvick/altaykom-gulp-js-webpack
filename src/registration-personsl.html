@@ -3,26 +3,27 @@
 @@include('html/_head.htm',{ "title":"Регистрация физлица" })
 
 <body>
-  <div class="wrapper registration-wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page page-registration">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper registration-wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page-registration">
+			@@include('html/components/_lineBlock.htm',{})
 
-      <section class="registration-section section">
-        <div class="_container">
-          <div class="registration-section__body">
-            <button type="button" class="registration-section__btn back-btn">
-              <svg class="back-btn__icon">
-                <use xlink:href="#reg-back-btn"></use>
-              </svg>
-              вернуться
-            </button>
+			<section class="registration-section section">
+				<div class="_container">
+					<div class="registration-section__body">
+						<button type="button" class="registration-section__btn back-btn">
+							<svg class="back-btn__icon">
+								<use xlink:href="#reg-back-btn"></use>
+							</svg>
+							вернуться
+						</button>
 
-            <div class="registration-section__form submission-form">
-              <form action="#" class="submission-form__form">
-                <div class="form__line">
-                  <div class="submission-form__item">
-                    <div class="submission-form__title">Регистрация</div>
+						<div class="registration-section__form submission-form">
+							<form action="#" class="submission-form__form">
+								<div class="form__line">
+									<div class="submission-form__item">
+										<div class="submission-form__title">Регистрация</div>
 
 										<div class="submission-form__input input">
 											<label for="phone-inp" class="submission-form__label">Телефон*</label>
@@ -34,75 +35,77 @@
 											<input id="email-inp" type="text" name="email" data-validate data-required="email">
 										</div>
 
-                  </div>
-                  <div class="submission-form__item">
-                    <div class="submission-form__title">Пароль</div>
+									</div>
+									<div class="submission-form__item">
+										<div class="submission-form__title">Пароль</div>
 
-											<div class="submission-form__input input">
-												<label for="pass-inp" class="submission-form__label">Пароль*</label>
-												<input id="pass-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
-												<button class="submission-form__show-pass form__viewpass" type="button">
-													<svg>
-														<use xlink:href="#show-password"></use>
-													</svg>
-												</button>
-											</div>
+										<div class="submission-form__input input">
+											<label for="pass-inp" class="submission-form__label">Пароль*</label>
+											<input id="pass-inp" autocomplete="off" type="password" name="password" value="" data-validate
+												data-required="password">
+											<button class="submission-form__show-pass form__viewpass" type="button">
+												<svg>
+													<use xlink:href="#show-password"></use>
+												</svg>
+											</button>
+										</div>
 
-											<div class="submission-form__input input">
-												<label for="pass-rep-inp" class="submission-form__label">Пароль повторно*</label>
-												<input id="pass-rep-inp" autocomplete="off" type="password" name="password" value="" data-validate data-required="password">
-												<button class="submission-form__show-pass form__viewpass" type="button"> 
-													<svg>
-														<use xlink:href="#show-password"></use>
-													</svg>
-												</button>
-											</div>
+										<div class="submission-form__input input">
+											<label for="pass-rep-inp" class="submission-form__label">Пароль повторно*</label>
+											<input id="pass-rep-inp" autocomplete="off" type="password" name="password" value="" data-validate
+												data-required="password">
+											<button class="submission-form__show-pass form__viewpass" type="button">
+												<svg>
+													<use xlink:href="#show-password"></use>
+												</svg>
+											</button>
+										</div>
 
-                    <div class="submission-form__clue">
-                      Пароль должен содержать не менее 8 символов латинского
-                      алфавита, в том числе цифры, заглавные и строчные буквы
-                    </div>
-                  </div>
-                  <label data-index="0" class="submission-form__checkbox checkbox">
-                    <input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
-                      value="1" name="form[]" value="Подписаться на рассылку новостей, мастерклассов">
-                    <span class="checkbox__text"><span>Подписаться на рассылку новостей, мастерклассов</span></span>
-                  </label>
-                  <div class="submission-form__policy">
-                    Нажимая на кнопку «Зарегистрироваться», Вы соглашаетесь на
-                    обработку
-                    <a href="#privacy-policy.html" class="submission-form__policy-link">персональных данных</a>
-                  </div>
-                  <button type="submit" class="submission-form__button btn">
-                    зарегистрироваться
-                  </button>
-                </div>
-              </form>
-              <a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a>
-            </div>
+										<div class="submission-form__clue">
+											Пароль должен содержать не менее 8 символов латинского
+											алфавита, в том числе цифры, заглавные и строчные буквы
+										</div>
+									</div>
+									<label data-index="0" class="submission-form__checkbox checkbox">
+										<input checked data-razdel="form" data-error="Ошибка" class="checkbox__input" type="checkbox"
+											value="1" name="form[]" value="Подписаться на рассылку новостей, мастерклассов">
+										<span class="checkbox__text"><span>Подписаться на рассылку новостей, мастерклассов</span></span>
+									</label>
+									<div class="submission-form__policy">
+										Нажимая на кнопку «Зарегистрироваться», Вы соглашаетесь на
+										обработку
+										<a href="#privacy-policy.html" class="submission-form__policy-link">персональных данных</a>
+									</div>
+									<button type="submit" class="submission-form__button btn">
+										зарегистрироваться
+									</button>
+								</div>
+							</form>
+							<a href="#" class="submission-form__link">Зарегистрироваться как юридическое лицо</a>
+						</div>
 
-            <div class="registration-section__soc-entrance soc-entrance">
-              <div class="soc-entrance__text">Быстрый вход через соцсети</div>
-              <div class="soc-entrance__row">
-                <a href="#" class="soc-entrance__icon soc-entrance__icon_vk">
-                  <svg class="soc-entrance__icon-svg">
-                    <use xlink:href="#vk-icon"></use>
-                  </svg>
-                </a>
-                <a href="#" class="soc-entrance__icon soc-entrance__icon_ya">
-                  <svg class="soc-entrance__icon-svg">
-                    <use xlink:href="#ya-icon"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    @@include('html/_footer.htm',{}) @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+						<div class="registration-section__soc-entrance soc-entrance">
+							<div class="soc-entrance__text">Быстрый вход через соцсети</div>
+							<div class="soc-entrance__row">
+								<a href="#" class="soc-entrance__icon soc-entrance__icon_vk">
+									<svg class="soc-entrance__icon-svg">
+										<use xlink:href="#vk-icon"></use>
+									</svg>
+								</a>
+								<a href="#" class="soc-entrance__icon soc-entrance__icon_ya">
+									<svg class="soc-entrance__icon-svg">
+										<use xlink:href="#ya-icon"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{}) @@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
 </body>
 
 </html>
