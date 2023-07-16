@@ -694,6 +694,7 @@ const filtersMobCl = document.querySelector('.filters-mob-menu__header-close');
 const filtersMobMenu = document.querySelector('.filters-mob-menu');
 const selectMobMenu = document.querySelector('.select-mob-menu');
 const filtrContrMobFiX = document.querySelector('.filter-controll-mob-fixed');
+const menuListItemElems = document.querySelector(".select-mob-menu__list");
 
 if (filterMobFl) {
 	filterMobFl.addEventListener('click', function () {
@@ -716,14 +717,13 @@ if (filterMobSl) {
 		bodyLockToggle();
 	});
 }
-// Закрытие моб меню при клике вне области меню 
-// window.addEventListener('click', e => { // при клике в любом месте окна браузера
-// 	const target = e.target // находим элемент, на котором был клик
-// 	if (!target.closest('.mob-fixed-menu-footer')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
-// 		selectMobMenu.classList.remove('_active')
-// 		bodyLockToggle();
-// 	}
-// })
+if (menuListItemElems) {
+	menuListItemElems.addEventListener("click", function () {
+		selectMobMenu.classList.remove('_active');
+		bodyLockToggle();
+		blackout();
+	});
+}
 
 // document.addEventListener('click', outsideEvtListener);
 
