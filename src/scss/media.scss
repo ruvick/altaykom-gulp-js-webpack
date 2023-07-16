@@ -698,6 +698,11 @@
 		width: auto;
 		overflow: auto;
 	}
+
+	.cardProductSl {
+		margin: 0;
+		padding-left: 0;
+	}
 }
 
 @media (max-width: 960px) {
@@ -2084,6 +2089,10 @@
 	.page-cat-entry .lineBlock {
 		display: block;
 	}
+
+	.share-menu {
+		left: 0;
+	}
 }
 
 @media (max-width: 515px) {
@@ -3201,6 +3210,15 @@
 
 	.advantagesBlock__inner {
 		width: 345px;
+	}
+
+	.card-product-sec__intro {
+		flex-wrap: wrap;
+	}
+
+	.card-product-sec__intro-article {
+		margin-right: 35px;
+		margin-bottom: 15px;
 	}
 }
 

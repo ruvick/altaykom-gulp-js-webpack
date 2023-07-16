@@ -7401,14 +7401,12 @@ ul .content-article__descriptioni-list-item {
 	}
 }
 
-.cardProductSl .swiper-wrapper {
+.cardProductSl {
+	margin: 0;
+	padding-left: 0;
+
 	.swiper-wrapper {
 		height: 100% !important;
-	}
-
-	.swiper {
-		margin: 0;
-		padding-left: 0;
 	}
 }
 
