@@ -169,6 +169,14 @@ if (document.documentElement.clientWidth > 768) {
 				item0?.classList.remove('drop-menu-catalog');
 
 			});
+			catBtnCl.addEventListener('click', () => {
+				item.closest('.menu-catalog__body').classList.add('drop-menu-catalog');
+
+				let item0 = document.querySelector('.menu-catalog__body[data-id="0"]');
+
+				item0?.classList.remove('drop-menu-catalog');
+
+			});
 		});
 	}
 }
