@@ -231,12 +231,12 @@ export function formSelect(logging) {
 /* Модуь формы "показать пароль" */
 export function formViewpass() {
 	document.addEventListener("click", function (e) {
-		let targetElement = e.target;
-		if (targetElement.closest('[class*="__viewpass"]')) {
-			let inputType = targetElement.classList.contains('active') ? "password" : '';
-			targetElement.parentElement.querySelector('input').setAttribute("type", inputType);
-			targetElement.classList.toggle('active');
-		}
+		// let targetElement = e.target;
+		// if (targetElement.closest('[class*="__viewpass"]')) {
+		// 	let inputType = targetElement.classList.contains('active') ? "password" : '';
+		// 	targetElement.parentElement.querySelector('input').setAttribute("type", inputType);
+		// 	targetElement.classList.toggle('active');
+		// }
 	});
 }
 /* Модуь формы "колличество" */

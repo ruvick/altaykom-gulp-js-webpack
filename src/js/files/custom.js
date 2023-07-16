@@ -1,5 +1,17 @@
 import { bodyLockStatus, bodyLockToggle, bodyUnlock, bodyLock } from "./functions.js";
 
+const form__viewpass = document.querySelectorAll(".form__viewpass");
+
+form__viewpass.forEach(elem => {
+
+	elem.onclick = (e) => {
+		e.preventDefault()
+		let inputType = elem.classList.contains('active') ? "password" : 'text';
+		elem.previousSibling.previousSibling.setAttribute("type", inputType);
+		elem.classList.toggle('active');
+	}
+})
+
 function bodyLockMain() {
 	let body = document.querySelector("body");
 
