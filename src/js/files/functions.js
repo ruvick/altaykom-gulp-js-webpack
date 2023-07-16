@@ -614,7 +614,7 @@ if (physicalCl) {
 // const menuCatalog = document.querySelector('.menu-catalog');
 
 // if (catBtn) {
-// 	catBtn.addEventListener('click', function () {
+// 	catBtn.addEventListener('click', function () { 
 // 		iconMenu.classList.toggle('_active');
 // 		menuCatalog.classList.toggle('_active');
 // 		header.classList.toggle('_before');
@@ -644,32 +644,32 @@ if (physicalCl) {
 
 // }
 
-// MainMobMenu =====================================================================================================================================
-const MainMobMenu = document.querySelector('.main-mob-menu');
-const MainMobMenuCl = document.querySelector('.main-mob-menu__close');
-const headerMenuBurger = document.querySelector('.header__menu-burger');
-const btnCatMob = document.getElementById('btnCatMob');
+// // MainMobMenu =====================================================================================================================================
+// const MainMobMenu = document.querySelector('.main-mob-menu');
+// const MainMobMenuCl = document.querySelector('.main-mob-menu__close');
+// const headerMenuBurger = document.querySelector('.header__menu-burger');
+// const btnCatMob = document.getElementById('btnCatMob');
 
-if (headerMenuBurger) {
-	headerMenuBurger.addEventListener('click', function () {
-		MainMobMenu.classList.add('_active');
-		bodyLockToggle();
-	});
-}
-if (MainMobMenuCl) {
-	MainMobMenuCl.addEventListener('click', function () {
-		MainMobMenu.classList.remove('_active');
-		bodyLockToggle();
-	});
-}
-if (btnCatMob) {
-	btnCatMob.addEventListener('click', function () {
-		MainMobMenu.classList.remove('_active');
-		iconMenu.classList.add('_active');
-		menuCatalog.classList.add('_active');
-		header.classList.add('_before');
-	});
-}
+// if (headerMenuBurger) {
+// 	headerMenuBurger.addEventListener('click', function () {
+// 		MainMobMenu.classList.add('_active');
+// 		bodyLockToggle();
+// 	});
+// }
+// if (MainMobMenuCl) {
+// 	MainMobMenuCl.addEventListener('click', function () {
+// 		MainMobMenu.classList.remove('_active');
+// 		bodyLockToggle();
+// 	});
+// }
+// if (btnCatMob) {
+// 	btnCatMob.addEventListener('click', function () {
+// 		MainMobMenu.classList.remove('_active');
+// 		iconMenu.classList.add('_active');
+// 		menuCatalog.classList.add('_active');
+// 		header.classList.add('_before');
+// 	});
+// }
 // cat-search ================================================================================================================================================================
 // const catEntityInp = document.getElementById('cat-entity-input');
 // const catEntityCl = document.getElementById('cat-entity-cl');

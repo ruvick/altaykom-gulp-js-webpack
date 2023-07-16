@@ -5,57 +5,58 @@
 })
 
 <body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-      @@include('html/components/_lineBlock.htm',{})
+	<div class="shadow"></div>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/components/_lineBlock.htm',{})
 
 			<div class="breadcrumbs">
 				<div class="_container">
-					<div class="breadcrumbs__inner"> 
+					<div class="breadcrumbs__inner">
 						<a href="home.html"> главная </a> / <span class="breadcrumb_last" aria-current="page">модальные окна</span>
 					</div>
 				</div>
-			</div> 
+			</div>
 
-      <section class="section-title">
-        <div class="_container">
-          <div class="section-title__inner">
-            <div class="section-title__title title-main">
-              модальные окна
-            </div>
-          </div>
-        </div>
-      </section>
+			<section class="section-title">
+				<div class="_container">
+					<div class="section-title__inner">
+						<div class="section-title__title title-main">
+							модальные окна
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section id="modal-windows-sec" class="modal-windows-sec section">
-        <div class="_container">
+			<section id="modal-windows-sec" class="modal-windows-sec section">
+				<div class="_container">
 
-          <div class="modal-windows-sec__inner">
-            <button data-popup="#order-service" class="modal-windows-sec__btn btn">Заказать услугу</button>
-            <button data-popup="#order-product" class="modal-windows-sec__btn btn">Заказать товар</button>
-            <button data-popup="#new-bascet" class="modal-windows-sec__btn btn">Создать новую корзну</button>
+					<div class="modal-windows-sec__inner">
+						<button data-popup="#order-service" class="modal-windows-sec__btn btn">Заказать услугу</button>
+						<button data-popup="#order-product" class="modal-windows-sec__btn btn">Заказать товар</button>
+						<button data-popup="#new-bascet" class="modal-windows-sec__btn btn">Создать новую корзну</button>
 						<button data-popup="#new-list" class="modal-windows-sec__btn btn">Новый список</button>
-            <button data-popup="#edit-profile-person" class="modal-windows-sec__btn btn">
-              Редактировать профиль.Физлицо
-            </button>
-            <button data-popup="#edit-profile-entity" class="modal-windows-sec__btn btn">
-              Редактировать профиль.Юрлицо
-            </button>
-            <button data-popup="#similar-products" class="modal-windows-sec__btn btn">Похожие товары</button>
-            <button data-popup="#leave-feedback" class="modal-windows-sec__btn btn">Оставить отзыв</button>
-            <button data-popup="#suppliers" class="modal-windows-sec__btn btn">Поставщики</button>
-          </div>
+						<button data-popup="#edit-profile-person" class="modal-windows-sec__btn btn">
+							Редактировать профиль.Физлицо
+						</button>
+						<button data-popup="#edit-profile-entity" class="modal-windows-sec__btn btn">
+							Редактировать профиль.Юрлицо
+						</button>
+						<button data-popup="#similar-products" class="modal-windows-sec__btn btn">Похожие товары</button>
+						<button data-popup="#leave-feedback" class="modal-windows-sec__btn btn">Оставить отзыв</button>
+						<button data-popup="#suppliers" class="modal-windows-sec__btn btn">Поставщики</button>
+					</div>
 
-        </div>
-      </section>
+				</div>
+			</section>
 
-    </main>
-    @@include('html/_footer.htm',{})
-    @@include('sprite.svg',{})
-  </div>
-  @@include('html/_popup.htm',{})
-  @@include('html/_js.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+		@@include('sprite.svg',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
 </body>
 
 </html>
