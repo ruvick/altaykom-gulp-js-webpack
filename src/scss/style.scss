@@ -6036,7 +6036,14 @@ ul .content-article__descriptioni-list-item {
 	border-radius: 20px;
 	box-shadow: 0 0 5px rgb(0 0 0 / 10%);
 
-	display: none;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		bottom: -10px;
+	}
 }
 
 .share-menu__btn {
@@ -6153,13 +6160,14 @@ ul .content-article__descriptioni-list-item {
 	flex: 0 0 18px;
 	width: 18px;
 	height: 18px;
+	cursor: pointer;
+}
 
-	svg {
-		flex: 0 0 100%;
-		width: 100%;
-		height: 100%;
-		fill: #221f20;
-	}
+.intro-share-button__svg {
+	flex: 0 0 100%;
+	width: 100%;
+	height: 100%;
+	fill: #221f20;
 }
 
 .card-product-sec__intro-article .article-intro {
