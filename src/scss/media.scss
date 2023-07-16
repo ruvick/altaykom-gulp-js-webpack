@@ -2421,6 +2421,11 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		padding: 5px 0;
+	}
+
+	.catalog-entity-table .table tbody tr:first-child {
+		border-top: 1px solid #F3F3F4;
 	}
 
 	.catalog-entity-table .table tbody td {
@@ -2471,6 +2476,7 @@
 
 	.catalog-entity-table__value-char {
 		order: 4;
+		padding-left: 5px !important;
 	}
 
 	.catalog-entity-table__fav {
@@ -2479,6 +2485,7 @@
 
 	.catalog-entity-table__sticker {
 		order: 6;
+		flex: 1 1 auto !important;
 	}
 
 	.catalog-entity-table__bascet {
@@ -2491,8 +2498,17 @@
 
 	.catalog-entity-table__article {
 		position: absolute;
-		top: 10px;
+		top: 14px;
 		right: 10px;
+		color: grey;
+
+		span {
+			display: inline;
+		}
+	}
+
+	.catalog-entity-table {
+		padding: 0;
 	}
 }
 

@@ -1,4 +1,34 @@
-import { bodyLockStatus, bodyLockToggle } from "./functions.js";
+import { bodyLockStatus, bodyLockToggle, bodyUnlock, bodyLock } from "./functions.js";
+
+function bodyLockMain() {
+	let body = document.querySelector("body");
+
+	let lock_padding = document.querySelectorAll("[data-lp]");
+
+	for (let index = 0; index < lock_padding.length; index++) {
+		const el = lock_padding[index];
+		el.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+	}
+	body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+	document.documentElement.classList.add("lock");
+
+	console.log("bloked")
+}
+
+function bodyUnlockMain() {
+	let body = document.querySelector("body");
+	let lock_padding = document.querySelectorAll("[data-lp]");
+
+	for (let index = 0; index < lock_padding.length; index++) {
+		const el = lock_padding[index];
+		el.style.paddingRight = '0px';
+	}
+
+	body.style.paddingRight = '0px';
+	document.documentElement.classList.remove("lock");
+
+	console.log("UN_bloked")
+}
 
 let showedWindow = ""
 
@@ -19,22 +49,33 @@ function toggleCatalog() {
 	shadow.classList.toggle('_active');
 	header.classList.toggle('_active');
 	showedWindow = (headerMenuCatalog.classList.contains("_active")) ? "headerMenuCatalog" : ""
+	console.log("Открыто: " + showedWindow)
+
+	if (showedWindow == "headerMenuCatalog")
+		bodyLockMain()
+	else
+		bodyUnlockMain()
 }
 
 catBtnAll.onclick = (e) => {
 	e.preventDefault()
 	toggleCatalog()
-	bodyLockToggle()
 }
 
-if (catBtnCl) {
-	catBtnCl.addEventListener('click', function () {
-		iconMenu.classList.remove('_active');
-		headerMenuCatalog.classList.remove('_active');
-		header.classList.remove('_active');
-		bodyLockToggle()
-	});
+catBtnCl.onclick = (e) => {
+	e.preventDefault()
+	toggleCatalog()
 }
+
+
+// if (catBtnCl) {
+// 	catBtnCl.addEventListener('click', function () {
+// 		iconMenu.classList.remove('_active');
+// 		headerMenuCatalog.classList.remove('_active');
+// 		header.classList.remove('_active');
+// 	});
+// }
+
 // MainMobMenu =====================================================================================================================================
 const MainMobMenu = document.querySelector('.main-mob-menu');
 const MainMobMenuCl = document.querySelector('.main-mob-menu__close');
@@ -44,14 +85,13 @@ const btnCatMob = document.getElementById('btnCatMob');
 if (headerMenuBurger) {
 	headerMenuBurger.addEventListener('click', function () {
 		MainMobMenu.classList.add('_active');
-		bodyLockToggle();
+
 	});
 }
 if (MainMobMenuCl) {
 	MainMobMenuCl.addEventListener('click', function () {
 		MainMobMenu.classList.remove('_active');
 		shadow.classList.remove('_active');
-		bodyLockToggle();
 	});
 }
 if (btnCatMob) {
@@ -82,18 +122,21 @@ function toggleSearch() {
 		linkText.classList.toggle("_none");
 	})
 	showedWindow = (searchFormInput.classList.contains("_active")) ? "searchFormInput" : ""
+	console.log("Открыто: " + showedWindow)
+	if (showedWindow == "searchFormInput")
+		bodyLockMain()
+	else
+		bodyUnlockMain()
 }
 
 searchFormInput.onclick = (e) => {
 	e.preventDefault()
 	toggleSearch()
-	bodyLockToggle()
 }
 
 searchBtnClosed.onclick = (e) => {
 	e.preventDefault()
 	toggleSearch()
-	bodyLockToggle()
 }
 
 if (document.documentElement.clientWidth > 1024) {
@@ -104,7 +147,8 @@ if (document.documentElement.clientWidth > 1024) {
 			if (event.keyCode == 27) {
 				if (showedWindow == "headerMenuCatalog") toggleCatalog()
 				if (showedWindow == "searchFormInput") toggleSearch()
-				bodyLockToggle()
+				if (showedWindow == "physicalListPerson") toggleMyLists()
+				if (showedWindow == "multicorzineLegalEntity") toggleMultyBascet()
 			}
 		};
 	})
@@ -112,7 +156,7 @@ if (document.documentElement.clientWidth > 1024) {
 if (shadow) {
 	shadow.addEventListener('click', function () {
 		toggleCatalog()
-		bodyLockToggle()
+		console.log("shadow")
 	});
 }
 // Menu Catalog ======================================================================================================================================================================
@@ -231,20 +275,36 @@ const headerLegalBascetIcon = document.querySelector('.header-legal-bascet-icon'
 const multicorzineLegalEntity = document.querySelector('.physical-list-person');
 const multicorClose = document.querySelector('.multicorzine-legal-entity__btn-close');
 
+function toggleMultyBascet() {
+	multicorzineLegalEntity.classList.toggle("_active");
+	shadow.classList.toggle('_active');
+
+	showedWindow = (multicorzineLegalEntity.classList.contains("_active")) ? "multicorzineLegalEntity" : ""
+	console.log("Открыто: " + showedWindow)
+
+	if (showedWindow == "multicorzineLegalEntity")
+		bodyLockMain()
+	else
+		bodyUnlockMain()
+
+}
+
 // function toggleMulticorzine() {
 
 if (headerLegalBascetIcon) {
 	headerLegalBascetIcon.addEventListener('click', function () {
-		multicorzineLegalEntity.classList.add('_active');
-		shadow.classList.add('_active');
-		bodyLockToggle()
+		// multicorzineLegalEntity.classList.add('_active');
+		// shadow.classList.add('_active');
+		// bodyLockToggle()
+		toggleMultyBascet()
 	});
 }
 if (multicorClose) {
 	multicorClose.addEventListener('click', function () {
-		multicorzineLegalEntity.classList.remove('_active');
-		shadow.classList.remove('_active');
-		bodyLockToggle()
+		// multicorzineLegalEntity.classList.remove('_active');
+		// shadow.classList.remove('_active');
+		// bodyLockToggle()
+		toggleMultyBascet()
 	});
 }
 // }
@@ -256,24 +316,42 @@ const physicalCl = document.getElementById('physical-close');
 
 newListsCard.forEach((item) => {
 	item.addEventListener("click", function () {
-		physicalListPerson.classList.add("_active");
-		shadow.classList.add('_active');
-		bodyLockToggle();
+		// physicalListPerson.classList.add("_active");
+		// shadow.classList.add('_active');
+		// bodyLockToggle();
+		toggleMyLists();
 	});
 });
 
+function toggleMyLists() {
+	physicalListPerson.classList.toggle("_active");
+	shadow.classList.toggle('_active');
+
+	showedWindow = (physicalListPerson.classList.contains("_active")) ? "physicalListPerson" : ""
+	console.log("Открыто: " + showedWindow)
+
+	if (showedWindow == "physicalListPerson")
+		bodyLockMain()
+	else
+		bodyUnlockMain()
+
+}
+
 if (backBtn) {
 	backBtn.addEventListener('click', function () {
-		physicalListPerson.classList.remove('_active');
-		shadow.classList.remove('_active');
-		bodyLockToggle();
-	});
+		// physicalListPerson.classList.remove('_active');
+		// shadow.classList.remove('_active');
+		// bodyLockToggle();
+		toggleMyLists();
+	}
+	);
 }
 
 if (physicalCl) {
 	physicalCl.addEventListener('click', function () {
-		physicalListPerson.classList.remove('_active');
-		shadow.classList.remove('_active');
-		bodyLockToggle();
+		// physicalListPerson.classList.remove('_active');
+		// shadow.classList.remove('_active');
+		// bodyLockToggle();
+		toggleMyLists();
 	});
 }

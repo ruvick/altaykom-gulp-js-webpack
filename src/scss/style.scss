@@ -7410,6 +7410,24 @@ ul .content-article__descriptioni-list-item {
 	}
 }
 
+.catalog-entity-table__article {
+	span {
+		display: none;
+	}
+}
+
+.catalog-entity-table__name {
+	transition: color 0.3s ease 0s;
+
+	&:hover {
+		color: #C5934F;
+	}
+}
+
+.catalog-entity-table-tr {
+	cursor: pointer;
+}
+
 //========================================================================================================================================================
 
 // АДАПТИВ ==========================================

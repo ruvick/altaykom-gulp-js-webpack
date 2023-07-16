@@ -500,7 +500,7 @@
 									<tr class="catalog-entity-table-tr">
 										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div class="catalog-entity-table__article">5297765</div>
+											<div class="catalog-entity-table__article"><span>арт.</span> 5297765</div>
 											<div class="sticker-product sticker-product_crem">
 												прослеживаемый товар
 											</div>
@@ -554,25 +554,23 @@
 										</td>
 									</tr>
 									<tr class="catalog-entity-table-tr">
-										<td>
+										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5503240</div>
-											<!-- <div class="sticker-product sticker-product_crem">прослеживаемый товар</div> -->
+											<div class="catalog-entity-table__article"><span>арт.</span> 5503240</div>
+											<div class="sticker-product sticker-product_crem" style="display: none;">
+												прослеживаемый товар
+											</div>
 										</td>
-										<td>
-											Какао порошок темно-красный 100% "Cacao Barry" Extra
-											Brute алкализованный
-										</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>л</td>
-										<td>
+										<td class="catalog-entity-table__name">Какао порошок темно-красный 100% "Cacao Barry" Extra Brute
+											алкализованный</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">л</td>
+										<td class="catalog-entity-table__price">
 											<div class="price-new rub">1 375.00</div>
-											<!-- <div class="price-old rub">
-                        700.00
-                      </div> -->
+											<div class="price-old rub" style="display: none;">700.00</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__bascet">
 											<div class="card-product__interactive-adding interactive-adding-block">
 												<div class="interactive-adding-bascet">
 													<div class="interactive-adding-bascet__value">
@@ -604,7 +602,7 @@
 												</div>
 											</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__fav">
 											<button type="button" class="sticker-product-favorite">
 												<svg class="sticker-product-favorite__icon">
 													<use xlink:href="#favorites-product"></use>
@@ -613,22 +611,22 @@
 										</td>
 									</tr>
 									<tr class="catalog-entity-table-tr">
-										<td>
+										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5297765</div>
+											<div class="catalog-entity-table__article"><span>арт.</span> 5297765</div>
 											<div class="sticker-product sticker-product_crem">
 												прослеживаемый товар
 											</div>
 										</td>
-										<td>Желейные шарики «Мармелатье»</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>кг</td>
-										<td>
+										<td class="catalog-entity-table__name">Желейные шарики «Мармелатье»</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">кг</td>
+										<td class="catalog-entity-table__price">
 											<div class="price-new price-new_red rub">600.00</div>
 											<div class="price-old rub">700.00</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__bascet">
 											<div class="card-product__interactive-adding interactive-adding-block">
 												<div class="interactive-adding-bascet">
 													<div class="interactive-adding-bascet__value">
@@ -660,7 +658,7 @@
 												</div>
 											</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__fav">
 											<button type="button" class="sticker-product-favorite">
 												<svg class="sticker-product-favorite__icon">
 													<use xlink:href="#favorites-product"></use>
@@ -669,81 +667,23 @@
 										</td>
 									</tr>
 									<tr class="catalog-entity-table-tr">
-										<td>
+										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5297765</div>
-											<div class="sticker-product sticker-product_crem">
+											<div class="catalog-entity-table__article"><span>арт.</span> 5503240</div>
+											<div class="sticker-product sticker-product_crem" style="display: none;">
 												прослеживаемый товар
 											</div>
 										</td>
-										<td>Желейные шарики «Мармелатье»</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>кг</td>
-										<td>
-											<div class="price-new price-new_red rub">600.00</div>
-											<div class="price-old rub">700.00</div>
-										</td>
-										<td>
-											<div class="card-product__interactive-adding interactive-adding-block">
-												<div class="interactive-adding-bascet">
-													<div class="interactive-adding-bascet__value">
-														<div class="interactive-adding-bascet__value-quantity">
-															1 шт.
-														</div>
-														<div class="interactive-adding-bascet__value-price rub">
-															670
-														</div>
-													</div>
-													<button class="interactive-adding-bascet__button">
-														<svg class="interactive-adding-bascet__button-icon">
-															<use xlink:href="#bascet-btn-product"></use>
-														</svg>
-													</button>
-												</div>
-
-												<div class="interactive-adding-quantity">
-													<div class="quantity">
-														<div class="quantity__button quantity__button_minus _icon-minus"></div>
-														<div class="quantity__input">
-															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
-																value="1" />
-															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
-																value="670.00" />
-														</div>
-														<div class="quantity__button quantity__button_plus _icon-plus"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											<button type="button" class="sticker-product-favorite">
-												<svg class="sticker-product-favorite__icon">
-													<use xlink:href="#favorites-product"></use>
-												</svg>
-											</button>
-										</td>
-									</tr>
-									<tr class="catalog-entity-table-tr">
-										<td>
-											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5503240</div>
-											<!-- <div class="sticker-product sticker-product_crem">прослеживаемый товар</div> -->
-										</td>
-										<td>
-											Какао порошок темно-красный 100% "Cacao Barry" Extra
-											Brute алкализованный
-										</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>л</td>
-										<td>
+										<td class="catalog-entity-table__name">Какао порошок темно-красный 100% "Cacao Barry" Extra Brute
+											алкализованный</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">л</td>
+										<td class="catalog-entity-table__price">
 											<div class="price-new rub">1 375.00</div>
-											<!-- <div class="price-old rub">
-                        700.00
-                      </div> -->
+											<div class="price-old rub" style="display: none;">700.00</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__bascet">
 											<div class="card-product__interactive-adding interactive-adding-block">
 												<div class="interactive-adding-bascet">
 													<div class="interactive-adding-bascet__value">
@@ -775,7 +715,7 @@
 												</div>
 											</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__fav">
 											<button type="button" class="sticker-product-favorite">
 												<svg class="sticker-product-favorite__icon">
 													<use xlink:href="#favorites-product"></use>
@@ -784,22 +724,22 @@
 										</td>
 									</tr>
 									<tr class="catalog-entity-table-tr">
-										<td>
+										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5297765</div>
+											<div class="catalog-entity-table__article"><span>арт.</span> 5297765</div>
 											<div class="sticker-product sticker-product_crem">
 												прослеживаемый товар
 											</div>
 										</td>
-										<td>Желейные шарики «Мармелатье»</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>кг</td>
-										<td>
+										<td class="catalog-entity-table__name">Желейные шарики «Мармелатье»</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">кг</td>
+										<td class="catalog-entity-table__price">
 											<div class="price-new price-new_red rub">600.00</div>
 											<div class="price-old rub">700.00</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__bascet">
 											<div class="card-product__interactive-adding interactive-adding-block">
 												<div class="interactive-adding-bascet">
 													<div class="interactive-adding-bascet__value">
@@ -831,7 +771,7 @@
 												</div>
 											</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__fav">
 											<button type="button" class="sticker-product-favorite">
 												<svg class="sticker-product-favorite__icon">
 													<use xlink:href="#favorites-product"></use>
@@ -840,81 +780,23 @@
 										</td>
 									</tr>
 									<tr class="catalog-entity-table-tr">
-										<td>
+										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5297765</div>
-											<div class="sticker-product sticker-product_crem">
+											<div class="catalog-entity-table__article"><span>арт.</span> 5503240</div>
+											<div class="sticker-product sticker-product_crem" style="display: none;">
 												прослеживаемый товар
 											</div>
 										</td>
-										<td>Желейные шарики «Мармелатье»</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>кг</td>
-										<td>
-											<div class="price-new price-new_red rub">600.00</div>
-											<div class="price-old rub">700.00</div>
-										</td>
-										<td>
-											<div class="card-product__interactive-adding interactive-adding-block">
-												<div class="interactive-adding-bascet">
-													<div class="interactive-adding-bascet__value">
-														<div class="interactive-adding-bascet__value-quantity">
-															1 шт.
-														</div>
-														<div class="interactive-adding-bascet__value-price rub">
-															670
-														</div>
-													</div>
-													<button class="interactive-adding-bascet__button">
-														<svg class="interactive-adding-bascet__button-icon">
-															<use xlink:href="#bascet-btn-product"></use>
-														</svg>
-													</button>
-												</div>
-
-												<div class="interactive-adding-quantity">
-													<div class="quantity">
-														<div class="quantity__button quantity__button_minus _icon-minus"></div>
-														<div class="quantity__input">
-															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
-																value="1" />
-															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
-																value="670.00" />
-														</div>
-														<div class="quantity__button quantity__button_plus _icon-plus"></div>
-													</div>
-												</div>
-											</div>
-										</td>
-										<td>
-											<button type="button" class="sticker-product-favorite">
-												<svg class="sticker-product-favorite__icon">
-													<use xlink:href="#favorites-product"></use>
-												</svg>
-											</button>
-										</td>
-									</tr>
-									<tr class="catalog-entity-table-tr">
-										<td>
-											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5503240</div>
-											<!-- <div class="sticker-product sticker-product_crem">прослеживаемый товар</div> -->
-										</td>
-										<td>
-											Какао порошок темно-красный 100% "Cacao Barry" Extra
-											Brute алкализованный
-										</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>л</td>
-										<td>
+										<td class="catalog-entity-table__name">Какао порошок темно-красный 100% "Cacao Barry" Extra Brute
+											алкализованный</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">л</td>
+										<td class="catalog-entity-table__price">
 											<div class="price-new rub">1 375.00</div>
-											<!-- <div class="price-old rub">
-                        700.00
-                      </div> -->
+											<div class="price-old rub" style="display: none;">700.00</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__bascet">
 											<div class="card-product__interactive-adding interactive-adding-block">
 												<div class="interactive-adding-bascet">
 													<div class="interactive-adding-bascet__value">
@@ -946,7 +828,7 @@
 												</div>
 											</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__fav">
 											<button type="button" class="sticker-product-favorite">
 												<svg class="sticker-product-favorite__icon">
 													<use xlink:href="#favorites-product"></use>
@@ -955,22 +837,22 @@
 										</td>
 									</tr>
 									<tr class="catalog-entity-table-tr">
-										<td>
+										<td class="catalog-entity-table__sticker">
 											@@include('html/components/_catalog-entity-table-card.htm',{})
-											<div>5297765</div>
+											<div class="catalog-entity-table__article"><span>арт.</span> 5297765</div>
 											<div class="sticker-product sticker-product_crem">
 												прослеживаемый товар
 											</div>
 										</td>
-										<td>Желейные шарики «Мармелатье»</td>
-										<td>Фабрика Сладкого Декора</td>
-										<td>5</td>
-										<td>кг</td>
-										<td>
+										<td class="catalog-entity-table__name">Желейные шарики «Мармелатье»</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">кг</td>
+										<td class="catalog-entity-table__price">
 											<div class="price-new price-new_red rub">600.00</div>
 											<div class="price-old rub">700.00</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__bascet">
 											<div class="card-product__interactive-adding interactive-adding-block">
 												<div class="interactive-adding-bascet">
 													<div class="interactive-adding-bascet__value">
@@ -1002,7 +884,64 @@
 												</div>
 											</div>
 										</td>
-										<td>
+										<td class="catalog-entity-table__fav">
+											<button type="button" class="sticker-product-favorite">
+												<svg class="sticker-product-favorite__icon">
+													<use xlink:href="#favorites-product"></use>
+												</svg>
+											</button>
+										</td>
+									</tr>
+									<tr class="catalog-entity-table-tr">
+										<td class="catalog-entity-table__sticker">
+											@@include('html/components/_catalog-entity-table-card.htm',{})
+											<div class="catalog-entity-table__article"><span>арт.</span> 5503240</div>
+											<div class="sticker-product sticker-product_crem" style="display: none;">
+												прослеживаемый товар
+											</div>
+										</td>
+										<td class="catalog-entity-table__name">Какао порошок темно-красный 100% "Cacao Barry" Extra Brute
+											алкализованный</td>
+										<td class="catalog-entity-table__category">Фабрика Сладкого Декора</td>
+										<td class="catalog-entity-table__value">5</td>
+										<td class="catalog-entity-table__value-char">л</td>
+										<td class="catalog-entity-table__price">
+											<div class="price-new rub">1 375.00</div>
+											<div class="price-old rub" style="display: none;">700.00</div>
+										</td>
+										<td class="catalog-entity-table__bascet">
+											<div class="card-product__interactive-adding interactive-adding-block">
+												<div class="interactive-adding-bascet">
+													<div class="interactive-adding-bascet__value">
+														<div class="interactive-adding-bascet__value-quantity">
+															1 шт.
+														</div>
+														<div class="interactive-adding-bascet__value-price rub">
+															670
+														</div>
+													</div>
+													<button class="interactive-adding-bascet__button">
+														<svg class="interactive-adding-bascet__button-icon">
+															<use xlink:href="#bascet-btn-product"></use>
+														</svg>
+													</button>
+												</div>
+
+												<div class="interactive-adding-quantity">
+													<div class="quantity">
+														<div class="quantity__button quantity__button_minus _icon-minus"></div>
+														<div class="quantity__input">
+															<input class="quantity__input-quantity" autocomplete="off" type="text" name="form[]"
+																value="1" />
+															<input class="quantity__input-price rub" autocomplete="off" type="text" name="form[]"
+																value="670.00" />
+														</div>
+														<div class="quantity__button quantity__button_plus _icon-plus"></div>
+													</div>
+												</div>
+											</div>
+										</td>
+										<td class="catalog-entity-table__fav">
 											<button type="button" class="sticker-product-favorite">
 												<svg class="sticker-product-favorite__icon">
 													<use xlink:href="#favorites-product"></use>
@@ -1834,7 +1773,7 @@
 							</div>
 						</div>
 
-						<div class="catalog-entity-mob">
+						<!-- <div class="catalog-entity-mob"> 
 
 							<div class="catalog-entity-mob__card">
 								<div class="catalog-entity-mob__row">
@@ -2630,7 +2569,7 @@
 
 
 
-						</div>
+						</div> -->
 
 						<div class="page__show-more show-more">
 							<button class="show-more__btn btn">
