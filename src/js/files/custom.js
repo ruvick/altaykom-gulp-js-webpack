@@ -129,7 +129,9 @@ function toggleSearch() {
 	search.classList.toggle("_active");
 	searchMenu.classList.toggle("_active");
 	searchBtnClosed.classList.toggle("_active");
-	// shadow.classList.toggle('_active');
+	shadow.classList.toggle('_active');
+	shadow.style.zIndex = '150';
+	header.classList.toggle('_before');
 	interFacelinkText.forEach(linkText => {
 		linkText.classList.toggle("_none");
 	})
