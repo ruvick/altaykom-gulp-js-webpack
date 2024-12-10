@@ -79,7 +79,6 @@ catBtnCl.onclick = (e) => {
 	toggleCatalog()
 }
 
-
 // if (catBtnCl) {
 // 	catBtnCl.addEventListener('click', function () {
 // 		iconMenu.classList.remove('_active');
